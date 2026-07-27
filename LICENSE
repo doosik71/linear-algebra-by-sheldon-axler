@@ -1,0 +1,29 @@
+# Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+## Original Work
+
+Title:  Linear Algebra Done Right (4th Edition)
+Author: Sheldon Axler
+Source: <https://linear.axler.net/>
+Copyright (c) 2024 Sheldon Axler
+
+The original book is licensed under the Creative Commons
+Attribution-NonCommercial 4.0 International License:
+<https://creativecommons.org/licenses/by-nc/4.0>
+
+## This Repository
+
+This repository contains a Korean-language adaptation of the original
+book: the chapters have been split into per-chapter files, translated
+into Korean, and the mathematical formulas rewritten in MathJax syntax.
+This constitutes an "adaptation" under the terms above.
+
+Accordingly, all adapted content in this repository
+is likewise licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License (CC BY-NC 4.0):
+<https://creativecommons.org/licenses/by-nc/4.0>
+
+## Full License Text
+
+See <https://creativecommons.org/licenses/by-nc/4.0/legalcode> for the
+complete legal text of the CC BY-NC 4.0 license.
