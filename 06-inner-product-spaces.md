@@ -502,7 +502,7 @@ $$
 &=\langle u+v,u+v\rangle \\
 &=\langle u,u\rangle+\langle v,v\rangle+\langle u,v\rangle+\langle v,u\rangle \\
 &=\langle u,u\rangle+\langle v,v\rangle+\langle u,v\rangle+\overline{\langle u,v\rangle} \\
-&=\|u\|^2+\|v\|^2+2\operatorname{Re}\langle u,v\rangle \\
+&=\|u\|^2+\|v\|^2+2\text{Re}\langle u,v\rangle \\
 &\le \|u\|^2+\|v\|^2+2|\langle u,v\rangle| \tag{6.18}\\
 &\le \|u\|^2+\|v\|^2+2\|u\|\,\|v\| \tag{6.19}\\
 &=(\|u\|+\|v\|)^2.
@@ -876,6 +876,7 @@ $$
 
 - $\mathbb{F}^n$의 표준기저는 정규직교 리스트이다.
 - $\mathbb{F}^3$에서
+
   $$
   \left(\frac{1}{\sqrt 3},\frac{1}{\sqrt 3},\frac{1}{\sqrt 3}\right),
   \left(-\frac{1}{\sqrt 2},\frac{1}{\sqrt 2},0\right)
@@ -887,6 +888,7 @@ $$
   $$
   를 덧붙이면 $\mathbb{F}^3$의 정규직교 리스트가 된다.
 - 양의 정수 $n$에 대해
+
   $$
   \frac{1}{\sqrt{2\pi}},
   \frac{\cos x}{\sqrt\pi},\ldots,\frac{\cos nx}{\sqrt\pi},
@@ -910,6 +912,7 @@ $$
 **6.24 정규직교 리스트의 선형결합의 노름**
 
 $e_1,\ldots,e_m$이 정규직교 리스트이고 $a_1,\ldots,a_m\in\mathbb{F}$이면
+
 $$
 \|a_1e_1+\cdots+a_me_m\|^2
 =|a_1|^2+\cdots+|a_m|^2.
@@ -945,12 +948,14 @@ $$
 **증명**
 
 다음과 같이 두 벡터를 정의하자.
+
 $$
 u=\langle v,e_1\rangle e_1+\cdots+\langle v,e_m\rangle e_m,
 \qquad
 w=v-u.
 $$
 각 $k=1,\ldots,m$에 대해 $\langle w,e_k\rangle=0$이므로 $w$는 $u$에 직교한다. 따라서 피타고라스 정리와 6.24에 의해
+
 $$
 \|v\|^2=\|u+w\|^2=\|u\|^2+\|w\|^2
 \ge \|u\|^2
@@ -1003,6 +1008,7 @@ $$
 $$
 
 (c)
+
 $$
 \langle u,v\rangle
 =\langle u,e_1\rangle\overline{\langle v,e_1\rangle}
@@ -1035,6 +1041,7 @@ $$
 **6.32 그램-슈미트 절차**
 
 $v_1,\ldots,v_m$이 $V$의 일차독립 리스트라고 하자. $f_1=v_1$로 두고, $k=2,\ldots,m$에 대해
+
 $$
 f_k
 =v_k-\frac{\langle v_k,f_1\rangle}{\|f_1\|^2}f_1
@@ -1047,24 +1054,26 @@ e_k=\frac{f_k}{\|f_k\|}
 $$
 라고 하자. 그러면 $e_1,\ldots,e_m$은 $V$의 정규직교 리스트이고, 각 $k=1,\ldots,m$에 대해
 $$
-\operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(e_1,\ldots,e_k)
+\text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
 $$
 가 성립한다.
 
 **증명**
 
-$f_k$의 정의에서 $f_k\in\operatorname{span}(v_1,\ldots,v_k)$이고, $f_k$는 $f_1,\ldots,f_{k-1}$ 각각에 직교한다. 귀납적으로
+$f_k$의 정의에서 $f_k\in\text{span}(v_1,\ldots,v_k)$이고, $f_k$는 $f_1,\ldots,f_{k-1}$ 각각에 직교한다. 귀납적으로
+
 $$
-\operatorname{span}(v_1,\ldots,v_{k-1})
-=\operatorname{span}(e_1,\ldots,e_{k-1})
+\text{span}(v_1,\ldots,v_{k-1})
+=\text{span}(e_1,\ldots,e_{k-1})
 \tag{6.33}
 $$
-라고 가정하면 $f_k\ne 0$이다. 실제로 $f_k=0$이면 $v_k\in\operatorname{span}(v_1,\ldots,v_{k-1})$가 되어 $v_1,\ldots,v_m$의 일차독립성에 모순이다. 따라서 $e_k=f_k/\|f_k\|$가 잘 정의되고 노름은 $1$이다.
+라고 가정하면 $f_k\ne 0$이다. 실제로 $f_k=0$이면 $v_k\in\text{span}(v_1,\ldots,v_{k-1})$가 되어 $v_1,\ldots,v_m$의 일차독립성에 모순이다. 따라서 $e_k=f_k/\|f_k\|$가 잘 정의되고 노름은 $1$이다.
 
-또한 $f_k$가 앞의 $f_j$들에 직교하므로 $e_k$도 앞의 $e_j$들에 직교한다. 마지막으로 $e_k$는 $f_k$의 스칼라배이고, $f_k$의 정의를 정리하면 $v_k$가 $\operatorname{span}(f_1,\ldots,f_k)$에 속하므로
+또한 $f_k$가 앞의 $f_j$들에 직교하므로 $e_k$도 앞의 $e_j$들에 직교한다. 마지막으로 $e_k$는 $f_k$의 스칼라배이고, $f_k$의 정의를 정리하면 $v_k$가 $\text{span}(f_1,\ldots,f_k)$에 속하므로
+
 $$
-\operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(f_1,\ldots,f_k)
-=\operatorname{span}(e_1,\ldots,e_k)
+\text{span}(v_1,\ldots,v_k)=\text{span}(f_1,\ldots,f_k)
+=\text{span}(e_1,\ldots,e_k)
 $$
 이다.
 
@@ -1085,6 +1094,7 @@ $$
 f_3=x^2-\frac13,\qquad \|f_3\|^2=\frac{8}{45}
 $$
 을 얻는다. 따라서
+
 $$
 \sqrt{\frac12},\quad
 \sqrt{\frac32}x,\quad
@@ -1116,7 +1126,7 @@ $V$가 유한차원 내적공간이고 $T\in\mathcal{L}(V)$라고 하자. 그러
 
 $T$가 어떤 기저 $v_1,\ldots,v_n$에 대해 상삼각 행렬을 가진다고 하자. 그램-슈미트 절차로부터 얻은 정규직교기저 $e_1,\ldots,e_n$은 각 $k$에 대해
 $$
-\operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(e_1,\ldots,e_k)
+\text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
 $$
 를 만족한다. 상삼각 행렬 조건은 바로 이 부분공간들이 모두 $T$에 대해 불변이라는 뜻이므로, $T$는 $e_1,\ldots,e_n$에 대해서도 상삼각 행렬을 가진다. 이제 5.44를 적용하면 원하는 동치가 따른다.
 
@@ -1146,6 +1156,7 @@ $$
 \varphi(z_1,z_2,z_3)=2z_1-5z_2+z_3
 $$
 로 정의하면 $\varphi$는 $\mathbb{F}^3$ 위의 선형함수이다. 표준 내적을 사용하면
+
 $$
 \varphi(z_1,z_2,z_3)
 =\langle (z_1,z_2,z_3),(2,-5,1)\rangle
@@ -1186,12 +1197,14 @@ u=\langle u,e_1\rangle e_1+\cdots+\langle u,e_n\rangle e_n.
 $$
 
 따라서
+
 $$
 \varphi(u)=\langle u,e_1\rangle\varphi(e_1)+\cdots+
 \langle u,e_n\rangle\varphi(e_n).
 $$
 
 이제
+
 $$
 v=\overline{\varphi(e_1)}e_1+\cdots+\overline{\varphi(e_n)}e_n
 \tag{6.43}
@@ -1211,6 +1224,7 @@ $$
 \langle p,q\rangle=\int_{-1}^{1}p(t)q(t)\,dt
 $$
 가 주어져 있다고 하자. 모든 $p\in\mathcal{P}_2(\mathbb{R})$에 대해
+
 $$
 \int_{-1}^{1}p(t)\cos(\pi t)\,dt
 =\int_{-1}^{1}p(t)q(t)\,dt
@@ -1219,6 +1233,7 @@ $$
 가 성립하게 하는 $q\in\mathcal{P}_2(\mathbb{R})$를 구하자.
 
 $\varphi(p)=\int_{-1}^{1}p(t)\cos(\pi t)\,dt$라고 두면 $\varphi$는 $\mathcal{P}_2(\mathbb{R})$ 위의 선형함수이다. 6.34의 정규직교기저를 6.43에 대입하면
+
 $$
 \begin{aligned}
 q(x)
@@ -1256,9 +1271,10 @@ $$
 
 2. $\mathbb{R}^2$의 모든 정규직교기저를 구하여라.
 
-3. $e_1,\ldots,e_m$이 $V$의 정규직교 리스트이고 $v\in V$라고 하자. 6.26의 베셀 부등식에서 등호가 성립하는 것은 $v\in\operatorname{span}(e_1,\ldots,e_m)$인 것과 동치임을 증명하여라.
+3. $e_1,\ldots,e_m$이 $V$의 정규직교 리스트이고 $v\in V$라고 하자. 6.26의 베셀 부등식에서 등호가 성립하는 것은 $v\in\text{span}(e_1,\ldots,e_m)$인 것과 동치임을 증명하여라.
 
 4. 양의 정수 $n$에 대해
+
    $$
    \frac{1}{\sqrt{2\pi}},
    \frac{\cos x}{\sqrt\pi},\ldots,\frac{\cos nx}{\sqrt\pi},
@@ -1286,6 +1302,7 @@ $$
    b_k=\frac{1}{\sqrt\pi}\int_{-\pi}^{\pi}f(x)\sin(kx)\,dx
    $$
    라고 하자. 다음 부등식을 증명하여라.
+
    $$
    \frac{a_0^2}{2}+\sum_{k=1}^{\infty}(a_k^2+b_k^2)
    \le
@@ -1314,7 +1331,7 @@ $$
 
 10. $v_1,\ldots,v_m$이 $V$의 일차독립 리스트라고 하자. $e_1,\ldots,e_m$이 각 $k=1,\ldots,m$에 대해
     $$
-    \operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(e_1,\ldots,e_k)
+    \text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
     $$
     를 만족하고 $\langle v_k,e_k\rangle>0$인 정규직교 리스트라면, $e_1,\ldots,e_m$은 $v_1,\ldots,v_m$에 그램-슈미트 절차를 적용하여 얻은 리스트임을 증명하여라.
 
@@ -1334,7 +1351,7 @@ $$
 
 14. $V$가 실 내적공간이고 $v_1,\ldots,v_m$이 $V$의 일차독립 리스트라고 하자. 정확히 $2^m$개의 정규직교 리스트 $e_1,\ldots,e_m$이 존재하여 각 $k=1,\ldots,m$에 대해
     $$
-    \operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(e_1,\ldots,e_k)
+    \text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
     $$
     가 성립함을 증명하여라.
 
@@ -1363,6 +1380,7 @@ $$
 18. $u_1,\ldots,u_m$이 $V$의 일차독립 리스트라고 하자. 각 $k=1,\ldots,m$에 대해 $\langle u_k,v\rangle=1$을 만족하는 $v\in V$가 존재함을 증명하여라.
 
 19. $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 다음을 만족하는 $V$의 기저 $u_1,\ldots,u_n$이 존재함을 증명하여라.
+
     $$
     \langle v_j,u_k\rangle=
     \begin{cases}
@@ -1434,9 +1452,10 @@ $$
   U^\perp=\{(0,0,x,y,z):x,y,z\in\mathbb{F}\}.
   $$
 - $e_1,\ldots,e_m,f_1,\ldots,f_n$이 $V$의 정규직교기저이면
+
   $$
-  \left(\operatorname{span}(e_1,\ldots,e_m)\right)^\perp
-  =\operatorname{span}(f_1,\ldots,f_n).
+  \left(\text{span}(e_1,\ldots,e_m)\right)^\perp
+  =\text{span}(f_1,\ldots,f_n).
   $$
 
 **6.48 직교여공간의 기본 성질**
@@ -1468,6 +1487,7 @@ $$
 **증명**
 
 $e_1,\ldots,e_m$을 $U$의 정규직교기저라고 하자. 임의의 $v\in V$에 대해
+
 $$
 v=
 \underbrace{\langle v,e_1\rangle e_1+\cdots+\langle v,e_m\rangle e_m}_{u}
@@ -1498,11 +1518,13 @@ $$
 **증명**
 
 먼저 $u\in U$이면 $u$는 $U^\perp$의 모든 벡터에 직교한다. 따라서
+
 $$
 U\subset (U^\perp)^\perp.
 \tag{6.53}
 $$
 이제 6.51을 두 번 적용하면
+
 $$
 \dim (U^\perp)^\perp
 =\dim V-\dim U^\perp
@@ -1533,7 +1555,7 @@ $$
 
 **6.56 예: 일차원 부분공간 위로의 직교사영**
 
-$u\in V$이고 $u\ne 0$라고 하자. $U=\operatorname{span}(u)$이면 모든 $v\in V$에 대해
+$u\in V$이고 $u\ne 0$라고 하자. $U=\text{span}(u)$이면 모든 $v\in V$에 대해
 $$
 P_Uv=\frac{\langle v,u\rangle}{\|u\|^2}u.
 $$
@@ -1550,9 +1572,9 @@ $U$가 $V$의 유한차원 부분공간이라고 하자. 그러면 다음이 성
 
 (c) 모든 $w\in U^\perp$에 대해 $P_Uw=0$.
 
-(d) $\operatorname{range}P_U=U$.
+(d) $\text{range}P_U=U$.
 
-(e) $\operatorname{null}P_U=U^\perp$.
+(e) $\text{null}P_U=U^\perp$.
 
 (f) 모든 $v\in V$에 대해 $v-P_Uv\in U^\perp$.
 
@@ -1592,19 +1614,21 @@ $$
 
 일대일성은 $\varphi_v=0$이면 $\|v\|^2=\varphi_v(v)=0$이므로 $v=0$이라는 사실에서 따른다. 이제 임의의 $\varphi\in V'$가 어떤 $\varphi_v$와 같음을 보이면 된다.
 
-$\varphi=0$이면 $v=0$을 택하면 된다. 이제 $\varphi\ne 0$이라고 하자. 그러면 $\operatorname{null}\varphi\ne V$이므로 6.54에 의해 $(\operatorname{null}\varphi)^\perp\ne\{0\}$이다. $0\ne w\in(\operatorname{null}\varphi)^\perp$를 택하고
+$\varphi=0$이면 $v=0$을 택하면 된다. 이제 $\varphi\ne 0$이라고 하자. 그러면 $\text{null}\varphi\ne V$이므로 6.54에 의해 $(\text{null}\varphi)^\perp\ne\{0\}$이다. $0\ne w\in(\text{null}\varphi)^\perp$를 택하고
+
 $$
 v=\frac{\overline{\varphi(w)}}{\|w\|^2}w
 \tag{6.59}
 $$
 라고 두자. 그러면
+
 $$
 \|v\|=\frac{|\varphi(w)|}{\|w\|}
 \tag{6.60}
 $$
 이고 $\varphi(v)=\|v\|^2$이다. 임의의 $u\in V$에 대해
 $$
-u-\frac{\varphi(u)}{\varphi(v)}v\in\operatorname{null}\varphi
+u-\frac{\varphi(u)}{\varphi(v)}v\in\text{null}\varphi
 $$
 이다. 이 벡터는 $v$에 직교하므로
 $$
@@ -1627,6 +1651,7 @@ $$
 **증명**
 
 $v-P_Uv\in U^\perp$이고 $P_Uv-u\in U$이므로 두 벡터는 서로 직교한다. 따라서
+
 $$
 \begin{aligned}
 \|v-P_Uv\|^2
@@ -1646,6 +1671,7 @@ $$
 \int_{-\pi}^{\pi}|\sin x-u(x)|^2\,dx
 $$
 를 최소로 만드는 $u$를 찾고 싶다고 하자. $C[-\pi,\pi]$에 내적
+
 $$
 \langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\,dx
 \tag{6.64}
@@ -1662,6 +1688,7 @@ $$
 를 얻는다. 이것은 구간 $[-\pi,\pi]$ 전체에서 평균제곱오차를 가장 작게 만드는 차수 최대 $5$의 다항식이다.
 
 테일러 다항식
+
 $$
 p(x)=x-\frac{x^3}{3!}+\frac{x^5}{5!}
 \tag{6.66}
@@ -1681,32 +1708,33 @@ $$
 
 $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라고 하자. 그러면
 $$
-T|_{(\operatorname{null}T)^\perp}
+T|_{(\text{null}T)^\perp}
 $$
-는 $(\operatorname{null}T)^\perp$에서 $\operatorname{range}T$로 가는 일대일 대응인 선형사상이다.
+는 $(\text{null}T)^\perp$에서 $\text{range}T$로 가는 일대일 대응인 선형사상이다.
 
 **증명**
 
-제한사상이 선형이고 치역이 $\operatorname{range}T$에 포함되는 것은 분명하다. 만약 $v\in(\operatorname{null}T)^\perp$이고 $Tv=0$이면 $v\in\operatorname{null}T\cap(\operatorname{null}T)^\perp$이므로 $v=0$이다. 따라서 제한사상은 단사이다.
+제한사상이 선형이고 치역이 $\text{range}T$에 포함되는 것은 분명하다. 만약 $v\in(\text{null}T)^\perp$이고 $Tv=0$이면 $v\in\text{null}T\cap(\text{null}T)^\perp$이므로 $v=0$이다. 따라서 제한사상은 단사이다.
 
-임의의 $w\in\operatorname{range}T$에 대해 $w=Tv$인 $v\in V$를 택하자. $v=P_{(\operatorname{null}T)^\perp}v+P_{\operatorname{null}T}v$이고 $P_{\operatorname{null}T}v\in\operatorname{null}T$이므로
+임의의 $w\in\text{range}T$에 대해 $w=Tv$인 $v\in V$를 택하자. $v=P_{(\text{null}T)^\perp}v+P_{\text{null}T}v$이고 $P_{\text{null}T}v\in\text{null}T$이므로
 $$
-w=Tv=T(P_{(\operatorname{null}T)^\perp}v).
+w=Tv=T(P_{(\text{null}T)^\perp}v).
 $$
 
-따라서 제한사상은 $\operatorname{range}T$ 위로 전사이다.
+따라서 제한사상은 $\text{range}T$ 위로 전사이다.
 
 **6.68 정의: 유사역**
 
 $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라고 하자. $T$의 **유사역** $T^\dagger\in\mathcal{L}(W,V)$는
+
 $$
 T^\dagger w
-=\left(T|_{(\operatorname{null}T)^\perp}\right)^{-1}
-P_{\operatorname{range}T}w
+=\left(T|_{(\text{null}T)^\perp}\right)^{-1}
+P_{\text{range}T}w
 $$
 로 정의된다.
 
-즉 $w\in(\operatorname{range}T)^\perp$이면 $T^\dagger w=0$이다. 또한 $w\in\operatorname{range}T$이면 $T^\dagger w$는 $(\operatorname{null}T)^\perp$에 속하고 $T(T^\dagger w)=w$를 만족하는 유일한 벡터이다.
+즉 $w\in(\text{range}T)^\perp$이면 $T^\dagger w=0$이다. 또한 $w\in\text{range}T$이면 $T^\dagger w$는 $(\text{null}T)^\perp$에 속하고 $T(T^\dagger w)=w$를 만족하는 유일한 벡터이다.
 
 **6.69 유사역의 대수적 성질**
 
@@ -1714,27 +1742,27 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음�
 
 (a) $T$가 가역이면 $T^\dagger=T^{-1}$이다.
 
-(b) $TT^\dagger$는 $W$에서 $\operatorname{range}T$ 위로의 직교사영이다. 즉
+(b) $TT^\dagger$는 $W$에서 $\text{range}T$ 위로의 직교사영이다. 즉
 $$
-TT^\dagger=P_{\operatorname{range}T}.
+TT^\dagger=P_{\text{range}T}.
 $$
 
-(c) $T^\dagger T$는 $V$에서 $(\operatorname{null}T)^\perp$ 위로의 직교사영이다. 즉
+(c) $T^\dagger T$는 $V$에서 $(\text{null}T)^\perp$ 위로의 직교사영이다. 즉
 $$
-T^\dagger T=P_{(\operatorname{null}T)^\perp}.
+T^\dagger T=P_{(\text{null}T)^\perp}.
 $$
 
 **증명**
 
-(a)는 $T$가 가역이면 $\operatorname{null}T=\{0\}$이고 $\operatorname{range}T=W$이므로 정의에서 바로 따른다.
+(a)는 $T$가 가역이면 $\text{null}T=\{0\}$이고 $\text{range}T=W$이므로 정의에서 바로 따른다.
 
-(b)는 $w\in W$에 대해 $T^\dagger w$가 $P_{\operatorname{range}T}w$의 제한사상 아래의 역상이 되도록 정의되었기 때문에
+(b)는 $w\in W$에 대해 $T^\dagger w$가 $P_{\text{range}T}w$의 제한사상 아래의 역상이 되도록 정의되었기 때문에
 $$
-TT^\dagger w=P_{\operatorname{range}T}w
+TT^\dagger w=P_{\text{range}T}w
 $$
 이다.
 
-(c)는 $v\in V$를 $v=u+n$으로 쓰되 $u\in(\operatorname{null}T)^\perp$, $n\in\operatorname{null}T$라고 하자. 그러면 $Tv=Tu$이고, 정의상 $T^\dagger(Tu)=u$이다. 따라서 $T^\dagger Tv=u=P_{(\operatorname{null}T)^\perp}v$이다.
+(c)는 $v\in V$를 $v=u+n$으로 쓰되 $u\in(\text{null}T)^\perp$, $n\in\text{null}T$라고 하자. 그러면 $Tv=Tu$이고, 정의상 $T^\dagger(Tu)=u$이다. 따라서 $T^\dagger Tv=u=P_{(\text{null}T)^\perp}v$이다.
 
 유사역은 무어-펜로즈 역이라고도 불린다. $T$가 전사이면 $TT^\dagger=I$이고, $T$가 단사이면 $T^\dagger T=I$이다.
 
@@ -1747,9 +1775,9 @@ $$
 \|T(T^\dagger w)-w\|\le \|Tv-w\|.
 $$
 
-또한 등호가 성립하는 것은 $v\in T^\dagger w+\operatorname{null}T$인 것과 동치이다.
+또한 등호가 성립하는 것은 $v\in T^\dagger w+\text{null}T$인 것과 동치이다.
 
-(b) $v\in T^\dagger w+\operatorname{null}T$이면
+(b) $v\in T^\dagger w+\text{null}T$이면
 $$
 \|T^\dagger w\|\le \|v\|.
 $$
@@ -1758,9 +1786,9 @@ $$
 
 **증명**
 
-(a)는 $T(T^\dagger w)=P_{\operatorname{range}T}w$이고 $Tv\in\operatorname{range}T$이므로 6.61을 $W$의 부분공간 $\operatorname{range}T$에 적용하면 얻어진다. 등호 조건도 6.61의 등호 조건에서 나온다.
+(a)는 $T(T^\dagger w)=P_{\text{range}T}w$이고 $Tv\in\text{range}T$이므로 6.61을 $W$의 부분공간 $\text{range}T$에 적용하면 얻어진다. 등호 조건도 6.61의 등호 조건에서 나온다.
 
-(b) $v=T^\dagger w+n$이고 $n\in\operatorname{null}T$라고 쓰면 $T^\dagger w\in(\operatorname{null}T)^\perp$이므로 두 항은 직교한다. 따라서
+(b) $v=T^\dagger w+n$이고 $n\in\text{null}T$라고 쓰면 $T^\dagger w\in(\text{null}T)^\perp$이므로 두 항은 직교한다. 따라서
 $$
 \|v\|^2=\|T^\dagger w\|^2+\|n\|^2.
 $$
@@ -1775,16 +1803,17 @@ T(a,b,c,d)=(a+b+c,2c+d,0)
 $$
 으로 정의하자. 그러면
 $$
-\operatorname{range}T=\{(x,y,0):x,y\in\mathbb{F}\}
+\text{range}T=\{(x,y,0):x,y\in\mathbb{F}\}
 $$
 이고, 따라서
 $$
-P_{\operatorname{range}T}(x,y,z)=(x,y,0).
+P_{\text{range}T}(x,y,z)=(x,y,0).
 $$
 
 또한
+
 $$
-\operatorname{null}T
+\text{null}T
 =\{(a,b,c,d):a+b+c=0,\ 2c+d=0\}
 $$
 
@@ -1793,9 +1822,10 @@ $$
 (-1,1,0,0),\quad (-1,0,1,-2)
 $$
 이다. 따라서 $T^\dagger(x,y,z)$는
+
 $$
 T^\dagger(x,y,z)
-=\left(T|_{(\operatorname{null}T)^\perp}\right)^{-1}(x,y,0)
+=\left(T|_{(\text{null}T)^\perp}\right)^{-1}(x,y,0)
 \tag{6.72}
 $$
 이다.
@@ -1811,7 +1841,8 @@ a+b+c&=x,\\
 \end{aligned}
 $$
 
-첫 두 식은 $T(a,b,c,d)=(x,y,0)$이라는 조건이고, 뒤의 두 식은 $(a,b,c,d)\in(\operatorname{null}T)^\perp$라는 조건이다. 해는
+첫 두 식은 $T(a,b,c,d)=(x,y,0)$이라는 조건이고, 뒤의 두 식은 $(a,b,c,d)\in(\text{null}T)^\perp$라는 조건이다. 해는
+
 $$
 a=\frac{5x-2y}{11},\quad
 b=\frac{5x-2y}{11},\quad
@@ -1819,6 +1850,7 @@ c=\frac{x+4y}{11},\quad
 d=\frac{-2x+3y}{11}
 $$
 이다. 따라서
+
 $$
 T^\dagger(x,y,z)
 =\frac{1}{11}(5x-2y,5x-2y,x+4y,-2x+3y).
@@ -1829,16 +1861,17 @@ $$
 ### 연습문제 6C
 
 1. $v_1,\ldots,v_m\in V$라고 하자. 다음을 증명하여라.
+
    $$
    \{v_1,\ldots,v_m\}^\perp
-   =\left(\operatorname{span}(v_1,\ldots,v_m)\right)^\perp.
+   =\left(\text{span}(v_1,\ldots,v_m)\right)^\perp.
    $$
 
 2. $U$가 $V$의 유한차원 부분공간이고 $u_1,\ldots,u_m$이 $U$의 기저라고 하자. 또한 $u_1,\ldots,u_m,v_1,\ldots,v_n$이 $V$의 기저라고 하자. 이 기저에 그램-슈미트 절차를 적용하여 얻은 리스트를 $e_1,\ldots,e_m,f_1,\ldots,f_n$이라고 하자. 그러면 $e_1,\ldots,e_m$은 $U$의 정규직교기저이고 $f_1,\ldots,f_n$은 $U^\perp$의 정규직교기저임을 증명하여라.
 
 3. $\mathbb{R}^4$에서
    $$
-   U=\operatorname{span}((1,2,3,-4),(-5,4,3,2))
+   U=\text{span}((1,2,3,-4),(-5,4,3,2))
    $$
    라고 하자. $U$의 정규직교기저와 $U^\perp$의 정규직교기저를 각각 구하여라.
 
@@ -1854,9 +1887,10 @@ $$
    $$
 
 6. $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라고 하자. 다음을 증명하여라.
+
    $$
-   T=TP_{(\operatorname{null}T)^\perp}
-   =P_{\operatorname{range}T}T.
+   T=TP_{(\text{null}T)^\perp}
+   =P_{\text{range}T}T.
    $$
 
 7. $V$가 유한차원이고 $X,Y$가 $V$의 부분공간이라고 하자. 다음 두 조건이 동치임을 증명하여라.
@@ -1876,7 +1910,7 @@ $$
    $$
    를 만족하는 $w\in U$가 존재한다. 이때 $w=P_Uv$임을 증명하여라.
 
-9. $V$가 유한차원이고 $P\in\mathcal{L}(V)$가 $P^2=P$를 만족한다고 하자. 또한 $\operatorname{null}P$의 모든 벡터가 $\operatorname{range}P$의 모든 벡터에 직교한다고 하자. 그러면 어떤 $V$의 부분공간 $U$가 존재하여 $P=P_U$임을 증명하여라.
+9. $V$가 유한차원이고 $P\in\mathcal{L}(V)$가 $P^2=P$를 만족한다고 하자. 또한 $\text{null}P$의 모든 벡터가 $\text{range}P$의 모든 벡터에 직교한다고 하자. 그러면 어떤 $V$의 부분공간 $U$가 존재하여 $P=P_U$임을 증명하여라.
 
 10. $V$가 유한차원이고 $P\in\mathcal{L}(V)$가 $P^2=P$를 만족하며 모든 $v\in V$에 대해 $\|Pv\|\le\|v\|$라고 하자. 그러면 어떤 $V$의 부분공간 $U$가 존재하여 $P=P_U$임을 증명하여라.
 
@@ -1904,7 +1938,7 @@ $$
 
 15. $\mathbb{R}^4$에서
     $$
-    U=\operatorname{span}((1,1,0,0),(1,1,1,2))
+    U=\text{span}((1,1,0,0),(1,1,1,2))
     $$
     라고 하자. $u\in U$ 중에서
     $$
@@ -1942,12 +1976,12 @@ $$
 
 20. $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라고 하자. 다음을 증명하여라.
     $$
-    \operatorname{null}T^\dagger=(\operatorname{range}T)^\perp
+    \text{null}T^\dagger=(\text{range}T)^\perp
     $$
 
     그리고
     $$
-    \operatorname{range}T^\dagger=(\operatorname{null}T)^\perp.
+    \text{range}T^\dagger=(\text{null}T)^\perp.
     $$
 
 21. $T\in\mathcal{L}(\mathbb{F}^3,\mathbb{F}^2)$가
@@ -1958,9 +1992,9 @@ $$
 
     (a) $T^\dagger(x,y)$의 공식을 구하여라.
 
-    (b) $TT^\dagger$가 $\mathbb{F}^2$에서 $\operatorname{range}T$ 위로의 직교사영임을 직접 확인하여라.
+    (b) $TT^\dagger$가 $\mathbb{F}^2$에서 $\text{range}T$ 위로의 직교사영임을 직접 확인하여라.
 
-    (c) $T^\dagger T$가 $\mathbb{F}^3$에서 $(\operatorname{null}T)^\perp$ 위로의 직교사영임을 직접 확인하여라.
+    (c) $T^\dagger T$가 $\mathbb{F}^3$에서 $(\text{null}T)^\perp$ 위로의 직교사영임을 직접 확인하여라.
 
 22. $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라고 하자. 다음을 증명하여라.
     $$

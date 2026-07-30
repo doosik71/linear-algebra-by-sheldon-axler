@@ -48,6 +48,7 @@ $$
 **9.2 예: 쌍선형 형식**
 
 - 함수 $\beta:\mathbb{F}^3\times\mathbb{F}^3\to\mathbb{F}$를
+
   $$
   \beta((x_1,x_2,x_3),(y_1,y_2,y_3))
   =x_1y_2-5x_2y_3+2x_3y_1
@@ -55,11 +56,13 @@ $$
   로 정의하면 $\beta$는 $\mathbb{F}^3$ 위의 쌍선형 형식이다.
 
 - $A$가 $n\times n$ 행렬이고 $A_{j,k}\in\mathbb{F}$가 $j$행 $k$열의 성분이라고 하자. $\mathbb{F}^n$ 위의 쌍선형 형식 $\beta_A$를
+
   $$
   \beta_A((x_1,\ldots,x_n),(y_1,\ldots,y_n))
   =\sum_{k=1}^n\sum_{j=1}^n A_{j,k}x_jy_k
   $$
   로 정의할 수 있다. 앞의 예는 $n=3$이고
+
   $$
   A=
   \begin{pmatrix}
@@ -130,6 +133,7 @@ $$
 **증명**
 
 $\beta\mapsto \mathcal{M}(\beta)$는 분명히 $V^{(2)}$에서 $\mathbb{F}^{n,n}$으로 가는 선형사상이다. $A\in\mathbb{F}^{n,n}$에 대해 $V$ 위의 쌍선형 형식 $\beta_A$를
+
 $$
 \beta_A(x_1e_1+\cdots+x_ne_n,\;y_1e_1+\cdots+y_ne_n)
 =\sum_{k=1}^n\sum_{j=1}^n A_{j,k}x_jy_k
@@ -152,6 +156,7 @@ $$
 \alpha(u,v)=\beta(u,Tv),\qquad \rho(u,v)=\beta(Tu,v)
 $$
 로 정의하자. $e_1,\ldots,e_n$이 $V$의 기저이면
+
 $$
 \mathcal{M}(\alpha)=\mathcal{M}(\beta)\mathcal{M}(T),
 \qquad
@@ -161,6 +166,7 @@ $$
 **증명**
 
 $j,k\in\{1,\ldots,n\}$이면
+
 $$
 \begin{aligned}
 \mathcal{M}(\alpha)_{j,k}
@@ -177,6 +183,7 @@ $$
 **9.7 기저변환 공식**
 
 $\beta\in V^{(2)}$라고 하자. $e_1,\ldots,e_n$과 $f_1,\ldots,f_n$이 $V$의 기저라고 하자. 또한
+
 $$
 A=\mathcal{M}(\beta,(e_1,\ldots,e_n)),\qquad
 B=\mathcal{M}(\beta,(f_1,\ldots,f_n))
@@ -198,6 +205,7 @@ $$
 $$
 
 $V$ 위의 쌍선형 형식 $\alpha,\rho$를
+
 $$
 \alpha(u,v)=\beta(u,Tv),\qquad
 \rho(u,v)=\alpha(Tu,v)=\beta(Tu,Tv)
@@ -208,6 +216,7 @@ $$
 $$
 
 따라서
+
 $$
 \begin{aligned}
 A
@@ -232,6 +241,7 @@ C=\mathcal{M}(I,(1,x-2,(x-3)^2),(1,x,x^2)).
 $$
 
 그러면
+
 $$
 A=
 \begin{pmatrix}
@@ -246,6 +256,7 @@ B=
 0&4&24
 \end{pmatrix},
 $$
+
 $$
 C=
 \begin{pmatrix}
@@ -259,13 +270,13 @@ $$
 
 ### 대칭 쌍선형 형식
 
-**9.9 정의: 대칭 쌍선형 형식, $V_{\operatorname{sym}}^{(2)}$**
+**9.9 정의: 대칭 쌍선형 형식, $V_{\text{sym}}^{(2)}$**
 
 쌍선형 형식 $\rho\in V^{(2)}$가 모든 $u,w\in V$에 대해
 $$
 \rho(u,w)=\rho(w,u)
 $$
-를 만족하면 $\rho$를 **대칭**이라고 한다. $V$ 위의 대칭 쌍선형 형식들의 집합을 $V_{\operatorname{sym}}^{(2)}$로 나타낸다.
+를 만족하면 $\rho$를 **대칭**이라고 한다. $V$ 위의 대칭 쌍선형 형식들의 집합을 $V_{\text{sym}}^{(2)}$로 나타낸다.
 
 **9.10 예: 대칭 쌍선형 형식**
 
@@ -283,9 +294,9 @@ $$
 
 - $\rho:\mathcal{L}(V)\times\mathcal{L}(V)\to\mathbb{F}$를
   $$
-  \rho(S,T)=\operatorname{tr}(ST)
+  \rho(S,T)=\text{tr}(ST)
   $$
-  로 정의하면 $\rho$는 $\mathcal{L}(V)$ 위의 대칭 쌍선형 형식이다. 이는 트레이스가 $\mathcal{L}(V)$ 위의 선형범함수이고 모든 $S,T\in\mathcal{L}(V)$에 대해 $\operatorname{tr}(ST)=\operatorname{tr}(TS)$이기 때문이다.
+  로 정의하면 $\rho$는 $\mathcal{L}(V)$ 위의 대칭 쌍선형 형식이다. 이는 트레이스가 $\mathcal{L}(V)$ 위의 선형범함수이고 모든 $S,T\in\mathcal{L}(V)$에 대해 $\text{tr}(ST)=\text{tr}(TS)$이기 때문이다.
 
 **9.11 정의: 대칭 행렬**
 
@@ -312,11 +323,13 @@ $\rho\in V^{(2)}$라고 하자. 다음은 서로 동치이다.
 (b)가 (c)를 함의함은 명백하다.
 
 이제 (c)가 성립한다고 하자. 즉 어떤 기저 $e_1,\ldots,e_n$에 대해 $\mathcal{M}(\rho,(e_1,\ldots,e_n))$가 대칭 행렬이라고 하자. $u,w\in V$라 하자. 어떤 $a_1,\ldots,a_n,b_1,\ldots,b_n\in\mathbb{F}$가 존재하여
+
 $$
 u=a_1e_1+\cdots+a_ne_n,\qquad
 w=b_1e_1+\cdots+b_ne_n
 $$
 이다. 그러면
+
 $$
 \begin{aligned}
 \rho(u,w)
@@ -367,17 +380,18 @@ $$
 
 ### 교대 쌍선형 형식
 
-**9.14 정의: 교대 쌍선형 형식, $V_{\operatorname{alt}}^{(2)}$**
+**9.14 정의: 교대 쌍선형 형식, $V_{\text{alt}}^{(2)}$**
 
 쌍선형 형식 $\alpha\in V^{(2)}$가 모든 $v\in V$에 대해
 $$
 \alpha(v,v)=0
 $$
-을 만족하면 $\alpha$를 **교대**라고 한다. $V$ 위의 교대 쌍선형 형식들의 집합을 $V_{\operatorname{alt}}^{(2)}$로 나타낸다.
+을 만족하면 $\alpha$를 **교대**라고 한다. $V$ 위의 교대 쌍선형 형식들의 집합을 $V_{\text{alt}}^{(2)}$로 나타낸다.
 
 **9.15 예: 교대 쌍선형 형식**
 
 - $n\ge 3$이고 $\alpha:\mathbb{F}^n\times\mathbb{F}^n\to\mathbb{F}$를
+
   $$
   \alpha((x_1,\ldots,x_n),(y_1,\ldots,y_n))
   =x_1y_2-x_2y_1+x_1y_3-x_3y_1
@@ -401,6 +415,7 @@ $$
 **증명**
 
 먼저 $\alpha$가 교대라고 하자. $u,w\in V$이면
+
 $$
 \begin{aligned}
 0
@@ -414,28 +429,29 @@ $$
 
 반대로 모든 $u,w\in V$에 대해 $\alpha(u,w)=-\alpha(w,u)$라고 하자. 그러면 모든 $v\in V$에 대해 $\alpha(v,v)=-\alpha(v,v)$이고, 따라서 $\alpha(v,v)=0$이다. 그러므로 $\alpha$는 교대이다.
 
-**9.17 $V^{(2)}=V_{\operatorname{sym}}^{(2)}\oplus V_{\operatorname{alt}}^{(2)}$**
+**9.17 $V^{(2)}=V_{\text{sym}}^{(2)}\oplus V_{\text{alt}}^{(2)}$**
 
-$V_{\operatorname{sym}}^{(2)}$와 $V_{\operatorname{alt}}^{(2)}$는 $V^{(2)}$의 부분공간이다. 또한
+$V_{\text{sym}}^{(2)}$와 $V_{\text{alt}}^{(2)}$는 $V^{(2)}$의 부분공간이다. 또한
 $$
-V^{(2)}=V_{\operatorname{sym}}^{(2)}\oplus V_{\operatorname{alt}}^{(2)}.
+V^{(2)}=V_{\text{sym}}^{(2)}\oplus V_{\text{alt}}^{(2)}.
 $$
 
 **증명**
 
-대칭 쌍선형 형식들의 합과 스칼라배는 다시 대칭 쌍선형 형식이고, 영 쌍선형 형식도 대칭이다. 따라서 $V_{\operatorname{sym}}^{(2)}$는 $V^{(2)}$의 부분공간이다. 마찬가지로 $V_{\operatorname{alt}}^{(2)}$도 $V^{(2)}$의 부분공간이다.
+대칭 쌍선형 형식들의 합과 스칼라배는 다시 대칭 쌍선형 형식이고, 영 쌍선형 형식도 대칭이다. 따라서 $V_{\text{sym}}^{(2)}$는 $V^{(2)}$의 부분공간이다. 마찬가지로 $V_{\text{alt}}^{(2)}$도 $V^{(2)}$의 부분공간이다.
 
 이제 임의의 $\beta\in V^{(2)}$에 대해 $\rho,\alpha\in V^{(2)}$를
+
 $$
 \rho(u,w)=\frac{\beta(u,w)+\beta(w,u)}{2},\qquad
 \alpha(u,w)=\frac{\beta(u,w)-\beta(w,u)}{2}
 $$
-로 정의한다. 그러면 $\rho\in V_{\operatorname{sym}}^{(2)}$, $\alpha\in V_{\operatorname{alt}}^{(2)}$이고 $\beta=\rho+\alpha$이다. 따라서
+로 정의한다. 그러면 $\rho\in V_{\text{sym}}^{(2)}$, $\alpha\in V_{\text{alt}}^{(2)}$이고 $\beta=\rho+\alpha$이다. 따라서
 $$
-V^{(2)}=V_{\operatorname{sym}}^{(2)}+V_{\operatorname{alt}}^{(2)}.
+V^{(2)}=V_{\text{sym}}^{(2)}+V_{\text{alt}}^{(2)}.
 $$
 
-마지막으로 두 부분공간의 교집합이 $\{0\}$임을 보이자. $\beta\in V_{\operatorname{sym}}^{(2)}\cap V_{\operatorname{alt}}^{(2)}$라고 하자. $u,w\in V$이면 9.16에 의해
+마지막으로 두 부분공간의 교집합이 $\{0\}$임을 보이자. $\beta\in V_{\text{sym}}^{(2)}\cap V_{\text{alt}}^{(2)}$라고 하자. $u,w\in V$이면 9.16에 의해
 $$
 \beta(u,w)=-\beta(w,u)=-\beta(u,w)
 $$
@@ -456,6 +472,7 @@ $\beta$가 쌍선형 형식이면 $q_\beta=0$일 필요충분조건은 $\beta$�
 **9.19 예: 이차형식**
 
 $\mathbb{R}^3$ 위의 쌍선형 형식 $\beta$를
+
 $$
 \beta((x_1,x_2,x_3),(y_1,y_2,y_3))
 =x_1y_1-4x_1y_2+8x_1y_3-3x_3y_3
@@ -476,6 +493,7 @@ $$
 **증명**
 
 먼저 $q$가 $\mathbb{F}^n$ 위의 이차형식이라고 하자. 그러면 어떤 쌍선형 형식 $\beta$에 대해 $q=q_\beta$이다. $\mathbb{F}^n$의 표준 기저에 대한 $\beta$의 행렬을 $A$라고 하자. 그러면 모든 $(x_1,\ldots,x_n)\in\mathbb{F}^n$에 대해
+
 $$
 \begin{aligned}
 q(x_1,\ldots,x_n)
@@ -485,6 +503,7 @@ q(x_1,\ldots,x_n)
 $$
 
 반대로 위 꼴의 수 $A_{j,k}$가 존재한다고 하자. $\mathbb{F}^n$ 위의 쌍선형 형식 $\beta$를
+
 $$
 \beta((x_1,\ldots,x_n),(y_1,\ldots,y_n))
 =\sum_{k=1}^n\sum_{j=1}^n A_{j,k}x_jy_k
@@ -526,7 +545,7 @@ $$
 q=q_\beta=q_\rho+q_\alpha=q_\rho.
 $$
 
-또 $\rho'\in V_{\operatorname{sym}}^{(2)}$가 $q_{\rho'}=q$를 만족하면 $q_{\rho'-\rho}=0$이다. 따라서 $\rho'-\rho$는 동시에 대칭이고 교대이므로 9.17에 의해 $\rho'=\rho$이다. 그러므로 (a)는 (b)를 함의한다.
+또 $\rho'\in V_{\text{sym}}^{(2)}$가 $q_{\rho'}=q$를 만족하면 $q_{\rho'-\rho}=0$이다. 따라서 $\rho'-\rho$는 동시에 대칭이고 교대이므로 9.17에 의해 $\rho'=\rho$이다. 그러므로 (a)는 (b)를 함의한다.
 
 이제 (b)가 성립한다고 하자. 즉 $q=q_\rho$가 되는 대칭 쌍선형 형식 $\rho$가 존재한다고 하자. $\lambda\in\mathbb{F}$, $v\in V$이면
 $$
@@ -534,6 +553,7 @@ q(\lambda v)=\rho(\lambda v,\lambda v)=\lambda^2\rho(v,v)=\lambda^2q(v).
 $$
 
 또 $u,w\in V$이면
+
 $$
 \begin{aligned}
 q(u+w)-q(u)-q(w)
@@ -551,6 +571,7 @@ $$
 \rho(u,w)=\frac{q(u+w)-q(u)-q(w)}{2}
 $$
 로 정의하자. 그러면 $v\in V$에 대해
+
 $$
 \rho(v,v)=\frac{q(2v)-q(v)-q(v)}{2}
 =\frac{4q(v)-2q(v)}{2}=q(v).
@@ -566,6 +587,7 @@ q(x_1,x_2,x_3)=x_1^2-4x_1x_2+8x_1x_3-3x_3^2.
 $$
 
 9.19의 쌍선형 형식 $\beta$는 $q=q_\beta$를 만족하지만 대칭은 아니다. 그러나 $\mathbb{R}^3$ 위의 쌍선형 형식 $\rho$를
+
 $$
 \begin{aligned}
 \rho((x_1,x_2,x_3),(y_1,y_2,y_3))
@@ -590,6 +612,7 @@ $$
 **증명**
 
 (a) 9.21에 의해 $q=q_\rho$가 되는 $V$ 위의 대칭 쌍선형 형식 $\rho$가 존재한다. 9.12에 의해 어떤 기저 $e_1,\ldots,e_n$에 대한 $\rho$의 행렬은 대각행렬이다. 이 대각선 성분을 $\lambda_1,\ldots,\lambda_n$이라고 하자. 그러면
+
 $$
 \rho(e_j,e_k)=
 \begin{cases}
@@ -598,6 +621,7 @@ $$
 \end{cases}
 $$
 이다. 따라서
+
 $$
 \begin{aligned}
 q(x_1e_1+\cdots+x_ne_n)
@@ -641,7 +665,7 @@ $$
 
 7. 9.13의 증명, 즉 실 내적공간 위의 대칭 쌍선형 형식이 정규직교 기저에 의해 대각화된다는 증명이 $\mathbb{F}=\mathbb{R}$이라는 가정을 빼면 왜 실패하는지 설명하여라.
 
-8. $\dim V$를 사용하여 $\dim V_{\operatorname{sym}}^{(2)}$와 $\dim V_{\operatorname{alt}}^{(2)}$의 공식을 찾아라.
+8. $\dim V$를 사용하여 $\dim V_{\text{sym}}^{(2)}$와 $\dim V_{\text{alt}}^{(2)}$의 공식을 찾아라.
 
 9. $n$이 양의 정수이고
   $$
@@ -707,13 +731,13 @@ $V$ 위의 $1$-선형 형식은 $V$ 위의 선형범함수이다. $V$ 위의 $2$
 
 - 함수 $\beta:(\mathcal{L}(V))^m\to\mathbb{F}$를
   $$
-  \beta(T_1,\ldots,T_m)=\operatorname{tr}(T_1\cdots T_m)
+  \beta(T_1,\ldots,T_m)=\text{tr}(T_1\cdots T_m)
   $$
   로 정의하면 $\beta$는 $\mathcal{L}(V)$ 위의 $m$-선형 형식이다.
 
 ### 교대 다중선형 형식
 
-**9.27 정의: 교대 형식, $V_{\operatorname{alt}}^{(m)}$**
+**9.27 정의: 교대 형식, $V_{\text{alt}}^{(m)}$**
 
 $m$이 양의 정수라고 하자.
 
@@ -723,12 +747,13 @@ $m$이 양의 정수라고 하자.
   $$
   을 만족하면 $\alpha$를 **교대**라고 한다.
 
-- $V_{\operatorname{alt}}^{(m)}$를 다음과 같이 정의한다.
+- $V_{\text{alt}}^{(m)}$를 다음과 같이 정의한다.
+
   $$
-  V_{\operatorname{alt}}^{(m)}
+  V_{\text{alt}}^{(m)}
   =\{\alpha\in V^{(m)}:\alpha\text{는 }V\text{ 위의 교대 }m\text{-선형 형식}\}.
   $$
-  $V_{\operatorname{alt}}^{(m)}$는 $V^{(m)}$의 부분공간이다.
+  $V_{\text{alt}}^{(m)}$는 $V^{(m)}$의 부분공간이다.
 
 **9.28 교대 다중선형 형식과 일차종속**
 
@@ -744,6 +769,7 @@ $$
 v_k=b_1v_1+\cdots+b_{k-1}v_{k-1}
 $$
 이다. 따라서
+
 $$
 \begin{aligned}
 \alpha(v_1,\ldots,v_m)
@@ -777,6 +803,7 @@ $$
 $$
 
 $\alpha$의 다중선형성을 사용하여 오른쪽을 전개하면
+
 $$
 \alpha(v_2,v_1,v_3,\ldots,v_m)
 =-\alpha(v_1,v_2,v_3,\ldots,v_m)
@@ -793,26 +820,26 @@ $$
 $$
 을 얻는다. 일반적으로 홀수 번 바꾸면 값은 $-1$배가 되고, 짝수 번 바꾸면 값은 변하지 않는다.
 
-**9.31 정의: 순열, $\operatorname{perm}m$**
+**9.31 정의: 순열, $\text{perm}m$**
 
 $m$이 양의 정수라고 하자.
 
 - $(1,\ldots,m)$의 **순열**은 $1,\ldots,m$을 각각 정확히 한 번씩 포함하는 리스트 $(j_1,\ldots,j_m)$이다.
 
-- $(1,\ldots,m)$의 모든 순열의 집합을 $\operatorname{perm}m$으로 나타낸다.
+- $(1,\ldots,m)$의 모든 순열의 집합을 $\text{perm}m$으로 나타낸다.
 
 예를 들어
 $$
-(2,3,4,5,1)\in\operatorname{perm}5.
+(2,3,4,5,1)\in\text{perm}5.
 $$
 
-$\operatorname{perm}m$의 원소는 처음 $m$개의 양의 정수의 재배열이라고 생각하면 된다.
+$\text{perm}m$의 원소는 처음 $m$개의 양의 정수의 재배열이라고 생각하면 된다.
 
 **9.32 정의: 순열의 부호**
 
 순열 $(j_1,\ldots,j_m)$의 **부호**는
 $$
-\operatorname{sign}(j_1,\ldots,j_m)=(-1)^N
+\text{sign}(j_1,\ldots,j_m)=(-1)^N
 $$
 으로 정의한다. 여기서 $N$은 $1\le k<\ell\le m$이고, 리스트 $(j_1,\ldots,j_m)$에서 $k$가 $\ell$보다 뒤에 나타나는 정수쌍 $(k,\ell)$의 개수이다.
 
@@ -844,10 +871,11 @@ $$
 
 **9.35 순열과 교대 다중선형 형식**
 
-$m$이 양의 정수이고 $\alpha\in V_{\operatorname{alt}}^{(m)}$라고 하자. 그러면 $V$의 모든 벡터 리스트 $v_1,\ldots,v_m$과 모든 $(j_1,\ldots,j_m)\in\operatorname{perm}m$에 대해
+$m$이 양의 정수이고 $\alpha\in V_{\text{alt}}^{(m)}$라고 하자. 그러면 $V$의 모든 벡터 리스트 $v_1,\ldots,v_m$과 모든 $(j_1,\ldots,j_m)\in\text{perm}m$에 대해
+
 $$
 \alpha(v_{j_1},\ldots,v_{j_m})
-=\operatorname{sign}(j_1,\ldots,j_m)\alpha(v_1,\ldots,v_m).
+=\text{sign}(j_1,\ldots,j_m)\alpha(v_1,\ldots,v_m).
 $$
 
 **증명**
@@ -861,16 +889,18 @@ $$
 v_k=\sum_{j=1}^n b_{j,k}e_j
 $$
 가 되도록 $b_{1,k},\ldots,b_{n,k}\in\mathbb{F}$를 잡는다. 그러면 $V$ 위의 모든 교대 $n$-선형 형식 $\alpha$에 대해
+
 $$
 \alpha(v_1,\ldots,v_n)
 =\alpha(e_1,\ldots,e_n)
-\sum_{(j_1,\ldots,j_n)\in\operatorname{perm}n}
-\operatorname{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}.
+\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
+\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}.
 $$
 
 **증명**
 
 $\alpha$가 $V$ 위의 교대 $n$-선형 형식이라고 하자. 그러면
+
 $$
 \begin{aligned}
 \alpha(v_1,\ldots,v_n)
@@ -878,19 +908,19 @@ $$
 \sum_{j_n=1}^n b_{j_n,n}e_{j_n}\right)\\
 &=\sum_{j_1=1}^n\cdots\sum_{j_n=1}^n
 b_{j_1,1}\cdots b_{j_n,n}\alpha(e_{j_1},\ldots,e_{j_n})\\
-&=\sum_{(j_1,\ldots,j_n)\in\operatorname{perm}n}
+&=\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
 b_{j_1,1}\cdots b_{j_n,n}\alpha(e_{j_1},\ldots,e_{j_n})\\
 &=\alpha(e_1,\ldots,e_n)
-\sum_{(j_1,\ldots,j_n)\in\operatorname{perm}n}
-\operatorname{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}.
+\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
+\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}.
 \end{aligned}
 $$
 
 셋째 줄은 $j_1,\ldots,j_n$이 서로 다른 정수가 아니면 $\alpha(e_{j_1},\ldots,e_{j_n})=0$이기 때문에 성립하고, 마지막 줄은 9.35에서 따른다.
 
-**9.37 $\dim V_{\operatorname{alt}}^{(\dim V)}=1$**
+**9.37 $\dim V_{\text{alt}}^{(\dim V)}=1$**
 
-벡터공간 $V_{\operatorname{alt}}^{(\dim V)}$의 차원은 $1$이다.
+벡터공간 $V_{\text{alt}}^{(\dim V)}$의 차원은 $1$이다.
 
 **증명**
 
@@ -901,30 +931,32 @@ $$
 이다. 또한 9.28에 의해 $e_1,\ldots,e_n$은 일차독립이고, 따라서 $V$의 기저이다.
 
 $v_1,\ldots,v_n\in V$라고 하자. 9.36에서처럼 $b_{j,k}$를 잡으면
+
 $$
 \begin{aligned}
 \alpha'(v_1,\ldots,v_n)
 &=\alpha'(e_1,\ldots,e_n)
-\sum_{(j_1,\ldots,j_n)\in\operatorname{perm}n}
-\operatorname{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\\
+\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
+\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\\
 &=c\alpha(e_1,\ldots,e_n)
-\sum_{(j_1,\ldots,j_n)\in\operatorname{perm}n}
-\operatorname{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\\
+\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
+\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\\
 &=c\alpha(v_1,\ldots,v_n).
 \end{aligned}
 $$
 
-따라서 $\alpha'=c\alpha$이다. 그러므로 $\dim V_{\operatorname{alt}}^{(n)}\le 1$이다.
+따라서 $\alpha'=c\alpha$이다. 그러므로 $\dim V_{\text{alt}}^{(n)}\le 1$이다.
 
 이제 영이 아닌 교대 $n$-선형 형식이 존재함을 보이면 된다. $e_1,\ldots,e_n$을 $V$의 임의의 기저라고 하고, $\varphi_1,\ldots,\varphi_n\in V'$를 모든 $v\in V$에 대해
 $$
 v=\sum_{j=1}^n \varphi_j(v)e_j
 $$
 가 되게 하는 좌표 선형범함수라고 하자. $v_1,\ldots,v_n\in V$에 대해
+
 $$
 \alpha(v_1,\ldots,v_n)
-=\sum_{(j_1,\ldots,j_n)\in\operatorname{perm}n}
-\operatorname{sign}(j_1,\ldots,j_n)
+=\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
+\text{sign}(j_1,\ldots,j_n)
 \varphi_{j_1}(v_1)\cdots\varphi_{j_n}(v_n)
 \tag{9.38}
 $$
@@ -965,6 +997,7 @@ $$
    $$
 
 2. $n\ge 3$이고 $\alpha:\mathbb{F}^n\times\mathbb{F}^n\times\mathbb{F}^n\to\mathbb{F}$를
+
    $$
    \begin{aligned}
    &\alpha((x_1,\ldots,x_n),(y_1,\ldots,y_n),(z_1,\ldots,z_n))\\
@@ -979,28 +1012,30 @@ $$
    $$
    이라고 하자. $\alpha$가 $V$ 위의 교대 $m$-선형 형식임을 증명하여라.
 
-4. 증명하거나 반례를 들어라. $\alpha\in V_{\operatorname{alt}}^{(4)}$이면
+4. 증명하거나 반례를 들어라. $\alpha\in V_{\text{alt}}^{(4)}$이면
    $$
    \{(v_1,v_2,v_3,v_4)\in V^4:\alpha(v_1,v_2,v_3,v_4)=0\}
    $$
    은 $V^4$의 부분공간이다.
 
 5. $m$이 양의 정수이고 $\beta$가 $V$ 위의 $m$-선형 형식이라고 하자. $V$ 위의 $m$-선형 형식 $\alpha$를
+
    $$
    \alpha(v_1,\ldots,v_m)
-   =\sum_{(j_1,\ldots,j_m)\in\operatorname{perm}m}
-   \operatorname{sign}(j_1,\ldots,j_m)
+   =\sum_{(j_1,\ldots,j_m)\in\text{perm}m}
+   \text{sign}(j_1,\ldots,j_m)
    \beta(v_{j_1},\ldots,v_{j_m})
    $$
-   로 정의한다. 왜 $\alpha\in V_{\operatorname{alt}}^{(m)}$인지 설명하여라.
+   로 정의한다. 왜 $\alpha\in V_{\text{alt}}^{(m)}$인지 설명하여라.
 
 6. $m$이 양의 정수이고 $\beta$가 $V$ 위의 $m$-선형 형식이라고 하자. $V$ 위의 $m$-선형 형식 $\alpha$를
+
    $$
    \alpha(v_1,\ldots,v_m)
-   =\sum_{(j_1,\ldots,j_m)\in\operatorname{perm}m}
+   =\sum_{(j_1,\ldots,j_m)\in\text{perm}m}
    \beta(v_{j_1},\ldots,v_{j_m})
    $$
-   로 정의한다. 모든 $v_1,\ldots,v_m\in V$와 모든 $(k_1,\ldots,k_m)\in\operatorname{perm}m$에 대해
+   로 정의한다. 모든 $v_1,\ldots,v_m\in V$와 모든 $(k_1,\ldots,k_m)\in\text{perm}m$에 대해
    $$
    \alpha(v_{k_1},\ldots,v_{k_m})=\alpha(v_1,\ldots,v_m)
    $$
@@ -1020,23 +1055,23 @@ $$
 
 **9.40 정의: $\alpha_T$**
 
-$m$이 양의 정수이고 $T\in\mathcal{L}(V)$라고 하자. $\alpha\in V_{\operatorname{alt}}^{(m)}$에 대해 $\alpha_T\in V_{\operatorname{alt}}^{(m)}$를
+$m$이 양의 정수이고 $T\in\mathcal{L}(V)$라고 하자. $\alpha\in V_{\text{alt}}^{(m)}$에 대해 $\alpha_T\in V_{\text{alt}}^{(m)}$를
 $$
 \alpha_T(v_1,\ldots,v_m)=\alpha(Tv_1,\ldots,Tv_m)
 $$
 로 정의한다. 여기서 $v_1,\ldots,v_m$은 $V$의 임의의 벡터 리스트이다.
 
-$\alpha\mapsto\alpha_T$는 $V_{\operatorname{alt}}^{(m)}$에서 자기 자신으로 가는 선형사상이다. 실제로 $v_j=v_k$이면 $Tv_j=Tv_k$이므로 $\alpha_T(v_1,\ldots,v_m)=0$이다.
+$\alpha\mapsto\alpha_T$는 $V_{\text{alt}}^{(m)}$에서 자기 자신으로 가는 선형사상이다. 실제로 $v_j=v_k$이면 $Tv_j=Tv_k$이므로 $\alpha_T(v_1,\ldots,v_m)=0$이다.
 
 우리는 9.37에서
 $$
-\dim V_{\operatorname{alt}}^{(\dim V)}=1
+\dim V_{\text{alt}}^{(\dim V)}=1
 $$
 임을 보았다. $1$차원 벡터공간에서 자기 자신으로 가는 모든 선형사상은 어떤 유일한 스칼라를 곱하는 사상이다. 이제 $\alpha\mapsto\alpha_T$에 대해 이 스칼라를 $\det T$로 정의한다.
 
 **9.41 정의: 연산자의 행렬식, $\det T$**
 
-$T\in\mathcal{L}(V)$라고 하자. $T$의 **행렬식** $\det T$는 모든 $\alpha\in V_{\operatorname{alt}}^{(\dim V)}$에 대해
+$T\in\mathcal{L}(V)$라고 하자. $T$의 **행렬식** $\det T$는 모든 $\alpha\in V_{\text{alt}}^{(\dim V)}$에 대해
 $$
 \alpha_T=(\det T)\alpha
 $$
@@ -1046,14 +1081,14 @@ $$
 
 $n=\dim V$라고 하자.
 
-- $I$가 $V$ 위의 항등연산자이면 모든 $\alpha\in V_{\operatorname{alt}}^{(n)}$에 대해 $\alpha_I=\alpha$이다. 따라서 $\det I=1$이다.
+- $I$가 $V$ 위의 항등연산자이면 모든 $\alpha\in V_{\text{alt}}^{(n)}$에 대해 $\alpha_I=\alpha$이다. 따라서 $\det I=1$이다.
 
-- 더 일반적으로 $\lambda\in\mathbb{F}$이면 모든 $\alpha\in V_{\operatorname{alt}}^{(n)}$에 대해 $\alpha_{\lambda I}=\lambda^n\alpha$이다. 따라서
+- 더 일반적으로 $\lambda\in\mathbb{F}$이면 모든 $\alpha\in V_{\text{alt}}^{(n)}$에 대해 $\alpha_{\lambda I}=\lambda^n\alpha$이다. 따라서
   $$
   \det(\lambda I)=\lambda^n.
   $$
 
-- 더 일반적으로 $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$이면 모든 $\alpha\in V_{\operatorname{alt}}^{(n)}$에 대해
+- 더 일반적으로 $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$이면 모든 $\alpha\in V_{\text{alt}}^{(n)}$에 대해
   $$
   \alpha_{\lambda T}=\lambda^n\alpha_T=\lambda^n(\det T)\alpha
   $$
@@ -1062,7 +1097,8 @@ $n=\dim V$라고 하자.
   t(\lambda T)=\lambda^n\det T.
   $$
 
-- $T\in\mathcal{L}(V)$이고 $V$가 $T$의 고유벡터들로 이루어진 기저 $e_1,\ldots,e_n$을 가지며, 대응하는 고윳값이 $\lambda_1,\ldots,\lambda_n$이라고 하자. $\alpha\in V_{\operatorname{alt}}^{(n)}$이면
+- $T\in\mathcal{L}(V)$이고 $V$가 $T$의 고유벡터들로 이루어진 기저 $e_1,\ldots,e_n$을 가지며, 대응하는 고윳값이 $\lambda_1,\ldots,\lambda_n$이라고 하자. $\alpha\in V_{\text{alt}}^{(n)}$이면
+
   $$
   \alpha_T(e_1,\ldots,e_n)
   =\alpha(\lambda_1e_1,\ldots,\lambda_ne_n)
@@ -1115,6 +1151,7 @@ $$
 $$
 
 $\alpha$를 $\alpha(e_1,\ldots,e_n)=1$인 $\mathbb{F}^n$ 위의 교대 $n$-선형 형식이라고 하자. 그러면
+
 $$
 \begin{aligned}
 \det(v_1\ \cdots\ v_n)
@@ -1130,10 +1167,11 @@ $$
 **9.46 행렬식 공식**
 
 $n$이 양의 정수이고 $A$가 $n\times n$ 정사각행렬이라고 하자. 그러면
+
 $$
 \det A=
-\sum_{(j_1,\ldots,j_n)\in\operatorname{perm}n}
-\operatorname{sign}(j_1,\ldots,j_n)A_{j_1,1}\cdots A_{j_n,n}.
+\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
+\text{sign}(j_1,\ldots,j_n)A_{j_1,1}\cdots A_{j_n,n}.
 $$
 
 **증명**
@@ -1154,6 +1192,7 @@ $$
   가 된다.
 
 - $A$가 $3\times 3$ 행렬이면 9.46의 공식은
+
   $$
   \begin{aligned}
   \det A
@@ -1177,7 +1216,7 @@ $$
 
 **증명**
 
-$(j_1,\ldots,j_n)\in\operatorname{perm}n$이고 $(j_1,\ldots,j_n)\ne(1,\ldots,n)$이면 어떤 $k\in\{1,\ldots,n\}$에 대해 $j_k>k$이다. 이때 $A$가 상삼각행렬이므로 $A_{j_k,k}=0$이다. 따라서 9.46의 합에서 영이 아닌 기여를 할 수 있는 순열은 $(1,\ldots,n)$뿐이다. 그러므로 $\det A=\lambda_1\cdots\lambda_n$이다.
+$(j_1,\ldots,j_n)\in\text{perm}n$이고 $(j_1,\ldots,j_n)\ne(1,\ldots,n)$이면 어떤 $k\in\{1,\ldots,n\}$에 대해 $j_k>k$이다. 이때 $A$가 상삼각행렬이므로 $A_{j_k,k}=0$이다. 따라서 9.46의 합에서 영이 아닌 기여를 할 수 있는 순열은 $(1,\ldots,n)$뿐이다. 그러므로 $\det A=\lambda_1\cdots\lambda_n$이다.
 
 ### 행렬식의 성질
 
@@ -1195,7 +1234,8 @@ $$
 
 **증명**
 
-(a) $n=\dim V$라고 하자. $\alpha\in V_{\operatorname{alt}}^{(n)}$이고 $v_1,\ldots,v_n\in V$라고 하자. 그러면
+(a) $n=\dim V$라고 하자. $\alpha\in V_{\text{alt}}^{(n)}$이고 $v_1,\ldots,v_n\in V$라고 하자. 그러면
+
 $$
 \begin{aligned}
 \alpha_{ST}(v_1,\ldots,v_n)
@@ -1228,12 +1268,13 @@ $$
 
 따라서 $\det T\ne 0$이고 $\det(T^{-1})$는 $\det T$의 곱셈역원이다.
 
-반대로 $\det T\ne 0$이라고 하자. $v\in V$이고 $v\ne 0$이라고 하자. $v,e_2,\ldots,e_n$을 $V$의 기저로 확장하고, $\alpha\in V_{\operatorname{alt}}^{(n)}$를 $\alpha\ne 0$이 되게 잡는다. 9.39에 의해
+반대로 $\det T\ne 0$이라고 하자. $v\in V$이고 $v\ne 0$이라고 하자. $v,e_2,\ldots,e_n$을 $V$의 기저로 확장하고, $\alpha\in V_{\text{alt}}^{(n)}$를 $\alpha\ne 0$이 되게 잡는다. 9.39에 의해
 $$
 \alpha(v,e_2,\ldots,e_n)\ne 0.
 $$
 
 따라서
+
 $$
 \alpha(Tv,Te_2,\ldots,Te_n)
 =(\det T)\alpha(v,e_2,\ldots,e_n)\ne 0.
@@ -1264,11 +1305,12 @@ $$
 
 **증명**
 
-$n=\dim W=\dim V$라고 하자. $\tau\in W_{\operatorname{alt}}^{(n)}$라고 하자. $\alpha\in V_{\operatorname{alt}}^{(n)}$를
+$n=\dim W=\dim V$라고 하자. $\tau\in W_{\text{alt}}^{(n)}$라고 하자. $\alpha\in V_{\text{alt}}^{(n)}$를
 $$
 \alpha(v_1,\ldots,v_n)=\tau(S^{-1}v_1,\ldots,S^{-1}v_n)
 $$
 로 정의한다. $w_1,\ldots,w_n\in W$이면
+
 $$
 \begin{aligned}
 \tau_{S^{-1}TS}(w_1,\ldots,w_n)
@@ -1292,6 +1334,7 @@ $$
 **증명**
 
 $f_1,\ldots,f_n$을 $\mathbb{F}^n$의 표준 기저라고 하자. $S:\mathbb{F}^n\to V$를 각 $k=1,\ldots,n$에 대해 $Sf_k=e_k$가 되도록 정의한다. 그러면
+
 $$
 \mathcal{M}(S^{-1}TS,(f_1,\ldots,f_n))
 =\mathcal{M}(T,(e_1,\ldots,e_n)).
@@ -1299,6 +1342,7 @@ $$
 $$
 
 따라서
+
 $$
 \begin{aligned}
 \det T
@@ -1379,6 +1423,7 @@ $$
 가 둘 다 $\mathbb{F}^n$ 위의 교대 $n$-선형 형식이라는 사실에서 따른다.
 
 예를 들어 (d)를 증명하자. $v_1,\ldots,v_n\in\mathbb{F}^n$이고 $c\in\mathbb{F}$이면
+
 $$
 \begin{aligned}
 \det(v_1+cv_2\ v_2\ \cdots\ v_n)
@@ -1453,7 +1498,7 @@ $$
 
 $T\in\mathcal{L}(\mathbb{R}^n)$이고 $\Omega\subset\mathbb{R}^n$이라고 하자. 그러면
 $$
-\operatorname{volume}T(\Omega)=|\det T|\,\operatorname{volume}\Omega.
+\text{volume}T(\Omega)=|\det T|\,\text{volume}\Omega.
 $$
 
 이는 7.111과 9.60에서 바로 따른다. 다변수 미적분의 변수변환 공식에서 행렬식의 절댓값이 나타나는 이유가 여기에 있다.
@@ -1507,7 +1552,7 @@ $$
 
 $T\in\mathcal{L}(V)$라고 하자. $n=\dim V$이면 $T$의 특성다항식은 다음 꼴로 쓸 수 있다.
 $$
-z^n-(\operatorname{tr}T)z^{n-1}+\cdots+(-1)^n\det T.
+z^n-(\text{tr}T)z^{n-1}+\cdots+(-1)^n\det T.
 $$
 
 **증명**
@@ -1524,9 +1569,9 @@ $$
 $$
 이다. 이 식에서 $z^{n-1}$의 계수는
 $$
--(A_{1,1}+\cdots+A_{n,n})=-\operatorname{tr}T
+-(A_{1,1}+\cdots+A_{n,n})=-\text{tr}T
 $$
-이다. $\operatorname{perm}n$의 다른 순열들에서 오는 항들은 많아야 $n-2$개의 대각선 꼴 인자 $z-A_{k,k}$를 포함하므로 $z^{n-1}$의 계수에 기여하지 않는다.
+이다. $\text{perm}n$의 다른 순열들에서 오는 항들은 많아야 $n-2$개의 대각선 꼴 인자 $z-A_{k,k}$를 포함하므로 $z^{n-1}$의 계수에 기여하지 않는다.
 
 **9.66 하다마르 부등식**
 
@@ -1544,6 +1589,7 @@ $$
 A=QR
 $$
 이다. 그러면
+
 $$
 \begin{aligned}
 |\det A|
@@ -1563,6 +1609,7 @@ $\mathbb{F}=\mathbb{R}$일 때 이 부등식은 기하적으로 해석할 수 �
 **9.67 반데르몽드 행렬식**
 
 $n>1$이고 $\beta_1,\ldots,\beta_n\in\mathbb{F}$라고 하자. 그러면
+
 $$
 \det
 \begin{pmatrix}
@@ -1601,6 +1648,7 @@ $$
 $$
 
 정의에 의해 $C$는 다음 행렬이다.
+
 $$
 \begin{pmatrix}
 1&0&0&\cdots&0\\
@@ -1642,6 +1690,7 @@ $$
    임을 증명하여라.
 
 5. $A$가 다음과 같은 블록 상삼각행렬이라고 하자.
+
    $$
    A=
    \begin{pmatrix}
@@ -1657,10 +1706,11 @@ $$
    \det A=(\det A_1)\cdots(\det A_m)
    $$
 
-6. $A=(v_1\ \cdots\ v_n)$이 $n\times n$ 행렬이고 $v_k$가 $A$의 $k$번째 열이라고 하자. $(m_1,\ldots,m_n)\in\operatorname{perm}n$이면
+6. $A=(v_1\ \cdots\ v_n)$이 $n\times n$ 행렬이고 $v_k$가 $A$의 $k$번째 열이라고 하자. $(m_1,\ldots,m_n)\in\text{perm}n$이면
+
   $$
   \det(v_{m_1}\ \cdots\ v_{m_n})
-  =\operatorname{sign}(m_1,\ldots,m_n)\det A
+  =\text{sign}(m_1,\ldots,m_n)\det A
   $$
   임을 보여라.
 
@@ -1706,12 +1756,13 @@ $$
     $$
     로 정의한다. 다음을 보여라.
     $$
-    g'(0)=\operatorname{tr}T
+    g'(0)=\text{tr}T
     $$
 
     행렬식의 명시적이지만 복잡한 공식을 사용하지 않는 깔끔한 풀이를 찾아라.
 
 17. $a,b,c$가 양수라고 하자. 다음 타원체의 부피를 구하여라.
+
     $$
     \left\{(x,y,z)\in\mathbb{R}^3:
     \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}<1
@@ -1821,7 +1872,7 @@ $W=V$이면 $V\times W$ 위의 쌍선형 범함수는 $V$ 위의 쌍선형 형�
 
 - $m,n$이 양의 정수라고 하자. $\beta:\mathbb{F}^{m,n}\times\mathbb{F}^{n,m}\to\mathbb{F}$를
   $$
-  \beta(A,B)=\operatorname{tr}(AB)
+  \beta(A,B)=\text{tr}(AB)
   $$
   로 정의하면 $\beta$는 $\mathbb{F}^{m,n}\times\mathbb{F}^{n,m}$ 위의 쌍선형 범함수이다.
 
@@ -1836,6 +1887,7 @@ $$
 $e_1,\ldots,e_m$을 $V$의 기저, $f_1,\ldots,f_n$을 $W$의 기저라고 하자. $\beta\in\mathcal{B}(V,W)$에 대해 $\mathcal{M}(\beta)$를 $m\times n$ 행렬로 정의하되, 그 $j$행 $k$열 성분을 $\beta(e_j,f_k)$로 둔다. 그러면 $\beta\mapsto\mathcal{M}(\beta)$는 $\mathcal{B}(V,W)$에서 $\mathbb{F}^{m,n}$으로 가는 선형사상이다.
 
 $C\in\mathbb{F}^{m,n}$에 대해 $V\times W$ 위의 쌍선형 범함수 $\beta_C$를
+
 $$
 \beta_C(a_1e_1+\cdots+a_me_m,\;b_1f_1+\cdots+b_nf_n)
 =\sum_{k=1}^n\sum_{j=1}^m C_{j,k}a_jb_k
@@ -1895,6 +1947,7 @@ $$
 **증명**
 
 $(\varphi,\tau)\in V'\times W'$라고 하자. 그러면
+
 $$
 \begin{aligned}
 ((v_1+v_2)\otimes w)(\varphi,\tau)
@@ -1926,6 +1979,7 @@ $$
 **증명**
 
 (a)를 증명하자. $e_1,\ldots,e_m$과 $f_1,\ldots,f_n$이 둘 다 일차독립이라고 하자. 선형사상 보조정리에 의해 $\varphi_1,\ldots,\varphi_m\in V'$와 $\tau_1,\ldots,\tau_n\in W'$가 존재하여
+
 $$
 \varphi_j(e_k)=
 \begin{cases}
@@ -1934,6 +1988,7 @@ $$
 \end{cases}
 $$
 이고
+
 $$
 \tau_j(f_k)=
 \begin{cases}
@@ -1944,6 +1999,7 @@ $$
 이다.
 
 스칼라들 $a_{j,k}$가
+
 $$
 \sum_{k=1}^n\sum_{j=1}^m a_{j,k}(e_j\otimes f_k)=0
 \tag{9.75}
@@ -1961,11 +2017,13 @@ $$
 **9.76 예: $\mathbb{F}^m$의 원소와 $\mathbb{F}^n$의 원소의 텐서곱**
 
 $m,n$이 양의 정수라고 하자. $e_1,\ldots,e_m$을 $\mathbb{F}^m$의 표준 기저, $f_1,\ldots,f_n$을 $\mathbb{F}^n$의 표준 기저라고 하자.
+
 $$
 v=(v_1,\ldots,v_m)\in\mathbb{F}^m,\qquad
 w=(w_1,\ldots,w_n)\in\mathbb{F}^n
 $$
 이면
+
 $$
 \begin{aligned}
 v\otimes w
@@ -1980,6 +2038,7 @@ $$
 \{e_j\otimes f_k\}_{j=1,\ldots,m;\ k=1,\ldots,n}
 $$
 에 대해 $v\otimes w$의 계수들은 $v_jw_k$이다. 이 수들을 리스트 대신 $m\times n$ 행렬로 쓰면 $v\otimes w$를 다음 행렬과 동일시할 수 있다.
+
 $$
 \begin{pmatrix}
 v_1w_1&\cdots&v_1w_n\\
@@ -2038,11 +2097,13 @@ $$
 모든 $j=1,\ldots,m$과 $k=1,\ldots,n$에 대해 성립한다.
 
 이제 $v\in V$, $w\in W$라고 하자. 어떤 $a_1,\ldots,a_m,b_1,\ldots,b_n\in\mathbb{F}$에 대해
+
 $$
 v=a_1e_1+\cdots+a_me_m,\qquad
 w=b_1f_1+\cdots+b_nf_n
 $$
 이다. 그러면
+
 $$
 \begin{aligned}
 \widehat{\Gamma}(v\otimes w)
@@ -2068,6 +2129,7 @@ $$
 **9.80 두 내적공간의 텐서곱 위의 내적**
 
 $V$와 $W$가 내적공간이라고 하자. 그러면 모든 $v,u\in V$와 $w,x\in W$에 대해
+
 $$
 \langle v\otimes w,\;u\otimes x\rangle
 =\langle v,u\rangle\langle w,x\rangle
@@ -2077,6 +2139,7 @@ $$
 **증명**
 
 $e_1,\ldots,e_m$을 $V$의 정규직교 기저, $f_1,\ldots,f_n$을 $W$의 정규직교 기저라고 하자. $V\otimes W$ 위의 내적을 다음과 같이 정의한다.
+
 $$
 \left\langle
 \sum_{k=1}^n\sum_{j=1}^m b_{j,k}e_j\otimes f_k,\;
@@ -2089,6 +2152,7 @@ $$
 9.74(b)를 사용하면 9.81이 $V\otimes W$ 위의 내적을 정의함을 확인할 수 있다.
 
 $v,u\in V$와 $w,x\in W$라고 하자. 예를 들어
+
 $$
 v=\sum_{j=1}^m v_je_j,\qquad
 u=\sum_{j=1}^m u_je_j,\qquad
@@ -2096,6 +2160,7 @@ w=\sum_{k=1}^n w_kf_k,\qquad
 x=\sum_{k=1}^n x_kf_k
 $$
 라고 쓰면
+
 $$
 \begin{aligned}
 \langle v\otimes w,\;u\otimes x\rangle
@@ -2115,6 +2180,7 @@ $$
 **9.82 정의: 두 내적공간의 텐서곱 위의 내적**
 
 $V$와 $W$가 내적공간이라고 하자. $V\otimes W$ 위의 내적은 모든 $v,u\in V$와 $w,x\in W$에 대해
+
 $$
 \langle v\otimes w,\;u\otimes x\rangle
 =\langle v,u\rangle\langle w,x\rangle
@@ -2142,6 +2208,7 @@ $$
 **증명**
 
 9.74(b)에 의해 위 리스트는 $V\otimes W$의 기저이다. 정규직교성만 확인하면 된다. $j,M\in\{1,\ldots,m\}$이고 $k,N\in\{1,\ldots,n\}$이면
+
 $$
 \langle e_j\otimes f_k,\;e_M\otimes f_N\rangle
 =\langle e_j,e_M\rangle\langle f_k,f_N\rangle
@@ -2190,6 +2257,7 @@ $$
   로 정의한다.
 
 - $v_1\in V_1,\ldots,v_m\in V_m$에 대해 텐서곱 $v_1\otimes\cdots\otimes v_m$은 $V_1\otimes\cdots\otimes V_m$의 원소로서 모든 $(\varphi_1,\ldots,\varphi_m)\in V_1'\times\cdots\times V_m'$에 대해
+
   $$
   (v_1\otimes\cdots\otimes v_m)(\varphi_1,\ldots,\varphi_m)
   =\varphi_1(v_1)\cdots\varphi_m(v_m)
@@ -2230,6 +2298,7 @@ $$
 $U$가 벡터공간이라고 하자.
 
 (a) $\Gamma:V_1\times\cdots\times V_m\to U$가 $m$-선형 사상이라고 하자. 그러면 모든 $(v_1,\ldots,v_m)\in V_1\times\cdots\times V_m$에 대해
+
 $$
 \widehat{\Gamma}(v_1\otimes\cdots\otimes v_m)
 =\Gamma(v_1,\ldots,v_m)
@@ -2285,6 +2354,7 @@ $$
 6. $m,n$이 양의 정수라고 하자. 연습문제 5와 유사하게, $\mathbb{F}$의 성분을 가지는 랭크가 $2$ 이하인 $m\times n$ 행렬들의 집합을 설명하여라.
 
 7. $\dim V>2$이고 $\dim W>2$라고 하자. 다음을 증명하여라.
+
    $$
    \{v_1\otimes w_1+v_2\otimes w_2:
    v_1,v_2\in V,\ w_1,w_2\in W\}\ne V\otimes W
@@ -2315,6 +2385,7 @@ $$
     임을 증명하여라. 여기서 연습문제 9 뒤의 표기를 사용한다.
 
 12. $V_1,\ldots,V_m$이 유한차원 내적공간이라고 하자. 모든 $(v_1,\ldots,v_m)$과 $(u_1,\ldots,u_m)$에 대해
+
     $$
     \langle v_1\otimes\cdots\otimes v_m,\;
     u_1\otimes\cdots\otimes u_m\rangle
@@ -2323,6 +2394,7 @@ $$
     을 만족하는 $V_1\otimes\cdots\otimes V_m$ 위의 유일한 내적이 존재함을 증명하여라.
 
     위 식은 모든 $(v_1,\ldots,v_m)\in V_1\times\cdots\times V_m$에 대해
+
     $$
     \|v_1\otimes\cdots\otimes v_m\|
     =\|v_1\|\cdots\|v_m\|

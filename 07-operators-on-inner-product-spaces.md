@@ -46,6 +46,7 @@ $$
 T(x_1,x_2,x_3)=(x_2+3x_3,2x_1)
 $$
 로 정의하자. $(x_1,x_2,x_3)\in\mathbb{R}^3$이고 $(y_1,y_2)\in\mathbb{R}^2$이면
+
 $$
 \begin{aligned}
 \langle T(x_1,x_2,x_3),(y_1,y_2)\rangle
@@ -67,6 +68,7 @@ $$
 Tv=\langle v,u\rangle x
 $$
 로 정의한다. $v\in V$와 $w\in W$이면
+
 $$
 \begin{aligned}
 \langle Tv,w\rangle
@@ -90,6 +92,7 @@ $T\in\mathcal{L}(V,W)$이면 $T^*\in\mathcal{L}(W,V)$이다.
 **증명**
 
 $v\in V$이고 $w_1,w_2\in W$이면
+
 $$
 \begin{aligned}
 \langle Tv,w_1+w_2\rangle
@@ -100,6 +103,7 @@ $$
 $$
 
 따라서 $T^*(w_1+w_2)=T^*w_1+T^*w_2$이다. 또한 $\lambda\in\mathbb{F}$이고 $w\in W$이면
+
 $$
 \begin{aligned}
 \langle Tv,\lambda w\rangle
@@ -148,12 +152,14 @@ $$
 **증명**
 
 $v\in V$와 $w\in W$를 잡는다. (a)는
+
 $$
 \langle (S+T)v,w\rangle
 =\langle Sv,w\rangle+\langle Tv,w\rangle
 =\langle v,S^*w+T^*w\rangle
 $$
 에서 따른다. (b)는
+
 $$
 \langle (\lambda T)v,w\rangle
 =\lambda\langle Tv,w\rangle
@@ -161,6 +167,7 @@ $$
 =\langle v,\overline{\lambda}T^*w\rangle
 $$
 에서 따른다. (c)는
+
 $$
 \langle T^*w,v\rangle
 =\overline{\langle v,T^*w\rangle}
@@ -168,6 +175,7 @@ $$
 =\langle w,Tv\rangle
 $$
 에서 따른다. (d)는 $u\in U$에 대해
+
 $$
 \langle (ST)v,u\rangle
 =\langle S(Tv),u\rangle
@@ -184,34 +192,35 @@ $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
 (a)
 $$
-\operatorname{null}T^*=(\operatorname{range}T)^\perp.
+\text{null}T^*=(\text{range}T)^\perp.
 $$
 
 (b)
 $$
-\operatorname{range}T^*=(\operatorname{null}T)^\perp.
+\text{range}T^*=(\text{null}T)^\perp.
 $$
 
 (c)
 $$
-\operatorname{null}T=(\operatorname{range}T^*)^\perp.
+\text{null}T=(\text{range}T^*)^\perp.
 $$
 
 (d)
 $$
-\operatorname{range}T=(\operatorname{null}T^*)^\perp.
+\text{range}T=(\text{null}T^*)^\perp.
 $$
 
 **증명**
 
 $w\in W$이면
+
 $$
 \begin{aligned}
-w\in\operatorname{null}T^*
+w\in\text{null}T^*
 &\Longleftrightarrow T^*w=0\\
 &\Longleftrightarrow \langle v,T^*w\rangle=0\quad\text{모든 }v\in V\text{에 대해}\\
 &\Longleftrightarrow \langle Tv,w\rangle=0\quad\text{모든 }v\in V\text{에 대해}\\
-&\Longleftrightarrow w\in(\operatorname{range}T)^\perp.
+&\Longleftrightarrow w\in(\text{range}T)^\perp.
 \end{aligned}
 $$
 
@@ -229,6 +238,7 @@ $$
 행렬의 모든 성분이 실수이면 $A^*=A^{\mathrm{t}}$이다. 여기서 $A^{\mathrm{t}}$는 행과 열을 바꿔 얻는 전치행렬이다.
 
 다음 $2\times 3$ 행렬
+
 $$
 \begin{pmatrix}
 2 & 3+4i & 7\\
@@ -236,6 +246,7 @@ $$
 \end{pmatrix}
 $$
 의 켤레전치는
+
 $$
 \begin{pmatrix}
 2 & 6\\
@@ -270,6 +281,7 @@ T e_k=\langle T e_k,f_1\rangle f_1+\cdots+\langle T e_k,f_m\rangle f_m.
 $$
 
 따라서 $\mathcal{M}(T)$의 $j$행 $k$열 성분은 $\langle T e_k,f_j\rangle$이다. 같은 말을 $T^*$에 적용하면 $\mathcal{M}(T^*)$의 $j$행 $k$열 성분은
+
 $$
 \langle T^*f_k,e_j\rangle
 =\langle f_k,T e_j\rangle
@@ -300,6 +312,7 @@ $$
 **7.11 예: 행렬로 자기수반성 판정하기**
 
 $c\in\mathbb{F}$이고 $T$가 표준기저에 대한 행렬
+
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
@@ -308,6 +321,7 @@ $$
 \end{pmatrix}
 $$
 을 가지는 $\mathbb{F}^2$ 위의 연산자라고 하자. 그러면
+
 $$
 \mathcal{M}(T^*)=
 \begin{pmatrix}
@@ -332,6 +346,7 @@ $$
 **증명**
 
 $T$가 $V$ 위의 자기수반 연산자라고 하자. $\lambda$가 $T$의 고윳값이고 $v\ne 0$인 벡터가 $Tv=\lambda v$를 만족한다고 하자. 그러면
+
 $$
 \lambda\|v\|^2
 =\langle \lambda v,v\rangle
@@ -370,6 +385,7 @@ $$
 **7.14 모든 $v$에 대해 $\langle Tv,v\rangle$가 실수인 것과 자기수반성, 복소수의 경우**
 
 $V$가 복소 내적공간이고 $T\in\mathcal{L}(V)$라고 하자. 그러면
+
 $$
 T\text{가 자기수반}
 \Longleftrightarrow
@@ -379,6 +395,7 @@ $$
 **증명**
 
 $v\in V$이면
+
 $$
 \langle T^*v,v\rangle
 =\overline{\langle v,T^*v\rangle}
@@ -387,6 +404,7 @@ $$
 $$
 
 따라서
+
 $$
 \begin{aligned}
 T\text{가 자기수반}
@@ -410,6 +428,7 @@ $$
 **증명**
 
 $V$가 복소 내적공간인 경우에는 7.13에서 이미 증명했다. 따라서 $V$가 실 내적공간이라고 하자. $u,w\in V$이면
+
 $$
 \langle Tu,w\rangle
 =\frac{\langle T(u+w),u+w\rangle-\langle T(u-w),u-w\rangle}{4}.
@@ -434,6 +453,7 @@ $$
 **7.19 예: 정규이지만 자기수반이 아닌 연산자**
 
 $T$를 표준기저에 대한 행렬이
+
 $$
 \begin{pmatrix}
 2 & -3\\
@@ -447,12 +467,14 @@ $$
 이 연산자는 자기수반이 아니다. 행렬의 $2$행 $1$열 성분은 $3$이지만 $1$행 $2$열 성분의 켤레복소수는 $-3$이기 때문이다.
 
 한편
+
 $$
 \begin{pmatrix} 2 & -3\\ 3 & 2 \end{pmatrix}
 \begin{pmatrix} 2 & 3\\ -3 & 2 \end{pmatrix} =
 \begin{pmatrix} 13 & 0\\ 0 & 13 \end{pmatrix}
 $$
 이고
+
 $$
 \begin{pmatrix} 2 & 3\\ -3 & 2 \end{pmatrix}
 \begin{pmatrix} 2 & -3\\ 3 & 2 \end{pmatrix} =
@@ -464,6 +486,7 @@ $$
 **7.20 $T$가 정규인 것과 $Tv$, $T^*v$의 노름이 같은 것**
 
 $T\in\mathcal{L}(V)$라고 하자. 그러면
+
 $$
 T\text{가 정규}
 \Longleftrightarrow
@@ -473,6 +496,7 @@ $$
 **증명**
 
 우리는
+
 $$
 \begin{aligned}
 T\text{가 정규}
@@ -490,22 +514,23 @@ $T\in\mathcal{L}(V)$가 정규라고 하자. 그러면 다음이 성립한다.
 
 (a)
 $$
-\operatorname{null}T=\operatorname{null}T^*.
+\text{null}T=\text{null}T^*.
 $$
 
 (b)
 $$
-\operatorname{range}T=\operatorname{range}T^*.
+\text{range}T=\text{range}T^*.
 $$
 
 (c)
 $$
-V=\operatorname{null}T\oplus\operatorname{range}T.
+V=\text{null}T\oplus\text{range}T.
 $$
 
 (d) 모든 $\lambda\in\mathbb{F}$에 대해 $T-\lambda I$는 정규이다.
 
 (e) $v\in V$와 $\lambda\in\mathbb{F}$에 대해
+
 $$
 Tv=\lambda v
 \Longleftrightarrow
@@ -515,34 +540,38 @@ $$
 **증명**
 
 (a) $v\in V$이면 7.20에 의해
+
 $$
-v\in\operatorname{null}T
+v\in\text{null}T
 \Longleftrightarrow
 \|Tv\|=0
 \Longleftrightarrow
 \|T^*v\|=0
 \Longleftrightarrow
-v\in\operatorname{null}T^*.
+v\in\text{null}T^*.
 $$
 
 (b)는
+
 $$
-\operatorname{range}T
-=(\operatorname{null}T^*)^\perp
-=(\operatorname{null}T)^\perp
-=\operatorname{range}T^*
+\text{range}T
+=(\text{null}T^*)^\perp
+=(\text{null}T)^\perp
+=\text{range}T^*
 $$
 에서 따른다. 여기서 첫 번째 등식은 7.6(d), 두 번째 등식은 (a), 세 번째 등식은 7.6(b)를 사용했다.
 
 (c)는
+
 $$
-V=\operatorname{null}T\oplus(\operatorname{null}T)^\perp
-=\operatorname{null}T\oplus\operatorname{range}T^*
-=\operatorname{null}T\oplus\operatorname{range}T
+V=\text{null}T\oplus(\text{null}T)^\perp
+=\text{null}T\oplus\text{range}T^*
+=\text{null}T\oplus\text{range}T
 $$
 에서 따른다.
 
 (d) $\lambda\in\mathbb{F}$이면
+
 $$
 \begin{aligned}
 (T-\lambda I)(T-\lambda I)^*
@@ -557,6 +586,7 @@ $$
 따라서 $T-\lambda I$는 정규이다.
 
 (e)는 (d)와 7.20을 $T-\lambda I$에 적용하면 나온다. 실제로
+
 $$
 \|(T-\lambda I)v\|
 =\|(T-\lambda I)^*v\|
@@ -572,6 +602,7 @@ $T\in\mathcal{L}(V)$가 정규라고 하자. 그러면 $T$의 서로 다른 고�
 **증명**
 
 $\alpha,\beta$가 $T$의 서로 다른 고윳값이고, 대응하는 고유벡터를 각각 $u,v$라고 하자. 그러면 $Tu=\alpha u$이고 $Tv=\beta v$이다. 7.21(e)에 의해 $T^*v=\overline{\beta}v$이다. 따라서
+
 $$
 \begin{aligned}
 (\alpha-\beta)\langle u,v\rangle
@@ -659,14 +690,15 @@ $$
 7. $T\in\mathcal{L}(V,W)$이면 다음을 증명하여라.
 
    (a)
+
    $$
-   \dim\operatorname{null}T^*
-   =\dim\operatorname{null}T+\dim W-\dim V.
+   \dim\text{null}T^*
+   =\dim\text{null}T+\dim W-\dim V.
    $$
 
    (b)
    $$
-   \dim\operatorname{range}T^*=\dim\operatorname{range}T.
+   \dim\text{range}T^*=\dim\text{range}T.
    $$
 
 8. $A$가 $\mathbb{F}$의 성분을 가진 $m\times n$ 행렬이라고 하자. 연습문제 7번의 (b)를 사용하여 $A$의 행랭크와 열랭크가 같음을 증명하여라.
@@ -716,6 +748,7 @@ $$
     (a) 이 내적에서 $T$가 자기수반이 아님을 보여라.
 
     (b) 기저 $1,x,x^2$에 대한 $T$의 행렬은
+
     $$
     \begin{pmatrix}
     0 & 0 & 0\\
@@ -782,10 +815,11 @@ $$
     (b) $T$가 정규인 것과 리스트 $u,x$가 일차종속인 것은 동치임을 증명하여라.
 
 27. $T\in\mathcal{L}(V)$가 정규라고 하자. 모든 양의 정수 $k$에 대해
+
     $$
-    \operatorname{null}T^k=\operatorname{null}T,
+    \text{null}T^k=\text{null}T,
     \qquad
-    \operatorname{range}T^k=\operatorname{range}T
+    \text{range}T^k=\text{range}T
     $$
     임을 증명하여라.
 
@@ -793,12 +827,12 @@ $$
 
 29. 증명하거나 반례를 들어라. $T\in\mathcal{L}(V)$이고 $V$의 정규직교기저 $e_1,\ldots,e_n$이 존재하여 각 $k=1,\ldots,n$에 대해 $\|Te_k\|=\|T^*e_k\|$이면 $T$는 정규이다.
 
-30. $T\in\mathcal{L}(\mathbb{F}^3)$가 정규이고 $T(1,1,1)=(2,2,2)$라고 하자. $(z_1,z_2,z_3)\in\operatorname{null}T$이면 $z_1+z_2+z_3=0$임을 증명하여라.
+30. $T\in\mathcal{L}(\mathbb{F}^3)$가 정규이고 $T(1,1,1)=(2,2,2)$라고 하자. $(z_1,z_2,z_3)\in\text{null}T$이면 $z_1+z_2+z_3=0$임을 증명하여라.
 
 31. $n$을 양의 정수로 고정한다. 실숫값 연속함수들의 내적공간 $C[-\pi,\pi]$에 내적 $\langle f,g\rangle=\int_{-\pi}^{\pi}fg$가 주어져 있다고 하자. 다음 부분공간을 생각한다.
 
     $$
-    V=\operatorname{span}(1,\cos x,\cos 2x,\ldots,\cos nx,\sin x,\sin 2x,\ldots,\sin nx).
+    V=\text{span}(1,\cos x,\cos 2x,\ldots,\cos nx,\sin x,\sin 2x,\ldots,\sin nx).
     $$
 
     (a) $D\in\mathcal{L}(V)$를 $Df=f'$로 정의한다. $D^*=-D$임을 보여라. 따라서 $D$가 정규이지만 자기수반은 아님을 결론지어라.
@@ -841,6 +875,7 @@ $$
 **증명**
 
 $v$를 $V$의 영이 아닌 벡터라고 하자. 그러면
+
 $$
 \begin{aligned}
 \langle (T^2+bT+cI)v,v\rangle
@@ -897,6 +932,7 @@ $\mathbb{F}=\mathbb{R}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 다�
 **7.30 예: 한 연산자의 고유벡터들로 이루어진 정규직교기저**
 
 표준기저에 대한 행렬이
+
 $$
 \begin{pmatrix}
 14 & -13 & 8\\
@@ -905,12 +941,14 @@ $$
 \end{pmatrix}
 $$
 인 $\mathbb{R}^3$ 위의 연산자 $T$를 생각하자. 이 실수 행렬은 자신의 전치와 같으므로 $T$는 자기수반이다. 직접 확인하면
+
 $$
 \frac{(1,-1,0)}{\sqrt2},\qquad
 \frac{(1,1,1)}{\sqrt3},\qquad
 \frac{(1,1,-2)}{\sqrt6}
 $$
 는 $T$의 고유벡터들로 이루어진 $\mathbb{R}^3$의 정규직교기저이다. 이 기저에 대한 $T$의 행렬은 대각행렬
+
 $$
 \begin{pmatrix}
 27 & 0 & 0\\
@@ -939,6 +977,7 @@ $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 다�
 **증명**
 
 먼저 $T$가 정규라고 하자. 슈어 정리(6.38)에 의해, 어떤 정규직교기저 $e_1,\ldots,e_n$에 대해 $T$의 행렬은 상삼각이다. 즉
+
 $$
 \mathcal{M}(T,(e_1,\ldots,e_n)) =
 \begin{pmatrix}
@@ -972,6 +1011,7 @@ $$
 T(w,z)=(2w-3z,3w+2z)
 $$
 로 정의하자. 표준기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 2 & -3\\
@@ -979,11 +1019,13 @@ $$
 \end{pmatrix}
 $$
 이다. 예 7.19에서 보았듯이 $T$는 정규 연산자이다. 직접 확인하면
+
 $$
 \frac{1}{\sqrt2}(i,1),\qquad
 \frac{1}{\sqrt2}(-i,1)
 $$
 는 $T$의 고유벡터들로 이루어진 $\mathbb{C}^2$의 정규직교기저이고, 이 기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 2+3i & 0\\
@@ -1119,10 +1161,11 @@ $$
 \begin{pmatrix} 2 & -1\\ -1 & 1 \end{pmatrix}
 $$
 인 $T\in\mathcal{L}(\mathbb{F}^2)$를 생각하자. 그러면 $T$는 자기수반이고
+
 $$
 \begin{aligned}
 \langle T(w,z),(w,z)\rangle
-&=2|w|^2-2\operatorname{Re}(w\overline z)+|z|^2\\
+&=2|w|^2-2\text{Re}(w\overline z)+|z|^2\\
 &=|w-z|^2+|w|^2\ge 0.
 \end{aligned}
 $$
@@ -1194,6 +1237,7 @@ $$
 T^*=(R^*R)^*=R^*R=T
 $$
 이므로 $T$는 자기수반이다. 또한 모든 $v\in V$에 대해
+
 $$
 \langle Tv,v\rangle
 =\langle R^*Rv,v\rangle
@@ -1249,6 +1293,7 @@ $$
 S(x,y)=(x,2y),\qquad T(x,y)=(x+y,x+y)
 $$
 로 정의하자. 표준기저에 대해
+
 $$
 \mathcal{M}(S)=
 \begin{pmatrix}
@@ -1275,6 +1320,7 @@ $$
 이므로 $S$와 $T$는 양의 연산자이다.
 
 $\mathbb{R}^2$의 표준기저는 $S$의 고유벡터들로 이루어진 정규직교기저이다. 또한
+
 $$
 \left(\frac1{\sqrt2},\frac1{\sqrt2}\right),\qquad
 \left(\frac1{\sqrt2},-\frac1{\sqrt2}\right)
@@ -1282,6 +1328,7 @@ $$
 는 $T$의 고유벡터들로 이루어진 정규직교기저이고, 첫 번째 고유벡터의 고윳값은 $2$, 두 번째 고유벡터의 고윳값은 $0$이다. 따라서 $\sqrt T$는 같은 고유벡터들을 가지며 대응하는 고윳값은 $\sqrt2$와 $0$이다.
 
 표준기저에 대해
+
 $$
 \mathcal{M}(\sqrt S)=
 \begin{pmatrix}
@@ -1317,6 +1364,7 @@ $$
 1. $T\in\mathcal{L}(V)$라고 하자. $T$와 $-T$가 모두 양의 연산자이면 $T=0$임을 증명하여라.
 
 2. 표준기저에 대한 행렬이
+
    $$
    \begin{pmatrix}
    2 & -1 & 0 & 0\\
@@ -1372,8 +1420,8 @@ $$
 16. $T$가 $V$ 위의 양의 연산자라고 하자. 다음을 증명하여라.
 
     $$
-    \operatorname{null}\sqrt T=\operatorname{null}T,\qquad
-    \operatorname{range}\sqrt T=\operatorname{range}T.
+    \text{null}\sqrt T=\text{null}T,\qquad
+    \text{range}\sqrt T=\text{range}T.
     $$
 
 17. $T\in\mathcal{L}(V)$가 양의 연산자라고 하자. 실수 계수를 가진 다항식 $p$가 존재하여 $\sqrt T=p(T)$가 됨을 증명하여라.
@@ -1391,6 +1439,7 @@ $$
 21. $n$이 양의 정수라고 하자. $n\times n$ 힐베르트 행렬은 $j$행 $k$열 성분이 $\frac1{j+k-1}$인 행렬이다. $T\in\mathcal{L}(V)$의 어떤 정규직교기저에 대한 행렬이 $n\times n$ 힐베르트 행렬이라고 하자. $T$가 가역인 양의 연산자임을 증명하여라.
 
     예를 들어 $4\times 4$ 힐베르트 행렬은
+
     $$
     \begin{pmatrix}
     1 & \frac12 & \frac13 & \frac14\\
@@ -1412,7 +1461,7 @@ $$
 24. $S$와 $T$가 $V$ 위의 양의 연산자라고 하자. 다음을 증명하여라.
 
     $$
-    \operatorname{null}(S+T)=\operatorname{null}S\cap\operatorname{null}T.
+    \text{null}(S+T)=\text{null}S\cap\text{null}T.
     $$
 
 25. 7A절 연습문제 31(b)의 두 번째 미분 연산자를 $T$라고 하자. $-T$가 양의 연산자임을 보여라.
@@ -1441,11 +1490,13 @@ $$
 **7.45 예: 정규직교기저를 정규직교 리스트로 보내면 등거리사상이다**
 
 $e_1,\ldots,e_n$이 $V$의 정규직교기저이고 $g_1,\ldots,g_n$이 $W$의 정규직교 리스트라고 하자. $S\in\mathcal{L}(V,W)$가 각 $k=1,\ldots,n$에 대해 $Se_k=g_k$를 만족한다고 하자. $v\in V$이면
+
 $$
 v=\langle v,e_1\rangle e_1+\cdots+\langle v,e_n\rangle e_n
 \tag{7.46}
 $$
 이고
+
 $$
 \|v\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
 \tag{7.47}
@@ -1457,6 +1508,7 @@ Sv=\langle v,e_1\rangle g_1+\cdots+\langle v,e_n\rangle g_n.
 $$
 
 따라서
+
 $$
 \|Sv\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
 \tag{7.48}
@@ -1504,6 +1556,7 @@ $$
 이므로 (c)가 성립한다. (c)를 $u=e_j$, $v=e_k$에 적용하면 $Se_1,\ldots,Se_n$이 정규직교 리스트이므로 (d)가 성립한다.
 
 (d)가 성립한다고 하자. $A=\mathcal{M}(S,(e_1,\ldots,e_n),(f_1,\ldots,f_m))$라고 하자. $k,r\in\{1,\ldots,n\}$이면
+
 $$
 \sum_{j=1}^m A_{j,k}\overline{A_{j,r}} =
 \left\langle \sum_{j=1}^m A_{j,k}f_j,\sum_{j=1}^m A_{j,r}f_j\right\rangle =\langle Se_k,Se_r\rangle =
@@ -1529,6 +1582,7 @@ $$
 **7.52 예: $\mathbb{R}^2$의 회전**
 
 $\theta\in\mathbb{R}$이고 $S$가 표준기저에 대한 행렬
+
 $$
 \begin{pmatrix}
 \cos\theta & -\sin\theta\\
@@ -1601,6 +1655,7 @@ $\mathbb{F}=\mathbb{C}$이고 $S\in\mathcal{L}(V)$라고 하자. 그러면 다�
 $S$가 유니터리이면 7.53에 의해 $S$는 정규이다. 복소 스펙트럼 정리(7.31)에 의해 $S$의 고유벡터들로 이루어진 정규직교기저가 존재한다. 7.54에 의해 모든 고윳값의 절댓값은 $1$이다.
 
 반대로 $e_1,\ldots,e_n$이 $S$의 고유벡터들로 이루어진 정규직교기저이고 대응하는 고윳값 $\lambda_1,\ldots,\lambda_n$이 모두 $|\lambda_k|=1$을 만족한다고 하자. 그러면
+
 $$
 \langle Se_j,Se_k\rangle
 =\langle \lambda_j e_j,\lambda_k e_k\rangle
@@ -1651,15 +1706,16 @@ $$
 **증명**
 
 $A$의 열들을 $\mathbb{F}^n$의 벡터 $v_1,\ldots,v_n$이라고 생각하자. 이 리스트에 그램-슈미트 절차를 적용하여 각 $k=1,\ldots,n$에 대해
+
 $$
-\operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(e_1,\ldots,e_k)
+\text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
 \tag{7.59}
 $$
 를 만족하는 $\mathbb{F}^n$의 정규직교기저 $e_1,\ldots,e_n$을 얻는다. 행렬 $R$의 $j$행 $k$열 성분을
 $$
 R_{j,k}=\langle v_k,e_j\rangle
 $$
-로 정의한다. $j>k$이면 $e_j$는 $\operatorname{span}(e_1,\ldots,e_k)$에 직교하므로, (7.59)에 의해 $v_k$에도 직교한다. 따라서 $R_{j,k}=0$이고 $R$는 상삼각행렬이다.
+로 정의한다. $j>k$이면 $e_j$는 $\text{span}(e_1,\ldots,e_k)$에 직교하므로, (7.59)에 의해 $v_k$에도 직교한다. 따라서 $R_{j,k}=0$이고 $R$는 상삼각행렬이다.
 
 $Q$를 열들이 $e_1,\ldots,e_n$인 유니터리 행렬로 두자. $QR$의 $k$번째 열은
 $$
@@ -1667,11 +1723,12 @@ $$
 $$
 이고, 이는 6.30(a)에 의해 $v_k$이다. 따라서 $A=QR$이다. 그램-슈미트 절차의 정의에 의해 각 $\langle v_k,e_k\rangle$은 양수이므로 $R$의 대각성분은 모두 양수이다.
 
-유일성을 보이기 위해 $A=\widehat Q\widehat R$도 같은 조건을 만족한다고 하자. $\widehat Q$의 열을 $q_1,\ldots,q_n$이라 하면 각 $k$에 대해 $\operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(q_1,\ldots,q_k)$이고 $\langle v_k,q_k\rangle>0$이다. 6B절 연습문제 10번의 유일성에 의해 $q_k=e_k$이다. 따라서 $\widehat Q=Q$이고 곧 $\widehat R=R$이다.
+유일성을 보이기 위해 $A=\widehat Q\widehat R$도 같은 조건을 만족한다고 하자. $\widehat Q$의 열을 $q_1,\ldots,q_n$이라 하면 각 $k$에 대해 $\text{span}(v_1,\ldots,v_k)=\text{span}(q_1,\ldots,q_k)$이고 $\langle v_k,q_k\rangle>0$이다. 6B절 연습문제 10번의 유일성에 의해 $q_k=e_k$이다. 따라서 $\widehat Q=Q$이고 곧 $\widehat R=R$이다.
 
 **7.60 예: $3\times 3$ 행렬의 QR 분해**
 
 행렬
+
 $$
 A=
 \begin{pmatrix}
@@ -1681,18 +1738,21 @@ A=
 \end{pmatrix}
 $$
 의 QR 분해를 구하자. $A$의 열들을
+
 $$
 v_1=(1,0,0),\qquad
 v_2=(2,1,3),\qquad
 v_3=(1,-4,2)
 $$
 라고 하자. 그램-슈미트 절차를 적용하면
+
 $$
 e_1=(1,0,0),\qquad
 e_2=\left(0,\frac1{\sqrt{10}},\frac3{\sqrt{10}}\right),\qquad
 e_3=\left(0,-\frac3{\sqrt{10}},\frac1{\sqrt{10}}\right)
 $$
 을 얻는다. 따라서
+
 $$
 Q=
 \begin{pmatrix}
@@ -1702,6 +1762,7 @@ Q=
 \end{pmatrix}
 $$
 이고, $R_{j,k}=\langle v_k,e_j\rangle$로부터
+
 $$
 R=
 \begin{pmatrix}
@@ -1711,6 +1772,7 @@ R=
 \end{pmatrix}
 $$
 을 얻는다. 실제로
+
 $$
 QR=
 \begin{pmatrix}
@@ -1775,6 +1837,7 @@ $$
 앙드레-루이 촐레스키(1875-1918)는 이 분해를 발견했고, 이 결과는 사후인 1924년에 출판되었다.
 
 유일성을 보이자. $S$도 대각선 성분이 모두 양수인 상삼각행렬이고 $B=S^*S$라고 하자. $B$가 가역이므로 $S$도 가역이다. $B=S^*S$의 양변 오른쪽에 $S^{-1}$를 곱하면 $BS^{-1}=S^*$이다. 위에서 택한 $A$에 대해
+
 $$
 \begin{aligned}
 (AS^{-1})^*(AS^{-1})
@@ -1848,6 +1911,7 @@ $$
 18. 정사각행렬 $A$가 자신의 전치와 같으면 $A$를 대칭행렬이라고 한다. $A$가 실수 성분을 가진 대칭행렬이면, 실수 성분을 가진 유니터리 행렬 $Q$가 존재하여 $Q^*AQ$가 대각행렬이 됨을 증명하여라.
 
 19. $n$이 양의 정수라고 하자. 이 연습문제에서는 $\mathbb{C}^n$의 원소를 $z=(z_0,z_1,\ldots,z_{n-1})$로 쓴다. $\mathbb{C}^n$ 위의 선형함수 $\omega_0,\omega_1,\ldots,\omega_{n-1}$를
+
     $$
     \omega_j(z_0,z_1,\ldots,z_{n-1})
     =\frac1{\sqrt n}\sum_{m=0}^{n-1}z_m e^{-2\pi ijm/n}
@@ -1861,6 +1925,7 @@ $$
     (a) $\mathcal{F}$가 $\mathbb{C}^n$ 위의 유니터리 연산자임을 보여라.
 
     (b) $(z_0,\ldots,z_{n-1})\in\mathbb{C}^n$이고 $z_n=z_0$로 정의하면
+
     $$
     \mathcal{F}^{-1}(z_0,z_1,\ldots,z_{n-1})
     =\mathcal{F}(z_n,z_{n-1},\ldots,z_1)
@@ -1883,19 +1948,20 @@ $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
 (b)
 $$
-\operatorname{null}T^*T=\operatorname{null}T.
+\text{null}T^*T=\text{null}T.
 $$
 
 (c)
 $$
-\operatorname{range}T^*T=\operatorname{range}T^*.
+\text{range}T^*T=\text{range}T^*.
 $$
 
 (d)
+
 $$
-\dim\operatorname{range}T
-=\dim\operatorname{range}T^*
-=\dim\operatorname{range}T^*T.
+\dim\text{range}T
+=\dim\text{range}T^*
+=\dim\text{range}T^*T.
 $$
 
 **증명**
@@ -1905,6 +1971,7 @@ $$
 (T^*T)^*=T^*(T^*)^*=T^*T
 $$
 이므로 $T^*T$는 자기수반이다. 또한 $v\in V$이면
+
 $$
 \langle (T^*T)v,v\rangle
 =\langle Tv,Tv\rangle
@@ -1913,27 +1980,29 @@ $$
 
 따라서 $T^*T$는 양의 연산자이다.
 
-(b) $v\in\operatorname{null}T^*T$이면
+(b) $v\in\text{null}T^*T$이면
 $$
 \|Tv\|^2=\langle T^*Tv,v\rangle=0
 $$
 이므로 $Tv=0$이다. 반대 포함은 명백하다.
 
 (c)는 (a), (b), 7.6에서
+
 $$
-\operatorname{range}T^*T
-=(\operatorname{null}T^*T)^\perp
-=(\operatorname{null}T)^\perp
-=\operatorname{range}T^*
+\text{range}T^*T
+=(\text{null}T^*T)^\perp
+=(\text{null}T)^\perp
+=\text{range}T^*
 $$
 로 얻는다.
 
 (d)의 첫 등식은
+
 $$
-\dim\operatorname{range}T
-=\dim(\operatorname{null}T^*)^\perp
-=\dim W-\dim\operatorname{null}T^*
-=\dim\operatorname{range}T^*
+\dim\text{range}T
+=\dim(\text{null}T^*)^\perp
+=\dim W-\dim\text{null}T^*
+=\dim\text{range}T^*
 $$
 에서 나오고, 두 번째 등식은 (c)에서 나온다.
 
@@ -1952,6 +2021,7 @@ $$
 T^*T(z_1,z_2,z_3,z_4)=(9z_1,4z_2,0,9z_4)
 $$
 이다. 따라서 $T^*T$의 고윳값은 $9,4,0$이고
+
 $$
 \dim E(9,T^*T)=2,\qquad
 \dim E(4,T^*T)=1,\qquad
@@ -1967,6 +2037,7 @@ $$
 **7.67 예: $\mathbb{F}^4$에서 $\mathbb{F}^3$으로 가는 선형사상의 특이값**
 
 $T\in\mathcal{L}(\mathbb{F}^4,\mathbb{F}^3)$의 표준기저에 대한 행렬이
+
 $$
 \begin{pmatrix}
 0 & 0 & 0 & -5\\
@@ -1975,6 +2046,7 @@ $$
 \end{pmatrix}
 $$
 이라고 하자. 그러면 $T^*T$의 행렬은
+
 $$
 \begin{pmatrix}
 1 & 1 & 0 & 0\\
@@ -1984,6 +2056,7 @@ $$
 \end{pmatrix}
 $$
 이고, $T^*T$의 고윳값은 $25,2,0$이며
+
 $$
 \dim E(25,T^*T)=1,\qquad
 \dim E(2,T^*T)=1,\qquad
@@ -2002,15 +2075,15 @@ $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
 (a) $T$가 단사인 것과 $0$이 $T$의 특이값이 아닌 것은 동치이다.
 
-(b) $T$의 양의 특이값의 개수는 $\dim\operatorname{range}T$와 같다.
+(b) $T$의 양의 특이값의 개수는 $\dim\text{range}T$와 같다.
 
 (c) $T$가 전사인 것과 $T$의 양의 특이값의 개수가 $\dim W$와 같은 것은 동치이다.
 
 **증명**
 
-$T$가 단사인 것은 $\operatorname{null}T=\{0\}$인 것과 동치이고, 7.64(b)에 의해 이는 $\operatorname{null}T^*T=\{0\}$인 것과 동치이다. 이는 $0$이 $T^*T$의 고윳값이 아닌 것과 동치이며, 곧 $0$이 $T$의 특이값이 아닌 것과 동치이다.
+$T$가 단사인 것은 $\text{null}T=\{0\}$인 것과 동치이고, 7.64(b)에 의해 이는 $\text{null}T^*T=\{0\}$인 것과 동치이다. 이는 $0$이 $T^*T$의 고윳값이 아닌 것과 동치이며, 곧 $0$이 $T$의 특이값이 아닌 것과 동치이다.
 
-$T^*T$에 스펙트럼 정리를 적용하면 $\dim\operatorname{range}T^*T$는 $T^*T$의 양의 고윳값의 개수와 같다. 7.64(d)에 의해 이는 $\dim\operatorname{range}T$와 같으므로 (b)가 성립한다. (c)는 (b)와 2.39에서 따른다.
+$T^*T$에 스펙트럼 정리를 적용하면 $\dim\text{range}T^*T$는 $T^*T$의 양의 고윳값의 개수와 같다. 7.64(d)에 의해 이는 $\dim\text{range}T$와 같으므로 (b)가 성립한다. (c)는 (b)와 2.39에서 따른다.
 
 고윳값과 특이값을 비교하면 다음과 같다.
 
@@ -2026,6 +2099,7 @@ $T^*T$에 스펙트럼 정리를 적용하면 $\dim\operatorname{range}T^*T$는 
 **7.69 등거리사상은 모든 특이값이 $1$인 것으로 특성화된다**
 
 $S\in\mathcal{L}(V,W)$라고 하자. 그러면
+
 $$
 S\text{가 등거리사상}
 \Longleftrightarrow
@@ -2052,6 +2126,7 @@ $$
 **7.70 특이값분해**
 
 $T\in\mathcal{L}(V,W)$이고 $T$의 양의 특이값이 $s_1,\ldots,s_m$이라고 하자. 그러면 $V$의 정규직교 리스트 $e_1,\ldots,e_m$과 $W$의 정규직교 리스트 $f_1,\ldots,f_m$이 존재하여 모든 $v\in V$에 대해
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
 \tag{7.71}
@@ -2061,16 +2136,19 @@ $$
 **증명**
 
 $T$의 모든 특이값을 $s_1,\ldots,s_n$이라고 쓰자. 여기서 $n=\dim V$이다. $T^*T$는 양의 연산자이므로, 스펙트럼 정리에 의해 $V$의 정규직교기저 $e_1,\ldots,e_n$이 존재하여 각 $k=1,\ldots,n$에 대해
+
 $$
 T^*T e_k=s_k^2e_k
 \tag{7.72}
 $$
 가 성립한다. $k=1,\ldots,m$에 대해
+
 $$
 f_k=\frac{Te_k}{s_k}
 \tag{7.73}
 $$
 로 정의한다. 그러면 $j,k\in\{1,\ldots,m\}$에 대해
+
 $$
 \begin{aligned}
 \langle f_j,f_k\rangle
@@ -2086,6 +2164,7 @@ $$
 $$
 
 따라서 $f_1,\ldots,f_m$은 $W$의 정규직교 리스트이다. $k>m$이면 $s_k=0$이고, (7.72)에 의해 $T^*Te_k=0$이다. 7.64(b)에 의해 $Te_k=0$이다. 이제 $v\in V$이면
+
 $$
 \begin{aligned}
 Tv
@@ -2114,16 +2193,19 @@ $M\times N$ 행렬 $A$가 $k=1,\ldots,\min\{M,N\}$에 대한 $A_{k,k}$를 제외
 **7.75 수반과 유사역의 특이값분해**
 
 $T\in\mathcal{L}(V,W)$이고 $T$의 양의 특이값이 $s_1,\ldots,s_m$이라고 하자. $V$의 정규직교 리스트 $e_1,\ldots,e_m$과 $W$의 정규직교 리스트 $f_1,\ldots,f_m$이 모든 $v\in V$에 대해
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
 \tag{7.76}
 $$
 를 만족한다고 하자. 그러면 모든 $w\in W$에 대해
+
 $$
 T^*w=s_1\langle w,f_1\rangle e_1+\cdots+s_m\langle w,f_m\rangle e_m
 \tag{7.77}
 $$
 이고
+
 $$
 T^\dagger w=
 \frac{\langle w,f_1\rangle}{s_1}e_1+\cdots+
@@ -2134,6 +2216,7 @@ $$
 **증명**
 
 $v\in V$, $w\in W$이면
+
 $$
 \begin{aligned}
 \langle Tv,w\rangle
@@ -2146,18 +2229,20 @@ $$
 따라서 (7.77)이 성립한다.
 
 (7.78)을 보이자. $w\in W$에 대해
+
 $$
 v=
 \frac{\langle w,f_1\rangle}{s_1}e_1+\cdots+
 \frac{\langle w,f_m\rangle}{s_m}e_m
 $$
 라고 두면, (7.76)에 의해
+
 $$
 Tv=\langle w,f_1\rangle f_1+\cdots+\langle w,f_m\rangle f_m
-=P_{\operatorname{range}T}w.
+=P_{\text{range}T}w.
 $$
 
-또한 $v\in(\operatorname{null}T)^\perp$이다. 따라서 유사역의 정의(6.68)에 의해 $v=T^\dagger w$이다.
+또한 $v\in(\text{null}T)^\perp$이다. 따라서 유사역의 정의(6.68)에 의해 $v=T^\dagger w$이다.
 
 **7.79 예: 특이값분해 찾기**
 
@@ -2166,6 +2251,7 @@ $$
 T(x_1,x_2,x_3,x_4)=(-5x_4,0,x_1+x_2)
 $$
 로 정의하자. 표준기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 0 & 0 & 0 & -5\\
@@ -2180,11 +2266,13 @@ $$
 \left(\frac1{\sqrt2},\frac1{\sqrt2},0,0\right)
 $$
 이다. 따라서
+
 $$
 e_1=(0,0,0,1),\qquad
 e_2=\left(\frac1{\sqrt2},\frac1{\sqrt2},0,0\right)
 $$
 로 두고
+
 $$
 f_1=\frac{Te_1}{5}=(-1,0,0),\qquad
 f_2=\frac{Te_2}{\sqrt2}=(0,0,1)
@@ -2205,7 +2293,8 @@ $$
 
 **증명**
 
-$T:\mathbb{F}^n\to\mathbb{F}^p$를 표준기저에 대한 행렬이 $A$인 선형사상이라고 하자. 그러면 $\dim\operatorname{range}T=m$이다. $T$의 특이값분해를
+$T:\mathbb{F}^n\to\mathbb{F}^p$를 표준기저에 대한 행렬이 $A$인 선형사상이라고 하자. 그러면 $\dim\text{range}T=m$이다. $T$의 특이값분해를
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
 \tag{7.81}
@@ -2223,7 +2312,7 @@ $$
 ACC^*=BDC^*.
 $$
 
-$C^*e_k=u_k$이고, (7.81)에 의해 $(\operatorname{span}(e_1,\ldots,e_m))^\perp$에서는 $A$와 $ACC^*$가 모두 $0$으로 작용한다. 따라서 $ACC^*=A$이고, 원하는 $A=BDC^*$를 얻는다.
+$C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서는 $A$와 $ACC^*$가 모두 $0$으로 작용한다. 따라서 $ACC^*=A$이고, 원하는 $A=BDC^*$를 얻는다.
 
 행렬 $A$는 $pn$개의 성분을 가지지만, $B,D,C$의 성분 수의 합은 $m(p+m+n)$이다. 따라서 $p,n$이 크고 랭크 $m$이 이들보다 훨씬 작으면, $A$를 저장하는 대신 SVD의 세 행렬을 저장하면 훨씬 적은 정보를 저장해도 된다.
 
@@ -2259,9 +2348,9 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\operatorname{span}(e_1,\ldots,e_m))^\per
 
    라고 하자.
 
-   (a) $f_1,\ldots,f_m$은 $\operatorname{range}T$의 정규직교기저임을 증명하여라.
+   (a) $f_1,\ldots,f_m$은 $\text{range}T$의 정규직교기저임을 증명하여라.
 
-   (b) $e_1,\ldots,e_m$은 $(\operatorname{null}T)^\perp$의 정규직교기저임을 증명하여라.
+   (b) $e_1,\ldots,e_m$은 $(\text{null}T)^\perp$의 정규직교기저임을 증명하여라.
 
    (c) $s_1,\ldots,s_m$이 $T$의 양의 특이값임을 증명하여라.
 
@@ -2347,11 +2436,13 @@ $$
 **증명**
 
 $s_1,\ldots,s_m$을 $T$의 양의 특이값이라고 하고, $e_1,\ldots,e_m$과 $f_1,\ldots,f_m$을 $T$의 특이값분해를 주는 정규직교 리스트라고 하자. 즉 모든 $v\in V$에 대해
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
 \tag{7.83}
 $$
 이다. 그러면
+
 $$
 \begin{aligned}
 \|Tv\|^2
@@ -2364,11 +2455,13 @@ $$
 마지막 부등식은 베셀 부등식(6.26)에서 따른다. 양변의 제곱근을 취하면 원하는 부등식을 얻는다.
 
 위 결과는 $\|v\|\le 1$인 모든 $v\in V$에 대해
+
 $$
 \|Tv\|\le s_1
 \tag{7.84}
 $$
 임을 뜻한다. 또한 (7.83)에서 $v=e_1$을 대입하면 $Te_1=s_1f_1$이고, 따라서 $\|Te_1\|=s_1$이다. 그러므로
+
 $$
 \max\{\|Tv\|:v\in V,\ \|v\|\le 1\}=s_1.
 \tag{7.85}
@@ -2416,6 +2509,7 @@ $$
 따라서 $T=0$이다. 반대방향은 명백하다.
 
 (c)는
+
 $$
 \begin{aligned}
 \|\lambda T\|
@@ -2427,6 +2521,7 @@ $$
 에서 따른다.
 
 (d) $\|S+T\|=\|(S+T)v\|$이고 $\|v\|\le 1$인 $v\in V$를 택한다. 그러면
+
 $$
 \|S+T\|
 =\|Sv+Tv\|
@@ -2464,6 +2559,7 @@ $$
 \left\|T\left(\frac{v}{\|v\|}\right)\right\|\le \|T\|
 $$
 이고, 따라서
+
 $$
 \|Tv\|\le \|T\|\,\|v\|.
 \tag{7.89}
@@ -2488,6 +2584,7 @@ $$
 **증명**
 
 $w\in W$이면
+
 $$
 \begin{aligned}
 \|T^*w\|^2
@@ -2509,7 +2606,7 @@ $$
 $T\in\mathcal{L}(V,W)$이고 $s_1\ge\cdots\ge s_m$이 $T$의 양의 특이값이라고 하자. $1\le k<m$이라고 하자. 그러면
 
 $$
-\min\{\|T-S\|:S\in\mathcal{L}(V,W),\ \dim\operatorname{range}S\le k\}=s_{k+1}.
+\min\{\|T-S\|:S\in\mathcal{L}(V,W),\ \dim\text{range}S\le k\}=s_{k+1}.
 $$
 
 또한
@@ -2520,7 +2617,7 @@ $$
 $$
 T_kv=s_1\langle v,e_1\rangle f_1+\cdots+s_k\langle v,e_k\rangle f_k
 $$
-로 정의하면, $\dim\operatorname{range}T_k=k$이고
+로 정의하면, $\dim\text{range}T_k=k$이고
 $$
 \|T-T_k\|=s_{k+1}.
 $$
@@ -2528,6 +2625,7 @@ $$
 **증명**
 
 $v\in V$이면
+
 $$
 \begin{aligned}
 \|(T-T_k)v\|^2
@@ -2540,11 +2638,12 @@ $$
 
 따라서 $\|T-T_k\|\le s_{k+1}$이다. 또한 $(T-T_k)e_{k+1}=s_{k+1}f_{k+1}$이므로 $\|T-T_k\|=s_{k+1}$이다.
 
-이제 $S\in\mathcal{L}(V,W)$이고 $\dim\operatorname{range}S\le k$라고 하자. 그러면 $Se_1,\ldots,Se_{k+1}$은 길이가 $k+1$인 일차종속 리스트이다. 따라서 모두 $0$이 아닌 것은 아닌 스칼라 $a_1,\ldots,a_{k+1}$가 존재하여
+이제 $S\in\mathcal{L}(V,W)$이고 $\dim\text{range}S\le k$라고 하자. 그러면 $Se_1,\ldots,Se_{k+1}$은 길이가 $k+1$인 일차종속 리스트이다. 따라서 모두 $0$이 아닌 것은 아닌 스칼라 $a_1,\ldots,a_{k+1}$가 존재하여
 $$
 a_1Se_1+\cdots+a_{k+1}Se_{k+1}=0
 $$
 이다. 벡터 $a_1e_1+\cdots+a_{k+1}e_{k+1}$는 $0$이 아니며,
+
 $$
 \begin{aligned}
 &\|(T-S)(a_1e_1+\cdots+a_{k+1}e_{k+1})\|^2\\
@@ -2579,6 +2678,7 @@ $$
 **증명**
 
 $s_1,\ldots,s_m$을 $T$의 양의 특이값이라고 하고, $e_1,\ldots,e_m$과 $f_1,\ldots,f_m$을 $V$의 정규직교 리스트로서 모든 $v\in V$에 대해
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
 \tag{7.94}
@@ -2604,6 +2704,7 @@ $$
 $$
 
 이다. 이제
+
 $$
 \begin{aligned}
 S\sqrt{T^*T}v
@@ -2628,6 +2729,7 @@ $$
 **7.96 정의: 타원체, $E(s_1f_1,\ldots,s_nf_n)$, 주축**
 
 $f_1,\ldots,f_n$이 $V$의 정규직교기저이고 $s_1,\ldots,s_n$이 양수라고 하자. 주축이 $s_1f_1,\ldots,s_nf_n$인 타원체 $E(s_1f_1,\ldots,s_nf_n)$는
+
 $$
 E(s_1f_1,\ldots,s_nf_n) =
 \left\{
@@ -2653,7 +2755,7 @@ $T$가 $V$에서 정의된 함수이고 $\Omega\subset V$이면
 $$
 T(\Omega)=\{Tv:v\in\Omega\}
 $$
-로 정의한다. 따라서 $T(V)=\operatorname{range}T$이다.
+로 정의한다. 따라서 $T(V)=\text{range}T$이다.
 
 **7.99 가역 연산자는 공을 타원체로 보낸다**
 
@@ -2662,11 +2764,13 @@ $T\in\mathcal{L}(V)$가 가역이라고 하자. 그러면 $T$는 $V$의 공 $B$�
 **증명**
 
 $T$의 특이값분해가 모든 $v\in V$에 대해
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_n\langle v,e_n\rangle f_n
 \tag{7.100}
 $$
 라고 하자. 여기서 $s_1,\ldots,s_n$은 $T$의 특이값이고, $e_1,\ldots,e_n$과 $f_1,\ldots,f_n$은 모두 $V$의 정규직교기저이다. $T$가 가역이므로 특이값은 모두 양수이다. $v\in B$이면
+
 $$
 \frac{|\langle Tv,f_1\rangle|^2}{s_1^2}
 +\cdots+
@@ -2724,6 +2828,7 @@ $$
 **7.104 가역 연산자는 평행체를 평행체로 보낸다**
 
 $u\in V$이고 $v_1,\ldots,v_n$이 $V$의 기저이며 $T\in\mathcal{L}(V)$가 가역이라고 하자. 그러면
+
 $$
 T(u+P(v_1,\ldots,v_n))
 =Tu+P(Tv_1,\ldots,Tv_n).
@@ -2732,6 +2837,7 @@ $$
 **증명**
 
 $T$가 가역이므로 $Tv_1,\ldots,Tv_n$은 $V$의 기저이다. 또한 모든 $a_1,\ldots,a_n\in(0,1)$에 대해
+
 $$
 T(u+a_1v_1+\cdots+a_nv_n)
 =Tu+a_1Tv_1+\cdots+a_nTv_n.
@@ -2771,6 +2877,7 @@ $$
 **증명**
 
 $a_1,\ldots,a_n\in(0,1)$이면
+
 $$
 T(u+a_1r_1e_1+\cdots+a_nr_ne_n)
 =Tu+a_1r_1s_1f_1+\cdots+a_nr_ns_nf_n.
@@ -2787,8 +2894,9 @@ $$
 **7.108 정의: 상자의 부피**
 
 $\mathbb{F}=\mathbb{R}$라고 하자. $u\in V$이고 $r_1,\ldots,r_n$이 양수이며 $e_1,\ldots,e_n$이 $V$의 정규직교기저이면
+
 $$
-\operatorname{volume}(u+P(r_1e_1,\ldots,r_ne_n))
+\text{volume}(u+P(r_1e_1,\ldots,r_ne_n))
 =r_1\times\cdots\times r_n.
 $$
 
@@ -2796,7 +2904,7 @@ $$
 
 **7.109 정의: 부피**
 
-$\mathbb{F}=\mathbb{R}$이고 $\Omega\subset V$라고 하자. $\Omega$의 부피 $\operatorname{volume}\Omega$는 $\Omega$를 근사하는 서로소 상자들의 부피의 합으로 근사되는 값이다.
+$\mathbb{F}=\mathbb{R}$이고 $\Omega\subset V$라고 하자. $\Omega$의 부피 $\text{volume}\Omega$는 $\Omega$를 근사하는 서로소 상자들의 부피의 합으로 근사되는 값이다.
 
 여기서는 직관적 정의만 사용한다. 적절히 좋은 부분집합들에 대해서는 해석학의 방법으로 기저 선택과 무관하고 서로소 합집합에 대해 가법적인 부피가 엄밀히 정의된다.
 
@@ -2813,9 +2921,10 @@ $$
 **7.111 부피는 특이값들의 곱만큼 변한다**
 
 $\mathbb{F}=\mathbb{R}$이고 $T\in\mathcal{L}(V)$가 가역이며 $\Omega\subset V$라고 하자. 그러면
+
 $$
-\operatorname{volume}T(\Omega) =
-(\text{$T$의 특이값들의 곱})(\operatorname{volume}\Omega).
+\text{volume}T(\Omega) =
+(\text{$T$의 특이값들의 곱})(\text{volume}\Omega).
 $$
 
 **증명**
@@ -2844,15 +2953,15 @@ $$
 
 이 장을 마무리하며 다음 표를 제시한다. 맥락은 유한차원 복소 내적공간이다. 표의 첫 열은 정규 연산자가 가질 수 있는 성질이고, 둘째 열은 그 성질이 성립할 필요충분조건으로서 모든 고윳값이 들어가야 하는 $\mathbb{C}$의 부분집합이다. 첫 행의 가역성만은 정규라는 가정 없이도 성립한다.
 
-| 정규 연산자의 성질  | 고윳값들이 포함되는 집합                              |
-| ------------------- | ----------------------------------------------------- |
-| 가역                | $\mathbb{C}\setminus\{0\}$                            |
-| 자기수반            | $\mathbb{R}$                                          |
-| 반자기수반          | $\{\lambda\in\mathbb{C}:\operatorname{Re}\lambda=0\}$ |
-| 직교사영            | $\{0,1\}$                                             |
-| 양의 연산자         | $[0,\infty)$                                          |
-| 유니터리            | $\{\lambda\in\mathbb{C}:\| \lambda \| =1\}$           |
-| 노름이 $1$보다 작음 | $\{\lambda\in\mathbb{C}:\| \lambda \| <1\}$           |
+| 정규 연산자의 성질  | 고윳값들이 포함되는 집합                      |
+| ------------------- | --------------------------------------------- |
+| 가역                | $\mathbb{C}\setminus\{0\}$                    |
+| 자기수반            | $\mathbb{R}$                                  |
+| 반자기수반          | $\{\lambda\in\mathbb{C}:\text{Re}\lambda=0\}$ |
+| 직교사영            | $\{0,1\}$                                     |
+| 양의 연산자         | $[0,\infty)$                                  |
+| 유니터리            | $\{\lambda\in\mathbb{C}:\| \lambda \| =1\}$   |
+| 노름이 $1$보다 작음 | $\{\lambda\in\mathbb{C}:\| \lambda \| <1\}$   |
 
 ### 연습문제 7F
 
@@ -2957,7 +3066,7 @@ $$
     (\|Te_1\|^2+\cdots+\|Te_n\|^2)^{1/2}.
     $$
 
-    (b) 다음 등식이 성립하는 것은 $\dim\operatorname{range}T\le 1$인 것과 동치임을 증명하여라.
+    (b) 다음 등식이 성립하는 것은 $\dim\text{range}T\le 1$인 것과 동치임을 증명하여라.
 
     $$
     \|T\|=(\|Te_1\|^2+\cdots+\|Te_n\|^2)^{1/2}.
@@ -3047,8 +3156,8 @@ $$
 
 31. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규라고 하자. 어떤 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재하여 $T=S\sqrt{T^*T}$이고, $S$와 $\sqrt{T^*T}$가 모두 $V$의 같은 정규직교기저에 대해 대각행렬을 가짐을 증명하여라.
 
-32. $T\in\mathcal{L}(V,W)$이고 $T\ne 0$이라고 하자. $s_1,\ldots,s_m$을 $T$의 양의 특이값이라고 하자. $(\operatorname{null}T)^\perp$의 정규직교기저 $e_1,\ldots,e_m$이 존재하여
+32. $T\in\mathcal{L}(V,W)$이고 $T\ne 0$이라고 하자. $s_1,\ldots,s_m$을 $T$의 양의 특이값이라고 하자. $(\text{null}T)^\perp$의 정규직교기저 $e_1,\ldots,e_m$이 존재하여
     $$
     T\left(E\left(\frac{e_1}{s_1},\ldots,\frac{e_m}{s_m}\right)\right)
     $$
-    가 $\operatorname{range}T$에서 $0$을 중심으로 하고 반지름이 $1$인 공과 같음을 보여라.
+    가 $\text{range}T$에서 $0$을 중심으로 하고 반지름이 $1$인 공과 같음을 보여라.

@@ -24,6 +24,7 @@
 $\mathcal{L}(V)$는 $\mathcal{L}(V,V)$를 뜻하도록 정의했음을 떠올리자.
 
 $T\in\mathcal{L}(V)$라고 하자. 만약 $m\ge 2$이고
+
 $$
 V=V_1\oplus\cdots\oplus V_m
 $$
@@ -47,26 +48,27 @@ $T\in\mathcal{L}(V)$이면 다음 $V$의 부분공간들은 모두 $T$에 대해
 
 - $\{0\}$: $u\in\{0\}$이면 $u=0$이고 따라서 $Tu=0\in\{0\}$이므로 $\{0\}$은 $T$에 대해 불변이다.
 - $V$: $u\in V$이면 $Tu\in V$이므로 $V$는 $T$에 대해 불변이다.
-- $\operatorname{null}T$: $u\in\operatorname{null}T$이면 $Tu=0$이고 따라서 $Tu\in\operatorname{null}T$이므로 $\operatorname{null}T$는 $T$에 대해 불변이다.
-- $\operatorname{range}T$: $u\in\operatorname{range}T$이면 $Tu\in\operatorname{range}T$이므로 $\operatorname{range}T$는 $T$에 대해 불변이다.
+- $\text{null}T$: $u\in\text{null}T$이면 $Tu=0$이고 따라서 $Tu\in\text{null}T$이므로 $\text{null}T$는 $T$에 대해 불변이다.
+- $\text{range}T$: $u\in\text{range}T$이면 $Tu\in\text{range}T$이므로 $\text{range}T$는 $T$에 대해 불변이다.
 
 연산자 $T\in\mathcal{L}(V)$는 $\{0\}$와 $V$ 이외의 불변 부분공간을 반드시 가지는가? 뒤에서 $V$가 유한차원이고 $\dim V>1$이면 $\mathbb{F}=\mathbb{C}$인 경우 이 질문의 답이 그렇다는 것을 볼 것이다. $\mathbb{F}=\mathbb{R}$인 경우에는 $\dim V>2$이면 그렇다. 5.19와 5B절의 연습문제 29번을 보라.
 
-앞의 예는 $\operatorname{null}T$와 $\operatorname{range}T$가 $T$에 대해 불변임을 보였다. 그러나 이 부분공간들이 $\{0\}$와 $V$ 이외의 불변 부분공간이 존재하는지에 대한 위 질문에 쉬운 답을 주지는 않는다. $\operatorname{null}T$가 $\{0\}$일 수도 있고 $\operatorname{range}T$가 $V$일 수도 있기 때문이다. 이런 일은 $T$가 가역일 때 일어난다.
+앞의 예는 $\text{null}T$와 $\text{range}T$가 $T$에 대해 불변임을 보였다. 그러나 이 부분공간들이 $\{0\}$와 $V$ 이외의 불변 부분공간이 존재하는지에 대한 위 질문에 쉬운 답을 주지는 않는다. $\text{null}T$가 $\{0\}$일 수도 있고 $\text{range}T$가 $V$일 수도 있기 때문이다. 이런 일은 $T$가 가역일 때 일어난다.
 
 우리는 나중에 불변 부분공간을 더 깊이 연구할 것이다. 이제 가장 단순한 비자명한 불변 부분공간, 즉 $1$차원 불변 부분공간을 조사한다.
 
 $v\in V$이고 $v\ne 0$라고 하며, $U$를 $v$의 모든 스칼라배의 집합이라고 하자.
 
 $$
-U=\{\lambda v:\lambda\in\mathbb{F}\}=\operatorname{span}(v).
+U=\{\lambda v:\lambda\in\mathbb{F}\}=\text{span}(v).
 $$
 
 그러면 $U$는 $V$의 $1$차원 부분공간이다. 또한 $V$의 모든 $1$차원 부분공간은 적절한 $v$에 대해 이 꼴이다. 만약 $U$가 연산자 $T\in\mathcal{L}(V)$에 대해 불변이면 $Tv\in U$이고, 따라서 어떤 스칼라 $\lambda\in\mathbb{F}$가 존재하여
+
 $$
 Tv=\lambda v
 $$
-가 된다. 반대로 어떤 $\lambda\in\mathbb{F}$에 대해 $Tv=\lambda v$이면 $\operatorname{span}(v)$는 $T$에 대해 불변인 $1$차원 부분공간이다.
+가 된다. 반대로 어떤 $\lambda\in\mathbb{F}$에 대해 $Tv=\lambda v$이면 $\text{span}(v)$는 $T$에 대해 불변인 $1$차원 부분공간이다.
 
 방금 본 것처럼 $1$차원 불변 부분공간과 밀접하게 연결된 방정식 $Tv=\lambda v$는 매우 중요하므로, 이를 만족하는 스칼라 $\lambda$와 벡터 $v$에는 특별한 이름이 붙어 있다.
 
@@ -83,10 +85,12 @@ $T\in\mathcal{L}(V)$라고 하자. 어떤 $v\in V$가 존재하여 $v\ne 0$이�
 **5.6 예: 고윳값**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$를
+
 $$
 T(x,y,z)=(7x+3z,\;3x+6y+9z,\;-6y)
 $$
 로 정의하자. 그러면
+
 $$
 T(3,1,-1)=(18,6,-6)=6(3,1,-1).
 $$
@@ -115,7 +119,7 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $\lambda\in\mathbb{F}$라�
 
 $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$가 $T$의 고윳값이라고 하자. $v\ne 0$이고 $Tv=\lambda v$이면, 벡터 $v\in V$를 $\lambda$에 대응하는 $T$의 **고유벡터**라고 한다.
 
-다시 말해, 영이 아닌 벡터 $v\in V$가 연산자 $T\in\mathcal{L}(V)$의 고유벡터일 필요충분조건은 $Tv$가 $v$의 스칼라배인 것이다. $Tv=\lambda v$일 필요충분조건은 $(T-\lambda I)v=0$이므로, $v\ne 0$인 벡터 $v\in V$가 $\lambda$에 대응하는 $T$의 고유벡터일 필요충분조건은 $v\in\operatorname{null}(T-\lambda I)$이다.
+다시 말해, 영이 아닌 벡터 $v\in V$가 연산자 $T\in\mathcal{L}(V)$의 고유벡터일 필요충분조건은 $Tv$가 $v$의 스칼라배인 것이다. $Tv=\lambda v$일 필요충분조건은 $(T-\lambda I)v=0$이므로, $v\ne 0$인 벡터 $v\in V$가 $\lambda$에 대응하는 $T$의 고유벡터일 필요충분조건은 $v\in\text{null}(T-\lambda I)$이다.
 
 **5.9 예: 고윳값과 고유벡터**
 
@@ -132,10 +136,12 @@ $$
 $$
 
 두 번째 식이 주는 $w$의 값을 첫 번째 식에 대입하면
+
 $$
 -z=\lambda^2 z
 $$
 를 얻는다. 여기서 $z$는 $0$일 수 없다. 만약 $z=0$이면 (5.10)에 의해 $w=0$이 되어, 우리가 찾는 영이 아닌 해가 아니기 때문이다. 따라서 위 식은
+
 $$
 -1=\lambda^2
 $$
@@ -144,6 +150,7 @@ $$
 $i$와 $-i$가 실제로 $T$의 고윳값임을 확인할 수 있다. 고윳값 $i$에 대응하는 고유벡터들은 $w\in\mathbb{C}$, $w\ne 0$에 대해 $(w,-wi)$ 꼴인 벡터들이다. 또한 고윳값 $-i$에 대응하는 고유벡터들은 $w\in\mathbb{C}$, $w\ne 0$에 대해 $(w,wi)$ 꼴인 벡터들이다.
 
 다음 증명에서도 다시 동치
+
 $$
 Tv=\lambda v \Longleftrightarrow (T-\lambda I)v=0
 $$
@@ -154,10 +161,12 @@ $$
 $T\in\mathcal{L}(V)$라고 하자. 그러면 $T$의 서로 다른 고윳값들에 대응하는 $T$의 고유벡터들의 모든 리스트는 선형독립이다.
 
 증명. 원하는 결과가 거짓이라고 하자. 그러면 $T$의 서로 다른 고윳값 $\lambda_1,\ldots,\lambda_m$에 대응하는 고유벡터들의 선형종속 리스트 $v_1,\ldots,v_m$가 존재하도록 하는 가장 작은 양의 정수 $m$이 존재한다. 고유벡터는 정의상 영이 아니므로 $m\ge 2$이다. 따라서
+
 $$
 a_1v_1+\cdots+a_mv_m=0
 $$
 를 만족하는 $a_1,\ldots,a_m\in\mathbb{F}$가 존재하며, $m$의 최소성 때문에 이 계수들 중 어느 것도 $0$이 아니다. 위 식의 양변에 $T-\lambda_m I$를 적용하면
+
 $$
 a_1(\lambda_1-\lambda_m)v_1+\cdots+a_{m-1}(\lambda_{m-1}-\lambda_m)v_{m-1}=0
 $$
@@ -182,6 +191,7 @@ $T$가 연산자이면 $TT$는 의미가 있고(3.7을 보라), $T$와 같은 �
 $T\in\mathcal{L}(V)$이고 $m$이 양의 정수라고 하자.
 
 - $T^m\in\mathcal{L}(V)$는
+
   $$
   T^m=\underbrace{T\cdots T}_{m\text{번}}
   $$
@@ -189,12 +199,14 @@ $T\in\mathcal{L}(V)$이고 $m$이 양의 정수라고 하자.
 
 - $T^0$은 $V$ 위의 항등연산자 $I$로 정의한다.
 - $T$가 역 $T^{-1}$을 가지는 가역 연산자이면, $T^{-m}\in\mathcal{L}(V)$는
+
   $$
   T^{-m}=(T^{-1})^m
   $$
   로 정의한다.
 
   $T$가 연산자이면
+
   $$
   T^mT^n=T^{m+n}
   \quad\text{그리고}\quad
@@ -207,6 +219,7 @@ $T\in\mathcal{L}(V)$이고 $m$이 양의 정수라고 하자.
 **5.14 표기: $p(T)$**
 
 $T\in\mathcal{L}(V)$이고 $p\in\mathcal{P}(\mathbb{F})$가 모든 $z\in\mathbb{F}$에 대해
+
 $$
 p(z)=a_0+a_1z+a_2z^2+\cdots+a_mz^m
 $$
@@ -221,11 +234,13 @@ $$
 **5.15 예: 미분 연산자에 적용한 다항식**
 
 $D\in\mathcal{L}(\mathcal{P}(\mathbb{R}))$가 $Dq=q'$로 정의된 미분 연산자이고, $p$가 $p(x)=7-3x+5x^2$로 정의된 다항식이라고 하자. 그러면
+
 $$
 p(D)=7I-3D+5D^2.
 $$
 
 따라서 모든 $q\in\mathcal{P}(\mathbb{R})$에 대해
+
 $$
 (p(D))q=7q-3q'+5q''
 $$
@@ -236,6 +251,7 @@ $$
 **5.16 정의: 다항식의 곱**
 
 $p,q\in\mathcal{P}(\mathbb{F})$이면 $pq\in\mathcal{P}(\mathbb{F})$를 모든 $z\in\mathbb{F}$에 대해
+
 $$
 (pq)(z)=p(z)q(z)
 $$
@@ -256,17 +272,20 @@ $p,q\in\mathcal{P}(\mathbb{F})$이고 $T\in\mathcal{L}(V)$라고 하자. 그러�
 증명.
 
 (a) 모든 $z\in\mathbb{F}$에 대해
+
 $$
 p(z)=\sum_{j=0}^m a_jz^j
 \quad\text{그리고}\quad
 q(z)=\sum_{k=0}^n b_kz^k
 $$
 라고 하자. 그러면
+
 $$
 (pq)(z)=\sum_{j=0}^m\sum_{k=0}^n a_jb_kz^{j+k}.
 $$
 
 따라서
+
 $$
 \begin{aligned}
 (pq)(T)
@@ -277,38 +296,41 @@ $$
 $$
 
 (b) (a)를 두 번 사용하면
+
 $$
 p(T)q(T)=(pq)(T)=(qp)(T)=q(T)p(T)
 $$
 이다.
 
-앞에서 $T\in\mathcal{L}(V)$이면 부분공간 $\operatorname{null}T$와 $\operatorname{range}T$가 $T$에 대해 불변임을 보았다. 이제 $T$의 모든 다항식의 영공간과 치역도 $T$에 대해 불변임을 보인다.
+앞에서 $T\in\mathcal{L}(V)$이면 부분공간 $\text{null}T$와 $\text{range}T$가 $T$에 대해 불변임을 보았다. 이제 $T$의 모든 다항식의 영공간과 치역도 $T$에 대해 불변임을 보인다.
 
-**5.18 $\operatorname{null}p(T)$와 $\operatorname{range}p(T)$는 $T$에 대해 불변이다**
+**5.18 $\text{null}p(T)$와 $\text{range}p(T)$는 $T$에 대해 불변이다**
 
-$T\in\mathcal{L}(V)$이고 $p\in\mathcal{P}(\mathbb{F})$라고 하자. 그러면 $\operatorname{null}p(T)$와 $\operatorname{range}p(T)$는 $T$에 대해 불변이다.
+$T\in\mathcal{L}(V)$이고 $p\in\mathcal{P}(\mathbb{F})$라고 하자. 그러면 $\text{null}p(T)$와 $\text{range}p(T)$는 $T$에 대해 불변이다.
 
-증명. $u\in\operatorname{null}p(T)$라고 하자. 그러면 $p(T)u=0$이다. 따라서
+증명. $u\in\text{null}p(T)$라고 하자. 그러면 $p(T)u=0$이다. 따라서
+
 $$
 (p(T))(Tu)=(p(T)T)(u)=(Tp(T))(u)=T(p(T)u)=T(0)=0.
 $$
 
-그러므로 $Tu\in\operatorname{null}p(T)$이다. 따라서 $\operatorname{null}p(T)$는 원하는 대로 $T$에 대해 불변이다.
+그러므로 $Tu\in\text{null}p(T)$이다. 따라서 $\text{null}p(T)$는 원하는 대로 $T$에 대해 불변이다.
 
-$u\in\operatorname{range}p(T)$라고 하자. 그러면 어떤 $v\in V$가 존재하여 $u=p(T)v$이다. 따라서
+$u\in\text{range}p(T)$라고 하자. 그러면 어떤 $v\in V$가 존재하여 $u=p(T)v$이다. 따라서
+
 $$
 Tu=T(p(T)v)=p(T)(Tv).
 $$
 
-그러므로 $Tu\in\operatorname{range}p(T)$이다. 따라서 $\operatorname{range}p(T)$는 원하는 대로 $T$에 대해 불변이다.
+그러므로 $Tu\in\text{range}p(T)$이다. 따라서 $\text{range}p(T)$는 원하는 대로 $T$에 대해 불변이다.
 
 ### 연습문제 5A
 
 1. $T\in\mathcal{L}(V)$이고 $U$가 $V$의 부분공간이라고 하자.
 
-   (a) $U\subseteq\operatorname{null}T$이면 $U$가 $T$에 대해 불변임을 증명하라.
+   (a) $U\subseteq\text{null}T$이면 $U$가 $T$에 대해 불변임을 증명하라.
 
-   (b) $\operatorname{range}T\subseteq U$이면 $U$가 $T$에 대해 불변임을 증명하라.
+   (b) $\text{range}T\subseteq U$이면 $U$가 $T$에 대해 불변임을 증명하라.
 
 2. $T\in\mathcal{L}(V)$이고 $V_1,\ldots,V_m$이 $T$에 대해 불변인 $V$의 부분공간들이라고 하자. $V_1+\cdots+V_m$이 $T$에 대해 불변임을 증명하라.
 
@@ -343,6 +365,7 @@ $$
 15. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $\lambda\in\mathbb{F}$라고 하자. $\lambda$가 $T$의 고윳값일 필요충분조건은 $\lambda$가 쌍대연산자 $T'\in\mathcal{L}(V')$의 고윳값인 것임을 보여라.
 
 16. $v_1,\ldots,v_n$이 $V$의 기저이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda$가 $T$의 고윳값이면
+
     $$
     |\lambda|\le n\max\{|\mathcal{M}(T)_{j,k}|:1\le j,k\le n\}
     $$
@@ -357,12 +380,14 @@ $$
 18. $\mathbb{F}=\mathbb{R}$이고 $T\in\mathcal{L}(V)$이며 $\lambda\in\mathbb{C}$라고 하자. $\lambda$가 복소화 $T_{\mathbb{C}}$의 고윳값일 필요충분조건은 $\overline{\lambda}$가 $T_{\mathbb{C}}$의 고윳값인 것임을 증명하라.
 
 19. 앞으로 이동 연산자 $T\in\mathcal{L}(\mathbb{F}^{\infty})$가
+
     $$
     T(z_1,z_2,\ldots)=(0,z_1,z_2,\ldots)
     $$
     로 정의되어 있다고 하자. $T$가 고윳값을 가지지 않음을 보여라.
 
 20. 뒤로 이동 연산자 $S\in\mathcal{L}(\mathbb{F}^{\infty})$를
+
     $$
     S(z_1,z_2,z_3,\ldots)=(z_2,z_3,\ldots)
     $$
@@ -379,6 +404,7 @@ $$
    (b) $T$와 $T^{-1}$이 같은 고유벡터를 가짐을 증명하라.
 
 22. $T\in\mathcal{L}(V)$이고 $V$의 영이 아닌 벡터 $u,w$가 존재하여
+
     $$
     Tu=3w
     \quad\text{그리고}\quad
@@ -400,15 +426,17 @@ $$
 
 27. $V$가 유한차원이고 $k\in\{1,\ldots,\dim V-1\}$라고 하자. $T\in\mathcal{L}(V)$가 $V$의 모든 $k$차원 부분공간을 불변으로 만든다고 하자. $T$가 항등연산자의 스칼라배임을 증명하라.
 
-28. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 최대 $1+\dim\operatorname{range}T$개의 서로 다른 고윳값을 가진다는 것을 증명하라.
+28. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 최대 $1+\dim\text{range}T$개의 서로 다른 고윳값을 가진다는 것을 증명하라.
 
 29. $T\in\mathcal{L}(\mathbb{R}^3)$이고 $-4$, $5$, $\sqrt{7}$이 $T$의 고윳값이라고 하자. 어떤 $x\in\mathbb{R}^3$가 존재하여
+
     $$
     Tx-9x=(-4,5,\sqrt{7})
     $$
     임을 증명하라.
 
 30. $T\in\mathcal{L}(V)$이고
+
     $$
     (T-2I)(T-3I)(T-4I)=0
     $$
@@ -428,17 +456,19 @@ $$
 
 35. $\lambda_1,\ldots,\lambda_n$이 서로 다른 실수들의 리스트라고 하자. 실숫값 함수들의 벡터공간에서 리스트 $e^{\lambda_1x},\ldots,e^{\lambda_nx}$가 선형독립임을 증명하라.
 
-   힌트: $V=\operatorname{span}(e^{\lambda_1x},\ldots,e^{\lambda_nx})$라고 두고, $Df=f'$로 연산자 $D\in\mathcal{L}(V)$를 정의하라. $D$의 고윳값과 고유벡터를 찾아라.
+   힌트: $V=\text{span}(e^{\lambda_1x},\ldots,e^{\lambda_nx})$라고 두고, $Df=f'$로 연산자 $D\in\mathcal{L}(V)$를 정의하라. $D$의 고윳값과 고유벡터를 찾아라.
 
 36. $\lambda_1,\ldots,\lambda_n$이 서로 다른 양수들의 리스트라고 하자. 실숫값 함수들의 벡터공간에서 리스트 $\cos(\lambda_1x),\ldots,\cos(\lambda_nx)$가 선형독립임을 증명하라.
 
 37. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 각 $S\in\mathcal{L}(V)$에 대해
+
     $$
     \mathcal{A}(S)=TS
     $$
     로 $\mathcal{A}\in\mathcal{L}(\mathcal{L}(V))$를 정의한다. $T$의 고윳값들의 집합이 $\mathcal{A}$의 고윳값들의 집합과 같음을 증명하라.
 
 38. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $U$가 $T$에 대해 불변인 $V$의 부분공간이라고 하자. 몫연산자 $T/U\in\mathcal{L}(V/U)$를 각 $v\in V$에 대해
+
     $$
     (T/U)(v+U)=Tv+U
     $$
@@ -451,6 +481,7 @@ $$
 39. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 고윳값을 가질 필요충분조건은 $T$에 대해 불변인 차원 $\dim V-1$의 $V$의 부분공간이 존재하는 것임을 증명하라.
 
 40. $S,T\in\mathcal{L}(V)$이고 $S$가 가역이라고 하자. $p\in\mathcal{P}(\mathbb{F})$가 다항식이라고 하자. 다음을 증명하라.
+
     $$
     p(STS^{-1})=Sp(T)S^{-1}.
     $$
@@ -458,6 +489,7 @@ $$
 41. $T\in\mathcal{L}(V)$이고 $U$가 $T$에 대해 불변인 $V$의 부분공간이라고 하자. 모든 다항식 $p\in\mathcal{P}(\mathbb{F})$에 대해 $U$가 $p(T)$에 대해 불변임을 증명하라.
 
 42. $T\in\mathcal{L}(\mathbb{F}^n)$를
+
     $$
     T(x_1,x_2,x_3,\ldots,x_n)=(x_1,2x_2,3x_3,\ldots,nx_n)
     $$
@@ -468,6 +500,7 @@ $$
     (b) $T$에 대해 불변인 $\mathbb{F}^n$의 모든 부분공간을 찾아라.
 
 43. $V$가 유한차원이고 $\dim V>1$이며 $T\in\mathcal{L}(V)$라고 하자. 다음을 증명하라.
+
     $$
     \{p(T):p\in\mathcal{P}(\mathbb{F})\}\ne\mathcal{L}(V).
     $$
@@ -483,20 +516,24 @@ $$
 유한차원 비영 복소 벡터공간 위의 모든 연산자는 고윳값을 가진다.
 
 증명. $V$가 차원 $n>0$인 유한차원 복소 벡터공간이고 $T\in\mathcal{L}(V)$라고 하자. $v\ne 0$인 $v\in V$를 택한다. 그러면
+
 $$
 v,Tv,T^2v,\ldots,T^nv
 $$
 는 선형독립이 아니다. $V$의 차원은 $n$이고 이 리스트의 길이는 $n+1$이기 때문이다. 따라서 위 벡터들의 어떤 선형결합이 $0$이 되며, 이때 계수들이 모두 $0$은 아니다. 그러므로
+
 $$
 p(T)v=0
 $$
 를 만족하는 가장 작은 차수의 상수가 아닌 다항식 $p$가 존재한다.
 
 대수학의 기본정리의 첫 번째 형태(4.12를 보라)에 의해 $p(\lambda)=0$을 만족하는 $\lambda\in\mathbb{C}$가 존재한다. 따라서 모든 $z\in\mathbb{C}$에 대해
+
 $$
 p(z)=(z-\lambda)q(z)
 $$
 가 되도록 하는 다항식 $q\in\mathcal{P}(\mathbb{C})$가 존재한다. 4.6을 보라. 이는 5.17을 사용하여
+
 $$
 0=p(T)v=(T-\lambda I)(q(T)v)
 $$
@@ -509,6 +546,7 @@ $$
 **5.20 예: 고윳값을 가지지 않는 복소 벡터공간 위의 연산자**
 
 $T\in\mathcal{L}(\mathcal{P}(\mathbb{C}))$를
+
 $$
 (Tp)(z)=zp(z)
 $$
@@ -533,46 +571,54 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $p(T)=0$�
 증명. $\dim V=0$이면 $I$는 $V$ 위의 영연산자이다. 따라서 $p$를 상수다항식 $1$로 둔다.
 
 이제 $\dim V$에 대한 귀납법을 사용한다. $\dim V>0$이고, 더 작은 차원의 모든 벡터공간 위의 모든 연산자에 대해 원하는 결과가 참이라고 가정하자. $u\ne 0$인 $u\in V$를 잡는다. 리스트
+
 $$
 u,Tu,\ldots,T^{\dim V}u
 $$
 는 길이가 $1+\dim V$이므로 선형종속이다. 선형종속 보조정리(2.19)에 의해, $T^mu$가 $u,Tu,\ldots,T^{m-1}u$의 선형결합이 되도록 하는 가장 작은 양의 정수 $m\le \dim V$가 존재한다. 따라서 어떤 스칼라 $c_0,c_1,c_2,\ldots,c_{m-1}\in\mathbb{F}$가 존재하여
 
 **(5.23)**
+
 $$
 c_0u+c_1Tu+\cdots+c_{m-1}T^{m-1}u+T^mu=0
 $$
 이다. 최고차계수가 $1$인 다항식 $q\in\mathcal{P}_m(\mathbb{F})$를
+
 $$
 q(z)=c_0+c_1z+\cdots+c_{m-1}z^{m-1}+z^m
 $$
 로 정의한다. 그러면 (5.23)은 $q(T)u=0$을 함의한다.
 
 $k$가 음이 아닌 정수이면
+
 $$
 q(T)(T^ku)=T^k(q(T)u)=T^k(0)=0.
 $$
 
-선형종속 보조정리(2.19)는 $u,Tu,\ldots,T^{m-1}u$가 선형독립임을 보여 준다. 따라서 위 식은 $\dim\operatorname{null}q(T)\ge m$을 함의한다. 그러므로
+선형종속 보조정리(2.19)는 $u,Tu,\ldots,T^{m-1}u$가 선형독립임을 보여 준다. 따라서 위 식은 $\dim\text{null}q(T)\ge m$을 함의한다. 그러므로
+
 $$
-\dim\operatorname{range}q(T)
-=\dim V-\dim\operatorname{null}q(T)
+\dim\text{range}q(T)
+=\dim V-\dim\text{null}q(T)
 \le \dim V-m.
 $$
 
-$\operatorname{range}q(T)$는 5.18에 의해 $T$에 대해 불변이므로, 벡터공간 $\operatorname{range}q(T)$ 위의 연산자 $T|_{\operatorname{range}q(T)}$에 귀납가정을 적용할 수 있다. 따라서
+$\text{range}q(T)$는 5.18에 의해 $T$에 대해 불변이므로, 벡터공간 $\text{range}q(T)$ 위의 연산자 $T|_{\text{range}q(T)}$에 귀납가정을 적용할 수 있다. 따라서
+
 $$
 \deg s\le \dim V-m
 \quad\text{그리고}\quad
-s(T|_{\operatorname{range}q(T)})=0
+s(T|_{\text{range}q(T)})=0
 $$
 을 만족하는 최고차계수가 $1$인 다항식 $s\in\mathcal{P}(\mathbb{F})$가 존재한다. 따라서 모든 $v\in V$에 대해
+
 $$
 ((sq)(T))(v)=s(T)(q(T)v)=0
 $$
-이다. 왜냐하면 $q(T)v\in\operatorname{range}q(T)$이고
+이다. 왜냐하면 $q(T)v\in\text{range}q(T)$이고
+
 $$
-s(T)|_{\operatorname{range}q(T)}=s(T|_{\operatorname{range}q(T)})=0
+s(T)|_{\text{range}q(T)}=s(T|_{\text{range}q(T)})=0
 $$
 이기 때문이다. 따라서 $sq$는 최고차계수가 $1$인 다항식이고, $\deg sq\le \dim V$이며, $(sq)(T)=0$이다.
 
@@ -587,10 +633,12 @@ $p\in\mathcal{P}(\mathbb{F})$를 $p(T)=0$을 만족하는 가장 작은 차수�
 $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$의 **최소다항식**은 $p(T)=0$을 만족하는 가장 작은 차수의, 최고차계수가 $1$인 유일한 다항식 $p\in\mathcal{P}(\mathbb{F})$이다.
 
 연산자 $T\in\mathcal{L}(V)$의 최소다항식을 계산하려면, 방정식
+
 $$
 c_0I+c_1T+\cdots+c_{m-1}T^{m-1}=-T^m
 $$
 이 $c_0,c_1,\ldots,c_{m-1}\in\mathbb{F}$에 대한 해를 가지도록 하는 가장 작은 양의 정수 $m$을 찾아야 한다. $V$의 기저를 하나 택하고 위 식의 $T$를 $T$의 행렬로 바꾸면, 위 방정식은 미지수 $c_0,c_1,\ldots,c_{m-1}$에 대한 $(\dim V)^2$개의 선형방정식으로 생각할 수 있다. 가우스 소거법이나 선형방정식계를 푸는 다른 빠른 방법을 사용하여 해가 존재하는지 확인하고, $m=1,2,\ldots$를 차례로 시험하면 된다. 5.22에 의해 어떤 가장 작은 양의 정수 $m\le \dim V$에 대해 해가 존재한다. 그러면 $T$의 최소다항식은
+
 $$
 c_0+c_1z+\cdots+c_{m-1}z^{m-1}+z^m
 $$
@@ -599,6 +647,7 @@ $$
 보통은 더 빠른 방법이 있다. $v\ne 0$인 $v\in V$를 택하고 다음 방정식을 생각하라.
 
 **(5.25)**
+
 $$
 c_0v+c_1Tv+\cdots+c_{\dim V-1}T^{\dim V-1}v=-T^{\dim V}v.
 $$
@@ -612,6 +661,7 @@ $V$의 기저를 사용하여 위 방정식을 미지수 $c_0,c_1,\ldots,c_{\dim
 **5.26 예: $\mathbb{F}^5$ 위의 연산자의 최소다항식**
 
 $T\in\mathcal{L}(\mathbb{F}^5)$이고, 표준기저 $e_1,e_2,e_3,e_4,e_5$에 대해
+
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
@@ -623,6 +673,7 @@ $$
 \end{pmatrix}
 $$
 라고 하자. (5.25)에서 $v=e_1$을 택하면
+
 $$
 \begin{aligned}
 Te_1&=e_2, \\
@@ -634,11 +685,13 @@ T^5e_1&=T(T^4e_1)=Te_5=-3e_1+6e_2.
 $$
 
 따라서
+
 $$
 3e_1-6Te_1=-T^5e_1.
 $$
 
 리스트 $e_1,Te_1,T^2e_1,T^3e_1,T^4e_1$은 리스트 $e_1,e_2,e_3,e_4,e_5$와 같으므로 선형독립이다. 따라서 이 리스트의 다른 선형결합이 $-T^5e_1$과 같을 수 없다. 그러므로 $T$의 최소다항식은
+
 $$
 3-6z+z^5
 $$
@@ -653,6 +706,7 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자.
 (a) $T$의 최소다항식의 영점들은 $T$의 고윳값들이다.
 
 (b) $V$가 복소 벡터공간이면, $T$의 최소다항식은
+
 $$
 (z-\lambda_1)\cdots(z-\lambda_m)
 $$
@@ -661,20 +715,24 @@ $$
 증명. $p$를 $T$의 최소다항식이라고 하자.
 
 (a) 먼저 $\lambda\in\mathbb{F}$가 $p$의 영점이라고 하자. 그러면 $p$는
+
 $$
 p(z)=(z-\lambda)q(z)
 $$
 꼴로 쓸 수 있다. 여기서 $q$는 $\mathbb{F}$의 계수를 가지는 최고차계수가 $1$인 다항식이다. 4.6을 보라. $p(T)=0$이므로 모든 $v\in V$에 대해
+
 $$
 0=(T-\lambda I)(q(T)v)
 $$
 이다. $\deg q=(\deg p)-1$이고 $p$가 $T$의 최소다항식이므로, 적어도 하나의 벡터 $v\in V$에 대해 $q(T)v\ne 0$이다. 따라서 위 식은 원하는 대로 $\lambda$가 $T$의 고윳값임을 함의한다.
 
 반대로 $T$의 모든 고윳값이 $p$의 영점임을 보이자. $\lambda\in\mathbb{F}$가 $T$의 고윳값이라고 하자. 그러면 $v\ne 0$이고 $Tv=\lambda v$를 만족하는 $v\in V$가 존재한다. 이 식의 양변에 $T$를 반복해서 적용하면 모든 음이 아닌 정수 $k$에 대해
+
 $$
 T^kv=\lambda^kv
 $$
 이다. 따라서
+
 $$
 p(T)v=p(\lambda)v.
 $$
@@ -690,10 +748,12 @@ $p$는 $T$의 최소다항식이므로 $p(T)v=0$이다. 따라서 위 식은 $p(
 **5.28 예: 고윳값을 정확히 찾을 수 없는 연산자**
 
 $T\in\mathcal{L}(\mathbb{C}^5)$를
+
 $$
 T(z_1,z_2,z_3,z_4,z_5)=(-3z_5,\;z_1+6z_5,\;z_2,\;z_3,\;z_4)
 $$
 로 정의하자. 표준기저에 대한 $T$의 행렬은 예 5.26의 $5\times 5$ 행렬이다. 그 예에서 보았듯이 $T$의 최소다항식은
+
 $$
 3-6z+z^5
 $$
@@ -720,17 +780,20 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $q\in\mathcal{P}(\mathbb{F}
 먼저 $q(T)=0$이라고 하자. 다항식의 나눗셈 알고리즘(4.9)에 의해 다음을 만족하는 다항식 $s,r\in\mathcal{P}(\mathbb{F})$가 존재한다.
 
 **(5.30)**
+
 $$
 q=ps+r
 $$
 
 그리고 $\deg r<\deg p$이다. 우리는
+
 $$
 0=q(T)=p(T)s(T)+r(T)=r(T)
 $$
 를 얻는다. 위 식은 $r=0$임을 함의한다. 그렇지 않다면 $r$을 그 최고차항의 계수로 나누어, $T$에 적용하면 $0$이 되는 최고차계수가 $1$인 다항식을 얻게 되며, 이 다항식은 최소다항식보다 더 작은 차수를 가져 모순이다. 따라서 (5.30)은 $q=ps$가 된다. 그러므로 원하는 대로 $q$는 $p$의 다항식배이다.
 
 반대 방향을 증명하자. 이제 $q$가 $p$의 다항식배라고 하자. 그러면 어떤 다항식 $s\in\mathcal{P}(\mathbb{F})$가 존재하여 $q=ps$이다. 따라서
+
 $$
 q(T)=p(T)s(T)=0s(T)=0
 $$
@@ -743,6 +806,7 @@ $$
 $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $U$가 $T$에 대해 불변인 $V$의 부분공간이라고 하자. 그러면 $T$의 최소다항식은 $T|_U$의 최소다항식의 다항식배이다.
 
 증명. $p$가 $T$의 최소다항식이라고 하자. 그러면 모든 $v\in V$에 대해 $p(T)v=0$이다. 특히 모든 $u\in U$에 대해
+
 $$
 p(T)u=0
 $$
@@ -757,6 +821,7 @@ $$
 $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $T$가 가역이 아닐 필요충분조건은 $T$의 최소다항식의 상수항이 $0$인 것이다.
 
 증명. $T\in\mathcal{L}(V)$이고 $p$가 $T$의 최소다항식이라고 하자. 그러면
+
 $$
 \begin{aligned}
 T\text{가 가역이 아님}
@@ -775,14 +840,16 @@ $$
 **5.33 짝수 차원 영공간**
 
 $\mathbb{F}=\mathbb{R}$이고 $V$가 유한차원이라고 하자. 또한 $T\in\mathcal{L}(V)$이고 $b,c\in\mathbb{R}$이며 $b^2<4c$라고 하자. 그러면
+
 $$
-\dim\operatorname{null}(T^2+bT+cI)
+\dim\text{null}(T^2+bT+cI)
 $$
 는 짝수이다.
 
-증명. $\operatorname{null}(T^2+bT+cI)$는 5.18에 의해 $T$에 대해 불변임을 떠올리자. $V$를 $\operatorname{null}(T^2+bT+cI)$로 바꾸고, $T$를 이 영공간에 제한한 연산자로 바꾸면 $T^2+bT+cI=0$이라고 가정할 수 있다. 이제 $\dim V$가 짝수임을 증명하면 된다.
+증명. $\text{null}(T^2+bT+cI)$는 5.18에 의해 $T$에 대해 불변임을 떠올리자. $V$를 $\text{null}(T^2+bT+cI)$로 바꾸고, $T$를 이 영공간에 제한한 연산자로 바꾸면 $T^2+bT+cI=0$이라고 가정할 수 있다. 이제 $\dim V$가 짝수임을 증명하면 된다.
 
 $\lambda\in\mathbb{R}$와 $v\in V$가 $Tv=\lambda v$를 만족한다고 하자. 그러면
+
 $$
 \begin{aligned}
 0
@@ -797,9 +864,10 @@ $$
 $U$를 $T$에 대해 불변이고 짝수 차원을 가지는 $V$의 부분공간들 중 차원이 가장 큰 부분공간이라고 하자. 만약 $U=V$이면 끝난다. 그렇지 않다면 $w\notin U$인 $w\in V$가 존재한다고 하자.
 
 $$
-W=\operatorname{span}(w,Tw)
+W=\text{span}(w,Tw)
 $$
 라고 하자. 그러면 $T(Tw)=-bTw-cw$이므로 $W$는 $T$에 대해 불변이다. 또한 $\dim W=2$이다. 그렇지 않으면 $w$가 $T$의 고유벡터가 되기 때문이다. 이제
+
 $$
 \dim(U+W)=\dim U+\dim W-\dim(U\cap W)=\dim U+2
 $$
@@ -816,26 +884,30 @@ $$
 이제 $n\ge 3$이고, $n$보다 작은 홀수 차원의 모든 벡터공간 위의 모든 연산자에 대해 원하는 결과가 성립한다고 가정하자. $p$를 $T$의 최소다항식이라고 하자. 만약 $p$가 어떤 $\lambda\in\mathbb{R}$에 대해 $x-\lambda$의 다항식배이면, 5.27(a)에 의해 $\lambda$가 $T$의 고윳값이므로 끝난다. 따라서 어떤 $b,c\in\mathbb{R}$가 존재하여 $b^2<4c$이고 $p$가 $x^2+bx+c$의 다항식배라고 가정할 수 있다. 4.16을 보라.
 
 어떤 최고차계수가 $1$인 다항식 $q\in\mathcal{P}(\mathbb{R})$가 존재하여 모든 $x\in\mathbb{R}$에 대해
+
 $$
 p(x)=q(x)(x^2+bx+c)
 $$
 이다. 이제
+
 $$
 0=p(T)=(q(T))(T^2+bT+cI)
 $$
-이므로 $q(T)$는 $\operatorname{range}(T^2+bT+cI)$ 위에서 $0$과 같다. $\deg q<\deg p$이고 $p$가 $T$의 최소다항식이므로, 이는
+이므로 $q(T)$는 $\text{range}(T^2+bT+cI)$ 위에서 $0$과 같다. $\deg q<\deg p$이고 $p$가 $T$의 최소다항식이므로, 이는
+
 $$
-\operatorname{range}(T^2+bT+cI)\ne V
+\text{range}(T^2+bT+cI)\ne V
 $$
 임을 함의한다. 선형사상의 기본정리(3.21)는
+
 $$
 \dim V
-=\dim\operatorname{null}(T^2+bT+cI)
-+\dim\operatorname{range}(T^2+bT+cI)
+=\dim\text{null}(T^2+bT+cI)
++\dim\text{range}(T^2+bT+cI)
 $$
-를 알려 준다. 가정에 의해 $\dim V$는 홀수이고, 5.33에 의해 $\dim\operatorname{null}(T^2+bT+cI)$는 짝수이므로, 위 식은 $\dim\operatorname{range}(T^2+bT+cI)$가 홀수임을 보여 준다.
+를 알려 준다. 가정에 의해 $\dim V$는 홀수이고, 5.33에 의해 $\dim\text{null}(T^2+bT+cI)$는 짝수이므로, 위 식은 $\dim\text{range}(T^2+bT+cI)$가 홀수임을 보여 준다.
 
-따라서 $\operatorname{range}(T^2+bT+cI)$는 5.18에 의해 $T$에 대해 불변이고, $\dim V$보다 작은 홀수 차원의 $V$의 부분공간이다. 이제 귀납가정에 의해 $\operatorname{range}(T^2+bT+cI)$로 제한한 $T$가 고윳값을 가진다. 이는 $T$가 고윳값을 가진다는 뜻이다.
+따라서 $\text{range}(T^2+bT+cI)$는 5.18에 의해 $T$에 대해 불변이고, $\dim V$보다 작은 홀수 차원의 $V$의 부분공간이다. 이제 귀납가정에 의해 $\text{range}(T^2+bT+cI)$로 제한한 $T$가 고윳값을 가진다. 이는 $T$가 고윳값을 가진다는 뜻이다.
 
 위 결과의 다른 증명은 8B절의 연습문제 23번과 9C절의 연습문제 10번을 보라.
 
@@ -846,6 +918,7 @@ $$
 2. $V$가 복소 벡터공간이고 $T\in\mathcal{L}(V)$가 고윳값을 가지지 않는다고 하자. $T$에 대해 불변인 $V$의 모든 부분공간은 $\{0\}$이거나 무한차원임을 증명하라.
 
 3. $n>1$인 정수 $n$에 대해 $T\in\mathcal{L}(\mathbb{F}^n)$를
+
    $$
    T(x_1,\ldots,x_n)=(x_1+\cdots+x_n,\ldots,x_1+\cdots+x_n)
    $$
@@ -876,13 +949,15 @@ $$
 9. 어떤 기저에 대해 $T$의 행렬의 모든 성분이 유리수인 $T\in\mathcal{L}(V)$라고 하자. $T$의 최소다항식의 모든 계수가 유리수인 이유를 설명하라.
 
 10. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $v\in V$라고 하자. 모든 정수 $m\ge \dim V-1$에 대해
+
     $$
-    \operatorname{span}(v,Tv,\ldots,T^mv)
-    =\operatorname{span}(v,Tv,\ldots,T^{\dim V-1}v)
+    \text{span}(v,Tv,\ldots,T^mv)
+    =\text{span}(v,Tv,\ldots,T^{\dim V-1}v)
     $$
     임을 증명하라.
 
 11. $V$가 $2$차원 벡터공간이고 $T\in\mathcal{L}(V)$이며, 어떤 $V$의 기저에 대한 $T$의 행렬이
+
     $$
     \begin{pmatrix}
     a&c\\
@@ -903,6 +978,7 @@ $$
     $$
 
 12. $T\in\mathcal{L}(\mathbb{F}^n)$를
+
     $$
     T(x_1,x_2,x_3,\ldots,x_n)=(x_1,2x_2,3x_3,\ldots,nx_n)
     $$
@@ -911,18 +987,21 @@ $$
 13. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $p\in\mathcal{P}(\mathbb{F})$라고 하자. $p(T)=r(T)$이고 $\deg r$이 $T$의 최소다항식의 차수보다 작도록 하는 유일한 $r\in\mathcal{P}(\mathbb{F})$가 존재함을 증명하라.
 
 14. $V$가 유한차원이고 $T\in\mathcal{L}(V)$의 최소다항식이
+
     $$
     4+5z-6z^2-7z^3+2z^4+z^5
     $$
     라고 하자. $T^{-1}$의 최소다항식을 찾아라.
 
 15. $V$가 $\dim V>0$인 유한차원 복소 벡터공간이고 $T\in\mathcal{L}(V)$라고 하자. $f:\mathbb{C}\to\mathbb{R}$를
+
     $$
-    f(\lambda)=\dim\operatorname{range}(T-\lambda I)
+    f(\lambda)=\dim\text{range}(T-\lambda I)
     $$
     로 정의한다. $f$가 연속함수가 아님을 증명하라.
 
 16. $a_0,\ldots,a_{n-1}\in\mathbb{F}$라고 하자. 표준기저에 대한 행렬이
+
     $$
     \begin{pmatrix}
     0&0&0&\cdots&0&-a_0\\
@@ -934,6 +1013,7 @@ $$
     \end{pmatrix}
     $$
     인 $\mathbb{F}^n$ 위의 연산자를 $T$라고 하자. 여기서 행렬의 모든 성분은 대각선 바로 아래의 모든 $1$과 마지막 열의 성분들을 제외하고는 $0$이다. 마지막 열의 성분들 중 일부도 $0$일 수 있다. $T$의 최소다항식이
+
     $$
     a_0+a_1z+\cdots+a_{n-1}z^{n-1}+z^n
     $$
@@ -944,6 +1024,7 @@ $$
 17. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $p$가 $T$의 최소다항식이라고 하자. $\lambda\in\mathbb{F}$라고 하자. $T-\lambda I$의 최소다항식은 $q(z)=p(z+\lambda)$로 정의된 다항식 $q$임을 보여라.
 
 18. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $p$가 $T$의 최소다항식이라고 하자. $\lambda\in\mathbb{F}\setminus\{0\}$라고 하자. $\lambda T$의 최소다항식은
+
     $$
     q(z)=\lambda^{\deg p}p\left(\frac{z}{\lambda}\right)
     $$
@@ -963,23 +1044,26 @@ $$
     (T-3I)^2(T-5I)^2(T-8I)^2=0.
     $$
 
-21. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$의 최소다항식의 차수가 최대 $1+\dim\operatorname{range}T$임을 증명하라.
+21. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$의 최소다항식의 차수가 최대 $1+\dim\text{range}T$임을 증명하라.
 
-    만약 $\dim\operatorname{range}T<\dim V-1$이면, 이 연습문제는 5.22보다 $T$의 최소다항식 차수에 대한 더 좋은 상계를 준다.
+    만약 $\dim\text{range}T<\dim V-1$이면, 이 연습문제는 5.22보다 $T$의 최소다항식 차수에 대한 더 좋은 상계를 준다.
 
 22. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 가역일 필요충분조건은
+
     $$
-    I\in\operatorname{span}(T,T^2,\ldots,T^{\dim V})
+    I\in\text{span}(T,T^2,\ldots,T^{\dim V})
     $$
     인 것임을 증명하라.
 
 23. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $n=\dim V$라고 하자. $v\in V$이면
+
     $$
-    \operatorname{span}(v,Tv,\ldots,T^{n-1}v)
+    \text{span}(v,Tv,\ldots,T^{n-1}v)
     $$
     가 $T$에 대해 불변임을 증명하라.
 
 24. $V$가 유한차원 복소 벡터공간이라고 하자. $T\in\mathcal{L}(V)$가 $5$와 $6$을 고윳값으로 가지고 다른 고윳값은 가지지 않는다고 하자. 다음을 증명하라.
+
     $$
     (T-5I)^{\dim V-1}(T-6I)^{\dim V-1}=0.
     $$
@@ -1028,6 +1112,7 @@ A_{n,1}&\cdots&A_{n,n}
 $$
 
 여기서 성분 $A_{j,k}$는
+
 $$
 Tv_k=A_{1,k}v_1+\cdots+A_{n,k}v_n
 $$
@@ -1044,10 +1129,12 @@ $T$가 $\mathbb{F}^n$ 위의 연산자이고 기저가 명시되지 않았다면
 **5.36 예: 표준기저에 대한 연산자의 행렬**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$를
+
 $$
 T(x,y,z)=(2x+y,\;5y+3z,\;8z)
 $$
 로 정의하자. 그러면 $\mathbb{F}^3$의 표준기저에 대한 $T$의 행렬은
+
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
@@ -1078,6 +1165,7 @@ $$
 정사각행렬의 **대각선**은 왼쪽 위 모서리에서 오른쪽 아래 모서리로 이어지는 선 위의 성분들로 이루어진다.
 
 예를 들어 예 5.36의 행렬
+
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
@@ -1115,31 +1203,35 @@ $T\in\mathcal{L}(V)$이고 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 그�
 
 (a) $v_1,\ldots,v_n$에 대한 $T$의 행렬은 상삼각행렬이다.
 
-(b) 각 $k=1,\ldots,n$에 대해 $\operatorname{span}(v_1,\ldots,v_k)$는 $T$에 대해 불변이다.
+(b) 각 $k=1,\ldots,n$에 대해 $\text{span}(v_1,\ldots,v_k)$는 $T$에 대해 불변이다.
 
-(c) 각 $k=1,\ldots,n$에 대해 $Tv_k\in\operatorname{span}(v_1,\ldots,v_k)$이다.
+(c) 각 $k=1,\ldots,n$에 대해 $Tv_k\in\text{span}(v_1,\ldots,v_k)$이다.
 
 증명. 먼저 (a)가 성립한다고 하자. (b)를 증명하기 위해 $k\in\{1,\ldots,n\}$라고 하자. $j\in\{1,\ldots,n\}$이면 $v_1,\ldots,v_n$에 대한 $T$의 행렬이 상삼각행렬이므로
-$$
-Tv_j\in\operatorname{span}(v_1,\ldots,v_j)
-$$
-이다. $j\le k$이면 $\operatorname{span}(v_1,\ldots,v_j)\subseteq\operatorname{span}(v_1,\ldots,v_k)$이므로, 각 $j\in\{1,\ldots,k\}$에 대해
-$$
-Tv_j\in\operatorname{span}(v_1,\ldots,v_k)
-$$
-임을 알 수 있다. 따라서 $\operatorname{span}(v_1,\ldots,v_k)$는 $T$에 대해 불변이다. 이로써 (a)가 (b)를 함의함을 보였다.
 
-이제 (b)가 성립한다고 하자. 즉 각 $k=1,\ldots,n$에 대해 $\operatorname{span}(v_1,\ldots,v_k)$가 $T$에 대해 불변이라고 하자. 특히 각 $k=1,\ldots,n$에 대해
 $$
-Tv_k\in\operatorname{span}(v_1,\ldots,v_k)
+Tv_j\in\text{span}(v_1,\ldots,v_j)
+$$
+이다. $j\le k$이면 $\text{span}(v_1,\ldots,v_j)\subseteq\text{span}(v_1,\ldots,v_k)$이므로, 각 $j\in\{1,\ldots,k\}$에 대해
+
+$$
+Tv_j\in\text{span}(v_1,\ldots,v_k)
+$$
+임을 알 수 있다. 따라서 $\text{span}(v_1,\ldots,v_k)$는 $T$에 대해 불변이다. 이로써 (a)가 (b)를 함의함을 보였다.
+
+이제 (b)가 성립한다고 하자. 즉 각 $k=1,\ldots,n$에 대해 $\text{span}(v_1,\ldots,v_k)$가 $T$에 대해 불변이라고 하자. 특히 각 $k=1,\ldots,n$에 대해
+
+$$
+Tv_k\in\text{span}(v_1,\ldots,v_k)
 $$
 이다. 따라서 (b)는 (c)를 함의한다.
 
-이제 (c)가 성립한다고 하자. 즉 각 $k=1,\ldots,n$에 대해 $Tv_k\in\operatorname{span}(v_1,\ldots,v_k)$라고 하자. 이는 각 $Tv_k$를 기저벡터 $v_1,\ldots,v_n$의 선형결합으로 쓸 때, 벡터 $v_1,\ldots,v_k$만 사용하면 된다는 뜻이다. 따라서 $\mathcal{M}(T)$의 대각선 아래의 모든 성분은 $0$이다. 그러므로 $\mathcal{M}(T)$는 상삼각행렬이다. 이로써 (c)가 (a)를 함의함을 보였다.
+이제 (c)가 성립한다고 하자. 즉 각 $k=1,\ldots,n$에 대해 $Tv_k\in\text{span}(v_1,\ldots,v_k)$라고 하자. 이는 각 $Tv_k$를 기저벡터 $v_1,\ldots,v_n$의 선형결합으로 쓸 때, 벡터 $v_1,\ldots,v_k$만 사용하면 된다는 뜻이다. 따라서 $\mathcal{M}(T)$의 대각선 아래의 모든 성분은 $0$이다. 그러므로 $\mathcal{M}(T)$는 상삼각행렬이다. 이로써 (c)가 (a)를 함의함을 보였다.
 
 우리는 (a) $\Longrightarrow$ (b) $\Longrightarrow$ (c) $\Longrightarrow$ (a)를 보였으므로, (a), (b), (c)는 서로 동치이다.
 
 다음 결과는 $T\in\mathcal{L}(V)$이고 어떤 $V$의 기저에 대해
+
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
@@ -1154,35 +1246,42 @@ $$
 **5.40 상삼각행렬을 가지는 연산자가 만족하는 방정식**
 
 $T\in\mathcal{L}(V)$이고, $V$가 어떤 기저에 대해 $T$의 행렬이 대각성분 $\lambda_1,\ldots,\lambda_n$을 가지는 상삼각행렬이 되도록 하는 기저를 가진다고 하자. 그러면
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_nI)=0.
 $$
 
 증명. $v_1,\ldots,v_n$을 $T$가 대각성분 $\lambda_1,\ldots,\lambda_n$을 가지는 상삼각행렬을 갖게 하는 $V$의 기저라고 하자. 그러면 $Tv_1=\lambda_1v_1$이므로 $(T-\lambda_1I)v_1=0$이다. 따라서 각 $m=1,\ldots,n$에 대해
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_mI)v_1=0
 $$
 이다. 여기서 각 $T-\lambda_jI$와 각 $T-\lambda_kI$가 서로 교환한다는 사실을 사용했다.
 
-$(T-\lambda_2I)v_2\in\operatorname{span}(v_1)$임에 주목하라. 따라서 앞 문단에 의해
+$(T-\lambda_2I)v_2\in\text{span}(v_1)$임에 주목하라. 따라서 앞 문단에 의해
+
 $$
 (T-\lambda_1I)(T-\lambda_2I)v_2=0
 $$
 이고, 이는 각 $m=2,\ldots,n$에 대해
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_mI)v_2=0
 $$
 을 함의한다. 여기서도 각 인수들이 서로 교환한다는 사실을 사용했다.
 
-같은 방식으로 $(T-\lambda_3I)v_3\in\operatorname{span}(v_1,v_2)$이므로, 앞 문단에 의해
+같은 방식으로 $(T-\lambda_3I)v_3\in\text{span}(v_1,v_2)$이므로, 앞 문단에 의해
+
 $$
 (T-\lambda_1I)(T-\lambda_2I)(T-\lambda_3I)v_3=0
 $$
 이고, 따라서 각 $m=3,\ldots,n$에 대해
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_mI)v_3=0
 $$
 이다. 이 과정을 계속하면 각 $k=1,\ldots,n$에 대해
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_nI)v_k=0
 $$
@@ -1209,19 +1308,22 @@ $$
 $Tv_1=\lambda_1v_1$이므로 $\lambda_1$은 $T$의 고윳값이다.
 
 $k\in\{2,\ldots,n\}$라고 하자. 그러면
+
 $$
-(T-\lambda_kI)v_k\in\operatorname{span}(v_1,\ldots,v_{k-1}).
+(T-\lambda_kI)v_k\in\text{span}(v_1,\ldots,v_{k-1}).
 $$
 
-따라서 $T-\lambda_kI$는 $\operatorname{span}(v_1,\ldots,v_k)$를 $\operatorname{span}(v_1,\ldots,v_{k-1})$ 안으로 보낸다. 그런데
+따라서 $T-\lambda_kI$는 $\text{span}(v_1,\ldots,v_k)$를 $\text{span}(v_1,\ldots,v_{k-1})$ 안으로 보낸다. 그런데
+
 $$
-\dim\operatorname{span}(v_1,\ldots,v_k)=k
+\dim\text{span}(v_1,\ldots,v_k)=k
 \quad\text{이고}\quad
-\dim\operatorname{span}(v_1,\ldots,v_{k-1})=k-1
+\dim\text{span}(v_1,\ldots,v_{k-1})=k-1
 $$
-이므로, $T-\lambda_kI$를 $\operatorname{span}(v_1,\ldots,v_k)$에 제한한 것은 단사가 아니다. 3.22를 보라. 따라서 $v\ne 0$이고 $(T-\lambda_kI)v=0$인 어떤 $v\in\operatorname{span}(v_1,\ldots,v_k)$가 존재한다. 그러므로 $\lambda_k$는 $T$의 고윳값이다. 이로써 $\mathcal{M}(T)$의 대각선 위의 모든 성분이 $T$의 고윳값임을 보였다.
+이므로, $T-\lambda_kI$를 $\text{span}(v_1,\ldots,v_k)$에 제한한 것은 단사가 아니다. 3.22를 보라. 따라서 $v\ne 0$이고 $(T-\lambda_kI)v=0$인 어떤 $v\in\text{span}(v_1,\ldots,v_k)$가 존재한다. 그러므로 $\lambda_k$는 $T$의 고윳값이다. 이로써 $\mathcal{M}(T)$의 대각선 위의 모든 성분이 $T$의 고윳값임을 보였다.
 
 $T$가 다른 고윳값을 가지지 않음을 증명하자. 다항식 $q$를
+
 $$
 q(z)=(z-\lambda_1)\cdots(z-\lambda_n)
 $$
@@ -1230,10 +1332,12 @@ $$
 **5.42 예: 상삼각행렬을 통한 고윳값**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$를
+
 $$
 T(x,y,z)=(2x+y,\;5y+3z,\;8z)
 $$
 로 정의하자. 표준기저에 대한 $T$의 행렬은
+
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
@@ -1249,10 +1353,12 @@ $$
 **5.43 예: $T$가 상삼각행렬을 가지는지는 $\mathbb{F}$에 의존할 수 있다**
 
 $T\in\mathcal{L}(\mathbb{F}^4)$를
+
 $$
 T(z_1,z_2,z_3,z_4)=(-z_2,\;z_1,\;2z_1+3z_3,\;z_3+3z_4)
 $$
 로 정의하자. 그러면 $\mathbb{F}^4$의 표준기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 0&-1&0&0\\
@@ -1270,16 +1376,19 @@ p(z)=9-6z+10z^2-6z^3+z^4.
 $$
 
 먼저 $\mathbb{F}=\mathbb{R}$인 경우를 생각하자. 그러면 다항식 $p$는
+
 $$
 p(z)=(z^2+1)(z-3)(z-3)
 $$
 로 인수분해되며, $z^2+1$은 실수 계수의 차수 $1$인 두 다항식의 곱으로 더 인수분해되지 않는다. 따라서 5.44는 $T$가 상삼각행렬을 가지도록 하는 $\mathbb{R}^4$의 기저가 존재하지 않는다고 말한다.
 
 이제 $\mathbb{F}=\mathbb{C}$인 경우를 생각하자. 그러면 다항식 $p$는
+
 $$
 p(z)=(z-i)(z+i)(z-3)(z-3)
 $$
 로 인수분해된다. 위의 모든 인수는 $z-\lambda_k$ 꼴이다. 따라서 5.44는 $T$가 상삼각행렬을 가지도록 하는 $\mathbb{C}^4$의 기저가 존재한다고 말한다. 실제로 $\mathbb{C}^4$의 기저
+
 $$
 (4-3i,-3-4i,-3+i,1),\quad
 (4+3i,-3+4i,-3-i,1),\quad
@@ -1300,16 +1409,19 @@ $$
 **5.44 상삼각행렬을 가지기 위한 필요충분조건**
 
 $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $T$가 어떤 $V$의 기저에 대해 상삼각행렬을 가질 필요충분조건은 $T$의 최소다항식이 어떤 $\lambda_1,\ldots,\lambda_m\in\mathbb{F}$에 대해
+
 $$
 (z-\lambda_1)\cdots(z-\lambda_m)
 $$
 와 같은 것이다.
 
 증명. 먼저 $T$가 어떤 $V$의 기저에 대해 상삼각행렬을 가진다고 하자. 그 행렬의 대각성분을 $\alpha_1,\ldots,\alpha_n$이라고 하자. 다항식 $q\in\mathcal{P}(\mathbb{F})$를
+
 $$
 q(z)=(z-\alpha_1)\cdots(z-\alpha_n)
 $$
 로 정의한다. 그러면 5.40에 의해 $q(T)=0$이다. 따라서 5.29에 의해 $q$는 $T$의 최소다항식의 다항식배이다. 그러므로 $T$의 최소다항식은 어떤 $\lambda_1,\ldots,\lambda_m\in\mathbb{F}$에 대해
+
 $$
 (z-\lambda_1)\cdots(z-\lambda_m)
 $$
@@ -1320,12 +1432,13 @@ $$
 이제 $m>1$이고, 더 작은 모든 양의 정수에 대해 원하는 결과가 성립한다고 가정하자. 다음을 두자.
 
 $$
-U=\operatorname{range}(T-\lambda_mI).
+U=\text{range}(T-\lambda_mI).
 $$
 
 $U$는 $T$에 대해 불변이다. 이는 $p(z)=z-\lambda_m$인 경우의 5.18의 특수한 경우이다. 따라서 $T|_U$는 $U$ 위의 연산자이다.
 
 $u\in U$이면 어떤 $v\in V$에 대해 $u=(T-\lambda_mI)v$이고
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_{m-1}I)u
 =(T-\lambda_1I)\cdots(T-\lambda_mI)v=0.
@@ -1336,21 +1449,24 @@ $$
 귀납가정에 의해, $T|_U$가 상삼각행렬을 가지도록 하는 $U$의 기저 $u_1,\ldots,u_M$가 존재한다. 따라서 각 $k\in\{1,\ldots,M\}$에 대해 5.39를 사용하면
 
 **(5.45)**
+
 $$
-Tu_k=(T|_U)(u_k)\in\operatorname{span}(u_1,\ldots,u_k)
+Tu_k=(T|_U)(u_k)\in\text{span}(u_1,\ldots,u_k)
 $$
 이다.
 
 $u_1,\ldots,u_M$을 $V$의 기저 $u_1,\ldots,u_M,v_1,\ldots,v_N$으로 확장한다. $k\in\{1,\ldots,N\}$이면
+
 $$
 Tv_k=(T-\lambda_mI)v_k+\lambda_mv_k.
 $$
 
-$U$의 정의에 의해 $(T-\lambda_mI)v_k\in U=\operatorname{span}(u_1,\ldots,u_M)$이다. 따라서 위 식은
+$U$의 정의에 의해 $(T-\lambda_mI)v_k\in U=\text{span}(u_1,\ldots,u_M)$이다. 따라서 위 식은
 
 **(5.46)**
+
 $$
-Tv_k\in\operatorname{span}(u_1,\ldots,u_M,v_1,\ldots,v_k)
+Tv_k\in\text{span}(u_1,\ldots,u_M,v_1,\ldots,v_k)
 $$
 임을 보여 준다.
 
@@ -1387,6 +1503,7 @@ $ST=TS$를 만족하는 두 연산자 $S,T$에 대한 위 결과의 확장은 5.
    이 연습문제의 결과들은 5.81의 증명에서 사용된다.
 
 3. $T\in\mathcal{L}(V)$가 가역이고 $v_1,\ldots,v_n$이 $T$의 행렬이 대각성분 $\lambda_1,\ldots,\lambda_n$을 가지는 상삼각행렬이 되도록 하는 $V$의 기저라고 하자. $T^{-1}$의 행렬도 이 기저에 대해 상삼각행렬이고, 대각성분이
+
    $$
    \frac{1}{\lambda_1},\ldots,\frac{1}{\lambda_n}
    $$
@@ -1407,6 +1524,7 @@ $ST=TS$를 만족하는 두 연산자 $S,T$에 대한 위 결과의 확장은 5.
    (b) $T$의 최소다항식이 $p_v$의 다항식배임을 증명하라.
 
 8. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며, 영이 아닌 벡터 $v\in V$가 존재하여
+
    $$
    T^2v+2Tv=-2v
    $$
@@ -1422,9 +1540,9 @@ $ST=TS$를 만족하는 두 연산자 $S,T$에 대한 위 결과의 확장은 5.
 
    (a) $v_1,\ldots,v_n$에 대한 $T$의 행렬은 하삼각행렬이다.
 
-   (b) 각 $k=1,\ldots,n$에 대해 $\operatorname{span}(v_k,\ldots,v_n)$은 $T$에 대해 불변이다.
+   (b) 각 $k=1,\ldots,n$에 대해 $\text{span}(v_k,\ldots,v_n)$은 $T$에 대해 불변이다.
 
-   (c) 각 $k=1,\ldots,n$에 대해 $Tv_k\in\operatorname{span}(v_k,\ldots,v_n)$이다.
+   (c) 각 $k=1,\ldots,n$에 대해 $Tv_k\in\text{span}(v_k,\ldots,v_n)$이다.
 
    정사각행렬에서 대각선 위의 모든 성분이 $0$이면 그 행렬을 하삼각행렬이라고 한다.
 
@@ -1472,10 +1590,12 @@ $V$ 위의 연산자가 어떤 $V$의 기저에 대해 대각행렬을 가지면
 **5.51 예: 대각화에는 다른 기저가 필요할 수 있다**
 
 $T\in\mathcal{L}(\mathbb{R}^2)$를
+
 $$
 T(x,y)=(41x+7y,\;-20x+74y)
 $$
 로 정의하자. $\mathbb{R}^2$의 표준기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 41&7\\
@@ -1483,6 +1603,7 @@ $$
 \end{pmatrix}
 $$
 로, 대각행렬이 아니다. 그러나 $T$는 대각화 가능이다. 구체적으로, 기저 $(1,4),(7,5)$에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 69&0\\
@@ -1490,10 +1611,12 @@ $$
 \end{pmatrix}
 $$
 이다. 왜냐하면
+
 $$
 T(1,4)=(69,276)=69(1,4)
 $$
 이고
+
 $$
 T(7,5)=(322,230)=46(7,5)
 $$
@@ -1506,7 +1629,7 @@ $\lambda\in\mathbb{F}$에 대해, 연산자 $T$가 $\lambda$배로 보내는 벡
 $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$라고 하자. $\lambda$에 대응하는 $T$의 **고유공간**은 다음과 같이 정의되는 $V$의 부분공간 $E(\lambda,T)$이다.
 
 $$
-E(\lambda,T)=\operatorname{null}(T-\lambda I)=\{v\in V:Tv=\lambda v\}.
+E(\lambda,T)=\text{null}(T-\lambda I)=\{v\in V:Tv=\lambda v\}.
 $$
 
 따라서 $E(\lambda,T)$는 $\lambda$에 대응하는 $T$의 모든 고유벡터들과 영벡터로 이루어진 집합이다.
@@ -1516,10 +1639,11 @@ $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$일 때, $E(\lambda,T)$는 $V$�
 **5.53 예: 연산자의 고유공간**
 
 $V$의 기저 $v_1,v_2,v_3$에 대한 연산자 $T\in\mathcal{L}(V)$의 행렬이 예 5.49의 행렬이라고 하자. 그러면
+
 $$
-E(8,T)=\operatorname{span}(v_1),
+E(8,T)=\text{span}(v_1),
 \quad
-E(5,T)=\operatorname{span}(v_2,v_3).
+E(5,T)=\text{span}(v_2,v_3).
 $$
 
 $\lambda$가 연산자 $T\in\mathcal{L}(V)$의 고윳값이면, $E(\lambda,T)$로 제한한 $T$는 단지 $\lambda$를 곱하는 연산자이다.
@@ -1527,21 +1651,25 @@ $\lambda$가 연산자 $T\in\mathcal{L}(V)$의 고윳값이면, $E(\lambda,T)$�
 **5.54 고유공간들의 합은 직합이다**
 
 $T\in\mathcal{L}(V)$이고 $\lambda_1,\ldots,\lambda_m$이 $T$의 서로 다른 고윳값들이라고 하자. 그러면
+
 $$
 E(\lambda_1,T)+\cdots+E(\lambda_m,T)
 $$
 는 직합이다. 더 나아가 $V$가 유한차원이면
+
 $$
 \dim E(\lambda_1,T)+\cdots+\dim E(\lambda_m,T)\le \dim V.
 $$
 
 증명. $E(\lambda_1,T)+\cdots+E(\lambda_m,T)$가 직합임을 보이기 위해
+
 $$
 v_1+\cdots+v_m=0
 $$
 라고 하자. 여기서 각 $v_k$는 $E(\lambda_k,T)$에 속한다. 서로 다른 고윳값에 대응하는 고유벡터들은 5.11에 의해 선형독립이므로, 이는 각 $v_k$가 $0$임을 함의한다. 따라서 1.45에 의해 $E(\lambda_1,T)+\cdots+E(\lambda_m,T)$는 원하는 대로 직합이다.
 
 이제 $V$가 유한차원이라고 하자. 그러면
+
 $$
 \begin{aligned}
 \dim E(\lambda_1,T)+\cdots+\dim E(\lambda_m,T)
@@ -1569,6 +1697,7 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda_1,\ldots,\
 (d) $\dim V=\dim E(\lambda_1,T)+\cdots+\dim E(\lambda_m,T)$이다.
 
 증명. 연산자 $T\in\mathcal{L}(V)$가 $V$의 기저 $v_1,\ldots,v_n$에 대해
+
 $$
 \begin{pmatrix}
 \lambda_1&0&\cdots&0\\
@@ -1580,6 +1709,7 @@ $$
 꼴의 대각행렬을 가질 필요충분조건은 각 $k$에 대해 $Tv_k=\lambda_kv_k$인 것이다. 따라서 (a)와 (b)는 동치이다.
 
 (b)가 성립한다고 하자. 즉 $V$가 $T$의 고유벡터들로 이루어진 기저를 가진다고 하자. 그러면 $V$의 모든 벡터는 $T$의 고유벡터들의 선형결합이다. 이는
+
 $$
 V=E(\lambda_1,T)+\cdots+E(\lambda_m,T)
 $$
@@ -1590,14 +1720,17 @@ $$
 마지막으로 (d)가 성립한다고 하자. 즉
 
 **(5.56)**
+
 $$
 \dim V=\dim E(\lambda_1,T)+\cdots+\dim E(\lambda_m,T)
 $$
 라고 하자. 각 $E(\lambda_k,T)$의 기저를 하나씩 택하고, 이 기저들을 모두 이어 붙여 $T$의 고유벡터들로 이루어진 리스트 $v_1,\ldots,v_n$을 만든다. 여기서 $n=\dim V$이다. 이는 (5.56)에 의한다. 이 리스트가 선형독립임을 보이기 위해
+
 $$
 a_1v_1+\cdots+a_nv_n=0
 $$
 라고 하자. 여기서 $a_1,\ldots,a_n\in\mathbb{F}$이다. 각 $k=1,\ldots,m$에 대해 $u_k$를 $v_j\in E(\lambda_k,T)$인 항들 $a_jv_j$의 합이라고 하자. 그러면 각 $u_k$는 $E(\lambda_k,T)$에 속하고
+
 $$
 u_1+\cdots+u_m=0
 $$
@@ -1610,10 +1743,12 @@ $$
 **5.57 예: 대각화 가능하지 않은 연산자**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$를
+
 $$
 T(a,b,c)=(b,c,0)
 $$
 로 정의하자. $\mathbb{F}^3$의 표준기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 0&1&0\\
@@ -1624,6 +1759,7 @@ $$
 이다. 이 행렬은 상삼각행렬이지만 대각행렬은 아니다.
 
 확인할 수 있듯이, $0$은 $T$의 유일한 고윳값이고 더 나아가
+
 $$
 E(0,T)=\{(a,0,0)\in\mathbb{F}^3:a\in\mathbb{F}\}.
 $$
@@ -1642,12 +1778,14 @@ $V$ 안의 $\dim V$개의 벡터로 이루어진 선형독립 리스트는 2.38�
 뒤의 장들에서는 특정 연산자들이 대각화 가능임을 함의하는 추가 조건들을 찾게 된다. 예를 들어 실수 스펙트럼 정리(7.29)와 복소 스펙트럼 정리(7.31)를 보라.
 
 위 결과는 연산자가 대각화 가능이 되기 위한 충분조건을 준다. 그러나 이 조건은 필요조건이 아니다. 예를 들어 $\mathbb{F}^3$ 위의 연산자 $T$를
+
 $$
 T(x,y,z)=(6x,6y,7z)
 $$
 로 정의하면, $T$는 고윳값을 두 개($6$과 $7$)만 가진다. $\dim\mathbb{F}^3=3$이지만, $T$는 $\mathbb{F}^3$의 표준기저에 의해 대각화 가능이다.
 
 다음 예는 대각화의 중요성을 보여 준다. 대각화는 연산자의 높은 거듭제곱을 계산하는 데 사용할 수 있으며, $v$가 고윳값 $\lambda$를 가지는 $T$의 고유벡터이면
+
 $$
 T^kv=\lambda^kv
 $$
@@ -1656,10 +1794,12 @@ $$
 **5.59 예: 대각화를 사용하여 $T^{100}$ 계산하기**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$를
+
 $$
 T(x,y,z)=(2x+y,\;5y+3z,\;8z)
 $$
 로 정의하자. 표준기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 2&1&0\\
@@ -1672,12 +1812,14 @@ $$
 위 행렬은 상삼각행렬이지만 대각행렬은 아니다. 5.41에 의해 $T$의 고윳값은 $2,5,8$이다. $T$는 $3$차원 벡터공간 위의 연산자이고 $T$는 세 개의 서로 다른 고윳값을 가지므로, 5.58은 $T$가 대각행렬을 가지도록 하는 $\mathbb{F}^3$의 기저가 존재함을 보장한다.
 
 이 기저를 찾으려면 각 고윳값에 대한 고유벡터를 찾기만 하면 된다. 다시 말해 $\lambda=2$, 다음으로 $\lambda=5$, 다음으로 $\lambda=8$에 대해 방정식
+
 $$
 T(x,y,z)=\lambda(x,y,z)
 $$
 의 영이 아닌 해를 찾으면 된다. 이 간단한 방정식들을 풀면 $\lambda=2$에 대해서는 고유벡터 $(1,0,0)$, $\lambda=5$에 대해서는 고유벡터 $(1,3,0)$, $\lambda=8$에 대해서는 고유벡터 $(1,6,6)$을 얻는다.
 
 따라서 $(1,0,0),(1,3,0),(1,6,6)$은 $T$의 고유벡터들로 이루어진 $\mathbb{F}^3$의 기저이고, 이 기저에 대한 $T$의 행렬은 대각행렬
+
 $$
 \begin{pmatrix}
 2&0&0\\
@@ -1694,6 +1836,7 @@ $$
 $$
 
 이제 위 식의 양변에 $T^{100}$을 적용하면
+
 $$
 \begin{aligned}
 T^{100}(0,0,1)
@@ -1712,12 +1855,14 @@ $$
 **5.60 예: 대각화 가능하지만 정확한 고윳값은 알려져 있지 않은 경우**
 
 $T\in\mathcal{L}(\mathbb{C}^5)$를
+
 $$
 T(z_1,z_2,z_3,z_4,z_5)=(-3z_5,\;z_1+6z_5,\;z_2,\;z_3,\;z_4)
 $$
 로 정의하자. $T$의 행렬은 예 5.26에 나타나 있으며, 그곳에서 $T$의 최소다항식이 $3-6z+z^5$임을 보였다.
 
 예 5.28에서 언급했듯이, 이 다항식의 영점들에 대한 정확한 표현은 알려져 있지 않다. 그러나 수치적 기법은 이 다항식의 영점들이 대략
+
 $$
 -1.67,\quad 0.51,\quad 1.40,\quad -0.12+1.59i,\quad -0.12-1.59i
 $$
@@ -1726,10 +1871,12 @@ $$
 **5.61 예: 연산자가 대각화 가능하지 않음을 보이기**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$를
+
 $$
 T(z_1,z_2,z_3)=(6z_1+3z_2+4z_3,\;6z_2+2z_3,\;7z_3)
 $$
 로 정의하자. $\mathbb{F}^3$의 표준기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 6&3&4\\
@@ -1742,12 +1889,14 @@ $$
 위 행렬은 상삼각행렬이지만 대각행렬은 아니다. $T$가 $\mathbb{F}^3$의 다른 어떤 기저에 대해서는 대각행렬을 가질 수 있을까?
 
 이 질문에 답하기 위해 $T$의 최소다항식을 찾는다. 먼저 $T$의 고윳값은 5.41에 의해 위 행렬의 대각성분들이다. 따라서 $T$의 최소다항식의 영점은 5.27(a)에 의해 $6,7$이다. 위 행렬의 대각선은 5.40에 의해
+
 $$
 (T-6I)^2(T-7I)=0
 $$
 임을 말해 준다. $T$의 최소다항식의 차수는 5.22에 의해 최대 $3$이다. 이 모든 것을 종합하면, $T$의 최소다항식은 $(z-6)(z-7)$ 또는 $(z-6)^2(z-7)$이다.
 
 간단한 계산은
+
 $$
 (T-6I)(T-7I)\ne 0
 $$
@@ -1758,12 +1907,14 @@ $$
 **5.62 대각화 가능성을 위한 필요충분조건**
 
 $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $T$가 대각화 가능일 필요충분조건은 $T$의 최소다항식이 서로 다른 수들의 리스트 $\lambda_1,\ldots,\lambda_m\in\mathbb{F}$에 대해
+
 $$
 (z-\lambda_1)\cdots(z-\lambda_m)
 $$
 과 같은 것이다.
 
 증명. 먼저 $T$가 대각화 가능이라고 하자. 그러면 $T$의 고유벡터들로 이루어진 $V$의 기저 $v_1,\ldots,v_n$이 존재한다. $\lambda_1,\ldots,\lambda_m$을 $T$의 서로 다른 고윳값들이라고 하자. 각 $v_j$에 대해 어떤 $\lambda_k$가 존재하여 $(T-\lambda_kI)v_j=0$이다. 따라서
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_mI)v_j=0
 $$
@@ -1772,24 +1923,27 @@ $$
 반대 방향을 증명하자. 이제 $T$의 최소다항식이 서로 다른 수들의 리스트 $\lambda_1,\ldots,\lambda_m\in\mathbb{F}$에 대해 $(z-\lambda_1)\cdots(z-\lambda_m)$이라고 하자. 따라서
 
 **(5.63)**
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_mI)=0.
 $$
 
 $m$에 대한 귀납법으로 $T$가 대각화 가능임을 증명한다. 시작점으로 $m=1$이라고 하자. 그러면 $T-\lambda_1I=0$이고, 이는 $T$가 항등연산자의 스칼라배라는 뜻이다. 따라서 $T$는 대각화 가능이다.
 
-이제 $m>1$이고 더 작은 모든 $m$에 대해 원하는 결과가 성립한다고 가정하자. 부분공간 $\operatorname{range}(T-\lambda_mI)$는 $T$에 대해 불변이다. 이는 $p(z)=z-\lambda_m$인 경우의 5.18의 특수한 경우이다. 따라서 $T$를 $\operatorname{range}(T-\lambda_mI)$에 제한한 것은 $\operatorname{range}(T-\lambda_mI)$ 위의 연산자이다.
+이제 $m>1$이고 더 작은 모든 $m$에 대해 원하는 결과가 성립한다고 가정하자. 부분공간 $\text{range}(T-\lambda_mI)$는 $T$에 대해 불변이다. 이는 $p(z)=z-\lambda_m$인 경우의 5.18의 특수한 경우이다. 따라서 $T$를 $\text{range}(T-\lambda_mI)$에 제한한 것은 $\text{range}(T-\lambda_mI)$ 위의 연산자이다.
 
-$u\in\operatorname{range}(T-\lambda_mI)$이면 어떤 $v\in V$에 대해 $u=(T-\lambda_mI)v$이고, (5.63)은
+$u\in\text{range}(T-\lambda_mI)$이면 어떤 $v\in V$에 대해 $u=(T-\lambda_mI)v$이고, (5.63)은
 
 **(5.64)**
+
 $$
 (T-\lambda_1I)\cdots(T-\lambda_{m-1}I)u
 =(T-\lambda_1I)\cdots(T-\lambda_mI)v=0
 $$
-을 함의한다. 따라서 5.29에 의해 $(z-\lambda_1)\cdots(z-\lambda_{m-1})$은 $\operatorname{range}(T-\lambda_mI)$에 제한한 $T$의 최소다항식의 다항식배이다. 그러므로 귀납가정에 의해 $\operatorname{range}(T-\lambda_mI)$는 $T$의 고유벡터들로 이루어진 기저를 가진다.
+을 함의한다. 따라서 5.29에 의해 $(z-\lambda_1)\cdots(z-\lambda_{m-1})$은 $\text{range}(T-\lambda_mI)$에 제한한 $T$의 최소다항식의 다항식배이다. 그러므로 귀납가정에 의해 $\text{range}(T-\lambda_mI)$는 $T$의 고유벡터들로 이루어진 기저를 가진다.
 
-$u\in\operatorname{range}(T-\lambda_mI)\cap\operatorname{null}(T-\lambda_mI)$라고 하자. 그러면 $Tu=\lambda_mu$이다. 이제 (5.64)는
+$u\in\text{range}(T-\lambda_mI)\cap\text{null}(T-\lambda_mI)$라고 하자. 그러면 $Tu=\lambda_mu$이다. 이제 (5.64)는
+
 $$
 \begin{aligned}
 0
@@ -1798,16 +1952,18 @@ $$
 \end{aligned}
 $$
 를 함의한다. $\lambda_1,\ldots,\lambda_m$은 서로 다르므로 위 식은 $u=0$을 함의한다. 따라서
+
 $$
-\operatorname{range}(T-\lambda_mI)\cap\operatorname{null}(T-\lambda_mI)=\{0\}.
+\text{range}(T-\lambda_mI)\cap\text{null}(T-\lambda_mI)=\{0\}.
 $$
 
-그러므로 $\operatorname{range}(T-\lambda_mI)+\operatorname{null}(T-\lambda_mI)$는 직합이고, 3.94와 3.21에 의해 그 차원은 $\dim V$이다. 따라서
+그러므로 $\text{range}(T-\lambda_mI)+\text{null}(T-\lambda_mI)$는 직합이고, 3.94와 3.21에 의해 그 차원은 $\dim V$이다. 따라서
+
 $$
-\operatorname{range}(T-\lambda_mI)\oplus\operatorname{null}(T-\lambda_mI)=V.
+\text{range}(T-\lambda_mI)\oplus\text{null}(T-\lambda_mI)=V.
 $$
 
-$\operatorname{null}(T-\lambda_mI)$의 모든 영이 아닌 벡터는 고윳값 $\lambda_m$에 대응하는 $T$의 고유벡터이다. 이 증명에서 앞서 $\operatorname{range}(T-\lambda_mI)$에는 $T$의 고유벡터들로 이루어진 기저가 있음을 보았다. 그 기저에 $\operatorname{null}(T-\lambda_mI)$의 기저를 이어 붙이면 $T$의 고유벡터들로 이루어진 $V$의 기저를 얻는다. 이 기저에 대한 $T$의 행렬은 원하는 대로 대각행렬이다.
+$\text{null}(T-\lambda_mI)$의 모든 영이 아닌 벡터는 고윳값 $\lambda_m$에 대응하는 $T$의 고유벡터이다. 이 증명에서 앞서 $\text{range}(T-\lambda_mI)$에는 $T$의 고유벡터들로 이루어진 기저가 있음을 보았다. 그 기저에 $\text{null}(T-\lambda_mI)$의 기저를 이어 붙이면 $T$의 고유벡터들로 이루어진 $V$의 기저를 얻는다. 이 기저에 대한 $T$의 행렬은 원하는 대로 대각행렬이다.
 
 차수 $5$ 이상인 다항식의 영점에 대한 공식은 존재하지 않는다. 그러나 앞 결과는 복소 벡터공간 위의 연산자가 대각화 가능한지 여부를, 최소다항식의 영점 근삿값조차 찾지 않고도 결정하는 데 사용할 수 있다. 연습문제 15번을 보라.
 
@@ -1818,6 +1974,7 @@ $\operatorname{null}(T-\lambda_mI)$의 모든 영이 아닌 벡터는 고윳값 
 $T\in\mathcal{L}(V)$가 대각화 가능이고 $U$가 $T$에 대해 불변인 $V$의 부분공간이라고 하자. 그러면 $T|_U$는 $U$ 위의 대각화 가능 연산자이다.
 
 증명. 연산자 $T$가 대각화 가능이므로, 5.62에 의해 $T$의 최소다항식은 서로 다른 수들의 리스트 $\lambda_1,\ldots,\lambda_m\in\mathbb{F}$에 대해
+
 $$
 (z-\lambda_1)\cdots(z-\lambda_m)
 $$
@@ -1848,18 +2005,21 @@ $T\in\mathcal{L}(V)$이고 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 그�
 증명. $\lambda\in\mathbb{F}$가 $T$의 고윳값이라고 하자. 대응하는 고유벡터를 $w\in V$라고 하자. 그러면 어떤 $c_1,\ldots,c_n\in\mathbb{F}$가 존재하여
 
 **(5.68)**
+
 $$
 w=c_1v_1+\cdots+c_nv_n
 $$
 이다. $A$를 기저 $v_1,\ldots,v_n$에 대한 $T$의 행렬이라고 하자. 위 식의 양변에 $T$를 적용하면
 
 **(5.69)**
+
 $$
 \lambda w=\sum_{k=1}^n c_kTv_k
 $$
 이고,
 
 **(5.70)**
+
 $$
 \begin{aligned}
 \sum_{k=1}^n c_kTv_k
@@ -1869,15 +2029,18 @@ $$
 $$
 
 $j\in\{1,\ldots,n\}$를
+
 $$
 |c_j|=\max\{|c_1|,\ldots,|c_n|\}
 $$
 이 되도록 잡는다. $w\ne 0$이므로 $c_j\ne 0$이다. (5.68)을 사용하면, (5.69)의 왼쪽에서 $v_j$의 계수는 $\lambda c_j$이고, 이는 (5.70)의 오른쪽에서 $v_j$의 계수와 같아야 한다. 다시 말해
+
 $$
 \lambda c_j=\sum_{k=1}^n A_{j,k}c_k.
 $$
 
 위 식의 양변에서 $A_{j,j}c_j$를 빼고, 양변을 $c_j$로 나누면
+
 $$
 \begin{aligned}
 |\lambda-A_{j,j}|
@@ -1903,39 +2066,44 @@ $$
 2. $T\in\mathcal{L}(V)$가 어떤 $V$의 기저에 대해 대각행렬 $A$를 가진다고 하자. $\lambda\in\mathbb{F}$이면, $\lambda$가 $A$의 대각선 위에 나타나는 횟수가 정확히 $\dim E(\lambda,T)$임을 증명하라.
 
 3. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 연산자 $T$가 대각화 가능이면
+
    $$
-   V=\operatorname{null}T\oplus\operatorname{range}T
+   V=\text{null}T\oplus\text{range}T
    $$
    임을 증명하라.
 
 4. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 다음 조건들이 서로 동치임을 증명하라.
 
-   (a) $V=\operatorname{null}T\oplus\operatorname{range}T$.
+   (a) $V=\text{null}T\oplus\text{range}T$.
 
-   (b) $V=\operatorname{null}T+\operatorname{range}T$.
+   (b) $V=\text{null}T+\text{range}T$.
 
-   (c) $\operatorname{null}T\cap\operatorname{range}T=\{0\}$.
+   (c) $\text{null}T\cap\text{range}T=\{0\}$.
 
 5. $V$가 유한차원 복소 벡터공간이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 대각화 가능일 필요충분조건은 모든 $\lambda\in\mathbb{C}$에 대해
+
    $$
-   V=\operatorname{null}(T-\lambda I)\oplus\operatorname{range}(T-\lambda I)
+   V=\text{null}(T-\lambda I)\oplus\text{range}(T-\lambda I)
    $$
    인 것임을 증명하라.
 
 6. $T\in\mathcal{L}(\mathbb{F}^5)$이고 $\dim E(8,T)=4$라고 하자. $T-2I$ 또는 $T-6I$가 가역임을 증명하라.
 
 7. $T\in\mathcal{L}(V)$가 가역이라고 하자. 모든 $\lambda\in\mathbb{F}$, $\lambda\ne 0$에 대해
+
    $$
    E(\lambda,T)=E\left(\frac{1}{\lambda},T^{-1}\right)
    $$
    임을 증명하라.
 
 8. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda_1,\ldots,\lambda_m$을 $T$의 서로 다른 영이 아닌 고윳값들이라고 하자. 다음을 증명하라.
+
    $$
-   \dim E(\lambda_1,T)+\cdots+\dim E(\lambda_m,T)\le \dim\operatorname{range}T.
+   \dim E(\lambda_1,T)+\cdots+\dim E(\lambda_m,T)\le \dim\text{range}T.
    $$
 
 9. $R,T\in\mathcal{L}(\mathbb{F}^3)$가 각각 $2,6,7$을 고윳값으로 가진다고 하자. 어떤 가역 연산자 $S\in\mathcal{L}(\mathbb{F}^3)$가 존재하여
+
    $$
    R=S^{-1}TS
    $$
@@ -1946,6 +2114,7 @@ $$
 11. $6$과 $7$이 $T$의 고윳값이고, $T$가 $\mathbb{C}^3$의 어떤 기저에 대해서도 대각행렬을 가지지 않도록 하는 $T\in\mathcal{L}(\mathbb{C}^3)$를 찾아라.
 
 12. $T\in\mathcal{L}(\mathbb{C}^3)$가 $6$과 $7$을 고윳값으로 가진다고 하자. 더 나아가 $T$가 $\mathbb{C}^3$의 어떤 기저에 대해서도 대각행렬을 가지지 않는다고 하자. 그러면 어떤 $(z_1,z_2,z_3)\in\mathbb{C}^3$가 존재하여
+
     $$
     T(z_1,z_2,z_3)=(6+8z_1,\;7+8z_2,\;13+8z_3)
     $$
@@ -1970,6 +2139,7 @@ $$
     $p$와 $p'$의 최대공약수는 $p$와 $p'$가 모두 그 다항식의 다항식배가 되도록 하는 가장 큰 차수의 최고차계수가 $1$인 다항식 $q$이다. 다항식에 대한 유클리드 알고리즘을 찾아보면, 다항식들의 영점에 관한 정보 없이도 두 다항식의 최대공약수를 빠르게 결정할 수 있다. 따라서 위의 (a)와 (d)의 동치는 $p$의 영점에 대해 아무것도 몰라도 $T$가 대각화 가능한지 결정할 수 있음을 보여 준다.
 
 16. $T\in\mathcal{L}(V)$가 대각화 가능이라고 하자. $\lambda_1,\ldots,\lambda_m$을 $T$의 서로 다른 고윳값들이라고 하자. $V$의 부분공간 $U$가 $T$에 대해 불변일 필요충분조건은 각 $k$에 대해 $U_k\subseteq E(\lambda_k,T)$이고
+
     $$
     U=U_1\oplus\cdots\oplus U_m
     $$
@@ -1988,6 +2158,7 @@ $$
 20. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 대각화 가능일 필요충분조건은 쌍대연산자 $T'$가 대각화 가능인 것임을 증명하라.
 
 21. 피보나치 수열 $F_0,F_1,F_2,\ldots$는
+
     $$
     F_0=0,\quad F_1=1,\quad F_n=F_{n-2}+F_{n-1}\quad(n\ge 2)
     $$
@@ -2000,6 +2171,7 @@ $$
     (c) $T$의 고유벡터들로 이루어진 $\mathbb{R}^2$의 기저를 찾아라.
 
     (d) (c)의 해를 사용하여 $T^n(0,1)$을 계산하라. 각 음이 아닌 정수 $n$에 대해
+
     $$
     F_n=\frac{1}{\sqrt{5}}\left[
     \left(\frac{1+\sqrt{5}}{2}\right)^n -
@@ -2009,18 +2181,21 @@ $$
     임을 결론 내려라.
 
     (e) (d)를 사용하여 $n$이 음이 아닌 정수이면 피보나치 수 $F_n$은
+
     $$
     \frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n
     $$
     에 가장 가까운 정수임을 결론 내려라.
 
     각 $F_n$은 음이 아닌 정수이지만, (d)의 공식의 오른쪽은 정수처럼 보이지 않는다. 수
+
     $$
     \frac{1+\sqrt{5}}{2}
     $$
     는 황금비라고 불린다.
 
 22. $T\in\mathcal{L}(V)$이고 $A$가 어떤 $V$의 기저에 대한 $T$의 $n\times n$ 행렬이라고 하자. 각 $j\in\{1,\ldots,n\}$에 대해
+
     $$
     |A_{j,j}|>\sum_{\substack{k=1\\k\ne j}}^n |A_{j,k}|
     $$
@@ -2061,6 +2236,7 @@ D_wp=\frac{\partial p}{\partial w}
 $$
 
 그리고
+
 $$
 D_zp=\frac{\partial p}{\partial z}
 =\sum_{j+k\le m} ka_{j,k}w^jz^{k-1},
@@ -2069,6 +2245,7 @@ $$
 여기서 $p$는 (5.73)과 같다. 연산자 $D_w$와 $D_z$는 편미분 연산자라고 불린다. 각 연산자가 한 변수를 제외한 다른 변수를 상수로 생각하면서 한 변수에 대해 미분하기 때문이다.
 
 $p$가 (5.73)과 같으면
+
 $$
 (D_wD_z)p=\sum_{j+k\le m} jka_{j,k}w^{j-1}z^{k-1}=(D_zD_w)p
 $$
@@ -2103,6 +2280,7 @@ $$
 $S,T\in\mathcal{L}(V)$가 교환하고 $\lambda\in\mathbb{F}$라고 하자. 그러면 $E(\lambda,S)$는 $T$에 대해 불변이다.
 
 증명. $v\in E(\lambda,S)$라고 하자. 그러면
+
 $$
 S(Tv)=(ST)v=(TS)v=T(Sv)=T(\lambda v)=\lambda Tv.
 $$
@@ -2120,6 +2298,7 @@ $$
 반대 방향을 증명하자. 이제 $S,T\in\mathcal{L}(V)$가 대각화 가능 연산자이고 서로 교환한다고 하자. $\lambda_1,\ldots,\lambda_m$을 $S$의 서로 다른 고윳값들이라고 하자. $S$가 대각화 가능이므로 5.55(c)는
 
 **(5.77)**
+
 $$
 V=E(\lambda_1,S)\oplus\cdots\oplus E(\lambda_m,S)
 $$
@@ -2140,10 +2319,12 @@ $V$가 유한차원 비영 복소 벡터공간이라고 하자. 그러면 $V$ �
 **5.79 예: 편미분 연산자의 공통 고유벡터**
 
 $\mathcal{P}_m(\mathbb{C}^2,\mathbb{C})$를 예 5.72와 같이 두고, $D_w,D_z\in\mathcal{L}(\mathcal{P}_m(\mathbb{C}^2,\mathbb{C}))$를 그 예의 교환하는 편미분 연산자들이라고 하자. 확인할 수 있듯이, $0$은 이 두 연산자 각각의 유일한 고윳값이다. 또한
+
 $$
 E(0,D_w)=\left\{\sum_{k=0}^m a_kz^k:a_0,\ldots,a_m\in\mathbb{C}\right\},
 $$
 그리고
+
 $$
 E(0,D_z)=\left\{\sum_{j=0}^m c_jw^j:c_0,\ldots,c_m\in\mathbb{C}\right\}.
 $$
@@ -2159,23 +2340,27 @@ $V$가 유한차원 복소 벡터공간이고 $S,T$가 $V$ 위의 교환하는 �
 증명. $n=\dim V$라고 하자. $n$에 대한 귀납법을 사용한다. $n=1$이면 모든 $1\times 1$ 행렬이 상삼각행렬이므로 원하는 결과가 성립한다. 이제 $n>1$이고, 차원이 $n-1$인 모든 복소 벡터공간에 대해 원하는 결과가 성립한다고 가정하자.
 
 $v_1$을 $S$와 $T$의 임의의 공통 고유벡터로 잡는다. 이는 5.78에 의해 가능하다. 따라서
+
 $$
-Sv_1\in\operatorname{span}(v_1)
+Sv_1\in\text{span}(v_1)
 \quad\text{그리고}\quad
-Tv_1\in\operatorname{span}(v_1).
+Tv_1\in\text{span}(v_1).
 $$
 
-$V=\operatorname{span}(v_1)\oplus W$가 되도록 하는 $V$의 부분공간 $W$를 잡는다. $W$의 존재는 2.33을 보라. 각 $a\in\mathbb{C}$와 $w\in W$에 대해
+$V=\text{span}(v_1)\oplus W$가 되도록 하는 $V$의 부분공간 $W$를 잡는다. $W$의 존재는 2.33을 보라. 각 $a\in\mathbb{C}$와 $w\in W$에 대해
+
 $$
 P(av_1+w)=w
 $$
 로 선형사상 $P:V\to W$를 정의한다. 각 $w\in W$에 대해
+
 $$
 \widehat{S}w=P(Sw)
 \quad\text{그리고}\quad
 \widehat{T}w=P(Tw)
 $$
 로 $\widehat{S},\widehat{T}\in\mathcal{L}(W)$를 정의한다. 귀납가정을 $\widehat{S}$와 $\widehat{T}$에 적용하려면, 먼저 이 두 $W$ 위의 연산자가 교환함을 보여야 한다. 이를 위해 $w\in W$라고 하자. 그러면 어떤 $a\in\mathbb{C}$가 존재하여
+
 $$
 \begin{aligned}
 (\widehat{S}\widehat{T})w
@@ -2187,6 +2372,7 @@ $$
 $$
 
 마지막 등식은 $v_1$이 $S$의 고유벡터이고 $Pv_1=0$이라는 사실에 의해 성립한다. 마찬가지로
+
 $$
 (\widehat{T}\widehat{S})w=P((TS)w).
 $$
@@ -2196,22 +2382,25 @@ $$
 그러므로 귀납가정에 의해 $\widehat{S}$와 $\widehat{T}$가 모두 상삼각행렬을 가지도록 하는 $W$의 기저 $v_2,\ldots,v_n$이 존재한다. 리스트 $v_1,\ldots,v_n$은 $V$의 기저이다.
 
 $k\in\{2,\ldots,n\}$이면 어떤 $a_k,b_k\in\mathbb{C}$가 존재하여
+
 $$
 Sv_k=a_kv_1+\widehat{S}v_k
 \quad\text{그리고}\quad
 Tv_k=b_kv_1+\widehat{T}v_k
 $$
 이다. $\widehat{S}$와 $\widehat{T}$가 $v_2,\ldots,v_n$에 대해 상삼각행렬을 가지므로,
+
 $$
-\widehat{S}v_k\in\operatorname{span}(v_2,\ldots,v_k)
+\widehat{S}v_k\in\text{span}(v_2,\ldots,v_k)
 \quad\text{그리고}\quad
-\widehat{T}v_k\in\operatorname{span}(v_2,\ldots,v_k)
+\widehat{T}v_k\in\text{span}(v_2,\ldots,v_k)
 $$
 이다. 따라서 위 식들은
+
 $$
-Sv_k\in\operatorname{span}(v_1,\ldots,v_k)
+Sv_k\in\text{span}(v_1,\ldots,v_k)
 \quad\text{그리고}\quad
-Tv_k\in\operatorname{span}(v_1,\ldots,v_k)
+Tv_k\in\text{span}(v_1,\ldots,v_k)
 $$
 임을 함의한다. 그러므로 $S$와 $T$는 원하는 대로 $v_1,\ldots,v_n$에 대해 상삼각행렬을 가진다.
 
@@ -2227,6 +2416,7 @@ $V$가 유한차원 복소 벡터공간이고 $S,T$가 $V$ 위의 교환하는 �
 - $ST$의 모든 고윳값은 $S$의 어떤 고윳값과 $T$의 어떤 고윳값의 곱이다.
 
 증명. 5.80에 의해 $S$와 $T$가 모두 상삼각행렬을 가지도록 하는 $V$의 기저가 존재한다. 이 기저에 대해 3.35와 3.43에서 말한 대로
+
 $$
 \mathcal{M}(S+T)=\mathcal{M}(S)+\mathcal{M}(T)
 \quad\text{그리고}\quad
@@ -2248,9 +2438,9 @@ $\mathcal{M}(S)$의 대각선 위의 각 성분은 $S$의 고윳값이고, $\mat
 
 3. $S,T\in\mathcal{L}(V)$가 $ST=TS$를 만족한다고 하자. $p\in\mathcal{P}(\mathbb{F})$라고 하자.
 
-   (a) $\operatorname{null}p(S)$가 $T$에 대해 불변임을 증명하라.
+   (a) $\text{null}p(S)$가 $T$에 대해 불변임을 증명하라.
 
-   (b) $\operatorname{range}p(S)$가 $T$에 대해 불변임을 증명하라.
+   (b) $\text{range}p(S)$가 $T$에 대해 불변임을 증명하라.
 
    $S=T$인 특수한 경우는 5.18을 보라.
 
@@ -2261,8 +2451,9 @@ $\mathcal{M}(S)$의 대각선 위의 각 성분은 $S$의 고윳값이고, $\mat
    연산자의 쌍대의 정의는 3.118을 보라.
 
 6. $V$가 비영 유한차원 복소 벡터공간이고 $S,T\in\mathcal{L}(V)$가 교환한다고 하자. 다음을 만족하는 $\alpha,\lambda\in\mathbb{C}$가 존재함을 증명하라.
+
    $$
-   \operatorname{range}(S-\alpha I)+\operatorname{range}(T-\lambda I)\ne V.
+   \text{range}(S-\alpha I)+\text{range}(T-\lambda I)\ne V.
    $$
 
 7. $V$가 복소 벡터공간이고 $S\in\mathcal{L}(V)$가 대각화 가능이며 $T\in\mathcal{L}(V)$가 $S$와 교환한다고 하자. $S$는 이 기저에 대해 대각행렬을 가지고 $T$는 이 기저에 대해 상삼각행렬을 가지도록 하는 $V$의 기저가 존재함을 증명하라.

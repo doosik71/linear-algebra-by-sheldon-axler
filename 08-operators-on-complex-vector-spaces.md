@@ -24,114 +24,121 @@
 **8.1 증가하는 영공간의 열**
 
 $T\in\mathcal{L}(V)$라고 하자. 그러면
+
 $$
-\{0\}=\operatorname{null}T^0
-\subset \operatorname{null}T^1
+\{0\}=\text{null}T^0
+\subset \text{null}T^1
 \subset \cdots
-\subset \operatorname{null}T^k
-\subset \operatorname{null}T^{k+1}
+\subset \text{null}T^k
+\subset \text{null}T^{k+1}
 \subset \cdots.
 $$
 
 **증명**
 
-$k$가 음이 아닌 정수이고 $v\in\operatorname{null}T^k$라고 하자. 그러면 $T^kv=0$이고, 따라서
+$k$가 음이 아닌 정수이고 $v\in\text{null}T^k$라고 하자. 그러면 $T^kv=0$이고, 따라서
 $$
 T^{k+1}v=T(T^kv)=T(0)=0.
 $$
 
-그러므로 $v\in\operatorname{null}T^{k+1}$이다.
+그러므로 $v\in\text{null}T^{k+1}$이다.
 
 **8.2 영공간의 열에서 한 번 같아지면 계속 같다**
 
 $T\in\mathcal{L}(V)$이고 $m$이 음이 아닌 정수이며
 $$
-\operatorname{null}T^m=\operatorname{null}T^{m+1}
+\text{null}T^m=\text{null}T^{m+1}
 $$
 이라고 하자. 그러면
+
 $$
-\operatorname{null}T^m
-=\operatorname{null}T^{m+1}
-=\operatorname{null}T^{m+2}
-=\operatorname{null}T^{m+3}
+\text{null}T^m
+=\text{null}T^{m+1}
+=\text{null}T^{m+2}
+=\text{null}T^{m+3}
 =\cdots.
 $$
 
 **증명**
 
-$k$를 양의 정수라고 하자. $\operatorname{null}T^{m+k}=\operatorname{null}T^{m+k+1}$임을 보이면 된다. 8.1에 의해 왼쪽이 오른쪽에 포함됨은 이미 안다.
+$k$를 양의 정수라고 하자. $\text{null}T^{m+k}=\text{null}T^{m+k+1}$임을 보이면 된다. 8.1에 의해 왼쪽이 오른쪽에 포함됨은 이미 안다.
 
-반대 포함을 보이자. $v\in\operatorname{null}T^{m+k+1}$라고 하자. 그러면
+반대 포함을 보이자. $v\in\text{null}T^{m+k+1}$라고 하자. 그러면
 $$
 T^{m+1}(T^kv)=T^{m+k+1}v=0.
 $$
 
 따라서
+
 $$
-T^kv\in\operatorname{null}T^{m+1}
-=\operatorname{null}T^m.
+T^kv\in\text{null}T^{m+1}
+=\text{null}T^m.
 $$
 
-그러므로 $T^{m+k}v=T^m(T^kv)=0$이고, $v\in\operatorname{null}T^{m+k}$이다.
+그러므로 $T^{m+k}v=T^m(T^kv)=0$이고, $v\in\text{null}T^{m+k}$이다.
 
 **8.3 영공간은 더 이상 커지지 않는다**
 
 $T\in\mathcal{L}(V)$라고 하자. 그러면
+
 $$
-\operatorname{null}T^{\dim V}
-=\operatorname{null}T^{\dim V+1}
-=\operatorname{null}T^{\dim V+2}
+\text{null}T^{\dim V}
+=\text{null}T^{\dim V+1}
+=\text{null}T^{\dim V+2}
 =\cdots.
 $$
 
 **증명**
 
-8.2에 의해 $\operatorname{null}T^{\dim V}=\operatorname{null}T^{\dim V+1}$만 보이면 된다. 그렇지 않다고 하자. 그러면 8.1과 8.2에 의해
+8.2에 의해 $\text{null}T^{\dim V}=\text{null}T^{\dim V+1}$만 보이면 된다. 그렇지 않다고 하자. 그러면 8.1과 8.2에 의해
+
 $$
-\{0\}=\operatorname{null}T^0
-\subsetneqq \operatorname{null}T^1
+\{0\}=\text{null}T^0
+\subsetneqq \text{null}T^1
 \subsetneqq \cdots
-\subsetneqq \operatorname{null}T^{\dim V}
-\subsetneqq \operatorname{null}T^{\dim V+1}
+\subsetneqq \text{null}T^{\dim V}
+\subsetneqq \text{null}T^{\dim V+1}
 $$
 이 된다. 각 진포함마다 차원이 적어도 $1$씩 증가하므로
 $$
-\dim\operatorname{null}T^{\dim V+1}\ge \dim V+1
+\dim\text{null}T^{\dim V+1}\ge \dim V+1
 $$
 이다. 이는 $V$의 부분공간이 $V$보다 큰 차원을 가질 수 없다는 사실에 모순이다.
 
-**8.4 $V$는 $\operatorname{null}T^{\dim V}$와 $\operatorname{range}T^{\dim V}$의 직합이다**
+**8.4 $V$는 $\text{null}T^{\dim V}$와 $\text{range}T^{\dim V}$의 직합이다**
 
 $T\in\mathcal{L}(V)$라고 하자. 그러면
 $$
-V=\operatorname{null}T^{\dim V}\oplus\operatorname{range}T^{\dim V}.
+V=\text{null}T^{\dim V}\oplus\text{range}T^{\dim V}.
 $$
 
 **증명**
 
 $n=\dim V$라고 하자. 먼저
+
 $$
-\operatorname{null}T^n\cap\operatorname{range}T^n=\{0\}
+\text{null}T^n\cap\text{range}T^n=\{0\}
 \tag{8.5}
 $$
 
-임을 보이자. $v\in\operatorname{null}T^n\cap\operatorname{range}T^n$라고 하자. 그러면 $T^nv=0$이고, 어떤 $u\in V$가 존재하여 $v=T^nu$이다. 따라서
+임을 보이자. $v\in\text{null}T^n\cap\text{range}T^n$라고 하자. 그러면 $T^nv=0$이고, 어떤 $u\in V$가 존재하여 $v=T^nu$이다. 따라서
 $$
 T^{2n}u=T^nv=0.
 $$
 
 8.3에 의해 $T^nu=0$이고, 따라서 $v=T^nu=0$이다. 그러므로 (8.5)가 성립한다.
 
-이제 (8.5)에 의해 $\operatorname{null}T^n+\operatorname{range}T^n$은 직합이다. 또한 기본정리(3.21)에 의해
+이제 (8.5)에 의해 $\text{null}T^n+\text{range}T^n$은 직합이다. 또한 기본정리(3.21)에 의해
+
 $$
-\dim(\operatorname{null}T^n\oplus\operatorname{range}T^n)
-=\dim\operatorname{null}T^n+\dim\operatorname{range}T^n
+\dim(\text{null}T^n\oplus\text{range}T^n)
+=\dim\text{null}T^n+\dim\text{range}T^n
 =\dim V.
 $$
 
 따라서 이 직합은 $V$ 전체이다.
 
-**8.6 예: $T\in\mathcal{L}(\mathbb{F}^3)$에 대해 $\mathbb{F}^3=\operatorname{null}T^3\oplus\operatorname{range}T^3$**
+**8.6 예: $T\in\mathcal{L}(\mathbb{F}^3)$에 대해 $\mathbb{F}^3=\text{null}T^3\oplus\text{range}T^3$**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$를
 $$
@@ -139,29 +146,30 @@ T(z_1,z_2,z_3)=(4z_2,0,5z_3)
 $$
 로 정의하자. 그러면
 $$
-\operatorname{null}T=\{(z_1,0,0):z_1\in\mathbb{F}\}
+\text{null}T=\{(z_1,0,0):z_1\in\mathbb{F}\}
 $$
 이고
 $$
-\operatorname{range}T=\{(z_1,0,z_3):z_1,z_3\in\mathbb{F}\}.
+\text{range}T=\{(z_1,0,z_3):z_1,z_3\in\mathbb{F}\}.
 $$
 
-따라서 $\operatorname{null}T\cap\operatorname{range}T\ne\{0\}$이고, $\operatorname{null}T+\operatorname{range}T$는 직합이 아니다. 또한 $\operatorname{null}T+\operatorname{range}T\ne\mathbb{F}^3$이다.
+따라서 $\text{null}T\cap\text{range}T\ne\{0\}$이고, $\text{null}T+\text{range}T$는 직합이 아니다. 또한 $\text{null}T+\text{range}T\ne\mathbb{F}^3$이다.
 
 그러나
 $$
 T^3(z_1,z_2,z_3)=(0,0,125z_3)
 $$
 이므로
+
 $$
-\operatorname{null}T^3=\{(z_1,z_2,0):z_1,z_2\in\mathbb{F}\},
+\text{null}T^3=\{(z_1,z_2,0):z_1,z_2\in\mathbb{F}\},
 \qquad
-\operatorname{range}T^3=\{(0,0,z_3):z_3\in\mathbb{F}\}.
+\text{range}T^3=\{(0,0,z_3):z_3\in\mathbb{F}\}.
 $$
 
 따라서 8.4가 예측하듯이
 $$
-\mathbb{F}^3=\operatorname{null}T^3\oplus\operatorname{range}T^3.
+\mathbb{F}^3=\text{null}T^3\oplus\text{range}T^3.
 $$
 
 ### 일반화 고유벡터
@@ -173,6 +181,7 @@ $$
 V=V_1\oplus\cdots\oplus V_n
 $$
 처럼 $V$를 분해하여 $T$를 설명하고 싶다. 가장 단순한 비영 불변 부분공간은 $1$차원 부분공간이다. 위 분해에서 각 $V_k$가 $T$에 대해 불변인 $1$차원 부분공간이 되는 것은, $V$가 $T$의 고유벡터들로 이루어진 기저를 가지는 것과 동치이다. 이는 다시, $T$의 서로 다른 고윳값을 $\lambda_1,\ldots,\lambda_m$이라고 할 때
+
 $$
 V=E(\lambda_1,T)\oplus\cdots\oplus E(\lambda_m,T)
 \tag{8.7}
@@ -206,19 +215,20 @@ $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $V$�
 $n=\dim V$라고 하자. $n$에 대한 귀납법을 사용한다. $n=1$이면 $V$의 모든 영이 아닌 벡터가 $T$의 고유벡터이므로 결론이 성립한다.
 
 $n>1$이고 더 작은 차원에서는 결론이 성립한다고 하자. 복소 벡터공간이므로 $T$는 어떤 고윳값 $\lambda$를 가진다. 8.4를 $T-\lambda I$에 적용하면
+
 $$
-V=\operatorname{null}(T-\lambda I)^n
+V=\text{null}(T-\lambda I)^n
 \oplus
-\operatorname{range}(T-\lambda I)^n.
+\text{range}(T-\lambda I)^n.
 $$
 
-$\operatorname{null}(T-\lambda I)^n=V$이면 $V$의 모든 영이 아닌 벡터가 $T$의 일반화 고유벡터이므로 결론이 성립한다. 이제 그렇지 않다고 하자. $\lambda$가 고윳값이므로 $\operatorname{null}(T-\lambda I)^n\ne\{0\}$이고, 따라서
+$\text{null}(T-\lambda I)^n=V$이면 $V$의 모든 영이 아닌 벡터가 $T$의 일반화 고유벡터이므로 결론이 성립한다. 이제 그렇지 않다고 하자. $\lambda$가 고윳값이므로 $\text{null}(T-\lambda I)^n\ne\{0\}$이고, 따라서
 
 $$
-0<\dim\operatorname{range}(T-\lambda I)^n<n.
+0<\dim\text{range}(T-\lambda I)^n<n.
 $$
 
-또한 $\operatorname{range}(T-\lambda I)^n$은 $T$에 대해 불변이다. $S$를 이 부분공간에 대한 $T$의 제한이라고 하자. 귀납가정에 의해 $\operatorname{range}(T-\lambda I)^n$은 $S$의 일반화 고유벡터들로 이루어진 기저를 가진다. 이 벡터들은 $T$의 일반화 고유벡터이기도 하다. 이 기저에 $\operatorname{null}(T-\lambda I)^n$의 임의의 기저를 붙이면 $V$의 일반화 고유벡터들로 이루어진 기저를 얻는다.
+또한 $\text{range}(T-\lambda I)^n$은 $T$에 대해 불변이다. $S$를 이 부분공간에 대한 $T$의 제한이라고 하자. 귀납가정에 의해 $\text{range}(T-\lambda I)^n$은 $S$의 일반화 고유벡터들로 이루어진 기저를 가진다. 이 벡터들은 $T$의 일반화 고유벡터이기도 하다. 이 기저에 $\text{null}(T-\lambda I)^n$의 임의의 기저를 붙이면 $V$의 일반화 고유벡터들로 이루어진 기저를 얻는다.
 
 **8.10 예: $\mathbb{C}^3$ 위의 연산자의 일반화 고유벡터**
 
@@ -250,6 +260,7 @@ $T\in\mathcal{L}(V)$라고 하자. 그러면 $T$의 각 일반화 고유벡터�
 **증명**
 
 $v\in V$가 $T$의 일반화 고유벡터이고 고윳값 $\alpha$와 $\lambda$ 모두에 대응한다고 하자. $(T-\alpha I)^mv=0$이 되는 가장 작은 양의 정수를 $m$이라고 하자. $n=\dim V$라고 하자. 그러면
+
 $$
 \begin{aligned}
 0
@@ -276,6 +287,7 @@ $$
 a_1v_1+\cdots+a_mv_m=0
 $$
 을 만족한다고 할 수 있다. $n=\dim V$라고 하자. 위 등식의 양변에 $(T-\lambda_m I)^n$을 적용하면
+
 $$
 a_1(T-\lambda_m I)^nv_1+\cdots+
 a_{m-1}(T-\lambda_m I)^nv_{m-1}=0.
@@ -283,6 +295,7 @@ a_{m-1}(T-\lambda_m I)^nv_{m-1}=0.
 $$
 
 $k\in\{1,\ldots,m-1\}$이면 $(T-\lambda_m I)^nv_k\ne 0$이다. 그렇지 않으면 $v_k$가 서로 다른 두 고윳값 $\lambda_k,\lambda_m$에 모두 대응하는 일반화 고유벡터가 되어 8.11에 모순이다. 또한
+
 $$
 (T-\lambda_k I)^n((T-\lambda_m I)^nv_k)
 =(T-\lambda_m I)^n((T-\lambda_k I)^nv_k)=0.
@@ -307,6 +320,7 @@ $$
 로 정의하면 $T^2=0$이므로 $T$는 멱영이다.
 
 (b) 표준기저에 대한 행렬이
+
 $$
 \begin{pmatrix}
 -3 & 9 & 0\\
@@ -327,7 +341,7 @@ $$
 
 **증명**
 
-$T$가 멱영이므로 어떤 양의 정수 $k$에 대해 $T^k=0$이다. 따라서 $\operatorname{null}T^k=V$이다. 8.1과 8.3에 의해 $\operatorname{null}T^{\dim V}=V$이고, 따라서 $T^{\dim V}=0$이다.
+$T$가 멱영이므로 어떤 양의 정수 $k$에 대해 $T^k=0$이다. 따라서 $\text{null}T^k=V$이다. 8.1과 8.3에 의해 $\text{null}T^{\dim V}=V$이고, 따라서 $T^{\dim V}=0$이다.
 
 **8.17 멱영 연산자의 고윳값**
 
@@ -378,7 +392,7 @@ $$
 
 ### 연습문제 8A
 
-1. $T\in\mathcal{L}(V)$라고 하자. $\dim\operatorname{null}T^4=8$이고 $\dim\operatorname{null}T^6=9$이면 모든 정수 $m\ge 5$에 대해 $\dim\operatorname{null}T^m=9$임을 증명하여라.
+1. $T\in\mathcal{L}(V)$라고 하자. $\dim\text{null}T^4=8$이고 $\dim\text{null}T^6=9$이면 모든 정수 $m\ge 5$에 대해 $\dim\text{null}T^m=9$임을 증명하여라.
 
 2. $T\in\mathcal{L}(V)$, $m$이 양의 정수, $v\in V$이고 $T^{m-1}v\ne 0$이지만 $T^mv=0$이라고 하자. 리스트
    $$
@@ -389,55 +403,55 @@ $$
 3. $T\in\mathcal{L}(V)$라고 하자. 다음을 증명하여라.
 
    $$
-   V=\operatorname{null}T\oplus\operatorname{range}T
+   V=\text{null}T\oplus\text{range}T
    \Longleftrightarrow
-   \operatorname{null}T^2=\operatorname{null}T.
+   \text{null}T^2=\text{null}T.
    $$
 
 4. $T\in\mathcal{L}(V)$, $\lambda\in\mathbb{F}$이고 $m$이 양의 정수라고 하자. $T$의 최소다항식이 $(z-\lambda)^m$의 다항식배이면
    $$
-   \dim\operatorname{null}(T-\lambda I)^m\ge m
+   \dim\text{null}(T-\lambda I)^m\ge m
    $$
     임을 증명하여라.
 
 5. $T\in\mathcal{L}(V)$이고 $m$이 양의 정수라고 하자. 다음을 증명하여라.
 
    $$
-   \dim\operatorname{null}T^m\le m\dim\operatorname{null}T.
+   \dim\text{null}T^m\le m\dim\text{null}T.
    $$
 
 6. $T\in\mathcal{L}(V)$라고 하자. 다음을 보여라.
 
    $$
-   V=\operatorname{range}T^0
-   \supset \operatorname{range}T^1
+   V=\text{range}T^0
+   \supset \text{range}T^1
    \supset \cdots
-   \supset \operatorname{range}T^k
-   \supset \operatorname{range}T^{k+1}
+   \supset \text{range}T^k
+   \supset \text{range}T^{k+1}
    \supset \cdots.
    $$
 
 7. $T\in\mathcal{L}(V)$이고 $m$이 음이 아닌 정수이며
    $$
-   \operatorname{range}T^m=\operatorname{range}T^{m+1}
+   \text{range}T^m=\text{range}T^{m+1}
    $$
-   이라고 하자. 모든 $k>m$에 대해 $\operatorname{range}T^k=\operatorname{range}T^m$임을 증명하여라.
+   이라고 하자. 모든 $k>m$에 대해 $\text{range}T^k=\text{range}T^m$임을 증명하여라.
 
 8. $T\in\mathcal{L}(V)$라고 하자. 다음을 증명하여라.
 
    $$
-   \operatorname{range}T^{\dim V}
-   =\operatorname{range}T^{\dim V+1}
-   =\operatorname{range}T^{\dim V+2}
+   \text{range}T^{\dim V}
+   =\text{range}T^{\dim V+1}
+   =\text{range}T^{\dim V+2}
    =\cdots.
    $$
 
 9. $T\in\mathcal{L}(V)$이고 $m$이 음이 아닌 정수라고 하자. 다음을 증명하여라.
 
    $$
-   \operatorname{null}T^m=\operatorname{null}T^{m+1}
+   \text{null}T^m=\text{null}T^{m+1}
    \Longleftrightarrow
-   \operatorname{range}T^m=\operatorname{range}T^{m+1}.
+   \text{range}T^m=\text{range}T^{m+1}.
    $$
 
 10. $T\in\mathcal{L}(\mathbb{C}^2)$를 $T(w,z)=(z,0)$으로 정의한다. $T$의 모든 일반화 고유벡터를 구하여라.
@@ -473,26 +487,26 @@ $$
 18. $T\in\mathcal{L}(V)$가 멱영이라고 하자. 다음을 증명하여라.
 
     $$
-    T^{1+\dim\operatorname{range}T}=0.
+    T^{1+\dim\text{range}T}=0.
     $$
 
 19. $T\in\mathcal{L}(V)$가 멱영이 아니라고 하자. 다음을 보여라.
 
     $$
-    V=\operatorname{null}T^{\dim V-1}
+    V=\text{null}T^{\dim V-1}
     \oplus
-    \operatorname{range}T^{\dim V-1}.
+    \text{range}T^{\dim V-1}.
     $$
 
 20. $V$가 내적공간이고 $T\in\mathcal{L}(V)$가 정규이면서 멱영이라고 하자. $T=0$임을 증명하여라.
 
 21. $T\in\mathcal{L}(V)$가
     $$
-    \operatorname{null}T^{\dim V-1}\ne\operatorname{null}T^{\dim V}
+    \text{null}T^{\dim V-1}\ne\text{null}T^{\dim V}
     $$
-    를 만족한다고 하자. $T$가 멱영이고, $0\le k\le\dim V$인 모든 정수 $k$에 대해 $\dim\operatorname{null}T^k=k$임을 증명하여라.
+    를 만족한다고 하자. $T$가 멱영이고, $0\le k\le\dim V$인 모든 정수 $k$에 대해 $\dim\text{null}T^k=k$임을 증명하여라.
 
-22. $T\in\mathcal{L}(\mathbb{C}^5)$가 $\operatorname{range}T^4\ne\operatorname{range}T^5$를 만족한다고 하자. $T$가 멱영임을 증명하여라.
+22. $T\in\mathcal{L}(\mathbb{C}^5)$가 $\text{range}T^4\ne\text{range}T^5$를 만족한다고 하자. $T$가 멱영임을 증명하여라.
 
 23. 유한차원 실 벡터공간 위의 연산자 $T$ 중에서 $0$이 유일한 고윳값이지만 $T$가 멱영은 아닌 예를 제시하여라.
 
@@ -522,12 +536,12 @@ $$
 
 $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$라고 하자. 그러면
 $$
-G(\lambda,T)=\operatorname{null}(T-\lambda I)^{\dim V}.
+G(\lambda,T)=\text{null}(T-\lambda I)^{\dim V}.
 $$
 
 **증명**
 
-$v\in\operatorname{null}(T-\lambda I)^{\dim V}$이면 정의상 $v\in G(\lambda,T)$이다. 반대로 $v\in G(\lambda,T)$이면 어떤 양의 정수 $k$에 대해 $v\in\operatorname{null}(T-\lambda I)^k$이다. 8.1과 8.3을 $T-\lambda I$에 적용하면 $v\in\operatorname{null}(T-\lambda I)^{\dim V}$이다.
+$v\in\text{null}(T-\lambda I)^{\dim V}$이면 정의상 $v\in G(\lambda,T)$이다. 반대로 $v\in G(\lambda,T)$이면 어떤 양의 정수 $k$에 대해 $v\in\text{null}(T-\lambda I)^k$이다. 8.1과 8.3을 $T-\lambda I$에 적용하면 $v\in\text{null}(T-\lambda I)^{\dim V}$이다.
 
 **8.21 예: $\mathbb{C}^3$ 위의 연산자의 일반화 고유공간**
 
@@ -570,7 +584,7 @@ $$
 
 (a) 8.20에 의해
 $$
-G(\lambda_k,T)=\operatorname{null}(T-\lambda_k I)^{\dim V}.
+G(\lambda_k,T)=\text{null}(T-\lambda_k I)^{\dim V}.
 $$
 
 따라서 5.18을 $p(z)=(z-\lambda_k)^{\dim V}$에 적용하면 $G(\lambda_k,T)$가 $T$에 대해 불변임을 얻는다.
@@ -593,7 +607,7 @@ $$
 
 동치적으로, $\lambda$의 중복도는
 $$
-\dim\operatorname{null}(T-\lambda I)^{\dim V}
+\dim\text{null}(T-\lambda I)^{\dim V}
 $$
 이다.
 
@@ -604,6 +618,7 @@ $$
 T(z_1,z_2,z_3)=(6z_1+3z_2+4z_3,\;6z_2+2z_3,\;7z_3)
 $$
 로 정의하자. $T$의 표준 기저에 대한 행렬은
+
 $$
 \begin{pmatrix}
 6&3&4\\
@@ -615,11 +630,11 @@ $$
 
 계산하면
 $$
-G(6,T)=\operatorname{span}\bigl((1,0,0),(0,1,0)\bigr)
+G(6,T)=\text{span}\bigl((1,0,0),(0,1,0)\bigr)
 $$
 이고
 $$
-G(7,T)=\operatorname{span}\bigl((10,2,1)\bigr)
+G(7,T)=\text{span}\bigl((10,2,1)\bigr)
 $$
 이다. 그러므로 $6$의 중복도는 $2$이고 $7$의 중복도는 $1$이다. 또한
 $$
@@ -646,7 +661,7 @@ $$
 
 $T$의 고윳값 $\lambda$의 **대수적 중복도**는 보통 특성다항식에서 $z-\lambda$의 지수로 정의된다. 여기서는 그것이 $\dim G(\lambda,T)$와 같다는 사실을 8.31에서 보일 것이다. $\lambda$의 **기하적 중복도**는
 $$
-\dim\operatorname{null}(T-\lambda I)
+\dim\text{null}(T-\lambda I)
 $$
 이다. 즉 고유공간의 차원이다. 일반적으로 기하적 중복도는 대수적 중복도보다 작거나 같다.
 
@@ -712,24 +727,27 @@ $v_1,\ldots,v_n$을 $T$의 행렬이 상삼각 행렬이 되는 기저라고 하
 
 먼저 대각선 성분 가운데 $0$이 나타나는 횟수를 $d$라고 하자. $\lambda_k\ne 0$이면 $Tv_k$는 $Tv_1,\ldots,Tv_{k-1}$의 일차결합이 될 수 없다. 따라서 $0$이 아닌 대각선 성분에 대응하는 $Tv_k$들은 일차독립이고,
 $$
-\dim\operatorname{range}T\ge n-d.
+\dim\text{range}T\ge n-d.
 $$
 
 그러므로
+
 $$
-\dim\operatorname{null}T\le d.
+\dim\text{null}T\le d.
 \tag{8.32}
 $$
 
 같은 논리를 $T^n$에 적용하면
+
 $$
-\dim\operatorname{null}T^n\le d.
+\dim\text{null}T^n\le d.
 \tag{8.33}
 $$
 
 이제 임의의 고윳값 $\lambda$에 대해 $T-\lambda I$를 생각하자. $\lambda$의 중복도를 $m_\lambda$라 하고, 원래 상삼각 행렬의 대각선에서 $\lambda$가 나타나는 횟수를 $d_\lambda$라 하자. 위 결과를 $T-\lambda I$에 적용하면
+
 $$
-\dim\operatorname{null}(T-\lambda I)^n
+\dim\text{null}(T-\lambda I)^n
 =m_\lambda\le d_\lambda
 \tag{8.34}
 $$
@@ -742,6 +760,7 @@ $$
 **8.35 정의: 블록 대각행렬**
 
 정사각행렬이 몇 개의 정사각행렬 $A_1,\ldots,A_m$을 대각선 블록으로 가지고, 그 밖의 위치는 모두 $0$이면 그 행렬을 **블록 대각행렬**이라고 한다. 즉 다음과 같은 꼴이다.
+
 $$
 \begin{pmatrix}
 A_1&0&\cdots&0\\
@@ -754,12 +773,14 @@ $$
 **8.36 예: 블록 대각행렬**
 
 다음 행렬은 대각선 블록
+
 $$
 A_1=\begin{pmatrix}4\end{pmatrix},\qquad
 A_2=\begin{pmatrix}2&-3\\0&2\end{pmatrix},\qquad
 A_3=\begin{pmatrix}1&7\\0&1\end{pmatrix}
 $$
 를 가지는 블록 대각행렬이다.
+
 $$
 \begin{pmatrix}
 4&0&0&0&0\\
@@ -775,6 +796,7 @@ $$
 $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$의 서로 다른 고윳값을 $\lambda_1,\ldots,\lambda_m$이라 하고, 각 $\lambda_k$의 중복도를 $d_k$라고 하자. 그러면 $T$의 어떤 기저에 대한 행렬은 블록 대각행렬이며, $k$번째 블록 $A_k$는 $d_k\times d_k$ 상삼각 행렬이고 대각선 성분이 모두 $\lambda_k$이다.
 
 즉 각 블록은 다음과 같은 꼴이다.
+
 $$
 A_k=
 \begin{pmatrix}
@@ -802,6 +824,7 @@ $$
 (1,0,0),\quad (0,1,0),\quad (10,2,1)
 $$
 에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 6&3&0\\
@@ -824,13 +847,13 @@ $$
 
 4. $\dim V\ge 2$이고 $T\in\mathcal{L}(V)$가
    $$
-   \operatorname{null}T^{\dim V-2}\ne \operatorname{null}T^{\dim V-1}
+   \text{null}T^{\dim V-2}\ne \text{null}T^{\dim V-1}
    $$
    을 만족한다고 하자. $T$가 서로 다른 고윳값을 많아야 두 개만 가짐을 증명하여라.
 
 5. $T\in\mathcal{L}(V)$의 고윳값이 $3$과 $8$뿐이라고 하자. $n=\dim V$라 할 때 다음을 증명하여라.
    $$
-   V=\operatorname{null}T^{n-2}\oplus\operatorname{range}T^{n-2}
+   V=\text{null}T^{n-2}\oplus\text{range}T^{n-2}
    $$
 
 6. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda$가 $T$의 고윳값이라고 하자. $T$의 최소다항식을 서로 다른 일차인수들의 거듭제곱의 곱으로 나타낼 때, $z-\lambda$의 지수는
@@ -841,7 +864,7 @@ $$
 
 7. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda$가 $T$의 중복도 $d$인 고윳값이면
    $$
-   G(\lambda,T)=\operatorname{null}(T-\lambda I)^d
+   G(\lambda,T)=\text{null}(T-\lambda I)^d
    $$
    임을 증명하여라. 이는 8.20의 개선이다.
 
@@ -857,6 +880,7 @@ $$
 9. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $T=D+N$이고 $D$는 대각화 가능하며 $N$은 멱영이고 $DN=ND$가 되는 $D,N\in\mathcal{L}(V)$가 존재함을 증명하여라.
 
 10. $V$가 복소 내적공간이고 $T\in\mathcal{L}(V)$라고 하자. $e_1,\ldots,e_n$이 $V$의 정규직교 기저이고, $\lambda_1,\ldots,\lambda_n$이 중복도를 포함한 $T$의 고윳값들이라고 하자. 다음을 증명하여라.
+
     $$
     |\lambda_1|^2+\cdots+|\lambda_n|^2\le
     \|Te_1\|^2+\cdots+\|Te_n\|^2
@@ -882,14 +906,14 @@ $$
     $$
     로 정의하자. $T$의 특성다항식과 최소다항식을 구하여라.
 
-17. $P\in\mathcal{L}(V)$가 $P^2=P$를 만족한다고 하자. $\dim\operatorname{null}P=m$이고 $\dim\operatorname{range}P=n$이면 $P$의 특성다항식이 $z^m(z-1)^n$임을 증명하여라.
+17. $P\in\mathcal{L}(V)$가 $P^2=P$를 만족한다고 하자. $\dim\text{null}P=m$이고 $\dim\text{range}P=n$이면 $P$의 특성다항식이 $z^m(z-1)^n$임을 증명하여라.
 
 18. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda$가 $T$의 고윳값이라고 하자. 다음 네 수가 모두 같음을 증명하여라.
 
 - $T$의 최소다항식에서 $z-\lambda$의 지수
 - $(T-\lambda I)^m|_{G(\lambda,T)}=0$이 되는 가장 작은 양의 정수 $m$
-- $\operatorname{null}(T-\lambda I)^m=\operatorname{null}(T-\lambda I)^{m+1}$이 되는 가장 작은 양의 정수 $m$
-- $\operatorname{range}(T-\lambda I)^m=\operatorname{range}(T-\lambda I)^{m+1}$이 되는 가장 작은 양의 정수 $m$
+- $\text{null}(T-\lambda I)^m=\text{null}(T-\lambda I)^{m+1}$이 되는 가장 작은 양의 정수 $m$
+- $\text{range}(T-\lambda I)^m=\text{range}(T-\lambda I)^{m+1}$이 되는 가장 작은 양의 정수 $m$
 
 19. $\mathbb{F}=\mathbb{C}$이고 $V$가 내적공간이라고 하자. $S\in\mathcal{L}(V)$가 유니터리이면 $S$의 특성다항식의 상수항의 절댓값이 $1$임을 증명하여라.
 
@@ -902,6 +926,7 @@ $$
 21. $p,q$가 복소계수의 최고차항 계수가 $1$인 다항식이고, $p$와 $q$가 같은 영점들을 가지며, $q$가 $p$의 다항식배라고 하자. 그러면 특성다항식이 $q$이고 최소다항식이 $p$인 $\mathbb{C}^{\deg q}$ 위의 연산자가 존재함을 증명하여라. 특히 복소계수의 모든 최고차항 계수가 $1$인 다항식은 어떤 연산자의 특성다항식이다.
 
 22. $A$와 $B$가 같은 블록 크기를 가지는 블록 대각행렬이라고 하자.
+
     $$
     A=
     \begin{pmatrix}
@@ -953,6 +978,7 @@ $T\in\mathcal{L}(V)$가 멱영이면 $I+T$는 제곱근을 가진다.
 **증명**
 
 형식적으로
+
 $$
 \sqrt{1+x}=1+a_1x+a_2x^2+a_3x^3+\cdots
 \tag{8.40}
@@ -1017,6 +1043,7 @@ $$
 T^3v,\quad T^2v,\quad Tv,\quad v
 $$
 는 $\mathbb{C}^4$의 기저이고, 이 기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 0&1&0&0\\
@@ -1034,6 +1061,7 @@ $$
 T(z_1,z_2,z_3,z_4,z_5,z_6)=(0,z_1,z_2,0,z_4,0)
 $$
 로 정의하자. 그러면 $T^3=0$이다. 다음 벡터들을 잡자.
+
 $$
 v_1=(1,0,0,0,0,0),\quad
 v_2=(0,0,0,1,0,0),\quad
@@ -1045,6 +1073,7 @@ $$
 T^2v_1,\quad Tv_1,\quad v_1,\quad Tv_2,\quad v_2,\quad v_3
 $$
 는 $\mathbb{C}^6$의 기저이고, 이 기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 0&1&0&0&0&0\\
@@ -1060,6 +1089,7 @@ $$
 **8.44 정의: 조르당 기저**
 
 $T\in\mathcal{L}(V)$라고 하자. $T$의 어떤 기저에 대한 행렬이 블록 대각행렬이고, 각 대각선 블록이 어떤 $\lambda_k\in\mathbb{F}$에 대해
+
 $$
 \begin{pmatrix}
 \lambda_k&1&0&\cdots&0\\
@@ -1084,7 +1114,7 @@ $T^m=0$이 되는 가장 작은 양의 정수를 $m$이라고 하자. 그러면 
 $$
 u,\ Tu,\ \ldots,\ T^{m-1}u
 $$
-는 일차독립이다. $U=\operatorname{span}(u,Tu,\ldots,T^{m-1}u)$라고 하자. $U$는 $T$에 대해 불변이다.
+는 일차독립이다. $U=\text{span}(u,Tu,\ldots,T^{m-1}u)$라고 하자. $U$는 $T$에 대해 불변이다.
 
 만약 $U=V$이면
 $$
@@ -1107,7 +1137,7 @@ $$
 $$
 Sv=\bigl(\varphi(v),\varphi(Tv),\ldots,\varphi(T^{m-1}v)\bigr)
 $$
-로 정의하면 $\operatorname{null}S=W$이다. 따라서
+로 정의하면 $\text{null}S=W$이다. 따라서
 $$
 \dim W\ge \dim V-m.
 $$
@@ -1173,6 +1203,7 @@ $$
 8. $T\in\mathcal{L}(V)$가 조르당 기저를 가진다고 하자. 같은 기저에 대한 $T^2$의 행렬이 어떤 모양인지 설명하여라.
 
 9. $T\in\mathcal{L}(V)$가 멱영이라고 하자. $V$에는 어떤 벡터 $v_1,\ldots,v_n$과 음이 아닌 정수 $m_1,\ldots,m_n$이 존재하여
+
    $$
    T^{m_1}v_1,\ldots,Tv_1,v_1,\quad
    \ldots,\quad
@@ -1190,7 +1221,7 @@ $$
     $$
     T^{m_1}v_1,\ldots,T^{m_n}v_n
     $$
-    이 $\operatorname{null}T$의 기저임을 증명하여라. 따라서 연습문제 9에서 나타나는 블록의 개수 $n$은 $\dim\operatorname{null}T$와 같다.
+    이 $\text{null}T$의 기저임을 증명하여라. 따라서 연습문제 9에서 나타나는 블록의 개수 $n$은 $\dim\text{null}T$와 같다.
 
 14. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $V$가 $T$에 대해 불변인 두 개의 영이 아닌 부분공간의 직합으로 분해될 수 없을 필요충분조건은 $T$의 최소다항식이 어떤 $\lambda\in\mathbb{C}$에 대해
     $$
@@ -1202,11 +1233,11 @@ $$
 
 **8.47 정의: 행렬의 트레이스**
 
-정사각행렬 $A$의 **트레이스** $\operatorname{tr}A$는 $A$의 대각선 성분들의 합이다.
+정사각행렬 $A$의 **트레이스** $\text{tr}A$는 $A$의 대각선 성분들의 합이다.
 
 즉 $A$가 $n\times n$ 행렬이면
 $$
-\operatorname{tr}A=A_{1,1}+\cdots+A_{n,n}.
+\text{tr}A=A_{1,1}+\cdots+A_{n,n}.
 $$
 
 **8.48 예: 행렬의 트레이스**
@@ -1221,24 +1252,24 @@ A=
 $$
 이면
 $$
-\operatorname{tr}A=3+2+0=5.
+\text{tr}A=3+2+0=5.
 $$
 
-**8.49 $\operatorname{tr}(AB)=\operatorname{tr}(BA)$**
+**8.49 $\text{tr}(AB)=\text{tr}(BA)$**
 
 $A$가 $m\times n$ 행렬이고 $B$가 $n\times m$ 행렬이면
 $$
-\operatorname{tr}(AB)=\operatorname{tr}(BA).
+\text{tr}(AB)=\text{tr}(BA).
 $$
 
 **증명**
 
 $$
 \begin{aligned}
-\operatorname{tr}(AB)
+\text{tr}(AB)
 &=\sum_{j=1}^{m}\sum_{k=1}^{n}A_{j,k}B_{k,j}\\
 &=\sum_{k=1}^{n}\sum_{j=1}^{m}B_{k,j}A_{j,k}\\
-&=\operatorname{tr}(BA).
+&=\text{tr}(BA).
 \end{aligned}
 $$
 
@@ -1246,7 +1277,7 @@ $$
 
 $T\in\mathcal{L}(V)$라고 하자. $T$의 두 기저에 대한 행렬을 각각 $A$와 $B$라고 하면
 $$
-\operatorname{tr}A=\operatorname{tr}B.
+\text{tr}A=\text{tr}B.
 $$
 
 **증명**
@@ -1257,22 +1288,22 @@ A=C^{-1}BC
 $$
 이다. 8.49에 의해
 $$
-\operatorname{tr}A=\operatorname{tr}(C^{-1}BC)=\operatorname{tr}(BCC^{-1})=\operatorname{tr}B.
+\text{tr}A=\text{tr}(C^{-1}BC)=\text{tr}(BCC^{-1})=\text{tr}B.
 $$
 
 **8.51 정의: 연산자의 트레이스**
 
-$T\in\mathcal{L}(V)$라고 하자. $T$의 **트레이스** $\operatorname{tr}T$는 $T$의 임의의 기저에 대한 행렬의 트레이스로 정의한다.
+$T\in\mathcal{L}(V)$라고 하자. $T$의 **트레이스** $\text{tr}T$는 $T$의 임의의 기저에 대한 행렬의 트레이스로 정의한다.
 
 8.50에 의해 이 정의는 기저 선택에 의존하지 않는다.
 
 **8.52 복소공간에서 트레이스는 고윳값들의 합이다**
 
-$\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $\operatorname{tr}T$는 중복도를 포함한 $T$의 모든 고윳값들의 합이다.
+$\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $\text{tr}T$는 중복도를 포함한 $T$의 모든 고윳값들의 합이다.
 
 **증명**
 
-8.37에 의해 $T$의 어떤 기저에 대한 행렬은 블록 대각행렬이고, 각 블록의 대각선 성분은 그 블록에 대응하는 고윳값이다. 따라서 이 행렬의 대각선 성분들의 합은 각 고윳값을 그 중복도만큼 더한 값이다. 이것이 $\operatorname{tr}T$이다.
+8.37에 의해 $T$의 어떤 기저에 대한 행렬은 블록 대각행렬이고, 각 블록의 대각선 성분은 그 블록에 대응하는 고윳값이다. 따라서 이 행렬의 대각선 성분들의 합은 각 고윳값을 그 중복도만큼 더한 값이다. 이것이 $\text{tr}T$이다.
 
 **8.53 예: 트레이스와 고윳값들의 합**
 
@@ -1281,6 +1312,7 @@ $$
 T(z_1,z_2,z_3)=(3z_1-z_2-2z_3,\;3z_1+2z_2-3z_3,\;z_1+2z_2)
 $$
 로 정의하자. 표준 기저에 대한 $T$의 행렬은
+
 $$
 \begin{pmatrix}
 3&-1&-2\\
@@ -1288,7 +1320,7 @@ $$
 1&2&0
 \end{pmatrix}
 $$
-이고, 따라서 $\operatorname{tr}T=5$이다. $T$의 고윳값들은
+이고, 따라서 $\text{tr}T=5$이다. $T$의 고윳값들은
 $$
 1,\quad 2+3i,\quad 2-3i
 $$
@@ -1296,7 +1328,7 @@ $$
 
 **8.54 트레이스와 특성다항식**
 
-$\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $n=\dim V$라고 하면 $\operatorname{tr}T$는 $T$의 특성다항식에서 $z^{n-1}$의 계수에 음수를 붙인 값이다.
+$\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $n=\dim V$라고 하면 $\text{tr}T$는 $T$의 특성다항식에서 $z^{n-1}$의 계수에 음수를 붙인 값이다.
 
 **증명**
 
@@ -1308,13 +1340,13 @@ $$
 $$
 -(\lambda_1+\cdots+\lambda_n)
 $$
-이다. 8.52에 의해 $\lambda_1+\cdots+\lambda_n=\operatorname{tr}T$이다.
+이다. 8.52에 의해 $\lambda_1+\cdots+\lambda_n=\text{tr}T$이다.
 
 **8.55 내적공간에서 트레이스**
 
 $V$가 내적공간이고 $T\in\mathcal{L}(V)$라고 하자. $e_1,\ldots,e_n$이 $V$의 정규직교 기저이면
 $$
-\operatorname{tr}T=\langle Te_1,e_1\rangle+\cdots+\langle Te_n,e_n\rangle.
+\text{tr}T=\langle Te_1,e_1\rangle+\cdots+\langle Te_n,e_n\rangle.
 $$
 
 **증명**
@@ -1325,11 +1357,11 @@ $$
 
 사상
 $$
-\operatorname{tr}:\mathcal{L}(V)\to\mathbb{F}
+\text{tr}:\mathcal{L}(V)\to\mathbb{F}
 $$
 는 선형이다. 또한 모든 $S,T\in\mathcal{L}(V)$에 대해
 $$
-\operatorname{tr}(ST)=\operatorname{tr}(TS).
+\text{tr}(ST)=\text{tr}(TS).
 $$
 
 **증명**
@@ -1348,9 +1380,9 @@ $$
 
 만약 그런 $S,T$가 존재하면 8.56에 의해
 $$
-\operatorname{tr}(ST-TS)=\operatorname{tr}(ST)-\operatorname{tr}(TS)=0
+\text{tr}(ST-TS)=\text{tr}(ST)-\text{tr}(TS)=0
 $$
-이다. 그러나 $\operatorname{tr}I=\dim V\ne 0$이므로 모순이다.
+이다. 그러나 $\text{tr}I=\dim V\ne 0$이므로 모순이다.
 
 ### 연습문제 8D
 
@@ -1358,29 +1390,30 @@ $$
    $$
    Tu=\langle u,v\rangle w
    $$
-   로 정의한다. $\operatorname{tr}T$의 공식을 구하여라.
+   로 정의한다. $\text{tr}T$의 공식을 구하여라.
 
 2. $P\in\mathcal{L}(V)$가 $P^2=P$를 만족하면
    $$
-   \operatorname{tr}P=\dim\operatorname{range}P
+   \text{tr}P=\dim\text{range}P
    $$
    임을 증명하여라.
 
-3. $T\in\mathcal{L}(V)$가 $T^5=T$를 만족한다고 하자. $\operatorname{tr}T$의 실수부와 허수부가 모두 정수임을 증명하여라.
+3. $T\in\mathcal{L}(V)$가 $T^5=T$를 만족한다고 하자. $\text{tr}T$의 실수부와 허수부가 모두 정수임을 증명하여라.
 
 4. $V$가 내적공간이고 $T\in\mathcal{L}(V)$라고 하자. 다음을 증명하여라.
    $$
-   \operatorname{tr}T^*=\overline{\operatorname{tr}T}
+   \text{tr}T^*=\overline{\text{tr}T}
    $$
 
-5. $V$가 내적공간이고 $T\in\mathcal{L}(V)$가 양의 연산자라고 하자. $\operatorname{tr}T=0$이면 $T=0$임을 증명하여라.
+5. $V$가 내적공간이고 $T\in\mathcal{L}(V)$가 양의 연산자라고 하자. $\text{tr}T=0$이면 $T=0$임을 증명하여라.
 
 6. $V$가 내적공간이고 $P,Q\in\mathcal{L}(V)$가 정사영이라고 하자. 다음을 증명하여라.
    $$
-   \operatorname{tr}(PQ)\ge 0
+   \text{tr}(PQ)\ge 0
    $$
 
 7. $T\in\mathcal{L}(\mathbb{C}^3)$의 표준 기저에 대한 행렬이
+
    $$
    \begin{pmatrix}
    51&-12&-21\\
@@ -1390,15 +1423,15 @@ $$
    $$
    이라고 하자. $T$의 두 고윳값이 $-48$과 $24$임을 알고 있다. 행렬식을 계산하지 않고 세 번째 고윳값을 구하여라.
 
-8. $\operatorname{tr}(ST)=(\operatorname{tr}S)(\operatorname{tr}T)$가 모든 $S,T\in\mathcal{L}(V)$에 대해 성립하는지 증명하거나 반례를 들어라.
+8. $\text{tr}(ST)=(\text{tr}S)(\text{tr}T)$가 모든 $S,T\in\mathcal{L}(V)$에 대해 성립하는지 증명하거나 반례를 들어라.
 
 9. $T\in\mathcal{L}(V)$가 모든 $S\in\mathcal{L}(V)$에 대해
    $$
-   \operatorname{tr}(ST)=0
+   \text{tr}(ST)=0
    $$
    을 만족하면 $T=0$임을 증명하여라.
 
-10. $\tau:\mathcal{L}(V)\to\mathbb{F}$가 선형이고 모든 $S,T\in\mathcal{L}(V)$에 대해 $\tau(ST)=\tau(TS)$를 만족하며 $\tau(I)=\dim V$라고 하자. 그러면 $\tau=\operatorname{tr}$임을 증명하여라.
+10. $\tau:\mathcal{L}(V)\to\mathbb{F}$가 선형이고 모든 $S,T\in\mathcal{L}(V)$에 대해 $\tau(ST)=\tau(TS)$를 만족하며 $\tau(I)=\dim V$라고 하자. 그러면 $\tau=\text{tr}$임을 증명하여라.
 
     힌트: $V$의 기저 $v_1,\ldots,v_n$을 고정하자. $P_{j,k}\in\mathcal{L}(V)$를
     $$
@@ -1412,14 +1445,14 @@ $$
 
 11. $V,W$가 유한차원 내적공간이고 $T\in\mathcal{L}(V,W)$라고 하자. $e_1,\ldots,e_n$이 $V$의 정규직교 기저이고 $f_1,\ldots,f_m$이 $W$의 정규직교 기저이면 다음을 증명하여라.
     $$
-    \operatorname{tr}(T^*T)=\sum_{k=1}^{n}\sum_{j=1}^{m}|\langle Te_k,f_j\rangle|^2
+    \text{tr}(T^*T)=\sum_{k=1}^{n}\sum_{j=1}^{m}|\langle Te_k,f_j\rangle|^2
     $$
 
 12. $V,W$가 유한차원 내적공간이라고 하자.
 
     (a) $S,T\in\mathcal{L}(V,W)$에 대해
     $$
-    \langle S,T\rangle=\operatorname{tr}(T^*S)
+    \langle S,T\rangle=\text{tr}(T^*S)
     $$
     로 정의하면 $\mathcal{L}(V,W)$ 위의 내적이 됨을 증명하여라.
 

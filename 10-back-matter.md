@@ -53,14 +53,14 @@
 - $G(\lambda,T)$, 308
 - $I$, 52, 90
 - $\Longleftrightarrow$, 23
-- $\operatorname{Im}$, 120
+- $\text{Im}$, 120
 - $-\infty$, 31
 - $\mathcal{L}(V)$, 52
 - $\mathcal{L}(V,W)$, 52
 - $\mathcal{M}(\beta)$, 334
 - $\mathcal{M}(T)$, 69, 154
 - $\mathcal{M}(v)$, 88
-- $\operatorname{perm}$, 348
+- $\text{perm}$, 348
 - $\mathcal{P}(\mathbb{F})$, 30
 - $\pi$, 101
 - $\mathcal{P}_m(\mathbb{F})$, 31
@@ -69,7 +69,7 @@
 - $q_\beta$, 341
 - $0$, 7
 - $\mathbb{R}$, 2
-- $\operatorname{Re}$, 120
+- $\text{Re}$, 120
 - $S\otimes T$, 381
 - $\subsetneqq$, 299
 - $\sqrt{T}$, 253
@@ -83,8 +83,8 @@
 - $T_m$, 137
 - $\|T\|$, 280
 - $T^\#$, 375, 380
-- $\operatorname{tr}A$, 326
-- $\operatorname{tr}T$, 327
+- $\text{tr}A$, 326
+- $\text{tr}T$, 327
 - $T|_U$, 133
 - $T/U$, 142
 - $U^\perp$, 211
@@ -97,12 +97,12 @@
 - $V_1\otimes\cdots\otimes V_m$, 379
 - $v_1\otimes\cdots\otimes v_m$, 379
 - $V^{(2)}$, 334
-- $V_{\operatorname{alt}}^{(2)}$, 339
-- $V_{\operatorname{sym}}^{(2)}$, 337
+- $V_{\text{alt}}^{(2)}$, 339
+- $V_{\text{sym}}^{(2)}$, 337
 - $V_{\mathbb{C}}$, 17
 - $V_m$, 103, 346
 - $V^{(m)}$, 346
-- $V_{\operatorname{alt}}^{(m)}$, 347
+- $V_{\text{alt}}^{(m)}$, 347
 - $V\otimes W$, 372
 - $v\otimes w$, 372
 - $v+U$, 98
@@ -204,7 +204,7 @@
   - 부분공간들의 합의, 47
 - 직합, 21, 42, 98
   - 부분공간과 그 직교여공간의, 212
-  - $\operatorname{null}T^{\dim V}$와 $\operatorname{range}T^{\dim V}$의, 299
+  - $\text{null}T^{\dim V}$와 $\text{range}T^{\dim V}$의, 299
 - 이산 푸리에 변환, 269
 - 분배법칙, 3, 12, 15, 56, 80
 - 다항식의 나눗셈 알고리즘, 124
