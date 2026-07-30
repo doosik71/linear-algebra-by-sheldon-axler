@@ -20,6 +20,7 @@
 **7.1 정의: 수반, $T^*$**
 
 $T\in\mathcal{L}(V,W)$라고 하자. $T$의 **수반**은 모든 $v\in V$와 모든 $w\in W$에 대해
+
 $$
 \langle Tv,w\rangle=\langle v,T^*w\rangle
 $$
@@ -28,10 +29,12 @@ $$
 선형대수에서 수반이라는 말은 다른 뜻으로 쓰이기도 한다. 다른 곳에서 그 뜻을 만나더라도, 여기서의 수반과는 관련이 없다는 점에 주의하라.
 
 위 정의가 의미가 있는 이유를 보자. $T\in\mathcal{L}(V,W)$이고 $w\in W$를 고정하자. $v\in V$를 $\langle Tv,w\rangle$로 보내는 $V$ 위의 선형함수
+
 $$
 v\mapsto \langle Tv,w\rangle
 $$
 를 생각한다. 리스 표현정리(6.42)에 의해, 이 선형함수는 어떤 유일한 벡터와의 내적으로 표현된다. 그 유일한 벡터를 $T^*w$라고 부른다. 다시 말해 $T^*w$는 모든 $v\in V$에 대해
+
 $$
 \langle Tv,w\rangle=\langle v,T^*w\rangle
 $$
@@ -42,6 +45,7 @@ $$
 **7.2 예: $\mathbb{R}^3$에서 $\mathbb{R}^2$로 가는 선형사상의 수반**
 
 $T:\mathbb{R}^3\to\mathbb{R}^2$를
+
 $$
 T(x_1,x_2,x_3)=(x_2+3x_3,2x_1)
 $$
@@ -57,6 +61,7 @@ $$
 $$
 
 따라서
+
 $$
 T^*(y_1,y_2)=(2y_2,y_1,3y_1).
 $$
@@ -64,6 +69,7 @@ $$
 **7.3 예: 치역의 차원이 최대 $1$인 선형사상의 수반**
 
 $u\in V$와 $x\in W$를 고정하자. $T\in\mathcal{L}(V,W)$를 각 $v\in V$에 대해
+
 $$
 Tv=\langle v,u\rangle x
 $$
@@ -79,6 +85,7 @@ $$
 $$
 
 따라서
+
 $$
 T^*w=\langle w,x\rangle u.
 $$
@@ -120,31 +127,37 @@ $$
 $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
 (a) 모든 $S\in\mathcal{L}(V,W)$에 대해
+
 $$
 (S+T)^*=S^*+T^*.
 $$
 
 (b) 모든 $\lambda\in\mathbb{F}$에 대해
+
 $$
 (\lambda T)^*=\overline{\lambda}T^*.
 $$
 
 (c)
+
 $$
 (T^*)^*=T.
 $$
 
 (d) $U$가 $\mathbb{F}$ 위의 유한차원 내적공간이고 $S\in\mathcal{L}(W,U)$이면
+
 $$
 (ST)^*=T^*S^*.
 $$
 
 (e) $I$가 $V$ 위의 항등연산자이면
+
 $$
 I^*=I.
 $$
 
 (f) $T$가 가역이면 $T^*$도 가역이고
+
 $$
 (T^*)^{-1}=(T^{-1})^*.
 $$
@@ -191,21 +204,25 @@ $\mathbb{F}=\mathbb{R}$이면 위 결과의 (a), (b)에 의해 $T\mapsto T^*$는
 $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
 (a)
+
 $$
 \text{null}T^*=(\text{range}T)^\perp.
 $$
 
 (b)
+
 $$
 \text{range}T^*=(\text{null}T)^\perp.
 $$
 
 (c)
+
 $$
 \text{null}T=(\text{range}T^*)^\perp.
 $$
 
 (d)
+
 $$
 \text{range}T=(\text{null}T^*)^\perp.
 $$
@@ -229,6 +246,7 @@ $$
 **7.7 정의: 켤레전치, $A^*$**
 
 $m\times n$ 행렬 $A$의 **켤레전치**는 행과 열을 서로 바꾼 뒤 각 성분의 켤레복소수를 취하여 얻는 $n\times m$ 행렬 $A^*$이다. 즉 $j\in\{1,\ldots,n\}$이고 $k\in\{1,\ldots,m\}$이면
+
 $$
 (A^*)_{j,k}=\overline{A_{k,j}}.
 $$
@@ -261,14 +279,17 @@ $$
 **7.9 $T^*$의 행렬은 $T$의 행렬의 켤레전치이다**
 
 $T\in\mathcal{L}(V,W)$라고 하자. $e_1,\ldots,e_n$이 $V$의 정규직교기저이고 $f_1,\ldots,f_m$이 $W$의 정규직교기저이면
+
 $$
 \mathcal{M}(T^*,(f_1,\ldots,f_m),(e_1,\ldots,e_n))
 $$
 은
+
 $$
 \mathcal{M}(T,(e_1,\ldots,e_n),(f_1,\ldots,f_m))
 $$
 의 켤레전치이다. 간단히 쓰면
+
 $$
 \mathcal{M}(T^*)=(\mathcal{M}(T))^*.
 $$
@@ -276,6 +297,7 @@ $$
 **증명**
 
 $T e_k$를 $f_1,\ldots,f_m$의 선형결합으로 쓰면
+
 $$
 T e_k=\langle T e_k,f_1\rangle f_1+\cdots+\langle T e_k,f_m\rangle f_m.
 $$
@@ -298,12 +320,14 @@ $$
 **7.10 정의: 자기수반**
 
 연산자 $T\in\mathcal{L}(V)$가
+
 $$
 T=T^*
 $$
 를 만족하면 $T$를 **자기수반**이라고 한다.
 
 $e_1,\ldots,e_n$이 $V$의 정규직교기저이면 7.9에 의해 $T$가 자기수반인 것은
+
 $$
 \mathcal{M}(T,(e_1,\ldots,e_n))=\mathcal{M}(T,(e_1,\ldots,e_n))^*
 $$
@@ -334,6 +358,7 @@ $$
 $\mathcal{L}(V)$에서 수반은 $\mathbb{C}$에서 켤레복소수와 비슷한 역할을 한다. 복소수 $z$가 실수인 것은 $z=\overline z$인 것과 동치이다. 따라서 자기수반 연산자 $T=T^*$는 실수에 대응되는 개념이라고 생각할 수 있다.
 
 $T\in\mathcal{L}(V)$가 자기수반인 것은 모든 $v,w\in V$에 대해
+
 $$
 \langle Tv,w\rangle=\langle v,Tw\rangle
 $$
@@ -361,6 +386,7 @@ $$
 **7.13 모든 $v$에 대해 $Tv$가 $v$에 직교하면 $T=0$이다, 복소수의 경우**
 
 $V$가 복소 내적공간이고 $T\in\mathcal{L}(V)$라고 하자. 그러면
+
 $$
 \langle Tv,v\rangle=0\quad\text{모든 }v\in V\text{에 대해}
 $$
@@ -420,6 +446,7 @@ $$
 **7.16 자기수반이고 모든 $v$에 대해 $\langle Tv,v\rangle=0$이면 $T=0$**
 
 $T$가 $V$ 위의 자기수반 연산자라고 하자. 그러면
+
 $$
 \langle Tv,v\rangle=0\quad\text{모든 }v\in V\text{에 대해}
 $$
@@ -443,6 +470,7 @@ $$
 
 - 내적공간 위의 연산자가 자기 자신의 수반과 교환하면 그 연산자를 **정규**라고 한다.
 - 즉 $T\in\mathcal{L}(V)$가 정규라는 것은
+
 $$
 TT^*=T^*T
 $$
@@ -461,6 +489,7 @@ $$
 \end{pmatrix}
 $$
 인 $\mathbb{F}^2$ 위의 연산자라고 하자. 즉
+
 $$
 T(w,z)=(2w-3z,3w+2z).
 $$
@@ -513,16 +542,19 @@ $$
 $T\in\mathcal{L}(V)$가 정규라고 하자. 그러면 다음이 성립한다.
 
 (a)
+
 $$
 \text{null}T=\text{null}T^*.
 $$
 
 (b)
+
 $$
 \text{range}T=\text{range}T^*.
 $$
 
 (c)
+
 $$
 V=\text{null}T\oplus\text{range}T.
 $$
@@ -617,6 +649,7 @@ $\alpha\ne\beta$이므로 $\langle u,v\rangle=0$이다.
 **7.23 $T$가 정규인 것과 $T$의 실수부와 허수부가 교환하는 것**
 
 $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $T$가 정규인 것과, 서로 교환하는 자기수반 연산자 $A,B$가 존재하여
+
 $$
 T=A+iB
 $$
@@ -645,6 +678,7 @@ $$
 ### 연습문제 7A
 
 1. $n$이 양의 정수라고 하자. $T\in\mathcal{L}(\mathbb{F}^n)$을
+
    $$
    T(z_1,\ldots,z_n)=(0,z_1,\ldots,z_{n-1})
    $$
@@ -697,6 +731,7 @@ $$
    $$
 
    (b)
+
    $$
    \dim\text{range}T^*=\dim\text{range}T.
    $$
@@ -708,6 +743,7 @@ $$
 9. $V$ 위의 두 자기수반 연산자의 곱이 자기수반인 것은 그 두 연산자가 교환하는 것과 동치임을 증명하여라.
 
 10. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 자기수반인 것과 모든 $v\in V$에 대해
+
     $$
     \langle Tv,v\rangle=\langle T^*v,v\rangle
     $$
@@ -724,6 +760,7 @@ $$
     $\mathbb{F}=\mathbb{R}$이면 $S$는 $\mathbb{R}^2$에서 $90^\circ$ 반시계방향 회전이다.
 
 12. 연산자 $B\in\mathcal{L}(V)$가
+
     $$
     B^*=-B
     $$
@@ -736,10 +773,12 @@ $$
     (b) $\mathcal{A}$의 최소다항식을 구하여라.
 
 14. $\mathcal{P}_2(\mathbb{R})$ 위에 내적
+
     $$
     \langle p,q\rangle=\int_0^1 pq
     $$
     를 정의한다. $T\in\mathcal{L}(\mathcal{P}_2(\mathbb{R}))$를
+
     $$
     T(ax^2+bx+c)=bx
     $$
@@ -791,16 +830,19 @@ $$
 22. $T$가 정규이지만 자기수반은 아닌 $T\in\mathcal{L}(\mathbb{R}^3)$의 예를 제시하여라.
 
 23. $T$가 $V$ 위의 정규 연산자라고 하자. 또한 $v,w\in V$가
+
     $$
     \|v\|=\|w\|=2,\qquad Tv=3v,\qquad Tw=4w
     $$
     를 만족한다고 하자. $\|T(v+w)\|=10$임을 보여라.
 
 24. $T\in\mathcal{L}(V)$이고
+
     $$
     a_0+a_1z+a_2z^2+\cdots+a_{m-1}z^{m-1}+z^m
     $$
     이 $T$의 최소다항식이라고 하자. $T^*$의 최소다항식은
+
     $$
     \overline{a_0}+\overline{a_1}z+\overline{a_2}z^2+\cdots+\overline{a_{m-1}}z^{m-1}+z^m
     $$
@@ -840,6 +882,7 @@ $$
     (b) $T\in\mathcal{L}(V)$를 $Tf=f''$로 정의한다. $T$가 자기수반임을 보여라.
 
 32. $T:V\to W$가 선형사상이라고 하자. $V$와 $V'$의 표준적 동일시(6.58)와 $W$와 $W'$의 대응되는 동일시 아래에서, 수반사상 $T^*:W\to V$가 쌍대사상 $T':W'\to V'$에 대응함을 보여라. 더 정확히 말해, 모든 $w\in W$에 대해
+
     $$
     T'(\varphi_w)=\varphi_{T^*w}
     $$
@@ -858,6 +901,7 @@ $V$ 위에서 가장 좋은 연산자는 어떤 정규직교기저에 대해 대
 실 스펙트럼 정리를 증명하려면 두 가지 준비 결과가 필요하다. 이 결과들은 실 내적공간과 복소 내적공간 모두에서 성립하지만, 복소 스펙트럼 정리의 증명에는 필요하지 않다.
 
 완전제곱을 떠올려 보자. $b,c\in\mathbb{R}$이고 $b^2<4c$이면 모든 실수 $x$에 대해
+
 $$
 x^2+bx+c=\left(x+\frac b2\right)^2+\left(c-\frac{b^2}{4}\right)>0.
 $$
@@ -867,6 +911,7 @@ $$
 **7.26 가역인 이차식**
 
 $T\in\mathcal{L}(V)$가 자기수반이고 $b,c\in\mathbb{R}$가 $b^2<4c$를 만족한다고 하자. 그러면
+
 $$
 T^2+bT+cI
 $$
@@ -892,6 +937,7 @@ $$
 **7.27 자기수반 연산자의 최소다항식**
 
 $T\in\mathcal{L}(V)$가 자기수반이라고 하자. 그러면 $T$의 최소다항식은 어떤 $\lambda_1,\ldots,\lambda_m\in\mathbb{R}$에 대해
+
 $$
 (z-\lambda_1)\cdots(z-\lambda_m)
 $$
@@ -989,10 +1035,12 @@ a_{1,1} & \cdots & a_{1,n}\\
 $$
 
 이 행렬이 사실 대각행렬임을 보이자. 위 행렬에서
+
 $$
 \|Te_1\|^2=|a_{1,1}|^2
 $$
 이고
+
 $$
 \|T^*e_1\|^2=|a_{1,1}|^2+|a_{1,2}|^2+\cdots+|a_{1,n}|^2
 $$
@@ -1007,6 +1055,7 @@ $$
 **7.33 예: 한 연산자의 고유벡터들로 이루어진 정규직교기저**
 
 $T\in\mathcal{L}(\mathbb{C}^2)$를
+
 $$
 T(w,z)=(2w-3z,3w+2z)
 $$
@@ -1067,12 +1116,14 @@ $$
 13. 복소 스펙트럼 정리를 사용하지 말고, 두 교환 연산자에 적용되는 슈어 정리의 버전(6B절 연습문제 20번에서 $\mathcal{E}=\{T,T^*\}$로 둔다)을 사용하여 다음을 증명하여라. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규이면, $T$는 $V$의 어떤 정규직교기저에 대해 대각행렬을 가진다.
 
 14. $\mathbb{F}=\mathbb{R}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 자기수반인 것은, 서로 다른 고윳값에 대응하는 모든 고유벡터 쌍이 직교하고
+
     $$
     V=E(\lambda_1,T)\oplus\cdots\oplus E(\lambda_m,T)
     $$
     가 성립하는 것과 동치임을 증명하여라. 여기서 $\lambda_1,\ldots,\lambda_m$은 $T$의 서로 다른 고윳값들이다.
 
 15. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 정규인 것은, 서로 다른 고윳값에 대응하는 모든 고유벡터 쌍이 직교하고
+
     $$
     V=E(\lambda_1,T)\oplus\cdots\oplus E(\lambda_m,T)
     $$
@@ -1083,6 +1134,7 @@ $$
 17. $\mathbb{F}=\mathbb{R}$이고 $\mathcal{E}\subset\mathcal{L}(V)$라고 하자. $\mathcal{E}$의 모든 원소가 어떤 하나의 정규직교기저에 대해 대각행렬을 가지는 것과, 모든 $S,T\in\mathcal{E}$가 서로 교환하는 자기수반 연산자인 것은 동치임을 증명하여라.
 
 18. 실 내적공간 $V$, 연산자 $T\in\mathcal{L}(V)$, 실수 $b,c$ 중 $b^2<4c$를 만족하지만
+
     $$
     T^2+bT+cI
     $$
@@ -1115,12 +1167,14 @@ $$
     $$
 
 22. $2$와 $3$이 유일한 고윳값이지만
+
     $$
     T^2-5T+6I\ne 0
     $$
     인 $T\in\mathcal{L}(\mathbb{C}^3)$의 예를 제시하여라.
 
 23. $T\in\mathcal{L}(V)$가 자기수반이고 $\lambda\in\mathbb{F}$, $\varepsilon>0$이라고 하자. 어떤 $v\in V$가 $\|v\|=1$이고
+
     $$
     \|Tv-\lambda v\|<\varepsilon
     $$
@@ -1147,6 +1201,7 @@ $$
 **7.34 정의: 양의 연산자**
 
 연산자 $T\in\mathcal{L}(V)$가 자기수반이고 모든 $v\in V$에 대해
+
 $$
 \langle Tv,v\rangle\ge 0
 $$
@@ -1157,6 +1212,7 @@ $V$가 복소 벡터공간이면, 위 정의에서 $T$가 자기수반이어야 
 **7.35 예: 양의 연산자**
 
 (a) 표준기저에 대한 행렬이
+
 $$
 \begin{pmatrix} 2 & -1\\ -1 & 1 \end{pmatrix}
 $$
@@ -1179,6 +1235,7 @@ $$
 **7.36 정의: 제곱근**
 
 연산자 $R$가
+
 $$
 R^2=T
 $$
@@ -1187,10 +1244,12 @@ $$
 **7.37 예: 연산자의 제곱근**
 
 $T\in\mathcal{L}(\mathbb{F}^3)$가
+
 $$
 T(z_1,z_2,z_3)=(z_3,0,0)
 $$
 로 정의되어 있다고 하자. $R\in\mathcal{L}(\mathbb{F}^3)$를
+
 $$
 R(z_1,z_2,z_3)=(z_2,z_3,0)
 $$
@@ -1213,6 +1272,7 @@ $T\in\mathcal{L}(V)$라고 하자. 그러면 다음 조건들은 서로 동치�
 (e) $T$는 자기수반 제곱근을 가진다.
 
 (f) 어떤 $R\in\mathcal{L}(V)$에 대해
+
 $$
 T=R^*R.
 $$
@@ -1220,6 +1280,7 @@ $$
 **증명**
 
 (a)에서 (b)를 보이자. $T$가 양의 연산자이고 $\lambda$가 $T$의 고윳값이라고 하자. 대응하는 고유벡터 $v$에 대해
+
 $$
 0\le \langle Tv,v\rangle=\langle \lambda v,v\rangle=\lambda\langle v,v\rangle.
 $$
@@ -1233,6 +1294,7 @@ $$
 (d)는 곧 (e)를 함의한다. 양의 연산자는 정의상 자기수반이기 때문이다. (e)에서 (f)는 $T=R^2=R^*R$에서 따른다.
 
 마지막으로 (f)에서 (a)를 보이자. $T=R^*R$이면
+
 $$
 T^*=(R^*R)^*=R^*R=T
 $$
@@ -1258,23 +1320,28 @@ $T\in\mathcal{L}(V)$가 양의 연산자라고 하자. $v$가 $T$의 고유벡�
 $R$를 $T$의 양의 제곱근이라고 하자. $Rv=\sqrt{\lambda}v$임을 보이면, 스펙트럼 정리에 의해 $T$의 고유벡터들로 이루어진 기저가 존재하므로 $R$는 유일하게 결정된다.
 
 $R$가 양의 연산자이므로 스펙트럼 정리에 의해 $R$의 고유벡터들로 이루어진 정규직교기저 $e_1,\ldots,e_n$이 존재한다. $R$의 고윳값은 음이 아니므로 어떤 음이 아닌 수 $\lambda_1,\ldots,\lambda_n$에 대해
+
 $$
 Re_k=\sqrt{\lambda_k}e_k
 $$
 이다. $v=a_1e_1+\cdots+a_ne_n$으로 쓰면
+
 $$
 Rv=a_1\sqrt{\lambda_1}e_1+\cdots+a_n\sqrt{\lambda_n}e_n
 $$
 이고
+
 $$
 \lambda v=Tv=R^2v=a_1\lambda_1e_1+\cdots+a_n\lambda_ne_n.
 $$
 
 따라서 각 $k$에 대해 $a_k(\lambda-\lambda_k)=0$이다. 그러므로
+
 $$
 v=\sum_{\{k:\lambda_k=\lambda\}}a_ke_k
 $$
 이고
+
 $$
 Rv=\sum_{\{k:\lambda_k=\lambda\}}a_k\sqrt{\lambda}e_k=\sqrt{\lambda}v.
 $$
@@ -1310,10 +1377,12 @@ $$
 $$
 
 두 행렬은 모두 자신의 전치와 같으므로 $S$와 $T$는 자기수반이다. 또한
+
 $$
 \langle S(x,y),(x,y)\rangle=x^2+2y^2\ge 0
 $$
 이고
+
 $$
 \langle T(x,y),(x,y)\rangle=x^2+2xy+y^2=(x+y)^2\ge 0
 $$
@@ -1390,6 +1459,7 @@ $$
 9. $T\in\mathcal{L}(V)$가 양의 연산자이고 $S\in\mathcal{L}(W,V)$라고 하자. $S^*TS$가 $W$ 위의 양의 연산자임을 증명하여라.
 
 10. $T$가 $V$ 위의 양의 연산자라고 하자. $v,w\in V$가
+
     $$
     Tv=w,\qquad Tw=v
     $$
@@ -1412,6 +1482,7 @@ $$
     $$
 
 15. $T\in\mathcal{L}(V)$가 자기수반이라고 하자. 양의 연산자 $A,B\in\mathcal{L}(V)$가 존재하여
+
     $$
     T=A-B,\qquad \sqrt{T^*T}=A+B,\qquad AB=BA=0
     $$
@@ -1431,6 +1502,7 @@ $$
 19. $\mathbb{F}^2$ 위의 항등연산자가 자기수반 제곱근을 무한히 많이 가짐을 보여라.
 
 20. $T\in\mathcal{L}(V)$이고 $e_1,\ldots,e_n$이 $V$의 정규직교기저라고 하자. $T$가 양의 연산자인 것과, 어떤 $v_1,\ldots,v_n\in V$가 존재하여 모든 $j,k=1,\ldots,n$에 대해
+
     $$
     \langle Te_k,e_j\rangle=\langle v_k,v_j\rangle
     $$
@@ -1482,6 +1554,7 @@ $$
 를 만족하면 $S$를 **등거리사상**이라고 한다. 즉 등거리사상은 노름을 보존하는 선형사상이다.
 
 $S\in\mathcal{L}(V,W)$가 등거리사상이고 $Sv=0$이면
+
 $$
 \|v\|=\|Sv\|=\|0\|=0
 $$
@@ -1503,6 +1576,7 @@ $$
 $$
 
 7.46의 양변에 $S$를 적용하면
+
 $$
 Sv=\langle v,e_1\rangle g_1+\cdots+\langle v,e_n\rangle g_n.
 $$
@@ -1523,11 +1597,13 @@ $S\in\mathcal{L}(V,W)$라고 하자. $e_1,\ldots,e_n$이 $V$의 정규직교기�
 (a) $S$는 등거리사상이다.
 
 (b)
+
 $$
 S^*S=I.
 $$
 
 (c) 모든 $u,v\in V$에 대해
+
 $$
 \langle Su,Sv\rangle=\langle u,v\rangle.
 $$
@@ -1535,6 +1611,7 @@ $$
 (d) $Se_1,\ldots,Se_n$은 $W$의 정규직교 리스트이다.
 
 (e) 행렬
+
 $$
 \mathcal{M}(S,(e_1,\ldots,e_n),(f_1,\ldots,f_m))
 $$
@@ -1543,6 +1620,7 @@ $$
 **증명**
 
 (a)가 성립한다고 하자. 그러면 모든 $v\in V$에 대해
+
 $$
 \langle (I-S^*S)v,v\rangle=\|v\|^2-\|Sv\|^2=0.
 $$
@@ -1550,6 +1628,7 @@ $$
 $I-S^*S$는 자기수반이므로 7.16에 의해 $I-S^*S=0$이다. 따라서 (b)가 성립한다.
 
 (b)가 성립하면
+
 $$
 \langle Su,Sv\rangle=\langle S^*Su,v\rangle=\langle u,v\rangle
 $$
@@ -1600,11 +1679,13 @@ $S\in\mathcal{L}(V)$라고 하자. $e_1,\ldots,e_n$이 $V$의 정규직교기저
 (a) $S$는 유니터리 연산자이다.
 
 (b)
+
 $$
 S^*S=SS^*=I.
 $$
 
 (c) $S$는 가역이고
+
 $$
 S^{-1}=S^*.
 $$
@@ -1628,6 +1709,7 @@ $$
 **7.54 유니터리 연산자의 고윳값은 절댓값이 $1$이다**
 
 유니터리 연산자의 고윳값 $\lambda$는
+
 $$
 |\lambda|=1
 $$
@@ -1636,6 +1718,7 @@ $$
 **증명**
 
 $S$가 유니터리 연산자이고 $Sv=\lambda v$이며 $v\ne 0$이라고 하자. 그러면
+
 $$
 |\lambda|\,\|v\|=\|\lambda v\|=\|Sv\|=\|v\|.
 $$
@@ -1684,11 +1767,13 @@ $Q$가 $n\times n$ 행렬이라고 하자. 그러면 다음 조건들은 서로 
 (b) $Q$의 행들은 $\mathbb{F}^n$의 정규직교 리스트를 이룬다.
 
 (c) 모든 $v\in\mathbb{F}^n$에 대해
+
 $$
 \|Qv\|=\|v\|.
 $$
 
 (d)
+
 $$
 Q^*Q=QQ^*=I,
 $$
@@ -1698,6 +1783,7 @@ $$
 **7.58 QR 분해**
 
 $A$가 열들이 일차독립인 정사각행렬이라고 하자. 그러면 유니터리 행렬 $Q$와 대각선 성분이 모두 양수인 상삼각행렬 $R$가 유일하게 존재하여
+
 $$
 A=QR
 $$
@@ -1712,12 +1798,14 @@ $$
 \tag{7.59}
 $$
 를 만족하는 $\mathbb{F}^n$의 정규직교기저 $e_1,\ldots,e_n$을 얻는다. 행렬 $R$의 $j$행 $k$열 성분을
+
 $$
 R_{j,k}=\langle v_k,e_j\rangle
 $$
 로 정의한다. $j>k$이면 $e_j$는 $\text{span}(e_1,\ldots,e_k)$에 직교하므로, (7.59)에 의해 $v_k$에도 직교한다. 따라서 $R_{j,k}=0$이고 $R$는 상삼각행렬이다.
 
 $Q$를 열들이 $e_1,\ldots,e_n$인 유니터리 행렬로 두자. $QR$의 $k$번째 열은
+
 $$
 \langle v_k,e_1\rangle e_1+\cdots+\langle v_k,e_k\rangle e_k
 $$
@@ -1784,6 +1872,7 @@ QR=
 $$
 
 QR 분해는 $Ax=b$ 같은 선형방정식계를 푸는 데도 사용할 수 있다. $A=QR$이면 $Ax=b$는 $QRx=b$와 동치이고, 왼쪽에 $Q^*$를 곱하면
+
 $$
 Rx=Q^*b
 $$
@@ -1794,6 +1883,7 @@ $$
 **7.61 가역인 양의 연산자**
 
 자기수반 연산자 $T\in\mathcal{L}(V)$가 가역인 양의 연산자인 것은 모든 영이 아닌 $v\in V$에 대해
+
 $$
 \langle Tv,v\rangle>0
 $$
@@ -1808,10 +1898,12 @@ $T$가 가역인 양의 연산자이고 $v\ne 0$이면 $Tv\ne 0$이다. 7.43에 
 **7.62 정의: 양의 정부호**
 
 행렬 $B\in\mathbb{F}^{n,n}$이
+
 $$
 B^*=B
 $$
 이고 모든 영이 아닌 $x\in\mathbb{F}^n$에 대해
+
 $$
 \langle Bx,x\rangle>0
 $$
@@ -1820,6 +1912,7 @@ $$
 **7.63 촐레스키 분해**
 
 $B$가 양의 정부호 행렬이라고 하자. 그러면 대각선 성분이 모두 양수인 상삼각행렬 $R$가 유일하게 존재하여
+
 $$
 B=R^*R
 $$
@@ -1830,6 +1923,7 @@ $$
 $B$가 양의 정부호이므로 7.38의 (a)와 (f)의 동치에 의해, $B$와 같은 크기의 가역 정사각행렬 $A$가 존재하여 $B=A^*A$이다.
 
 $A=QR$를 $A$의 QR 분해라고 하자. 여기서 $Q$는 유니터리이고 $R$는 대각선 성분이 모두 양수인 상삼각행렬이다. 그러면 $A^*=R^*Q^*$이고
+
 $$
 B=A^*A=R^*Q^*QR=R^*R.
 $$
@@ -1887,6 +1981,7 @@ $$
     (b) $T+i\sqrt{I-T^2}$가 유니터리 연산자임을 보여라.
 
 11. $S\in\mathcal{L}(V)$라고 하자. $S$가 유니터리 연산자인 것과
+
     $$
     \{Sv:v\in V,\ \|v\|\le 1\}=\{v\in V:\|v\|\le 1\}
     $$
@@ -1917,6 +2012,7 @@ $$
     =\frac1{\sqrt n}\sum_{m=0}^{n-1}z_m e^{-2\pi ijm/n}
     $$
     로 정의한다. 이산 푸리에 변환은
+
     $$
     \mathcal{F}z=(\omega_0(z),\omega_1(z),\ldots,\omega_{n-1}(z))
     $$
@@ -1947,11 +2043,13 @@ $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 (a) $T^*T$는 $V$ 위의 양의 연산자이다.
 
 (b)
+
 $$
 \text{null}T^*T=\text{null}T.
 $$
 
 (c)
+
 $$
 \text{range}T^*T=\text{range}T^*.
 $$
@@ -1967,6 +2065,7 @@ $$
 **증명**
 
 (a) 먼저
+
 $$
 (T^*T)^*=T^*(T^*)^*=T^*T
 $$
@@ -1981,6 +2080,7 @@ $$
 따라서 $T^*T$는 양의 연산자이다.
 
 (b) $v\in\text{null}T^*T$이면
+
 $$
 \|Tv\|^2=\langle T^*Tv,v\rangle=0
 $$
@@ -2013,10 +2113,12 @@ $T\in\mathcal{L}(V,W)$라고 하자. $T$의 **특이값**은 $T^*T$의 고윳값
 **7.66 예: $\mathbb{F}^4$ 위의 연산자의 특이값**
 
 $T\in\mathcal{L}(\mathbb{F}^4)$를
+
 $$
 T(z_1,z_2,z_3,z_4)=(0,3z_1,2z_2,-3z_4)
 $$
 로 정의하자. 계산하면
+
 $$
 T^*T(z_1,z_2,z_3,z_4)=(9z_1,4z_2,0,9z_4)
 $$
@@ -2029,6 +2131,7 @@ $$
 $$
 
 그러므로 $T$의 특이값은
+
 $$
 3,3,2,0
 $$
@@ -2064,6 +2167,7 @@ $$
 $$
 
 따라서 $T$의 특이값은
+
 $$
 5,\sqrt2,0,0
 $$
@@ -2247,6 +2351,7 @@ $$
 **7.79 예: 특이값분해 찾기**
 
 $T\in\mathcal{L}(\mathbb{F}^4,\mathbb{F}^3)$를
+
 $$
 T(x_1,x_2,x_3,x_4)=(-5x_4,0,x_1+x_2)
 $$
@@ -2262,6 +2367,7 @@ $$
 이다. 예 7.67에서 보았듯이 $T^*T$의 양의 고윳값은 $25,2$이고, 따라서 $T$의 양의 특이값은 $5,\sqrt2$이다.
 
 $E(25,T^*T)$의 정규직교기저는 $(0,0,0,1)$이고, $E(2,T^*T)$의 정규직교기저는
+
 $$
 \left(\frac1{\sqrt2},\frac1{\sqrt2},0,0\right)
 $$
@@ -2278,6 +2384,7 @@ f_1=\frac{Te_1}{5}=(-1,0,0),\qquad
 f_2=\frac{Te_2}{\sqrt2}=(0,0,1)
 $$
 로 둔다. 그러면 $e_1,e_2$는 $\mathbb{F}^4$의 정규직교 리스트이고 $f_1,f_2$는 $\mathbb{F}^3$의 정규직교 리스트이며, 모든 $v\in\mathbb{F}^4$에 대해
+
 $$
 Tv=5\langle v,e_1\rangle f_1+\sqrt2\langle v,e_2\rangle f_2
 $$
@@ -2286,6 +2393,7 @@ $$
 **7.80 SVD의 행렬 버전**
 
 $A$가 랭크가 $m\ge 1$인 $p\times n$ 행렬이라고 하자. 그러면 열들이 정규직교인 $p\times m$ 행렬 $B$, 대각선 성분이 양수인 $m\times m$ 대각행렬 $D$, 열들이 정규직교인 $n\times m$ 행렬 $C$가 존재하여
+
 $$
 A=BDC^*
 $$
@@ -2302,6 +2410,7 @@ $$
 라고 하자. $B$를 열들이 $f_1,\ldots,f_m$인 $p\times m$ 행렬, $D$를 대각선 성분이 $s_1,\ldots,s_m$인 $m\times m$ 대각행렬, $C$를 열들이 $e_1,\ldots,e_m$인 $n\times m$ 행렬로 둔다.
 
 $u_1,\ldots,u_m$을 $\mathbb{F}^m$의 표준기저라고 하자. $k=1,\ldots,m$이면
+
 $$
 (AC-BD)u_k=Ae_k-B(s_ku_k)=s_kf_k-s_kf_k=0.
 $$
@@ -2321,6 +2430,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 1. $T\in\mathcal{L}(V,W)$라고 하자. $T=0$인 것과 $T$의 모든 특이값이 $0$인 것은 동치임을 보여라.
 
 2. $T\in\mathcal{L}(V,W)$이고 $s>0$이라고 하자. $s$가 $T$의 특이값인 것과, 영이 아닌 벡터 $v\in V$, $w\in W$가 존재하여
+
    $$
    Tv=sw,\qquad T^*w=sv
    $$
@@ -2357,6 +2467,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
    (d) $k\in\{1,\ldots,m\}$이면 $e_k$는 고윳값 $s_k^2$에 대응하는 $T^*T$의 고유벡터임을 증명하여라.
 
    (e) 모든 $w\in W$에 대해
+
    $$
    TT^*w=s_1^2\langle w,f_1\rangle f_1+\cdots+s_m^2\langle w,f_m\rangle f_m
    $$
@@ -2365,6 +2476,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 9. $T\in\mathcal{L}(V,W)$라고 하자. $T$와 $T^*$는 같은 양의 특이값을 가짐을 보여라.
 
 10. $T\in\mathcal{L}(V,W)$의 특이값이 $s_1,\ldots,s_n$이라고 하자. $T$가 가역이면 $T^{-1}$의 특이값은
+
     $$
     \frac1{s_n},\ldots,\frac1{s_1}
     $$
@@ -2373,12 +2485,14 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 11. $T\in\mathcal{L}(V,W)$이고 $v_1,\ldots,v_n$이 $V$의 정규직교기저라고 하자. $T$의 특이값을 $s_1,\ldots,s_n$이라고 하자.
 
     (a)
+
     $$
     \|Tv_1\|^2+\cdots+\|Tv_n\|^2=s_1^2+\cdots+s_n^2
     $$
     임을 증명하여라.
 
     (b) $W=V$이고 $T$가 양의 연산자이면
+
     $$
     \langle Tv_1,v_1\rangle+\cdots+\langle Tv_n,v_n\rangle=s_1+\cdots+s_n
     $$
@@ -2389,18 +2503,21 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
     (b) $T\in\mathcal{L}(V)$가 정규이면 $T^2$의 특이값은 $T$의 특이값들의 제곱임을 증명하여라.
 
 13. $T_1,T_2\in\mathcal{L}(V)$라고 하자. $T_1$과 $T_2$가 같은 특이값을 가지는 것과, 유니터리 연산자 $S_1,S_2\in\mathcal{L}(V)$가 존재하여
+
     $$
     T_1=S_1T_2S_2
     $$
     가 되는 것은 동치임을 증명하여라.
 
 14. $T\in\mathcal{L}(V,W)$라고 하자. $s_n$을 $T$의 가장 작은 특이값이라고 하자. 모든 $v\in V$에 대해
+
     $$
     s_n\|v\|\le \|Tv\|
     $$
     임을 증명하여라.
 
 15. $T\in\mathcal{L}(V)$이고 $s_1\ge\cdots\ge s_n$이 $T$의 특이값이라고 하자. $\lambda$가 $T$의 고윳값이면
+
     $$
     s_1\ge |\lambda|\ge s_n
     $$
@@ -2429,6 +2546,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 **7.82 $\|Tv\|$의 상계**
 
 $T\in\mathcal{L}(V,W)$라고 하자. $s_1$을 $T$의 가장 큰 특이값이라고 하자. 그러면 모든 $v\in V$에 대해
+
 $$
 \|Tv\|\le s_1\|v\|.
 $$
@@ -2472,6 +2590,7 @@ $$
 **7.86 정의: 선형사상의 노름, $\|\cdot\|$**
 
 $T\in\mathcal{L}(V,W)$라고 하자. $T$의 **노름** $\|T\|$는
+
 $$
 \|T\|=\max\{\|Tv\|:v\in V,\ \|v\|\le 1\}
 $$
@@ -2490,11 +2609,13 @@ $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 (b) $\|T\|=0$인 것과 $T=0$인 것은 동치이다.
 
 (c) 모든 $\lambda\in\mathbb{F}$에 대해
+
 $$
 \|\lambda T\|=|\lambda|\|T\|.
 $$
 
 (d) 모든 $S\in\mathcal{L}(V,W)$에 대해
+
 $$
 \|S+T\|\le \|S\|+\|T\|.
 $$
@@ -2502,6 +2623,7 @@ $$
 **증명**
 
 (a)는 정의에서 바로 나온다. (b)에서 $\|T\|=0$이면 $\|v\|\le 1$인 모든 $v$에 대해 $Tv=0$이다. 임의의 영이 아닌 $u\in V$에 대해 $u/\|u\|$의 노름은 $1$이므로
+
 $$
 Tu=\|u\|T\left(\frac{u}{\|u\|}\right)=0.
 $$
@@ -2536,11 +2658,13 @@ $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 (a) $\|T\|$는 $T$의 가장 큰 특이값이다.
 
 (b)
+
 $$
 \|T\|=\max\{\|Tv\|:v\in V,\ \|v\|=1\}.
 $$
 
 (c) $\|T\|$는 모든 $v\in V$에 대해
+
 $$
 \|Tv\|\le c\|v\|
 $$
@@ -2549,12 +2673,14 @@ $$
 **증명**
 
 (a)는 (7.85)이다. (b)는 $0<\|v\|\le 1$이면 $u=v/\|v\|$가 $\|u\|=1$을 만족하고
+
 $$
 \|Tu\|=\frac{\|Tv\|}{\|v\|}\ge \|Tv\|
 $$
 이므로, 최댓값을 찾을 때 노름이 $1$인 벡터만 보아도 된다는 사실에서 따른다.
 
 (c) $v\ne 0$이면 정의에서
+
 $$
 \left\|T\left(\frac{v}{\|v\|}\right)\right\|\le \|T\|
 $$
@@ -2577,6 +2703,7 @@ $$
 **7.91 수반의 노름**
 
 $T\in\mathcal{L}(V,W)$라고 하자. 그러면
+
 $$
 \|T^*\|=\|T\|.
 $$
@@ -2610,14 +2737,17 @@ $$
 $$
 
 또한
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
 $$
 이 $T$의 특이값분해이고 $T_k\in\mathcal{L}(V,W)$를
+
 $$
 T_kv=s_1\langle v,e_1\rangle f_1+\cdots+s_k\langle v,e_k\rangle f_k
 $$
 로 정의하면, $\dim\text{range}T_k=k$이고
+
 $$
 \|T-T_k\|=s_{k+1}.
 $$
@@ -2639,6 +2769,7 @@ $$
 따라서 $\|T-T_k\|\le s_{k+1}$이다. 또한 $(T-T_k)e_{k+1}=s_{k+1}f_{k+1}$이므로 $\|T-T_k\|=s_{k+1}$이다.
 
 이제 $S\in\mathcal{L}(V,W)$이고 $\dim\text{range}S\le k$라고 하자. 그러면 $Se_1,\ldots,Se_{k+1}$은 길이가 $k+1$인 일차종속 리스트이다. 따라서 모두 $0$이 아닌 것은 아닌 스칼라 $a_1,\ldots,a_{k+1}$가 존재하여
+
 $$
 a_1Se_1+\cdots+a_{k+1}Se_{k+1}=0
 $$
@@ -2660,6 +2791,7 @@ $$
 ### 극분해
 
 $0$이 아닌 복소수 $z$는
+
 $$
 z=\frac{z}{|z|}|z|=\frac{z}{|z|}\sqrt{\overline z z}
 $$
@@ -2670,6 +2802,7 @@ $T\in\mathcal{L}(V)$이면 $T^*T$는 양의 연산자이므로 $\sqrt{T^*T}$가 
 **7.93 극분해**
 
 $T\in\mathcal{L}(V)$라고 하자. 그러면 어떤 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재하여
+
 $$
 T=S\sqrt{T^*T}
 $$
@@ -2684,21 +2817,25 @@ Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
 \tag{7.94}
 $$
 를 만족한다고 하자. 이 두 리스트를 각각 $V$의 정규직교기저 $e_1,\ldots,e_n$과 $f_1,\ldots,f_n$으로 확장한다. $S\in\mathcal{L}(V)$를
+
 $$
 Sv=\langle v,e_1\rangle f_1+\cdots+\langle v,e_n\rangle f_n
 $$
 으로 정의한다. 그러면
+
 $$
 \|Sv\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2=\|v\|^2
 $$
 이므로 $S$는 유니터리 연산자이다.
 
 (7.94)에 $T^*$를 적용하고 7.77을 사용하면
+
 $$
 T^*Tv=s_1^2\langle v,e_1\rangle e_1+\cdots+s_m^2\langle v,e_m\rangle e_m.
 $$
 
 따라서
+
 $$
 \sqrt{T^*T}v=s_1\langle v,e_1\rangle e_1+\cdots+s_m\langle v,e_m\rangle e_m
 $$
@@ -2721,6 +2858,7 @@ $$
 **7.95 정의: 공, $B$**
 
 $0$을 중심으로 하고 반지름이 $1$인 $V$의 공 $B$는
+
 $$
 B=\{v\in V:\|v\|<1\}
 $$
@@ -2752,6 +2890,7 @@ $$
 **7.98 표기: $T(\Omega)$**
 
 $T$가 $V$에서 정의된 함수이고 $\Omega\subset V$이면
+
 $$
 T(\Omega)=\{Tv:v\in\Omega\}
 $$
@@ -2788,6 +2927,7 @@ v=\frac{\langle w,f_1\rangle}{s_1}e_1+\cdots+
 $$
 
 그러면 $\|v\|<1$이고 (7.100)에 의해 $Tv=w$이다. 따라서
+
 $$
 T(B)=E(s_1f_1,\ldots,s_nf_n).
 $$
@@ -2799,10 +2939,12 @@ $T\in\mathcal{L}(V)$가 가역이고 $E$가 $V$의 타원체라고 하자. 그�
 **증명**
 
 $E=E(s_1f_1,\ldots,s_nf_n)$이라고 하자. $S\in\mathcal{L}(V)$를
+
 $$
 S(a_1f_1+\cdots+a_nf_n)=a_1s_1f_1+\cdots+a_ns_nf_n
 $$
 로 정의하면 $S$는 공 $B$를 $E$ 위로 보낸다. 따라서
+
 $$
 T(E)=T(S(B))=(TS)(B).
 $$
@@ -2848,6 +2990,7 @@ $$
 **7.105 정의: 상자**
 
 $V$의 **상자**는
+
 $$
 u+P(r_1e_1,\ldots,r_ne_n)
 $$
@@ -2861,14 +3004,17 @@ $$
 **7.107 모든 가역 연산자는 어떤 상자들을 상자로 보낸다**
 
 $T\in\mathcal{L}(V)$가 가역이라고 하자. $T$의 특이값분해가 모든 $v\in V$에 대해
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_n\langle v,e_n\rangle f_n
 $$
 라고 하자. 여기서 $s_1,\ldots,s_n$은 $T$의 특이값이고 $e_1,\ldots,e_n$, $f_1,\ldots,f_n$은 $V$의 정규직교기저이다. 그러면 모든 양수 $r_1,\ldots,r_n$과 모든 $u\in V$에 대해 $T$는 상자
+
 $$
 u+P(r_1e_1,\ldots,r_ne_n)
 $$
 를 상자
+
 $$
 Tu+P(r_1s_1f_1,\ldots,r_ns_nf_n)
 $$
@@ -2911,6 +3057,7 @@ $\mathbb{F}=\mathbb{R}$이고 $\Omega\subset V$라고 하자. $\Omega$의 부피
 **7.110 예: 선형사상에 의한 부피 변화**
 
 $T\in\mathcal{L}(\mathbb{R}^2)$를
+
 $$
 Tv=2\langle v,e_1\rangle e_1+\langle v,e_2\rangle e_2
 $$
@@ -2930,18 +3077,22 @@ $$
 **증명**
 
 $T$의 특이값분해를
+
 $$
 Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_n\langle v,e_n\rangle f_n
 $$
 라고 하자. 여기서 $e_1,\ldots,e_n$과 $f_1,\ldots,f_n$은 $V$의 정규직교기저이다. $\Omega$를
+
 $$
 u+P(r_1e_1,\ldots,r_ne_n)
 $$
 꼴의 상자들로 근사하자. 이 상자의 부피는 $r_1\times\cdots\times r_n$이다. 7.107에 의해 $T$는 이 상자를
+
 $$
 Tu+P(r_1s_1f_1,\ldots,r_ns_nf_n)
 $$
 으로 보낸다. 이 새 상자의 부피는
+
 $$
 (s_1\times\cdots\times s_n)(r_1\times\cdots\times r_n)
 $$
@@ -3002,24 +3153,28 @@ $$
 8. (a) $T\in\mathcal{L}(V)$이고 $\|I-T\|<1$이면 $T$가 가역임을 증명하여라.
 
    (b) $S\in\mathcal{L}(V)$가 가역이라고 하자. $T\in\mathcal{L}(V)$이고
+
    $$
    \|S-T\|<\frac1{\|S^{-1}\|}
    $$
    이면 $T$가 가역임을 증명하여라.
 
 9. $T\in\mathcal{L}(V)$라고 하자. 모든 $\varepsilon>0$에 대해 가역 연산자 $S\in\mathcal{L}(V)$가 존재하여
+
    $$
    0<\|T-S\|<\varepsilon
    $$
    이 됨을 증명하여라.
 
 10. $\dim V>1$이고 $T\in\mathcal{L}(V)$가 가역이 아니라고 하자. 모든 $\varepsilon>0$에 대해 가역이 아닌 $S\in\mathcal{L}(V)$가 존재하여
+
     $$
     0<\|T-S\|<\varepsilon
     $$
     이 됨을 증명하여라.
 
 11. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 모든 $\varepsilon>0$에 대해 대각화가능 연산자 $S\in\mathcal{L}(V)$가 존재하여
+
     $$
     0<\|T-S\|<\varepsilon
     $$
@@ -3040,6 +3195,7 @@ $$
 14. $U$와 $W$가 $V$의 부분공간이고 $\|P_U-P_W\|<1$이라고 하자. $\dim U=\dim W$임을 증명하여라.
 
 15. $T\in\mathcal{L}(\mathbb{F}^3)$를
+
     $$
     T(z_1,z_2,z_3)=(z_3,2z_1,3z_2)
     $$
@@ -3085,6 +3241,7 @@ $$
     $$
 
 21. $\dim V>1$이고 $\dim W>1$이라고 하자. $\mathcal{L}(V,W)$ 위의 노름은 내적에서 나오는 노름이 아님을 증명하여라. 즉 모든 $T\in\mathcal{L}(V,W)$에 대해
+
     $$
     \max\{\|Tv\|:v\in V,\ \|v\|\le 1\}=\sqrt{\langle T,T\rangle}
     $$
@@ -3107,6 +3264,7 @@ $$
     $$
 
 25. $u,x\in V$이고 $u\ne 0$이라고 하자. $T\in\mathcal{L}(V)$를 모든 $v\in V$에 대해 $Tv=\langle v,u\rangle x$로 정의한다. 모든 $v\in V$에 대해
+
     $$
     \sqrt{T^*T}\,v=\frac{\|x\|}{\|u\|}\langle v,u\rangle u
     $$
@@ -3115,16 +3273,19 @@ $$
 26. $T\in\mathcal{L}(V)$라고 하자. $T$가 가역인 것과, $T=S\sqrt{T^*T}$를 만족하는 유니터리 연산자 $S\in\mathcal{L}(V)$가 유일하게 존재하는 것은 동치임을 증명하여라.
 
 27. $T\in\mathcal{L}(V)$이고 $s_1,\ldots,s_n$이 $T$의 특이값이라고 하자. $e_1,\ldots,e_n$과 $f_1,\ldots,f_n$이 $V$의 정규직교기저이고 모든 $v\in V$에 대해
+
     $$
     Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_n\langle v,e_n\rangle f_n
     $$
     라고 하자. $S\in\mathcal{L}(V)$를
+
     $$
     Sv=\langle v,e_1\rangle f_1+\cdots+\langle v,e_n\rangle f_n
     $$
     로 정의한다.
 
     (a) $S$가 유니터리이고
+
     $$
     \|T-S\|=\max\{|s_1-1|,\ldots,|s_n-1|\}
     $$
@@ -3133,6 +3294,7 @@ $$
     (b) $E\in\mathcal{L}(V)$가 유니터리이면 $\|T-E\|\ge\|T-S\|$임을 보여라.
 
 28. $T\in\mathcal{L}(V)$라고 하자. 어떤 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재하여
+
     $$
     T=\sqrt{TT^*}\,S
     $$
@@ -3141,6 +3303,7 @@ $$
 29. $T\in\mathcal{L}(V)$라고 하자.
 
     (a) 극분해를 사용하여 어떤 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재해
+
     $$
     TT^*=ST^*TS^*
     $$
@@ -3157,6 +3320,7 @@ $$
 31. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규라고 하자. 어떤 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재하여 $T=S\sqrt{T^*T}$이고, $S$와 $\sqrt{T^*T}$가 모두 $V$의 같은 정규직교기저에 대해 대각행렬을 가짐을 증명하여라.
 
 32. $T\in\mathcal{L}(V,W)$이고 $T\ne 0$이라고 하자. $s_1,\ldots,s_m$을 $T$의 양의 특이값이라고 하자. $(\text{null}T)^\perp$의 정규직교기저 $e_1,\ldots,e_m$이 존재하여
+
     $$
     T\left(E\left(\frac{e_1}{s_1},\ldots,\frac{e_m}{s_m}\right)\right)
     $$

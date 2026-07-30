@@ -30,6 +30,7 @@
   $$
   (a+bi)+(c+di) = (a+c)+(b+d)i,
   $$
+
   $$
   (a+bi)(c+di) = (ac-bd)+(ad+bc)i.
   $$
