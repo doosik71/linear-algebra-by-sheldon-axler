@@ -1,0 +1,7 @@
+[project]
+name = "linear-algebra-by-sheldon-axler"
+version = "0.1.0"
+description = "Linear Algebra Done Right"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["grip>=4.6.2"]

@@ -47,21 +47,21 @@ $T\in\mathcal{L}(\mathcal{P}(\mathbb{R}))$가 $Tp=p'$로 정의되어 있다고 
 
 $T\in\mathcal{L}(V)$이면 다음 $V$의 부분공간들은 모두 $T$에 대해 불변이다.
 
-- $\{0\}$: $u\in\{0\}$이면 $u=0$이고 따라서 $Tu=0\in\{0\}$이므로 $\{0\}$은 $T$에 대해 불변이다.
+- $\lbrace0\rbrace$: $u\in\lbrace0\rbrace$이면 $u=0$이고 따라서 $Tu=0\in\lbrace0\rbrace$이므로 $\lbrace0\rbrace$은 $T$에 대해 불변이다.
 - $V$: $u\in V$이면 $Tu\in V$이므로 $V$는 $T$에 대해 불변이다.
 - $\text{null}T$: $u\in\text{null}T$이면 $Tu=0$이고 따라서 $Tu\in\text{null}T$이므로 $\text{null}T$는 $T$에 대해 불변이다.
 - $\text{range}T$: $u\in\text{range}T$이면 $Tu\in\text{range}T$이므로 $\text{range}T$는 $T$에 대해 불변이다.
 
-연산자 $T\in\mathcal{L}(V)$는 $\{0\}$와 $V$ 이외의 불변 부분공간을 반드시 가지는가? 뒤에서 $V$가 유한차원이고 $\dim V>1$이면 $\mathbb{F}=\mathbb{C}$인 경우 이 질문의 답이 그렇다는 것을 볼 것이다. $\mathbb{F}=\mathbb{R}$인 경우에는 $\dim V>2$이면 그렇다. 5.19와 5B절의 연습문제 29번을 보라.
+연산자 $T\in\mathcal{L}(V)$는 $\lbrace0\rbrace$와 $V$ 이외의 불변 부분공간을 반드시 가지는가? 뒤에서 $V$가 유한차원이고 $\dim V>1$이면 $\mathbb{F}=\mathbb{C}$인 경우 이 질문의 답이 그렇다는 것을 볼 것이다. $\mathbb{F}=\mathbb{R}$인 경우에는 $\dim V>2$이면 그렇다. 5.19와 5B절의 연습문제 29번을 보라.
 
-앞의 예는 $\text{null}T$와 $\text{range}T$가 $T$에 대해 불변임을 보였다. 그러나 이 부분공간들이 $\{0\}$와 $V$ 이외의 불변 부분공간이 존재하는지에 대한 위 질문에 쉬운 답을 주지는 않는다. $\text{null}T$가 $\{0\}$일 수도 있고 $\text{range}T$가 $V$일 수도 있기 때문이다. 이런 일은 $T$가 가역일 때 일어난다.
+앞의 예는 $\text{null}T$와 $\text{range}T$가 $T$에 대해 불변임을 보였다. 그러나 이 부분공간들이 $\lbrace0\rbrace$와 $V$ 이외의 불변 부분공간이 존재하는지에 대한 위 질문에 쉬운 답을 주지는 않는다. $\text{null}T$가 $\lbrace0\rbrace$일 수도 있고 $\text{range}T$가 $V$일 수도 있기 때문이다. 이런 일은 $T$가 가역일 때 일어난다.
 
 우리는 나중에 불변 부분공간을 더 깊이 연구할 것이다. 이제 가장 단순한 비자명한 불변 부분공간, 즉 $1$차원 불변 부분공간을 조사한다.
 
 $v\in V$이고 $v\ne 0$라고 하며, $U$를 $v$의 모든 스칼라배의 집합이라고 하자.
 
 $$
-U=\{\lambda v:\lambda\in\mathbb{F}\}=\text{span}(v).
+U=\lbrace\lambda v:\lambda\in\mathbb{F}\rbrace=\text{span}(v).
 $$
 
 그러면 $U$는 $V$의 $1$차원 부분공간이다. 또한 $V$의 모든 $1$차원 부분공간은 적절한 $v$에 대해 이 꼴이다. 만약 $U$가 연산자 $T\in\mathcal{L}(V)$에 대해 불변이면 $Tv\in U$이고, 따라서 어떤 스칼라 $\lambda\in\mathbb{F}$가 존재하여
@@ -89,7 +89,7 @@ $T\in\mathcal{L}(V)$라고 하자. 어떤 $v\in V$가 존재하여 $v\ne 0$이�
 $T\in\mathcal{L}(\mathbb{F}^3)$를
 
 $$
-T(x,y,z)=(7x+3z,\;3x+6y+9z,\;-6y)
+T(x,y,z)=(7x+3z,\thickspace3x+6y+9z,\thickspace-6y)
 $$
 
 로 정의하자. 그러면
@@ -304,8 +304,8 @@ $$
 $$
 \begin{aligned}
 (pq)(T)
-&=\sum_{j=0}^m\sum_{k=0}^n a_jb_kT^{j+k} \\
-&=\left(\sum_{j=0}^m a_jT^j\right)\left(\sum_{k=0}^n b_kT^k\right) \\
+&=\sum_{j=0}^m\sum_{k=0}^n a_jb_kT^{j+k} \cr
+&=\left(\sum_{j=0}^m a_jT^j\right)\left(\sum_{k=0}^n b_kT^k\right) \cr
 &=p(T)q(T).
 \end{aligned}
 $$
@@ -352,7 +352,7 @@ $$
 
 3. $T\in\mathcal{L}(V)$라고 하자. $T$에 대해 불변인 $V$의 부분공간들의 임의의 모임의 교집합도 $T$에 대해 불변임을 증명하라.
 
-4. 증명하거나 반례를 들어라. $V$가 유한차원이고 $U$가 $V$ 위의 모든 연산자에 대해 불변인 $V$의 부분공간이면, $U=\{0\}$ 또는 $U=V$이다.
+4. 증명하거나 반례를 들어라. $V$가 유한차원이고 $U$가 $V$ 위의 모든 연산자에 대해 불변인 $V$의 부분공간이면, $U=\lbrace0\rbrace$ 또는 $U=V$이다.
 
 5. $T\in\mathcal{L}(\mathbb{R}^2)$가 $T(x,y)=(-3y,x)$로 정의되어 있다고 하자. $T$의 고윳값을 찾아라.
 
@@ -383,7 +383,7 @@ $$
 16. $v_1,\ldots,v_n$이 $V$의 기저이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda$가 $T$의 고윳값이면
 
     $$
-    |\lambda|\le n\max\{|\mathcal{M}(T)_{j,k}|:1\le j,k\le n\}
+    |\lambda|\le n\max\lbrace|\mathcal{M}(T)_{j,k}|:1\le j,k\le n\rbrace
     $$
 
     임을 증명하라. 여기서 $\mathcal{M}(T)_{j,k}$는 기저 $v_1,\ldots,v_n$에 대한 $T$의 행렬에서 $j$행 $k$열의     성분이다.
@@ -444,7 +444,7 @@ $$
 
 26. $T\in\mathcal{L}(V)$가 $V$의 모든 영이 아닌 벡터를 $T$의 고유벡터로 가진다고 하자. $T$가 항등연산자의 스칼라배임을 증명하라.
 
-27. $V$가 유한차원이고 $k\in\{1,\ldots,\dim V-1\}$라고 하자. $T\in\mathcal{L}(V)$가 $V$의 모든 $k$차원 부분공간을 불변으로 만든다고 하자. $T$가 항등연산자의 스칼라배임을 증명하라.
+27. $V$가 유한차원이고 $k\in\lbrace1,\ldots,\dim V-1\rbrace$라고 하자. $T\in\mathcal{L}(V)$가 $V$의 모든 $k$차원 부분공간을 불변으로 만든다고 하자. $T$가 항등연산자의 스칼라배임을 증명하라.
 
 28. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 최대 $1+\dim\text{range}T$개의 서로 다른 고윳값을 가진다는 것을 증명하라.
 
@@ -527,7 +527,7 @@ $$
 43. $V$가 유한차원이고 $\dim V>1$이며 $T\in\mathcal{L}(V)$라고 하자. 다음을 증명하라.
 
     $$
-    \{p(T):p\in\mathcal{P}(\mathbb{F})\}\ne\mathcal{L}(V).
+    \lbrace p(T):p\in\mathcal{P}(\mathbb{F})\rbrace\ne\mathcal{L}(V).
     $$
 
 ## 5B 최소다항식
@@ -692,7 +692,7 @@ $$
 
 $V$의 기저를 사용하여 위 방정식을 미지수 $c_0,c_1,\ldots,c_{\dim V-1}$에 대한 $\dim V$개의 선형방정식으로 바꾸어라. 이 방정식계가 유일한 해 $c_0,c_1,\ldots,c_{\dim V-1}$을 가지면, 대개 그런 일이 일어나는데, 스칼라 $c_0,c_1,\ldots,c_{\dim V-1},1$은 $T$의 최소다항식의 계수이다. 5.22가 최소다항식의 차수가 최대 $\dim V$라고 말하기 때문이다.
 
-이 추정은 수백만 개의 무작위 행렬을 시험한 데 기반한다. $\mathbb{R}^4$ 위의 연산자들을 표준기저에 대한 $4\times 4$ 행렬로 생각하고, 위 문단에서 $v=(1,0,0,0)$을 택하자. 위에서 설명한 더 빠른 방법은 성분이 $[-10,10]$에 있는 정수인 $4\times 4$ 행렬들의 $99.8\%$ 이상에서 작동하고, 성분이 $[-100,100]$에 있는 정수인 $4\times 4$ 행렬들의 $99.999\%$ 이상에서 작동한다.
+이 추정은 수백만 개의 무작위 행렬을 시험한 데 기반한다. $\mathbb{R}^4$ 위의 연산자들을 표준기저에 대한 $4\times 4$ 행렬로 생각하고, 위 문단에서 $v=(1,0,0,0)$을 택하자. 위에서 설명한 더 빠른 방법은 성분이 $[-10,10]$에 있는 정수인 $4\times 4$ 행렬들의 $99.8\\%$ 이상에서 작동하고, 성분이 $[-100,100]$에 있는 정수인 $4\times 4$ 행렬들의 $99.999\\%$ 이상에서 작동한다.
 
 다음 예는 위에서 논의한 더 빠른 절차를 보여 준다.
 
@@ -703,10 +703,10 @@ $T\in\mathcal{L}(\mathbb{F}^5)$이고, 표준기저 $e_1,e_2,e_3,e_4,e_5$에 대
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-0&0&0&0&-3\\
-1&0&0&0&6\\
-0&1&0&0&0\\
-0&0&1&0&0\\
+0&0&0&0&-3\cr
+1&0&0&0&6\cr
+0&1&0&0&0\cr
+0&0&1&0&0\cr
 0&0&0&1&0
 \end{pmatrix}
 $$
@@ -715,10 +715,10 @@ $$
 
 $$
 \begin{aligned}
-Te_1&=e_2, \\
-T^2e_1&=T(Te_1)=Te_2=e_3, \\
-T^3e_1&=T(T^2e_1)=Te_3=e_4, \\
-T^4e_1&=T(T^3e_1)=Te_4=e_5, \\
+Te_1&=e_2, \cr
+T^2e_1&=T(Te_1)=Te_2=e_3, \cr
+T^3e_1&=T(T^2e_1)=Te_3=e_4, \cr
+T^4e_1&=T(T^3e_1)=Te_4=e_5, \cr
 T^5e_1&=T(T^4e_1)=Te_5=-3e_1+6e_2.
 \end{aligned}
 $$
@@ -794,7 +794,7 @@ $p$는 $T$의 최소다항식이므로 $p(T)v=0$이다. 따라서 위 식은 $p(
 $T\in\mathcal{L}(\mathbb{C}^5)$를
 
 $$
-T(z_1,z_2,z_3,z_4,z_5)=(-3z_5,\;z_1+6z_5,\;z_2,\;z_3,\;z_4)
+T(z_1,z_2,z_3,z_4,z_5)=(-3z_5,\thickspace z_1+6z_5,\thickspace z_2,\thickspace z_3,\thickspace z_4)
 $$
 
 로 정의하자. 표준기저에 대한 $T$의 행렬은 예 5.26의 $5\times 5$ 행렬이다. 그 예에서 보았듯이 $T$의 최소다항식은
@@ -874,8 +874,8 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $T$가 �
 $$
 \begin{aligned}
 T\text{가 가역이 아님}
-&\Longleftrightarrow 0\text{이 }T\text{의 고윳값임} \\
-&\Longleftrightarrow 0\text{이 }p\text{의 영점임} \\
+&\Longleftrightarrow 0\text{이 }T\text{의 고윳값임} \cr
+&\Longleftrightarrow 0\text{이 }p\text{의 영점임} \cr
 &\Longleftrightarrow p\text{의 상수항이 }0\text{임}.
 \end{aligned}
 $$
@@ -903,8 +903,8 @@ $\lambda\in\mathbb{R}$와 $v\in V$가 $Tv=\lambda v$를 만족한다고 하자. 
 $$
 \begin{aligned}
 0
-&=(T^2+bT+cI)v \\
-&=(\lambda^2+b\lambda+c)v \\
+&=(T^2+bT+cI)v \cr
+&=(\lambda^2+b\lambda+c)v \cr
 &=\left(\left(\lambda+\frac{b}{2}\right)^2+c-\frac{b^2}{4}\right)v.
 \end{aligned}
 $$
@@ -923,7 +923,7 @@ $$
 \dim(U+W)=\dim U+\dim W-\dim(U\cap W)=\dim U+2
 $$
 
-이다. 여기서 $U\cap W=\{0\}$이다. 그렇지 않다면 $U\cap W$는 $T$에 대해 불변인 $1$차원 부분공간이 되는데, 이는 $T$가 고유벡터를 가지지 않는다는 사실과 모순이다. $U+W$는 $T$에 대해 불변이므로, 위 식은 $\dim U$보다 더 큰 짝수 차원의 $T$-불변 부분공간이 존재함을 보여 준다. 따라서 $U\ne V$라는 가정은 잘못이다. 그러므로 $V$의 차원은 짝수이다.
+이다. 여기서 $U\cap W=\lbrace0\rbrace$이다. 그렇지 않다면 $U\cap W$는 $T$에 대해 불변인 $1$차원 부분공간이 되는데, 이는 $T$가 고유벡터를 가지지 않는다는 사실과 모순이다. $U+W$는 $T$에 대해 불변이므로, 위 식은 $\dim U$보다 더 큰 짝수 차원의 $T$-불변 부분공간이 존재함을 보여 준다. 따라서 $U\ne V$라는 가정은 잘못이다. 그러므로 $V$의 차원은 짝수이다.
 
 다음 결과는 홀수 차원 벡터공간 위에서는 모든 연산자가 고윳값을 가진다고 말한다. 유한차원 복소 벡터공간에 대해서는 홀수라는 가정 없이 이미 이 결과를 알고 있다. 따라서 아래 증명에서는 $\mathbb{F}=\mathbb{R}$이라고 가정한다.
 
@@ -971,7 +971,7 @@ $$
 
 1. $T\in\mathcal{L}(V)$라고 하자. $9$가 $T^2$의 고윳값일 필요충분조건은 $3$ 또는 $-3$이 $T$의 고윳값인 것임을 증명하라.
 
-2. $V$가 복소 벡터공간이고 $T\in\mathcal{L}(V)$가 고윳값을 가지지 않는다고 하자. $T$에 대해 불변인 $V$의 모든 부분공간은 $\{0\}$이거나 무한차원임을 증명하라.
+2. $V$가 복소 벡터공간이고 $T\in\mathcal{L}(V)$가 고윳값을 가지지 않는다고 하자. $T$에 대해 불변인 $V$의 모든 부분공간은 $\lbrace0\rbrace$이거나 무한차원임을 증명하라.
 
 3. $n>1$인 정수 $n$에 대해 $T\in\mathcal{L}(\mathbb{F}^n)$를
 
@@ -1018,7 +1018,7 @@ $$
 
     $$
     \begin{pmatrix}
-    a&c\\
+    a&c\cr
     b&d
     \end{pmatrix}
     $$
@@ -1031,7 +1031,7 @@ $$
 
     $$
     \begin{cases}
-    z-a, & b=c=0\text{이고 }a=d\text{인 경우},\\
+    z-a, & b=c=0\text{이고 }a=d\text{인 경우},\cr
     z^2-(a+d)z+(ad-bc), & \text{그 밖의 경우}.
     \end{cases}
     $$
@@ -1066,11 +1066,11 @@ $$
 
     $$
     \begin{pmatrix}
-    0&0&0&\cdots&0&-a_0\\
-    1&0&0&\cdots&0&-a_1\\
-    0&1&0&\cdots&0&-a_2\\
-    \vdots&\ddots&\ddots&\ddots&\vdots&\vdots\\
-    0&\cdots&0&1&0&-a_{n-2}\\
+    0&0&0&\cdots&0&-a_0\cr
+    1&0&0&\cdots&0&-a_1\cr
+    0&1&0&\cdots&0&-a_2\cr
+    \vdots&\ddots&\ddots&\ddots&\vdots&\vdots\cr
+    0&\cdots&0&1&0&-a_{n-2}\cr
     0&\cdots&0&0&1&-a_{n-1}
     \end{pmatrix}
     $$
@@ -1087,7 +1087,7 @@ $$
 
 17. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $p$가 $T$의 최소다항식이라고 하자. $\lambda\in\mathbb{F}$라고 하자. $T-\lambda I$의 최소다항식은 $q(z)=p(z+\lambda)$로 정의된 다항식 $q$임을 보여라.
 
-18. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $p$가 $T$의 최소다항식이라고 하자. $\lambda\in\mathbb{F}\setminus\{0\}$라고 하자. $\lambda T$의 최소다항식은
+18. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $p$가 $T$의 최소다항식이라고 하자. $\lambda\in\mathbb{F}\setminus\lbrace0\rbrace$라고 하자. $\lambda T$의 최소다항식은
 
     $$
     q(z)=\lambda^{\deg p}p\left(\frac{z}{\lambda}\right)
@@ -1098,7 +1098,7 @@ $$
 19. $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $\mathcal{E}$를 $\mathcal{L}(V)$의 다음 부분공간이라고 하자.
 
     $$
-    \mathcal{E}=\{q(T):q\in\mathcal{P}(\mathbb{F})\}.
+    \mathcal{E}=\lbrace q(T):q\in\mathcal{P}(\mathbb{F})\rbrace.
     $$
 
     $\dim\mathcal{E}$가 $T$의 최소다항식의 차수와 같음을 증명하라.
@@ -1172,8 +1172,8 @@ $T\in\mathcal{L}(V)$라고 하자. $V$의 기저 $v_1,\ldots,v_n$에 대한 $T$�
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-A_{1,1}&\cdots&A_{1,n}\\
-\vdots&&\vdots\\
+A_{1,1}&\cdots&A_{1,n}\cr
+\vdots&&\vdots\cr
 A_{n,1}&\cdots&A_{n,n}
 \end{pmatrix}
 $$
@@ -1199,7 +1199,7 @@ $T$가 $\mathbb{F}^n$ 위의 연산자이고 기저가 명시되지 않았다면
 $T\in\mathcal{L}(\mathbb{F}^3)$를
 
 $$
-T(x,y,z)=(2x+y,\;5y+3z,\;8z)
+T(x,y,z)=(2x+y,\thickspace5y+3z,\thickspace8z)
 $$
 
 로 정의하자. 그러면 $\mathbb{F}^3$의 표준기저에 대한 $T$의 행렬은
@@ -1207,8 +1207,8 @@ $$
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-2&1&0\\
-0&5&3\\
+2&1&0\cr
+0&5&3\cr
 0&0&8
 \end{pmatrix}
 $$
@@ -1221,9 +1221,9 @@ $V$가 유한차원 복소 벡터공간이면, 우리는 이미 $T$의 행렬이
 
 $$
 \begin{pmatrix}
-\lambda&*\\
-0&\\
-\vdots&\\
+\lambda&*\cr
+0&\cr
+\vdots&\cr
 0&
 \end{pmatrix}.
 $$
@@ -1239,8 +1239,8 @@ $$
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-2&1&0\\
-0&5&3\\
+2&1&0\cr
+0&5&3\cr
 0&0&8
 \end{pmatrix}
 $$
@@ -1257,9 +1257,9 @@ $$
 
 $$
 \begin{pmatrix}
-\lambda_1&*&\cdots&*\\
-0&\lambda_2&\ddots&\vdots\\
-\vdots&\ddots&\ddots&*\\
+\lambda_1&*&\cdots&*\cr
+0&\lambda_2&\ddots&\vdots\cr
+\vdots&\ddots&\ddots&*\cr
 0&\cdots&0&\lambda_n
 \end{pmatrix}.
 $$
@@ -1278,13 +1278,13 @@ $T\in\mathcal{L}(V)$이고 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 그�
 
 (c) 각 $k=1,\ldots,n$에 대해 $Tv_k\in\text{span}(v_1,\ldots,v_k)$이다.
 
-증명. 먼저 (a)가 성립한다고 하자. (b)를 증명하기 위해 $k\in\{1,\ldots,n\}$라고 하자. $j\in\{1,\ldots,n\}$이면 $v_1,\ldots,v_n$에 대한 $T$의 행렬이 상삼각행렬이므로
+증명. 먼저 (a)가 성립한다고 하자. (b)를 증명하기 위해 $k\in\lbrace1,\ldots,n\rbrace$라고 하자. $j\in\lbrace1,\ldots,n\rbrace$이면 $v_1,\ldots,v_n$에 대한 $T$의 행렬이 상삼각행렬이므로
 
 $$
 Tv_j\in\text{span}(v_1,\ldots,v_j)
 $$
 
-이다. $j\le k$이면 $\text{span}(v_1,\ldots,v_j)\subseteq\text{span}(v_1,\ldots,v_k)$이므로, 각 $j\in\{1,\ldots,k\}$에 대해
+이다. $j\le k$이면 $\text{span}(v_1,\ldots,v_j)\subseteq\text{span}(v_1,\ldots,v_k)$이므로, 각 $j\in\lbrace1,\ldots,k\rbrace$에 대해
 
 $$
 Tv_j\in\text{span}(v_1,\ldots,v_k)
@@ -1309,9 +1309,9 @@ $$
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-\lambda_1&*&\cdots&*\\
-0&\lambda_2&\ddots&\vdots\\
-\vdots&\ddots&\ddots&*\\
+\lambda_1&*&\cdots&*\cr
+0&\lambda_2&\ddots&\vdots\cr
+\vdots&\ddots&\ddots&*\cr
 0&\cdots&0&\lambda_n
 \end{pmatrix}
 $$
@@ -1379,16 +1379,16 @@ $T\in\mathcal{L}(V)$가 어떤 $V$의 기저에 대해 상삼각행렬을 가진
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-\lambda_1&*&\cdots&*\\
-0&\lambda_2&\ddots&\vdots\\
-\vdots&\ddots&\ddots&*\\
+\lambda_1&*&\cdots&*\cr
+0&\lambda_2&\ddots&\vdots\cr
+\vdots&\ddots&\ddots&*\cr
 0&\cdots&0&\lambda_n
 \end{pmatrix}.
 $$
 
 $Tv_1=\lambda_1v_1$이므로 $\lambda_1$은 $T$의 고윳값이다.
 
-$k\in\{2,\ldots,n\}$라고 하자. 그러면
+$k\in\lbrace2,\ldots,n\rbrace$라고 하자. 그러면
 
 $$
 (T-\lambda_kI)v_k\in\text{span}(v_1,\ldots,v_{k-1}).
@@ -1417,7 +1417,7 @@ $$
 $T\in\mathcal{L}(\mathbb{F}^3)$를
 
 $$
-T(x,y,z)=(2x+y,\;5y+3z,\;8z)
+T(x,y,z)=(2x+y,\thickspace5y+3z,\thickspace8z)
 $$
 
 로 정의하자. 표준기저에 대한 $T$의 행렬은
@@ -1425,8 +1425,8 @@ $$
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-2&1&0\\
-0&5&3\\
+2&1&0\cr
+0&5&3\cr
 0&0&8
 \end{pmatrix}
 $$
@@ -1440,16 +1440,16 @@ $$
 $T\in\mathcal{L}(\mathbb{F}^4)$를
 
 $$
-T(z_1,z_2,z_3,z_4)=(-z_2,\;z_1,\;2z_1+3z_3,\;z_3+3z_4)
+T(z_1,z_2,z_3,z_4)=(-z_2,\thickspace z_1,\thickspace2z_1+3z_3,\thickspace z_3+3z_4)
 $$
 
 로 정의하자. 그러면 $\mathbb{F}^4$의 표준기저에 대한 $T$의 행렬은
 
 $$
 \begin{pmatrix}
-0&-1&0&0\\
-1&0&0&0\\
-2&0&3&0\\
+0&-1&0&0\cr
+1&0&0&0\cr
+2&0&3&0\cr
 0&0&1&3
 \end{pmatrix}
 $$
@@ -1489,9 +1489,9 @@ $$
 
 $$
 \begin{pmatrix}
-i&0&0&0\\
-0&-i&0&0\\
-0&0&3&1\\
+i&0&0&0\cr
+0&-i&0&0\cr
+0&0&3&1\cr
 0&0&0&3
 \end{pmatrix}.
 $$
@@ -1518,7 +1518,7 @@ $$
 (z-\lambda_1)\cdots(z-\lambda_m)
 $$
 
-와 같으며, $\{\lambda_1,\ldots,\lambda_m\}\subseteq\{\alpha_1,\ldots,\alpha_n\}$이다.
+와 같으며, $\lbrace\lambda_1,\ldots,\lambda_m\rbrace\subseteq\lbrace\alpha_1,\ldots,\alpha_n\rbrace$이다.
 
 반대 방향을 증명하자. 이제 $T$의 최소다항식이 어떤 $\lambda_1,\ldots,\lambda_m\in\mathbb{F}$에 대해 $(z-\lambda_1)\cdots(z-\lambda_m)$이라고 하자. $m$에 대한 귀납법을 사용한다. 시작점으로 $m=1$이면 $z-\lambda_1$이 $T$의 최소다항식이고, 따라서 $T=\lambda_1I$이다. 그러면 $T$의 행렬은 $V$의 어떤 기저에 대해서도 상삼각행렬이다.
 
@@ -1539,7 +1539,7 @@ $$
 
 따라서 5.29에 의해 $(z-\lambda_1)\cdots(z-\lambda_{m-1})$은 $T|_U$의 최소다항식의 다항식배이다. 그러므로 $T|_U$의 최소다항식은 $z-\lambda_k$ 꼴의 항을 최대 $m-1$개 곱한 것이다.
 
-귀납가정에 의해, $T|_U$가 상삼각행렬을 가지도록 하는 $U$의 기저 $u_1,\ldots,u_M$가 존재한다. 따라서 각 $k\in\{1,\ldots,M\}$에 대해 5.39를 사용하면
+귀납가정에 의해, $T|_U$가 상삼각행렬을 가지도록 하는 $U$의 기저 $u_1,\ldots,u_M$가 존재한다. 따라서 각 $k\in\lbrace1,\ldots,M\rbrace$에 대해 5.39를 사용하면
 
 **(5.45)**
 
@@ -1549,7 +1549,7 @@ $$
 
 이다.
 
-$u_1,\ldots,u_M$을 $V$의 기저 $u_1,\ldots,u_M,v_1,\ldots,v_N$으로 확장한다. $k\in\{1,\ldots,N\}$이면
+$u_1,\ldots,u_M$을 $V$의 기저 $u_1,\ldots,u_M,v_1,\ldots,v_N$으로 확장한다. $k\in\lbrace1,\ldots,N\rbrace$이면
 
 $$
 Tv_k=(T-\lambda_mI)v_k+\lambda_mv_k.
@@ -1567,7 +1567,7 @@ $$
 
 (5.45)와 (5.46)으로부터, 5.39를 사용하면 $T$가 $V$의 기저 $u_1,\ldots,u_M,v_1,\ldots,v_N$에 대해 상삼각행렬을 가진다는 결론을 얻는다.
 
-앞 결과의 수들의 집합 $\{\lambda_1,\ldots,\lambda_m\}$은 $T$의 고윳값들의 집합과 같다. 이는 $T$의 최소다항식의 영점들의 집합이 5.27에 의해 $T$의 고윳값들의 집합과 같기 때문이다. 다만 앞 결과의 리스트 $\lambda_1,\ldots,\lambda_m$에는 반복이 있을 수 있다.
+앞 결과의 수들의 집합 $\lbrace\lambda_1,\ldots,\lambda_m\rbrace$은 $T$의 고윳값들의 집합과 같다. 이는 $T$의 최소다항식의 영점들의 집합이 5.27에 의해 $T$의 고윳값들의 집합과 같기 때문이다. 다만 앞 결과의 리스트 $\lambda_1,\ldots,\lambda_m$에는 반복이 있을 수 있다.
 
 8장에서 우리는 아래의 훌륭한 결과를 더 개선할 것이다. 8.37과 8.46을 보라.
 
@@ -1611,7 +1611,7 @@ $ST=TS$를 만족하는 두 연산자 $S,T$에 대한 위 결과의 확장은 5.
 
 5. 어떤 기저에 대한 행렬의 대각선 성분들이 모두 영이 아닌 수이지만 가역이 아닌 연산자의 예를 들어라.
 
-6. $\mathbb{F}=\mathbb{C}$이고 $V$가 유한차원이며 $T\in\mathcal{L}(V)$라고 하자. $k\in\{1,\ldots,\dim V\}$이면 $V$가 $T$에 대해 불변인 $k$차원 부분공간을 가짐을 증명하라.
+6. $\mathbb{F}=\mathbb{C}$이고 $V$가 유한차원이며 $T\in\mathcal{L}(V)$라고 하자. $k\in\lbrace1,\ldots,\dim V\rbrace$이면 $V$가 $T$에 대해 불변인 $k$차원 부분공간을 가짐을 증명하라.
 
 7. $V$가 유한차원이고 $T\in\mathcal{L}(V)$이며 $v\in V$라고 하자.
 
@@ -1669,8 +1669,8 @@ $ST=TS$를 만족하는 두 연산자 $S,T$에 대한 위 결과의 확장은 5.
 
 $$
 \begin{pmatrix}
-8&0&0\\
-0&5&0\\
+8&0&0\cr
+0&5&0\cr
 0&0&5
 \end{pmatrix}
 $$
@@ -1690,14 +1690,14 @@ $V$ 위의 연산자가 어떤 $V$의 기저에 대해 대각행렬을 가지면
 $T\in\mathcal{L}(\mathbb{R}^2)$를
 
 $$
-T(x,y)=(41x+7y,\;-20x+74y)
+T(x,y)=(41x+7y,\thickspace-20x+74y)
 $$
 
 로 정의하자. $\mathbb{R}^2$의 표준기저에 대한 $T$의 행렬은
 
 $$
 \begin{pmatrix}
-41&7\\
+41&7\cr
 -20&74
 \end{pmatrix}
 $$
@@ -1706,7 +1706,7 @@ $$
 
 $$
 \begin{pmatrix}
-69&0\\
+69&0\cr
 0&46
 \end{pmatrix}
 $$
@@ -1732,12 +1732,12 @@ $\lambda\in\mathbb{F}$에 대해, 연산자 $T$가 $\lambda$배로 보내는 벡
 $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$라고 하자. $\lambda$에 대응하는 $T$의 **고유공간**은 다음과 같이 정의되는 $V$의 부분공간 $E(\lambda,T)$이다.
 
 $$
-E(\lambda,T)=\text{null}(T-\lambda I)=\{v\in V:Tv=\lambda v\}.
+E(\lambda,T)=\text{null}(T-\lambda I)=\lbrace v\in V:Tv=\lambda v\rbrace.
 $$
 
 따라서 $E(\lambda,T)$는 $\lambda$에 대응하는 $T$의 모든 고유벡터들과 영벡터로 이루어진 집합이다.
 
-$T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$일 때, $E(\lambda,T)$는 $V$의 부분공간이다. $V$ 위의 각 선형사상의 영공간은 $V$의 부분공간이기 때문이다. 정의에 의해 $\lambda$가 $T$의 고윳값일 필요충분조건은 $E(\lambda,T)\ne\{0\}$인 것이다.
+$T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$일 때, $E(\lambda,T)$는 $V$의 부분공간이다. $V$ 위의 각 선형사상의 영공간은 $V$의 부분공간이기 때문이다. 정의에 의해 $\lambda$가 $T$의 고윳값일 필요충분조건은 $E(\lambda,T)\ne\lbrace0\rbrace$인 것이다.
 
 **5.53 예: 연산자의 고유공간**
 
@@ -1778,7 +1778,7 @@ $$
 $$
 \begin{aligned}
 \dim E(\lambda_1,T)+\cdots+\dim E(\lambda_m,T)
-&=\dim(E(\lambda_1,T)\oplus\cdots\oplus E(\lambda_m,T)) \\
+&=\dim(E(\lambda_1,T)\oplus\cdots\oplus E(\lambda_m,T)) \cr
 &\le \dim V.
 \end{aligned}
 $$
@@ -1805,9 +1805,9 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V)$라고 하자. $\lambda_1,\ldots,\
 
 $$
 \begin{pmatrix}
-\lambda_1&0&\cdots&0\\
-0&\lambda_2&\ddots&\vdots\\
-\vdots&\ddots&\ddots&0\\
+\lambda_1&0&\cdots&0\cr
+0&\lambda_2&\ddots&\vdots\cr
+\vdots&\ddots&\ddots&0\cr
 0&\cdots&0&\lambda_n
 \end{pmatrix}
 $$
@@ -1862,8 +1862,8 @@ $$
 
 $$
 \begin{pmatrix}
-0&1&0\\
-0&0&1\\
+0&1&0\cr
+0&0&1\cr
 0&0&0
 \end{pmatrix}
 $$
@@ -1873,7 +1873,7 @@ $$
 확인할 수 있듯이, $0$은 $T$의 유일한 고윳값이고 더 나아가
 
 $$
-E(0,T)=\{(a,0,0)\in\mathbb{F}^3:a\in\mathbb{F}\}.
+E(0,T)=\lbrace(a,0,0)\in\mathbb{F}^3:a\in\mathbb{F}\rbrace.
 $$
 
 따라서 5.55의 조건 (b), (c), (d)는 성립하지 않는다. 물론 이 조건들이 동치이므로 그중 하나만 실패함을 확인해도 충분하다. 그러므로 5.55의 조건 (a)도 실패한다. 따라서 $\mathbb{F}=\mathbb{R}$이든 $\mathbb{F}=\mathbb{C}$이든 $T$는 대각화 가능하지 않다.
@@ -1911,15 +1911,15 @@ $$
 $T\in\mathcal{L}(\mathbb{F}^3)$를
 
 $$
-T(x,y,z)=(2x+y,\;5y+3z,\;8z)
+T(x,y,z)=(2x+y,\thickspace5y+3z,\thickspace8z)
 $$
 
 로 정의하자. 표준기저에 대한 $T$의 행렬은
 
 $$
 \begin{pmatrix}
-2&1&0\\
-0&5&3\\
+2&1&0\cr
+0&5&3\cr
 0&0&8
 \end{pmatrix}
 $$
@@ -1940,8 +1940,8 @@ $$
 
 $$
 \begin{pmatrix}
-2&0&0\\
-0&5&0\\
+2&0&0\cr
+0&5&0\cr
 0&0&8
 \end{pmatrix}
 $$
@@ -1961,9 +1961,9 @@ $$
 T^{100}(0,0,1)
 &=\frac{1}{6}\left(T^{100}(1,0,0)\right)
 -\frac{1}{3}\left(T^{100}(1,3,0)\right)
-+\frac{1}{6}\left(T^{100}(1,6,6)\right) \\
-&=\frac{1}{6}\left(2^{100}(1,0,0)-2\cdot 5^{100}(1,3,0)+8^{100}(1,6,6)\right) \\
-&=\frac{1}{6}\left(2^{100}-2\cdot 5^{100}+8^{100},\;6\cdot 8^{100}-6\cdot 5^{100},\;6\cdot 8^{100}\right).
++\frac{1}{6}\left(T^{100}(1,6,6)\right) \cr
+&=\frac{1}{6}\left(2^{100}(1,0,0)-2\cdot 5^{100}(1,3,0)+8^{100}(1,6,6)\right) \cr
+&=\frac{1}{6}\left(2^{100}-2\cdot 5^{100}+8^{100},\thickspace6\cdot 8^{100}-6\cdot 5^{100},\thickspace6\cdot 8^{100}\right).
 \end{aligned}
 $$
 
@@ -1976,7 +1976,7 @@ $$
 $T\in\mathcal{L}(\mathbb{C}^5)$를
 
 $$
-T(z_1,z_2,z_3,z_4,z_5)=(-3z_5,\;z_1+6z_5,\;z_2,\;z_3,\;z_4)
+T(z_1,z_2,z_3,z_4,z_5)=(-3z_5,\thickspace z_1+6z_5,\thickspace z_2,\thickspace z_3,\thickspace z_4)
 $$
 
 로 정의하자. $T$의 행렬은 예 5.26에 나타나 있으며, 그곳에서 $T$의 최소다항식이 $3-6z+z^5$임을 보였다.
@@ -1994,15 +1994,15 @@ $$
 $T\in\mathcal{L}(\mathbb{F}^3)$를
 
 $$
-T(z_1,z_2,z_3)=(6z_1+3z_2+4z_3,\;6z_2+2z_3,\;7z_3)
+T(z_1,z_2,z_3)=(6z_1+3z_2+4z_3,\thickspace6z_2+2z_3,\thickspace7z_3)
 $$
 
 로 정의하자. $\mathbb{F}^3$의 표준기저에 대한 $T$의 행렬은
 
 $$
 \begin{pmatrix}
-6&3&4\\
-0&6&2\\
+6&3&4\cr
+0&6&2\cr
 0&0&7
 \end{pmatrix}
 $$
@@ -2075,7 +2075,7 @@ $u\in\text{range}(T-\lambda_mI)\cap\text{null}(T-\lambda_mI)$라고 하자. 그�
 $$
 \begin{aligned}
 0
-&=(T-\lambda_1I)\cdots(T-\lambda_{m-1}I)u \\
+&=(T-\lambda_1I)\cdots(T-\lambda_{m-1}I)u \cr
 &=(\lambda_m-\lambda_1)\cdots(\lambda_m-\lambda_{m-1})u
 \end{aligned}
 $$
@@ -2083,7 +2083,7 @@ $$
 를 함의한다. $\lambda_1,\ldots,\lambda_m$은 서로 다르므로 위 식은 $u=0$을 함의한다. 따라서
 
 $$
-\text{range}(T-\lambda_mI)\cap\text{null}(T-\lambda_mI)=\{0\}.
+\text{range}(T-\lambda_mI)\cap\text{null}(T-\lambda_mI)=\lbrace0\rbrace.
 $$
 
 그러므로 $\text{range}(T-\lambda_mI)+\text{null}(T-\lambda_mI)$는 직합이고, 3.94와 3.21에 의해 그 차원은 $\dim V$이다. 따라서
@@ -2117,14 +2117,14 @@ $$
 $T\in\mathcal{L}(V)$이고 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. $A$를 이 기저에 대한 $T$의 행렬이라고 하자. 기저 $v_1,\ldots,v_n$에 대한 $T$의 **게르슈고린 원판**은 다음 꼴의 집합이다.
 
 $$
-\left\{z\in\mathbb{F}:|z-A_{j,j}|\le
-\sum_{\substack{k=1\\k\ne j}}^n |A_{j,k}|
-\right\},
+\left\lbrace z\in\mathbb{F}:|z-A_{j,j}|\le
+\sum_{\substack{k=1\cr k\ne j}}^n |A_{j,k}|
+\right\rbrace,
 $$
 
-여기서 $j\in\{1,\ldots,n\}$이다.
+여기서 $j\in\lbrace1,\ldots,n\rbrace$이다.
 
-위 정의에서 $j$를 고르는 방법이 $n$가지이므로, $T$는 $n$개의 게르슈고린 원판을 가진다. $\mathbb{F}=\mathbb{C}$이면 각 $j\in\{1,\ldots,n\}$에 대해 대응하는 게르슈고린 원판은 $\mathbb{C}$의 닫힌 원판이다. 중심은 $A$의 대각선 위의 $j$번째 성분인 $A_{j,j}$이고, 반지름은 $A$의 $j$번째 행에서 대각성분을 제외한 성분들의 절댓값의 합이다. $\mathbb{F}=\mathbb{R}$이면 게르슈고린 원판은 $\mathbb{R}$의 닫힌 구간이다.
+위 정의에서 $j$를 고르는 방법이 $n$가지이므로, $T$는 $n$개의 게르슈고린 원판을 가진다. $\mathbb{F}=\mathbb{C}$이면 각 $j\in\lbrace1,\ldots,n\rbrace$에 대해 대응하는 게르슈고린 원판은 $\mathbb{C}$의 닫힌 원판이다. 중심은 $A$의 대각선 위의 $j$번째 성분인 $A_{j,j}$이고, 반지름은 $A$의 $j$번째 행에서 대각성분을 제외한 성분들의 절댓값의 합이다. $\mathbb{F}=\mathbb{R}$이면 게르슈고린 원판은 $\mathbb{R}$의 닫힌 구간이다.
 
 위 정사각행렬 $A$가 대각행렬인 특수한 경우에는 각 게르슈고린 원판이 대각성분 하나로 이루어진 한 점이다. 그리고 다음 결과가 요구하듯이 $T$의 각 고윳값은 그 점들 중 하나이다. 다음 결과의 한 귀결은 $A$의 비대각성분들이 작으면 $T$의 각 고윳값이 $A$의 어떤 대각성분 근처에 있다는 것이다.
 
@@ -2155,15 +2155,15 @@ $$
 $$
 \begin{aligned}
 \sum_{k=1}^n c_kTv_k
-&=\sum_{k=1}^n c_k\sum_{j=1}^n A_{j,k}v_j \\
+&=\sum_{k=1}^n c_k\sum_{j=1}^n A_{j,k}v_j \cr
 &=\sum_{j=1}^n\left(\sum_{k=1}^n A_{j,k}c_k\right)v_j.
 \end{aligned}
 $$
 
-$j\in\{1,\ldots,n\}$를
+$j\in\lbrace1,\ldots,n\rbrace$를
 
 $$
-|c_j|=\max\{|c_1|,\ldots,|c_n|\}
+|c_j|=\max\lbrace|c_1|,\ldots,|c_n|\rbrace
 $$
 
 이 되도록 잡는다. $w\ne 0$이므로 $c_j\ne 0$이다. (5.68)을 사용하면, (5.69)의 왼쪽에서 $v_j$의 계수는 $\lambda c_j$이고, 이는 (5.70)의 오른쪽에서 $v_j$의 계수와 같아야 한다. 다시 말해
@@ -2177,8 +2177,8 @@ $$
 $$
 \begin{aligned}
 |\lambda-A_{j,j}|
-&=\left|\sum_{\substack{k=1\\k\ne j}}^n A_{j,k}\frac{c_k}{c_j}\right| \\
-&\le \sum_{\substack{k=1\\k\ne j}}^n |A_{j,k}|.
+&=\left|\sum_{\substack{k=1\cr k\ne j}}^n A_{j,k}\frac{c_k}{c_j}\right| \cr
+&\le \sum_{\substack{k=1\cr k\ne j}}^n |A_{j,k}|.
 \end{aligned}
 $$
 
@@ -2212,7 +2212,7 @@ $$
 
    (b) $V=\text{null}T+\text{range}T$.
 
-   (c) $\text{null}T\cap\text{range}T=\{0\}$.
+   (c) $\text{null}T\cap\text{range}T=\lbrace0\rbrace$.
 
 5. $V$가 유한차원 복소 벡터공간이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 대각화 가능일 필요충분조건은 모든 $\lambda\in\mathbb{C}$에 대해
 
@@ -2253,7 +2253,7 @@ $$
 12. $T\in\mathcal{L}(\mathbb{C}^3)$가 $6$과 $7$을 고윳값으로 가진다고 하자. 더 나아가 $T$가 $\mathbb{C}^3$의 어떤 기저에 대해서도 대각행렬을 가지지 않는다고 하자. 그러면 어떤 $(z_1,z_2,z_3)\in\mathbb{C}^3$가 존재하여
 
     $$
-    T(z_1,z_2,z_3)=(6+8z_1,\;7+8z_2,\;13+8z_3)
+    T(z_1,z_2,z_3)=(6+8z_1,\thickspace7+8z_2,\thickspace13+8z_3)
     $$
 
     임을 증명하라.
@@ -2337,10 +2337,10 @@ $$
 
     는 황금비라고 불린다.
 
-22. $T\in\mathcal{L}(V)$이고 $A$가 어떤 $V$의 기저에 대한 $T$의 $n\times n$ 행렬이라고 하자. 각 $j\in\{1,\ldots,n\}$에 대해
+22. $T\in\mathcal{L}(V)$이고 $A$가 어떤 $V$의 기저에 대한 $T$의 $n\times n$ 행렬이라고 하자. 각 $j\in\lbrace1,\ldots,n\rbrace$에 대해
 
     $$
-    |A_{j,j}|>\sum_{\substack{k=1\\k\ne j}}^n |A_{j,k}|
+    |A_{j,j}|>\sum_{\substack{k=1\cr k\ne j}}^n |A_{j,k}|
     $$
 
     이면 $T$가 가역임을 증명하라.
@@ -2396,7 +2396,7 @@ $$
 
 이므로, $D_w$와 $D_z$는 교환한다. $\mathcal{P}_m(\mathbb{C}^2,\mathbb{C})$ 위의 방정식 $D_wD_z=D_zD_w$는 좋은 함수들에 대해서는 편미분의 순서가 중요하지 않다는 더 일반적인 결과를 보여 주는 예이다.
 
-교환하는 행렬은 드물다. 예를 들어 모든 성분이 구간 $[-5,5]$ 안의 정수인 $2\times 2$ 행렬들의 순서쌍은 $214{,}358{,}881=11^8$개이다. 이 순서쌍들 중 약 $0.3\%$만 교환한다. 컴퓨터로 이 모든 순서쌍을 확인한 결과, 그중 $674{,}609$개만 교환했다.
+교환하는 행렬은 드물다. 예를 들어 모든 성분이 구간 $[-5,5]$ 안의 정수인 $2\times 2$ 행렬들의 순서쌍은 $214{,}358{,}881=11^8$개이다. 이 순서쌍들 중 약 $0.3\\%$만 교환한다. 컴퓨터로 이 모든 순서쌍을 확인한 결과, 그중 $674{,}609$개만 교환했다.
 
 다음 결과는 두 연산자가 교환할 필요충분조건이 같은 기저에 대한 그 행렬들이 교환하는 것임을 보여 준다.
 
@@ -2409,9 +2409,9 @@ $S,T\in\mathcal{L}(V)$이고 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 그
 $$
 \begin{aligned}
 S\text{와 }T\text{가 교환함}
-&\Longleftrightarrow ST=TS \\
-&\Longleftrightarrow \mathcal{M}(ST)=\mathcal{M}(TS) \\
-&\Longleftrightarrow \mathcal{M}(S)\mathcal{M}(T)=\mathcal{M}(T)\mathcal{M}(S) \\
+&\Longleftrightarrow ST=TS \cr
+&\Longleftrightarrow \mathcal{M}(ST)=\mathcal{M}(TS) \cr
+&\Longleftrightarrow \mathcal{M}(S)\mathcal{M}(T)=\mathcal{M}(T)\mathcal{M}(S) \cr
 &\Longleftrightarrow \mathcal{M}(S)\text{와 }\mathcal{M}(T)\text{가 교환함}.
 \end{aligned}
 $$
@@ -2458,7 +2458,7 @@ $V$가 유한차원 비영 복소 벡터공간이라고 하자. 그러면 $V$ �
 
 유한차원 비영 복소 벡터공간 위의 교환하는 모든 연산자쌍은 공통 고유벡터를 가진다.
 
-증명. $V$가 유한차원 비영 복소 벡터공간이고 $S,T\in\mathcal{L}(V)$가 교환한다고 하자. $\lambda$를 $S$의 고윳값이라고 하자. 5.19는 $S$가 실제로 고윳값을 가진다고 알려 준다. 따라서 $E(\lambda,S)\ne\{0\}$이다. 또한 5.75에 의해 $E(\lambda,S)$는 $T$에 대해 불변이다.
+증명. $V$가 유한차원 비영 복소 벡터공간이고 $S,T\in\mathcal{L}(V)$가 교환한다고 하자. $\lambda$를 $S$의 고윳값이라고 하자. 5.19는 $S$가 실제로 고윳값을 가진다고 알려 준다. 따라서 $E(\lambda,S)\ne\lbrace0\rbrace$이다. 또한 5.75에 의해 $E(\lambda,S)$는 $T$에 대해 불변이다.
 
 따라서 다시 5.19를 사용하면 $T|_{E(\lambda,S)}$는 고유벡터를 가진다. 이 벡터는 $S$와 $T$ 모두의 고유벡터이다. 이로써 증명이 끝난다.
 
@@ -2467,13 +2467,13 @@ $V$가 유한차원 비영 복소 벡터공간이라고 하자. 그러면 $V$ �
 $\mathcal{P}_m(\mathbb{C}^2,\mathbb{C})$를 예 5.72와 같이 두고, $D_w,D_z\in\mathcal{L}(\mathcal{P}_m(\mathbb{C}^2,\mathbb{C}))$를 그 예의 교환하는 편미분 연산자들이라고 하자. 확인할 수 있듯이, $0$은 이 두 연산자 각각의 유일한 고윳값이다. 또한
 
 $$
-E(0,D_w)=\left\{\sum_{k=0}^m a_kz^k:a_0,\ldots,a_m\in\mathbb{C}\right\},
+E(0,D_w)=\left\lbrace\sum_{k=0}^m a_kz^k:a_0,\ldots,a_m\in\mathbb{C}\right\rbrace,
 $$
 
 그리고
 
 $$
-E(0,D_z)=\left\{\sum_{j=0}^m c_jw^j:c_0,\ldots,c_m\in\mathbb{C}\right\}.
+E(0,D_z)=\left\lbrace\sum_{j=0}^m c_jw^j:c_0,\ldots,c_m\in\mathbb{C}\right\rbrace.
 $$
 
 이 두 고유공간의 교집합은 두 연산자의 공통 고유벡터들의 집합에 영벡터를 더한 것이다. $E(0,D_w)\cap E(0,D_z)$는 상수함수들의 집합이므로, 5.78이 약속한 것처럼 $D_w$와 $D_z$는 실제로 공통 고유벡터를 가진다.
@@ -2513,9 +2513,9 @@ $$
 $$
 \begin{aligned}
 (\widehat{S}\widehat{T})w
-&=\widehat{S}(P(Tw)) \\
-&=\widehat{S}(Tw-av_1) \\
-&=P(S(Tw-av_1)) \\
+&=\widehat{S}(P(Tw)) \cr
+&=\widehat{S}(Tw-av_1) \cr
+&=P(S(Tw-av_1)) \cr
 &=P((ST)w).
 \end{aligned}
 $$
@@ -2530,7 +2530,7 @@ $$
 
 그러므로 귀납가정에 의해 $\widehat{S}$와 $\widehat{T}$가 모두 상삼각행렬을 가지도록 하는 $W$의 기저 $v_2,\ldots,v_n$이 존재한다. 리스트 $v_1,\ldots,v_n$은 $V$의 기저이다.
 
-$k\in\{2,\ldots,n\}$이면 어떤 $a_k,b_k\in\mathbb{C}$가 존재하여
+$k\in\lbrace2,\ldots,n\rbrace$이면 어떤 $a_k,b_k\in\mathbb{C}$가 존재하여
 
 $$
 Sv_k=a_kv_1+\widehat{S}v_k

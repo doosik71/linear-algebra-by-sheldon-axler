@@ -58,8 +58,8 @@ $$
 $$
 \begin{aligned}
 \langle T(x_1,x_2,x_3),(y_1,y_2)\rangle
-&=\langle (x_2+3x_3,2x_1),(y_1,y_2)\rangle\\
-&=x_2y_1+3x_3y_1+2x_1y_2\\
+&=\langle (x_2+3x_3,2x_1),(y_1,y_2)\rangle\cr
+&=x_2y_1+3x_3y_1+2x_1y_2\cr
 &=\langle (x_1,x_2,x_3),(2y_2,y_1,3y_1)\rangle.
 \end{aligned}
 $$
@@ -83,8 +83,8 @@ $$
 $$
 \begin{aligned}
 \langle Tv,w\rangle
-&=\langle \langle v,u\rangle x,w\rangle\\
-&=\langle v,u\rangle\langle x,w\rangle\\
+&=\langle \langle v,u\rangle x,w\rangle\cr
+&=\langle v,u\rangle\langle x,w\rangle\cr
 &=\langle v,\langle w,x\rangle u\rangle.
 \end{aligned}
 $$
@@ -108,8 +108,8 @@ $v\in V$이고 $w_1,w_2\in W$이면
 $$
 \begin{aligned}
 \langle Tv,w_1+w_2\rangle
-&=\langle Tv,w_1\rangle+\langle Tv,w_2\rangle\\
-&=\langle v,T^*w_1\rangle+\langle v,T^*w_2\rangle\\
+&=\langle Tv,w_1\rangle+\langle Tv,w_2\rangle\cr
+&=\langle v,T^*w_1\rangle+\langle v,T^*w_2\rangle\cr
 &=\langle v,T^*w_1+T^*w_2\rangle.
 \end{aligned}
 $$
@@ -119,8 +119,8 @@ $$
 $$
 \begin{aligned}
 \langle Tv,\lambda w\rangle
-&=\overline{\lambda}\langle Tv,w\rangle\\
-&=\overline{\lambda}\langle v,T^*w\rangle\\
+&=\overline{\lambda}\langle Tv,w\rangle\cr
+&=\overline{\lambda}\langle v,T^*w\rangle\cr
 &=\langle v,\lambda T^*w\rangle.
 \end{aligned}
 $$
@@ -243,9 +243,9 @@ $w\in W$이면
 $$
 \begin{aligned}
 w\in\text{null}T^*
-&\Longleftrightarrow T^*w=0\\
-&\Longleftrightarrow \langle v,T^*w\rangle=0\quad\text{모든 }v\in V\text{에 대해}\\
-&\Longleftrightarrow \langle Tv,w\rangle=0\quad\text{모든 }v\in V\text{에 대해}\\
+&\Longleftrightarrow T^*w=0\cr
+&\Longleftrightarrow \langle v,T^*w\rangle=0\quad\text{모든 }v\in V\text{에 대해}\cr
+&\Longleftrightarrow \langle Tv,w\rangle=0\quad\text{모든 }v\in V\text{에 대해}\cr
 &\Longleftrightarrow w\in(\text{range}T)^\perp.
 \end{aligned}
 $$
@@ -254,7 +254,7 @@ $$
 
 **7.7 정의: 켤레전치, $A^*$**
 
-$m\times n$ 행렬 $A$의 **켤레전치**는 행과 열을 서로 바꾼 뒤 각 성분의 켤레복소수를 취하여 얻는 $n\times m$ 행렬 $A^*$이다. 즉 $j\in\{1,\ldots,n\}$이고 $k\in\{1,\ldots,m\}$이면
+$m\times n$ 행렬 $A$의 **켤레전치**는 행과 열을 서로 바꾼 뒤 각 성분의 켤레복소수를 취하여 얻는 $n\times m$ 행렬 $A^*$이다. 즉 $j\in\lbrace1,\ldots,n\rbrace$이고 $k\in\lbrace1,\ldots,m\rbrace$이면
 
 $$
 (A^*)_{j,k}=\overline{A_{k,j}}.
@@ -268,7 +268,7 @@ $$
 
 $$
 \begin{pmatrix}
-2 & 3+4i & 7\\
+2 & 3+4i & 7\cr
 6 & 5 & 8i
 \end{pmatrix}
 $$
@@ -277,8 +277,8 @@ $$
 
 $$
 \begin{pmatrix}
-2 & 6\\
-3-4i & 5\\
+2 & 6\cr
+3-4i & 5\cr
 7 & -8i
 \end{pmatrix}
 $$
@@ -356,7 +356,7 @@ $c\in\mathbb{F}$이고 $T$가 표준기저에 대한 행렬
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-2 & c\\
+2 & c\cr
 3 & 7
 \end{pmatrix}
 $$
@@ -366,7 +366,7 @@ $$
 $$
 \mathcal{M}(T^*)=
 \begin{pmatrix}
-2 & 3\\
+2 & 3\cr
 \overline{c} & 7
 \end{pmatrix}.
 $$
@@ -392,12 +392,12 @@ $$
 $T$가 $V$ 위의 자기수반 연산자라고 하자. $\lambda$가 $T$의 고윳값이고 $v\ne 0$인 벡터가 $Tv=\lambda v$를 만족한다고 하자. 그러면
 
 $$
-\lambda\|v\|^2
+\lambda\Vert v\Vert^2
 =\langle \lambda v,v\rangle
 =\langle Tv,v\rangle
 =\langle v,Tv\rangle
 =\langle v,\lambda v\rangle
-=\overline{\lambda}\|v\|^2.
+=\overline{\lambda}\Vert v\Vert^2.
 $$
 
 따라서 $\lambda=\overline{\lambda}$이고, $\lambda$는 실수이다.
@@ -419,7 +419,7 @@ $u,w\in V$이면 오른쪽을 전개하여 확인할 수 있는 다음 등식이
 $$
 \begin{aligned}
 \langle Tu,w\rangle
-&=\frac14\Big(\langle T(u+w),u+w\rangle-\langle T(u-w),u-w\rangle\\
+&=\frac14\Big(\langle T(u+w),u+w\rangle-\langle T(u-w),u-w\rangle\cr
 &\quad+i\langle T(u+iw),u+iw\rangle-i\langle T(u-iw),u-iw\rangle\Big).
 \end{aligned}
 $$
@@ -454,9 +454,9 @@ $$
 $$
 \begin{aligned}
 T\text{가 자기수반}
-&\Longleftrightarrow T-T^*=0\\
-&\Longleftrightarrow \langle (T-T^*)v,v\rangle=0\quad\text{모든 }v\in V\text{에 대해}\\
-&\Longleftrightarrow \langle Tv,v\rangle-\overline{\langle Tv,v\rangle}=0\quad\text{모든 }v\in V\text{에 대해}\\
+&\Longleftrightarrow T-T^*=0\cr
+&\Longleftrightarrow \langle (T-T^*)v,v\rangle=0\quad\text{모든 }v\in V\text{에 대해}\cr
+&\Longleftrightarrow \langle Tv,v\rangle-\overline{\langle Tv,v\rangle}=0\quad\text{모든 }v\in V\text{에 대해}\cr
 &\Longleftrightarrow \langle Tv,v\rangle\in\mathbb{R}\quad\text{모든 }v\in V\text{에 대해}.
 \end{aligned}
 $$
@@ -506,7 +506,7 @@ $T$를 표준기저에 대한 행렬이
 
 $$
 \begin{pmatrix}
-2 & -3\\
+2 & -3\cr
 3 & 2
 \end{pmatrix}
 $$
@@ -522,17 +522,17 @@ $$
 한편
 
 $$
-\begin{pmatrix} 2 & -3\\ 3 & 2 \end{pmatrix}
-\begin{pmatrix} 2 & 3\\ -3 & 2 \end{pmatrix} =
-\begin{pmatrix} 13 & 0\\ 0 & 13 \end{pmatrix}
+\begin{pmatrix} 2 & -3\cr 3 & 2 \end{pmatrix}
+\begin{pmatrix} 2 & 3\cr -3 & 2 \end{pmatrix} =
+\begin{pmatrix} 13 & 0\cr 0 & 13 \end{pmatrix}
 $$
 
 이고
 
 $$
-\begin{pmatrix} 2 & 3\\ -3 & 2 \end{pmatrix}
-\begin{pmatrix} 2 & -3\\ 3 & 2 \end{pmatrix} =
-\begin{pmatrix} 13 & 0\\ 0 & 13 \end{pmatrix}.
+\begin{pmatrix} 2 & 3\cr -3 & 2 \end{pmatrix}
+\begin{pmatrix} 2 & -3\cr 3 & 2 \end{pmatrix} =
+\begin{pmatrix} 13 & 0\cr 0 & 13 \end{pmatrix}.
 $$
 
 따라서 $TT^*=T^*T$이고 $T$는 정규이다.
@@ -544,7 +544,7 @@ $T\in\mathcal{L}(V)$라고 하자. 그러면
 $$
 T\text{가 정규}
 \Longleftrightarrow
-\|Tv\|=\|T^*v\|\quad\text{모든 }v\in V\text{에 대해}.
+\Vert Tv\Vert=\Vert T^*v\Vert\quad\text{모든 }v\in V\text{에 대해}.
 $$
 
 **증명**
@@ -554,10 +554,10 @@ $$
 $$
 \begin{aligned}
 T\text{가 정규}
-&\Longleftrightarrow T^*T-TT^*=0\\
-&\Longleftrightarrow \langle (T^*T-TT^*)v,v\rangle=0\quad\text{모든 }v\in V\text{에 대해}\\
-&\Longleftrightarrow \langle Tv,Tv\rangle=\langle T^*v,T^*v\rangle\quad\text{모든 }v\in V\text{에 대해}\\
-&\Longleftrightarrow \|Tv\|=\|T^*v\|\quad\text{모든 }v\in V\text{에 대해}
+&\Longleftrightarrow T^*T-TT^*=0\cr
+&\Longleftrightarrow \langle (T^*T-TT^*)v,v\rangle=0\quad\text{모든 }v\in V\text{에 대해}\cr
+&\Longleftrightarrow \langle Tv,Tv\rangle=\langle T^*v,T^*v\rangle\quad\text{모든 }v\in V\text{에 대해}\cr
+&\Longleftrightarrow \Vert Tv\Vert=\Vert T^*v\Vert\quad\text{모든 }v\in V\text{에 대해}
 \end{aligned}
 $$
 
@@ -602,9 +602,9 @@ $$
 $$
 v\in\text{null}T
 \Longleftrightarrow
-\|Tv\|=0
+\Vert Tv\Vert=0
 \Longleftrightarrow
-\|T^*v\|=0
+\Vert T^*v\Vert=0
 \Longleftrightarrow
 v\in\text{null}T^*.
 $$
@@ -635,10 +635,10 @@ $$
 $$
 \begin{aligned}
 (T-\lambda I)(T-\lambda I)^*
-&=(T-\lambda I)(T^*-\overline{\lambda}I)\\
-&=TT^*-\overline{\lambda}T-\lambda T^*+|\lambda|^2I\\
-&=T^*T-\overline{\lambda}T-\lambda T^*+|\lambda|^2I\\
-&=(T^*-\overline{\lambda}I)(T-\lambda I)\\
+&=(T-\lambda I)(T^*-\overline{\lambda}I)\cr
+&=TT^*-\overline{\lambda}T-\lambda T^*+|\lambda|^2I\cr
+&=T^*T-\overline{\lambda}T-\lambda T^*+|\lambda|^2I\cr
+&=(T^*-\overline{\lambda}I)(T-\lambda I)\cr
 &=(T-\lambda I)^*(T-\lambda I).
 \end{aligned}
 $$
@@ -648,9 +648,9 @@ $$
 (e)는 (d)와 7.20을 $T-\lambda I$에 적용하면 나온다. 실제로
 
 $$
-\|(T-\lambda I)v\|
-=\|(T-\lambda I)^*v\|
-=\|(T^*-\overline{\lambda}I)v\|.
+\Vert(T-\lambda I)v\Vert
+=\Vert(T-\lambda I)^*v\Vert
+=\Vert(T^*-\overline{\lambda}I)v\Vert.
 $$
 
 따라서 한쪽이 $0$인 것과 다른 쪽이 $0$인 것이 동치이다.
@@ -666,8 +666,8 @@ $\alpha,\beta$가 $T$의 서로 다른 고윳값이고, 대응하는 고유벡�
 $$
 \begin{aligned}
 (\alpha-\beta)\langle u,v\rangle
-&=\langle \alpha u,v\rangle-\langle u,\overline{\beta}v\rangle\\
-&=\langle Tu,v\rangle-\langle u,T^*v\rangle\\
+&=\langle \alpha u,v\rangle-\langle u,\overline{\beta}v\rangle\cr
+&=\langle Tu,v\rangle-\langle u,T^*v\rangle\cr
 &=0.
 \end{aligned}
 $$
@@ -740,8 +740,8 @@ $$
 5. $T\in\mathcal{L}(V,W)$라고 하자. $e_1,\ldots,e_n$이 $V$의 정규직교기저이고 $f_1,\ldots,f_m$이 $W$의 정규직교기저라고 하자. 다음을 증명하여라.
 
    $$
-   \|Te_1\|^2+\cdots+\|Te_n\|^2
-   =\|T^*f_1\|^2+\cdots+\|T^*f_m\|^2.
+   \Vert Te_1\Vert^2+\cdots+\Vert Te_n\Vert^2
+   =\Vert T^*f_1\Vert^2+\cdots+\Vert T^*f_m\Vert^2.
    $$
 
    위 등식의 왼쪽 각 항은 정규직교기저 $e_1,\ldots,e_n$에 의존하지만, 오른쪽은 이 기저에 의존하지 않는다. 따라서 왼쪽의 합은 어떤 정규직교기저를 사용하더라도 같음을 알 수 있다.
@@ -825,8 +825,8 @@ $$
 
     $$
     \begin{pmatrix}
-    0 & 0 & 0\\
-    0 & 1 & 0\\
+    0 & 0 & 0\cr
+    0 & 1 & 0\cr
     0 & 0 & 0
     \end{pmatrix}
     $$
@@ -849,7 +849,7 @@ $$
 
 18. $\dim V\ge 2$라고 하자. $V$ 위의 정규 연산자들의 집합은 $\mathcal{L}(V)$의 부분공간이 아님을 보여라.
 
-19. $T\in\mathcal{L}(V)$이고 모든 $v\in V$에 대해 $\|T^*v\|\le\|Tv\|$라고 하자. $T$가 정규임을 증명하여라.
+19. $T\in\mathcal{L}(V)$이고 모든 $v\in V$에 대해 $\Vert T^*v\Vert\le\Vert Tv\Vert$라고 하자. $T$가 정규임을 증명하여라.
 
     이 연습문제는 무한차원 내적공간에서는 실패하며, 이와 관련해 **하이포정규 연산자**라는 잘 발전된 이론이 생긴다.
 
@@ -868,10 +868,10 @@ $$
 23. $T$가 $V$ 위의 정규 연산자라고 하자. 또한 $v,w\in V$가
 
     $$
-    \|v\|=\|w\|=2,\qquad Tv=3v,\qquad Tw=4w
+    \Vert v\Vert=\Vert w\Vert=2,\qquad Tv=3v,\qquad Tw=4w
     $$
 
-    를 만족한다고 하자. $\|T(v+w)\|=10$임을 보여라.
+    를 만족한다고 하자. $\Vert T(v+w)\Vert=10$임을 보여라.
 
 24. $T\in\mathcal{L}(V)$이고
 
@@ -907,7 +907,7 @@ $$
 
 28. $T\in\mathcal{L}(V)$가 정규라고 하자. $\lambda\in\mathbb{F}$이면 $T$의 최소다항식은 $(x-\lambda)^2$의 다항식배가 아님을 증명하여라.
 
-29. 증명하거나 반례를 들어라. $T\in\mathcal{L}(V)$이고 $V$의 정규직교기저 $e_1,\ldots,e_n$이 존재하여 각 $k=1,\ldots,n$에 대해 $\|Te_k\|=\|T^*e_k\|$이면 $T$는 정규이다.
+29. 증명하거나 반례를 들어라. $T\in\mathcal{L}(V)$이고 $V$의 정규직교기저 $e_1,\ldots,e_n$이 존재하여 각 $k=1,\ldots,n$에 대해 $\Vert Te_k\Vert=\Vert T^*e_k\Vert$이면 $T$는 정규이다.
 
 30. $T\in\mathcal{L}(\mathbb{F}^3)$가 정규이고 $T(1,1,1)=(2,2,2)$라고 하자. $(z_1,z_2,z_3)\in\text{null}T$이면 $z_1+z_2+z_3=0$임을 증명하여라.
 
@@ -966,10 +966,10 @@ $v$를 $V$의 영이 아닌 벡터라고 하자. 그러면
 $$
 \begin{aligned}
 \langle (T^2+bT+cI)v,v\rangle
-&=\langle T^2v,v\rangle+b\langle Tv,v\rangle+c\langle v,v\rangle\\
-&=\langle Tv,Tv\rangle+b\langle Tv,v\rangle+c\|v\|^2\\
-&\ge \|Tv\|^2-|b|\|Tv\|\,\|v\|+c\|v\|^2\\
-&=\left(\|Tv\|-\frac{|b|\|v\|}{2}\right)^2+\left(c-\frac{b^2}{4}\right)\|v\|^2\\
+&=\langle T^2v,v\rangle+b\langle Tv,v\rangle+c\langle v,v\rangle\cr
+&=\langle Tv,Tv\rangle+b\langle Tv,v\rangle+c\Vert v\Vert^2\cr
+&\ge \Vert Tv\Vert^2-|b|\Vert Tv\Vert\thinspace\Vert v\Vert+c\Vert v\Vert^2\cr
+&=\left(\Vert Tv\Vert-\frac{|b|\Vert v\Vert}{2}\right)^2+\left(c-\frac{b^2}{4}\right)\Vert v\Vert^2\cr
 &>0.
 \end{aligned}
 $$
@@ -1024,8 +1024,8 @@ $\mathbb{F}=\mathbb{R}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 다�
 
 $$
 \begin{pmatrix}
-14 & -13 & 8\\
--13 & 14 & 8\\
+14 & -13 & 8\cr
+-13 & 14 & 8\cr
 8 & 8 & -7
 \end{pmatrix}
 $$
@@ -1042,8 +1042,8 @@ $$
 
 $$
 \begin{pmatrix}
-27 & 0 & 0\\
-0 & 9 & 0\\
+27 & 0 & 0\cr
+0 & 9 & 0\cr
 0 & 0 & -15
 \end{pmatrix}
 $$
@@ -1073,8 +1073,8 @@ $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 다�
 $$
 \mathcal{M}(T,(e_1,\ldots,e_n)) =
 \begin{pmatrix}
-a_{1,1} & \cdots & a_{1,n}\\
-& \ddots & \vdots\\
+a_{1,1} & \cdots & a_{1,n}\cr
+& \ddots & \vdots\cr
 0 & & a_{n,n}
 \end{pmatrix}.
 \tag{7.32}
@@ -1083,13 +1083,13 @@ $$
 이 행렬이 사실 대각행렬임을 보이자. 위 행렬에서
 
 $$
-\|Te_1\|^2=|a_{1,1}|^2
+\Vert Te_1\Vert^2=|a_{1,1}|^2
 $$
 
 이고
 
 $$
-\|T^*e_1\|^2=|a_{1,1}|^2+|a_{1,2}|^2+\cdots+|a_{1,n}|^2
+\Vert T^*e_1\Vert^2=|a_{1,1}|^2+|a_{1,2}|^2+\cdots+|a_{1,n}|^2
 $$
 
 이다. $T$가 정규이므로 7.20에 의해 두 노름은 같다. 따라서 첫 번째 행에서 대각성분을 제외한 모든 성분은 $0$이다. 같은 논리를 $e_2,e_3,\ldots$에 차례로 적용하면 모든 비대각 성분이 $0$임을 얻는다. 따라서 $T$의 행렬은 대각행렬이다.
@@ -1112,7 +1112,7 @@ $$
 
 $$
 \begin{pmatrix}
-2 & -3\\
+2 & -3\cr
 3 & 2
 \end{pmatrix}
 $$
@@ -1128,7 +1128,7 @@ $$
 
 $$
 \begin{pmatrix}
-2+3i & 0\\
+2+3i & 0\cr
 0 & 2-3i
 \end{pmatrix}
 $$
@@ -1141,7 +1141,7 @@ $$
 
 2. $\mathbb{F}=\mathbb{C}$라고 하자. $T\in\mathcal{L}(V)$가 정규이고 고윳값을 하나만 가진다고 하자. $T$가 항등연산자의 스칼라배임을 증명하여라.
 
-3. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규라고 하자. $T$의 고윳값들의 집합이 $\{0,1\}$에 포함되는 것과, 어떤 $V$의 부분공간 $U$가 존재하여 $T=P_U$가 되는 것은 동치임을 증명하여라.
+3. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규라고 하자. $T$의 고윳값들의 집합이 $\lbrace0,1\rbrace$에 포함되는 것과, 어떤 $V$의 부분공간 $U$가 존재하여 $T=P_U$가 되는 것은 동치임을 증명하여라.
 
 4. 복소 내적공간 위의 정규 연산자가 반자기수반인 것은 그 모든 고윳값이 순허수인 것과 동치임을 증명하여라. 여기서 순허수란 실수부가 $0$인 수를 뜻한다.
 
@@ -1165,7 +1165,7 @@ $$
 
 12. $V$가 복소 벡터공간이고 $T\in\mathcal{L}(V)$가 정규라고 하자. $T$와 교환하는 모든 연산자 $S$는 $T^*$와도 교환함을 증명하여라. 이 결과는 푸글레데 정리라고 불린다.
 
-13. 복소 스펙트럼 정리를 사용하지 말고, 두 교환 연산자에 적용되는 슈어 정리의 버전(6B절 연습문제 20번에서 $\mathcal{E}=\{T,T^*\}$로 둔다)을 사용하여 다음을 증명하여라. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규이면, $T$는 $V$의 어떤 정규직교기저에 대해 대각행렬을 가진다.
+13. 복소 스펙트럼 정리를 사용하지 말고, 두 교환 연산자에 적용되는 슈어 정리의 버전(6B절 연습문제 20번에서 $\mathcal{E}=\lbrace T,T^*\rbrace$로 둔다)을 사용하여 다음을 증명하여라. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규이면, $T$는 $V$의 어떤 정규직교기저에 대해 대각행렬을 가진다.
 
 14. $\mathbb{F}=\mathbb{R}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$가 자기수반인 것은, 서로 다른 고윳값에 대응하는 모든 고유벡터 쌍이 직교하고
 
@@ -1229,10 +1229,10 @@ $$
 
     인 $T\in\mathcal{L}(\mathbb{C}^3)$의 예를 제시하여라.
 
-23. $T\in\mathcal{L}(V)$가 자기수반이고 $\lambda\in\mathbb{F}$, $\varepsilon>0$이라고 하자. 어떤 $v\in V$가 $\|v\|=1$이고
+23. $T\in\mathcal{L}(V)$가 자기수반이고 $\lambda\in\mathbb{F}$, $\varepsilon>0$이라고 하자. 어떤 $v\in V$가 $\Vert v\Vert=1$이고
 
     $$
-    \|Tv-\lambda v\|<\varepsilon
+    \Vert Tv-\lambda v\Vert<\varepsilon
     $$
 
     를 만족한다고 하자. 그러면 $T$가 어떤 고윳값 $\lambda'$를 가지며 $|\lambda-\lambda'|<\varepsilon$임을 증명하여라.
@@ -1243,12 +1243,12 @@ $$
 
     (b) $\mathbb{F}=\mathbb{C}$라고 하자. $T$가 대각화가능인 것과, $T$의 행렬이 자신의 켤레전치와 교환하는 $U$의 어떤 기저가 존재하는 것은 동치임을 증명하여라.
 
-25. $T\in\mathcal{L}(V)$이고 $V$의 정규직교기저 $e_1,\ldots,e_n$이 $T$의 고유벡터들로 이루어져 있으며 대응하는 고윳값이 $\lambda_1,\ldots,\lambda_n$이라고 하자. $k\in\{1,\ldots,n\}$이면 유사역 $T^\dagger$가 다음을 만족함을 보여라.
+25. $T\in\mathcal{L}(V)$이고 $V$의 정규직교기저 $e_1,\ldots,e_n$이 $T$의 고유벡터들로 이루어져 있으며 대응하는 고윳값이 $\lambda_1,\ldots,\lambda_n$이라고 하자. $k\in\lbrace1,\ldots,n\rbrace$이면 유사역 $T^\dagger$가 다음을 만족함을 보여라.
 
     $$
     T^\dagger e_k=
     \begin{cases}
-    \frac{1}{\lambda_k}e_k, & \lambda_k\ne 0,\\
+    \frac{1}{\lambda_k}e_k, & \lambda_k\ne 0,\cr
     0, & \lambda_k=0.
     \end{cases}
     $$
@@ -1272,7 +1272,7 @@ $V$가 복소 벡터공간이면, 위 정의에서 $T$가 자기수반이어야 
 (a) 표준기저에 대한 행렬이
 
 $$
-\begin{pmatrix} 2 & -1\\ -1 & 1 \end{pmatrix}
+\begin{pmatrix} 2 & -1\cr -1 & 1 \end{pmatrix}
 $$
 
 인 $T\in\mathcal{L}(\mathbb{F}^2)$를 생각하자. 그러면 $T$는 자기수반이고
@@ -1280,7 +1280,7 @@ $$
 $$
 \begin{aligned}
 \langle T(w,z),(w,z)\rangle
-&=2|w|^2-2\text{Re}(w\overline z)+|z|^2\\
+&=2|w|^2-2\text{Re}(w\overline z)+|z|^2\cr
 &=|w-z|^2+|w|^2\ge 0.
 \end{aligned}
 $$
@@ -1403,13 +1403,13 @@ $$
 따라서 각 $k$에 대해 $a_k(\lambda-\lambda_k)=0$이다. 그러므로
 
 $$
-v=\sum_{\{k:\lambda_k=\lambda\}}a_ke_k
+v=\sum_{\lbrace k:\lambda_k=\lambda\rbrace}a_ke_k
 $$
 
 이고
 
 $$
-Rv=\sum_{\{k:\lambda_k=\lambda\}}a_k\sqrt{\lambda}e_k=\sqrt{\lambda}v.
+Rv=\sum_{\lbrace k:\lambda_k=\lambda\rbrace}a_k\sqrt{\lambda}e_k=\sqrt{\lambda}v.
 $$
 
 따라서 양의 제곱근은 유일하다. 존재는 7.38에서 이미 보였다.
@@ -1431,13 +1431,13 @@ $$
 $$
 \mathcal{M}(S)=
 \begin{pmatrix}
-1 & 0\\
+1 & 0\cr
 0 & 2
 \end{pmatrix},
 \qquad
 \mathcal{M}(T)=
 \begin{pmatrix}
-1 & 1\\
+1 & 1\cr
 1 & 1
 \end{pmatrix}.
 \tag{7.42}
@@ -1471,13 +1471,13 @@ $$
 $$
 \mathcal{M}(\sqrt S)=
 \begin{pmatrix}
-1 & 0\\
+1 & 0\cr
 0 & \sqrt2
 \end{pmatrix},
 \qquad
 \mathcal{M}(\sqrt T)=
 \begin{pmatrix}
-\frac1{\sqrt2} & \frac1{\sqrt2}\\
+\frac1{\sqrt2} & \frac1{\sqrt2}\cr
 \frac1{\sqrt2} & \frac1{\sqrt2}
 \end{pmatrix}
 $$
@@ -1494,7 +1494,7 @@ $$
 0=\langle Tv,v\rangle
 =\langle \sqrt T\sqrt T v,v\rangle
 =\langle \sqrt T v,\sqrt T v\rangle
-=\|\sqrt T v\|^2.
+=\Vert\sqrt T v\Vert^2.
 $$
 
 따라서 $\sqrt T v=0$이고, 그러므로 $Tv=\sqrt T(\sqrt T v)=0$이다.
@@ -1507,9 +1507,9 @@ $$
 
    $$
    \begin{pmatrix}
-   2 & -1 & 0 & 0\\
-   -1 & 2 & -1 & 0\\
-   0 & -1 & 2 & -1\\
+   2 & -1 & 0 & 0\cr
+   -1 & 2 & -1 & 0\cr
+   0 & -1 & 2 & -1\cr
    0 & 0 & -1 & 2
    \end{pmatrix}
    $$
@@ -1589,16 +1589,16 @@ $$
 
     $$
     \begin{pmatrix}
-    1 & \frac12 & \frac13 & \frac14\\
-    \frac12 & \frac13 & \frac14 & \frac15\\
-    \frac13 & \frac14 & \frac15 & \frac16\\
+    1 & \frac12 & \frac13 & \frac14\cr
+    \frac12 & \frac13 & \frac14 & \frac15\cr
+    \frac13 & \frac14 & \frac15 & \frac16\cr
     \frac14 & \frac15 & \frac16 & \frac17
     \end{pmatrix}
     $$
 
     이다.
 
-22. $T\in\mathcal{L}(V)$가 양의 연산자이고 $u\in V$가 $\|u\|=1$이며 모든 $\|v\|=1$인 $v\in V$에 대해 $\|Tu\|\ge\|Tv\|$를 만족한다고 하자. $u$가 $T$의 가장 큰 고윳값에 대응하는 고유벡터임을 보여라.
+22. $T\in\mathcal{L}(V)$가 양의 연산자이고 $u\in V$가 $\Vert u\Vert=1$이며 모든 $\Vert v\Vert=1$인 $v\in V$에 대해 $\Vert Tu\Vert\ge\Vert Tv\Vert$를 만족한다고 하자. $u$가 $T$의 가장 큰 고윳값에 대응하는 고유벡터임을 보여라.
 
 23. $T\in\mathcal{L}(V)$와 $u,v\in V$에 대해 $\langle u,v\rangle_T=\langle Tu,v\rangle$로 정의한다.
 
@@ -1625,7 +1625,7 @@ $$
 선형사상 $S\in\mathcal{L}(V,W)$가 모든 $v\in V$에 대해
 
 $$
-\|Sv\|=\|v\|
+\Vert Sv\Vert=\Vert v\Vert
 $$
 
 를 만족하면 $S$를 **등거리사상**이라고 한다. 즉 등거리사상은 노름을 보존하는 선형사상이다.
@@ -1633,7 +1633,7 @@ $$
 $S\in\mathcal{L}(V,W)$가 등거리사상이고 $Sv=0$이면
 
 $$
-\|v\|=\|Sv\|=\|0\|=0
+\Vert v\Vert=\Vert Sv\Vert=\Vert0\Vert=0
 $$
 
 이므로 $v=0$이다. 따라서 모든 등거리사상은 단사이다.
@@ -1650,7 +1650,7 @@ $$
 이고
 
 $$
-\|v\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
+\Vert v\Vert^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
 \tag{7.47}
 $$
 
@@ -1663,11 +1663,11 @@ $$
 따라서
 
 $$
-\|Sv\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
+\Vert Sv\Vert^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
 \tag{7.48}
 $$
 
-7.47과 7.48을 비교하면 $\|Sv\|=\|v\|$이다. 따라서 $S$는 등거리사상이다.
+7.47과 7.48을 비교하면 $\Vert Sv\Vert=\Vert v\Vert$이다. 따라서 $S$는 등거리사상이다.
 
 **7.49 등거리사상의 특성화**
 
@@ -1702,7 +1702,7 @@ $$
 (a)가 성립한다고 하자. 그러면 모든 $v\in V$에 대해
 
 $$
-\langle (I-S^*S)v,v\rangle=\|v\|^2-\|Sv\|^2=0.
+\langle (I-S^*S)v,v\rangle=\Vert v\Vert^2-\Vert Sv\Vert^2=0.
 $$
 
 $I-S^*S$는 자기수반이므로 7.16에 의해 $I-S^*S=0$이다. 따라서 (b)가 성립한다.
@@ -1715,13 +1715,13 @@ $$
 
 이므로 (c)가 성립한다. (c)를 $u=e_j$, $v=e_k$에 적용하면 $Se_1,\ldots,Se_n$이 정규직교 리스트이므로 (d)가 성립한다.
 
-(d)가 성립한다고 하자. $A=\mathcal{M}(S,(e_1,\ldots,e_n),(f_1,\ldots,f_m))$라고 하자. $k,r\in\{1,\ldots,n\}$이면
+(d)가 성립한다고 하자. $A=\mathcal{M}(S,(e_1,\ldots,e_n),(f_1,\ldots,f_m))$라고 하자. $k,r\in\lbrace1,\ldots,n\rbrace$이면
 
 $$
 \sum_{j=1}^m A_{j,k}\overline{A_{j,r}} =
 \left\langle \sum_{j=1}^m A_{j,k}f_j,\sum_{j=1}^m A_{j,r}f_j\right\rangle =\langle Se_k,Se_r\rangle =
 \begin{cases}
-1, & k=r,\\
+1, & k=r,\cr
 0, & k\ne r.
 \end{cases}
 \tag{7.50}
@@ -1745,7 +1745,7 @@ $\theta\in\mathbb{R}$이고 $S$가 표준기저에 대한 행렬
 
 $$
 \begin{pmatrix}
-\cos\theta & -\sin\theta\\
+\cos\theta & -\sin\theta\cr
 \sin\theta & \cos\theta
 \end{pmatrix}
 $$
@@ -1803,7 +1803,7 @@ $$
 $S$가 유니터리 연산자이고 $Sv=\lambda v$이며 $v\ne 0$이라고 하자. 그러면
 
 $$
-|\lambda|\,\|v\|=\|\lambda v\|=\|Sv\|=\|v\|.
+|\lambda|\thinspace\Vert v\Vert=\Vert\lambda v\Vert=\Vert Sv\Vert=\Vert v\Vert.
 $$
 
 따라서 $|\lambda|=1$이다.
@@ -1826,7 +1826,7 @@ $$
 \langle Se_j,Se_k\rangle
 =\langle \lambda_j e_j,\lambda_k e_k\rangle
 =\lambda_j\overline{\lambda_k}\langle e_j,e_k\rangle
-=\begin{cases} 0, & j\ne k,\\ 1, & j=k. \end{cases}
+=\begin{cases} 0, & j\ne k,\cr 1, & j=k. \end{cases}
 $$
 
 따라서 $Se_1,\ldots,Se_n$은 정규직교기저이고, 7.53에 의해 $S$는 유니터리이다.
@@ -1852,7 +1852,7 @@ $Q$가 $n\times n$ 행렬이라고 하자. 그러면 다음 조건들은 서로 
 (c) 모든 $v\in\mathbb{F}^n$에 대해
 
 $$
-\|Qv\|=\|v\|.
+\Vert Qv\Vert=\Vert v\Vert.
 $$
 
 (d)
@@ -1907,8 +1907,8 @@ $$
 $$
 A=
 \begin{pmatrix}
-1 & 2 & 1\\
-0 & 1 & -4\\
+1 & 2 & 1\cr
+0 & 1 & -4\cr
 0 & 3 & 2
 \end{pmatrix}
 $$
@@ -1934,8 +1934,8 @@ $$
 $$
 Q=
 \begin{pmatrix}
-1 & 0 & 0\\
-0 & \frac1{\sqrt{10}} & -\frac3{\sqrt{10}}\\
+1 & 0 & 0\cr
+0 & \frac1{\sqrt{10}} & -\frac3{\sqrt{10}}\cr
 0 & \frac3{\sqrt{10}} & \frac1{\sqrt{10}}
 \end{pmatrix}
 $$
@@ -1945,8 +1945,8 @@ $$
 $$
 R=
 \begin{pmatrix}
-1 & 2 & 1\\
-0 & \sqrt{10} & \frac{\sqrt{10}}5\\
+1 & 2 & 1\cr
+0 & \sqrt{10} & \frac{\sqrt{10}}5\cr
 0 & 0 & \frac{7\sqrt{10}}5
 \end{pmatrix}
 $$
@@ -1956,8 +1956,8 @@ $$
 $$
 QR=
 \begin{pmatrix}
-1 & 2 & 1\\
-0 & 1 & -4\\
+1 & 2 & 1\cr
+0 & 1 & -4\cr
 0 & 3 & 2
 \end{pmatrix}
 =A.
@@ -2032,9 +2032,9 @@ $$
 $$
 \begin{aligned}
 (AS^{-1})^*(AS^{-1})
-&=(S^*)^{-1}A^*AS^{-1}\\
-&=(S^*)^{-1}BS^{-1}\\
-&=(S^*)^{-1}S^*\\
+&=(S^*)^{-1}A^*AS^{-1}\cr
+&=(S^*)^{-1}BS^{-1}\cr
+&=(S^*)^{-1}S^*\cr
 &=I.
 \end{aligned}
 $$
@@ -2067,11 +2067,11 @@ $$
 
 7. $T_1,T_2\in\mathcal{L}(\mathbb{F}^4)$가 자기수반이고 두 연산자의 고윳값이 모두 $2,5,7$이지만, $T_1=S^*T_2S$를 만족하는 유니터리 연산자 $S\in\mathcal{L}(\mathbb{F}^4)$는 존재하지 않는 예를 제시하여라. 왜 그런 $S$가 존재하지 않는지도 설명하여라.
 
-8. 증명하거나 반례를 들어라. $S\in\mathcal{L}(V)$이고 어떤 정규직교기저 $e_1,\ldots,e_n$에 대해 각 $k$마다 $\|Se_k\|=1$이면 $S$는 유니터리이다.
+8. 증명하거나 반례를 들어라. $S\in\mathcal{L}(V)$이고 어떤 정규직교기저 $e_1,\ldots,e_n$에 대해 각 $k$마다 $\Vert Se_k\Vert=1$이면 $S$는 유니터리이다.
 
-9. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$의 모든 고윳값의 절댓값이 $1$이고 모든 $v\in V$에 대해 $\|Tv\|\le\|v\|$이면 $T$가 유니터리임을 증명하여라.
+9. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$의 모든 고윳값의 절댓값이 $1$이고 모든 $v\in V$에 대해 $\Vert Tv\Vert\le\Vert v\Vert$이면 $T$가 유니터리임을 증명하여라.
 
-10. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 자기수반이며 모든 $v\in V$에 대해 $\|Tv\|\le\|v\|$라고 하자.
+10. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 자기수반이며 모든 $v\in V$에 대해 $\Vert Tv\Vert\le\Vert v\Vert$라고 하자.
 
     (a) $I-T^2$가 양의 연산자임을 보여라.
 
@@ -2080,16 +2080,16 @@ $$
 11. $S\in\mathcal{L}(V)$라고 하자. $S$가 유니터리 연산자인 것과
 
     $$
-    \{Sv:v\in V,\ \|v\|\le 1\}=\{v\in V:\|v\|\le 1\}
+    \lbrace Sv:v\in V,\ \Vert v\Vert\le 1\rbrace=\lbrace v\in V:\Vert v\Vert\le 1\rbrace
     $$
 
     인 것은 동치임을 증명하여라.
 
-12. 증명하거나 반례를 들어라. $S\in\mathcal{L}(V)$가 가역이고 모든 $v\in V$에 대해 $\|S^{-1}v\|=\|Sv\|$이면 $S$는 유니터리이다.
+12. 증명하거나 반례를 들어라. $S\in\mathcal{L}(V)$가 가역이고 모든 $v\in V$에 대해 $\Vert S^{-1}v\Vert=\Vert Sv\Vert$이면 $S$는 유니터리이다.
 
 13. 복소수 성분을 가진 정사각행렬의 열들이 $\mathbb{C}^n$의 정규직교 리스트를 이루는 것과 행들이 $\mathbb{C}^n$의 정규직교 리스트를 이루는 것은 동치인 이유를 설명하여라.
 
-14. $v\in V$이고 $\|v\|=1$, $b\in\mathbb{F}$이며 $\dim V\ge 2$라고 하자. $\langle Sv,v\rangle=b$를 만족하는 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재하는 것과 $|b|\le 1$인 것은 동치임을 증명하여라.
+14. $v\in V$이고 $\Vert v\Vert=1$, $b\in\mathbb{F}$이며 $\dim V\ge 2$라고 하자. $\langle Sv,v\rangle=b$를 만족하는 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재하는 것과 $|b|\le 1$인 것은 동치임을 증명하여라.
 
 15. $T$가 $V$ 위의 유니터리 연산자이고 $T-I$가 가역이라고 하자.
 
@@ -2176,7 +2176,7 @@ $$
 $$
 \langle (T^*T)v,v\rangle
 =\langle Tv,Tv\rangle
-=\|Tv\|^2\ge 0.
+=\Vert Tv\Vert^2\ge 0.
 $$
 
 따라서 $T^*T$는 양의 연산자이다.
@@ -2184,7 +2184,7 @@ $$
 (b) $v\in\text{null}T^*T$이면
 
 $$
-\|Tv\|^2=\langle T^*Tv,v\rangle=0
+\Vert Tv\Vert^2=\langle T^*Tv,v\rangle=0
 $$
 
 이므로 $Tv=0$이다. 반대 포함은 명백하다.
@@ -2251,8 +2251,8 @@ $T\in\mathcal{L}(\mathbb{F}^4,\mathbb{F}^3)$의 표준기저에 대한 행렬이
 
 $$
 \begin{pmatrix}
-0 & 0 & 0 & -5\\
-0 & 0 & 0 & 0\\
+0 & 0 & 0 & -5\cr
+0 & 0 & 0 & 0\cr
 1 & 1 & 0 & 0
 \end{pmatrix}
 $$
@@ -2261,9 +2261,9 @@ $$
 
 $$
 \begin{pmatrix}
-1 & 1 & 0 & 0\\
-1 & 1 & 0 & 0\\
-0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0\cr
+1 & 1 & 0 & 0\cr
+0 & 0 & 0 & 0\cr
 0 & 0 & 0 & 25
 \end{pmatrix}
 $$
@@ -2296,7 +2296,7 @@ $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
 **증명**
 
-$T$가 단사인 것은 $\text{null}T=\{0\}$인 것과 동치이고, 7.64(b)에 의해 이는 $\text{null}T^*T=\{0\}$인 것과 동치이다. 이는 $0$이 $T^*T$의 고윳값이 아닌 것과 동치이며, 곧 $0$이 $T$의 특이값이 아닌 것과 동치이다.
+$T$가 단사인 것은 $\text{null}T=\lbrace0\rbrace$인 것과 동치이고, 7.64(b)에 의해 이는 $\text{null}T^*T=\lbrace0\rbrace$인 것과 동치이다. 이는 $0$이 $T^*T$의 고윳값이 아닌 것과 동치이며, 곧 $0$이 $T$의 특이값이 아닌 것과 동치이다.
 
 $T^*T$에 스펙트럼 정리를 적용하면 $\dim\text{range}T^*T$는 $T^*T$의 양의 고윳값의 개수와 같다. 7.64(d)에 의해 이는 $\dim\text{range}T$와 같으므로 (b)가 성립한다. (c)는 (b)와 2.39에서 따른다.
 
@@ -2326,8 +2326,8 @@ $$
 $$
 \begin{aligned}
 S\text{가 등거리사상}
-&\Longleftrightarrow S^*S=I\\
-&\Longleftrightarrow S^*S\text{의 모든 고윳값이 }1\\
+&\Longleftrightarrow S^*S=I\cr
+&\Longleftrightarrow S^*S\text{의 모든 고윳값이 }1\cr
 &\Longleftrightarrow S\text{의 모든 특이값이 }1.
 \end{aligned}
 $$
@@ -2365,17 +2365,17 @@ f_k=\frac{Te_k}{s_k}
 \tag{7.73}
 $$
 
-로 정의한다. 그러면 $j,k\in\{1,\ldots,m\}$에 대해
+로 정의한다. 그러면 $j,k\in\lbrace1,\ldots,m\rbrace$에 대해
 
 $$
 \begin{aligned}
 \langle f_j,f_k\rangle
-&=\frac{1}{s_js_k}\langle Te_j,Te_k\rangle\\
-&=\frac{1}{s_js_k}\langle e_j,T^*Te_k\rangle\\
-&=\frac{s_k}{s_j}\langle e_j,e_k\rangle\\
+&=\frac{1}{s_js_k}\langle Te_j,Te_k\rangle\cr
+&=\frac{1}{s_js_k}\langle e_j,T^*Te_k\rangle\cr
+&=\frac{s_k}{s_j}\langle e_j,e_k\rangle\cr
 &=
 \begin{cases}
-0, & j\ne k,\\
+0, & j\ne k,\cr
 1, & j=k.
 \end{cases}
 \end{aligned}
@@ -2386,8 +2386,8 @@ $$
 $$
 \begin{aligned}
 Tv
-&=T(\langle v,e_1\rangle e_1+\cdots+\langle v,e_n\rangle e_n)\\
-&=\langle v,e_1\rangle Te_1+\cdots+\langle v,e_m\rangle Te_m\\
+&=T(\langle v,e_1\rangle e_1+\cdots+\langle v,e_n\rangle e_n)\cr
+&=\langle v,e_1\rangle Te_1+\cdots+\langle v,e_m\rangle Te_m\cr
 &=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m.
 \end{aligned}
 $$
@@ -2398,7 +2398,7 @@ $$
 
 **7.74 정의: 대각행렬**
 
-$M\times N$ 행렬 $A$가 $k=1,\ldots,\min\{M,N\}$에 대한 $A_{k,k}$를 제외한 모든 성분이 $0$이면 $A$를 **대각행렬**이라고 한다.
+$M\times N$ 행렬 $A$가 $k=1,\ldots,\min\lbrace M,N\rbrace$에 대한 $A_{k,k}$를 제외한 모든 성분이 $0$이면 $A$를 **대각행렬**이라고 한다.
 
 스펙트럼 정리와 특이값분해를 비교하면 다음과 같다.
 
@@ -2440,8 +2440,8 @@ $v\in V$, $w\in W$이면
 $$
 \begin{aligned}
 \langle Tv,w\rangle
-&=\left\langle s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m,w\right\rangle\\
-&=s_1\langle v,e_1\rangle\langle f_1,w\rangle+\cdots+s_m\langle v,e_m\rangle\langle f_m,w\rangle\\
+&=\left\langle s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m,w\right\rangle\cr
+&=s_1\langle v,e_1\rangle\langle f_1,w\rangle+\cdots+s_m\langle v,e_m\rangle\langle f_m,w\rangle\cr
 &=\left\langle v,s_1\langle w,f_1\rangle e_1+\cdots+s_m\langle w,f_m\rangle e_m\right\rangle.
 \end{aligned}
 $$
@@ -2477,8 +2477,8 @@ $$
 
 $$
 \begin{pmatrix}
-0 & 0 & 0 & -5\\
-0 & 0 & 0 & 0\\
+0 & 0 & 0 & -5\cr
+0 & 0 & 0 & 0\cr
 1 & 1 & 0 & 0
 \end{pmatrix}
 $$
@@ -2567,7 +2567,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 4. $T\in\mathcal{L}(V,W)$이고 $s_1$이 $T$의 가장 큰 특이값, $s_n$이 가장 작은 특이값이라고 하자. 다음을 증명하여라.
 
    $$
-   \{\|Tv\|:v\in V,\ \|v\|=1\}=[s_n,s_1].
+   \lbrace\Vert Tv\Vert:v\in V,\ \Vert v\Vert=1\rbrace=[s_n,s_1].
    $$
 
 5. $T\in\mathcal{L}(\mathbb{C}^2)$가 $T(x,y)=(-4y,x)$로 정의되어 있다고 하자. $T$의 특이값을 구하여라.
@@ -2590,7 +2590,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 
    (c) $s_1,\ldots,s_m$이 $T$의 양의 특이값임을 증명하여라.
 
-   (d) $k\in\{1,\ldots,m\}$이면 $e_k$는 고윳값 $s_k^2$에 대응하는 $T^*T$의 고유벡터임을 증명하여라.
+   (d) $k\in\lbrace1,\ldots,m\rbrace$이면 $e_k$는 고윳값 $s_k^2$에 대응하는 $T^*T$의 고유벡터임을 증명하여라.
 
    (e) 모든 $w\in W$에 대해
 
@@ -2615,7 +2615,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
     (a)
 
     $$
-    \|Tv_1\|^2+\cdots+\|Tv_n\|^2=s_1^2+\cdots+s_n^2
+    \Vert Tv_1\Vert^2+\cdots+\Vert Tv_n\Vert^2=s_1^2+\cdots+s_n^2
     $$
 
     임을 증명하여라.
@@ -2643,7 +2643,7 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 14. $T\in\mathcal{L}(V,W)$라고 하자. $s_n$을 $T$의 가장 작은 특이값이라고 하자. 모든 $v\in V$에 대해
 
     $$
-    s_n\|v\|\le \|Tv\|
+    s_n\Vert v\Vert\le \Vert Tv\Vert
     $$
 
     임을 증명하여라.
@@ -2674,14 +2674,14 @@ $C^*e_k=u_k$이고, (7.81)에 의해 $(\text{span}(e_1,\ldots,e_m))^\perp$에서
 
 ### 선형사상의 노름
 
-특이값분해는 $\|Tv\|$에 대한 다음 상계를 준다.
+특이값분해는 $\Vert Tv\Vert$에 대한 다음 상계를 준다.
 
-**7.82 $\|Tv\|$의 상계**
+**7.82 $\Vert Tv\Vert$의 상계**
 
 $T\in\mathcal{L}(V,W)$라고 하자. $s_1$을 $T$의 가장 큰 특이값이라고 하자. 그러면 모든 $v\in V$에 대해
 
 $$
-\|Tv\|\le s_1\|v\|.
+\Vert Tv\Vert\le s_1\Vert v\Vert.
 $$
 
 **증명**
@@ -2697,71 +2697,71 @@ $$
 
 $$
 \begin{aligned}
-\|Tv\|^2
-&=s_1^2|\langle v,e_1\rangle|^2+\cdots+s_m^2|\langle v,e_m\rangle|^2\\
-&\le s_1^2\left(|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_m\rangle|^2\right)\\
-&\le s_1^2\|v\|^2.
+\Vert Tv\Vert^2
+&=s_1^2|\langle v,e_1\rangle|^2+\cdots+s_m^2|\langle v,e_m\rangle|^2\cr
+&\le s_1^2\left(|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_m\rangle|^2\right)\cr
+&\le s_1^2\Vert v\Vert^2.
 \end{aligned}
 $$
 
 마지막 부등식은 베셀 부등식(6.26)에서 따른다. 양변의 제곱근을 취하면 원하는 부등식을 얻는다.
 
-위 결과는 $\|v\|\le 1$인 모든 $v\in V$에 대해
+위 결과는 $\Vert v\Vert\le 1$인 모든 $v\in V$에 대해
 
 $$
-\|Tv\|\le s_1
+\Vert Tv\Vert\le s_1
 \tag{7.84}
 $$
 
-임을 뜻한다. 또한 (7.83)에서 $v=e_1$을 대입하면 $Te_1=s_1f_1$이고, 따라서 $\|Te_1\|=s_1$이다. 그러므로
+임을 뜻한다. 또한 (7.83)에서 $v=e_1$을 대입하면 $Te_1=s_1f_1$이고, 따라서 $\Vert Te_1\Vert=s_1$이다. 그러므로
 
 $$
-\max\{\|Tv\|:v\in V,\ \|v\|\le 1\}=s_1.
+\max\lbrace\Vert Tv\Vert:v\in V,\ \Vert v\Vert\le 1\rbrace=s_1.
 \tag{7.85}
 $$
 
 이 등식은 다음 정의의 동기이다.
 
-**7.86 정의: 선형사상의 노름, $\|\cdot\|$**
+**7.86 정의: 선형사상의 노름, $\Vert\cdot\Vert$**
 
-$T\in\mathcal{L}(V,W)$라고 하자. $T$의 **노름** $\|T\|$는
+$T\in\mathcal{L}(V,W)$라고 하자. $T$의 **노름** $\Vert T\Vert$는
 
 $$
-\|T\|=\max\{\|Tv\|:v\in V,\ \|v\|\le 1\}
+\Vert T\Vert=\max\lbrace\Vert Tv\Vert:v\in V,\ \Vert v\Vert\le 1\rbrace
 $$
 
 로 정의된다.
 
 일반적으로 음이 아닌 수들의 무한집합의 최댓값은 존재하지 않을 수 있다. 그러나 위 논의는 선형사상 $T$의 노름 정의에 나타나는 최댓값이 실제로 존재하고, $T$의 가장 큰 특이값과 같음을 보여 준다.
 
-이제 노름이라는 단어와 기호 $\|\cdot\|$가 두 가지 방식으로 쓰인다. 하나는 내적공간의 벡터 $v$에 대해 $\|v\|=\sqrt{\langle v,v\rangle}$로 정의되는 노름이고, 다른 하나는 선형사상 $T$에 대해 정의한 $\|T\|$이다. 문맥과 기호를 보면 어떤 의미인지 구분할 수 있어야 한다.
+이제 노름이라는 단어와 기호 $\Vert\cdot\Vert$가 두 가지 방식으로 쓰인다. 하나는 내적공간의 벡터 $v$에 대해 $\Vert v\Vert=\sqrt{\langle v,v\rangle}$로 정의되는 노름이고, 다른 하나는 선형사상 $T$에 대해 정의한 $\Vert T\Vert$이다. 문맥과 기호를 보면 어떤 의미인지 구분할 수 있어야 한다.
 
 **7.87 선형사상 노름의 기본 성질**
 
 $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
-(a) $\|T\|\ge 0$.
+(a) $\Vert T\Vert\ge 0$.
 
-(b) $\|T\|=0$인 것과 $T=0$인 것은 동치이다.
+(b) $\Vert T\Vert=0$인 것과 $T=0$인 것은 동치이다.
 
 (c) 모든 $\lambda\in\mathbb{F}$에 대해
 
 $$
-\|\lambda T\|=|\lambda|\|T\|.
+\Vert\lambda T\Vert=|\lambda|\Vert T\Vert.
 $$
 
 (d) 모든 $S\in\mathcal{L}(V,W)$에 대해
 
 $$
-\|S+T\|\le \|S\|+\|T\|.
+\Vert S+T\Vert\le \Vert S\Vert+\Vert T\Vert.
 $$
 
 **증명**
 
-(a)는 정의에서 바로 나온다. (b)에서 $\|T\|=0$이면 $\|v\|\le 1$인 모든 $v$에 대해 $Tv=0$이다. 임의의 영이 아닌 $u\in V$에 대해 $u/\|u\|$의 노름은 $1$이므로
+(a)는 정의에서 바로 나온다. (b)에서 $\Vert T\Vert=0$이면 $\Vert v\Vert\le 1$인 모든 $v$에 대해 $Tv=0$이다. 임의의 영이 아닌 $u\in V$에 대해 $u/\Vert u\Vert$의 노름은 $1$이므로
 
 $$
-Tu=\|u\|T\left(\frac{u}{\|u\|}\right)=0.
+Tu=\Vert u\Vert T\left(\frac{u}{\Vert u\Vert}\right)=0.
 $$
 
 따라서 $T=0$이다. 반대방향은 명백하다.
@@ -2770,50 +2770,50 @@ $$
 
 $$
 \begin{aligned}
-\|\lambda T\|
-&=\max\{\|\lambda Tv\|:v\in V,\ \|v\|\le 1\}\\
-&=|\lambda|\max\{\|Tv\|:v\in V,\ \|v\|\le 1\}\\
-&=|\lambda|\|T\|
+\Vert\lambda T\Vert
+&=\max\lbrace\Vert\lambda Tv\Vert:v\in V,\ \Vert v\Vert\le 1\rbrace\cr
+&=|\lambda|\max\lbrace\Vert Tv\Vert:v\in V,\ \Vert v\Vert\le 1\rbrace\cr
+&=|\lambda|\Vert T\Vert
 \end{aligned}
 $$
 
 에서 따른다.
 
-(d) $\|S+T\|=\|(S+T)v\|$이고 $\|v\|\le 1$인 $v\in V$를 택한다. 그러면
+(d) $\Vert S+T\Vert=\Vert(S+T)v\Vert$이고 $\Vert v\Vert\le 1$인 $v\in V$를 택한다. 그러면
 
 $$
-\|S+T\|
-=\|Sv+Tv\|
-\le \|Sv\|+\|Tv\|
-\le \|S\|+\|T\|.
+\Vert S+T\Vert
+=\Vert Sv+Tv\Vert
+\le \Vert Sv\Vert+\Vert Tv\Vert
+\le \Vert S\Vert+\Vert T\Vert.
 $$
 
-**7.88 $\|T\|$의 다른 공식들**
+**7.88 $\Vert T\Vert$의 다른 공식들**
 
 $T\in\mathcal{L}(V,W)$라고 하자. 그러면 다음이 성립한다.
 
-(a) $\|T\|$는 $T$의 가장 큰 특이값이다.
+(a) $\Vert T\Vert$는 $T$의 가장 큰 특이값이다.
 
 (b)
 
 $$
-\|T\|=\max\{\|Tv\|:v\in V,\ \|v\|=1\}.
+\Vert T\Vert=\max\lbrace\Vert Tv\Vert:v\in V,\ \Vert v\Vert=1\rbrace.
 $$
 
-(c) $\|T\|$는 모든 $v\in V$에 대해
+(c) $\Vert T\Vert$는 모든 $v\in V$에 대해
 
 $$
-\|Tv\|\le c\|v\|
+\Vert Tv\Vert\le c\Vert v\Vert
 $$
 
 가 성립하게 하는 가장 작은 수 $c$이다.
 
 **증명**
 
-(a)는 (7.85)이다. (b)는 $0<\|v\|\le 1$이면 $u=v/\|v\|$가 $\|u\|=1$을 만족하고
+(a)는 (7.85)이다. (b)는 $0<\Vert v\Vert\le 1$이면 $u=v/\Vert v\Vert$가 $\Vert u\Vert=1$을 만족하고
 
 $$
-\|Tu\|=\frac{\|Tv\|}{\|v\|}\ge \|Tv\|
+\Vert Tu\Vert=\frac{\Vert Tv\Vert}{\Vert v\Vert}\ge \Vert Tv\Vert
 $$
 
 이므로, 최댓값을 찾을 때 노름이 $1$인 벡터만 보아도 된다는 사실에서 따른다.
@@ -2821,31 +2821,31 @@ $$
 (c) $v\ne 0$이면 정의에서
 
 $$
-\left\|T\left(\frac{v}{\|v\|}\right)\right\|\le \|T\|
+\left\Vert T\left(\frac{v}{\Vert v\Vert}\right)\right\Vert\le \Vert T\Vert
 $$
 
 이고, 따라서
 
 $$
-\|Tv\|\le \|T\|\,\|v\|.
+\Vert Tv\Vert\le \Vert T\Vert\thinspace\Vert v\Vert.
 \tag{7.89}
 $$
 
-반대로 어떤 $c$가 모든 $v\in V$에 대해 $\|Tv\|\le c\|v\|$를 만족하면, $\|v\|\le 1$인 모든 $v$에 대해 $\|Tv\|\le c$이다. 최댓값을 취하면 $\|T\|\le c$이다.
+반대로 어떤 $c$가 모든 $v\in V$에 대해 $\Vert Tv\Vert\le c\Vert v\Vert$를 만족하면, $\Vert v\Vert\le 1$인 모든 $v$에 대해 $\Vert Tv\Vert\le c$이다. 최댓값을 취하면 $\Vert T\Vert\le c$이다.
 
 **7.90 예: 노름**
 
-- $I$가 $V$ 위의 항등연산자이면 $\|I\|=1$이다.
-- $T\in\mathcal{L}(\mathbb{F}^n)$의 표준기저에 대한 행렬의 모든 성분이 $1$이면 $\|T\|=n$이다.
-- $T\in\mathcal{L}(V)$이고 $V$가 $T$의 고유벡터들로 이루어진 정규직교기저를 가지며 대응하는 고윳값이 $\lambda_1,\ldots,\lambda_n$이면, $\|T\|$는 $|\lambda_1|,\ldots,|\lambda_n|$ 중 최댓값이다.
-- $T\in\mathcal{L}(\mathbb{R}^5)$의 표준기저에 대한 행렬이 $j$행 $k$열 성분 $\frac1{j^2+k}$를 가지는 $5\times 5$ 행렬이라고 하자. 표준 수학 소프트웨어는 $T$의 가장 큰 특이값이 대략 $0.8$이고 가장 작은 특이값이 대략 $10^{-6}$임을 보여 준다. 따라서 $\|T\|\approx 0.8$이고 $\|T^{-1}\|\approx 10^6$이다. 이 노름들의 정확한 공식은 구할 수 없다.
+- $I$가 $V$ 위의 항등연산자이면 $\Vert I\Vert=1$이다.
+- $T\in\mathcal{L}(\mathbb{F}^n)$의 표준기저에 대한 행렬의 모든 성분이 $1$이면 $\Vert T\Vert=n$이다.
+- $T\in\mathcal{L}(V)$이고 $V$가 $T$의 고유벡터들로 이루어진 정규직교기저를 가지며 대응하는 고윳값이 $\lambda_1,\ldots,\lambda_n$이면, $\Vert T\Vert$는 $|\lambda_1|,\ldots,|\lambda_n|$ 중 최댓값이다.
+- $T\in\mathcal{L}(\mathbb{R}^5)$의 표준기저에 대한 행렬이 $j$행 $k$열 성분 $\frac1{j^2+k}$를 가지는 $5\times 5$ 행렬이라고 하자. 표준 수학 소프트웨어는 $T$의 가장 큰 특이값이 대략 $0.8$이고 가장 작은 특이값이 대략 $10^{-6}$임을 보여 준다. 따라서 $\Vert T\Vert\approx 0.8$이고 $\Vert T^{-1}\Vert\approx 10^6$이다. 이 노름들의 정확한 공식은 구할 수 없다.
 
 **7.91 수반의 노름**
 
 $T\in\mathcal{L}(V,W)$라고 하자. 그러면
 
 $$
-\|T^*\|=\|T\|.
+\Vert T^*\Vert=\Vert T\Vert.
 $$
 
 **증명**
@@ -2854,15 +2854,15 @@ $w\in W$이면
 
 $$
 \begin{aligned}
-\|T^*w\|^2
-&=\langle T^*w,T^*w\rangle\\
-&=\langle TT^*w,w\rangle\\
-&\le \|TT^*w\|\,\|w\|\\
-&\le \|T\|\,\|T^*w\|\,\|w\|.
+\Vert T^*w\Vert^2
+&=\langle T^*w,T^*w\rangle\cr
+&=\langle TT^*w,w\rangle\cr
+&\le \Vert TT^*w\Vert\thinspace\Vert w\Vert\cr
+&\le \Vert T\Vert\thinspace\Vert T^*w\Vert\thinspace\Vert w\Vert.
 \end{aligned}
 $$
 
-따라서 $\|T^*w\|\le \|T\|\,\|w\|$이고, 7.88(c)에 의해 $\|T^*\|\le \|T\|$이다. 이제 이 부등식을 $T^*$에 적용하고 $(T^*)^*=T$를 사용하면 $\|T\|\le\|T^*\|$이다. 따라서 두 노름은 같다.
+따라서 $\Vert T^*w\Vert\le \Vert T\Vert\thinspace\Vert w\Vert$이고, 7.88(c)에 의해 $\Vert T^*\Vert\le \Vert T\Vert$이다. 이제 이 부등식을 $T^*$에 적용하고 $(T^*)^*=T$를 사용하면 $\Vert T\Vert\le\Vert T^*\Vert$이다. 따라서 두 노름은 같다.
 
 ### 더 낮은 차원의 치역을 가진 선형사상으로 근사하기
 
@@ -2873,7 +2873,7 @@ $$
 $T\in\mathcal{L}(V,W)$이고 $s_1\ge\cdots\ge s_m$이 $T$의 양의 특이값이라고 하자. $1\le k<m$이라고 하자. 그러면
 
 $$
-\min\{\|T-S\|:S\in\mathcal{L}(V,W),\ \dim\text{range}S\le k\}=s_{k+1}.
+\min\lbrace\Vert T-S\Vert:S\in\mathcal{L}(V,W),\ \dim\text{range}S\le k\rbrace=s_{k+1}.
 $$
 
 또한
@@ -2891,7 +2891,7 @@ $$
 로 정의하면, $\dim\text{range}T_k=k$이고
 
 $$
-\|T-T_k\|=s_{k+1}.
+\Vert T-T_k\Vert=s_{k+1}.
 $$
 
 **증명**
@@ -2900,15 +2900,15 @@ $v\in V$이면
 
 $$
 \begin{aligned}
-\|(T-T_k)v\|^2
-&=\|s_{k+1}\langle v,e_{k+1}\rangle f_{k+1}+\cdots+s_m\langle v,e_m\rangle f_m\|^2\\
-&=s_{k+1}^2|\langle v,e_{k+1}\rangle|^2+\cdots+s_m^2|\langle v,e_m\rangle|^2\\
-&\le s_{k+1}^2\left(|\langle v,e_{k+1}\rangle|^2+\cdots+|\langle v,e_m\rangle|^2\right)\\
-&\le s_{k+1}^2\|v\|^2.
+\Vert(T-T_k)v\Vert^2
+&=\Vert s_{k+1}\langle v,e_{k+1}\rangle f_{k+1}+\cdots+s_m\langle v,e_m\rangle f_m\Vert^2\cr
+&=s_{k+1}^2|\langle v,e_{k+1}\rangle|^2+\cdots+s_m^2|\langle v,e_m\rangle|^2\cr
+&\le s_{k+1}^2\left(|\langle v,e_{k+1}\rangle|^2+\cdots+|\langle v,e_m\rangle|^2\right)\cr
+&\le s_{k+1}^2\Vert v\Vert^2.
 \end{aligned}
 $$
 
-따라서 $\|T-T_k\|\le s_{k+1}$이다. 또한 $(T-T_k)e_{k+1}=s_{k+1}f_{k+1}$이므로 $\|T-T_k\|=s_{k+1}$이다.
+따라서 $\Vert T-T_k\Vert\le s_{k+1}$이다. 또한 $(T-T_k)e_{k+1}=s_{k+1}f_{k+1}$이므로 $\Vert T-T_k\Vert=s_{k+1}$이다.
 
 이제 $S\in\mathcal{L}(V,W)$이고 $\dim\text{range}S\le k$라고 하자. 그러면 $Se_1,\ldots,Se_{k+1}$은 길이가 $k+1$인 일차종속 리스트이다. 따라서 모두 $0$이 아닌 것은 아닌 스칼라 $a_1,\ldots,a_{k+1}$가 존재하여
 
@@ -2920,16 +2920,16 @@ $$
 
 $$
 \begin{aligned}
-&\|(T-S)(a_1e_1+\cdots+a_{k+1}e_{k+1})\|^2\\
-&\quad=\|T(a_1e_1+\cdots+a_{k+1}e_{k+1})\|^2\\
-&\quad=\|s_1a_1f_1+\cdots+s_{k+1}a_{k+1}f_{k+1}\|^2\\
-&\quad=s_1^2|a_1|^2+\cdots+s_{k+1}^2|a_{k+1}|^2\\
-&\quad\ge s_{k+1}^2(|a_1|^2+\cdots+|a_{k+1}|^2)\\
-&\quad=s_{k+1}^2\|a_1e_1+\cdots+a_{k+1}e_{k+1}\|^2.
+&\Vert(T-S)(a_1e_1+\cdots+a_{k+1}e_{k+1})\Vert^2\cr
+&\quad=\Vert T(a_1e_1+\cdots+a_{k+1}e_{k+1})\Vert^2\cr
+&\quad=\Vert s_1a_1f_1+\cdots+s_{k+1}a_{k+1}f_{k+1}\Vert^2\cr
+&\quad=s_1^2|a_1|^2+\cdots+s_{k+1}^2|a_{k+1}|^2\cr
+&\quad\ge s_{k+1}^2(|a_1|^2+\cdots+|a_{k+1}|^2)\cr
+&\quad=s_{k+1}^2\Vert a_1e_1+\cdots+a_{k+1}e_{k+1}\Vert^2.
 \end{aligned}
 $$
 
-따라서 $\|T-S\|\ge s_{k+1}$이다. 결국 $T_k$가 최적 근사이다.
+따라서 $\Vert T-S\Vert\ge s_{k+1}$이다. 결국 $T_k$가 최적 근사이다.
 
 ### 극분해
 
@@ -2971,7 +2971,7 @@ $$
 으로 정의한다. 그러면
 
 $$
-\|Sv\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2=\|v\|^2
+\Vert Sv\Vert^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2=\Vert v\Vert^2
 $$
 
 이므로 $S$는 유니터리 연산자이다.
@@ -2993,8 +2993,8 @@ $$
 $$
 \begin{aligned}
 S\sqrt{T^*T}v
-&=S(s_1\langle v,e_1\rangle e_1+\cdots+s_m\langle v,e_m\rangle e_m)\\
-&=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m\\
+&=S(s_1\langle v,e_1\rangle e_1+\cdots+s_m\langle v,e_m\rangle e_m)\cr
+&=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m\cr
 &=Tv.
 \end{aligned}
 $$
@@ -3008,7 +3008,7 @@ $$
 $0$을 중심으로 하고 반지름이 $1$인 $V$의 공 $B$는
 
 $$
-B=\{v\in V:\|v\|<1\}
+B=\lbrace v\in V:\Vert v\Vert<1\rbrace
 $$
 
 로 정의된다.
@@ -3019,12 +3019,12 @@ $f_1,\ldots,f_n$이 $V$의 정규직교기저이고 $s_1,\ldots,s_n$이 양수�
 
 $$
 E(s_1f_1,\ldots,s_nf_n) =
-\left\{
+\left\lbrace
 v\in V:
 \frac{|\langle v,f_1\rangle|^2}{s_1^2}
 +\cdots+
 \frac{|\langle v,f_n\rangle|^2}{s_n^2}<1
-\right\}
+\right\rbrace
 $$
 
 로 정의된다.
@@ -3042,7 +3042,7 @@ $$
 $T$가 $V$에서 정의된 함수이고 $\Omega\subset V$이면
 
 $$
-T(\Omega)=\{Tv:v\in\Omega\}
+T(\Omega)=\lbrace Tv:v\in\Omega\rbrace
 $$
 
 로 정의한다. 따라서 $T(V)=\text{range}T$이다.
@@ -3078,7 +3078,7 @@ v=\frac{\langle w,f_1\rangle}{s_1}e_1+\cdots+
 \frac{\langle w,f_n\rangle}{s_n}e_n.
 $$
 
-그러면 $\|v\|<1$이고 (7.100)에 의해 $Tv=w$이다. 따라서
+그러면 $\Vert v\Vert<1$이고 (7.100)에 의해 $Tv=w$이다. 따라서
 
 $$
 T(B)=E(s_1f_1,\ldots,s_nf_n).
@@ -3110,7 +3110,7 @@ $v_1,\ldots,v_n$이 $V$의 기저라고 하자.
 
 $$
 P(v_1,\ldots,v_n)
-=\{a_1v_1+\cdots+a_nv_n:a_1,\ldots,a_n\in(0,1)\}.
+=\lbrace a_1v_1+\cdots+a_nv_n:a_1,\ldots,a_n\in(0,1)\rbrace.
 $$
 
 어떤 $u\in V$에 대해 $u+P(v_1,\ldots,v_n)$ 꼴인 집합을 **평행체**라고 한다. 벡터 $v_1,\ldots,v_n$을 이 평행체의 변이라고 부른다.
@@ -3268,20 +3268,20 @@ $$
 
 | 정규 연산자의 성질  | 고윳값들이 포함되는 집합                      |
 | ------------------- | --------------------------------------------- |
-| 가역                | $\mathbb{C}\setminus\{0\}$                    |
+| 가역                | $\mathbb{C}\setminus\lbrace0\rbrace$                    |
 | 자기수반            | $\mathbb{R}$                                  |
-| 반자기수반          | $\{\lambda\in\mathbb{C}:\text{Re}\lambda=0\}$ |
-| 직교사영            | $\{0,1\}$                                     |
+| 반자기수반          | $\lbrace\lambda\in\mathbb{C}:\text{Re}\lambda=0\rbrace$ |
+| 직교사영            | $\lbrace0,1\rbrace$                                     |
 | 양의 연산자         | $[0,\infty)$                                  |
-| 유니터리            | $\{\lambda\in\mathbb{C}:\| \lambda \| =1\}$   |
-| 노름이 $1$보다 작음 | $\{\lambda\in\mathbb{C}:\| \lambda \| <1\}$   |
+| 유니터리            | $\lbrace\lambda\in\mathbb{C}:\Vert \lambda \Vert =1\rbrace$   |
+| 노름이 $1$보다 작음 | $\lbrace\lambda\in\mathbb{C}:\Vert \lambda \Vert <1\rbrace$   |
 
 ### 연습문제 7F
 
 1. $S,T\in\mathcal{L}(V,W)$이면 다음을 증명하여라.
 
    $$
-   \big|\|S\|-\|T\|\big|\le \|S-T\|.
+   \big|\Vert S\Vert-\Vert T\Vert\big|\le \Vert S-T\Vert.
    $$
 
    이 부등식은 역삼각부등식이라고 불린다.
@@ -3289,35 +3289,35 @@ $$
 2. $T\in\mathcal{L}(V)$가 자기수반이거나, $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$가 정규라고 하자. 다음을 증명하여라.
 
    $$
-   \|T\|=\max\{|\lambda|:\lambda\text{는 }T\text{의 고윳값}\}.
+   \Vert T\Vert=\max\lbrace|\lambda|:\lambda\text{는 }T\text{의 고윳값}\rbrace.
    $$
 
 3. $T\in\mathcal{L}(V,W)$이고 $v\in V$라고 하자. 다음을 증명하여라.
 
    $$
-   \|Tv\|=\|T\|\,\|v\|
+   \Vert Tv\Vert=\Vert T\Vert\thinspace\Vert v\Vert
    \Longleftrightarrow
-   T^*Tv=\|T\|^2v.
+   T^*Tv=\Vert T\Vert^2v.
    $$
 
-4. $T\in\mathcal{L}(V,W)$이고 $v\in V$, $\|Tv\|=\|T\|\,\|v\|$라고 하자. $u\in V$이고 $\langle u,v\rangle=0$이면 $\langle Tu,Tv\rangle=0$임을 증명하여라.
+4. $T\in\mathcal{L}(V,W)$이고 $v\in V$, $\Vert Tv\Vert=\Vert T\Vert\thinspace\Vert v\Vert$라고 하자. $u\in V$이고 $\langle u,v\rangle=0$이면 $\langle Tu,Tv\rangle=0$임을 증명하여라.
 
 5. $U$가 유한차원 내적공간이고 $T\in\mathcal{L}(V,U)$, $S\in\mathcal{L}(U,W)$라고 하자. 다음을 증명하여라.
 
    $$
-   \|ST\|\le \|S\|\,\|T\|.
+   \Vert ST\Vert\le \Vert S\Vert\thinspace\Vert T\Vert.
    $$
 
-6. 증명하거나 반례를 들어라. $S,T\in\mathcal{L}(V)$이면 $\|ST\|=\|TS\|$이다.
+6. 증명하거나 반례를 들어라. $S,T\in\mathcal{L}(V)$이면 $\Vert ST\Vert=\Vert TS\Vert$이다.
 
-7. $S,T\in\mathcal{L}(V,W)$에 대해 $d(S,T)=\|S-T\|$로 정의하면 $d$가 $\mathcal{L}(V,W)$ 위의 거리가 됨을 보여라.
+7. $S,T\in\mathcal{L}(V,W)$에 대해 $d(S,T)=\Vert S-T\Vert$로 정의하면 $d$가 $\mathcal{L}(V,W)$ 위의 거리가 됨을 보여라.
 
-8. (a) $T\in\mathcal{L}(V)$이고 $\|I-T\|<1$이면 $T$가 가역임을 증명하여라.
+8. (a) $T\in\mathcal{L}(V)$이고 $\Vert I-T\Vert<1$이면 $T$가 가역임을 증명하여라.
 
    (b) $S\in\mathcal{L}(V)$가 가역이라고 하자. $T\in\mathcal{L}(V)$이고
 
    $$
-   \|S-T\|<\frac1{\|S^{-1}\|}
+   \Vert S-T\Vert<\frac1{\Vert S^{-1}\Vert}
    $$
 
    이면 $T$가 가역임을 증명하여라.
@@ -3325,7 +3325,7 @@ $$
 9. $T\in\mathcal{L}(V)$라고 하자. 모든 $\varepsilon>0$에 대해 가역 연산자 $S\in\mathcal{L}(V)$가 존재하여
 
    $$
-   0<\|T-S\|<\varepsilon
+   0<\Vert T-S\Vert<\varepsilon
    $$
 
    이 됨을 증명하여라.
@@ -3333,7 +3333,7 @@ $$
 10. $\dim V>1$이고 $T\in\mathcal{L}(V)$가 가역이 아니라고 하자. 모든 $\varepsilon>0$에 대해 가역이 아닌 $S\in\mathcal{L}(V)$가 존재하여
 
     $$
-    0<\|T-S\|<\varepsilon
+    0<\Vert T-S\Vert<\varepsilon
     $$
 
     이 됨을 증명하여라.
@@ -3341,7 +3341,7 @@ $$
 11. $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 모든 $\varepsilon>0$에 대해 대각화가능 연산자 $S\in\mathcal{L}(V)$가 존재하여
 
     $$
-    0<\|T-S\|<\varepsilon
+    0<\Vert T-S\Vert<\varepsilon
     $$
 
     이 됨을 증명하여라.
@@ -3349,16 +3349,16 @@ $$
 12. $T\in\mathcal{L}(V)$가 양의 연산자라고 하자. 다음을 보여라.
 
     $$
-    \|\sqrt T\|=\sqrt{\|T\|}.
+    \Vert\sqrt T\Vert=\sqrt{\Vert T\Vert}.
     $$
 
 13. $S,T\in\mathcal{L}(V)$가 양의 연산자라고 하자. 다음을 보여라.
 
     $$
-    \|S-T\|\le \max\{\|S\|,\|T\|\}\le \|S+T\|.
+    \Vert S-T\Vert\le \max\lbrace\Vert S\Vert,\Vert T\Vert\rbrace\le \Vert S+T\Vert.
     $$
 
-14. $U$와 $W$가 $V$의 부분공간이고 $\|P_U-P_W\|<1$이라고 하자. $\dim U=\dim W$임을 증명하여라.
+14. $U$와 $W$가 $V$의 부분공간이고 $\Vert P_U-P_W\Vert<1$이라고 하자. $\dim U=\dim W$임을 증명하여라.
 
 15. $T\in\mathcal{L}(\mathbb{F}^3)$를
 
@@ -3368,12 +3368,12 @@ $$
 
     로 정의한다. $T=S\sqrt{T^*T}$가 되게 하는 유니터리 연산자 $S\in\mathcal{L}(\mathbb{F}^3)$를 명시적으로 구하여라.
 
-16. $S\in\mathcal{L}(V)$가 가역인 양의 연산자라고 하자. 어떤 $\delta>0$가 존재하여, 자기수반 연산자 $T\in\mathcal{L}(V)$가 $\|S-T\|<\delta$를 만족하면 $T$가 양의 연산자가 됨을 증명하여라.
+16. $S\in\mathcal{L}(V)$가 가역인 양의 연산자라고 하자. 어떤 $\delta>0$가 존재하여, 자기수반 연산자 $T\in\mathcal{L}(V)$가 $\Vert S-T\Vert<\delta$를 만족하면 $T$가 양의 연산자가 됨을 증명하여라.
 
 17. $u\in V$이고 $\varphi_u$가 $\varphi_u(v)=\langle v,u\rangle$로 정의되는 $V$ 위의 선형함수라고 하자. 다음을 증명하여라.
 
     $$
-    \|\varphi_u\|=\|u\|.
+    \Vert\varphi_u\Vert=\Vert u\Vert.
     $$
 
     여기서 스칼라체 $\mathbb{F}$는 $\langle\alpha,\beta\rangle=\alpha\overline{\beta}$가 주어진 내적공간으로 생각한다.
@@ -3383,34 +3383,34 @@ $$
     (a) 다음을 증명하여라.
 
     $$
-    \max\{\|Te_1\|,\ldots,\|Te_n\|\}
-    \le \|T\|
+    \max\lbrace\Vert Te_1\Vert,\ldots,\Vert Te_n\Vert\rbrace
+    \le \Vert T\Vert
     \le
-    (\|Te_1\|^2+\cdots+\|Te_n\|^2)^{1/2}.
+    (\Vert Te_1\Vert^2+\cdots+\Vert Te_n\Vert^2)^{1/2}.
     $$
 
     (b) 다음 등식이 성립하는 것은 $\dim\text{range}T\le 1$인 것과 동치임을 증명하여라.
 
     $$
-    \|T\|=(\|Te_1\|^2+\cdots+\|Te_n\|^2)^{1/2}.
+    \Vert T\Vert=(\Vert Te_1\Vert^2+\cdots+\Vert Te_n\Vert^2)^{1/2}.
     $$
 
 19. $T\in\mathcal{L}(V,W)$이면 다음을 증명하여라.
 
     $$
-    \|T^*T\|=\|T\|^2.
+    \Vert T^*T\Vert=\Vert T\Vert^2.
     $$
 
 20. $T\in\mathcal{L}(V)$가 정규라고 하자. 모든 양의 정수 $k$에 대해 다음을 증명하여라.
 
     $$
-    \|T^k\|=\|T\|^k.
+    \Vert T^k\Vert=\Vert T\Vert^k.
     $$
 
 21. $\dim V>1$이고 $\dim W>1$이라고 하자. $\mathcal{L}(V,W)$ 위의 노름은 내적에서 나오는 노름이 아님을 증명하여라. 즉 모든 $T\in\mathcal{L}(V,W)$에 대해
 
     $$
-    \max\{\|Tv\|:v\in V,\ \|v\|\le 1\}=\sqrt{\langle T,T\rangle}
+    \max\lbrace\Vert Tv\Vert:v\in V,\ \Vert v\Vert\le 1\rbrace=\sqrt{\langle T,T\rangle}
     $$
 
     가 되게 하는 $\mathcal{L}(V,W)$ 위의 내적은 존재하지 않음을 증명하여라.
@@ -3418,7 +3418,7 @@ $$
 22. $T\in\mathcal{L}(V,W)$라고 하자. $n=\dim V$이고 $s_1\ge\cdots\ge s_n$을 $T$의 특이값이라고 하자. $1\le k\le n$이면 다음을 증명하여라.
 
     $$
-    \min\{\|T|_U\|:U\text{는 }V\text{의 부분공간이고 }\dim U=k\} = s_{n-k+1}.
+    \min\lbrace\Vert T|_U\Vert:U\text{는 }V\text{의 부분공간이고 }\dim U=k\rbrace = s_{n-k+1}.
     $$
 
 23. $T\in\mathcal{L}(V,W)$라고 하자. $T$가 $V$와 $W$의 노름에서 오는 거리들에 대해 균등연속임을 보여라.
@@ -3426,15 +3426,15 @@ $$
 24. $T\in\mathcal{L}(V)$가 가역이라고 하자. 다음을 증명하여라.
 
     $$
-    \|T^{-1}\|=\|T\|^{-1}
+    \Vert T^{-1}\Vert=\Vert T\Vert^{-1}
     \Longleftrightarrow
-    \frac{T}{\|T\|}\text{는 유니터리 연산자이다}.
+    \frac{T}{\Vert T\Vert}\text{는 유니터리 연산자이다}.
     $$
 
 25. $u,x\in V$이고 $u\ne 0$이라고 하자. $T\in\mathcal{L}(V)$를 모든 $v\in V$에 대해 $Tv=\langle v,u\rangle x$로 정의한다. 모든 $v\in V$에 대해
 
     $$
-    \sqrt{T^*T}\,v=\frac{\|x\|}{\|u\|}\langle v,u\rangle u
+    \sqrt{T^*T}\thinspace v=\frac{\Vert x\Vert}{\Vert u\Vert}\langle v,u\rangle u
     $$
 
     임을 증명하여라.
@@ -3458,17 +3458,17 @@ $$
     (a) $S$가 유니터리이고
 
     $$
-    \|T-S\|=\max\{|s_1-1|,\ldots,|s_n-1|\}
+    \Vert T-S\Vert=\max\lbrace|s_1-1|,\ldots,|s_n-1|\rbrace
     $$
 
     임을 보여라.
 
-    (b) $E\in\mathcal{L}(V)$가 유니터리이면 $\|T-E\|\ge\|T-S\|$임을 보여라.
+    (b) $E\in\mathcal{L}(V)$가 유니터리이면 $\Vert T-E\Vert\ge\Vert T-S\Vert$임을 보여라.
 
 28. $T\in\mathcal{L}(V)$라고 하자. 어떤 유니터리 연산자 $S\in\mathcal{L}(V)$가 존재하여
 
     $$
-    T=\sqrt{TT^*}\,S
+    T=\sqrt{TT^*}\thinspace S
     $$
 
     가 됨을 증명하여라.

@@ -23,7 +23,7 @@
 - 모든 복소수의 집합은 $\mathbb{C}$로 나타낸다.
 
   $$
-  \mathbb{C} = \{a+bi : a,b \in \mathbb{R}\}.
+  \mathbb{C} = \lbrace a+bi : a,b \in \mathbb{R}\rbrace.
   $$
 
 - $\mathbb{C}$에서의 덧셈과 곱셈은 다음과 같이 정의한다.
@@ -53,9 +53,9 @@ $i$라는 기호는 Leonhard Euler가 1777년에 $\sqrt{-1}$을 나타내기 위
 $$
 \begin{aligned}
 (2+3i)(4+5i)
-&= 2\cdot(4+5i)+(3i)(4+5i) \\
-&= 2\cdot4+2\cdot5i+3i\cdot4+(3i)(5i) \\
-&= 8+10i+12i-15 \\
+&= 2\cdot(4+5i)+(3i)(4+5i) \cr
+&= 2\cdot4+2\cdot5i+3i\cdot4+(3i)(5i) \cr
+&= 8+10i+12i-15 \cr
 &= -7+22i.
 \end{aligned}
 $$
@@ -119,7 +119,7 @@ $$
 $$
 \begin{aligned}
 \alpha\beta
-&= (a + bi)(c + di) \\
+&= (a + bi)(c + di) \cr
 &= (ac - bd) + (ad + bc)i
 \end{aligned}
 $$
@@ -129,7 +129,7 @@ $$
 $$
 \begin{aligned}
 \beta\alpha
-&= (c + di)(a + bi) \\
+&= (c + di)(a + bi) \cr
 &= (ca - db) + (cb + da)i.
 \end{aligned}
 $$
@@ -203,13 +203,13 @@ $\mathbb{R}^n$과 $\mathbb{C}^n$을 정의하기 전에, 두 가지 중요한 �
 - 평면으로 생각할 수 있는 집합 $\mathbb{R}^2$는 실수의 모든 순서쌍의 집합이다.
 
   $$
-  \mathbb{R}^2 = \{(x,y) : x,y \in \mathbb{R}\}.
+  \mathbb{R}^2 = \lbrace(x,y) : x,y \in \mathbb{R}\rbrace.
   $$
 
 - 보통의 공간으로 생각할 수 있는 집합 $\mathbb{R}^3$는 실수의 모든 순서삼쌍의 집합이다.
 
   $$
-  \mathbb{R}^3 = \{(x,y,z) : x,y,z \in \mathbb{R}\}.
+  \mathbb{R}^3 = \lbrace(x,y,z) : x,y,z \in \mathbb{R}\rbrace.
   $$
 
 $\mathbb{R}^2$와 $\mathbb{R}^3$를 더 높은 차원으로 일반화하려면, 먼저 리스트라는 개념을 논의해야 한다.
@@ -235,8 +235,8 @@ $$
 
 **1.9 예: 리스트와 집합**
 
-- 리스트 $(3,5)$와 $(5,3)$은 같지 않지만, 집합 $\{3,5\}$와 $\{5,3\}$은 같다.
-- 리스트 $(4,4)$와 $(4,4,4)$는 길이가 같지 않으므로 같지 않다. 그러나 집합 $\{4,4\}$와 $\{4,4,4\}$는 모두 집합 $\{4\}$와 같다.
+- 리스트 $(3,5)$와 $(5,3)$은 같지 않지만, 집합 $\lbrace3,5\rbrace$와 $\lbrace5,3\rbrace$은 같다.
+- 리스트 $(4,4)$와 $(4,4,4)$는 길이가 같지 않으므로 같지 않다. 그러나 집합 $\lbrace4,4\rbrace$와 $\lbrace4,4,4\rbrace$는 모두 집합 $\lbrace4\rbrace$와 같다.
 
 ### $\mathbb{F}^n$
 
@@ -251,10 +251,10 @@ $\mathbb{R}^2$와 $\mathbb{R}^3$의 고차원 유사물을 정의하기 위해, 
 $\mathbb{F}^n$은 $\mathbb{F}$의 원소들로 이루어진 길이 $n$인 모든 리스트의 집합이다.
 
 $$
-\mathbb{F}^n = \{(x_1,\ldots,x_n) : x_k \in \mathbb{F},\ k=1,\ldots,n\}.
+\mathbb{F}^n = \lbrace(x_1,\ldots,x_n) : x_k \in \mathbb{F},\ k=1,\ldots,n\rbrace.
 $$
 
-$(x_1,\ldots,x_n) \in \mathbb{F}^n$이고 $k \in \{1,\ldots,n\}$일 때, $x_k$를 $(x_1,\ldots,x_n)$의 $k$번째 좌표라고 한다.
+$(x_1,\ldots,x_n) \in \mathbb{F}^n$이고 $k \in \lbrace1,\ldots,n\rbrace$일 때, $x_k$를 $(x_1,\ldots,x_n)$의 $k$번째 좌표라고 한다.
 
 $\mathbb{F}=\mathbb{R}$이고 $n$이 $2$ 또는 $3$이면, 위의 $\mathbb{F}^n$의 정의는 앞서의 $\mathbb{R}^2$와 $\mathbb{R}^3$의 개념과 일치한다.
 
@@ -264,7 +264,7 @@ $\mathbb{C}^4$는 네 개의 복소수로 이루어진 모든 리스트의 집�
 
 $$
 \mathbb{C}^4
-= \{(z_1,z_2,z_3,z_4) : z_1,z_2,z_3,z_4 \in \mathbb{C}\}.
+= \lbrace(z_1,z_2,z_3,z_4) : z_1,z_2,z_3,z_4 \in \mathbb{C}\rbrace.
 $$
 
 $\mathbb{R}^2$에 사는 존재들이 $\mathbb{R}^3$를 어떻게 지각할지를 흥미롭게 설명한 Edwin A. Abbott의 *Flatland: A Romance of Many Dimensions*를 읽어 보라. 1884년에 출판된 이 소설은 네 차원 이상의 물리적 공간을 상상하는 데 도움을 줄 수 있다.
@@ -291,10 +291,10 @@ $x,y \in \mathbb{F}^n$이면 $x+y=y+x$이다.
 $$
 \begin{aligned}
 x+y
-&= (x_1,\ldots,x_n)+(y_1,\ldots,y_n) \\
-&= (x_1+y_1,\ldots,x_n+y_n) \\
-&= (y_1+x_1,\ldots,y_n+x_n) \\
-&= (y_1,\ldots,y_n)+(x_1,\ldots,x_n) \\
+&= (x_1,\ldots,x_n)+(y_1,\ldots,y_n) \cr
+&= (x_1+y_1,\ldots,x_n+y_n) \cr
+&= (y_1+x_1,\ldots,y_n+x_n) \cr
+&= (y_1,\ldots,y_n)+(x_1,\ldots,x_n) \cr
 &= y+x.
 \end{aligned}
 $$
@@ -386,7 +386,7 @@ $\lambda<0$이고 $x \in \mathbb{R}^2$이면, $\lambda x$는 $x$와 반대 방�
 
 ### 체에 관한 여담
 
-체는 $0$과 $1$이라고 불리는 적어도 두 개의 서로 다른 원소를 포함하는 집합이며, 1.3에 나열된 모든 성질을 만족하는 덧셈과 곱셈 연산을 함께 갖춘 것이다. 따라서 $\mathbb{R}$과 $\mathbb{C}$는 체이고, 보통의 덧셈과 곱셈을 갖춘 유리수의 집합도 체이다. 체의 또 다른 예는 집합 $\{0,1\}$이다. 이 집합에서는 보통의 덧셈과 곱셈을 사용하되, $1+1$은 $0$과 같다고 정의한다.
+체는 $0$과 $1$이라고 불리는 적어도 두 개의 서로 다른 원소를 포함하는 집합이며, 1.3에 나열된 모든 성질을 만족하는 덧셈과 곱셈 연산을 함께 갖춘 것이다. 따라서 $\mathbb{R}$과 $\mathbb{C}$는 체이고, 보통의 덧셈과 곱셈을 갖춘 유리수의 집합도 체이다. 체의 또 다른 예는 집합 $\lbrace0,1\rbrace$이다. 이 집합에서는 보통의 덧셈과 곱셈을 사용하되, $1+1$은 $0$과 같다고 정의한다.
 
 이 책에서는 $\mathbb{R}$과 $\mathbb{C}$ 이외의 체는 다루지 않을 것이다. 그러나 선형대수에서 $\mathbb{R}$과 $\mathbb{C}$라는 체에 대해 작동하는 많은 정의, 정리, 증명은 임의의 체에 대해서도 변경 없이 작동한다. 원한다면 이 책의 많은 부분에서(내적 공간을 다루는 제6장과 제7장은 제외) $\mathbb{F}$를 $\mathbb{R}$ 또는 $\mathbb{C}$가 아니라 임의의 체를 나타내는 것으로 생각할 수 있다. 내적 장들을 제외하고, $\mathbb{F}$가 $\mathbb{C}$라는 가정을 가진 결과들에서는 그 가정을 $\mathbb{F}$가 대수적으로 닫힌 체라는 가정으로 바꿀 수 있을 것이다. 대수적으로 닫힌 체란 $\mathbb{F}$의 계수를 가진 모든 상수가 아닌 다항식이 영점을 가진다는 뜻이다. 1C절의 연습문제 13 같은 몇몇 결과는 $\mathbb{F}$에 대한 가정 $1+1 \neq 0$을 필요로 한다.
 
@@ -514,7 +514,7 @@ $$
 
 보통 $\mathbb{F}$의 선택은 문맥상 분명하거나 중요하지 않다. 따라서 우리는 종종 $\mathbb{F}$가 배경에 숨어 있다고 가정하고 구체적으로 언급하지 않는다.
 
-가장 단순한 벡터 공간은 단 하나의 점만 포함하는 $\{0\}$이다.
+가장 단순한 벡터 공간은 단 하나의 점만 포함하는 $\lbrace0\rbrace$이다.
 
 보통의 덧셈과 스칼라 곱을 사용하면 $\mathbb{F}^n$은 $\mathbb{F}$ 위의 벡터 공간이다. 이를 확인해 보라. $\mathbb{F}^n$의 예가 벡터 공간의 정의에 동기를 부여했다.
 
@@ -523,7 +523,7 @@ $$
 $\mathbb{F}^{\infty}$는 $\mathbb{F}$의 원소들로 이루어진 모든 수열의 집합으로 정의한다.
 
 $$
-\mathbb{F}^{\infty} = \{(x_1,x_2,\ldots) : x_k \in \mathbb{F},\ k=1,2,\ldots\}.
+\mathbb{F}^{\infty} = \lbrace(x_1,x_2,\ldots) : x_k \in \mathbb{F},\ k=1,2,\ldots\rbrace.
 $$
 
 $\mathbb{F}^{\infty}$에서의 덧셈과 스칼라 곱은 예상한 대로 정의된다.
@@ -576,7 +576,7 @@ $$
 
 벡터 공간 $\mathbb{R}^{[0,1]}$의 원소는 리스트가 아니라 $[0,1]$ 위의 실숫값 함수이다. 일반적으로 벡터 공간은 추상적인 대상이며, 그 원소는 리스트일 수도 있고, 함수일 수도 있으며, 이상한 대상일 수도 있다.
 
-벡터 공간 $\mathbb{F}^n$은 벡터 공간 $\mathbb{F}^S$의 특별한 경우이다. 왜냐하면 $(x_1,\ldots,x_n) \in \mathbb{F}^n$의 $k$번째 좌표 $x_k$ 대신 $x(k)$라고 쓰면, 이를 집합 $\{1,2,\ldots,n\}$에서 $\mathbb{F}$로 가는 함수 $x$로 생각할 수 있기 때문이다. 다시 말해 $\mathbb{F}^n$을 $\mathbb{F}^{\{1,2,\ldots,n\}}$로 생각할 수 있다. 마찬가지로 $\mathbb{F}^{\infty}$를 $\mathbb{F}^{\{1,2,\ldots\}}$로 생각할 수 있다.
+벡터 공간 $\mathbb{F}^n$은 벡터 공간 $\mathbb{F}^S$의 특별한 경우이다. 왜냐하면 $(x_1,\ldots,x_n) \in \mathbb{F}^n$의 $k$번째 좌표 $x_k$ 대신 $x(k)$라고 쓰면, 이를 집합 $\lbrace1,2,\ldots,n\rbrace$에서 $\mathbb{F}$로 가는 함수 $x$로 생각할 수 있기 때문이다. 다시 말해 $\mathbb{F}^n$을 $\mathbb{F}^{\lbrace1,2,\ldots,n\rbrace}$로 생각할 수 있다. 마찬가지로 $\mathbb{F}^{\infty}$를 $\mathbb{F}^{\lbrace1,2,\ldots\rbrace}$로 생각할 수 있다.
 
 곧 벡터 공간의 추가 예들을 보게 될 것이다. 하지만 먼저 벡터 공간의 기본 성질 몇 가지를 전개해야 한다.
 
@@ -700,12 +700,12 @@ $$
 
    정의에서 어떤 "조건을 대체할 수 있다"는 말은, 원래 조건을 새 조건으로 바꾸어도 그 정의를 만족하는 대상들의 모임이 변하지 않는다는 뜻이다.
 
-6. $\infty$와 $-\infty$는 서로 다른 두 대상이고, 둘 다 $\mathbb{R}$에 속하지 않는다고 하자. 표기에서 예상할 수 있는 방식으로 $\mathbb{R}\cup\{\infty,-\infty\}$ 위에 덧셈과 스칼라 곱을 정의하라. 구체적으로, 두 실수의 합과 곱은 보통과 같고, $t \in \mathbb{R}$에 대해 다음과 같이 정의한다.
+6. $\infty$와 $-\infty$는 서로 다른 두 대상이고, 둘 다 $\mathbb{R}$에 속하지 않는다고 하자. 표기에서 예상할 수 있는 방식으로 $\mathbb{R}\cup\lbrace\infty,-\infty\rbrace$ 위에 덧셈과 스칼라 곱을 정의하라. 구체적으로, 두 실수의 합과 곱은 보통과 같고, $t \in \mathbb{R}$에 대해 다음과 같이 정의한다.
 
    $$
    t\infty =
-   \begin{cases} -\infty & t<0\text{일 때}, \\
-   0 & t=0\text{일 때}, \\
+   \begin{cases} -\infty & t<0\text{일 때}, \cr
+   0 & t=0\text{일 때}, \cr
    \infty & t>0\text{일 때},
    \end{cases}
    $$
@@ -713,8 +713,8 @@ $$
    $$
    t(-\infty) =
    \begin{cases}
-   \infty & t<0\text{일 때}, \\
-   0 & t=0\text{일 때}, \\ -\infty & t>0\text{일 때},
+   \infty & t<0\text{일 때}, \cr
+   0 & t=0\text{일 때}, \cr -\infty & t>0\text{일 때},
    \end{cases}
    $$
 
@@ -732,7 +732,7 @@ $$
    \infty+(-\infty)=(-\infty)+\infty=0.
    $$
 
-   이 덧셈과 스칼라 곱에 의해 $\mathbb{R}\cup\{\infty,-\infty\}$는 $\mathbb{R}$ 위의 벡터 공간인가? 설명하라.
+   이 덧셈과 스칼라 곱에 의해 $\mathbb{R}\cup\lbrace\infty,-\infty\rbrace$는 $\mathbb{R}$ 위의 벡터 공간인가? 설명하라.
 
 7. $S$가 공집합이 아닌 집합이라고 하자. $V^S$는 $S$에서 $V$로 가는 함수들의 집합을 나타낸다고 하자. $V^S$ 위의 자연스러운 덧셈과 스칼라 곱을 정의하고, 이 정의들에 의해 $V^S$가 벡터 공간임을 보여라.
 
@@ -802,7 +802,7 @@ $u \in U$이면, $-u$(1.32에 의해 $(-1)u$와 같다)도 위의 세 번째 조
 (a) $b \in \mathbb{F}$이면
 
 $$
-\{(x_1,x_2,x_3,x_4) \in \mathbb{F}^4 : x_3=5x_4+b\}
+\lbrace(x_1,x_2,x_3,x_4) \in \mathbb{F}^4 : x_3=5x_4+b\rbrace
 $$
 
 는 $b=0$일 때, 그리고 그때에만 $\mathbb{F}^4$의 부분공간이다.
@@ -815,11 +815,11 @@ $$
 
 (e) 극한이 $0$인 모든 복소수 수열의 집합은 $\mathbb{C}^{\infty}$의 부분공간이다.
 
-집합 $\{0\}$은 $V$의 가장 작은 부분공간이고, $V$ 자체는 $V$의 가장 큰 부분공간이다. 공집합은 $V$의 부분공간이 아니다. 부분공간은 벡터 공간이어야 하므로 적어도 하나의 원소, 즉 덧셈 항등원을 포함해야 하기 때문이다.
+집합 $\lbrace0\rbrace$은 $V$의 가장 작은 부분공간이고, $V$ 자체는 $V$의 가장 큰 부분공간이다. 공집합은 $V$의 부분공간이 아니다. 부분공간은 벡터 공간이어야 하므로 적어도 하나의 원소, 즉 덧셈 항등원을 포함해야 하기 때문이다.
 
 위 항목들 중 일부를 확인하는 것은 미적분학의 일부 아래에 깔린 선형 구조를 보여 준다. 예를 들어 (b)는 두 연속함수의 합이 연속이라는 결과를 필요로 한다. 또 다른 예로 (d)는 상수 $c$에 대해 $cf$의 도함수가 $c$ 곱하기 $f$의 도함수와 같다는 결과를 필요로 한다.
 
-$\mathbb{R}^2$의 부분공간은 정확히 $\{0\}$, 원점을 지나는 $\mathbb{R}^2$의 모든 직선, 그리고 $\mathbb{R}^2$이다. $\mathbb{R}^3$의 부분공간은 정확히 $\{0\}$, 원점을 지나는 $\mathbb{R}^3$의 모든 직선, 원점을 지나는 $\mathbb{R}^3$의 모든 평면, 그리고 $\mathbb{R}^3$이다. 이 모든 대상이 실제로 부분공간임을 증명하는 것은 간단하다. 어려운 부분은 그것들이 $\mathbb{R}^2$와 $\mathbb{R}^3$의 유일한 부분공간임을 보이는 것이다. 이 일은 다음 장에서 몇 가지 추가 도구를 도입한 뒤 더 쉬워질 것이다.
+$\mathbb{R}^2$의 부분공간은 정확히 $\lbrace0\rbrace$, 원점을 지나는 $\mathbb{R}^2$의 모든 직선, 그리고 $\mathbb{R}^2$이다. $\mathbb{R}^3$의 부분공간은 정확히 $\lbrace0\rbrace$, 원점을 지나는 $\mathbb{R}^3$의 모든 직선, 원점을 지나는 $\mathbb{R}^3$의 모든 평면, 그리고 $\mathbb{R}^3$이다. 이 모든 대상이 실제로 부분공간임을 증명하는 것은 간단하다. 어려운 부분은 그것들이 $\mathbb{R}^2$와 $\mathbb{R}^3$의 유일한 부분공간임을 보이는 것이다. 이 일은 다음 장에서 몇 가지 추가 도구를 도입한 뒤 더 쉬워질 것이다.
 
 ### 부분공간의 합
 
@@ -833,7 +833,7 @@ $V_1,\ldots,V_m$이 $V$의 부분공간이라고 하자. $V_1,\ldots,V_m$의 합
 
 $$
 V_1+\cdots+V_m
-= \{v_1+\cdots+v_m : v_1 \in V_1,\ldots,v_m \in V_m\}.
+= \lbrace v_1+\cdots+v_m : v_1 \in V_1,\ldots,v_m \in V_m\rbrace.
 $$
 
 부분공간들의 합의 예를 몇 가지 살펴보자.
@@ -843,15 +843,15 @@ $$
 $U$는 두 번째와 세 번째 좌표가 $0$인 $\mathbb{F}^3$의 모든 원소의 집합이고, $W$는 첫 번째와 세 번째 좌표가 $0$인 $\mathbb{F}^3$의 모든 원소의 집합이라고 하자.
 
 $$
-U = \{(x,0,0) \in \mathbb{F}^3 : x \in \mathbb{F}\}
+U = \lbrace(x,0,0) \in \mathbb{F}^3 : x \in \mathbb{F}\rbrace
 \quad\text{그리고}\quad
-W = \{(0,y,0) \in \mathbb{F}^3 : y \in \mathbb{F}\}.
+W = \lbrace(0,y,0) \in \mathbb{F}^3 : y \in \mathbb{F}\rbrace.
 $$
 
 그러면 확인해야 하듯이,
 
 $$
-U+W = \{(x,y,0) \in \mathbb{F}^3 : x,y \in \mathbb{F}\}.
+U+W = \lbrace(x,y,0) \in \mathbb{F}^3 : x,y \in \mathbb{F}\rbrace.
 $$
 
 **1.38 예: $\mathbb{F}^4$의 부분공간들의 합**
@@ -859,13 +859,13 @@ $$
 다음과 같다고 하자.
 
 $$
-U = \{(x,x,y,y) \in \mathbb{F}^4 : x,y \in \mathbb{F}\}
+U = \lbrace(x,x,y,y) \in \mathbb{F}^4 : x,y \in \mathbb{F}\rbrace
 $$
 
 이고
 
 $$
-W = \{(x,x,x,y) \in \mathbb{F}^4 : x,y \in \mathbb{F}\}.
+W = \lbrace(x,x,x,y) \in \mathbb{F}^4 : x,y \in \mathbb{F}\rbrace.
 $$
 
 기호 대신 말로 표현하면, $U$는 첫 두 좌표가 서로 같고 세 번째와 네 번째 좌표가 서로 같은 $\mathbb{F}^4$의 원소들의 집합이라고 할 수 있다. 마찬가지로 $W$는 처음 세 좌표가 서로 같은 $\mathbb{F}^4$의 원소들의 집합이다.
@@ -879,7 +879,7 @@ $$
 이므로 $U+W$의 모든 원소는 첫 두 좌표가 서로 같음을 알 수 있다. 따라서
 
 $$
-U+W \subseteq \{(x,x,y,z) \in \mathbb{F}^4 : x,y,z \in \mathbb{F}\}.
+U+W \subseteq \lbrace(x,x,y,z) \in \mathbb{F}^4 : x,y,z \in \mathbb{F}\rbrace.
 \tag{1.39}
 $$
 
@@ -892,7 +892,7 @@ $$
 이고, 오른쪽의 첫 번째 벡터는 $U$에 속하며 두 번째 벡터는 $W$에 속한다. 따라서 $(x,x,y,z) \in U+W$이고, 이는 1.39의 포함이 반대 방향으로도 성립함을 보인다. 그러므로
 
 $$
-U+W = \{(x,x,y,z) \in \mathbb{F}^4 : x,y,z \in \mathbb{F}\}.
+U+W = \lbrace(x,x,y,z) \in \mathbb{F}^4 : x,y,z \in \mathbb{F}\rbrace.
 $$
 
 이는 $U+W$가 첫 두 좌표가 서로 같은 $\mathbb{F}^4$의 원소들의 집합임을 보여 준다.
@@ -931,9 +931,9 @@ $V_1,\ldots,V_m$이 $V$의 부분공간이라고 하자.
 $U$는 마지막 좌표가 $0$인 벡터들로 이루어진 $\mathbb{F}^3$의 부분공간이고, $W$는 처음 두 좌표가 $0$인 벡터들로 이루어진 $\mathbb{F}^3$의 부분공간이라고 하자.
 
 $$
-U = \{(x,y,0) \in \mathbb{F}^3 : x,y \in \mathbb{F}\}
+U = \lbrace(x,y,0) \in \mathbb{F}^3 : x,y \in \mathbb{F}\rbrace
 \quad\text{그리고}\quad
-W = \{(0,0,z) \in \mathbb{F}^3 : z \in \mathbb{F}\}.
+W = \lbrace(0,0,z) \in \mathbb{F}^3 : z \in \mathbb{F}\rbrace.
 $$
 
 그러면 확인해야 하듯이
@@ -949,7 +949,7 @@ TeX에서 $\oplus$를 만들려면 `\oplus`를 입력한다.
 $V_k$가 $k$번째 자리만 제외하고 모든 좌표가 $0$인 벡터들로 이루어진 $\mathbb{F}^n$의 부분공간이라고 하자. 예를 들어
 
 $$
-V_2 = \{(0,x,0,\ldots,0) \in \mathbb{F}^n : x \in \mathbb{F}\}.
+V_2 = \lbrace(0,x,0,\ldots,0) \in \mathbb{F}^n : x \in \mathbb{F}\rbrace.
 $$
 
 그러면 확인해야 하듯이
@@ -965,15 +965,15 @@ $$
 다음과 같다고 하자.
 
 $$
-V_1 = \{(x,y,0) \in \mathbb{F}^3 : x,y \in \mathbb{F}\},
+V_1 = \lbrace(x,y,0) \in \mathbb{F}^3 : x,y \in \mathbb{F}\rbrace,
 $$
 
 $$
-V_2 = \{(0,0,z) \in \mathbb{F}^3 : z \in \mathbb{F}\},
+V_2 = \lbrace(0,0,z) \in \mathbb{F}^3 : z \in \mathbb{F}\rbrace,
 $$
 
 $$
-V_3 = \{(0,y,y) \in \mathbb{F}^3 : y \in \mathbb{F}\}.
+V_3 = \lbrace(0,y,y) \in \mathbb{F}^3 : y \in \mathbb{F}\rbrace.
 $$
 
 그러면 $\mathbb{F}^3=V_1+V_2+V_3$이다. 왜냐하면 모든 벡터 $(x,y,z) \in \mathbb{F}^3$는
@@ -1039,14 +1039,14 @@ $U$와 $W$가 $V$의 부분공간이라고 하자. 그러면
 $$
 U+W\text{는 직합이다}
 \Longleftrightarrow
-U \cap W = \{0\}.
+U \cap W = \lbrace0\rbrace.
 $$
 
-즉 $U+W$가 직합일 필요충분조건은 $U \cap W=\{0\}$이다.
+즉 $U+W$가 직합일 필요충분조건은 $U \cap W=\lbrace0\rbrace$이다.
 
-**증명** 먼저 $U+W$가 직합이라고 하자. $v \in U \cap W$이면 $0=v+(-v)$이고, 여기서 $v \in U$이며 $-v \in W$이다. $U$의 벡터와 $W$의 벡터의 합으로 $0$을 표현하는 방식이 유일하므로, $v=0$이다. 따라서 $U \cap W=\{0\}$이고, 한 방향의 증명이 끝난다.
+**증명** 먼저 $U+W$가 직합이라고 하자. $v \in U \cap W$이면 $0=v+(-v)$이고, 여기서 $v \in U$이며 $-v \in W$이다. $U$의 벡터와 $W$의 벡터의 합으로 $0$을 표현하는 방식이 유일하므로, $v=0$이다. 따라서 $U \cap W=\lbrace0\rbrace$이고, 한 방향의 증명이 끝난다.
 
-반대 방향을 증명하기 위해 이제 $U \cap W=\{0\}$이라고 하자. $U+W$가 직합임을 증명하기 위해, $u \in U$, $w \in W$이고
+반대 방향을 증명하기 위해 이제 $U \cap W=\lbrace0\rbrace$이라고 하자. $U+W$가 직합임을 증명하기 위해, $u \in U$, $w \in W$이고
 
 $$
 0=u+w
@@ -1054,12 +1054,12 @@ $$
 
 라고 하자. 증명을 끝내려면 1.45에 의해 $u=w=0$임을 보이면 충분하다. 위 식은 $u=-w \in W$임을 함의한다. 따라서 $u \in U \cap W$이다. 그러므로 $u=0$이고, 위 식에 의해 $w=0$이다. 이로써 증명이 끝난다.
 
-부분공간들의 합은 부분집합들의 합집합과 유사하다. 마찬가지로 부분공간들의 직합은 부분집합들의 서로소 합집합과 유사하다. 벡터 공간의 두 부분공간은 둘 다 $0$을 포함하므로 서로소일 수 없다. 따라서 서로소성은, 적어도 두 부분공간의 경우에는, 교집합이 $\{0\}$과 같다는 요구로 대체된다.
+부분공간들의 합은 부분집합들의 합집합과 유사하다. 마찬가지로 부분공간들의 직합은 부분집합들의 서로소 합집합과 유사하다. 벡터 공간의 두 부분공간은 둘 다 $0$을 포함하므로 서로소일 수 없다. 따라서 서로소성은, 적어도 두 부분공간의 경우에는, 교집합이 $\lbrace0\rbrace$과 같다는 요구로 대체된다.
 
 위 결과는 두 부분공간의 경우만 다룬다. 두 개보다 많은 부분공간에 대한 가능한 직합을 물을 때에는, 각 쌍의 부분공간이 오직 $0$에서만 만나는지 검사하는 것만으로는 충분하지 않다. 이를 보려면 예 1.44를 생각하라. 그 직합이 아닌 예에서는
 
 $$
-V_1 \cap V_2 = V_1 \cap V_3 = V_2 \cap V_3 = \{0\}
+V_1 \cap V_2 = V_1 \cap V_3 = V_2 \cap V_3 = \lbrace0\rbrace
 $$
 
 이다.
@@ -1071,25 +1071,25 @@ $$
    (a)
 
    $$
-   \{(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1+2x_2+3x_3=0\}
+   \lbrace(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1+2x_2+3x_3=0\rbrace
    $$
 
    (b)
 
    $$
-   \{(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1+2x_2+3x_3=4\}
+   \lbrace(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1+2x_2+3x_3=4\rbrace
    $$
 
    (c)
 
    $$
-   \{(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1x_2x_3=0\}
+   \lbrace(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1x_2x_3=0\rbrace
    $$
 
    (d)
 
    $$
-   \{(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1=5x_3\}
+   \lbrace(x_1,x_2,x_3) \in \mathbb{F}^3 : x_1=5x_3\rbrace
    $$
 
 2. 예 1.35의 부분공간에 관한 모든 주장을 확인하라.
@@ -1109,13 +1109,13 @@ $$
 6. (a) 다음 집합은 $\mathbb{R}^3$의 부분공간인가?
 
    $$
-   \{(a,b,c) \in \mathbb{R}^3 : a^3=b^3\}
+   \lbrace(a,b,c) \in \mathbb{R}^3 : a^3=b^3\rbrace
    $$
 
    (b) 다음 집합은 $\mathbb{C}^3$의 부분공간인가?
 
    $$
-   \{(a,b,c) \in \mathbb{C}^3 : a^3=b^3\}
+   \lbrace(a,b,c) \in \mathbb{C}^3 : a^3=b^3\rbrace
    $$
 
 7. 증명하거나 반례를 들어라. $U$가 $\mathbb{R}^2$의 공집합이 아닌 부분집합이고, $U$가 덧셈에 대해 닫혀 있으며 덧셈 역원을 취하는 것에 대해 닫혀 있다면(즉 $u \in U$이면 $-u \in U$), $U$는 $\mathbb{R}^2$의 부분공간이다.
@@ -1137,13 +1137,13 @@ $$
 14. 다음과 같다고 하자.
 
     $$
-    U = \{(x,-x,2x) \in \mathbb{F}^3 : x \in \mathbb{F}\}
+    U = \lbrace(x,-x,2x) \in \mathbb{F}^3 : x \in \mathbb{F}\rbrace
     $$
 
     이고
 
     $$
-    W = \{(x,x,2x) \in \mathbb{F}^3 : x \in \mathbb{F}\}.
+    W = \lbrace(x,x,2x) \in \mathbb{F}^3 : x \in \mathbb{F}\rbrace.
     $$
 
     $U+W$를 기호를 사용하여 설명하고, 또한 기호를 사용하지 않는 설명도 제시하라.
@@ -1173,7 +1173,7 @@ $$
 20. 다음과 같다고 하자.
 
     $$
-    U = \{(x,x,y,y) \in \mathbb{F}^4 : x,y \in \mathbb{F}\}.
+    U = \lbrace(x,x,y,y) \in \mathbb{F}^4 : x,y \in \mathbb{F}\rbrace.
     $$
 
     $\mathbb{F}^4=U\oplus W$가 되도록 $\mathbb{F}^4$의 부분공간 $W$를 찾아라.
@@ -1181,7 +1181,7 @@ $$
 21. 다음과 같다고 하자.
 
     $$
-    U = \{(x,y,x+y,x-y,2x) \in \mathbb{F}^5 : x,y \in \mathbb{F}\}.
+    U = \lbrace(x,y,x+y,x-y,2x) \in \mathbb{F}^5 : x,y \in \mathbb{F}\rbrace.
     $$
 
     $\mathbb{F}^5=U\oplus W$가 되도록 $\mathbb{F}^5$의 부분공간 $W$를 찾아라.
@@ -1189,10 +1189,10 @@ $$
 22. 다음과 같다고 하자.
 
     $$
-    U = \{(x,y,x+y,x-y,2x) \in \mathbb{F}^5 : x,y \in \mathbb{F}\}.
+    U = \lbrace(x,y,x+y,x-y,2x) \in \mathbb{F}^5 : x,y \in \mathbb{F}\rbrace.
     $$
 
-    어느 것도 $\{0\}$과 같지 않은 $\mathbb{F}^5$의 세 부분공간 $W_1,W_2,W_3$를 찾아서
+    어느 것도 $\lbrace0\rbrace$과 같지 않은 $\mathbb{F}^5$의 세 부분공간 $W_1,W_2,W_3$를 찾아서
 
     $$
     \mathbb{F}^5 = U \oplus W_1 \oplus W_2 \oplus W_3

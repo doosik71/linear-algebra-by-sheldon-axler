@@ -51,7 +51,7 @@ $$
 - 적분으로 정의된 사상 $T \in \mathcal{L}(\mathcal{P}(\mathbb{R}),\mathbb{R})$:
 
   $$
-  Tp=\int_0^1 p(x)\,dx.
+  Tp=\int_0^1 p(x)\thinspace dx.
   $$
 
 - $x^2$를 곱하는 사상 $T \in \mathcal{L}(\mathcal{P}(\mathbb{R}))$:
@@ -69,7 +69,7 @@ $$
 - $T \in \mathcal{L}(\mathbb{R}^3,\mathbb{R}^2)$를
 
   $$
-  T(x,y,z)=(2x-y+3z,\;7x+5y-6z)
+  T(x,y,z)=(2x-y+3z,\thickspace7x+5y-6z)
   $$
 
   로 정의하면 $T$는 선형사상이다.
@@ -209,7 +209,7 @@ $$
 1. $b,c \in \mathbb{R}$라 하자. $T:\mathbb{R}^3 \to \mathbb{R}^2$를
 
    $$
-   T(x,y,z)=(2x-4y+3z+b,\;6x+cxyz)
+   T(x,y,z)=(2x-4y+3z+b,\thickspace6x+cxyz)
    $$
 
    로 정의한다. $T$가 선형일 필요충분조건이 $b=c=0$임을 보여라.
@@ -217,8 +217,8 @@ $$
 2. $b,c \in \mathbb{R}$라 하자. $T:\mathcal{P}(\mathbb{R}) \to \mathbb{R}^2$를
 
    $$
-   Tp=\left(3p(4)+5p'(6)+bp(1)p(2),\;
-   \int_{-1}^{2} x^3p(x)\,dx+c\sin p(0)\right)
+   Tp=\left(3p(4)+5p'(6)+bp(1)p(2),\thickspace
+   \int_{-1}^{2} x^3p(x)\thinspace dx+c\sin p(0)\right)
    $$
 
    로 정의한다. $T$가 선형일 필요충분조건이 $b=c=0$임을 보여라.
@@ -254,7 +254,7 @@ $$
     $$
     Tv =
     \begin{cases}
-    Sv, & v\in U,\\
+    Sv, & v\in U,\cr
     0, & v\in V,\ v\notin U
     \end{cases}
     $$
@@ -265,11 +265,11 @@ $$
 
 14. $V$가 유한차원이고 $\dim V>0$이며 $W$가 무한차원이라고 하자. $\mathcal{L}(V,W)$가 무한차원임을 증명하라.
 
-15. $v_1,\ldots,v_m$이 $V$에서 선형종속이고 $W\ne\{0\}$라 하자. 어떤 $w_1,\ldots,w_m \in W$가 존재하여 $Tv_k=w_k$를 모든 $k=1,\ldots,m$에 대해 만족하는 $T \in \mathcal{L}(V,W)$가 존재하지 않음을 증명하라.
+15. $v_1,\ldots,v_m$이 $V$에서 선형종속이고 $W\ne\lbrace0\rbrace$라 하자. 어떤 $w_1,\ldots,w_m \in W$가 존재하여 $Tv_k=w_k$를 모든 $k=1,\ldots,m$에 대해 만족하는 $T \in \mathcal{L}(V,W)$가 존재하지 않음을 증명하라.
 
 16. $V$가 유한차원이고 $\dim V>1$이면 $ST\ne TS$인 $S,T\in\mathcal{L}(V)$가 존재함을 증명하라.
 
-17. $V$가 유한차원이라고 하자. $\mathcal{L}(V)$의 양쪽 아이디얼은 $\{0\}$와 $\mathcal{L}(V)$뿐임을 보여라. 여기서 부분공간 $\mathcal{E}$가 양쪽 아이디얼이라는 것은 모든 $E\in\mathcal{E}$와 모든 $T\in\mathcal{L}(V)$에 대해 $TE\in\mathcal{E}$이고 $ET\in\mathcal{E}$라는 뜻이다.
+17. $V$가 유한차원이라고 하자. $\mathcal{L}(V)$의 양쪽 아이디얼은 $\lbrace0\rbrace$와 $\mathcal{L}(V)$뿐임을 보여라. 여기서 부분공간 $\mathcal{E}$가 양쪽 아이디얼이라는 것은 모든 $E\in\mathcal{E}$와 모든 $T\in\mathcal{L}(V)$에 대해 $TE\in\mathcal{E}$이고 $ET\in\mathcal{E}$라는 뜻이다.
 
 ## 3B 영공간과 치역
 
@@ -280,7 +280,7 @@ $$
 $T \in \mathcal{L}(V,W)$라 하자. $T$의 영공간은
 
 $$
-\text{null}T=\{v\in V:Tv=0\}
+\text{null}T=\lbrace v\in V:Tv=0\rbrace
 $$
 
 으로 정의된다.
@@ -292,15 +292,15 @@ $$
 
   $$
   \text{null}\varphi =
-  \{(z_1,z_2,z_3)\in\mathbb{C}^3:z_1+2z_2+3z_3=0\}.
+  \lbrace(z_1,z_2,z_3)\in\mathbb{C}^3:z_1+2z_2+3z_3=0\rbrace.
   $$
 
 - 미분사상 $D:\mathcal{P}(\mathbb{R})\to\mathcal{P}(\mathbb{R})$의 영공간은 상수다항식들의 집합이다.
-- $x^2$를 곱하는 사상의 영공간은 $\{0\}$이다.
+- $x^2$를 곱하는 사상의 영공간은 $\lbrace0\rbrace$이다.
 - 뒤로 이동하는 사상 $T:\mathbb{F}^{\infty}\to\mathbb{F}^{\infty}$의 영공간은
 
   $$
-  \{(a,0,0,\ldots):a\in\mathbb{F}\}
+  \lbrace(a,0,0,\ldots):a\in\mathbb{F}\rbrace
   $$
 
   이다.
@@ -334,10 +334,10 @@ $$
 $T \in \mathcal{L}(V,W)$라 하자. 그러면
 
 $$
-T\text{가 단사} \quad \Longleftrightarrow \quad \text{null}T=\{0\}.
+T\text{가 단사} \quad \Longleftrightarrow \quad \text{null}T=\lbrace0\rbrace.
 $$
 
-증명. $T$가 단사이면 $Tv=0=T0$에서 $v=0$이므로 영공간은 $\{0\}$이다. 반대로 $\text{null}T=\{0\}$이고 $Tu=Tv$이면 $T(u-v)=0$이므로 $u-v=0$, 따라서 $u=v$이다.
+증명. $T$가 단사이면 $Tv=0=T0$에서 $v=0$이므로 영공간은 $\lbrace0\rbrace$이다. 반대로 $\text{null}T=\lbrace0\rbrace$이고 $Tu=Tv$이면 $T(u-v)=0$이므로 $u-v=0$, 따라서 $u=v$이다.
 
 ### 치역과 전사성
 
@@ -346,18 +346,18 @@ $$
 $T:V\to W$의 치역은
 
 $$
-\text{range}T=\{Tv:v\in V\}
+\text{range}T=\lbrace Tv:v\in V\rbrace
 $$
 
 이다.
 
 **3.17 예: 치역**
 
-- 영사상의 치역은 $\{0\}$이다.
+- 영사상의 치역은 $\lbrace0\rbrace$이다.
 - $T:\mathbb{R}^2\to\mathbb{R}^3$가 $T(x,y)=(2x,5y,x+y)$이면 치역은
 
   $$
-  \{(2x,5y,x+y):x,y\in\mathbb{R}\}
+  \lbrace(2x,5y,x+y):x,y\in\mathbb{R}\rbrace
   $$
 
   이다.
@@ -433,7 +433,7 @@ $T:\mathbb{F}^4\to\mathbb{F}^3$가 선형이면 $T$는 단사가 아니다. 예�
 
 $$
 T(w,x,y,z) =
-(w+\sqrt{7}x+5y+\pi z,\;2w+6x-y+3z,\;w+x+y+z)
+(w+\sqrt{7}x+5y+\pi z,\thickspace2w+6x-y+3z,\thickspace w+x+y+z)
 $$
 
 도 단사가 아니다.
@@ -504,7 +504,7 @@ $$
 
    (b) $v_1,\ldots,v_m$이 선형독립이라는 것은 $T$의 어떤 성질에 대응하는가?
 
-4. $\{T\in\mathcal{L}(\mathbb{R}^5,\mathbb{R}^4):\dim\text{null}T>2\}$가 $\mathcal{L}(\mathbb{R}^5,\mathbb{R}^4)$의 부분공간이 아님을 보여라.
+4. $\lbrace T\in\mathcal{L}(\mathbb{R}^5,\mathbb{R}^4):\dim\text{null}T>2\rbrace$가 $\mathcal{L}(\mathbb{R}^5,\mathbb{R}^4)$의 부분공간이 아님을 보여라.
 
 5. $\text{range}T=\text{null}T$인 $T\in\mathcal{L}(\mathbb{R}^4)$의 예를 들어라.
 
@@ -521,16 +521,16 @@ $$
 11. $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라 하자. 다음을 만족하는 $V$의 부분공간 $U$가 존재함을 증명하라.
 
     $$
-    U\cap\text{null}T=\{0\},
+    U\cap\text{null}T=\lbrace0\rbrace,
     \qquad
-    \text{range}T=\{Tu:u\in U\}.
+    \text{range}T=\lbrace Tu:u\in U\rbrace.
     $$
 
 12. $T:\mathbb{F}^4\to\mathbb{F}^2$가 선형이고
 
     $$
     \text{null}T =
-    \{(x_1,x_2,x_3,x_4)\in\mathbb{F}^4:x_1=5x_2,\ x_3=7x_4\}
+    \lbrace(x_1,x_2,x_3,x_4)\in\mathbb{F}^4:x_1=5x_2,\ x_3=7x_4\rbrace
     $$
 
     라 하자. $T$가 전사임을 증명하라.
@@ -540,7 +540,7 @@ $$
 14. 영공간이
 
     $$
-    \{(x_1,x_2,x_3,x_4,x_5)\in\mathbb{F}^5:x_1=3x_2,\ x_3=x_4=x_5\}
+    \lbrace(x_1,x_2,x_3,x_4,x_5)\in\mathbb{F}^5:x_1=3x_2,\ x_3=x_4=x_5\rbrace
     $$
 
     인 $\mathbb{F}^5$에서 $\mathbb{F}^2$로 가는 선형사상은 존재하지 않음을 증명하라.
@@ -563,10 +563,10 @@ $$
 
 20. $W$가 유한차원이고 $T\in\mathcal{L}(V,W)$라 하자. $T$가 전사일 필요충분조건은 $TS$가 $W$ 위의 항등연산자가 되도록 하는 $S\in\mathcal{L}(W,V)$가 존재하는 것임을 증명하라.
 
-21. $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$이며 $U$가 $W$의 부분공간이라고 하자. $\{v\in V:Tv\in U\}$가 $V$의 부분공간임을 증명하고,
+21. $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$이며 $U$가 $W$의 부분공간이라고 하자. $\lbrace v\in V:Tv\in U\rbrace$가 $V$의 부분공간임을 증명하고,
 
     $$
-    \dim\{v\in V:Tv\in U\} =
+    \dim\lbrace v\in V:Tv\in U\rbrace =
     \dim\text{null}T+\dim(U\cap\text{range}T)
     $$
 
@@ -585,7 +585,7 @@ $$
     $$
     \dim\text{range}ST
     \le
-    \min\{\dim\text{range}S,\dim\text{range}T\}.
+    \min\lbrace\dim\text{range}S,\dim\text{range}T\rbrace.
     $$
 
 24. (a) $\dim V=5$이고 $S,T\in\mathcal{L}(V)$이며 $ST=0$이라 하자. $\dim\text{range}TS\le2$임을 증명하라.
@@ -613,7 +613,7 @@ $$
 30. $\varphi\in\mathcal{L}(V,\mathbb{F})$이고 $\varphi\ne0$라 하자. $u\in V$가 $\text{null}\varphi$에 속하지 않으면
 
     $$
-    V=\text{null}\varphi\oplus\{au:a\in\mathbb{F}\}
+    V=\text{null}\varphi\oplus\lbrace au:a\in\mathbb{F}\rbrace
     $$
 
     임을 증명하라.
@@ -659,8 +659,8 @@ $m$행 $n$열 행렬은 $\mathbb{F}$의 원소들이 직사각형 모양으로 �
 $$
 A =
 \begin{pmatrix}
-A_{1,1} & \cdots & A_{1,n}\\
-\vdots & & \vdots\\
+A_{1,1} & \cdots & A_{1,n}\cr
+\vdots & & \vdots\cr
 A_{m,1} & \cdots & A_{m,n}
 \end{pmatrix}.
 $$
@@ -672,7 +672,7 @@ $j$행 $k$열의 원소를 $A_{j,k}$라고 쓴다.
 $$
 A =
 \begin{pmatrix}
-8 & 4 & 5-3i\\
+8 & 4 & 5-3i\cr
 1 & 9 & 7
 \end{pmatrix}
 $$
@@ -702,7 +702,7 @@ $$
 $T:\mathbb{F}^2\to\mathbb{F}^3$를
 
 $$
-T(x,y)=(x+3y,\;2x+5y,\;7x+9y)
+T(x,y)=(x+3y,\thickspace2x+5y,\thickspace7x+9y)
 $$
 
 로 정의하고 표준기저를 쓰면
@@ -710,8 +710,8 @@ $$
 $$
 \mathcal{M}(T)=
 \begin{pmatrix}
-1 & 3\\
-2 & 5\\
+1 & 3\cr
+2 & 5\cr
 7 & 9
 \end{pmatrix}.
 $$
@@ -723,8 +723,8 @@ $D:\mathcal{P}_3(\mathbb{R})\to\mathcal{P}_2(\mathbb{R})$를 $Dp=p'$로 정의�
 $$
 \mathcal{M}(D)=
 \begin{pmatrix}
-0 & 1 & 0 & 0\\
-0 & 0 & 2 & 0\\
+0 & 1 & 0 & 0\cr
+0 & 0 & 2 & 0\cr
 0 & 0 & 0 & 3
 \end{pmatrix}.
 $$
@@ -762,15 +762,15 @@ $$
 $$
 2
 \begin{pmatrix}
-3 & 1\\
+3 & 1\cr
 -1 & 5
 \end{pmatrix} +
 \begin{pmatrix}
-4 & 2\\
+4 & 2\cr
 1 & 6
 \end{pmatrix} =
 \begin{pmatrix}
-10 & 4\\
+10 & 4\cr
 -1 & 16
 \end{pmatrix}.
 $$
@@ -809,17 +809,17 @@ $$
 
 $$
 \begin{pmatrix}
-1 & 2\\
-3 & 4\\
+1 & 2\cr
+3 & 4\cr
 5 & 6
 \end{pmatrix}
 \begin{pmatrix}
-6 & 5 & 4 & 3\\
+6 & 5 & 4 & 3\cr
 2 & 1 & 0 & -1
 \end{pmatrix} =
 \begin{pmatrix}
-10 & 7 & 4 & 1\\
-26 & 19 & 12 & 5\\
+10 & 7 & 4 & 1\cr
+26 & 19 & 12 & 5\cr
 42 & 31 & 20 & 9
 \end{pmatrix}.
 $$
@@ -843,7 +843,7 @@ $A_{j,\cdot}$는 $A$의 $j$번째 행을 뜻하고, $A_{\cdot,k}$는 $A$의 $k$�
 $$
 A=
 \begin{pmatrix}
-8 & 4 & 5\\
+8 & 4 & 5\cr
 1 & 9 & 7
 \end{pmatrix}
 $$
@@ -853,7 +853,7 @@ $$
 $$
 A_{2,\cdot}=\begin{pmatrix}1&9&7\end{pmatrix},
 \qquad
-A_{\cdot,3}=\begin{pmatrix}5\\7\end{pmatrix}.
+A_{\cdot,3}=\begin{pmatrix}5\cr7\end{pmatrix}.
 $$
 
 **3.46 행렬 곱의 성분은 행과 열의 곱이다**
@@ -877,12 +877,12 @@ $$
 **3.49 예**
 
 $$
-\begin{pmatrix} 1 & 2\\ 3 & 4\\ 5 & 6 \end{pmatrix}
-\begin{pmatrix} 5\\ 1 \end{pmatrix} =
-\begin{pmatrix} 7\\ 19\\ 31 \end{pmatrix} =
+\begin{pmatrix} 1 & 2\cr 3 & 4\cr 5 & 6 \end{pmatrix}
+\begin{pmatrix} 5\cr 1 \end{pmatrix} =
+\begin{pmatrix} 7\cr 19\cr 31 \end{pmatrix} =
 5
-\begin{pmatrix} 1\\ 3\\ 5 \end{pmatrix} +
-\begin{pmatrix} 2\\ 4\\ 6 \end{pmatrix}.
+\begin{pmatrix} 1\cr 3\cr 5 \end{pmatrix} +
+\begin{pmatrix} 2\cr 4\cr 6 \end{pmatrix}.
 $$
 
 **3.50 행렬과 열벡터의 곱**
@@ -890,7 +890,7 @@ $$
 $A$가 $m$행 $n$열 행렬이고
 
 $$
-b= \begin{pmatrix} b_1\\ \vdots\\ b_n \end{pmatrix}
+b= \begin{pmatrix} b_1\cr \vdots\cr b_n \end{pmatrix}
 $$
 
 이면
@@ -918,7 +918,7 @@ $A$가 $m$행 $n$열 행렬이고 $B$가 $n$행 $p$열 행렬이면 다음이 �
 **3.53 예**
 
 $$
-\begin{pmatrix} 4 & 7 & 1 & 8\\ 3 & 5 & 2 & 9 \end{pmatrix}
+\begin{pmatrix} 4 & 7 & 1 & 8\cr 3 & 5 & 2 & 9 \end{pmatrix}
 $$
 
 의 열계수와 행계수는 모두 $2$이다.
@@ -934,8 +934,8 @@ $$
 **3.55 예와 성질**
 
 $$
-\begin{pmatrix} 5 & -7\\ 3 & 8\\ -4 & 2 \end{pmatrix}^t =
-\begin{pmatrix} 5 & 3 & -4\\ -7 & 8 & 2 \end{pmatrix}.
+\begin{pmatrix} 5 & -7\cr 3 & 8\cr -4 & 2 \end{pmatrix}^t =
+\begin{pmatrix} 5 & 3 & -4\cr -7 & 8 & 2 \end{pmatrix}.
 $$
 
 또한 적절한 크기의 행렬에 대해
@@ -984,8 +984,8 @@ $$
 
    $$
    \begin{pmatrix}
-   1 & 0 & 0 & 0\\
-   0 & 1 & 0 & 0\\
+   1 & 0 & 0 & 0\cr
+   0 & 1 & 0 & 0\cr
    0 & 0 & 1 & 0
    \end{pmatrix}
    $$
@@ -1180,7 +1180,7 @@ $$
 
 $\mathbb{F}$ 위의 두 유한차원 벡터공간은 차원이 같을 필요충분조건으로 동형이다.
 
-증명. $V$와 $W$가 동형이면 어떤 동형사상 $T:V\to W$가 존재한다. 그러면 $\text{null}T=\{0\}$이고 $\text{range}T=W$이므로 기본정리에 의해 $\dim V=\dim W$이다.
+증명. $V$와 $W$가 동형이면 어떤 동형사상 $T:V\to W$가 존재한다. 그러면 $\text{null}T=\lbrace0\rbrace$이고 $\text{range}T=W$이므로 기본정리에 의해 $\dim V=\dim W$이다.
 
 반대로 $\dim V=\dim W=n$이라 하자. $V$의 기저 $v_1,\ldots,v_n$과 $W$의 기저 $w_1,\ldots,w_n$을 잡고
 
@@ -1231,7 +1231,7 @@ $$
 으로 쓸 때, 이 기저에 대한 $v$의 행렬은
 
 $$
-\mathcal{M}(v)= \begin{pmatrix} b_1\\ \vdots\\ b_n \end{pmatrix}
+\mathcal{M}(v)= \begin{pmatrix} b_1\cr \vdots\cr b_n \end{pmatrix}
 $$
 
 이다.
@@ -1241,13 +1241,13 @@ $$
 표준기저에 대한 $2-7x+5x^3+x^4\in\mathcal{P}_4(\mathbb{R})$의 행렬은
 
 $$
-\begin{pmatrix} 2\\ -7\\ 0\\ 5\\ 1 \end{pmatrix}
+\begin{pmatrix} 2\cr -7\cr 0\cr 5\cr 1 \end{pmatrix}
 $$
 
 이다. 또한 $x=(x_1,\ldots,x_n)\in\mathbb{F}^n$의 표준기저에 대한 행렬은
 
 $$
-\mathcal{M}(x)= \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix}
+\mathcal{M}(x)= \begin{pmatrix} x_1\cr \vdots\cr x_n \end{pmatrix}
 $$
 
 이다.
@@ -1301,9 +1301,9 @@ $$
 $$
 I =
 \begin{pmatrix}
-1 & 0 & \cdots & 0\\
-0 & 1 & \cdots & 0\\
-\vdots & \vdots & \ddots & \vdots\\
+1 & 0 & \cdots & 0\cr
+0 & 1 & \cdots & 0\cr
+\vdots & \vdots & \ddots & \vdots\cr
 0 & 0 & \cdots & 1
 \end{pmatrix}.
 $$
@@ -1364,20 +1364,20 @@ $\mathbb{F}^2$의 기저 $(4,2),(5,3)$와 표준기저 $(1,0),(0,1)$에 대해
 
 $$
 \mathcal{M}(I,((4,2),(5,3)),((1,0),(0,1))) =
-\begin{pmatrix} 4 & 5\\ 2 & 3 \end{pmatrix}.
+\begin{pmatrix} 4 & 5\cr 2 & 3 \end{pmatrix}.
 $$
 
 그 역행렬은
 
 $$
-\begin{pmatrix} \frac32 & -\frac52\\ -1 & 2 \end{pmatrix}
+\begin{pmatrix} \frac32 & -\frac52\cr -1 & 2 \end{pmatrix}
 $$
 
 이므로
 
 $$
 \mathcal{M}(I,((1,0),(0,1)),((4,2),(5,3))) =
-\begin{pmatrix} \frac32 & -\frac52\\ -1 & 2 \end{pmatrix}.
+\begin{pmatrix} \frac32 & -\frac52\cr -1 & 2 \end{pmatrix}.
 $$
 
 **3.84 기저변환 공식**
@@ -1446,7 +1446,7 @@ $$
 10. $V,W$가 유한차원이고 $U$가 $V$의 부분공간이라고 하자.
 
     $$
-    \mathcal{E}=\{T\in\mathcal{L}(V,W):U\subseteq\text{null}T\}
+    \mathcal{E}=\lbrace T\in\mathcal{L}(V,W):U\subseteq\text{null}T\rbrace
     $$
 
     라고 둔다.
@@ -1643,14 +1643,14 @@ $$
 $U$가 $V$의 부분공간이고 $v\in V$이면
 
 $$
-v+U=\{v+u:u\in U\}
+v+U=\lbrace v+u:u\in U\rbrace
 $$
 
 라고 쓴다. 이를 $U$의 평행이동이라고 한다.
 
 **3.96 예**
 
-$U=\{(x,2x):x\in\mathbb{R}\}$가 $\mathbb{R}^2$의 직선이라고 하자. 그러면 $(17,20)+U$는 $(17,20)$을 지나고 기울기가 $2$인 직선이다.
+$U=\lbrace(x,2x):x\in\mathbb{R}\rbrace$가 $\mathbb{R}^2$의 직선이라고 하자. 그러면 $(17,20)+U$는 $(17,20)$을 지나고 기울기가 $2$인 직선이다.
 
 **3.97 정의: 평행이동**
 
@@ -1665,14 +1665,14 @@ $\mathbb{R}^2$에서 원점을 지나는 직선의 평행이동은 그 직선과
 $U$가 $V$의 부분공간일 때
 
 $$
-V/U=\{v+U:v\in V\}
+V/U=\lbrace v+U:v\in V\rbrace
 $$
 
 를 $V$의 $U$에 의한 몫공간이라고 한다.
 
 **3.100 예**
 
-- $V/\{0\}$는 $V$와 자연스럽게 같은 정보를 가진다.
+- $V/\lbrace0\rbrace$는 $V$와 자연스럽게 같은 정보를 가진다.
 - $V/V$는 하나의 원소만 가진다.
 - $\mathbb{R}^2$를 원점을 지나는 직선 $U$로 나눈 몫공간은 그 직선과 평행한 모든 직선들의 집합이다.
 
@@ -1759,7 +1759,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
 1. 함수 $T:V\to W$의 그래프를
 
    $$
-   \text{graph}T=\{(v,Tv)\in V\times W:v\in V\}
+   \text{graph}T=\lbrace(v,Tv)\in V\times W:v\in V\rbrace
    $$
 
    로 정의한다. $T$가 선형사상일 필요충분조건은 $\text{graph}T$가 $V\times W$의 부분공간인 것임을 증명하라.
@@ -1792,15 +1792,15 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
 
 6. $v,x\in V$이고 $U,W$가 $V$의 부분공간이며 $v+U=x+W$라고 하자. $U=W$임을 증명하라.
 
-7. $U=\{(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\}$라 하자. $A\subseteq\mathbb{R}^3$에 대해 $A$가 $U$의 평행이동일 필요충분조건은 어떤 $c\in\mathbb{R}$가 존재하여
+7. $U=\lbrace(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\rbrace$라 하자. $A\subseteq\mathbb{R}^3$에 대해 $A$가 $U$의 평행이동일 필요충분조건은 어떤 $c\in\mathbb{R}$가 존재하여
 
    $$
-   A=\{(x,y,z)\in\mathbb{R}^3:2x+3y+5z=c\}
+   A=\lbrace(x,y,z)\in\mathbb{R}^3:2x+3y+5z=c\rbrace
    $$
 
    가 되는 것임을 증명하라.
 
-8. (a) $T\in\mathcal{L}(V,W)$이고 $c\in W$라 하자. $\{x\in V:Tx=c\}$는 공집합이거나 $\text{null}T$의 평행이동임을 증명하라.
+8. (a) $T\in\mathcal{L}(V,W)$이고 $c\in W$라 하자. $\lbrace x\in V:Tx=c\rbrace$는 공집합이거나 $\text{null}T$의 평행이동임을 증명하라.
 
    (b) 3.27과 같은 선형방정식계의 해집합은 공집합이거나 $\mathbb{F}^n$의 어떤 부분공간의 평행이동임을 설명하라.
 
@@ -1814,7 +1814,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
 
 10. $A_1=v+U_1$, $A_2=w+U_2$라고 하자. 여기서 $v,w\in V$이고 $U_1,U_2$는 $V$의 부분공간이다. $A_1\cap A_2$는 공집합이거나 $V$의 어떤 부분공간의 평행이동임을 증명하라.
 
-11. $U=\{(x_1,x_2,\ldots)\in\mathbb{F}^{\infty}:x_k\ne0\text{인 }k\text{가 유한 개뿐}\}$라고 하자.
+11. $U=\lbrace(x_1,x_2,\ldots)\in\mathbb{F}^{\infty}:x_k\ne0\text{인 }k\text{가 유한 개뿐}\rbrace$라고 하자.
 
     (a) $U$가 $\mathbb{F}^{\infty}$의 부분공간임을 보여라.
 
@@ -1823,14 +1823,14 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
 12. $v_1,\ldots,v_m\in V$라 하자.
 
     $$
-    A=\{\lambda_1v_1+\cdots+\lambda_mv_m:\lambda_1,\ldots,\lambda_m\in\mathbb{F},\ \lambda_1+\cdots+\lambda_m=1\}
+    A=\lbrace\lambda_1v_1+\cdots+\lambda_mv_m:\lambda_1,\ldots,\lambda_m\in\mathbb{F},\ \lambda_1+\cdots+\lambda_m=1\rbrace
     $$
 
     라고 둔다.
 
     (a) $A$가 $V$의 어떤 부분공간의 평행이동임을 증명하라.
 
-    (b) $B$가 $V$의 어떤 부분공간의 평행이동이고 $\{v_1,\ldots,v_m\}\subseteq B$이면 $A\subseteq B$임을 증명하라.
+    (b) $B$가 $V$의 어떤 부분공간의 평행이동이고 $\lbrace v_1,\ldots,v_m\rbrace\subseteq B$이면 $A\subseteq B$임을 증명하라.
 
     (c) $A$가 차원이 $m$보다 작은 어떤 부분공간의 평행이동임을 증명하라.
 
@@ -1927,7 +1927,7 @@ $$
 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 이 기저의 **쌍대기저**는 $V'$의 원소 $\varphi_1,\ldots,\varphi_n$의 리스트로, 각 $\varphi_j$는 다음을 만족하는 선형함수이다.
 
 $$
-\varphi_j(v_k)= \begin{cases} 1, & k=j,\\ 0, & k\ne j. \end{cases}
+\varphi_j(v_k)= \begin{cases} 1, & k=j,\cr 0, & k\ne j. \end{cases}
 $$
 
 **3.113 예: $\mathbb{F}^n$의 표준기저의 쌍대기저**
@@ -1943,7 +1943,7 @@ $e_1,\ldots,e_n$이 표준기저이면
 $$
 \varphi_j(e_k)=
 \begin{cases}
-1, & k=j,\\
+1, & k=j,\cr
 0, & k\ne j.
 \end{cases}
 $$
@@ -2043,7 +2043,7 @@ $$
 $U\subseteq V$에 대해 $U$의 **소멸자**는
 
 $$
-U^0=\{\varphi\in V':\text{모든 }u\in U\text{에 대해 }\varphi(u)=0\}
+U^0=\lbrace\varphi\in V':\text{모든 }u\in U\text{에 대해 }\varphi(u)=0\rbrace
 $$
 
 로 정의된다.
@@ -2057,7 +2057,7 @@ $U$가 $\mathcal{P}(\mathbb{R})$에서 $x^2$의 다항식배들로 이루어진 
 $e_1,\ldots,e_5$를 $\mathbb{R}^5$의 표준기저라 하고, $\varphi_1,\ldots,\varphi_5$를 그 쌍대기저라 하자.
 
 $$
-U=\text{span}(e_1,e_2) = \{(x_1,x_2,0,0,0)\in\mathbb{R}^5:x_1,x_2\in\mathbb{R}\}
+U=\text{span}(e_1,e_2) = \lbrace(x_1,x_2,0,0,0)\in\mathbb{R}^5:x_1,x_2\in\mathbb{R}\rbrace
 $$
 
 이면
@@ -2106,13 +2106,13 @@ $$
 \dim U+\dim U^0=\dim V.
 $$
 
-**3.127 소멸자가 $\{0\}$ 또는 전체 공간이 되는 조건**
+**3.127 소멸자가 $\lbrace0\rbrace$ 또는 전체 공간이 되는 조건**
 
 $V$가 유한차원이고 $U$가 $V$의 부분공간이면 다음이 성립한다.
 
-(a) $U^0=\{0\}$일 필요충분조건은 $U=V$이다.
+(a) $U^0=\lbrace0\rbrace$일 필요충분조건은 $U=V$이다.
 
-(b) $U^0=V'$일 필요충분조건은 $U=\{0\}$이다.
+(b) $U^0=V'$일 필요충분조건은 $U=\lbrace0\rbrace$이다.
 
 증명. (a)는 $\dim U^0=0 \Longleftrightarrow \dim U=\dim V$와 동치이고, (b)는 $\dim U^0=\dim V' \Longleftrightarrow \dim U=0$과 동치이다.
 
@@ -2157,9 +2157,9 @@ T\text{ 전사}
 \Longleftrightarrow
 \text{range}T=W
 \Longleftrightarrow
-(\text{range}T)^0=\{0\}
+(\text{range}T)^0=\lbrace0\rbrace
 \Longleftrightarrow
-\text{null}T'=\{0\}.
+\text{null}T'=\lbrace0\rbrace.
 $$
 
 **3.130 $T'$의 치역**
@@ -2212,7 +2212,7 @@ $$
 $$
 T\text{ 단사}
 \Longleftrightarrow
-\text{null}T=\{0\}
+\text{null}T=\lbrace0\rbrace
 \Longleftrightarrow
 (\text{null}T)^0=V'
 \Longleftrightarrow
@@ -2320,7 +2320,7 @@ $$
 14. $T:\mathbb{R}^3\to\mathbb{R}^2$를
 
     $$
-    T(x,y,z)=(4x+5y+6z,\;7x+8y+9z)
+    T(x,y,z)=(4x+5y+6z,\thickspace7x+8y+9z)
     $$
 
     로 정의한다. $\varphi_1,\varphi_2$를 $\mathbb{R}^2$의 표준기저의 쌍대기저, $\psi_1,\psi_2,\psi_3$를 $\mathbb{R}^3$의 표준기저의 쌍대기저라고 하자.
@@ -2354,13 +2354,13 @@ $$
 19. $U\subseteq V$라 하자. 다음 등식이 성립하는 이유를 설명하라.
 
     $$
-    U^0=\{\varphi\in V':U\subseteq\text{null}\varphi\}.
+    U^0=\lbrace\varphi\in V':U\subseteq\text{null}\varphi\rbrace.
     $$
 
 20. $V$가 유한차원이고 $U$가 $V$의 부분공간이라고 하자. 다음을 보여라.
 
     $$
-    U=\{v\in V:\text{모든 }\varphi\in U^0\text{에 대해 }\varphi(v)=0\}.
+    U=\lbrace v\in V:\text{모든 }\varphi\in U^0\text{에 대해 }\varphi(v)=0\rbrace.
     $$
 
 21. $V$가 유한차원이고 $U,W$가 $V$의 부분공간이라고 하자.
@@ -2381,7 +2381,7 @@ $$
 
     (b) $((\text{null}\varphi_1)\cap\cdots\cap(\text{null}\varphi_m))^0$
 
-    (c) $\{\varphi\in V':(\text{null}\varphi_1)\cap\cdots\cap(\text{null}\varphi_m)\subseteq\text{null}\varphi\}$
+    (c) $\lbrace\varphi\in V':(\text{null}\varphi_1)\cap\cdots\cap(\text{null}\varphi_m)\subseteq\text{null}\varphi\rbrace$
 
 24. $V$가 유한차원이고 $v_1,\ldots,v_m\in V$라 하자. 선형사상 $\Gamma:V'\to\mathbb{F}^m$를
 
@@ -2410,13 +2410,13 @@ $$
 26. $V$가 유한차원이고 $\Omega$가 $V'$의 부분공간이라고 하자. 다음을 증명하라.
 
     $$
-    \Omega=\{v\in V:\text{모든 }\varphi\in\Omega\text{에 대해 }\varphi(v)=0\}^0.
+    \Omega=\lbrace v\in V:\text{모든 }\varphi\in\Omega\text{에 대해 }\varphi(v)=0\rbrace^0.
     $$
 
 27. $T\in\mathcal{L}(\mathcal{P}_5(\mathbb{R}))$이고 $\text{null}T'=\text{span}(\varphi)$라고 하자. 여기서 $\varphi$는 $\varphi(p)=p(8)$로 정의된 $\mathcal{P}_5(\mathbb{R})$ 위의 선형함수이다. 다음을 증명하라.
 
     $$
-    \text{range}T = \{p\in\mathcal{P}_5(\mathbb{R}):p(8)=0\}.
+    \text{range}T = \lbrace p\in\mathcal{P}_5(\mathbb{R}):p(8)=0\rbrace.
     $$
 
 28. $V$가 유한차원이고 $\varphi_1,\ldots,\varphi_m$이 $V'$에서 선형독립인 리스트라고 하자. 다음을 증명하라.

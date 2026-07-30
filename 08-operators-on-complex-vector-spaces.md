@@ -26,7 +26,7 @@
 $T\in\mathcal{L}(V)$라고 하자. 그러면
 
 $$
-\{0\}=\text{null}T^0
+\lbrace0\rbrace=\text{null}T^0
 \subset \text{null}T^1
 \subset \cdots
 \subset \text{null}T^k
@@ -97,7 +97,7 @@ $$
 8.2에 의해 $\text{null}T^{\dim V}=\text{null}T^{\dim V+1}$만 보이면 된다. 그렇지 않다고 하자. 그러면 8.1과 8.2에 의해
 
 $$
-\{0\}=\text{null}T^0
+\lbrace0\rbrace=\text{null}T^0
 \subsetneqq \text{null}T^1
 \subsetneqq \cdots
 \subsetneqq \text{null}T^{\dim V}
@@ -125,7 +125,7 @@ $$
 $n=\dim V$라고 하자. 먼저
 
 $$
-\text{null}T^n\cap\text{range}T^n=\{0\}
+\text{null}T^n\cap\text{range}T^n=\lbrace0\rbrace
 \tag{8.5}
 $$
 
@@ -158,16 +158,16 @@ $$
 로 정의하자. 그러면
 
 $$
-\text{null}T=\{(z_1,0,0):z_1\in\mathbb{F}\}
+\text{null}T=\lbrace(z_1,0,0):z_1\in\mathbb{F}\rbrace
 $$
 
 이고
 
 $$
-\text{range}T=\{(z_1,0,z_3):z_1,z_3\in\mathbb{F}\}.
+\text{range}T=\lbrace(z_1,0,z_3):z_1,z_3\in\mathbb{F}\rbrace.
 $$
 
-따라서 $\text{null}T\cap\text{range}T\ne\{0\}$이고, $\text{null}T+\text{range}T$는 직합이 아니다. 또한 $\text{null}T+\text{range}T\ne\mathbb{F}^3$이다.
+따라서 $\text{null}T\cap\text{range}T\ne\lbrace0\rbrace$이고, $\text{null}T+\text{range}T$는 직합이 아니다. 또한 $\text{null}T+\text{range}T\ne\mathbb{F}^3$이다.
 
 그러나
 
@@ -178,9 +178,9 @@ $$
 이므로
 
 $$
-\text{null}T^3=\{(z_1,z_2,0):z_1,z_2\in\mathbb{F}\},
+\text{null}T^3=\lbrace(z_1,z_2,0):z_1,z_2\in\mathbb{F}\rbrace,
 \qquad
-\text{range}T^3=\{(0,0,z_3):z_3\in\mathbb{F}\}.
+\text{range}T^3=\lbrace(0,0,z_3):z_3\in\mathbb{F}\rbrace.
 $$
 
 따라서 8.4가 예측하듯이
@@ -246,7 +246,7 @@ V=\text{null}(T-\lambda I)^n
 \text{range}(T-\lambda I)^n.
 $$
 
-$\text{null}(T-\lambda I)^n=V$이면 $V$의 모든 영이 아닌 벡터가 $T$의 일반화 고유벡터이므로 결론이 성립한다. 이제 그렇지 않다고 하자. $\lambda$가 고윳값이므로 $\text{null}(T-\lambda I)^n\ne\{0\}$이고, 따라서
+$\text{null}(T-\lambda I)^n=V$이면 $V$의 모든 영이 아닌 벡터가 $T$의 일반화 고유벡터이므로 결론이 성립한다. 이제 그렇지 않다고 하자. $\lambda$가 고윳값이므로 $\text{null}(T-\lambda I)^n\ne\lbrace0\rbrace$이고, 따라서
 
 $$
 0<\dim\text{range}(T-\lambda I)^n<n.
@@ -293,8 +293,8 @@ $v\in V$가 $T$의 일반화 고유벡터이고 고윳값 $\alpha$와 $\lambda$ 
 $$
 \begin{aligned}
 0
-&=(T-\lambda I)^nv\\
-&=((T-\alpha I)+(\alpha-\lambda)I)^nv\\
+&=(T-\lambda I)^nv\cr
+&=((T-\alpha I)+(\alpha-\lambda)I)^nv\cr
 &=\sum_{k=0}^n b_k(\alpha-\lambda)^{n-k}(T-\alpha I)^kv
 \end{aligned}
 $$
@@ -327,7 +327,7 @@ a_{m-1}(T-\lambda_m I)^nv_{m-1}=0.
 \tag{8.13}
 $$
 
-$k\in\{1,\ldots,m-1\}$이면 $(T-\lambda_m I)^nv_k\ne 0$이다. 그렇지 않으면 $v_k$가 서로 다른 두 고윳값 $\lambda_k,\lambda_m$에 모두 대응하는 일반화 고유벡터가 되어 8.11에 모순이다. 또한
+$k\in\lbrace1,\ldots,m-1\rbrace$이면 $(T-\lambda_m I)^nv_k\ne 0$이다. 그렇지 않으면 $v_k$가 서로 다른 두 고윳값 $\lambda_k,\lambda_m$에 모두 대응하는 일반화 고유벡터가 되어 8.11에 모순이다. 또한
 
 $$
 (T-\lambda_k I)^n((T-\lambda_m I)^nv_k)
@@ -358,8 +358,8 @@ $$
 
 $$
 \begin{pmatrix}
--3 & 9 & 0\\
--7 & 9 & 6\\
+-3 & 9 & 0\cr
+-7 & 9 & 6\cr
 4 & 0 & -6
 \end{pmatrix}
 $$
@@ -414,8 +414,8 @@ $T\in\mathcal{L}(V)$라고 하자. 그러면 다음 조건들은 서로 동치�
 
 $$
 \begin{pmatrix}
-0 & *\\
-& \ddots\\
+0 & *\cr
+& \ddots\cr
 0 & 0
 \end{pmatrix}
 $$
@@ -573,7 +573,7 @@ $$
 $T\in\mathcal{L}(V)$이고 $\lambda\in\mathbb{F}$라고 하자. $\lambda$에 대응하는 $T$의 **일반화 고유공간** $G(\lambda,T)$는
 
 $$
-G(\lambda,T)=\{v\in V:(T-\lambda I)^kv=0\text{인 양의 정수 }k\text{가 존재한다}\}
+G(\lambda,T)=\lbrace v\in V:(T-\lambda I)^kv=0\text{인 양의 정수 }k\text{가 존재한다}\rbrace
 $$
 
 로 정의된다.
@@ -606,16 +606,16 @@ $$
 T(z_1,z_2,z_3)=(4z_2,0,5z_3)
 $$
 
-로 정의하자. 예 8.10에서 $T$의 고윳값은 $0$과 $5$임을 보았고, 대응하는 일반화 고유벡터들의 집합도 구했다. 여기에 $\{0\}$을 더하면
+로 정의하자. 예 8.10에서 $T$의 고윳값은 $0$과 $5$임을 보았고, 대응하는 일반화 고유벡터들의 집합도 구했다. 여기에 $\lbrace0\rbrace$을 더하면
 
 $$
-G(0,T)=\{(z_1,z_2,0):z_1,z_2\in\mathbb{C}\}
+G(0,T)=\lbrace(z_1,z_2,0):z_1,z_2\in\mathbb{C}\rbrace
 $$
 
 이고
 
 $$
-G(5,T)=\{(0,0,z_3):z_3\in\mathbb{C}\}.
+G(5,T)=\lbrace(0,0,z_3):z_3\in\mathbb{C}\rbrace.
 $$
 
 따라서
@@ -685,15 +685,15 @@ $$
 $T\in\mathcal{L}(\mathbb{C}^3)$를
 
 $$
-T(z_1,z_2,z_3)=(6z_1+3z_2+4z_3,\;6z_2+2z_3,\;7z_3)
+T(z_1,z_2,z_3)=(6z_1+3z_2+4z_3,\thickspace6z_2+2z_3,\thickspace7z_3)
 $$
 
 로 정의하자. $T$의 표준 기저에 대한 행렬은
 
 $$
 \begin{pmatrix}
-6&3&4\\
-0&6&2\\
+6&3&4\cr
+0&6&2\cr
 0&0&7
 \end{pmatrix}
 $$
@@ -858,9 +858,9 @@ $$
 
 $$
 \begin{pmatrix}
-A_1&0&\cdots&0\\
-0&A_2&\cdots&0\\
-\vdots&\vdots&\ddots&\vdots\\
+A_1&0&\cdots&0\cr
+0&A_2&\cdots&0\cr
+\vdots&\vdots&\ddots&\vdots\cr
 0&0&\cdots&A_m
 \end{pmatrix}
 $$
@@ -871,18 +871,18 @@ $$
 
 $$
 A_1=\begin{pmatrix}4\end{pmatrix},\qquad
-A_2=\begin{pmatrix}2&-3\\0&2\end{pmatrix},\qquad
-A_3=\begin{pmatrix}1&7\\0&1\end{pmatrix}
+A_2=\begin{pmatrix}2&-3\cr0&2\end{pmatrix},\qquad
+A_3=\begin{pmatrix}1&7\cr0&1\end{pmatrix}
 $$
 
 를 가지는 블록 대각행렬이다.
 
 $$
 \begin{pmatrix}
-4&0&0&0&0\\
-0&2&-3&0&0\\
-0&0&2&0&0\\
-0&0&0&1&7\\
+4&0&0&0&0\cr
+0&2&-3&0&0\cr
+0&0&2&0&0\cr
+0&0&0&1&7\cr
 0&0&0&0&1
 \end{pmatrix}
 $$
@@ -896,9 +896,9 @@ $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. $T$의 서로 �
 $$
 A_k=
 \begin{pmatrix}
-\lambda_k&*&\cdots&*\\
-0&\lambda_k&\cdots&*\\
-\vdots&\vdots&\ddots&\vdots\\
+\lambda_k&*&\cdots&*\cr
+0&\lambda_k&\cdots&*\cr
+\vdots&\vdots&\ddots&\vdots\cr
 0&0&\cdots&\lambda_k
 \end{pmatrix}.
 $$
@@ -927,8 +927,8 @@ $$
 
 $$
 \begin{pmatrix}
-6&3&0\\
-0&6&0\\
+6&3&0\cr
+0&6&0\cr
 0&0&7
 \end{pmatrix}
 $$
@@ -995,7 +995,7 @@ $$
 
     $$
     |\lambda_1|^2+\cdots+|\lambda_n|^2\le
-    \|Te_1\|^2+\cdots+\|Te_n\|^2
+    \Vert Te_1\Vert^2+\cdots+\Vert Te_n\Vert^2
     $$
 
 11. 특성다항식이 $(z-7)^2(z-8)^2$인 $\mathbb{C}^4$ 위의 연산자의 예를 들어라.
@@ -1048,17 +1048,17 @@ $$
     $$
     A=
     \begin{pmatrix}
-    A_1&0&\cdots&0\\
-    0&A_2&\cdots&0\\
-    \vdots&\vdots&\ddots&\vdots\\
+    A_1&0&\cdots&0\cr
+    0&A_2&\cdots&0\cr
+    \vdots&\vdots&\ddots&\vdots\cr
     0&0&\cdots&A_m
     \end{pmatrix},
     \qquad
     B=
     \begin{pmatrix}
-    B_1&0&\cdots&0\\
-    0&B_2&\cdots&0\\
-    \vdots&\vdots&\ddots&\vdots\\
+    B_1&0&\cdots&0\cr
+    0&B_2&\cdots&0\cr
+    \vdots&\vdots&\ddots&\vdots\cr
     0&0&\cdots&B_m
     \end{pmatrix}.
     $$
@@ -1186,9 +1186,9 @@ $$
 
 $$
 \begin{pmatrix}
-0&1&0&0\\
-0&0&1&0\\
-0&0&0&1\\
+0&1&0&0\cr
+0&0&1&0\cr
+0&0&0&1\cr
 0&0&0&0
 \end{pmatrix}
 $$
@@ -1221,11 +1221,11 @@ $$
 
 $$
 \begin{pmatrix}
-0&1&0&0&0&0\\
-0&0&1&0&0&0\\
-0&0&0&0&0&0\\
-0&0&0&0&1&0\\
-0&0&0&0&0&0\\
+0&1&0&0&0&0\cr
+0&0&1&0&0&0\cr
+0&0&0&0&0&0\cr
+0&0&0&0&1&0\cr
+0&0&0&0&0&0\cr
 0&0&0&0&0&0
 \end{pmatrix}
 $$
@@ -1238,10 +1238,10 @@ $T\in\mathcal{L}(V)$라고 하자. $T$의 어떤 기저에 대한 행렬이 블�
 
 $$
 \begin{pmatrix}
-\lambda_k&1&0&\cdots&0\\
-0&\lambda_k&1&\cdots&0\\
-\vdots&\vdots&\vdots&\ddots&\vdots\\
-0&0&0&\cdots&1\\
+\lambda_k&1&0&\cdots&0\cr
+0&\lambda_k&1&\cdots&0\cr
+\vdots&\vdots&\vdots&\ddots&\vdots\cr
+0&0&0&\cdots&1\cr
 0&0&0&\cdots&\lambda_k
 \end{pmatrix}
 $$
@@ -1275,10 +1275,10 @@ $$
 이제 $U\ne V$라고 하자. $\varphi(T^{m-1}u)\ne 0$인 $\varphi\in V'$를 택한다. 다음 부분공간을 정의한다.
 
 $$
-W=\{v\in V:\varphi(v)=\varphi(Tv)=\cdots=\varphi(T^{m-1}v)=0\}.
+W=\lbrace v\in V:\varphi(v)=\varphi(Tv)=\cdots=\varphi(T^{m-1}v)=0\rbrace.
 $$
 
-그러면 $W$는 $T$에 대해 불변이다. 또한 $U\cap W=\{0\}$이다. 실제로 $U$의 벡터
+그러면 $W$는 $T$에 대해 불변이다. 또한 $U\cap W=\lbrace0\rbrace$이다. 실제로 $U$의 벡터
 
 $$
 a_0u+a_1Tu+\cdots+a_{m-1}T^{m-1}u
@@ -1298,7 +1298,7 @@ $$
 \dim W\ge \dim V-m.
 $$
 
-한편 $\dim U=m$이고 $U\cap W=\{0\}$이므로
+한편 $\dim U=m$이고 $U\cap W=\lbrace0\rbrace$이므로
 
 $$
 \dim(U+W)\ge m+(\dim V-m)=\dim V.
@@ -1357,7 +1357,7 @@ $$
 5. $T\in\mathcal{L}(\mathbb{C}^2)$를
 
    $$
-   T(w,z)=(-w-z,\;9w+5z)
+   T(w,z)=(-w-z,\thickspace9w+5z)
    $$
 
    로 정의하자. $T$의 조르당 기저를 찾아라.
@@ -1417,8 +1417,8 @@ $$
 $$
 A=
 \begin{pmatrix}
-3&-1&-2\\
-5&2&-3\\
+3&-1&-2\cr
+5&2&-3\cr
 1&6&0
 \end{pmatrix}
 $$
@@ -1442,8 +1442,8 @@ $$
 $$
 \begin{aligned}
 \text{tr}(AB)
-&=\sum_{j=1}^{m}\sum_{k=1}^{n}A_{j,k}B_{k,j}\\
-&=\sum_{k=1}^{n}\sum_{j=1}^{m}B_{k,j}A_{j,k}\\
+&=\sum_{j=1}^{m}\sum_{k=1}^{n}A_{j,k}B_{k,j}\cr
+&=\sum_{k=1}^{n}\sum_{j=1}^{m}B_{k,j}A_{j,k}\cr
 &=\text{tr}(BA).
 \end{aligned}
 $$
@@ -1489,15 +1489,15 @@ $\mathbb{F}=\mathbb{C}$이고 $T\in\mathcal{L}(V)$라고 하자. 그러면 $\tex
 $T\in\mathcal{L}(\mathbb{C}^3)$를
 
 $$
-T(z_1,z_2,z_3)=(3z_1-z_2-2z_3,\;3z_1+2z_2-3z_3,\;z_1+2z_2)
+T(z_1,z_2,z_3)=(3z_1-z_2-2z_3,\thickspace3z_1+2z_2-3z_3,\thickspace z_1+2z_2)
 $$
 
 로 정의하자. 표준 기저에 대한 $T$의 행렬은
 
 $$
 \begin{pmatrix}
-3&-1&-2\\
-3&2&-3\\
+3&-1&-2\cr
+3&2&-3\cr
 1&2&0
 \end{pmatrix}
 $$
@@ -1618,8 +1618,8 @@ $$
 
    $$
    \begin{pmatrix}
-   51&-12&-21\\
-   60&-40&-28\\
+   51&-12&-21\cr
+   60&-40&-28\cr
    57&-68&1
    \end{pmatrix}
    $$

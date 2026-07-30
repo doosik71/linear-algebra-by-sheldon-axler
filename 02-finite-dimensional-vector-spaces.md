@@ -57,8 +57,8 @@ $$
 
   $$
   \begin{aligned}
-  17 &= 2a_1+a_2, \\
-  -4 &= a_1-2a_2, \\
+  17 &= 2a_1+a_2, \cr
+  -4 &= a_1-2a_2, \cr
   5 &= -3a_1+4a_2.
   \end{aligned}
   $$
@@ -68,10 +68,10 @@ $$
 $V$ 안의 벡터 리스트 $v_1,\ldots,v_m$의 모든 선형 결합들의 집합을 $v_1,\ldots,v_m$의 생성공간이라고 하며, $\text{span}(v_1,\ldots,v_m)$으로 나타낸다. 다시 말해
 
 $$
-\text{span}(v_1,\ldots,v_m) = \{a_1v_1+\cdots+a_mv_m : a_1,\ldots,a_m \in \mathbb{F}\}.
+\text{span}(v_1,\ldots,v_m) = \lbrace a_1v_1+\cdots+a_mv_m : a_1,\ldots,a_m \in \mathbb{F}\rbrace.
 $$
 
-빈 리스트 $(\ )$의 생성공간은 $\{0\}$으로 정의한다.
+빈 리스트 $(\ )$의 생성공간은 $\lbrace0\rbrace$으로 정의한다.
 
 **2.5 예: 생성공간**
 
@@ -98,7 +98,7 @@ $$
 
 $$
 \begin{aligned}
-&(a_1v_1+\cdots+a_mv_m)+(c_1v_1+\cdots+c_mv_m) \\
+&(a_1v_1+\cdots+a_mv_m)+(c_1v_1+\cdots+c_mv_m) \cr
 &\quad = (a_1+c_1)v_1+\cdots+(a_m+c_m)v_m
 \end{aligned}
 $$
@@ -132,7 +132,7 @@ $(x_1,\ldots,x_n) \in \mathbb{F}^n$이라고 하자. 그러면
 $$
 \begin{aligned}
 (x_1,\ldots,x_n)
-&= x_1(1,0,\ldots,0)+x_2(0,1,0,\ldots,0) \\
+&= x_1(1,0,\ldots,0)+x_2(0,1,0,\ldots,0) \cr
 &\quad + \cdots+x_n(0,\ldots,0,1).
 \end{aligned}
 $$
@@ -321,7 +321,7 @@ $$
 v_k \in \text{span}(v_1,\ldots,v_{k-1})
 $$
 
-를 만족하는 $k \in \{1,2,\ldots,m\}$가 존재한다.
+를 만족하는 $k \in \lbrace1,2,\ldots,m\rbrace$가 존재한다.
 
 더 나아가 $k$가 위 조건을 만족하고 $v_1,\ldots,v_m$에서 $k$번째 항을 제거하면, 남은 리스트의 생성공간은 $\text{span}(v_1,\ldots,v_m)$과 같다.
 
@@ -331,7 +331,7 @@ $$
 a_1v_1+\cdots+a_mv_m=0
 $$
 
-이다. $a_k \neq 0$인 $\{1,\ldots,m\}$의 가장 큰 원소를 $k$라고 하자. 그러면
+이다. $a_k \neq 0$인 $\lbrace1,\ldots,m\rbrace$의 가장 큰 원소를 $k$라고 하자. 그러면
 
 $$
 v_k=-\frac{a_1}{a_k}v_1-\cdots-\frac{a_{k-1}}{a_k}v_{k-1},
@@ -339,7 +339,7 @@ $$
 
 이고, 이는 원하는 대로 $v_k \in \text{span}(v_1,\ldots,v_{k-1})$임을 증명한다.
 
-이제 $k$가 $v_k \in \text{span}(v_1,\ldots,v_{k-1})$를 만족하는 $\{1,\ldots,m\}$의 임의의 원소라고 하자. 다음을 만족하는 $b_1,\ldots,b_{k-1} \in \mathbb{F}$가 있다고 하자.
+이제 $k$가 $v_k \in \text{span}(v_1,\ldots,v_{k-1})$를 만족하는 $\lbrace1,\ldots,m\rbrace$의 임의의 원소라고 하자. 다음을 만족하는 $b_1,\ldots,b_{k-1} \in \mathbb{F}$가 있다고 하자.
 
 $$
 v_k=b_1v_1+\cdots+b_{k-1}v_{k-1}.
@@ -354,7 +354,7 @@ $$
 
 이 되도록 하는 $c_1,\ldots,c_m \in \mathbb{F}$가 존재한다. 위 식에서 $v_k$를 2.20의 오른쪽으로 바꾸면, $u$가 $v_1,\ldots,v_m$에서 $k$번째 항을 제거해 얻은 리스트의 생성공간에 속함을 알 수 있다. 따라서 리스트 $v_1,\ldots,v_m$에서 $k$번째 항을 제거해도 그 리스트의 생성공간은 바뀌지 않는다.
 
-선형 종속 보조정리에서 $k=1$이면, $v_k \in \text{span}(v_1,\ldots,v_{k-1})$라는 말은 $v_1=0$이라는 뜻이다. 왜냐하면 $\text{span}(\ )=\{0\}$이기 때문이다. 또한 $k=1$이면 선형 종속 보조정리 증명의 일부를 수정해야 한다. 일반적으로 이 책의 나머지 증명들은 길이 $0$인 리스트, 부분공간 $\{0\}$, 또는 결과는 참이지만 조금 다른 증명이 필요한 다른 사소한 경우들을 따로 언급하지 않을 것이다. 이러한 특별한 경우들은 스스로 확인하라.
+선형 종속 보조정리에서 $k=1$이면, $v_k \in \text{span}(v_1,\ldots,v_{k-1})$라는 말은 $v_1=0$이라는 뜻이다. 왜냐하면 $\text{span}(\ )=\lbrace0\rbrace$이기 때문이다. 또한 $k=1$이면 선형 종속 보조정리 증명의 일부를 수정해야 한다. 일반적으로 이 책의 나머지 증명들은 길이 $0$인 리스트, 부분공간 $\lbrace0\rbrace$, 또는 결과는 참이지만 조금 다른 증명이 필요한 다른 사소한 경우들을 따로 언급하지 않을 것이다. 이러한 특별한 경우들은 스스로 확인하라.
 
 **2.21 예: 선형 종속 보조정리에서 가장 작은 $k$**
 
@@ -364,7 +364,7 @@ $$
 (1,2,3),(6,5,4),(15,16,17),(8,9,7)
 $$
 
-를 생각하자. 곧 보게 되듯이, 이 길이 $4$인 리스트는 선형 종속이다. 따라서 선형 종속 보조정리는 이 리스트의 $k$번째 벡터가 그 리스트에서 앞에 있는 벡터들의 선형 결합이 되도록 하는 $k \in \{1,2,3,4\}$가 존재한다고 말한다. 어떤 가장 작은 $k$가 가능한지 알아보자.
+를 생각하자. 곧 보게 되듯이, 이 길이 $4$인 리스트는 선형 종속이다. 따라서 선형 종속 보조정리는 이 리스트의 $k$번째 벡터가 그 리스트에서 앞에 있는 벡터들의 선형 결합이 되도록 하는 $k \in \lbrace1,2,3,4\rbrace$가 존재한다고 말한다. 어떤 가장 작은 $k$가 가능한지 알아보자.
 
 선형 종속 보조정리에서 $k=1$을 택할 수 있는 것은 리스트의 첫 번째 벡터가 $0$일 때, 그리고 그때뿐이다. $(1,2,3)$은 $0$벡터가 아니므로 이 리스트에서는 $k=1$을 택할 수 없다.
 
@@ -395,7 +395,7 @@ $$
 
 은 선형 종속이다.
 
-따라서 선형 종속 보조정리(2.19)에 의해 위 리스트의 어떤 벡터는 앞에 있는 벡터들의 선형 결합이다. 리스트 $u_1,\ldots,u_m$이 선형 독립이므로 $u_1 \neq 0$임을 알고 있다. 따라서 $u_1$은 위 리스트에서 앞에 있는 벡터들의 생성공간에 속하지 않는다. 왜냐하면 $u_1$은 빈 리스트의 생성공간인 $\{0\}$에 속하지 않기 때문이다. 그러므로 선형 종속 보조정리에 의해 $w$들 중 하나를 제거하여, $u_1$과 남은 $w$들로 이루어진 길이 $n$의 새 리스트 $B$가 $V$를 생성하게 할 수 있다.
+따라서 선형 종속 보조정리(2.19)에 의해 위 리스트의 어떤 벡터는 앞에 있는 벡터들의 선형 결합이다. 리스트 $u_1,\ldots,u_m$이 선형 독립이므로 $u_1 \neq 0$임을 알고 있다. 따라서 $u_1$은 위 리스트에서 앞에 있는 벡터들의 생성공간에 속하지 않는다. 왜냐하면 $u_1$은 빈 리스트의 생성공간인 $\lbrace0\rbrace$에 속하지 않기 때문이다. 그러므로 선형 종속 보조정리에 의해 $w$들 중 하나를 제거하여, $u_1$과 남은 $w$들로 이루어진 길이 $n$의 새 리스트 $B$가 $V$를 생성하게 할 수 있다.
 
 **$k$단계, $k=2,\ldots,m$**  
 $k-1$단계에서 얻은 길이 $n$인 리스트 $B$는 $V$를 생성한다. 특히 $u_k$는 리스트 $B$의 생성공간에 속한다. 따라서 $u_1,\ldots,u_{k-1}$ 바로 뒤에 $u_k$를 붙여 $B$에 추가해 얻은 길이 $n+1$의 리스트는 선형 종속이다. 선형 종속 보조정리(2.19)에 의해 이 리스트의 어떤 벡터는 앞에 있는 벡터들의 생성공간에 속한다. 그런데 $u_1,\ldots,u_k$가 선형 독립이므로, 이 벡터는 $u$들 중 하나일 수 없다. 따라서 이 단계에는 아직 적어도 하나의 $w$가 남아 있어야 한다. 새 리스트에서, 즉 $u_k$를 적절한 자리에 붙인 뒤의 리스트에서, 앞에 있는 벡터들의 선형 결합인 $w$ 하나를 제거할 수 있다. 그러면 $u_1,\ldots,u_k$와 남은 $w$들로 이루어진 길이 $n$의 새 리스트 $B$가 $V$를 생성한다.
@@ -425,7 +425,7 @@ $m$단계 뒤에는 모든 $u$를 추가했고 절차가 멈춘다. 각 단계�
 **증명** $V$가 유한차원이고 $U$가 $V$의 부분공간이라고 하자. $U$가 유한차원임을 증명해야 한다. 다음의 여러 단계 구성으로 이를 보인다.
 
 **1단계**  
-$U=\{0\}$이면 $U$는 유한차원이고 증명이 끝난다. $U \neq \{0\}$이면 $0$이 아닌 벡터 $u_1 \in U$를 선택한다.
+$U=\lbrace0\rbrace$이면 $U$는 유한차원이고 증명이 끝난다. $U \neq \lbrace0\rbrace$이면 $0$이 아닌 벡터 $u_1 \in U$를 선택한다.
 
 **$k$단계**  
 $U=\text{span}(u_1,\ldots,u_{k-1})$이면 $U$는 유한차원이고 증명이 끝난다. $U \neq \text{span}(u_1,\ldots,u_{k-1})$이면
@@ -443,7 +443,7 @@ $$
 1. 생성공간이 다음 집합과 같은 $\mathbb{F}^3$의 서로 다른 네 벡터의 리스트를 찾아라.
 
    $$
-   \{(x,y,z) \in \mathbb{F}^3 : x+y+z=0\}.
+   \lbrace(x,y,z) \in \mathbb{F}^3 : x+y+z=0\rbrace.
    $$
 
 2. 증명하거나 반례를 들어라. $v_1,v_2,v_3,v_4$가 $V$를 생성하면, 리스트
@@ -454,7 +454,7 @@ $$
 
    도 $V$를 생성한다.
 
-3. $v_1,\ldots,v_m$이 $V$ 안의 벡터들의 리스트라고 하자. $k \in \{1,\ldots,m\}$에 대해
+3. $v_1,\ldots,v_m$이 $V$ 안의 벡터들의 리스트라고 하자. $k \in \lbrace1,\ldots,m\rbrace$에 대해
 
    $$
    w_k=v_1+\cdots+v_k
@@ -512,7 +512,7 @@ $$
     w \notin \text{span}(v_1,\ldots,v_m).
     $$
 
-14. $v_1,\ldots,v_m$이 $V$ 안의 벡터들의 리스트라고 하자. $k \in \{1,\ldots,m\}$에 대해
+14. $v_1,\ldots,v_m$이 $V$ 안의 벡터들의 리스트라고 하자. $k \in \lbrace1,\ldots,m\rbrace$에 대해
 
     $$
     w_k=v_1+\cdots+v_k
@@ -530,7 +530,7 @@ $$
 
 19. 구간 $[0,1]$ 위의 모든 연속인 실숫값 함수들의 실 벡터 공간이 무한차원임을 증명하라.
 
-20. $p_0,p_1,\ldots,p_m$이 $\mathcal{P}_m(\mathbb{F})$ 안의 다항식이고, 각 $k \in \{0,\ldots,m\}$에 대해 $p_k(2)=0$이라고 하자. $p_0,p_1,\ldots,p_m$이 $\mathcal{P}_m(\mathbb{F})$에서 선형 독립이 아님을 증명하라.
+20. $p_0,p_1,\ldots,p_m$이 $\mathcal{P}_m(\mathbb{F})$ 안의 다항식이고, 각 $k \in \lbrace0,\ldots,m\rbrace$에 대해 $p_k(2)=0$이라고 하자. $p_0,p_1,\ldots,p_m$이 $\mathcal{P}_m(\mathbb{F})$에서 선형 독립이 아님을 증명하라.
 
 ## 2B 기저
 
@@ -553,13 +553,13 @@ $V$의 기저는 $V$ 안의 벡터들의 리스트로서 선형 독립이고 $V$
 (e) 리스트 $(1,1,0),(0,0,1)$은 다음 집합의 기저이다.
 
 $$
-\{(x,x,y) \in \mathbb{F}^3 : x,y \in \mathbb{F}\}.
+\lbrace(x,x,y) \in \mathbb{F}^3 : x,y \in \mathbb{F}\rbrace.
 $$
 
 (f) 리스트 $(1,-1,0),(1,0,-1)$은 다음 집합의 기저이다.
 
 $$
-\{(x,y,z) \in \mathbb{F}^3 : x+y+z=0\}.
+\lbrace(x,y,z) \in \mathbb{F}^3 : x+y+z=0\rbrace.
 $$
 
 (g) 리스트 $1,z,\ldots,z^m$은 $\mathcal{P}_m(\mathbb{F})$의 기저이며, $\mathcal{P}_m(\mathbb{F})$의 표준기저라고 부른다.
@@ -678,7 +678,7 @@ $$
 $V=U\oplus W$를 증명하려면, 1.46에 의해 다음 두 식을 보이면 충분하다.
 
 $$
-V=U+W \quad\text{그리고}\quad U\cap W=\{0\}.
+V=U+W \quad\text{그리고}\quad U\cap W=\lbrace0\rbrace.
 $$
 
 첫 번째 식을 증명하기 위해 $v \in V$라고 하자. 리스트 $u_1,\ldots,u_m,w_1,\ldots,w_n$이 $V$를 생성하므로,
@@ -689,7 +689,7 @@ $$
 
 이 되도록 하는 $a_1,\ldots,a_m,b_1,\ldots,b_n \in \mathbb{F}$가 존재한다. 위 식에서 $u=a_1u_1+\cdots+a_mu_m \in U$이고 $w=b_1w_1+\cdots+b_nw_n \in W$라고 하면, $v=u+w$이다. 따라서 $v \in U+W$이고, $V=U+W$의 증명이 끝난다.
 
-$U\cap W=\{0\}$임을 보이기 위해 $v \in U\cap W$라고 하자. 그러면
+$U\cap W=\lbrace0\rbrace$임을 보이기 위해 $v \in U\cap W$라고 하자. 그러면
 
 $$
 v=a_1u_1+\cdots+a_mu_m=b_1w_1+\cdots+b_nw_n
@@ -707,7 +707,7 @@ $$
 a_1=\cdots=a_m=b_1=\cdots=b_n=0
 $$
 
-임을 함의한다. 따라서 $v=0$이고, $U\cap W=\{0\}$의 증명이 끝난다.
+임을 함의한다. 따라서 $v=0$이고, $U\cap W=\lbrace0\rbrace$의 증명이 끝난다.
 
 ### 연습문제 2B
 
@@ -718,7 +718,7 @@ $$
 3. (a) $U$가 다음과 같이 정의된 $\mathbb{R}^5$의 부분공간이라고 하자.
 
    $$
-   U=\{(x_1,x_2,x_3,x_4,x_5) \in \mathbb{R}^5 : x_1=3x_2\text{ 그리고 }x_3=7x_4\}.
+   U=\lbrace(x_1,x_2,x_3,x_4,x_5) \in \mathbb{R}^5 : x_1=3x_2\text{ 그리고 }x_3=7x_4\rbrace.
    $$
 
    $U$의 기저를 찾아라.
@@ -730,7 +730,7 @@ $$
 4. (a) $U$가 다음과 같이 정의된 $\mathbb{C}^5$의 부분공간이라고 하자.
 
    $$
-   U=\{(z_1,z_2,z_3,z_4,z_5) \in \mathbb{C}^5 : 6z_1=z_2\text{ 그리고 }z_3+2z_4+3z_5=0\}.
+   U=\lbrace(z_1,z_2,z_3,z_4,z_5) \in \mathbb{C}^5 : 6z_1=z_2\text{ 그리고 }z_3+2z_4+3z_5=0\rbrace.
    $$
 
    $U$의 기저를 찾아라.
@@ -751,7 +751,7 @@ $$
 
 8. 증명하거나 반례를 들어라. $v_1,v_2,v_3,v_4$가 $V$의 기저이고 $U$가 $V$의 부분공간이며 $v_1,v_2 \in U$, $v_3 \notin U$, $v_4 \notin U$이면, $v_1,v_2$는 $U$의 기저이다.
 
-9. $v_1,\ldots,v_m$이 $V$ 안의 벡터들의 리스트라고 하자. $k \in \{1,\ldots,m\}$에 대해
+9. $v_1,\ldots,v_m$이 $V$ 안의 벡터들의 리스트라고 하자. $k \in \lbrace1,\ldots,m\rbrace$에 대해
 
    $$
    w_k=v_1+\cdots+v_k
@@ -796,8 +796,8 @@ $$
 
 - $\dim \mathbb{F}^n=n$이다. 왜냐하면 $\mathbb{F}^n$의 표준기저의 길이가 $n$이기 때문이다.
 - $\dim \mathcal{P}_m(\mathbb{F})=m+1$이다. 왜냐하면 $\mathcal{P}_m(\mathbb{F})$의 표준기저 $1,z,\ldots,z^m$의 길이가 $m+1$이기 때문이다.
-- $U=\{(x,x,y) \in \mathbb{F}^3 : x,y \in \mathbb{F}\}$이면 $\dim U=2$이다. 왜냐하면 $(1,1,0),(0,0,1)$이 $U$의 기저이기 때문이다.
-- $U=\{(x,y,z) \in \mathbb{F}^3 : x+y+z=0\}$이면 $\dim U=2$이다. 왜냐하면 $(1,-1,0),(1,0,-1)$이 $U$의 기저이기 때문이다.
+- $U=\lbrace(x,x,y) \in \mathbb{F}^3 : x,y \in \mathbb{F}\rbrace$이면 $\dim U=2$이다. 왜냐하면 $(1,1,0),(0,0,1)$이 $U$의 기저이기 때문이다.
+- $U=\lbrace(x,y,z) \in \mathbb{F}^3 : x+y+z=0\rbrace$이면 $\dim U=2$이다. 왜냐하면 $(1,-1,0),(1,0,-1)$이 $U$의 기저이기 때문이다.
 
 유한차원 벡터 공간의 모든 부분공간은 유한차원이고(2.25에 의해), 따라서 차원을 가진다. 다음 결과는 부분공간의 차원에 대한 예상되는 부등식을 준다.
 
@@ -838,7 +838,7 @@ $\mathbb{F}^2$ 안의 벡터 리스트 $(5,7),(4,3)$을 생각하자. 이 길이
 $U$를 다음과 같이 정의된 $\mathcal{P}_3(\mathbb{R})$의 부분공간이라고 하자.
 
 $$
-U=\{p \in \mathcal{P}_3(\mathbb{R}) : p'(5)=0\}.
+U=\lbrace p \in \mathcal{P}_3(\mathbb{R}) : p'(5)=0\rbrace.
 $$
 
 $U$의 기저를 찾기 위해, 먼저 다항식 $1$, $(x-5)^2$, $(x-5)^3$ 각각이 $U$에 속함을 주목하라.
@@ -903,8 +903,8 @@ $$
 $$
 \begin{aligned}
 \dim(V_1+V_2)
-&=m+j+k \\
-&=(m+j)+(m+k)-m \\
+&=m+j+k \cr
+&=(m+j)+(m+k)-m \cr
 &=\dim V_1+\dim V_2-\dim(V_1\cap V_2)
 \end{aligned}
 $$
@@ -945,16 +945,16 @@ $$
 
 이라는 식이 된다. 리스트 $v_1,\ldots,v_m,u_1,\ldots,u_j$가 선형 독립이므로, 이 식은 모든 $a$들과 $b$들이 $0$임을 함의한다. 이로써 증명이 끝난다.
 
-$S$가 유한집합일 때, $\#S$가 $S$의 원소 수를 나타내도록 하자. 아래 표는 유한집합과 유한차원 벡터 공간을 비교한다. 집합에 대한 $\#S$와 벡터 공간에 대한 $\dim V$ 사이의 유사성, 그리고 집합의 맥락에서 부분집합들의 합집합과 벡터 공간의 맥락에서 부분공간들의 합 사이의 유사성을 보여 준다.
+$S$가 유한집합일 때, $\\#S$가 $S$의 원소 수를 나타내도록 하자. 아래 표는 유한집합과 유한차원 벡터 공간을 비교한다. 집합에 대한 $\\#S$와 벡터 공간에 대한 $\dim V$ 사이의 유사성, 그리고 집합의 맥락에서 부분집합들의 합집합과 벡터 공간의 맥락에서 부분공간들의 합 사이의 유사성을 보여 준다.
 
 | 집합                                                                                                          | 벡터 공간                                                                                             |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | $S$는 유한집합이다                                                                                            | $V$는 유한차원 벡터 공간이다                                                                          |
-| $\#S$                                                                                                         | $\dim V$                                                                                              |
+| $\\#S$                                                                                                         | $\dim V$                                                                                              |
 | $S$의 부분집합 $S_1,S_2$에 대해, 합집합 $S_1\cup S_2$는 $S_1$과 $S_2$를 포함하는 $S$의 가장 작은 부분집합이다 | $V$의 부분공간 $V_1,V_2$에 대해, 합 $V_1+V_2$는 $V_1$과 $V_2$를 포함하는 $V$의 가장 작은 부분공간이다 |
-| $\#(S_1\cup S_2)=\#S_1+\#S_2-\#(S_1\cap S_2)$                                                                 | $\dim(V_1+V_2)=\dim V_1+\dim V_2-\dim(V_1\cap V_2)$                                                   |
-| $\#(S_1\cup S_2)=\#S_1+\#S_2 \Longleftrightarrow S_1\cap S_2=\varnothing$                                     | $\dim(V_1+V_2)=\dim V_1+\dim V_2 \Longleftrightarrow V_1\cap V_2=\{0\}$                               |
-| $S_1\cup\cdots\cup S_m$이 서로소 합집합 $\Longleftrightarrow \#(S_1\cup\cdots\cup S_m)=\#S_1+\cdots+\#S_m$    | $V_1+\cdots+V_m$이 직합 $\Longleftrightarrow \dim(V_1+\cdots+V_m)=\dim V_1+\cdots+\dim V_m$           |
+| $\\#(S_1\cup S_2)=\\#S_1+\\#S_2-\\#(S_1\cap S_2)$                                                                 | $\dim(V_1+V_2)=\dim V_1+\dim V_2-\dim(V_1\cap V_2)$                                                   |
+| $\\#(S_1\cup S_2)=\\#S_1+\\#S_2 \Longleftrightarrow S_1\cap S_2=\varnothing$                                     | $\dim(V_1+V_2)=\dim V_1+\dim V_2 \Longleftrightarrow V_1\cap V_2=\lbrace0\rbrace$                               |
+| $S_1\cup\cdots\cup S_m$이 서로소 합집합 $\Longleftrightarrow \\#(S_1\cup\cdots\cup S_m)=\\#S_1+\cdots+\\#S_m$    | $V_1+\cdots+V_m$이 직합 $\Longleftrightarrow \dim(V_1+\cdots+V_m)=\dim V_1+\cdots+\dim V_m$           |
 
 위 표의 마지막 행은 서로소 합집합(집합의 경우)과 직합(벡터 공간의 경우) 사이의 유사성에 초점을 맞춘다. 위 마지막 칸의 결과에 대한 증명은 3.94에서 제시될 것이다.
 
@@ -962,35 +962,35 @@ $S$가 유한집합일 때, $\#S$가 $S$의 원소 수를 나타내도록 하자
 
 ### 연습문제 2C
 
-1. $\mathbb{R}^2$의 부분공간은 정확히 $\{0\}$, 원점을 지나는 $\mathbb{R}^2$의 모든 직선, 그리고 $\mathbb{R}^2$임을 보여라.
+1. $\mathbb{R}^2$의 부분공간은 정확히 $\lbrace0\rbrace$, 원점을 지나는 $\mathbb{R}^2$의 모든 직선, 그리고 $\mathbb{R}^2$임을 보여라.
 
-2. $\mathbb{R}^3$의 부분공간은 정확히 $\{0\}$, 원점을 지나는 $\mathbb{R}^3$의 모든 직선, 원점을 지나는 $\mathbb{R}^3$의 모든 평면, 그리고 $\mathbb{R}^3$임을 보여라.
+2. $\mathbb{R}^3$의 부분공간은 정확히 $\lbrace0\rbrace$, 원점을 지나는 $\mathbb{R}^3$의 모든 직선, 원점을 지나는 $\mathbb{R}^3$의 모든 평면, 그리고 $\mathbb{R}^3$임을 보여라.
 
-3. (a) $U=\{p \in \mathcal{P}_4(\mathbb{F}) : p(6)=0\}$라고 하자. $U$의 기저를 찾아라.
+3. (a) $U=\lbrace p \in \mathcal{P}_4(\mathbb{F}) : p(6)=0\rbrace$라고 하자. $U$의 기저를 찾아라.
 
    (b) (a)의 기저를 $\mathcal{P}_4(\mathbb{F})$의 기저로 확장하라.
 
    (c) $\mathcal{P}_4(\mathbb{F})=U\oplus W$가 되도록 하는 $\mathcal{P}_4(\mathbb{F})$의 부분공간 $W$를 찾아라.
 
-4. (a) $U=\{p \in \mathcal{P}_4(\mathbb{R}) : p''(6)=0\}$라고 하자. $U$의 기저를 찾아라.
+4. (a) $U=\lbrace p \in \mathcal{P}_4(\mathbb{R}) : p''(6)=0\rbrace$라고 하자. $U$의 기저를 찾아라.
 
    (b) (a)의 기저를 $\mathcal{P}_4(\mathbb{R})$의 기저로 확장하라.
 
    (c) $\mathcal{P}_4(\mathbb{R})=U\oplus W$가 되도록 하는 $\mathcal{P}_4(\mathbb{R})$의 부분공간 $W$를 찾아라.
 
-5. (a) $U=\{p \in \mathcal{P}_4(\mathbb{F}) : p(2)=p(5)\}$라고 하자. $U$의 기저를 찾아라.
+5. (a) $U=\lbrace p \in \mathcal{P}_4(\mathbb{F}) : p(2)=p(5)\rbrace$라고 하자. $U$의 기저를 찾아라.
 
    (b) (a)의 기저를 $\mathcal{P}_4(\mathbb{F})$의 기저로 확장하라.
 
    (c) $\mathcal{P}_4(\mathbb{F})=U\oplus W$가 되도록 하는 $\mathcal{P}_4(\mathbb{F})$의 부분공간 $W$를 찾아라.
 
-6. (a) $U=\{p \in \mathcal{P}_4(\mathbb{F}) : p(2)=p(5)=p(6)\}$라고 하자. $U$의 기저를 찾아라.
+6. (a) $U=\lbrace p \in \mathcal{P}_4(\mathbb{F}) : p(2)=p(5)=p(6)\rbrace$라고 하자. $U$의 기저를 찾아라.
 
    (b) (a)의 기저를 $\mathcal{P}_4(\mathbb{F})$의 기저로 확장하라.
 
    (c) $\mathcal{P}_4(\mathbb{F})=U\oplus W$가 되도록 하는 $\mathcal{P}_4(\mathbb{F})$의 부분공간 $W$를 찾아라.
 
-7. (a) $U=\{p \in \mathcal{P}_4(\mathbb{R}) : \int_{-1}^1 p=0\}$라고 하자. $U$의 기저를 찾아라.
+7. (a) $U=\lbrace p \in \mathcal{P}_4(\mathbb{R}) : \int_{-1}^1 p=0\rbrace$라고 하자. $U$의 기저를 찾아라.
 
    (b) (a)의 기저를 $\mathcal{P}_4(\mathbb{R})$의 기저로 확장하라.
 
@@ -1018,9 +1018,9 @@ $S$가 유한집합일 때, $\#S$가 $S$의 원소 수를 나타내도록 하자
 
 12. $U$와 $W$가 $\mathbb{R}^8$의 부분공간이고 $\dim U=3$, $\dim W=5$, $U+W=\mathbb{R}^8$이라고 하자. $\mathbb{R}^8=U\oplus W$임을 증명하라.
 
-13. $U$와 $W$가 둘 다 $\mathbb{R}^9$의 $5$차원 부분공간이라고 하자. $U\cap W \neq \{0\}$임을 증명하라.
+13. $U$와 $W$가 둘 다 $\mathbb{R}^9$의 $5$차원 부분공간이라고 하자. $U\cap W \neq \lbrace0\rbrace$임을 증명하라.
 
-14. $V$가 $10$차원 벡터 공간이고 $V_1,V_2,V_3$가 $V$의 부분공간이며 $\dim V_1=\dim V_2=\dim V_3=7$이라고 하자. $V_1\cap V_2\cap V_3 \neq \{0\}$임을 증명하라.
+14. $V$가 $10$차원 벡터 공간이고 $V_1,V_2,V_3$가 $V$의 부분공간이며 $\dim V_1=\dim V_2=\dim V_3=7$이라고 하자. $V_1\cap V_2\cap V_3 \neq \lbrace0\rbrace$임을 증명하라.
 
 15. $V$가 유한차원이고 $V_1,V_2,V_3$가 $V$의 부분공간이며
 
@@ -1028,7 +1028,7 @@ $S$가 유한집합일 때, $\#S$가 $S$의 원소 수를 나타내도록 하자
     \dim V_1+\dim V_2+\dim V_3 > 2\dim V
     $$
 
-    라고 하자. $V_1\cap V_2\cap V_3 \neq \{0\}$임을 증명하라.
+    라고 하자. $V_1\cap V_2\cap V_3 \neq \lbrace0\rbrace$임을 증명하라.
 
 16. $V$가 유한차원이고 $U$가 $V$의 부분공간이며 $U \neq V$라고 하자. $n=\dim V$이고 $m=\dim U$라고 하자. 교집합이 $U$와 같고 각각의 차원이 $n-1$인 $V$의 부분공간 $n-m$개가 존재함을 증명하라.
 
@@ -1054,8 +1054,8 @@ $S$가 유한집합일 때, $\#S$가 $S$의 원소 수를 나타내도록 하자
     $$
     \begin{aligned}
     \dim(V_1+V_2+V_3)
-    &= \dim V_1+\dim V_2+\dim V_3 \\
-    &\quad - \dim(V_1\cap V_2)-\dim(V_1\cap V_3)-\dim(V_2\cap V_3) \\
+    &= \dim V_1+\dim V_2+\dim V_3 \cr
+    &\quad - \dim(V_1\cap V_2)-\dim(V_1\cap V_3)-\dim(V_2\cap V_3) \cr
     &\quad + \dim(V_1\cap V_2\cap V_3).
     \end{aligned}
     $$
@@ -1067,8 +1067,8 @@ $S$가 유한집합일 때, $\#S$가 $S$의 원소 수를 나타내도록 하자
     $$
     \begin{aligned}
     \dim(V_1+V_2+V_3)
-    &= \dim V_1+\dim V_2+\dim V_3 \\
-    &\quad - \frac{\dim(V_1\cap V_2)+\dim(V_1\cap V_3)+\dim(V_2\cap V_3)}{3} \\
+    &= \dim V_1+\dim V_2+\dim V_3 \cr
+    &\quad - \frac{\dim(V_1\cap V_2)+\dim(V_1\cap V_3)+\dim(V_2\cap V_3)}{3} \cr
     &\quad - \frac{\dim((V_1+V_2)\cap V_3)+\dim((V_1+V_3)\cap V_2)+\dim((V_2+V_3)\cap V_1)}{3}.
     \end{aligned}
     $$

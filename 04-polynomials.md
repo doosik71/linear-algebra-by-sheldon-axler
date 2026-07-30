@@ -94,7 +94,7 @@ $$
 $$
 \overline{w+z}=\overline{w}+\overline{z}
 \quad\text{그리고}\quad
-\overline{wz}=\overline{w}\,\overline{z}.
+\overline{wz}=\overline{w}\thinspace\overline{z}.
 $$
 
 복소켤레를 두 번 취하면 원래 수가 된다:
@@ -120,7 +120,7 @@ $$
 절댓값의 곱셈성:
 
 $$
-|wz|=|w|\,|z|.
+|wz|=|w|\thinspace|z|.
 $$
 
 삼각부등식:
@@ -136,12 +136,12 @@ $$
 $$
 \begin{aligned}
 |w+z|^2
-&=(w+z)\overline{(w+z)} \\
-&=(w+z)(\overline{w}+\overline{z}) \\
-&=w\overline{w}+z\overline{z}+w\overline{z}+z\overline{w} \\
-&=|w|^2+|z|^2+2\text{Re}(w\overline{z}) \\
-&\le |w|^2+|z|^2+2|w\overline{z}| \\
-&=|w|^2+|z|^2+2|w|\,|z| \\
+&=(w+z)\overline{(w+z)} \cr
+&=(w+z)(\overline{w}+\overline{z}) \cr
+&=w\overline{w}+z\overline{z}+w\overline{z}+z\overline{w} \cr
+&=|w|^2+|z|^2+2\text{Re}(w\overline{z}) \cr
+&\le |w|^2+|z|^2+2|w\overline{z}| \cr
+&=|w|^2+|z|^2+2|w|\thinspace|z| \cr
 &=(|w|+|z|)^2.
 \end{aligned}
 $$
@@ -190,7 +190,7 @@ $$
 p(z)=p(z)-p(\lambda)=a_1(z-\lambda)+\cdots+a_m(z^m-\lambda^m)
 $$
 
-이다. 각 $k\in\{1,\ldots,m\}$에 대해
+이다. 각 $k\in\lbrace1,\ldots,m\rbrace$에 대해
 
 $$
 z^k-\lambda^k
@@ -281,7 +281,7 @@ $$
 \begin{aligned}
 p
 &=a_0+a_1z+\cdots+a_{m-1}z^{m-1}
-+b_0s+b_1zs+\cdots+b_{n-m}z^{n-m}s \\
++b_0s+b_1zs+\cdots+b_{n-m}z^{n-m}s \cr
 &=\underbrace{a_0+a_1z+\cdots+a_{m-1}z^{m-1}}_{r}
 +s\underbrace{(b_0+b_1z+\cdots+b_{n-m}z^{n-m})}_{q}.
 \end{aligned}
@@ -358,7 +358,7 @@ $$
 $$
 \begin{aligned}
 |q(t\beta)|
-&\le |1+a_kt^k\beta^k|+t^{k+1}c \\
+&\le |1+a_kt^k\beta^k|+t^{k+1}c \cr
 &=1-t^k(1-tc).
 \end{aligned}
 $$
@@ -442,7 +442,7 @@ $$
 이 등식의 양변에 복소켤레를 취하면
 
 $$
-a_0+a_1\overline{\lambda}+\cdots+a_m\overline{\lambda}^{\,m}=0
+a_0+a_1\overline{\lambda}+\cdots+a_m\overline{\lambda}^{\thinspace m}=0
 $$
 
 을 얻는다. 여기서 복소켤레의 기본 성질(4.4)을 사용했다. 위 식은 $\overline{\lambda}$가 $p$의 영점임을 보여 준다.
@@ -482,7 +482,7 @@ $$
 $$
 \begin{aligned}
 x^2+bx+c
-&=\left(x+\frac{b}{2}\right)^2-d^2 \\
+&=\left(x+\frac{b}{2}\right)^2-d^2 \cr
 &=\left(x+\frac{b}{2}+d\right)\left(x+\frac{b}{2}-d\right)
 \end{aligned}
 $$
@@ -524,7 +524,7 @@ $p$를 $\mathcal{P}(\mathbb{C})$의 원소로 생각하자. $p$의 모든 복소
 $$
 \begin{aligned}
 p(x)
-&=(x-\lambda)(x-\overline{\lambda})q(x) \\
+&=(x-\lambda)(x-\overline{\lambda})q(x) \cr
 &=\left(x^2-2(\text{Re}\lambda)x+|\lambda|^2\right)q(x)
 \end{aligned}
 $$
@@ -570,7 +570,7 @@ $$
 
    (c) $z\overline{z}=|z|^2$
 
-   (d) $\overline{w+z}=\overline{w}+\overline{z}$ 그리고 $\overline{wz}=\overline{w}\,\overline{z}$
+   (d) $\overline{w+z}=\overline{w}+\overline{z}$ 그리고 $\overline{wz}=\overline{w}\thinspace\overline{z}$
 
    (e) $\overline{\overline{z}}=z$
 
@@ -578,7 +578,7 @@ $$
 
    (g) $|\overline{z}|=|z|$
 
-   (h) $|wz|=|w|\,|z|$
+   (h) $|wz|=|w|\thinspace|z|$
 
    위 결과들은 독자에게 맡겨 두었던 4.4의 부분들이다.
 
@@ -609,7 +609,7 @@ $$
 4. $m$이 양의 정수라고 하자. 집합
 
    $$
-   \{0\}\cup\{p\in\mathcal{P}(\mathbb{F}):\deg p=m\}
+   \lbrace0\rbrace\cup\lbrace p\in\mathcal{P}(\mathbb{F}):\deg p=m\rbrace
    $$
 
    은 $\mathcal{P}(\mathbb{F})$의 부분공간인가?
@@ -617,7 +617,7 @@ $$
 5. 집합
 
    $$
-   \{0\}\cup\{p\in\mathcal{P}(\mathbb{F}):\deg p\text{는 짝수}\}
+   \lbrace0\rbrace\cup\lbrace p\in\mathcal{P}(\mathbb{F}):\deg p\text{는 짝수}\rbrace
    $$
 
    은 $\mathcal{P}(\mathbb{F})$의 부분공간인가?
@@ -649,7 +649,7 @@ $$
     $$
     (Tp)(x)=
     \begin{cases}
-    \dfrac{p(x)-p(3)}{x-3}, & x\ne 3,\\
+    \dfrac{p(x)-p(3)}{x-3}, & x\ne 3,\cr
     p'(3), & x=3.
     \end{cases}
     $$
@@ -666,7 +666,7 @@ $$
 
 12. $m$이 음이 아닌 정수이고 $p\in\mathcal{P}_m(\mathbb{C})$라고 하자. 서로 다른 실수 $x_0,x_1,\ldots,x_m$이 존재하여 각 $k=0,1,\ldots,m$에 대해 $p(x_k)\in\mathbb{R}$라고 하자. 그러면 $p$의 모든 계수가 실수임을 증명하라.
 
-13. $p\in\mathcal{P}(\mathbb{F})$이고 $p\ne 0$이라고 하자. $U=\{pq:q\in\mathcal{P}(\mathbb{F})\}$라고 하자.
+13. $p\in\mathcal{P}(\mathbb{F})$이고 $p\ne 0$이라고 하자. $U=\lbrace pq:q\in\mathcal{P}(\mathbb{F})\rbrace$라고 하자.
 
     (a) $\dim\mathcal{P}(\mathbb{F})/U=\deg p$임을 보여라.
 

@@ -17,16 +17,16 @@
 
 ### 내적
 
-내적 개념의 동기를 얻기 위해, $\mathbb{R}^2$와 $\mathbb{R}^3$의 벡터를 원점을 시작점으로 하는 화살표로 생각하자. $\mathbb{R}^2$ 또는 $\mathbb{R}^3$에 있는 벡터 $v$의 길이를 $v$의 노름이라고 부르며 $\|v\|$로 나타낸다. 따라서 $v=(a,b)\in\mathbb{R}^2$이면
+내적 개념의 동기를 얻기 위해, $\mathbb{R}^2$와 $\mathbb{R}^3$의 벡터를 원점을 시작점으로 하는 화살표로 생각하자. $\mathbb{R}^2$ 또는 $\mathbb{R}^3$에 있는 벡터 $v$의 길이를 $v$의 노름이라고 부르며 $\Vert v\Vert$로 나타낸다. 따라서 $v=(a,b)\in\mathbb{R}^2$이면
 
 $$
-\|v\|=\sqrt{a^2+b^2}
+\Vert v\Vert=\sqrt{a^2+b^2}
 $$
 
 이다. 마찬가지로 $v=(a,b,c)\in\mathbb{R}^3$이면
 
 $$
-\|v\|=\sqrt{a^2+b^2+c^2}
+\Vert v\Vert=\sqrt{a^2+b^2+c^2}
 $$
 
 이다.
@@ -34,7 +34,7 @@ $$
 더 높은 차원에서는 그림을 그릴 수 없지만, $\mathbb{R}^n$으로의 일반화는 쉽다. $x=(x_1,\ldots,x_n)\in\mathbb{R}^n$의 노름을
 
 $$
-\|x\|=\sqrt{x_1^2+\cdots+x_n^2}
+\Vert x\Vert=\sqrt{x_1^2+\cdots+x_n^2}
 $$
 
 로 정의한다.
@@ -51,12 +51,12 @@ $$
 
 으로 정의한다. 여기서 $x=(x_1,\ldots,x_n)$이고 $y=(y_1,\ldots,y_n)$이다.
 
-벡터를 화살표가 아니라 점으로 생각한다면, $\|x\|$는 원점에서 점 $x$까지의 거리로 해석해야 한다.
+벡터를 화살표가 아니라 점으로 생각한다면, $\Vert x\Vert$는 원점에서 점 $x$까지의 거리로 해석해야 한다.
 
 $\mathbb{R}^n$의 두 벡터의 점곱은 벡터가 아니라 수이다. 모든 $x\in\mathbb{R}^n$에 대해
 
 $$
-x\cdot x=\|x\|^2
+x\cdot x=\Vert x\Vert^2
 $$
 
 임에 주목하라. 더 나아가 $\mathbb{R}^n$의 점곱은 다음 성질들을 가진다.
@@ -79,16 +79,16 @@ $\lambda=a+bi$이고 $a,b\in\mathbb{R}$이면 다음을 떠올리자.
 $z=(z_1,\ldots,z_n)\in\mathbb{C}^n$에 대해, $z$의 노름을
 
 $$
-\|z\|=\sqrt{|z_1|^2+\cdots+|z_n|^2}
+\Vert z\Vert=\sqrt{|z_1|^2+\cdots+|z_n|^2}
 $$
 
-로 정의한다. $\|z\|$가 음이 아닌 수가 되기를 원하므로 절댓값이 필요하다. 다음에 주목하라.
+로 정의한다. $\Vert z\Vert$가 음이 아닌 수가 되기를 원하므로 절댓값이 필요하다. 다음에 주목하라.
 
 $$
-\|z\|^2=z_1\overline{z_1}+\cdots+z_n\overline{z_n}.
+\Vert z\Vert^2=z_1\overline{z_1}+\cdots+z_n\overline{z_n}.
 $$
 
-$\mathbb{R}^n$에서 그랬던 것처럼 $\|z\|^2$를 $z$와 자기 자신의 내적으로 생각하고 싶다. 따라서 위 식은 $w=(w_1,\ldots,w_n)\in\mathbb{C}^n$와 $z$의 내적이
+$\mathbb{R}^n$에서 그랬던 것처럼 $\Vert z\Vert^2$를 $z$와 자기 자신의 내적으로 생각하고 싶다. 따라서 위 식은 $w=(w_1,\ldots,w_n)\in\mathbb{C}^n$와 $z$의 내적이
 
 $$
 w_1\overline{z_1}+\cdots+w_n\overline{z_n}
@@ -185,7 +185,7 @@ $$
 (e) 모든 $p,q\in\mathcal{P}(\mathbb{R})$에 대해
 
 $$
-\langle p,q\rangle=\int_0^\infty p(x)q(x)e^{-x}\,dx
+\langle p,q\rangle=\int_0^\infty p(x)q(x)e^{-x}\thinspace dx
 $$
 
 로 $\mathcal{P}(\mathbb{R})$ 위의 내적을 정의할 수 있다.
@@ -245,9 +245,9 @@ $$
 $$
 \begin{aligned}
 \langle u,v+w\rangle
-&=\overline{\langle v+w,u\rangle} \\
-&=\overline{\langle v,u\rangle+\langle w,u\rangle} \\
-&=\overline{\langle v,u\rangle}+\overline{\langle w,u\rangle} \\
+&=\overline{\langle v+w,u\rangle} \cr
+&=\overline{\langle v,u\rangle+\langle w,u\rangle} \cr
+&=\overline{\langle v,u\rangle}+\overline{\langle w,u\rangle} \cr
 &=\langle u,v\rangle+\langle u,w\rangle.
 \end{aligned}
 $$
@@ -257,9 +257,9 @@ $$
 $$
 \begin{aligned}
 \langle u,\lambda v\rangle
-&=\overline{\langle \lambda v,u\rangle} \\
-&=\overline{\lambda\langle v,u\rangle} \\
-&=\overline{\lambda}\,\overline{\langle v,u\rangle} \\
+&=\overline{\langle \lambda v,u\rangle} \cr
+&=\overline{\lambda\langle v,u\rangle} \cr
+&=\overline{\lambda}\thinspace\overline{\langle v,u\rangle} \cr
 &=\overline{\lambda}\langle u,v\rangle.
 \end{aligned}
 $$
@@ -268,12 +268,12 @@ $$
 
 내적을 정의하게 된 처음 동기는 $\mathbb{R}^2$와 $\mathbb{R}^3$의 벡터들의 노름이었다. 이제 각 내적이 노름을 결정한다는 것을 본다.
 
-**6.7 정의: 노름, $\|v\|$**
+**6.7 정의: 노름, $\Vert v\Vert$**
 
-$v\in V$에 대해, $v$의 **노름** $\|v\|$를
+$v\in V$에 대해, $v$의 **노름** $\Vert v\Vert$를
 
 $$
-\|v\|=\sqrt{\langle v,v\rangle}
+\Vert v\Vert=\sqrt{\langle v,v\rangle}
 $$
 
 로 정의한다.
@@ -283,13 +283,13 @@ $$
 (a) $(z_1,\ldots,z_n)\in\mathbb{F}^n$이고 유클리드 내적을 사용하면
 
 $$
-\|(z_1,\ldots,z_n)\|=\sqrt{|z_1|^2+\cdots+|z_n|^2}.
+\Vert(z_1,\ldots,z_n)\Vert=\sqrt{|z_1|^2+\cdots+|z_n|^2}.
 $$
 
 (b) $[-1,1]$ 위의 연속 실숫값 함수들의 벡터공간에서, 내적이 6.3(c)처럼 주어져 있고 $f$가 그 벡터공간의 원소이면
 
 $$
-\|f\|=\sqrt{\int_{-1}^{1}f^2}
+\Vert f\Vert=\sqrt{\int_{-1}^{1}f^2}
 $$
 
 이다.
@@ -298,12 +298,12 @@ $$
 
 $v\in V$라고 하자.
 
-(a) $\|v\|=0$일 필요충분조건은 $v=0$인 것이다.
+(a) $\Vert v\Vert=0$일 필요충분조건은 $v=0$인 것이다.
 
 (b) 모든 $\lambda\in\mathbb{F}$에 대해
 
 $$
-\|\lambda v\|=|\lambda|\|v\|
+\Vert\lambda v\Vert=|\lambda|\Vert v\Vert
 $$
 
 이다.
@@ -316,11 +316,11 @@ $$
 
 $$
 \begin{aligned}
-\|\lambda v\|^2
-&=\langle \lambda v,\lambda v\rangle \\
-&=\lambda\langle v,\lambda v\rangle \\
-&=\lambda\overline{\lambda}\langle v,v\rangle \\
-&=|\lambda|^2\|v\|^2.
+\Vert\lambda v\Vert^2
+&=\langle \lambda v,\lambda v\rangle \cr
+&=\lambda\langle v,\lambda v\rangle \cr
+&=\lambda\overline{\lambda}\langle v,v\rangle \cr
+&=|\lambda|^2\Vert v\Vert^2.
 \end{aligned}
 $$
 
@@ -339,7 +339,7 @@ orthogonal이라는 말은 "직각을 이룬"이라는 뜻의 그리스어에서
 연습문제 15번은 $u,v$가 $\mathbb{R}^2$의 영이 아닌 벡터이면
 
 $$
-\langle u,v\rangle=\|u\|\,\|v\|\cos\theta
+\langle u,v\rangle=\Vert u\Vert\thinspace\Vert v\Vert\cos\theta
 $$
 
 임을 증명하라고 한다. 여기서 $\theta$는 $u$와 $v$를 원점을 시작점으로 하는 화살표로 생각할 때 두 벡터 사이의 각도이다. 따라서 $\mathbb{R}^2$의 두 영이 아닌 벡터가 유클리드 내적에 대해 직교할 필요충분조건은 두 벡터 사이 각도의 코사인이 $0$인 것이며, 이는 평면기하의 보통 의미에서 두 벡터가 수직일 필요충분조건이다. 따라서 직교라는 말을 수직을 뜻하는 세련된 말로 생각할 수 있다.
@@ -365,7 +365,7 @@ $$
 $u,v\in V$라고 하자. $u$와 $v$가 직교하면
 
 $$
-\|u+v\|^2=\|u\|^2+\|v\|^2
+\Vert u+v\Vert^2=\Vert u\Vert^2+\Vert v\Vert^2
 $$
 
 이다.
@@ -374,10 +374,10 @@ $$
 
 $$
 \begin{aligned}
-\|u+v\|^2
-&=\langle u+v,u+v\rangle \\
-&=\langle u,u\rangle+\langle u,v\rangle+\langle v,u\rangle+\langle v,v\rangle \\
-&=\|u\|^2+\|v\|^2.
+\Vert u+v\Vert^2
+&=\langle u+v,u+v\rangle \cr
+&=\langle u,u\rangle+\langle u,v\rangle+\langle v,u\rangle+\langle v,v\rangle \cr
+&=\Vert u\Vert^2+\Vert v\Vert^2.
 \end{aligned}
 $$
 
@@ -392,14 +392,14 @@ $$
 따라서 $v$가 $u-cv$에 직교하도록 $c$를 골라야 한다. 즉
 
 $$
-0=\langle u-cv,v\rangle=\langle u,v\rangle-c\|v\|^2
+0=\langle u-cv,v\rangle=\langle u,v\rangle-c\Vert v\Vert^2
 $$
 
-가 되기를 원한다. 위 식은 $c$를 $\langle u,v\rangle/\|v\|^2$로 택해야 함을 보여 준다. 이렇게 $c$를 택하면
+가 되기를 원한다. 위 식은 $c$를 $\langle u,v\rangle/\Vert v\Vert^2$로 택해야 함을 보여 준다. 이렇게 $c$를 택하면
 
 $$
-u=\frac{\langle u,v\rangle}{\|v\|^2}v+
-\left(u-\frac{\langle u,v\rangle}{\|v\|^2}v\right)
+u=\frac{\langle u,v\rangle}{\Vert v\Vert^2}v+
+\left(u-\frac{\langle u,v\rangle}{\Vert v\Vert^2}v\right)
 $$
 
 로 쓸 수 있다. 위 식은 $u$를 $v$의 스칼라배와 $v$에 직교하는 벡터의 합으로 명시적으로 쓴다. 이를 확인하라. 따라서 다음 핵심 결과가 증명되었다.
@@ -409,9 +409,9 @@ $$
 $u,v\in V$이고 $v\ne 0$라고 하자.
 
 $$
-c=\frac{\langle u,v\rangle}{\|v\|^2},
+c=\frac{\langle u,v\rangle}{\Vert v\Vert^2},
 \quad
-w=u-\frac{\langle u,v\rangle}{\|v\|^2}v
+w=u-\frac{\langle u,v\rangle}{\Vert v\Vert^2}v
 $$
 
 라고 두자. 그러면
@@ -431,7 +431,7 @@ $$
 $u,v\in V$라고 하자. 그러면
 
 $$
-|\langle u,v\rangle|\le \|u\|\,\|v\|.
+|\langle u,v\rangle|\le \Vert u\Vert\thinspace\Vert v\Vert.
 $$
 
 이 부등식에서 등호가 성립할 필요충분조건은 $u,v$ 중 하나가 다른 하나의 스칼라배인 것이다.
@@ -439,22 +439,22 @@ $$
 증명. $v=0$이면 원하는 부등식의 양변이 모두 $0$이다. 따라서 $v\ne 0$이라고 가정해도 된다. 6.13이 주는 직교분해
 
 $$
-u=\frac{\langle u,v\rangle}{\|v\|^2}v+w
+u=\frac{\langle u,v\rangle}{\Vert v\Vert^2}v+w
 $$
 
 를 생각하자. 여기서 $w$는 $v$에 직교한다. 피타고라스 정리에 의해
 
 $$
 \begin{aligned}
-\|u\|^2
-&=\left\|\frac{\langle u,v\rangle}{\|v\|^2}v\right\|^2+\|w\|^2 \\
-&=\frac{|\langle u,v\rangle|^2}{\|v\|^2}+\|w\|^2 \\
-&\ge \frac{|\langle u,v\rangle|^2}{\|v\|^2}.
+\Vert u\Vert^2
+&=\left\Vert\frac{\langle u,v\rangle}{\Vert v\Vert^2}v\right\Vert^2+\Vert w\Vert^2 \cr
+&=\frac{|\langle u,v\rangle|^2}{\Vert v\Vert^2}+\Vert w\Vert^2 \cr
+&\ge \frac{|\langle u,v\rangle|^2}{\Vert v\Vert^2}.
 \end{aligned}
 \tag{6.15}
 $$
 
-이 부등식의 양변에 $\|v\|^2$를 곱하고 제곱근을 취하면 원하는 부등식을 얻는다.
+이 부등식의 양변에 $\Vert v\Vert^2$를 곱하고 제곱근을 취하면 원하는 부등식을 얻는다.
 
 오귀스탱-루이 코시(1789-1857)는 1821년에 6.16(a)를 증명했다. 코시의 제자인 빅토르 부냐콥스키(1804-1889)는 1859년에 6.16(b)와 같은 적분 부등식을 증명했다. 몇십 년 뒤 헤르만 슈바르츠(1843-1921)의 비슷한 발견이 더 많은 관심을 끌었고, 이 부등식의 이름으로 이어졌다.
 
@@ -489,7 +489,7 @@ $$
 $u,v\in V$라고 하자. 그러면
 
 $$
-\|u+v\|\le \|u\|+\|v\|.
+\Vert u+v\Vert\le \Vert u\Vert+\Vert v\Vert.
 $$
 
 이 부등식에서 등호가 성립할 필요충분조건은 $u,v$ 중 하나가 다른 하나의 음이 아닌 실수배인 것이다.
@@ -498,14 +498,14 @@ $$
 
 $$
 \begin{aligned}
-\|u+v\|^2
-&=\langle u+v,u+v\rangle \\
-&=\langle u,u\rangle+\langle v,v\rangle+\langle u,v\rangle+\langle v,u\rangle \\
-&=\langle u,u\rangle+\langle v,v\rangle+\langle u,v\rangle+\overline{\langle u,v\rangle} \\
-&=\|u\|^2+\|v\|^2+2\text{Re}\langle u,v\rangle \\
-&\le \|u\|^2+\|v\|^2+2|\langle u,v\rangle| \tag{6.18}\\
-&\le \|u\|^2+\|v\|^2+2\|u\|\,\|v\| \tag{6.19}\\
-&=(\|u\|+\|v\|)^2.
+\Vert u+v\Vert^2
+&=\langle u+v,u+v\rangle \cr
+&=\langle u,u\rangle+\langle v,v\rangle+\langle u,v\rangle+\langle v,u\rangle \cr
+&=\langle u,u\rangle+\langle v,v\rangle+\langle u,v\rangle+\overline{\langle u,v\rangle} \cr
+&=\Vert u\Vert^2+\Vert v\Vert^2+2\text{Re}\langle u,v\rangle \cr
+&\le \Vert u\Vert^2+\Vert v\Vert^2+2|\langle u,v\rangle| \tag{6.18}\cr
+&\le \Vert u\Vert^2+\Vert v\Vert^2+2\Vert u\Vert\thinspace\Vert v\Vert \tag{6.19}\cr
+&=(\Vert u\Vert+\Vert v\Vert)^2.
 \end{aligned}
 $$
 
@@ -516,7 +516,7 @@ $$
 **(6.20)**
 
 $$
-\langle u,v\rangle=\|u\|\,\|v\|
+\langle u,v\rangle=\Vert u\Vert\thinspace\Vert v\Vert
 $$
 
 인 것이다. $u,v$ 중 하나가 다른 하나의 음이 아닌 실수배이면 (6.20)이 성립한다. 반대로 (6.20)이 성립한다고 하자. 그러면 코시-슈바르츠 부등식(6.14)에서 등호가 성립하기 위한 조건에 의해 $u,v$ 중 하나는 다른 하나의 스칼라배이다. 이 스칼라는 (6.20)에 의해 음이 아닌 실수여야 한다. 이로써 증명이 끝난다.
@@ -530,18 +530,18 @@ $$
 $u,v\in V$라고 하자. 그러면
 
 $$
-\|u+v\|^2+\|u-v\|^2=2(\|u\|^2+\|v\|^2).
+\Vert u+v\Vert^2+\Vert u-v\Vert^2=2(\Vert u\Vert^2+\Vert v\Vert^2).
 $$
 
 증명. 우리는
 
 $$
 \begin{aligned}
-\|u+v\|^2+\|u-v\|^2
-&=\langle u+v,u+v\rangle+\langle u-v,u-v\rangle \\
-&=\|u\|^2+\|v\|^2+\langle u,v\rangle+\langle v,u\rangle \\
-&\quad+\|u\|^2+\|v\|^2-\langle u,v\rangle-\langle v,u\rangle \\
-&=2(\|u\|^2+\|v\|^2).
+\Vert u+v\Vert^2+\Vert u-v\Vert^2
+&=\langle u+v,u+v\rangle+\langle u-v,u-v\rangle \cr
+&=\Vert u\Vert^2+\Vert v\Vert^2+\langle u,v\rangle+\langle v,u\rangle \cr
+&\quad+\Vert u\Vert^2+\Vert v\Vert^2-\langle u,v\rangle-\langle v,u\rangle \cr
+&=2(\Vert u\Vert^2+\Vert v\Vert^2).
 \end{aligned}
 $$
 
@@ -567,11 +567,11 @@ $$
 
    (b) $\mathbb{R}^3$의 원소들의 순서쌍 $((x_1,x_2,x_3),(y_1,y_2,y_3))$를 $x_1y_1+x_3y_3$로 보내는 함수가 $\mathbb{R}^3$ 위의 내적이 아님을 보여라.
 
-4. $T\in\mathcal{L}(V)$가 모든 $v\in V$에 대해 $\|Tv\|\le \|v\|$를 만족한다고 하자. $T-\sqrt{2}I$가 단사임을 증명하라.
+4. $T\in\mathcal{L}(V)$가 모든 $v\in V$에 대해 $\Vert Tv\Vert\le \Vert v\Vert$를 만족한다고 하자. $T-\sqrt{2}I$가 단사임을 증명하라.
 
 5. $V$가 실수 내적공간이라고 하자.
 
-   (a) 모든 $u,v\in V$에 대해 $\langle u+v,u-v\rangle=\|u\|^2-\|v\|^2$임을 보여라.
+   (a) 모든 $u,v\in V$에 대해 $\langle u+v,u-v\rangle=\Vert u\Vert^2-\Vert v\Vert^2$임을 보여라.
 
    (b) $u,v\in V$가 같은 노름을 가지면 $u+v$가 $u-v$에 직교함을 보여라.
 
@@ -582,10 +582,10 @@ $$
 $$
 \langle u,v\rangle=0
 \Longleftrightarrow
-\|u\|\le \|u+av\|\quad(a\in\mathbb{F}).
+\Vert u\Vert\le \Vert u+av\Vert\quad(a\in\mathbb{F}).
 $$
 
-7. $u,v\in V$라고 하자. 모든 $a,b\in\mathbb{R}$에 대해 $\|au+bv\|=\|bu+av\|$일 필요충분조건은 $\|u\|=\|v\|$인 것임을 증명하라.
+7. $u,v\in V$라고 하자. 모든 $a,b\in\mathbb{R}$에 대해 $\Vert au+bv\Vert=\Vert bu+av\Vert$일 필요충분조건은 $\Vert u\Vert=\Vert v\Vert$인 것임을 증명하라.
 
 8. $a,b,c,x,y\in\mathbb{R}$이고
 
@@ -595,12 +595,12 @@ $$
 
 이라고 하자. $a+b+c+4x+9y\le 10$임을 증명하라.
 
-9. $u,v\in V$이고 $\|u\|=\|v\|=1$, $\langle u,v\rangle=1$이라고 하자. $u=v$임을 증명하라.
+9. $u,v\in V$이고 $\Vert u\Vert=\Vert v\Vert=1$, $\langle u,v\rangle=1$이라고 하자. $u=v$임을 증명하라.
 
-10. $u,v\in V$이고 $\|u\|\le 1$, $\|v\|\le 1$이라고 하자. 다음을 증명하라.
+10. $u,v\in V$이고 $\Vert u\Vert\le 1$, $\Vert v\Vert\le 1$이라고 하자. 다음을 증명하라.
 
 $$
-\sqrt{1-\|u\|^2}\sqrt{1-\|v\|^2}\le 1-|\langle u,v\rangle|.
+\sqrt{1-\Vert u\Vert^2}\sqrt{1-\Vert v\Vert^2}\le 1-|\langle u,v\rangle|.
 $$
 
 11. $u$는 $(1,3)$의 스칼라배이고, $v$는 $(1,3)$에 직교하며, $(1,2)=u+v$가 되도록 하는 벡터 $u,v\in\mathbb{R}^2$를 찾아라.
@@ -617,18 +617,18 @@ $$
 
 13. 평균의 제곱은 제곱들의 평균보다 작거나 같음을 보여라. 더 정확히, $a_1,\ldots,a_n\in\mathbb{R}$이면 $a_1,\ldots,a_n$의 평균의 제곱은 $a_1^2,\ldots,a_n^2$의 평균보다 작거나 같음을 보여라.
 
-14. $v\in V$이고 $v\ne 0$이라고 하자. $v/\|v\|$가 $V$의 단위구 위에서 $v$에 가장 가까운 유일한 원소임을 증명하라. 더 정확히, $u\in V$이고 $\|u\|=1$이면
+14. $v\in V$이고 $v\ne 0$이라고 하자. $v/\Vert v\Vert$가 $V$의 단위구 위에서 $v$에 가장 가까운 유일한 원소임을 증명하라. 더 정확히, $u\in V$이고 $\Vert u\Vert=1$이면
 
 $$
-\left\|v-\frac{v}{\|v\|}\right\|\le \|v-u\|
+\left\Vert v-\frac{v}{\Vert v\Vert}\right\Vert\le \Vert v-u\Vert
 $$
 
-이고, 등호는 $u=v/\|v\|$일 때만 성립함을 증명하라.
+이고, 등호는 $u=v/\Vert v\Vert$일 때만 성립함을 증명하라.
 
 15. $u,v$가 $\mathbb{R}^2$의 영이 아닌 벡터라고 하자. 다음을 증명하라.
 
 $$
-\langle u,v\rangle=\|u\|\,\|v\|\cos\theta,
+\langle u,v\rangle=\Vert u\Vert\thinspace\Vert v\Vert\cos\theta,
 $$
 
 여기서 $\theta$는 $u$와 $v$를 원점을 시작점으로 하는 화살표로 생각할 때 두 벡터 사이의 각도이다.
@@ -638,7 +638,7 @@ $$
 16. $\mathbb{R}^2$ 또는 $\mathbb{R}^3$에 있는 두 벡터를 원점을 시작점으로 하는 화살표로 생각하면, 두 벡터 사이의 각도는 기하학적으로 정의할 수 있다. 그러나 $n>3$일 때 $\mathbb{R}^n$에서는 기하가 그렇게 분명하지 않다. 따라서 두 영이 아닌 벡터 $x,y\in\mathbb{R}^n$ 사이의 각도를
 
 $$
-\arccos\frac{\langle x,y\rangle}{\|x\|\,\|y\|}
+\arccos\frac{\langle x,y\rangle}{\Vert x\Vert\thinspace\Vert y\Vert}
 $$
 
 로 정의한다. 이 정의의 동기는 연습문제 15번에서 온다. 이 정의가 의미 있음을 보이려면 왜 코시-슈바르츠 부등식이 필요한지 설명하라.
@@ -659,7 +659,7 @@ $$
 $$
 \left(\int_1^\infty f\right)^2
 \le
-\int_1^\infty x^2(f(x))^2\,dx.
+\int_1^\infty x^2(f(x))^2\thinspace dx.
 $$
 
    (b) 어떤 연속함수 $f:[1,\infty)\to[0,\infty)$에 대해 (a)의 부등식에서 양변이 모두 유한하면서 등호가 성립하는가?
@@ -677,7 +677,7 @@ $$
 20. $u,v\in V$이면
 
 $$
-\bigl|\|u\|-\|v\|\bigr|\le \|u-v\|
+\bigl|\Vert u\Vert-\Vert v\Vert\bigr|\le \Vert u-v\Vert
 $$
 
 임을 증명하라.
@@ -687,29 +687,29 @@ $$
 21. $u,v\in V$가
 
 $$
-\|u\|=3,\quad \|u+v\|=4,\quad \|u-v\|=6
+\Vert u\Vert=3,\quad \Vert u+v\Vert=4,\quad \Vert u-v\Vert=6
 $$
 
-을 만족한다고 하자. $\|v\|$는 어떤 수인가?
+을 만족한다고 하자. $\Vert v\Vert$는 어떤 수인가?
 
 22. $u,v\in V$이면
 
 $$
-\|u+v\|\,\|u-v\|\le \|u\|^2+\|v\|^2
+\Vert u+v\Vert\thinspace\Vert u-v\Vert\le \Vert u\Vert^2+\Vert v\Vert^2
 $$
 
 임을 보여라.
 
-23. $v_1,\ldots,v_m\in V$가 각 $k=1,\ldots,m$에 대해 $\|v_k\|\le 1$을 만족한다고 하자. 다음을 만족하는 $a_1,\ldots,a_m\in\{1,-1\}$가 존재함을 보여라.
+23. $v_1,\ldots,v_m\in V$가 각 $k=1,\ldots,m$에 대해 $\Vert v_k\Vert\le 1$을 만족한다고 하자. 다음을 만족하는 $a_1,\ldots,a_m\in\lbrace1,-1\rbrace$가 존재함을 보여라.
 
 $$
-\|a_1v_1+\cdots+a_mv_m\|\le \sqrt{m}.
+\Vert a_1v_1+\cdots+a_mv_m\Vert\le \sqrt{m}.
 $$
 
-24. 증명하거나 반례를 들어라. $\|\cdot\|$가 $\mathbb{R}^2$ 위의 어떤 내적에 대응하는 노름이면, 어떤 $(x,y)\in\mathbb{R}^2$가 존재하여
+24. 증명하거나 반례를 들어라. $\Vert\cdot\Vert$가 $\mathbb{R}^2$ 위의 어떤 내적에 대응하는 노름이면, 어떤 $(x,y)\in\mathbb{R}^2$가 존재하여
 
 $$
-\|(x,y)\|\ne \max\{|x|,|y|\}
+\Vert(x,y)\Vert\ne \max\lbrace|x|,|y|\rbrace
 $$
 
 이다.
@@ -717,7 +717,7 @@ $$
 25. $p>0$이라고 하자. 모든 $(x,y)\in\mathbb{R}^2$에 대해
 
 $$
-\|(x,y)\|=(|x|^p+|y|^p)^{1/p}
+\Vert(x,y)\Vert=(|x|^p+|y|^p)^{1/p}
 $$
 
 로 주어지는 대응 노름을 가지는 $\mathbb{R}^2$ 위의 내적이 존재할 필요충분조건은 $p=2$인 것임을 증명하라.
@@ -725,7 +725,7 @@ $$
 26. $V$가 실수 내적공간이라고 하자. 모든 $u,v\in V$에 대해
 
 $$
-\langle u,v\rangle=\frac{\|u+v\|^2-\|u-v\|^2}{4}
+\langle u,v\rangle=\frac{\Vert u+v\Vert^2-\Vert u-v\Vert^2}{4}
 $$
 
 임을 증명하라.
@@ -734,12 +734,12 @@ $$
 
 $$
 \langle u,v\rangle
-=\frac{\|u+v\|^2-\|u-v\|^2+\|u+iv\|^2 i-\|u-iv\|^2 i}{4}
+=\frac{\Vert u+v\Vert^2-\Vert u-v\Vert^2+\Vert u+iv\Vert^2 i-\Vert u-iv\Vert^2 i}{4}
 $$
 
 임을 증명하라.
 
-28. 벡터공간 $U$ 위의 노름은 다음 성질을 만족하는 함수 $\|\cdot\|:U\to[0,\infty)$이다. $\|u\|=0$일 필요충분조건은 $u=0$이고, 모든 $\alpha\in\mathbb{F}$와 모든 $u\in U$에 대해 $\|\alpha u\|=|\alpha|\|u\|$이며, 모든 $u,v\in U$에 대해 $\|u+v\|\le \|u\|+\|v\|$이다. 평행사변형 등식을 만족하는 노름은 내적에서 나온다는 것을 증명하라. 다시 말해, $\|\cdot\|$가 평행사변형 등식을 만족하는 $U$ 위의 노름이면, 모든 $u\in U$에 대해 $\|u\|=\langle u,u\rangle^{1/2}$가 되도록 하는 $U$ 위의 내적 $\langle\cdot,\cdot\rangle$이 존재함을 보여라.
+28. 벡터공간 $U$ 위의 노름은 다음 성질을 만족하는 함수 $\Vert\cdot\Vert:U\to[0,\infty)$이다. $\Vert u\Vert=0$일 필요충분조건은 $u=0$이고, 모든 $\alpha\in\mathbb{F}$와 모든 $u\in U$에 대해 $\Vert\alpha u\Vert=|\alpha|\Vert u\Vert$이며, 모든 $u,v\in U$에 대해 $\Vert u+v\Vert\le \Vert u\Vert+\Vert v\Vert$이다. 평행사변형 등식을 만족하는 노름은 내적에서 나온다는 것을 증명하라. 다시 말해, $\Vert\cdot\Vert$가 평행사변형 등식을 만족하는 $U$ 위의 노름이면, 모든 $u\in U$에 대해 $\Vert u\Vert=\langle u,u\rangle^{1/2}$가 되도록 하는 $U$ 위의 내적 $\langle\cdot,\cdot\rangle$이 존재함을 보여라.
 
 29. $V_1,\ldots,V_m$이 내적공간이라고 하자. 다음 식이 $V_1\times\cdots\times V_m$ 위의 내적을 정의함을 보여라.
 
@@ -766,7 +766,7 @@ $$
 $$
 \langle u,v\rangle_{\mathbb{C}}=\langle u,v\rangle
 \quad\text{그리고}\quad
-\|u+iv\|_{\mathbb{C}}^2=\|u\|^2+\|v\|^2
+\Vert u+iv\Vert_{\mathbb{C}}^2=\Vert u\Vert^2+\Vert v\Vert^2
 $$
 
    임을 보여라.
@@ -776,14 +776,14 @@ $$
 31. $u,v,w\in V$라고 하자. 다음을 증명하라.
 
 $$
-\left\|w-\frac12(u+v)\right\|^2
-=\frac{\|w-u\|^2+\|w-v\|^2}{2}-\frac{\|u-v\|^2}{4}.
+\left\Vert w-\frac12(u+v)\right\Vert^2
+=\frac{\Vert w-u\Vert^2+\Vert w-v\Vert^2}{2}-\frac{\Vert u-v\Vert^2}{4}.
 $$
 
 32. $E$가 $V$의 부분집합이고, $u,v\in E$이면 $\frac12(u+v)\in E$라는 성질을 가진다고 하자. $w\in V$라고 하자. $E$ 안에서 $w$에 가장 가까운 점은 많아야 하나뿐임을 보여라. 다시 말해, 모든 $x\in E$에 대해
 
 $$
-\|w-u\|\le \|w-x\|
+\Vert w-u\Vert\le \Vert w-x\Vert
 $$
 
 를 만족하는 $u\in E$는 많아야 하나뿐임을 보여라.
@@ -797,7 +797,7 @@ $$
 =\langle f'(t),g(t)\rangle+\langle f(t),g'(t)\rangle.
 $$
 
-   (b) $c$가 양수이고 모든 $t\in\mathbb{R}$에 대해 $\|f(t)\|=c$라고 하자. 모든 $t\in\mathbb{R}$에 대해 $\langle f'(t),f(t)\rangle=0$임을 보여라.
+   (b) $c$가 양수이고 모든 $t\in\mathbb{R}$에 대해 $\Vert f(t)\Vert=c$라고 하자. 모든 $t\in\mathbb{R}$에 대해 $\langle f'(t),f(t)\rangle=0$임을 보여라.
 
    (c) (b)의 결과를 원점을 중심으로 하는 $\mathbb{R}^n$의 구 위에 놓인 곡선의 접벡터라는 관점에서 기하학적으로 해석하라.
 
@@ -823,17 +823,17 @@ $$
 
 함수 $p$는 $\Delta p=0$이면 조화함수라고 불린다.
 
-$\mathbb{R}^n$ 위의 다항식은 $m_1,\ldots,m_n$이 음이 아닌 정수일 때 $x_1^{m_1}\cdots x_n^{m_n}$ 꼴의 함수들의 실수 계수 선형결합이다. $q$가 $\mathbb{R}^n$ 위의 다항식이라고 하자. $\|x\|=1$인 모든 $x\in\mathbb{R}^n$에 대해 $p(x)=q(x)$가 되도록 하는 $\mathbb{R}^n$ 위의 조화다항식 $p$가 존재함을 증명하라.
+$\mathbb{R}^n$ 위의 다항식은 $m_1,\ldots,m_n$이 음이 아닌 정수일 때 $x_1^{m_1}\cdots x_n^{m_n}$ 꼴의 함수들의 실수 계수 선형결합이다. $q$가 $\mathbb{R}^n$ 위의 다항식이라고 하자. $\Vert x\Vert=1$인 모든 $x\in\mathbb{R}^n$에 대해 $p(x)=q(x)$가 되도록 하는 $\mathbb{R}^n$ 위의 조화다항식 $p$가 존재함을 증명하라.
 
-   이 연습문제에 필요한 조화함수에 관한 유일한 사실은 다음이다. $p$가 $\mathbb{R}^n$ 위의 조화함수이고 $\|x\|=1$인 모든 $x\in\mathbb{R}^n$에 대해 $p(x)=0$이면, $p=0$이다.
+   이 연습문제에 필요한 조화함수에 관한 유일한 사실은 다음이다. $p$가 $\mathbb{R}^n$ 위의 조화함수이고 $\Vert x\Vert=1$인 모든 $x\in\mathbb{R}^n$에 대해 $p(x)=0$이면, $p=0$이다.
 
-   힌트: 원하는 조화다항식 $p$는 어떤 다항식 $r$에 대해 $q+(1-\|x\|^2)r$ 꼴일 것이라고 추측하는 것이 자연스럽다. 적당한 벡터공간 위의 연산자 $T$를
+   힌트: 원하는 조화다항식 $p$는 어떤 다항식 $r$에 대해 $q+(1-\Vert x\Vert^2)r$ 꼴일 것이라고 추측하는 것이 자연스럽다. 적당한 벡터공간 위의 연산자 $T$를
 
 $$
-Tr=\Delta((1-\|x\|^2)r)
+Tr=\Delta((1-\Vert x\Vert^2)r)
 $$
 
-   로 정의하고, $T$가 단사이고 따라서 전사임을 보임으로써 $q+(1-\|x\|^2)r$이 조화함수가 되도록 하는 $\mathbb{R}^n$ 위의 다항식 $r$이 존재함을 증명하라.
+   로 정의하고, $T$가 단사이고 따라서 전사임을 보임으로써 $q+(1-\Vert x\Vert^2)r$이 조화함수가 되도록 하는 $\mathbb{R}^n$ 위의 다항식 $r$이 존재함을 증명하라.
 
 코시와 슈바르츠의 부등식에 대한 셰익스피어풍 소네트를 입력으로 받아 ChatGPT가 쓴 시:
 
@@ -865,7 +865,7 @@ $$
 $$
 \langle e_j,e_k\rangle=
 \begin{cases}
-1, & j=k,\\
+1, & j=k,\cr
 0, & j\ne k
 \end{cases}
 $$
@@ -901,14 +901,14 @@ $$
   는 내적
 
   $$
-  \langle f,g\rangle=\int_{-\pi}^{\pi} f(x)g(x)\,dx
+  \langle f,g\rangle=\int_{-\pi}^{\pi} f(x)g(x)\thinspace dx
   $$
 
   이 주어진 $C[-\pi,\pi]$의 정규직교 리스트이다. 삼각함수로 이루어진 이런 리스트는 조수나 진동처럼 주기적인 현상을 분석하는 데 핵심적인 역할을 한다.
 - $\mathcal{P}_2(\mathbb{R})$에 내적
 
   $$
-  \langle p,q\rangle=\int_{-1}^{1}p(x)q(x)\,dx
+  \langle p,q\rangle=\int_{-1}^{1}p(x)q(x)\thinspace dx
   $$
 
   가 주어져 있다고 하자. 표준기저 $1,x,x^2$은 정규직교 리스트가 아니다. 각 벡터를 그 노름으로 나누면
@@ -924,7 +924,7 @@ $$
 $e_1,\ldots,e_m$이 정규직교 리스트이고 $a_1,\ldots,a_m\in\mathbb{F}$이면
 
 $$
-\|a_1e_1+\cdots+a_me_m\|^2
+\Vert a_1e_1+\cdots+a_me_m\Vert^2
 =|a_1|^2+\cdots+|a_m|^2.
 $$
 
@@ -957,7 +957,7 @@ $$
 $e_1,\ldots,e_m$이 $V$의 정규직교 리스트이고 $v\in V$이면
 
 $$
-|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_m\rangle|^2\le \|v\|^2.
+|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_m\rangle|^2\le \Vert v\Vert^2.
 $$
 
 **증명**
@@ -973,8 +973,8 @@ $$
 각 $k=1,\ldots,m$에 대해 $\langle w,e_k\rangle=0$이므로 $w$는 $u$에 직교한다. 따라서 피타고라스 정리와 6.24에 의해
 
 $$
-\|v\|^2=\|u+w\|^2=\|u\|^2+\|w\|^2
-\ge \|u\|^2
+\Vert v\Vert^2=\Vert u+w\Vert^2=\Vert u\Vert^2+\Vert w\Vert^2
+\ge \Vert u\Vert^2
 =|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_m\rangle|^2.
 $$
 
@@ -1022,7 +1022,7 @@ $$
 (b)
 
 $$
-\|v\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
+\Vert v\Vert^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2.
 $$
 
 (c)
@@ -1050,7 +1050,7 @@ $$
 \begin{aligned}
 (1,2,4,7)
 &=7\left(\frac12,\frac12,\frac12,\frac12\right)
--4\left(\frac12,\frac12,-\frac12,-\frac12\right)\\
+-4\left(\frac12,\frac12,-\frac12,-\frac12\right)\cr
 &\quad+\left(\frac12,-\frac12,-\frac12,\frac12\right)
 +2\left(-\frac12,\frac12,-\frac12,\frac12\right).
 \end{aligned}
@@ -1062,15 +1062,15 @@ $v_1,\ldots,v_m$이 $V$의 일차독립 리스트라고 하자. $f_1=v_1$로 두
 
 $$
 f_k
-=v_k-\frac{\langle v_k,f_1\rangle}{\|f_1\|^2}f_1
+=v_k-\frac{\langle v_k,f_1\rangle}{\Vert f_1\Vert^2}f_1
 -\cdots-
-\frac{\langle v_k,f_{k-1}\rangle}{\|f_{k-1}\|^2}f_{k-1}
+\frac{\langle v_k,f_{k-1}\rangle}{\Vert f_{k-1}\Vert^2}f_{k-1}
 $$
 
 로 정의하자. 그리고 각 $k=1,\ldots,m$에 대해
 
 $$
-e_k=\frac{f_k}{\|f_k\|}
+e_k=\frac{f_k}{\Vert f_k\Vert}
 $$
 
 라고 하자. 그러면 $e_1,\ldots,e_m$은 $V$의 정규직교 리스트이고, 각 $k=1,\ldots,m$에 대해
@@ -1091,7 +1091,7 @@ $$
 \tag{6.33}
 $$
 
-라고 가정하면 $f_k\ne 0$이다. 실제로 $f_k=0$이면 $v_k\in\text{span}(v_1,\ldots,v_{k-1})$가 되어 $v_1,\ldots,v_m$의 일차독립성에 모순이다. 따라서 $e_k=f_k/\|f_k\|$가 잘 정의되고 노름은 $1$이다.
+라고 가정하면 $f_k\ne 0$이다. 실제로 $f_k=0$이면 $v_k\in\text{span}(v_1,\ldots,v_{k-1})$가 되어 $v_1,\ldots,v_m$의 일차독립성에 모순이다. 따라서 $e_k=f_k/\Vert f_k\Vert$가 잘 정의되고 노름은 $1$이다.
 
 또한 $f_k$가 앞의 $f_j$들에 직교하므로 $e_k$도 앞의 $e_j$들에 직교한다. 마지막으로 $e_k$는 $f_k$의 스칼라배이고, $f_k$의 정의를 정리하면 $v_k$가 $\text{span}(f_1,\ldots,f_k)$에 속하므로
 
@@ -1107,21 +1107,21 @@ $$
 $\mathcal{P}_2(\mathbb{R})$에 내적
 
 $$
-\langle p,q\rangle=\int_{-1}^{1}p(x)q(x)\,dx
+\langle p,q\rangle=\int_{-1}^{1}p(x)q(x)\thinspace dx
 $$
 
 가 주어져 있다고 하자. 표준기저 $v_1=1$, $v_2=x$, $v_3=x^2$에 그램-슈미트 절차를 적용하면
 
 $$
-f_1=1,\qquad \|f_1\|^2=2,
+f_1=1,\qquad \Vert f_1\Vert^2=2,
 $$
 
 $$
-f_2=x,\qquad \|f_2\|^2=\frac23,
+f_2=x,\qquad \Vert f_2\Vert^2=\frac23,
 $$
 
 $$
-f_3=x^2-\frac13,\qquad \|f_3\|^2=\frac{8}{45}
+f_3=x^2-\frac13,\qquad \Vert f_3\Vert^2=\frac{8}{45}
 $$
 
 을 얻는다. 따라서
@@ -1206,7 +1206,7 @@ $$
 $\varphi:\mathcal{P}_5(\mathbb{R})\to\mathbb{R}$를
 
 $$
-\varphi(p)=\int_{-1}^{1}p(t)\cos(\pi t)\,dt
+\varphi(p)=\int_{-1}^{1}p(t)\cos(\pi t)\thinspace dt
 $$
 
 로 정의하면 $\varphi$는 $\mathcal{P}_5(\mathbb{R})$ 위의 선형함수이다.
@@ -1214,7 +1214,7 @@ $$
 6.41의 예에서 $\mathcal{P}_5(\mathbb{R})$에 내적
 
 $$
-\langle p,q\rangle=\int_{-1}^{1}p(t)q(t)\,dt
+\langle p,q\rangle=\int_{-1}^{1}p(t)q(t)\thinspace dt
 $$
 
 를 주면, 어떤 다항식 $q\in\mathcal{P}_5(\mathbb{R})$가 존재하여 모든 $p\in\mathcal{P}_5(\mathbb{R})$에 대해
@@ -1262,7 +1262,7 @@ $$
 유일성을 보이자. 모든 $u\in V$에 대해 $\langle u,v\rangle=\langle u,w\rangle$라고 하면, 특히 $u=v-w$를 대입하여
 
 $$
-\|v-w\|^2=0
+\Vert v-w\Vert^2=0
 $$
 
 을 얻는다. 따라서 $v=w$이다.
@@ -1272,29 +1272,29 @@ $$
 $\mathcal{P}_2(\mathbb{R})$에 내적
 
 $$
-\langle p,q\rangle=\int_{-1}^{1}p(t)q(t)\,dt
+\langle p,q\rangle=\int_{-1}^{1}p(t)q(t)\thinspace dt
 $$
 
 가 주어져 있다고 하자. 모든 $p\in\mathcal{P}_2(\mathbb{R})$에 대해
 
 $$
-\int_{-1}^{1}p(t)\cos(\pi t)\,dt
-=\int_{-1}^{1}p(t)q(t)\,dt
+\int_{-1}^{1}p(t)\cos(\pi t)\thinspace dt
+=\int_{-1}^{1}p(t)q(t)\thinspace dt
 \tag{6.45}
 $$
 
 가 성립하게 하는 $q\in\mathcal{P}_2(\mathbb{R})$를 구하자.
 
-$\varphi(p)=\int_{-1}^{1}p(t)\cos(\pi t)\,dt$라고 두면 $\varphi$는 $\mathcal{P}_2(\mathbb{R})$ 위의 선형함수이다. 6.34의 정규직교기저를 6.43에 대입하면
+$\varphi(p)=\int_{-1}^{1}p(t)\cos(\pi t)\thinspace dt$라고 두면 $\varphi$는 $\mathcal{P}_2(\mathbb{R})$ 위의 선형함수이다. 6.34의 정규직교기저를 6.43에 대입하면
 
 $$
 \begin{aligned}
 q(x)
-&=\left(\int_{-1}^{1}\sqrt{\frac12}\cos(\pi t)\,dt\right)\sqrt{\frac12}\\
+&=\left(\int_{-1}^{1}\sqrt{\frac12}\cos(\pi t)\thinspace dt\right)\sqrt{\frac12}\cr
 &\quad+
-\left(\int_{-1}^{1}\sqrt{\frac32}t\cos(\pi t)\,dt\right)\sqrt{\frac32}x\\
+\left(\int_{-1}^{1}\sqrt{\frac32}t\cos(\pi t)\thinspace dt\right)\sqrt{\frac32}x\cr
 &\quad+
-\left(\int_{-1}^{1}\sqrt{\frac{45}{8}}\left(t^2-\frac13\right)\cos(\pi t)\,dt\right)
+\left(\int_{-1}^{1}\sqrt{\frac{45}{8}}\left(t^2-\frac13\right)\cos(\pi t)\thinspace dt\right)
 \sqrt{\frac{45}{8}}\left(x^2-\frac13\right).
 \end{aligned}
 $$
@@ -1321,7 +1321,7 @@ $$
 1. $e_1,\ldots,e_m$이 $V$의 리스트이고 모든 $a_1,\ldots,a_m\in\mathbb{F}$에 대해
 
 $$
-\|a_1e_1+\cdots+a_me_m\|^2=|a_1|^2+\cdots+|a_m|^2
+\Vert a_1e_1+\cdots+a_me_m\Vert^2=|a_1|^2+\cdots+|a_m|^2
 $$
 
    라고 하자. $e_1,\ldots,e_m$이 정규직교 리스트임을 증명하여라.
@@ -1338,7 +1338,7 @@ $$
    \frac{\sin x}{\sqrt\pi},\ldots,\frac{\sin nx}{\sqrt\pi}
    $$
 
-   가 내적 $\langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\,dx$가 주어진 $C[-\pi,\pi]$의 정규직교 리스트임을 증명하여라.
+   가 내적 $\langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\thinspace dx$가 주어진 $C[-\pi,\pi]$의 정규직교 리스트임을 증명하여라.
 
    힌트: 다음 항등식을 사용하여라.
 
@@ -1357,13 +1357,13 @@ $$
 5. $f\in C[-\pi,\pi]$라고 하자. 음이 아닌 정수 $k$에 대해
 
    $$
-   a_k=\frac{1}{\sqrt\pi}\int_{-\pi}^{\pi}f(x)\cos(kx)\,dx
+   a_k=\frac{1}{\sqrt\pi}\int_{-\pi}^{\pi}f(x)\cos(kx)\thinspace dx
    $$
 
    라고 하고, 양의 정수 $k$에 대해
 
    $$
-   b_k=\frac{1}{\sqrt\pi}\int_{-\pi}^{\pi}f(x)\sin(kx)\,dx
+   b_k=\frac{1}{\sqrt\pi}\int_{-\pi}^{\pi}f(x)\sin(kx)\thinspace dx
    $$
 
    라고 하자. 다음 부등식을 증명하여라.
@@ -1371,13 +1371,13 @@ $$
    $$
    \frac{a_0^2}{2}+\sum_{k=1}^{\infty}(a_k^2+b_k^2)
    \le
-   \int_{-\pi}^{\pi}f(x)^2\,dx.
+   \int_{-\pi}^{\pi}f(x)^2\thinspace dx.
    $$
 
 6. $e_1,\ldots,e_n$이 $V$의 정규직교기저이고 $v_1,\ldots,v_n\in V$가 각 $k$에 대해
 
    $$
-   \|e_k-v_k\|<\frac{1}{\sqrt n}
+   \Vert e_k-v_k\Vert<\frac{1}{\sqrt n}
    $$
 
    를 만족한다고 하자. $v_1,\ldots,v_n$이 $V$의 기저임을 증명하여라. 부등식의 $<$를 $\le$로 바꾸면 결론이 거짓이 될 수 있음을 보이는 예도 제시하여라.
@@ -1393,7 +1393,7 @@ $$
 8. $\mathcal{P}_2(\mathbb{R})$에 내적
 
    $$
-   \langle p,q\rangle=\int_{0}^{1}p(x)q(x)\,dx
+   \langle p,q\rangle=\int_{0}^{1}p(x)q(x)\thinspace dx
    $$
 
    가 주어져 있다고 하자. 기저 $1,x,x^2$에 그램-슈미트 절차를 적용하여 $\mathcal{P}_2(\mathbb{R})$의 정규직교기저를 구하여라. 또한 $Tp=p'$로 정의되는 미분 연산자 $T$의 이 정규직교기저에 대한 행렬을 구하여라.
@@ -1411,7 +1411,7 @@ $$
 11. 모든 $p\in\mathcal{P}_2(\mathbb{R})$에 대해
 
     $$
-    p\left(\frac12\right)=\int_{0}^{1}p(x)q(x)\,dx
+    p\left(\frac12\right)=\int_{0}^{1}p(x)q(x)\thinspace dx
     $$
 
     가 성립하게 하는 $q\in\mathcal{P}_2(\mathbb{R})$를 구하여라.
@@ -1419,7 +1419,7 @@ $$
 12. 모든 $p\in\mathcal{P}_2(\mathbb{R})$에 대해
 
     $$
-    \int_{0}^{1}p(x)\cos(\pi x)\,dx=\int_{0}^{1}p(x)q(x)\,dx
+    \int_{0}^{1}p(x)\cos(\pi x)\thinspace dx=\int_{0}^{1}p(x)q(x)\thinspace dx
     $$
 
     가 성립하게 하는 $q\in\mathcal{P}_2(\mathbb{R})$를 구하여라.
@@ -1454,15 +1454,15 @@ $$
 
     가 성립함을 증명하여라.
 
-16. $V$가 유한차원이고 $\langle\cdot,\cdot\rangle_1$, $\langle\cdot,\cdot\rangle_2$가 $V$ 위의 두 내적이라고 하자. 이 두 내적에서 오는 노름을 각각 $\|\cdot\|_1$, $\|\cdot\|_2$라고 할 때, 어떤 양의 수 $c$가 존재하여 모든 $v\in V$에 대해
+16. $V$가 유한차원이고 $\langle\cdot,\cdot\rangle_1$, $\langle\cdot,\cdot\rangle_2$가 $V$ 위의 두 내적이라고 하자. 이 두 내적에서 오는 노름을 각각 $\Vert\cdot\Vert_1$, $\Vert\cdot\Vert_2$라고 할 때, 어떤 양의 수 $c$가 존재하여 모든 $v\in V$에 대해
 
     $$
-    \|v\|_1\le c\|v\|_2
+    \Vert v\Vert_1\le c\Vert v\Vert_2
     $$
 
     가 성립함을 증명하여라.
 
-17. $\mathbb{F}=\mathbb{C}$이고 $V$가 유한차원이며 $T\in\mathcal{L}(V)$라고 하자. $T$의 유일한 고윳값이 $1$이고 모든 $v\in V$에 대해 $\|Tv\|\le\|v\|$이면 $T=I$임을 증명하여라.
+17. $\mathbb{F}=\mathbb{C}$이고 $V$가 유한차원이며 $T\in\mathcal{L}(V)$라고 하자. $T$의 유일한 고윳값이 $1$이고 모든 $v\in V$에 대해 $\Vert Tv\Vert\le\Vert v\Vert$이면 $T=I$임을 증명하여라.
 
 18. $u_1,\ldots,u_m$이 $V$의 일차독립 리스트라고 하자. 각 $k=1,\ldots,m$에 대해 $\langle u_k,v\rangle=1$을 만족하는 $v\in V$가 존재함을 증명하여라.
 
@@ -1471,7 +1471,7 @@ $$
     $$
     \langle v_j,u_k\rangle=
     \begin{cases}
-    0, & j\ne k,\\
+    0, & j\ne k,\cr
     1, & j=k.
     \end{cases}
     $$
@@ -1481,7 +1481,7 @@ $$
 21. $V$가 유한차원 복소 내적공간이고 $T\in\mathcal{L}(V)$의 모든 고윳값의 절댓값이 $1$보다 작다고 하자. 모든 $\varepsilon>0$에 대해 어떤 양의 정수 $m$이 존재하여 모든 $v\in V$에 대해
 
     $$
-    \|T^m v\|\le\varepsilon\|v\|
+    \Vert T^m v\Vert\le\varepsilon\Vert v\Vert
     $$
 
     가 성립함을 증명하여라.
@@ -1489,7 +1489,7 @@ $$
 22. $V=C[-1,1]$에 내적
 
     $$
-    \langle f,g\rangle=\int_{-1}^{1}f(x)g(x)\,dx
+    \langle f,g\rangle=\int_{-1}^{1}f(x)g(x)\thinspace dx
     $$
 
     가 주어져 있다고 하자. $\varphi\in V'$를 $\varphi(f)=f(0)$으로 정의하자. 모든 $f\in V$에 대해
@@ -1503,7 +1503,7 @@ $$
 23. $V$가 유한차원 내적공간이라고 하자. $d:V\times V\to[0,\infty)$를
 
     $$
-    d(u,v)=\|u-v\|
+    d(u,v)=\Vert u-v\Vert
     $$
 
     로 정의한다.
@@ -1523,22 +1523,22 @@ $$
 $U$가 $V$의 부분집합이면 $U$의 **직교여공간** $U^\perp$는 $U$의 모든 벡터에 직교하는 $V$의 모든 벡터들의 집합이다. 즉
 
 $$
-U^\perp=\{v\in V:\text{ 모든 }u\in U\text{에 대해 }\langle u,v\rangle=0\}.
+U^\perp=\lbrace v\in V:\text{ 모든 }u\in U\text{에 대해 }\langle u,v\rangle=0\rbrace.
 $$
 
 **6.47 예: 직교여공간**
 
-- $V=\mathbb{R}^3$이고 $U=\{(2,3,5)\}$이면
+- $V=\mathbb{R}^3$이고 $U=\lbrace(2,3,5)\rbrace$이면
 
   $$
-  U^\perp=\{(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\}.
+  U^\perp=\lbrace(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\rbrace.
   $$
 
   따라서 $U^\perp$는 원점을 지나는 평면이다.
-- $U=\{(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\}$이면
+- $U=\lbrace(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\rbrace$이면
 
   $$
-  U^\perp=\{(2t,3t,5t):t\in\mathbb{R}\}.
+  U^\perp=\lbrace(2t,3t,5t):t\in\mathbb{R}\rbrace.
   $$
 
   따라서 원점을 지나는 평면의 직교여공간은 그 평면에 수직인 직선이다.
@@ -1546,13 +1546,13 @@ $$
 - $V=\mathbb{F}^5$이고
 
   $$
-  U=\{(a,b,0,0,0):a,b\in\mathbb{F}\}
+  U=\lbrace(a,b,0,0,0):a,b\in\mathbb{F}\rbrace
   $$
 
   이면
 
   $$
-  U^\perp=\{(0,0,x,y,z):x,y,z\in\mathbb{F}\}.
+  U^\perp=\lbrace(0,0,x,y,z):x,y,z\in\mathbb{F}\rbrace.
   $$
 
 - $e_1,\ldots,e_m,f_1,\ldots,f_n$이 $V$의 정규직교기저이면
@@ -1568,11 +1568,11 @@ $U,G,H$가 $V$의 부분집합이라고 하자. 그러면 다음이 성립한다
 
 (a) $U^\perp$는 $V$의 부분공간이다.
 
-(b) $\{0\}^\perp=V$.
+(b) $\lbrace0\rbrace^\perp=V$.
 
-(c) $V^\perp=\{0\}$.
+(c) $V^\perp=\lbrace0\rbrace$.
 
-(d) $U\cap U^\perp\subset \{0\}$.
+(d) $U\cap U^\perp\subset \lbrace0\rbrace$.
 
 (e) $G\subset H$이면 $H^\perp\subset G^\perp$.
 
@@ -1600,7 +1600,7 @@ v=
 \tag{6.50}
 $$
 
-라고 쓸 수 있다. 여기서 $u\in U$이고, 각 $k$에 대해 $\langle w,e_k\rangle=0$이므로 $w\in U^\perp$이다. 따라서 $V=U+U^\perp$이다. 또한 6.48(d)에 의해 $U\cap U^\perp=\{0\}$이므로 합은 직합이다.
+라고 쓸 수 있다. 여기서 $u\in U$이고, 각 $k$에 대해 $\langle w,e_k\rangle=0$이므로 $w\in U^\perp$이다. 따라서 $V=U+U^\perp$이다. 또한 6.48(d)에 의해 $U\cap U^\perp=\lbrace0\rbrace$이므로 합은 직합이다.
 
 **6.51 직교여공간의 차원**
 
@@ -1642,19 +1642,19 @@ $$
 
 이다. 6.53의 포함관계와 두 공간의 차원이 같다는 사실에서 결론이 따른다.
 
-**6.54 직교여공간이 $\{0\}$인 경우**
+**6.54 직교여공간이 $\lbrace0\rbrace$인 경우**
 
 $U$가 유한차원 내적공간 $V$의 부분공간이면
 
 $$
-U^\perp=\{0\}
+U^\perp=\lbrace0\rbrace
 $$
 
 인 것과 $U=V$인 것은 동치이다.
 
 **증명**
 
-$U=V$이면 6.48(c)에 의해 $U^\perp=\{0\}$이다. 반대로 $U^\perp=\{0\}$이면 6.51에 의해 $\dim U=\dim V$이고, 따라서 $U=V$이다.
+$U=V$이면 6.48(c)에 의해 $U^\perp=\lbrace0\rbrace$이다. 반대로 $U^\perp=\lbrace0\rbrace$이면 6.51에 의해 $\dim U=\dim V$이고, 따라서 $U=V$이다.
 
 **6.55 정의: 직교사영**
 
@@ -1671,10 +1671,10 @@ $$
 $u\in V$이고 $u\ne 0$라고 하자. $U=\text{span}(u)$이면 모든 $v\in V$에 대해
 
 $$
-P_Uv=\frac{\langle v,u\rangle}{\|u\|^2}u.
+P_Uv=\frac{\langle v,u\rangle}{\Vert u\Vert^2}u.
 $$
 
-실제로 $v-\frac{\langle v,u\rangle}{\|u\|^2}u$는 $u$에 직교하므로 위 식이 직교사영의 정의와 일치한다.
+실제로 $v-\frac{\langle v,u\rangle}{\Vert u\Vert^2}u$는 $u$에 직교하므로 위 식이 직교사영의 정의와 일치한다.
 
 **6.57 직교사영의 성질**
 
@@ -1694,7 +1694,7 @@ $U$가 $V$의 유한차원 부분공간이라고 하자. 그러면 다음이 성
 
 (g) $P_U^2=P_U$.
 
-(h) 모든 $v\in V$에 대해 $\|P_Uv\|\le \|v\|$.
+(h) 모든 $v\in V$에 대해 $\Vert P_Uv\Vert\le \Vert v\Vert$.
 
 (i) $e_1,\ldots,e_m$이 $U$의 정규직교기저이면 모든 $v\in V$에 대해
 
@@ -1707,7 +1707,7 @@ $$
 (i)는 6.50의 $u$ 부분이 바로 $P_Uv$라는 사실에서 나온다. (a)는 (i)의 식에서 선형성이 바로 보인다. (b), (c), (d), (e), (f)는 직교사영의 정의에서 즉시 따른다. (g)는 $P_Uv\in U$이므로 (b)를 $P_Uv$에 적용하면 된다. (h)는 $v=P_Uv+(v-P_Uv)$이고 두 항이 서로 직교하므로 피타고라스 정리에 의해
 
 $$
-\|v\|^2=\|P_Uv\|^2+\|v-P_Uv\|^2\ge \|P_Uv\|^2
+\Vert v\Vert^2=\Vert P_Uv\Vert^2+\Vert v-P_Uv\Vert^2\ge \Vert P_Uv\Vert^2
 $$
 
 이다.
@@ -1732,23 +1732,23 @@ $$
 
 **증명**
 
-일대일성은 $\varphi_v=0$이면 $\|v\|^2=\varphi_v(v)=0$이므로 $v=0$이라는 사실에서 따른다. 이제 임의의 $\varphi\in V'$가 어떤 $\varphi_v$와 같음을 보이면 된다.
+일대일성은 $\varphi_v=0$이면 $\Vert v\Vert^2=\varphi_v(v)=0$이므로 $v=0$이라는 사실에서 따른다. 이제 임의의 $\varphi\in V'$가 어떤 $\varphi_v$와 같음을 보이면 된다.
 
-$\varphi=0$이면 $v=0$을 택하면 된다. 이제 $\varphi\ne 0$이라고 하자. 그러면 $\text{null}\varphi\ne V$이므로 6.54에 의해 $(\text{null}\varphi)^\perp\ne\{0\}$이다. $0\ne w\in(\text{null}\varphi)^\perp$를 택하고
+$\varphi=0$이면 $v=0$을 택하면 된다. 이제 $\varphi\ne 0$이라고 하자. 그러면 $\text{null}\varphi\ne V$이므로 6.54에 의해 $(\text{null}\varphi)^\perp\ne\lbrace0\rbrace$이다. $0\ne w\in(\text{null}\varphi)^\perp$를 택하고
 
 $$
-v=\frac{\overline{\varphi(w)}}{\|w\|^2}w
+v=\frac{\overline{\varphi(w)}}{\Vert w\Vert^2}w
 \tag{6.59}
 $$
 
 라고 두자. 그러면
 
 $$
-\|v\|=\frac{|\varphi(w)|}{\|w\|}
+\Vert v\Vert=\frac{|\varphi(w)|}{\Vert w\Vert}
 \tag{6.60}
 $$
 
-이고 $\varphi(v)=\|v\|^2$이다. 임의의 $u\in V$에 대해
+이고 $\varphi(v)=\Vert v\Vert^2$이다. 임의의 $u\in V$에 대해
 
 $$
 u-\frac{\varphi(u)}{\varphi(v)}v\in\text{null}\varphi
@@ -1757,7 +1757,7 @@ $$
 이다. 이 벡터는 $v$에 직교하므로
 
 $$
-\left\langle u-\frac{\varphi(u)}{\|v\|^2}v,v\right\rangle=0.
+\left\langle u-\frac{\varphi(u)}{\Vert v\Vert^2}v,v\right\rangle=0.
 $$
 
 따라서 $\langle u,v\rangle=\varphi(u)$이다. 즉 $\varphi=\varphi_v$이다.
@@ -1769,7 +1769,7 @@ $$
 $U$가 $V$의 유한차원 부분공간이고 $v\in V$, $u\in U$라고 하자. 그러면
 
 $$
-\|v-P_Uv\|\le \|v-u\|.
+\Vert v-P_Uv\Vert\le \Vert v-u\Vert.
 $$
 
 또한 위 부등식에서 등호가 성립하는 것은 $u=P_Uv$인 것과 동치이다.
@@ -1780,32 +1780,32 @@ $v-P_Uv\in U^\perp$이고 $P_Uv-u\in U$이므로 두 벡터는 서로 직교한�
 
 $$
 \begin{aligned}
-\|v-P_Uv\|^2
-&\le \|v-P_Uv\|^2+\|P_Uv-u\|^2\\
-&=\|(v-P_Uv)+(P_Uv-u)\|^2\\
-&=\|v-u\|^2.
+\Vert v-P_Uv\Vert^2
+&\le \Vert v-P_Uv\Vert^2+\Vert P_Uv-u\Vert^2\cr
+&=\Vert(v-P_Uv)+(P_Uv-u)\Vert^2\cr
+&=\Vert v-u\Vert^2.
 \end{aligned}
 \tag{6.62}
 $$
 
-등호는 $\|P_Uv-u\|=0$일 때, 즉 $u=P_Uv$일 때 정확히 성립한다.
+등호는 $\Vert P_Uv-u\Vert=0$일 때, 즉 $u=P_Uv$일 때 정확히 성립한다.
 
 **6.63 예: 사인 함수의 최적 다항식 근사**
 
 차수가 최대 $5$인 다항식 $u$ 중에서
 
 $$
-\int_{-\pi}^{\pi}|\sin x-u(x)|^2\,dx
+\int_{-\pi}^{\pi}|\sin x-u(x)|^2\thinspace dx
 $$
 
 를 최소로 만드는 $u$를 찾고 싶다고 하자. $C[-\pi,\pi]$에 내적
 
 $$
-\langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\,dx
+\langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\thinspace dx
 \tag{6.64}
 $$
 
-를 주고, $v(x)=\sin x$, $U=\mathcal{P}_5(\mathbb{R})$라고 두면 이 문제는 $\|v-u\|$를 최소화하는 $u\in U$를 찾는 문제이다.
+를 주고, $v(x)=\sin x$, $U=\mathcal{P}_5(\mathbb{R})$라고 두면 이 문제는 $\Vert v-u\Vert$를 최소화하는 $u\in U$를 찾는 문제이다.
 
 6.61에 의해 답은 $P_Uv$이다. $1,x,x^2,x^3,x^4,x^5$에 그램-슈미트 절차를 적용해 $U$의 정규직교기저를 만든 뒤 6.57(i)를 사용하면 계산 결과
 
@@ -1829,8 +1829,8 @@ $$
 
 선형방정식 $Tv=w$를 생각하자. $T$가 가역이면 해는 $v=T^{-1}w$ 하나뿐이다. 그러나 $T$가 가역이 아니면 해가 없을 수도 있고, 여러 개 있을 수도 있다. 이때 자연스러운 질문은 두 가지이다.
 
-- 해가 없으면 $\|Tv-w\|$를 최소로 만드는 $v$는 무엇인가?
-- 해가 여러 개이면 그중 $\|v\|$가 가장 작은 해는 무엇인가?
+- 해가 없으면 $\Vert Tv-w\Vert$를 최소로 만드는 $v$는 무엇인가?
+- 해가 여러 개이면 그중 $\Vert v\Vert$가 가장 작은 해는 무엇인가?
 
 유사역은 이 두 질문에 동시에 답을 준다.
 
@@ -1890,7 +1890,7 @@ $$
 
 **증명**
 
-(a)는 $T$가 가역이면 $\text{null}T=\{0\}$이고 $\text{range}T=W$이므로 정의에서 바로 따른다.
+(a)는 $T$가 가역이면 $\text{null}T=\lbrace0\rbrace$이고 $\text{range}T=W$이므로 정의에서 바로 따른다.
 
 (b)는 $w\in W$에 대해 $T^\dagger w$가 $P_{\text{range}T}w$의 제한사상 아래의 역상이 되도록 정의되었기 때문에
 
@@ -1911,7 +1911,7 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$, $w\in W$라고 하자. 그러�
 (a) 모든 $v\in V$에 대해
 
 $$
-\|T(T^\dagger w)-w\|\le \|Tv-w\|.
+\Vert T(T^\dagger w)-w\Vert\le \Vert Tv-w\Vert.
 $$
 
 또한 등호가 성립하는 것은 $v\in T^\dagger w+\text{null}T$인 것과 동치이다.
@@ -1919,7 +1919,7 @@ $$
 (b) $v\in T^\dagger w+\text{null}T$이면
 
 $$
-\|T^\dagger w\|\le \|v\|.
+\Vert T^\dagger w\Vert\le \Vert v\Vert.
 $$
 
 또한 등호가 성립하는 것은 $v=T^\dagger w$인 것과 동치이다.
@@ -1931,7 +1931,7 @@ $$
 (b) $v=T^\dagger w+n$이고 $n\in\text{null}T$라고 쓰면 $T^\dagger w\in(\text{null}T)^\perp$이므로 두 항은 직교한다. 따라서
 
 $$
-\|v\|^2=\|T^\dagger w\|^2+\|n\|^2.
+\Vert v\Vert^2=\Vert T^\dagger w\Vert^2+\Vert n\Vert^2.
 $$
 
 등호는 $n=0$일 때 정확히 성립한다.
@@ -1947,7 +1947,7 @@ $$
 으로 정의하자. 그러면
 
 $$
-\text{range}T=\{(x,y,0):x,y\in\mathbb{F}\}
+\text{range}T=\lbrace(x,y,0):x,y\in\mathbb{F}\rbrace
 $$
 
 이고, 따라서
@@ -1960,7 +1960,7 @@ $$
 
 $$
 \text{null}T
-=\{(a,b,c,d):a+b+c=0,\ 2c+d=0\}
+=\lbrace(a,b,c,d):a+b+c=0,\ 2c+d=0\rbrace
 $$
 
 이며 이 공간의 한 기저는
@@ -1983,9 +1983,9 @@ $$
 
 $$
 \begin{aligned}
-a+b+c&=x,\\
-2c+d&=y,\\
--a+b&=0,\\
+a+b+c&=x,\cr
+2c+d&=y,\cr
+-a+b&=0,\cr
 -a+c-2d&=0.
 \end{aligned}
 $$
@@ -2013,7 +2013,7 @@ $$
 1. $v_1,\ldots,v_m\in V$라고 하자. 다음을 증명하여라.
 
    $$
-   \{v_1,\ldots,v_m\}^\perp
+   \lbrace v_1,\ldots,v_m\rbrace^\perp
    =\left(\text{span}(v_1,\ldots,v_m)\right)^\perp.
    $$
 
@@ -2030,7 +2030,7 @@ $$
 4. $e_1,\ldots,e_n$이 $V$의 벡터들로 이루어진 리스트이고 각 $e_k$의 노름이 $1$이라고 하자. 모든 $v\in V$에 대해
 
    $$
-   \|v\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2
+   \Vert v\Vert^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2
    $$
 
    가 성립하면 $e_1,\ldots,e_n$이 $V$의 정규직교기저임을 증명하여라.
@@ -2072,7 +2072,7 @@ $$
 
 9. $V$가 유한차원이고 $P\in\mathcal{L}(V)$가 $P^2=P$를 만족한다고 하자. 또한 $\text{null}P$의 모든 벡터가 $\text{range}P$의 모든 벡터에 직교한다고 하자. 그러면 어떤 $V$의 부분공간 $U$가 존재하여 $P=P_U$임을 증명하여라.
 
-10. $V$가 유한차원이고 $P\in\mathcal{L}(V)$가 $P^2=P$를 만족하며 모든 $v\in V$에 대해 $\|Pv\|\le\|v\|$라고 하자. 그러면 어떤 $V$의 부분공간 $U$가 존재하여 $P=P_U$임을 증명하여라.
+10. $V$가 유한차원이고 $P\in\mathcal{L}(V)$가 $P^2=P$를 만족하며 모든 $v\in V$에 대해 $\Vert Pv\Vert\le\Vert v\Vert$라고 하자. 그러면 어떤 $V$의 부분공간 $U$가 존재하여 $P=P_U$임을 증명하여라.
 
 11. $T\in\mathcal{L}(V)$이고 $U$가 $V$의 유한차원 부분공간이라고 하자. $U$가 $T$에 대해 불변인 것과
 
@@ -2109,7 +2109,7 @@ $$
     라고 하자. $u\in U$ 중에서
 
     $$
-    \|u-(1,2,3,4)\|
+    \Vert u-(1,2,3,4)\Vert
     $$
 
     를 최소로 만드는 $u$를 구하여라.
@@ -2117,31 +2117,31 @@ $$
 16. $C[-1,1]$에 내적
 
     $$
-    \langle f,g\rangle=\int_{-1}^{1}f(x)g(x)\,dx
+    \langle f,g\rangle=\int_{-1}^{1}f(x)g(x)\thinspace dx
     $$
 
     가 주어져 있고
 
     $$
-    U=\{f\in C[-1,1]:f(0)=0\}
+    U=\lbrace f\in C[-1,1]:f(0)=0\rbrace
     $$
 
     라고 하자.
 
-    (a) $U^\perp=\{0\}$임을 증명하여라.
+    (a) $U^\perp=\lbrace0\rbrace$임을 증명하여라.
 
     (b) 6.49와 6.52는 유한차원이라는 가정 없이는 성립하지 않을 수 있음을 설명하여라.
 
 17. $p\in\mathcal{P}_3(\mathbb{R})$가 $p(0)=0$과 $p'(0)=0$을 만족한다고 하자. 다음 적분을 최소로 만드는 $p$를 구하여라.
 
 $$
-\int_{0}^{1}|2+3x-p(x)|^2\,dx.
+\int_{0}^{1}|2+3x-p(x)|^2\thinspace dx.
 $$
 
 18. $p\in\mathcal{P}_5(\mathbb{R})$ 중에서
 
     $$
-    \int_{-\pi}^{\pi}|\sin x-p(x)|^2\,dx
+    \int_{-\pi}^{\pi}|\sin x-p(x)|^2\thinspace dx
     $$
 
     를 최소로 만드는 $p$를 정확한 식으로 구하여라.

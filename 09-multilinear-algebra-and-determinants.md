@@ -48,7 +48,7 @@ $$
 과 양의 정부호성
 
 $$
-\beta(v,v)>0\qquad (v\in V\setminus\{0\})
+\beta(v,v)>0\qquad (v\in V\setminus\lbrace0\rbrace)
 $$
 
 을 요구하지만, 쌍선형 형식에는 이런 조건이 필요 없다.
@@ -76,8 +76,8 @@ $$
   $$
   A=
   \begin{pmatrix}
-  0&1&0\\
-  0&0&-5\\
+  0&1&0\cr
+  0&0&-5\cr
   2&0&0
   \end{pmatrix}
   $$
@@ -161,7 +161,7 @@ $$
 $\beta\mapsto \mathcal{M}(\beta)$는 분명히 $V^{(2)}$에서 $\mathbb{F}^{n,n}$으로 가는 선형사상이다. $A\in\mathbb{F}^{n,n}$에 대해 $V$ 위의 쌍선형 형식 $\beta_A$를
 
 $$
-\beta_A(x_1e_1+\cdots+x_ne_n,\;y_1e_1+\cdots+y_ne_n)
+\beta_A(x_1e_1+\cdots+x_ne_n,\thickspace y_1e_1+\cdots+y_ne_n)
 =\sum_{k=1}^n\sum_{j=1}^n A_{j,k}x_jy_k
 $$
 
@@ -195,15 +195,15 @@ $$
 
 **증명**
 
-$j,k\in\{1,\ldots,n\}$이면
+$j,k\in\lbrace1,\ldots,n\rbrace$이면
 
 $$
 \begin{aligned}
 \mathcal{M}(\alpha)_{j,k}
-&=\alpha(e_j,e_k)\\
-&=\beta(e_j,Te_k)\\
-&=\beta\left(e_j,\sum_{m=1}^n \mathcal{M}(T)_{m,k}e_m\right)\\
-&=\sum_{m=1}^n \beta(e_j,e_m)\mathcal{M}(T)_{m,k}\\
+&=\alpha(e_j,e_k)\cr
+&=\beta(e_j,Te_k)\cr
+&=\beta\left(e_j,\sum_{m=1}^n \mathcal{M}(T)_{m,k}e_m\right)\cr
+&=\sum_{m=1}^n \beta(e_j,e_m)\mathcal{M}(T)_{m,k}\cr
 &=(\mathcal{M}(\beta)\mathcal{M}(T))_{j,k}.
 \end{aligned}
 $$
@@ -257,8 +257,8 @@ $$
 $$
 \begin{aligned}
 A
-&=\mathcal{M}(\rho,(f_1,\ldots,f_n))\\
-&=C^{\mathrm{t}}\mathcal{M}(\alpha,(f_1,\ldots,f_n))\\
+&=\mathcal{M}(\rho,(f_1,\ldots,f_n))\cr
+&=C^{\mathrm{t}}\mathcal{M}(\alpha,(f_1,\ldots,f_n))\cr
 &=C^{\mathrm{t}}BC,
 \end{aligned}
 $$
@@ -286,14 +286,14 @@ $$
 $$
 A=
 \begin{pmatrix}
-0&1&0\\
-0&0&0\\
+0&1&0\cr
+0&0&0\cr
 0&1&0
 \end{pmatrix},\qquad
 B=
 \begin{pmatrix}
-0&1&6\\
-0&2&12\\
+0&1&6\cr
+0&2&12\cr
 0&4&24
 \end{pmatrix},
 $$
@@ -301,8 +301,8 @@ $$
 $$
 C=
 \begin{pmatrix}
-1&-2&9\\
-0&1&-6\\
+1&-2&9\cr
+0&1&-6\cr
 0&0&1
 \end{pmatrix}.
 $$
@@ -367,7 +367,7 @@ $\rho\in V^{(2)}$라고 하자. 다음은 서로 동치이다.
 
 **증명**
 
-(a)가 성립한다고 하자. $e_1,\ldots,e_n$이 $V$의 기저이고 $j,k\in\{1,\ldots,n\}$이면 $\rho(e_j,e_k)=\rho(e_k,e_j)$이다. 따라서 $\mathcal{M}(\rho,(e_1,\ldots,e_n))$는 대칭 행렬이다. 그러므로 (a)는 (b)를 함의한다.
+(a)가 성립한다고 하자. $e_1,\ldots,e_n$이 $V$의 기저이고 $j,k\in\lbrace1,\ldots,n\rbrace$이면 $\rho(e_j,e_k)=\rho(e_k,e_j)$이다. 따라서 $\mathcal{M}(\rho,(e_1,\ldots,e_n))$는 대칭 행렬이다. 그러므로 (a)는 (b)를 함의한다.
 
 (b)가 (c)를 함의함은 명백하다.
 
@@ -383,10 +383,10 @@ $$
 $$
 \begin{aligned}
 \rho(u,w)
-&=\rho\left(\sum_{j=1}^n a_je_j,\sum_{k=1}^n b_ke_k\right)\\
-&=\sum_{j=1}^n\sum_{k=1}^n a_jb_k\rho(e_j,e_k)\\
-&=\sum_{j=1}^n\sum_{k=1}^n a_jb_k\rho(e_k,e_j)\\
-&=\rho\left(\sum_{k=1}^n b_ke_k,\sum_{j=1}^n a_je_j\right)\\
+&=\rho\left(\sum_{j=1}^n a_je_j,\sum_{k=1}^n b_ke_k\right)\cr
+&=\sum_{j=1}^n\sum_{k=1}^n a_jb_k\rho(e_j,e_k)\cr
+&=\sum_{j=1}^n\sum_{k=1}^n a_jb_k\rho(e_k,e_j)\cr
+&=\rho\left(\sum_{k=1}^n b_ke_k,\sum_{j=1}^n a_je_j\right)\cr
 &=\rho(w,u).
 \end{aligned}
 $$
@@ -408,7 +408,7 @@ $$
 다음 부분공간을 정의하자.
 
 $$
-U=\{u\in V:\rho(u,v)=0\}.
+U=\lbrace u\in V:\rho(u,v)=0\rbrace.
 $$
 
 이는 선형범함수 $u\mapsto \rho(u,v)$의 영공간이다. 이 선형범함수는 영범함수가 아니다. 왜냐하면 $v\notin U$이기 때문이다. 따라서 $\dim U=n-1$이다. 귀납가정에 의해 $U$에는 $\rho|_{U\times U}$의 행렬을 대각행렬로 만드는 기저 $e_1,\ldots,e_{n-1}$이 존재한다.
@@ -479,8 +479,8 @@ $$
 $$
 \begin{aligned}
 0
-&=\alpha(u+w,u+w)\\
-&=\alpha(u,u)+\alpha(u,w)+\alpha(w,u)+\alpha(w,w)\\
+&=\alpha(u+w,u+w)\cr
+&=\alpha(u,u)+\alpha(u,w)+\alpha(w,u)+\alpha(w,w)\cr
 &=\alpha(u,w)+\alpha(w,u).
 \end{aligned}
 $$
@@ -514,7 +514,7 @@ $$
 V^{(2)}=V_{\text{sym}}^{(2)}+V_{\text{alt}}^{(2)}.
 $$
 
-마지막으로 두 부분공간의 교집합이 $\{0\}$임을 보이자. $\beta\in V_{\text{sym}}^{(2)}\cap V_{\text{alt}}^{(2)}$라고 하자. $u,w\in V$이면 9.16에 의해
+마지막으로 두 부분공간의 교집합이 $\lbrace0\rbrace$임을 보이자. $\beta\in V_{\text{sym}}^{(2)}\cap V_{\text{alt}}^{(2)}$라고 하자. $u,w\in V$이면 9.16에 의해
 
 $$
 \beta(u,w)=-\beta(w,u)=-\beta(u,w)
@@ -568,7 +568,7 @@ $$
 $$
 \begin{aligned}
 q(x_1,\ldots,x_n)
-&=\beta((x_1,\ldots,x_n),(x_1,\ldots,x_n))\\
+&=\beta((x_1,\ldots,x_n),(x_1,\ldots,x_n))\cr
 &=\sum_{k=1}^n\sum_{j=1}^n A_{j,k}x_jx_k.
 \end{aligned}
 $$
@@ -639,7 +639,7 @@ $$
 $$
 \begin{aligned}
 q(u+w)-q(u)-q(w)
-&=\rho(u+w,u+w)-\rho(u,u)-\rho(w,w)\\
+&=\rho(u+w,u+w)-\rho(u,u)-\rho(w,w)\cr
 &=2\rho(u,w).
 \end{aligned}
 $$
@@ -676,7 +676,7 @@ $$
 $$
 \begin{aligned}
 \rho((x_1,x_2,x_3),(y_1,y_2,y_3))
-&=x_1y_1-2x_1y_2-2x_2y_1\\
+&=x_1y_1-2x_1y_2-2x_2y_1\cr
 &\quad +4x_1y_3+4x_3y_1-3x_3y_3
 \end{aligned}
 $$
@@ -704,7 +704,7 @@ $$
 $$
 \rho(e_j,e_k)=
 \begin{cases}
-\lambda_j,& j=k,\\
+\lambda_j,& j=k,\cr
 0,& j\ne k
 \end{cases}
 $$
@@ -714,8 +714,8 @@ $$
 $$
 \begin{aligned}
 q(x_1e_1+\cdots+x_ne_n)
-&=\rho(x_1e_1+\cdots+x_ne_n,\;x_1e_1+\cdots+x_ne_n)\\
-&=\sum_{k=1}^n\sum_{j=1}^n x_jx_k\rho(e_j,e_k)\\
+&=\rho(x_1e_1+\cdots+x_ne_n,\thickspace x_1e_1+\cdots+x_ne_n)\cr
+&=\sum_{k=1}^n\sum_{j=1}^n x_jx_k\rho(e_j,e_k)\cr
 &=\lambda_1x_1^2+\cdots+\lambda_nx_n^2.
 \end{aligned}
 $$
@@ -755,7 +755,7 @@ $$
 6. 증명하거나 반례를 들어라. $\rho$가 $V$ 위의 대칭 쌍선형 형식이면
 
   $$
-  \{v\in V:\rho(v,v)=0\}
+  \lbrace v\in V:\rho(v,v)=0\rbrace
   $$
 
   은 $V$의 부분공간이다.
@@ -767,7 +767,7 @@ $$
 9. $n$이 양의 정수이고
 
   $$
-  V=\{p\in\mathcal{P}_n(\mathbb{R}):p(0)=p(1)\}
+  V=\lbrace p\in\mathcal{P}_n(\mathbb{R}):p(0)=p(1)\rbrace
   $$
 
   라고 하자. $\alpha:V\times V\to\mathbb{R}$를
@@ -781,7 +781,7 @@ $$
 10. $n$이 양의 정수이고
 
   $$
-  V=\{p\in\mathcal{P}_n(\mathbb{R}):p(0)=p(1)\text{이고 }p'(0)=p'(1)\}
+  V=\lbrace p\in\mathcal{P}_n(\mathbb{R}):p(0)=p(1)\text{이고 }p'(0)=p'(1)\rbrace
   $$
 
   라고 하자. $\rho:V\times V\to\mathbb{R}$를
@@ -810,7 +810,7 @@ $$
 
 **9.25 정의: $m$-선형 형식, $V^{(m)}$, 다중선형 형식**
 
-- $m$이 양의 정수일 때, $V$ 위의 **$m$-선형 형식**은 함수 $\beta:V^m\to\mathbb{F}$로서 다른 자리들을 고정하면 각 자리에서 선형인 함수이다. 즉 각 $k\in\{1,\ldots,m\}$와 모든 $u_1,\ldots,u_m\in V$에 대해
+- $m$이 양의 정수일 때, $V$ 위의 **$m$-선형 형식**은 함수 $\beta:V^m\to\mathbb{F}$로서 다른 자리들을 고정하면 각 자리에서 선형인 함수이다. 즉 각 $k\in\lbrace1,\ldots,m\rbrace$와 모든 $u_1,\ldots,u_m\in V$에 대해
 
   $$
   v\mapsto \beta(u_1,\ldots,u_{k-1},v,u_{k+1},\ldots,u_m)
@@ -868,7 +868,7 @@ $m$이 양의 정수라고 하자.
 
   $$
   V_{\text{alt}}^{(m)}
-  =\{\alpha\in V^{(m)}:\alpha\text{는 }V\text{ 위의 교대 }m\text{-선형 형식}\}.
+  =\lbrace\alpha\in V^{(m)}:\alpha\text{는 }V\text{ 위의 교대 }m\text{-선형 형식}\rbrace.
   $$
 
   $V_{\text{alt}}^{(m)}$는 $V^{(m)}$의 부분공간이다.
@@ -894,8 +894,8 @@ $$
 $$
 \begin{aligned}
 \alpha(v_1,\ldots,v_m)
-&=\alpha\left(v_1,\ldots,v_{k-1},\sum_{j=1}^{k-1}b_jv_j,v_{k+1},\ldots,v_m\right)\\
-&=\sum_{j=1}^{k-1}b_j\alpha(v_1,\ldots,v_{k-1},v_j,v_{k+1},\ldots,v_m)\\
+&=\alpha\left(v_1,\ldots,v_{k-1},\sum_{j=1}^{k-1}b_jv_j,v_{k+1},\ldots,v_m\right)\cr
+&=\sum_{j=1}^{k-1}b_j\alpha(v_1,\ldots,v_{k-1},v_j,v_{k+1},\ldots,v_m)\cr
 &=0.
 \end{aligned}
 $$
@@ -1016,7 +1016,7 @@ $(j_1,\ldots,j_m)$에서 시작하여 서로 다른 위치의 항들을 여러 �
 
 **9.36 $V$ 위의 $(\dim V)$-선형 교대 형식의 공식**
 
-$n=\dim V$라고 하자. $e_1,\ldots,e_n$이 $V$의 기저이고 $v_1,\ldots,v_n\in V$라고 하자. 각 $k\in\{1,\ldots,n\}$에 대해
+$n=\dim V$라고 하자. $e_1,\ldots,e_n$이 $V$의 기저이고 $v_1,\ldots,v_n\in V$라고 하자. 각 $k\in\lbrace1,\ldots,n\rbrace$에 대해
 
 $$
 v_k=\sum_{j=1}^n b_{j,k}e_j
@@ -1039,11 +1039,11 @@ $$
 \begin{aligned}
 \alpha(v_1,\ldots,v_n)
 &=\alpha\left(\sum_{j_1=1}^n b_{j_1,1}e_{j_1},\ldots,
-\sum_{j_n=1}^n b_{j_n,n}e_{j_n}\right)\\
+\sum_{j_n=1}^n b_{j_n,n}e_{j_n}\right)\cr
 &=\sum_{j_1=1}^n\cdots\sum_{j_n=1}^n
-b_{j_1,1}\cdots b_{j_n,n}\alpha(e_{j_1},\ldots,e_{j_n})\\
+b_{j_1,1}\cdots b_{j_n,n}\alpha(e_{j_1},\ldots,e_{j_n})\cr
 &=\sum_{(j_1,\ldots,j_n)\in\text{perm}n}
-b_{j_1,1}\cdots b_{j_n,n}\alpha(e_{j_1},\ldots,e_{j_n})\\
+b_{j_1,1}\cdots b_{j_n,n}\alpha(e_{j_1},\ldots,e_{j_n})\cr
 &=\alpha(e_1,\ldots,e_n)
 \sum_{(j_1,\ldots,j_n)\in\text{perm}n}
 \text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}.
@@ -1073,10 +1073,10 @@ $$
 \alpha'(v_1,\ldots,v_n)
 &=\alpha'(e_1,\ldots,e_n)
 \sum_{(j_1,\ldots,j_n)\in\text{perm}n}
-\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\\
+\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\cr
 &=c\alpha(e_1,\ldots,e_n)
 \sum_{(j_1,\ldots,j_n)\in\text{perm}n}
-\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\\
+\text{sign}(j_1,\ldots,j_n)b_{j_1,1}\cdots b_{j_n,n}\cr
 &=c\alpha(v_1,\ldots,v_n).
 \end{aligned}
 $$
@@ -1145,14 +1145,14 @@ $$
 
    $$
    \begin{aligned}
-   &\alpha((x_1,\ldots,x_n),(y_1,\ldots,y_n),(z_1,\ldots,z_n))\\
+   &\alpha((x_1,\ldots,x_n),(y_1,\ldots,y_n),(z_1,\ldots,z_n))\cr
    &=x_1y_2z_3-x_2y_1z_3-x_3y_2z_1-x_1y_3z_2+x_3y_1z_2+x_2y_3z_1
    \end{aligned}
    $$
 
    로 정의한다. $\alpha$가 $\mathbb{F}^n$ 위의 교대 $3$-선형 형식임을 보여라.
 
-3. $m$이 양의 정수이고 $\alpha$가 $V$ 위의 $m$-선형 형식이라고 하자. $v_1,\ldots,v_m$ 가운데 어떤 $j\in\{1,\ldots,m-1\}$에 대해 $v_j=v_{j+1}$이면 항상
+3. $m$이 양의 정수이고 $\alpha$가 $V$ 위의 $m$-선형 형식이라고 하자. $v_1,\ldots,v_m$ 가운데 어떤 $j\in\lbrace1,\ldots,m-1\rbrace$에 대해 $v_j=v_{j+1}$이면 항상
 
    $$
    \alpha(v_1,\ldots,v_m)=0
@@ -1163,7 +1163,7 @@ $$
 4. 증명하거나 반례를 들어라. $\alpha\in V_{\text{alt}}^{(4)}$이면
 
    $$
-   \{(v_1,v_2,v_3,v_4)\in V^4:\alpha(v_1,v_2,v_3,v_4)=0\}
+   \lbrace(v_1,v_2,v_3,v_4)\in V^4:\alpha(v_1,v_2,v_3,v_4)=0\rbrace
    $$
 
    은 $V^4$의 부분공간이다.
@@ -1330,9 +1330,9 @@ $\alpha$를 $\alpha(e_1,\ldots,e_n)=1$인 $\mathbb{F}^n$ 위의 교대 $n$-선�
 $$
 \begin{aligned}
 \det(v_1\ \cdots\ v_n)
-&=\det T\\
-&=(\det T)\alpha(e_1,\ldots,e_n)\\
-&=\alpha(Te_1,\ldots,Te_n)\\
+&=\det T\cr
+&=(\det T)\alpha(e_1,\ldots,e_n)\cr
+&=\alpha(Te_1,\ldots,Te_n)\cr
 &=\alpha(v_1,\ldots,v_n).
 \end{aligned}
 $$
@@ -1376,7 +1376,7 @@ $$
   \det A
   &=A_{1,1}A_{2,2}A_{3,3}
   -A_{2,1}A_{1,2}A_{3,3}
-  -A_{3,1}A_{2,2}A_{1,3}\\
+  -A_{3,1}A_{2,2}A_{1,3}\cr
   &\quad -A_{1,1}A_{3,2}A_{2,3}
   +A_{3,1}A_{1,2}A_{2,3}
   +A_{2,1}A_{3,2}A_{1,3}.
@@ -1395,7 +1395,7 @@ $$
 
 **증명**
 
-$(j_1,\ldots,j_n)\in\text{perm}n$이고 $(j_1,\ldots,j_n)\ne(1,\ldots,n)$이면 어떤 $k\in\{1,\ldots,n\}$에 대해 $j_k>k$이다. 이때 $A$가 상삼각행렬이므로 $A_{j_k,k}=0$이다. 따라서 9.46의 합에서 영이 아닌 기여를 할 수 있는 순열은 $(1,\ldots,n)$뿐이다. 그러므로 $\det A=\lambda_1\cdots\lambda_n$이다.
+$(j_1,\ldots,j_n)\in\text{perm}n$이고 $(j_1,\ldots,j_n)\ne(1,\ldots,n)$이면 어떤 $k\in\lbrace1,\ldots,n\rbrace$에 대해 $j_k>k$이다. 이때 $A$가 상삼각행렬이므로 $A_{j_k,k}=0$이다. 따라서 9.46의 합에서 영이 아닌 기여를 할 수 있는 순열은 $(1,\ldots,n)$뿐이다. 그러므로 $\det A=\lambda_1\cdots\lambda_n$이다.
 
 ### 행렬식의 성질
 
@@ -1420,8 +1420,8 @@ $$
 $$
 \begin{aligned}
 \alpha_{ST}(v_1,\ldots,v_n)
-&=\alpha(STv_1,\ldots,STv_n)\\
-&=(\det S)\alpha(Tv_1,\ldots,Tv_n)\\
+&=\alpha(STv_1,\ldots,STv_n)\cr
+&=(\det S)\alpha(Tv_1,\ldots,Tv_n)\cr
 &=(\det S)(\det T)\alpha(v_1,\ldots,v_n).
 \end{aligned}
 $$
@@ -1504,10 +1504,10 @@ $$
 $$
 \begin{aligned}
 \tau_{S^{-1}TS}(w_1,\ldots,w_n)
-&=\tau(S^{-1}TSw_1,\ldots,S^{-1}TSw_n)\\
-&=\alpha(TSw_1,\ldots,TSw_n)\\
-&=\alpha_T(Sw_1,\ldots,Sw_n)\\
-&=(\det T)\alpha(Sw_1,\ldots,Sw_n)\\
+&=\tau(S^{-1}TSw_1,\ldots,S^{-1}TSw_n)\cr
+&=\alpha(TSw_1,\ldots,TSw_n)\cr
+&=\alpha_T(Sw_1,\ldots,Sw_n)\cr
+&=(\det T)\alpha(Sw_1,\ldots,Sw_n)\cr
 &=(\det T)\tau(w_1,\ldots,w_n).
 \end{aligned}
 $$
@@ -1537,8 +1537,8 @@ $$
 $$
 \begin{aligned}
 \det T
-&=\det(S^{-1}TS)\\
-&=\det\mathcal{M}(S^{-1}TS,(f_1,\ldots,f_n))\\
+&=\det(S^{-1}TS)\cr
+&=\det\mathcal{M}(S^{-1}TS,(f_1,\ldots,f_n))\cr
 &=\det\mathcal{M}(T,(e_1,\ldots,e_n)).
 \end{aligned}
 $$
@@ -1628,7 +1628,7 @@ $$
 $$
 \begin{aligned}
 \det(v_1+cv_2\ v_2\ \cdots\ v_n)
-&=\det(v_1\ v_2\ \cdots\ v_n)+c\det(v_2\ v_2\ v_3\ \cdots\ v_n)\\
+&=\det(v_1\ v_2\ \cdots\ v_n)+c\det(v_2\ v_2\ v_3\ \cdots\ v_n)\cr
 &=\det(v_1\ v_2\ \cdots\ v_n).
 \end{aligned}
 $$
@@ -1708,7 +1708,7 @@ $$
 $T\in\mathcal{L}(\mathbb{R}^n)$이고 $\Omega\subset\mathbb{R}^n$이라고 하자. 그러면
 
 $$
-\text{volume}T(\Omega)=|\det T|\,\text{volume}\Omega.
+\text{volume}T(\Omega)=|\det T|\thinspace\text{volume}\Omega.
 $$
 
 이는 7.111과 9.60에서 바로 따른다. 다변수 미적분의 변수변환 공식에서 행렬식의 절댓값이 나타나는 이유가 여기에 있다.
@@ -1800,7 +1800,7 @@ $$
 $A$가 $n\times n$ 행렬이라고 하자. $v_1,\ldots,v_n$을 $A$의 열들이라고 하자. 그러면
 
 $$
-|\det A|\le \prod_{k=1}^n\|v_k\|.
+|\det A|\le \prod_{k=1}^n\Vert v_k\Vert.
 $$
 
 **증명**
@@ -1818,18 +1818,18 @@ $$
 $$
 \begin{aligned}
 |\det A|
-&=|\det Q|\,|\det R|\\
-&=|\det R|\\
-&=\prod_{k=1}^n R_{k,k}\\
-&\le \prod_{k=1}^n \|R_{\cdot,k}\|\\
-&=\prod_{k=1}^n \|QR_{\cdot,k}\|\\
-&=\prod_{k=1}^n \|v_k\|.
+&=|\det Q|\thinspace|\det R|\cr
+&=|\det R|\cr
+&=\prod_{k=1}^n R_{k,k}\cr
+&\le \prod_{k=1}^n \Vert R_{\cdot,k}\Vert\cr
+&=\prod_{k=1}^n \Vert QR_{\cdot,k}\Vert\cr
+&=\prod_{k=1}^n \Vert v_k\Vert.
 \end{aligned}
 $$
 
 첫 줄은 9.49(b)에서, 둘째 줄은 9.58에서, 셋째 줄은 9.48에서 나온다. 다섯째 줄은 $Q$가 등거리사상이기 때문에 성립한다.
 
-$\mathbb{F}=\mathbb{R}$일 때 이 부등식은 기하적으로 해석할 수 있다. $T\in\mathcal{L}(\mathbb{R}^n)$를 표준 기저 $e_1,\ldots,e_n$에 대해 $Te_k=v_k$가 되게 정의하면, $T$는 표준 상자를 $v_1,\ldots,v_n$이 만드는 평행다면체로 보낸다. 9.61에 의해 이 평행다면체의 부피는 $|\det A|$이다. 하다마르 부등식은 주어진 변 길이들 $\|v_1\|,\ldots,\|v_n\|$을 가진 평행다면체 가운데 부피가 가장 큰 것은 변들이 서로 직교할 때임을 말한다.
+$\mathbb{F}=\mathbb{R}$일 때 이 부등식은 기하적으로 해석할 수 있다. $T\in\mathcal{L}(\mathbb{R}^n)$를 표준 기저 $e_1,\ldots,e_n$에 대해 $Te_k=v_k$가 되게 정의하면, $T$는 표준 상자를 $v_1,\ldots,v_n$이 만드는 평행다면체로 보낸다. 9.61에 의해 이 평행다면체의 부피는 $|\det A|$이다. 하다마르 부등식은 주어진 변 길이들 $\Vert v_1\Vert,\ldots,\Vert v_n\Vert$을 가진 평행다면체 가운데 부피가 가장 큰 것은 변들이 서로 직교할 때임을 말한다.
 
 **9.67 반데르몽드 행렬식**
 
@@ -1838,9 +1838,9 @@ $n>1$이고 $\beta_1,\ldots,\beta_n\in\mathbb{F}$라고 하자. 그러면
 $$
 \det
 \begin{pmatrix}
-1&\beta_1&\beta_1^2&\cdots&\beta_1^{n-1}\\
-1&\beta_2&\beta_2^2&\cdots&\beta_2^{n-1}\\
-\vdots&\vdots&\vdots&\ddots&\vdots\\
+1&\beta_1&\beta_1^2&\cdots&\beta_1^{n-1}\cr
+1&\beta_2&\beta_2^2&\cdots&\beta_2^{n-1}\cr
+\vdots&\vdots&\vdots&\ddots&\vdots\cr
 1&\beta_n&\beta_n^2&\cdots&\beta_n^{n-1}
 \end{pmatrix}
 =\prod_{1\le j<k\le n}(\beta_k-\beta_j).
@@ -1884,10 +1884,10 @@ $$
 
 $$
 \begin{pmatrix}
-1&0&0&\cdots&0\\
-1&\beta_2-\beta_1&0&\cdots&0\\
-1&\beta_3-\beta_1&(\beta_3-\beta_1)(\beta_3-\beta_2)&\cdots&0\\
-\vdots&\vdots&\vdots&\ddots&\vdots\\
+1&0&0&\cdots&0\cr
+1&\beta_2-\beta_1&0&\cdots&0\cr
+1&\beta_3-\beta_1&(\beta_3-\beta_1)(\beta_3-\beta_2)&\cdots&0\cr
+\vdots&\vdots&\vdots&\ddots&\vdots\cr
 1&\beta_n-\beta_1&(\beta_n-\beta_1)(\beta_n-\beta_2)&\cdots&
 (\beta_n-\beta_1)\cdots(\beta_n-\beta_{n-1})
 \end{pmatrix}.
@@ -1924,7 +1924,7 @@ $$
 4. $S\in\mathcal{L}(V)$라고 하자. $S$가 유니터리일 필요충분조건은
 
    $$
-   |\det S|=\|S\|=1
+   |\det S|=\Vert S\Vert=1
    $$
 
    임을 증명하여라.
@@ -1934,9 +1934,9 @@ $$
    $$
    A=
    \begin{pmatrix}
-   A_1&*&\cdots&*\\
-   0&A_2&\cdots&*\\
-   \vdots&\vdots&\ddots&\vdots\\
+   A_1&*&\cdots&*\cr
+   0&A_2&\cdots&*\cr
+   \vdots&\vdots&\ddots&\vdots\cr
    0&0&\cdots&A_m
    \end{pmatrix},
    $$
@@ -2015,9 +2015,9 @@ $$
 17. $a,b,c$가 양수라고 하자. 다음 타원체의 부피를 구하여라.
 
     $$
-    \left\{(x,y,z)\in\mathbb{R}^3:
+    \left\lbrace(x,y,z)\in\mathbb{R}^3:
     \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}<1
-    \right\}
+    \right\rbrace
     $$
 
     힌트: 부피를 알고 있는 집합 $\Omega\subset\mathbb{R}^3$와 $T(\Omega)$가 위 타원체가 되는 $\mathbb{R}^3$ 위의 연산자 $T$를 찾아라.
@@ -2034,7 +2034,7 @@ $$
 
     (b) $T$가 가역이면, (a)의 부등식이 등식일 필요충분조건은 각 $k=1,\ldots,n$에 대해 $e_k$가 $T$의 고유벡터인 것임을 증명하여라.
 
-20. $A$가 $n\times n$ 행렬이고, 어떤 $c$에 대해 모든 $j,k\in\{1,\ldots,n\}$에서 $|A_{j,k}|\le c$라고 하자. 다음을 증명하여라.
+20. $A$가 $n\times n$ 행렬이고, 어떤 $c$에 대해 모든 $j,k\in\lbrace1,\ldots,n\rbrace$에서 $|A_{j,k}|\le c$라고 하자. 다음을 증명하여라.
 
     $$
     |\det A|\le c^n n^{n/2}.
@@ -2165,7 +2165,7 @@ $e_1,\ldots,e_m$을 $V$의 기저, $f_1,\ldots,f_n$을 $W$의 기저라고 하�
 $C\in\mathbb{F}^{m,n}$에 대해 $V\times W$ 위의 쌍선형 범함수 $\beta_C$를
 
 $$
-\beta_C(a_1e_1+\cdots+a_me_m,\;b_1f_1+\cdots+b_nf_n)
+\beta_C(a_1e_1+\cdots+a_me_m,\thickspace b_1f_1+\cdots+b_nf_n)
 =\sum_{k=1}^n\sum_{j=1}^m C_{j,k}a_jb_k
 $$
 
@@ -2238,9 +2238,9 @@ $(\varphi,\tau)\in V'\times W'$라고 하자. 그러면
 $$
 \begin{aligned}
 ((v_1+v_2)\otimes w)(\varphi,\tau)
-&=\varphi(v_1+v_2)\tau(w)\\
-&=\varphi(v_1)\tau(w)+\varphi(v_2)\tau(w)\\
-&=(v_1\otimes w)(\varphi,\tau)+(v_2\otimes w)(\varphi,\tau)\\
+&=\varphi(v_1+v_2)\tau(w)\cr
+&=\varphi(v_1)\tau(w)+\varphi(v_2)\tau(w)\cr
+&=(v_1\otimes w)(\varphi,\tau)+(v_2\otimes w)(\varphi,\tau)\cr
 &=(v_1\otimes w+v_2\otimes w)(\varphi,\tau).
 \end{aligned}
 $$
@@ -2254,7 +2254,7 @@ $e_1,\ldots,e_m$이 $V$의 벡터 리스트이고 $f_1,\ldots,f_n$이 $W$의 벡
 (a) $e_1,\ldots,e_m$과 $f_1,\ldots,f_n$이 둘 다 일차독립 리스트이면,
 
 $$
-\{e_j\otimes f_k\}_{j=1,\ldots,m;\ k=1,\ldots,n}
+\lbrace e_j\otimes f_k\rbrace_{j=1,\ldots,m;\ k=1,\ldots,n}
 $$
 
 은 $V\otimes W$의 일차독립 리스트이다.
@@ -2262,7 +2262,7 @@ $$
 (b) $e_1,\ldots,e_m$이 $V$의 기저이고 $f_1,\ldots,f_n$이 $W$의 기저이면,
 
 $$
-\{e_j\otimes f_k\}_{j=1,\ldots,m;\ k=1,\ldots,n}
+\lbrace e_j\otimes f_k\rbrace_{j=1,\ldots,m;\ k=1,\ldots,n}
 $$
 
 은 $V\otimes W$의 기저이다.
@@ -2274,7 +2274,7 @@ $$
 $$
 \varphi_j(e_k)=
 \begin{cases}
-1,& j=k,\\
+1,& j=k,\cr
 0,& j\ne k
 \end{cases}
 $$
@@ -2284,7 +2284,7 @@ $$
 $$
 \tau_j(f_k)=
 \begin{cases}
-1,& j=k,\\
+1,& j=k,\cr
 0,& j\ne k
 \end{cases}
 $$
@@ -2305,7 +2305,7 @@ $$
 9.74(b)에 의해 $V\otimes W$의 모든 원소는 $v\otimes w$ 꼴의 원소들의 유한합으로 쓸 수 있다. 그러나 $\dim V>1$이고 $\dim W>1$이면
 
 $$
-\{v\otimes w:(v,w)\in V\times W\}\ne V\otimes W
+\lbrace v\otimes w:(v,w)\in V\times W\rbrace\ne V\otimes W
 $$
 
 이다.
@@ -2325,7 +2325,7 @@ $$
 \begin{aligned}
 v\otimes w
 &=\left(\sum_{j=1}^m v_je_j\right)\otimes
-\left(\sum_{k=1}^n w_kf_k\right)\\
+\left(\sum_{k=1}^n w_kf_k\right)\cr
 &=\sum_{k=1}^n\sum_{j=1}^m (v_jw_k)(e_j\otimes f_k).
 \end{aligned}
 $$
@@ -2333,15 +2333,15 @@ $$
 따라서 9.74(b)가 주는 $\mathbb{F}^m\otimes\mathbb{F}^n$의 기저
 
 $$
-\{e_j\otimes f_k\}_{j=1,\ldots,m;\ k=1,\ldots,n}
+\lbrace e_j\otimes f_k\rbrace_{j=1,\ldots,m;\ k=1,\ldots,n}
 $$
 
 에 대해 $v\otimes w$의 계수들은 $v_jw_k$이다. 이 수들을 리스트 대신 $m\times n$ 행렬로 쓰면 $v\otimes w$를 다음 행렬과 동일시할 수 있다.
 
 $$
 \begin{pmatrix}
-v_1w_1&\cdots&v_1w_n\\
-\vdots&\ddots&\vdots\\
+v_1w_1&\cdots&v_1w_n\cr
+\vdots&\ddots&\vdots\cr
 v_mw_1&\cdots&v_mw_n
 \end{pmatrix}.
 $$
@@ -2388,10 +2388,10 @@ $$
 \widehat{\Gamma}(v\otimes w)=\Gamma(v,w)
 $$
 
-(b) 반대로 $T:V\otimes W\to U$가 선형사상이라고 하자. 그러면 다음을 모든 $(v,w)\in V\times W$에 대해 만족하는 유일한 쌍선형 사상 $T^\#:V\times W\to U$가 존재한다.
+(b) 반대로 $T:V\otimes W\to U$가 선형사상이라고 하자. 그러면 다음을 모든 $(v,w)\in V\times W$에 대해 만족하는 유일한 쌍선형 사상 $T^\\#:V\times W\to U$가 존재한다.
 
 $$
-T^\#(v,w)=T(v\otimes w)
+T^\\#(v,w)=T(v\otimes w)
 $$
 
 **증명**
@@ -2416,22 +2416,22 @@ $$
 $$
 \begin{aligned}
 \widehat{\Gamma}(v\otimes w)
-&=\widehat{\Gamma}\left(\sum_{k=1}^n\sum_{j=1}^m a_jb_k(e_j\otimes f_k)\right)\\
-&=\sum_{k=1}^n\sum_{j=1}^m a_jb_k\widehat{\Gamma}(e_j\otimes f_k)\\
-&=\sum_{k=1}^n\sum_{j=1}^m a_jb_k\Gamma(e_j,f_k)\\
+&=\widehat{\Gamma}\left(\sum_{k=1}^n\sum_{j=1}^m a_jb_k(e_j\otimes f_k)\right)\cr
+&=\sum_{k=1}^n\sum_{j=1}^m a_jb_k\widehat{\Gamma}(e_j\otimes f_k)\cr
+&=\sum_{k=1}^n\sum_{j=1}^m a_jb_k\Gamma(e_j,f_k)\cr
 &=\Gamma(v,w).
 \end{aligned}
 $$
 
 9.74(b)에 의해 이런 선형사상 $\widehat{\Gamma}$는 유일하다. 따라서 (a)가 증명된다.
 
-(b)를 증명하기 위해 $T^\#:V\times W\to U$를
+(b)를 증명하기 위해 $T^\\#:V\times W\to U$를
 
 $$
-T^\#(v,w)=T(v\otimes w)
+T^\\#(v,w)=T(v\otimes w)
 $$
 
-로 정의한다. 텐서곱의 쌍선형성과 $T$의 선형성에 의해 $T^\#$는 쌍선형이다. 조건을 만족하는 $T^\#$의 유일성은 명백하다.
+로 정의한다. 텐서곱의 쌍선형성과 $T$의 선형성에 의해 $T^\\#$는 쌍선형이다. 조건을 만족하는 $T^\\#$의 유일성은 명백하다.
 
 9.79(a)를 증명할 때 단순히 모든 $v,w$에 대해 $\widehat{\Gamma}(v\otimes w)=\Gamma(v,w)$로 정의하고 이를 $V\otimes W$ 전체로 선형 확장할 수는 없다. $V\otimes W$의 원소가 $v\otimes w$ 꼴 원소들의 유한합으로 표현되는 방식은 유일하지 않기 때문이다. 위 증명은 기저를 사용하여 이 문제를 피한다. 그러나 모든 $v,w$에 대해 $\widehat{\Gamma}(v\otimes w)=\Gamma(v,w)$가 성립하므로, 최종적으로 얻은 $\widehat{\Gamma}$는 선택한 기저에 의존하지 않는다.
 
@@ -2442,7 +2442,7 @@ $$
 $V$와 $W$가 내적공간이라고 하자. 그러면 모든 $v,u\in V$와 $w,x\in W$에 대해
 
 $$
-\langle v\otimes w,\;u\otimes x\rangle
+\langle v\otimes w,\thickspace u\otimes x\rangle
 =\langle v,u\rangle\langle w,x\rangle
 $$
 
@@ -2454,7 +2454,7 @@ $e_1,\ldots,e_m$을 $V$의 정규직교 기저, $f_1,\ldots,f_n$을 $W$의 정�
 
 $$
 \left\langle
-\sum_{k=1}^n\sum_{j=1}^m b_{j,k}e_j\otimes f_k,\;
+\sum_{k=1}^n\sum_{j=1}^m b_{j,k}e_j\otimes f_k,\thickspace
 \sum_{k=1}^n\sum_{j=1}^m c_{j,k}e_j\otimes f_k
 \right\rangle
 =\sum_{k=1}^n\sum_{j=1}^m b_{j,k}\overline{c_{j,k}}.
@@ -2476,14 +2476,14 @@ $$
 
 $$
 \begin{aligned}
-\langle v\otimes w,\;u\otimes x\rangle
+\langle v\otimes w,\thickspace u\otimes x\rangle
 &=\left\langle
-\sum_{k=1}^n\sum_{j=1}^m v_jw_ke_j\otimes f_k,\;
+\sum_{k=1}^n\sum_{j=1}^m v_jw_ke_j\otimes f_k,\thickspace
 \sum_{k=1}^n\sum_{j=1}^m u_jx_ke_j\otimes f_k
-\right\rangle\\
-&=\sum_{k=1}^n\sum_{j=1}^m v_j\overline{u_j}w_k\overline{x_k}\\
+\right\rangle\cr
+&=\sum_{k=1}^n\sum_{j=1}^m v_j\overline{u_j}w_k\overline{x_k}\cr
 &=\left(\sum_{j=1}^m v_j\overline{u_j}\right)
-\left(\sum_{k=1}^n w_k\overline{x_k}\right)\\
+\left(\sum_{k=1}^n w_k\overline{x_k}\right)\cr
 &=\langle v,u\rangle\langle w,x\rangle.
 \end{aligned}
 $$
@@ -2495,7 +2495,7 @@ $$
 $V$와 $W$가 내적공간이라고 하자. $V\otimes W$ 위의 내적은 모든 $v,u\in V$와 $w,x\in W$에 대해
 
 $$
-\langle v\otimes w,\;u\otimes x\rangle
+\langle v\otimes w,\thickspace u\otimes x\rangle
 =\langle v,u\rangle\langle w,x\rangle
 $$
 
@@ -2510,7 +2510,7 @@ $$
 위 식에서 $u=v$, $x=w$를 대입하고 제곱근을 취하면 모든 $v\in V$, $w\in W$에 대해
 
 $$
-\|v\otimes w\|=\|v\|\,\|w\|
+\Vert v\otimes w\Vert=\Vert v\Vert\thinspace\Vert w\Vert
 $$
 
 가 성립한다.
@@ -2520,20 +2520,20 @@ $$
 $V$와 $W$가 내적공간이고, $e_1,\ldots,e_m$이 $V$의 정규직교 기저이며, $f_1,\ldots,f_n$이 $W$의 정규직교 기저라고 하자. 그러면
 
 $$
-\{e_j\otimes f_k\}_{j=1,\ldots,m;\ k=1,\ldots,n}
+\lbrace e_j\otimes f_k\rbrace_{j=1,\ldots,m;\ k=1,\ldots,n}
 $$
 
 은 $V\otimes W$의 정규직교 기저이다.
 
 **증명**
 
-9.74(b)에 의해 위 리스트는 $V\otimes W$의 기저이다. 정규직교성만 확인하면 된다. $j,M\in\{1,\ldots,m\}$이고 $k,N\in\{1,\ldots,n\}$이면
+9.74(b)에 의해 위 리스트는 $V\otimes W$의 기저이다. 정규직교성만 확인하면 된다. $j,M\in\lbrace1,\ldots,m\rbrace$이고 $k,N\in\lbrace1,\ldots,n\rbrace$이면
 
 $$
-\langle e_j\otimes f_k,\;e_M\otimes f_N\rangle
+\langle e_j\otimes f_k,\thickspace e_M\otimes f_N\rangle
 =\langle e_j,e_M\rangle\langle f_k,f_N\rangle
 =\begin{cases}
-1,& j=M\text{이고 }k=N,\\
+1,& j=M\text{이고 }k=N,\cr
 0,& \text{그렇지 않으면}.
 \end{cases}
 $$
@@ -2556,7 +2556,7 @@ $$
 
 **9.86 예: $m$-선형 범함수**
 
-각 $k\in\{1,\ldots,m\}$에 대해 $\varphi_k\in V_k'$라고 하자. 함수 $\beta:V_1\times\cdots\times V_m\to\mathbb{F}$를
+각 $k\in\lbrace1,\ldots,m\rbrace$에 대해 $\varphi_k\in V_k'$라고 하자. 함수 $\beta:V_1\times\cdots\times V_m\to\mathbb{F}$를
 
 $$
 \beta(v_1,\ldots,v_m)=\varphi_1(v_1)\cdots\varphi_m(v_m)
@@ -2607,7 +2607,7 @@ $$
 가 $V_k$의 기저라고 하자. 그러면
 
 $$
-\{e_{j_1}^1\otimes\cdots\otimes e_{j_m}^m\}_{j_1=1,\ldots,n_1;\ \cdots;\ j_m=1,\ldots,n_m}
+\lbrace e_{j_1}^1\otimes\cdots\otimes e_{j_m}^m\rbrace_{j_1=1,\ldots,n_1;\ \cdots;\ j_m=1,\ldots,n_m}
 $$
 
 은 $V_1\otimes\cdots\otimes V_m$의 기저이다.
@@ -2646,13 +2646,13 @@ $$
 (b) 반대로 $T:V_1\otimes\cdots\otimes V_m\to U$가 선형사상이라고 하자. 그러면 모든 $(v_1,\ldots,v_m)\in V_1\times\cdots\times V_m$에 대해
 
 $$
-T^\#(v_1,\ldots,v_m)=T(v_1\otimes\cdots\otimes v_m)
+T^\\#(v_1,\ldots,v_m)=T(v_1\otimes\cdots\otimes v_m)
 $$
 
 를 만족하는 유일한 $m$-선형 사상
 
 $$
-T^\#:V_1\times\cdots\times V_m\to U
+T^\\#:V_1\times\cdots\times V_m\to U
 $$
 
 가 존재한다.
@@ -2680,19 +2680,19 @@ $$
 4. $\dim V>1$이고 $\dim W>1$이라고 하자. 다음 집합이 $V\otimes W$의 부분공간이 아님을 증명하여라.
 
    $$
-   \{v\otimes w:(v,w)\in V\times W\}
+   \lbrace v\otimes w:(v,w)\in V\times W\rbrace
    $$
 
    따라서 이 경우
 
    $$
-   \{v\otimes w:(v,w)\in V\times W\}\ne V\otimes W.
+   \lbrace v\otimes w:(v,w)\in V\times W\rbrace\ne V\otimes W.
    $$
 
 5. $m,n$이 양의 정수라고 하자. $v\in\mathbb{F}^m$과 $w\in\mathbb{F}^n$에 대해 9.76처럼 $v\otimes w$를 $m\times n$ 행렬과 동일시한다. 이 동일시 아래에서
 
    $$
-   \{v\otimes w:v\in\mathbb{F}^m,\ w\in\mathbb{F}^n\}
+   \lbrace v\otimes w:v\in\mathbb{F}^m,\ w\in\mathbb{F}^n\rbrace
    $$
 
    이 $\mathbb{F}$의 성분을 가지는 랭크가 $1$ 이하인 모든 $m\times n$ 행렬들의 집합임을 보여라.
@@ -2702,8 +2702,8 @@ $$
 7. $\dim V>2$이고 $\dim W>2$라고 하자. 다음을 증명하여라.
 
    $$
-   \{v_1\otimes w_1+v_2\otimes w_2:
-   v_1,v_2\in V,\ w_1,w_2\in W\}\ne V\otimes W
+   \lbrace v_1\otimes w_1+v_2\otimes w_2:
+   v_1,v_2\in V,\ w_1,w_2\in W\rbrace\ne V\otimes W
    $$
 
 8. $v_1,\ldots,v_m\in V$와 $w_1,\ldots,w_m\in W$가
@@ -2741,7 +2741,7 @@ $$
 12. $V_1,\ldots,V_m$이 유한차원 내적공간이라고 하자. 모든 $(v_1,\ldots,v_m)$과 $(u_1,\ldots,u_m)$에 대해
 
     $$
-    \langle v_1\otimes\cdots\otimes v_m,\;
+    \langle v_1\otimes\cdots\otimes v_m,\thickspace
     u_1\otimes\cdots\otimes u_m\rangle
     =\langle v_1,u_1\rangle\cdots\langle v_m,u_m\rangle
     $$
@@ -2751,8 +2751,8 @@ $$
     위 식은 모든 $(v_1,\ldots,v_m)\in V_1\times\cdots\times V_m$에 대해
 
     $$
-    \|v_1\otimes\cdots\otimes v_m\|
-    =\|v_1\|\cdots\|v_m\|
+    \Vert v_1\otimes\cdots\otimes v_m\Vert
+    =\Vert v_1\Vert\cdots\Vert v_m\Vert
     $$
 
     임을 함의한다.
@@ -2766,5 +2766,5 @@ $$
     가 $V_k$의 정규직교 기저라고 하자. 다음 리스트가 $V_1\otimes\cdots\otimes V_m$의 정규직교 기저임을 보여라.
 
     $$
-    \{e_{j_1}^1\otimes\cdots\otimes e_{j_m}^m\}_{j_1=1,\ldots,n_1;\ \cdots;\ j_m=1,\ldots,n_m}
+    \lbrace e_{j_1}^1\otimes\cdots\otimes e_{j_m}^m\rbrace_{j_1=1,\ldots,n_1;\ \cdots;\ j_m=1,\ldots,n_m}
     $$
