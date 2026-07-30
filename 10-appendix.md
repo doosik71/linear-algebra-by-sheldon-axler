@@ -1,0 +1,490 @@
+# 부록
+
+## 사진 출처
+
+- v쪽: Carrie Heeter와 Bishnu Sarangi의 사진. 퍼블릭 도메인 이미지.
+- 1쪽: Pierre Louis Dumesnil의 원작 회화, Nils Forsberg의 1884년 복제본. 2022년 3월 29일 Wikimedia Commons에서 내려받은 퍼블릭 도메인 이미지.  
+  <https://commons.wikimedia.org/wiki/File:René_Descartes_i_samtal_med_Sveriges_drottning,_Kristina.jpg>
+- 27쪽: 2022년 2월 4일 Wikimedia Commons에서 내려받은 퍼블릭 도메인 이미지.  
+  <https://commons.wikimedia.org/wiki/File:IAS_Princeton.jpg>
+- 51쪽: Stefan Schäfer의 사진. Creative Commons Attribution Share Alike 라이선스. 2022년 3월 28일 Wikimedia Commons에서 내려받음.  
+  <https://commons.wikimedia.org/wiki/File:BurgDankwarderode2016.jpg>
+- 119쪽: Alireza Javaheri의 사진. Creative Commons Attribution 라이선스. 2023년 3월 12일 Wikimedia Commons에서 내려받음.  
+  <https://commons.wikimedia.org/wiki/File:Hakim_Omar_Khayam_-_panoramio.jpg>
+- 132쪽: Giovanni Paganucci가 1863년에 완성한 조각상. Hans-Peter Postel의 사진. Creative Commons Attribution 라이선스. 2022년 3월 14일 Wikimedia Commons에서 내려받음.  
+  <https://commons.wikimedia.org/wiki/File:Leonardo_da_Pisa.jpg>
+- 181쪽: Matthew Petroff의 사진. Creative Commons Attribution Share Alike 라이선스. 2022년 3월 31일 Wikimedia Commons에서 내려받음.  
+  <https://commons.wikimedia.org/wiki/File:George-peabody-library.jpg>
+- 227쪽: Petar Milošević의 사진. Creative Commons Attribution Share Alike 라이선스. 2022년 3월 30일 Wikipedia에서 내려받음.  
+  <https://en.wikipedia.org/wiki/Lviv>
+- 297쪽: David Iliff의 사진. Creative Commons Attribution Share Alike 라이선스. 2022년 3월 30일 Wikipedia에서 내려받음.  
+  <https://en.wikipedia.org/wiki/File:Long_Room_Interior,_Trinity_College_Dublin,_Ireland_-_Diliff.jpg>
+- 332쪽: Daniel Schwen의 사진. Creative Commons Attribution Share Alike 라이선스. 2019년 7월 9일 Wikimedia Commons에서 내려받음.  
+  <https://commons.wikimedia.org/wiki/File:Mathematik_Göttingen.jpg>
+
+## 기호 색인
+
+- $A^{-1}$, 91
+- $A_{j,\cdot}$, 74
+- $A_{j,k}$, 69
+- $A_{\cdot,k}$, 74
+- $\alpha_T$, 354
+- $A^*$, 231
+- $A^{\mathrm{t}}$, 77
+- $\widehat{\Gamma}$, 375, 380
+- $B$, 287
+- $\mathcal{B}(V_1,\ldots,V_m)$, 378
+- $\mathcal{B}(V,W)$, 370
+- $\mathbb{C}$, 2
+- $\circ$, 55
+- $\deg$, 31
+- $\Delta$, 196
+- $\det A$, 355
+- $\det T$, 354
+- $\dim$, 44
+- $\oplus$, 21
+- $E(s_1f_1,\ldots,s_nf_n)$, 287
+- $E(\lambda,T)$, 164
+- $\mathbb{F}$, 4
+- $\mathbb{F}^{\infty}$, 13
+- $\mathbb{F}^{m,n}$, 72
+- $\mathbb{F}^n$, 6
+- $\mathbb{F}^S$, 13
+- $G(\lambda,T)$, 308
+- $I$, 52, 90
+- $\Longleftrightarrow$, 23
+- $\operatorname{Im}$, 120
+- $-\infty$, 31
+- $\mathcal{L}(V)$, 52
+- $\mathcal{L}(V,W)$, 52
+- $\mathcal{M}(\beta)$, 334
+- $\mathcal{M}(T)$, 69, 154
+- $\mathcal{M}(v)$, 88
+- $\operatorname{perm}$, 348
+- $\mathcal{P}(\mathbb{F})$, 30
+- $\pi$, 101
+- $\mathcal{P}_m(\mathbb{F})$, 31
+- $p(T)$, 137
+- $P_U$, 214
+- $q_\beta$, 341
+- $0$, 7
+- $\mathbb{R}$, 2
+- $\operatorname{Re}$, 120
+- $S\otimes T$, 381
+- $\subsetneqq$, 299
+- $\sqrt{T}$, 253
+- $\widetilde{T}$, 102
+- $T'$, 107
+- $T^*$, 228
+- $T^{-1}$, 82
+- $T(\Omega)$, 288
+- $T_{\mathbb{C}}$, 68
+- $T^\dagger$, 221
+- $T_m$, 137
+- $\|T\|$, 280
+- $T^\#$, 375, 380
+- $\operatorname{tr}A$, 326
+- $\operatorname{tr}T$, 327
+- $T|_U$, 133
+- $T/U$, 142
+- $U^\perp$, 211
+- $U^0$, 109
+- $\langle u,v\rangle$, 184
+- $V$, 15
+- $V'$, 105, 204
+- $V/U$, 99
+- $-v$, 15
+- $V_1\otimes\cdots\otimes V_m$, 379
+- $v_1\otimes\cdots\otimes v_m$, 379
+- $V^{(2)}$, 334
+- $V_{\operatorname{alt}}^{(2)}$, 339
+- $V_{\operatorname{sym}}^{(2)}$, 337
+- $V_{\mathbb{C}}$, 17
+- $V_m$, 103, 346
+- $V^{(m)}$, 346
+- $V_{\operatorname{alt}}^{(m)}$, 347
+- $V\otimes W$, 372
+- $v\otimes w$, 372
+- $v+U$, 98
+- $\|v\|$, 186
+- $z$, 120
+- $|z|$, 120
+
+## 색인
+
+- Abbott, Edwin A., 6
+- 절댓값, 120
+- 덧셈
+  - 몫공간에서, 100
+  - 복소수의, 2
+  - 함수의, 13
+  - 선형사상의, 55
+  - 행렬의, 71
+  - 부분공간의, 19
+  - 벡터의, 12
+  - $\mathbb{F}^n$ 안의 벡터의, 6
+- 덧셈 역원
+  - $\mathbb{C}$에서, 3, 4
+  - $\mathbb{F}^n$에서, 9
+  - 벡터공간에서, 12, 15
+- 가법성, 52
+- 선형사상의 수반, 228
+- 대수적 중복도, 311
+- 교대 쌍선형 형식, 339
+- 교대 $m$-선형 형식, 347
+- 소멸자, 109
+- 아폴로니오스 항등식, 195
+- Artin, Emil, 80
+- 결합법칙, 3, 12, 56
+- 뒤로 밀기, 53, 59, 84, 140
+- 공, 287
+- Banach, Stefan, 227
+- 기저, 39
+  - 고유벡터들의, 165, 245, 246, 250
+  - 일반화 고유벡터들의, 301
+- Bernstein 다항식, 49
+- 베셀 부등식, 198
+- 쌍선형 형식, 333
+- 쌍선형 범함수, 370
+- 쌍선형 사상, 374
+- 블록 대각행렬, 314
+- Bunyakovsky, Viktor, 189
+- $C^*$-대수, 295
+- Carroll, Lewis, 11
+- Cauchy, Augustin-Louis, 189
+- 코시-슈바르츠 부등식, 189
+- Cayley, Arthur, 312
+- 케일리-해밀턴 정리, 364
+  - 복소 벡터공간 위에서, 312
+- 기저변환 공식
+  - 쌍선형 형식에 대해, 336
+  - 연산자에 대해, 93
+- 특성다항식, 363
+  - 복소 벡터공간 위에서, 311
+- ChatGPT, 196, 279
+- Cholesky 분해, 267
+- Cholesky, André-Louis, 267
+- Christina, 스웨덴 여왕, 1
+- 덧셈에 대해 닫혀 있음, 18
+- 스칼라곱에 대해 닫혀 있음, 18
+- 행렬의 열 랭크, 77, 114, 239
+- 열-행 분해, 78
+- 교환법칙, 3, 7, 12, 25, 56, 73, 80
+- 가환하는 연산자들, 138, 175-180, 209, 235, 248-249, 256
+- 동반행렬, 152
+- 복소켤레, 120
+- 복소수, 2
+- 복소 스펙트럼 정리, 246
+- 복소 벡터공간, 13
+- 복소화
+  - 고윳값, 140
+  - 일반화 고유벡터, 318
+  - 최소다항식, 153
+  - 고윳값의 중복도, 318
+- 선형사상의, 68
+- 벡터공간의, 17, 43
+- 내적공간의, 194
+- 켤레대칭성, 183
+- 행렬의 켤레전치, 231
+- 좌표, 6
+- 연산자의 세제곱근, 248
+- 드 무아브르 정리, 125
+- 다항식의 차수, 31
+- Descartes, René, 1
+- 행렬식
+  - 행렬의, 355
+  - 연산자의, 354
+  - 양의 연산자의, 362
+  - 유니터리 연산자의, 362
+- 대각행렬, 163, 274
+- 정사각행렬의 대각선, 155
+- 대각화 가능, 163, 172, 176, 245, 246, 294, 307, 316
+- 미분 선형사상, 53, 56, 59, 61, 62, 67, 70, 79, 138, 208, 304
+- 차원, 44
+  - 부분공간들의 합의, 47
+- 직합, 21, 42, 98
+  - 부분공간과 그 직교여공간의, 212
+  - $\operatorname{null}T^{\dim V}$와 $\operatorname{range}T^{\dim V}$의, 299
+- 이산 푸리에 변환, 269
+- 분배법칙, 3, 12, 15, 56, 80
+- 다항식의 나눗셈 알고리즘, 124
+- 복소수의 나눗셈, 4
+- 점곱, 182
+- 이중 쌍대공간, 118
+- 쌍대
+  - 기저의, 106
+  - 선형사상의, 107
+  - 벡터공간의, 105, 204
+  - 연산자의, 140, 153, 162, 174
+- 고유공간, 164
+- 고윳값
+  - 수반의, 239
+  - 연산자의 쌍대의, 140
+  - 연산자의, 134
+  - 양의 연산자의, 252
+  - 자기수반 연산자의, 233
+  - 유니터리 연산자의, 262
+  - 홀수 차원 공간 위에서, 150, 318, 367
+- 고유벡터, 135
+- 타원체, 287
+- 유클리드 내적, 184
+- Euler, Leonhard, 2
+- Fibonacci, 132
+- 피보나치 수열, 174
+- 체, 10
+- 유한차원 벡터공간, 30
+- Flatland, 6
+- 앞으로 밀기, 140
+- 푸리에 급수, 207
+- Frankenstein, 50
+- Frobenius 노름, 331
+- Fuglede 정리, 248
+- 대수학의 기본정리, 125
+- 선형사상의 기본정리, 62
+- Gauss, Carl Friedrich, 51
+- 가우스 소거, 51, 65, 361
+- 일반화 고유공간, 308
+- 일반화 고유벡터, 300
+- 기하적 중복도, 311
+- 게르슈고린 원판, 170
+- 게르슈고린 원판 정리, 171
+- Gershgorin, Semyon Aronovich, 171
+- Gram, Jørgen, 200
+- 그람-슈미트 절차, 200
+- 선형사상의 그래프, 103
+- 하다마르 부등식, 365
+- Halmos, Paul, 27
+- Hamilton, William, 297
+- 조화함수, 196
+- Hilbert 행렬, 256
+- Hilbert-Schmidt 노름, 331
+- 동차성, 52
+- 동차 선형연립방정식, 65, 95
+- 하이포노멀 연산자, 241
+- 항등행렬, 90
+- 항등연산자, 52, 56
+- 허수부, 120
+- 무한차원 벡터공간, 31
+- 단사, 60
+- 내적, 183
+- 내적공간, 184
+- 고등연구소, 27
+- 불변 부분공간, 133
+- 역
+  - 선형사상의, 82
+  - 행렬의, 91
+- 가역 선형사상, 82
+- 가역행렬, 91
+- 등거리사상, 258
+- 동형인 벡터공간들, 86
+- 동형사상, 86
+- 조르당 기저, 322
+- 조르당 형식, 324
+- Jordan, Camille, 324
+- 핵, 59
+- Khayyam, Omar, 119
+- Klein, Felix, 369
+- 라플라시안, 196
+- 리스트의 길이, 5
+- 피사의 레오나르도, 132
+- 일차결합, 28
+- 일차종속 보조정리, 33
+- 선형방정식, 64-65, 95
+- 선형범함수, 105, 204
+- 선형사상, 52
+- 선형사상 보조정리, 54
+- 선형생성, 29
+- 선형 부분공간, 18
+- 선형변환, 52
+- 일차종속, 33
+- 일차독립, 32
+- 리스트, 5
+  - 벡터들의, 28
+- 하삼각행렬, 162, 267
+- Lviv, 227
+- Lwów, 227
+- 행렬, 69
+  - 곱셈, 73
+  - 쌍선형 형식의, 334
+  - 선형사상의, 69
+  - 멱영 연산자의, 305
+  - 연산자의, 154
+  - 선형사상들의 곱의, 74, 91
+  - $T'$의, 113
+  - $T^*$의, 232
+  - 벡터의, 88
+- 최소다항식
+  - 일반화 고유벡터들의 기저와, 306
+  - 특성다항식과, 312
+  - 대각화 가능성과, 169
+  - 일반화 고유공간 분해와, 316
+  - 일반화 고유공간들과, 317
+  - 가역성과, 149
+  - 상삼각행렬과, 159, 203
+  - 계산, 145
+  - 정의, 145
+  - 그 도함수와의 최대공약식, 173
+  - 영이 아닌 불변 부분공간 둘의 직합분해가 없음, 325
+  - 수반의, 241
+  - 동반행렬의, 152
+  - 복소화의, 153
+  - 쌍대사상의, 153
+  - 멱영 연산자의, 305, 324
+  - 정규 연산자의, 241
+  - 몫연산자의, 153
+  - 제한연산자의, 148
+  - 자기수반 연산자의, 244
+  - 다항식배, 148
+  - 영점, 146
+- 거리 최소화, 217
+- $m$-선형 형식, 346
+- $m$-선형 범함수, 378
+- $m$-선형 사상, 379
+- 최고차항 계수가 $1$인 다항식, 144
+- Moon, v, xvii
+- Moore-Penrose 역, 221
+- 다중선형 형식, 346
+- 곱셈, 곱 참조
+- 고윳값의 중복도, 310
+- 멱영 연산자, 303, 322
+- Noether, Emmy, 332
+- 비특이행렬, 91
+- 선형사상의 노름, 280
+- 벡터의 노름, 182, 186
+- 정규 연산자, 235
+- 영공간, 59
+  - 연산자의 거듭제곱의, 298
+  - $T'$의, 111
+  - $T^*$의, 231
+- 일대일, 60
+- 위로의, 62
+- 연산자, 133
+- 직교
+  - 여공간, 211
+  - 사영, 214
+  - 벡터들, 187
+- 정규직교
+  - 기저, 199
+  - 리스트, 197
+- 평행사변형 등식, 191
+- 파르스발 항등식, 200
+- 편미분 연산자, 175
+- 피바디 도서관, 181
+- 순열, 348
+- 사진 출처, 383
+- 점, 12
+- 극분해, 286
+- 다항식, 30
+- 양의 정부호, 266
+- 양의 연산자, 251
+- 양의 준정부호 연산자, 251
+- 주축, 287
+- 곱
+  - 복소수의, 2
+  - 선형사상의, 55
+  - 행렬의, 73
+  - 다항식의, 138
+  - 스칼라와 선형사상의, 55
+  - 스칼라와 벡터의, 12
+  - 스칼라와 $\mathbb{F}^n$ 안의 벡터의, 9
+  - 벡터공간의, 96
+- 의사역, 221, 250, 255, 275, 279
+- 피타고라스 정리, 187
+- QR 분해, 264, 365
+- 이차형식, 341
+- 몫
+  - 사상, 101
+  - 연산자, 142, 153, 162, 173
+  - 공간, 99
+- 치역, 61
+  - 연산자의 거듭제곱의, 306
+  - $T'$의, 112
+  - $T^*$의, 231
+- 행렬의 랭크, 79, 114, 239
+- 실수부, 120
+- 실 스펙트럼 정리, 245
+- 실 벡터공간, 13
+- 역삼각부등식, 129, 193, 294
+- 리스 표현 정리, 205, 210, 216, 224, 225
+- Riesz, Frigyes, 205
+- 행렬의 행 랭크, 77, 114, 239
+- 스칼라, 4
+- 스칼라곱, 9, 12
+  - 몫공간에서, 100
+  - 선형사상의, 55
+  - 행렬의, 71
+- 슈미트 쌍, 278
+- Schmidt, Erhard, 200, 278
+- 슈어 정리, 204
+- Schur, Issai, 204
+- Schwarz, Hermann, 189
+- 자기수반 연산자, 233
+- Shelley, Mary Wollstonecraft, 50
+- 순열의 부호, 349
+- 동시 대각화, 176
+- 동시에 상삼각화 가능, 178
+- 특이행렬, 91
+- 특잇값 분해
+  - 수반의, 275
+  - 선형사상의, 273
+  - 의사역의, 275
+- 특잇값, 271, 362
+- 반대칭 연산자, 240, 247, 269
+- 생성, 29
+- 생성한다, 29
+- 스펙트럼 정리, 245, 246
+- 정사각행렬, 91
+- 연산자의 제곱근, 248, 251, 253, 320
+- 표준 기저
+  - $\mathbb{F}^n$의, 39
+  - $\mathcal{P}_m(\mathbb{F})$의, 39
+- 부분공간, 18
+- 복소수의 뺄셈, 4
+- 합, 덧셈 참조
+- 부분공간들의 합, 19
+- 대법원, 210
+- 전사, 62
+- SVD, 특잇값 분해 참조
+- Sylvester, James, 181
+- 대칭 쌍선형 형식, 337
+- 대칭 행렬, 269, 337
+- 테일러 다항식, 219
+- 텐서곱, 372, 379
+- Through the Looking Glass, 11
+- 트레이스
+  - 행렬의, 326
+  - 연산자의, 327
+- 평행이동, 99
+- 행렬의 전치, 77, 231
+- 삼각부등식, 121, 190, 281
+- 튜플, 5
+- 양쪽 아이디얼, 58
+- $\mathbb{C}$ 안의 단위원, 262, 269
+- 유니터리 행렬, 263
+- 유니터리 연산자, 260
+- 더블린 대학교, 297
+- 괴팅겐 대학교, 332
+- 상삼각행렬, 155-160, 264, 267, 314
+- 반데르몽드 행렬, 366
+- 벡터, 8, 12
+- 벡터공간, 12
+- 부피, 292, 363
+  - 상자의, 291
+- 다항식의 영점, 122
+
+## 조판에 관한 노트
+
+- 이 책은 저자가 책의 디자인을 구현하기 위해 직접 작성한 LaTeX 코드로 LuaLaTeX에서 조판되었다.
+- 이 책에 사용된 LaTeX 소프트웨어는 Leslie Lamport가 작성했다. LaTeX의 기반이 되는 TeX 소프트웨어는 Donald Knuth가 작성했다.
+- 본문 글꼴은 TeX Gyre Termes의 OpenType Format 버전이다. 이 글꼴은 Times를 바탕으로 하며, Times는 Stanley Morison과 Victor Lardent가 1931년에 영국 신문 The Times를 위해 설계했다.
+- 본문 수학 글꼴은 TeX Gyre Pagella Math의 OpenType Format 버전이다. 이 글꼴은 Palatino를 바탕으로 하며, Palatino는 Hermann Zapf가 설계했다.
+- 쪽 머리글과 일부 디자인 요소에 쓰인 산세리프 글꼴은 TeX Gyre Heros의 OpenType Format 버전이다. 이 글꼴은 Helvetica를 바탕으로 하며, Helvetica는 Max Miedinger와 Eduard Hoffmann이 설계했다.
+- Will Robertson이 작성한 LaTeX 패키지 fontspec과 unicode-math가 글꼴 관리를 위해 사용되었다.
+- Ivan Valbusa가 작성한 LaTeX 패키지 fontsize가 본문 글꼴을 10.5포인트 크기로 자연스럽게 바꾸는 데 사용되었다.
+- 책의 그림들은 저자가 작성한 Mathematica 코드로 Mathematica에서 생성되었다. Mathematica는 Stephen Wolfram이 만들었다. Szabolcs Horvát가 작성한 Mathematica 패키지 MaTeX가 Mathematica 그림 안에 LaTeX로 생성한 라벨을 넣는 데 사용되었다.
+- David Carlisle과 Sebastian Rahtz가 작성한 LaTeX 패키지 graphicx가 사진과 그림을 포함하는 데 사용되었다.
+- Frank Mittelbach가 작성한 LaTeX 패키지 multicol이 기호 색인과 색인에 필요한 두 단 구성의 제약을 해결하는 데 사용되었다.
+- Till Tantau가 작성한 LaTeX 패키지 TikZ와 Thomas Sturm이 작성한 tcolorbox가 정의 상자와 결과 상자를 만드는 데 사용되었다.
+- David Carlisle이 작성한 LaTeX 패키지 color가 여러 디자인 요소에 적절한 색을 더하는 데 사용되었다.
+- Donald Arseneau가 작성한 LaTeX 패키지 wrapfig가 설명 상자 주변으로 텍스트를 흐르게 하는 데 사용되었다.
+- Robert Schlicht가 작성한 LaTeX 패키지 microtype이 하이픈 연결을 줄이고 더 보기 좋은 오른쪽 정렬을 만드는 데 사용되었다.
