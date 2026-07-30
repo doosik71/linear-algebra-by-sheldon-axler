@@ -40,6 +40,7 @@ $V$에서 $W$로 가는 모든 선형사상의 집합을 $\mathcal{L}(V,W)$라�
 $$
 \mathcal{L}(V)=\mathcal{L}(V,V)
 $$
+
 로 쓴다.
 
 **3.3 예: 선형사상**
@@ -52,21 +53,25 @@ $$
   $$
   Tp=\int_0^1 p(x)\,dx.
   $$
+
 - $x^2$를 곱하는 사상 $T \in \mathcal{L}(\mathcal{P}(\mathbb{R}))$:
 
   $$
   (Tp)(x)=x^2p(x).
   $$
+
 - 뒤로 한 칸 이동하는 사상 $T \in \mathcal{L}(\mathbb{F}^{\infty})$:
 
   $$
   T(x_1,x_2,x_3,\ldots)=(x_2,x_3,\ldots).
   $$
+
 - $T \in \mathcal{L}(\mathbb{R}^3,\mathbb{R}^2)$를
 
   $$
   T(x,y,z)=(2x-y+3z,\;7x+5y-6z)
   $$
+
   로 정의하면 $T$는 선형사상이다.
 - 일반적으로 $A_{j,k} \in \mathbb{F}$가 주어졌을 때
 
@@ -77,12 +82,14 @@ $$
   \sum_{k=1}^n A_{m,k}x_k
   \right)
   $$
+
   로 정의된 $T:\mathbb{F}^n \to \mathbb{F}^m$는 선형사상이다.
 - 다항식 $q \in \mathcal{P}(\mathbb{R})$를 고정하고
 
   $$
   (Tp)(x)=p(q(x))
   $$
+
   로 정의하면 $T \in \mathcal{L}(\mathcal{P}(\mathbb{R}))$이다.
 
 **3.4 선형사상 보조정리**
@@ -92,6 +99,7 @@ $v_1,\ldots,v_n$이 $V$의 기저이고 $w_1,\ldots,w_n \in W$라 하자. 그러
 $$
 Tv_k=w_k \quad (k=1,\ldots,n)
 $$
+
 을 만족하는 선형사상 $T:V \to W$가 유일하게 존재한다.
 
 증명. $v \in V$는 유일하게
@@ -99,11 +107,13 @@ $$
 $$
 v=c_1v_1+\cdots+c_nv_n
 $$
+
 으로 표현된다. 따라서
 
 $$
 T(c_1v_1+\cdots+c_nv_n)=c_1w_1+\cdots+c_nw_n
 $$
+
 로 정의하면 $T$는 잘 정의된다. 이 정의에서 덧셈성과 동차성이 바로 따라오므로 $T$는 선형이다. 또한 $Tv_k=w_k$를 만족한다. 이런 선형사상이 있다면 기저벡터의 값이 모든 벡터의 값을 결정하므로 유일하다.
 
 ### 선형사상에 대한 대수적 연산
@@ -116,6 +126,7 @@ $$
 (S+T)(v)=Sv+Tv,\qquad
 (\lambda T)(v)=\lambda(Tv)
 $$
+
 로 정의한다.
 
 **3.6 $\mathcal{L}(V,W)$는 벡터공간이다**
@@ -129,6 +140,7 @@ $T \in \mathcal{L}(U,V)$이고 $S \in \mathcal{L}(V,W)$이면 두 선형사상�
 $$
 (ST)(u)=S(Tu)
 $$
+
 로 정의한다. 즉 $ST$는 $S \circ T$이다.
 
 **3.8 선형사상 곱의 대수적 성질**
@@ -146,6 +158,7 @@ $$
   $$
   TI=IT=T
   $$
+
   가 성립한다. 여기서 두 $I$는 각각 적절한 정의역과 공역의 항등사상이다.
 
 - 분배법칙:
@@ -164,6 +177,7 @@ $D$를 미분사상, $T$를 $x^2$를 곱하는 사상이라고 하자. 그러면
 $$
 ((TD)p)(x)=x^2p'(x),
 $$
+
 이지만
 
 $$
@@ -185,6 +199,7 @@ $$
 $$
 T(0)=T(0+0)=T(0)+T(0)
 $$
+
 이므로 양변에 $T(0)$의 덧셈 역원을 더하면 $T(0)=0$이다.
 
 고등학교에서 말하는 일차함수 $f(x)=mx+b$는 $b=0$일 때만 선형사상이다.
@@ -196,6 +211,7 @@ $$
    $$
    T(x,y,z)=(2x-4y+3z+b,\;6x+cxyz)
    $$
+
    로 정의한다. $T$가 선형일 필요충분조건이 $b=c=0$임을 보여라.
 
 2. $b,c \in \mathbb{R}$라 하자. $T:\mathcal{P}(\mathbb{R}) \to \mathbb{R}^2$를
@@ -204,6 +220,7 @@ $$
    Tp=\left(3p(4)+5p'(6)+bp(1)p(2),\;
    \int_{-1}^{2} x^3p(x)\,dx+c\sin p(0)\right)
    $$
+
    로 정의한다. $T$가 선형일 필요충분조건이 $b=c=0$임을 보여라.
 
 3. $T \in \mathcal{L}(\mathbb{F}^n,\mathbb{F}^m)$라 하자. 모든 $(x_1,\ldots,x_n)\in\mathbb{F}^n$에 대해
@@ -213,6 +230,7 @@ $$
    (A_{1,1}x_1+\cdots+A_{1,n}x_n,\ldots,
    A_{m,1}x_1+\cdots+A_{m,n}x_n)
    $$
+
    이 되도록 하는 스칼라 $A_{j,k}\in\mathbb{F}$가 존재함을 보여라.
 
 4. $T \in \mathcal{L}(V,W)$이고 $Tv_1,\ldots,Tv_m$이 $W$에서 선형독립이면 $v_1,\ldots,v_m$이 $V$에서 선형독립임을 증명하라.
@@ -240,6 +258,7 @@ $$
     0, & v\in V,\ v\notin U
     \end{cases}
     $$
+
     로 정의한다. $T$가 $V$ 위의 선형사상이 아님을 증명하라.
 
 13. $V$가 유한차원이라고 하자. $U$가 $V$의 부분공간이고 $S \in \mathcal{L}(U,W)$이면 모든 $u\in U$에 대해 $Tu=Su$를 만족하는 $T \in \mathcal{L}(V,W)$가 존재함을 보여라.
@@ -263,6 +282,7 @@ $T \in \mathcal{L}(V,W)$라 하자. $T$의 영공간은
 $$
 \text{null}T=\{v\in V:Tv=0\}
 $$
+
 으로 정의된다.
 
 **3.12 예: 영공간**
@@ -274,6 +294,7 @@ $$
   \text{null}\varphi =
   \{(z_1,z_2,z_3)\in\mathbb{C}^3:z_1+2z_2+3z_3=0\}.
   $$
+
 - 미분사상 $D:\mathcal{P}(\mathbb{R})\to\mathcal{P}(\mathbb{R})$의 영공간은 상수다항식들의 집합이다.
 - $x^2$를 곱하는 사상의 영공간은 $\{0\}$이다.
 - 뒤로 이동하는 사상 $T:\mathbb{F}^{\infty}\to\mathbb{F}^{\infty}$의 영공간은
@@ -281,6 +302,7 @@ $$
   $$
   \{(a,0,0,\ldots):a\in\mathbb{F}\}
   $$
+
   이다.
 
 영공간은 kernel이라고도 부른다.
@@ -294,11 +316,13 @@ $T \in \mathcal{L}(V,W)$이면 $\text{null}T$는 $V$의 부분공간이다.
 $$
 T(u+v)=Tu+Tv=0
 $$
+
 이므로 $u+v\in\text{null}T$이다. $\lambda\in\mathbb{F}$이면
 
 $$
 T(\lambda u)=\lambda Tu=0
 $$
+
 이므로 $\lambda u\in\text{null}T$이다.
 
 **3.14 정의: 단사**
@@ -324,6 +348,7 @@ $T:V\to W$의 치역은
 $$
 \text{range}T=\{Tv:v\in V\}
 $$
+
 이다.
 
 **3.17 예: 치역**
@@ -334,6 +359,7 @@ $$
   $$
   \{(2x,5y,x+y):x,y\in\mathbb{R}\}
   $$
+
   이다.
 - 미분사상 $D:\mathcal{P}(\mathbb{R})\to\mathcal{P}(\mathbb{R})$의 치역은 $\mathcal{P}(\mathbb{R})$이다.
 
@@ -354,6 +380,7 @@ $D \in \mathcal{L}(\mathcal{P}_5(\mathbb{R}))$를 미분사상이라 하자. 이
 $$
 S \in \mathcal{L}(\mathcal{P}_5(\mathbb{R}),\mathcal{P}_4(\mathbb{R}))
 $$
+
 는 전사이다.
 
 ### 선형사상의 기본정리
@@ -371,6 +398,7 @@ $$
 $$
 u_1,\ldots,u_m,v_1,\ldots,v_n
 $$
+
 으로 확장한다. 그러면 $Tv_1,\ldots,Tv_n$이 $\text{range}T$의 기저임을 보이면 된다.
 
 먼저 $w\in\text{range}T$라 하자. $w=Tv$이고
@@ -378,6 +406,7 @@ $$
 $$
 v=a_1u_1+\cdots+a_mu_m+b_1v_1+\cdots+b_nv_n
 $$
+
 로 쓸 수 있다. $Tu_j=0$이므로
 
 $$
@@ -389,6 +418,7 @@ $$
 $$
 c_1Tv_1+\cdots+c_nTv_n=0
 $$
+
 이면 $T(c_1v_1+\cdots+c_nv_n)=0$이므로 $c_1v_1+\cdots+c_nv_n\in\text{null}T$이다. 기저의 선형독립성 때문에 모든 $c_j=0$이다. 따라서 $Tv_1,\ldots,Tv_n$은 선형독립이다. 그러므로 $\dim\text{range}T=n$이고 $\dim V=m+n$이다.
 
 **3.22 낮은 차원으로 가는 선형사상은 단사일 수 없다**
@@ -405,6 +435,7 @@ $$
 T(w,x,y,z) =
 (w+\sqrt{7}x+5y+\pi z,\;2w+6x-y+3z,\;w+x+y+z)
 $$
+
 도 단사가 아니다.
 
 **3.24 높은 차원으로 가는 선형사상은 전사일 수 없다**
@@ -420,6 +451,7 @@ $$
 \ldots,\quad
 \sum_{k=1}^n A_{m,k}x_k=0
 $$
+
 꼴의 방정식계를 동차 선형방정식계라고 한다. 여기에 대응하는 선형사상 $T:\mathbb{F}^n\to\mathbb{F}^m$는
 
 $$
@@ -429,6 +461,7 @@ T(x_1,\ldots,x_n)=
 \sum_{k=1}^n A_{m,k}x_k
 \right)
 $$
+
 이다.
 
 **3.26 미지수가 방정식보다 많은 동차계**
@@ -444,6 +477,7 @@ $$
 \ldots,\quad
 \sum_{k=1}^n A_{m,k}x_k=c_m
 $$
+
 꼴이다.
 
 **3.28 방정식이 미지수보다 많은 계**
@@ -463,6 +497,7 @@ $$
    $$
    T(z_1,\ldots,z_m)=z_1v_1+\cdots+z_mv_m
    $$
+
    로 정의한다.
 
    (a) $v_1,\ldots,v_m$이 $V$를 생성한다는 것은 $T$의 어떤 성질에 대응하는가?
@@ -497,6 +532,7 @@ $$
     \text{null}T =
     \{(x_1,x_2,x_3,x_4)\in\mathbb{F}^4:x_1=5x_2,\ x_3=7x_4\}
     $$
+
     라 하자. $T$가 전사임을 증명하라.
 
 13. $U$가 $\mathbb{R}^8$의 3차원 부분공간이고 $T:\mathbb{R}^8\to\mathbb{R}^5$가 선형이며 $\text{null}T=U$라 하자. $T$가 전사임을 증명하라.
@@ -506,6 +542,7 @@ $$
     $$
     \{(x_1,x_2,x_3,x_4,x_5)\in\mathbb{F}^5:x_1=3x_2,\ x_3=x_4=x_5\}
     $$
+
     인 $\mathbb{F}^5$에서 $\mathbb{F}^2$로 가는 선형사상은 존재하지 않음을 증명하라.
 
 15. $V$ 위에 영공간과 치역이 모두 유한차원인 선형사상이 존재한다고 하자. $V$가 유한차원임을 증명하라.
@@ -519,6 +556,7 @@ $$
     $$
     \dim U\ge \dim V-\dim W
     $$
+
     임을 증명하라.
 
 19. $W$가 유한차원이고 $T\in\mathcal{L}(V,W)$라 하자. $T$가 단사일 필요충분조건은 $ST$가 $V$ 위의 항등연산자가 되도록 하는 $S\in\mathcal{L}(W,V)$가 존재하는 것임을 증명하라.
@@ -531,6 +569,7 @@ $$
     \dim\{v\in V:Tv\in U\} =
     \dim\text{null}T+\dim(U\cap\text{range}T)
     $$
+
     임을 증명하라.
 
 22. $U,V$가 유한차원 벡터공간이고 $S\in\mathcal{L}(V,W)$, $T\in\mathcal{L}(U,V)$라 하자. 다음을 증명하라.
@@ -576,6 +615,7 @@ $$
     $$
     V=\text{null}\varphi\oplus\{au:a\in\mathbb{F}\}
     $$
+
     임을 증명하라.
 
 31. $V$가 유한차원이고 $X$가 $V$의 부분공간이며 $Y$가 $W$의 유한차원 부분공간이라고 하자. $\text{null}T=X$이고 $\text{range}T=Y$인 $T\in\mathcal{L}(V,W)$가 존재할 필요충분조건은
@@ -583,6 +623,7 @@ $$
     $$
     \dim X+\dim Y=\dim V
     $$
+
     임을 증명하라.
 
 32. $V$가 유한차원이고 $\dim V>1$이라 하자. 선형사상 $\varphi:\mathcal{L}(V)\to\mathbb{F}$가 모든 $S,T\in\mathcal{L}(V)$에 대해
@@ -590,6 +631,7 @@ $$
     $$
     \varphi(ST)=\varphi(S)\varphi(T)
     $$
+
     를 만족하면 $\varphi=0$임을 보여라.
 
 33. $V,W$가 실벡터공간이고 $T\in\mathcal{L}(V,W)$라 하자. 모든 $u,v\in V$에 대해
@@ -597,6 +639,7 @@ $$
     $$
     T_{\mathbb{C}}(u+iv)=Tu+iTv
     $$
+
     로 $T_{\mathbb{C}}:V_{\mathbb{C}}\to W_{\mathbb{C}}$를 정의한다.
 
     (a) $T_{\mathbb{C}}$가 $V_{\mathbb{C}}$에서 $W_{\mathbb{C}}$로 가는 복소 선형사상임을 보여라.
@@ -633,6 +676,7 @@ A =
 1 & 9 & 7
 \end{pmatrix}
 $$
+
 이면 $A_{2,3}=7$이다.
 
 **3.31 정의: 선형사상의 행렬 $\mathcal{M}(T)$**
@@ -642,11 +686,13 @@ $T\in\mathcal{L}(V,W)$이고 $v_1,\ldots,v_n$이 $V$의 기저, $w_1,\ldots,w_m$
 $$
 Tv_k=A_{1,k}w_1+\cdots+A_{m,k}w_m
 $$
+
 이 되도록 하는 $m$행 $n$열 행렬 $A$이다. 필요하면
 
 $$
 \mathcal{M}(T,(v_1,\ldots,v_n),(w_1,\ldots,w_m))
 $$
+
 로 기저를 명시한다.
 
 즉 $\mathcal{M}(T)$의 $k$번째 열은 $Tv_k$를 $w_1,\ldots,w_m$에 대해 표현한 좌표들이다.
@@ -658,6 +704,7 @@ $T:\mathbb{F}^2\to\mathbb{F}^3$를
 $$
 T(x,y)=(x+3y,\;2x+5y,\;7x+9y)
 $$
+
 로 정의하고 표준기저를 쓰면
 
 $$
@@ -707,6 +754,7 @@ $$
 $$
 (\lambda A)_{j,k}=\lambda A_{j,k}
 $$
+
 로 정의한다.
 
 **3.37 예**
@@ -754,6 +802,7 @@ $A$가 $m$행 $n$열 행렬이고 $B$가 $n$행 $p$열 행렬이면 $AB$는 $m$�
 $$
 (AB)_{j,k}=\sum_{r=1}^n A_{j,r}B_{r,k}
 $$
+
 로 정의된다.
 
 **3.42 예**
@@ -782,6 +831,7 @@ $T\in\mathcal{L}(U,V)$이고 $S\in\mathcal{L}(V,W)$이면
 $$
 \mathcal{M}(ST)=\mathcal{M}(S)\mathcal{M}(T)
 $$
+
 이다. 이 등식에서 각 행렬은 해당 공간들에 선택된 기저에 대해 계산한다.
 
 **3.44 행과 열 표기**
@@ -797,6 +847,7 @@ A=
 1 & 9 & 7
 \end{pmatrix}
 $$
+
 이면
 
 $$
@@ -841,6 +892,7 @@ $A$가 $m$행 $n$열 행렬이고
 $$
 b= \begin{pmatrix} b_1\\ \vdots\\ b_n \end{pmatrix}
 $$
+
 이면
 
 $$
@@ -868,6 +920,7 @@ $A$가 $m$행 $n$열 행렬이고 $B$가 $n$행 $p$열 행렬이면 다음이 �
 $$
 \begin{pmatrix} 4 & 7 & 1 & 8\\ 3 & 5 & 2 & 9 \end{pmatrix}
 $$
+
 의 열계수와 행계수는 모두 $2$이다.
 
 **3.54 정의: 전치행렬**
@@ -900,6 +953,7 @@ $A$가 열계수 $c\ge1$인 $m$행 $n$열 행렬이면, 어떤 $m$행 $c$열 행
 $$
 A=CR
 $$
+
 이 된다.
 
 증명. $A$의 열공간의 기저가 되는 $c$개의 열을 $C$의 열로 삼는다. 그러면 $A$의 각 열은 $C$의 열들의 선형결합이므로, 그 계수들을 $R$의 대응하는 열로 두면 $A=CR$이다.
@@ -935,6 +989,7 @@ $$
    0 & 0 & 1 & 0
    \end{pmatrix}
    $$
+
    이 되게 하라.
 
 5. $V,W$가 유한차원이고 $T\in\mathcal{L}(V,W)$라 하자. 어떤 $V$의 기저와 $W$의 기저를 고르면 $\mathcal{M}(T)$의 성분 중 $1\le k\le\dim\text{range}T$에 대해 $k$행 $k$열 성분만 $1$이고 나머지는 모두 $0$이 되도록 할 수 있음을 증명하라.
@@ -948,6 +1003,7 @@ $$
    $$
    (AB)_{j,\cdot}=A_{j,\cdot}B
    $$
+
    임을 증명하라.
 
 9. $a=(a_1\ \cdots\ a_n)$가 $1$행 $n$열 행렬이고 $B$가 $n$행 $p$열 행렬이라 하자. 다음을 증명하라.
@@ -964,6 +1020,7 @@ $$
     A(B+C)=AB+AC,\qquad
     (D+E)F=DF+EF
     $$
+
     를 증명하라.
 
 12. 행렬 곱셈의 결합법칙을 증명하라. 즉 $(AB)C$가 의미 있으면 $A(BC)$도 의미 있고
@@ -971,6 +1028,7 @@ $$
     $$
     (AB)C=A(BC)
     $$
+
     임을 증명하라.
 
 13. $A$가 $n$행 $n$열 행렬이고 $1\le j,k\le n$이라 하자. $A^3$의 $j$행 $k$열 성분이
@@ -978,6 +1036,7 @@ $$
     $$
     \sum_{p=1}^n\sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}
     $$
+
     임을 보여라.
 
 14. $m,n$이 양의 정수라고 하자. $A\mapsto A^t$가 $\mathbb{F}^{m,n}$에서 $\mathbb{F}^{n,m}$으로 가는 선형사상임을 증명하라.
@@ -987,6 +1046,7 @@ $$
     $$
     (AC)^t=C^tA^t
     $$
+
     임을 증명하라.
 
 16. $A$가 $0$이 아닌 $m$행 $n$열 행렬이라고 하자. $A$의 계수가 $1$일 필요충분조건은 모든 $j=1,\ldots,m$과 $k=1,\ldots,n$에 대해
@@ -994,6 +1054,7 @@ $$
     $$
     A_{j,k}=c_jd_k
     $$
+
     가 되도록 하는 $(c_1,\ldots,c_m)\in\mathbb{F}^m$와 $(d_1,\ldots,d_n)\in\mathbb{F}^n$가 존재하는 것임을 증명하라.
 
 17. $T\in\mathcal{L}(V)$이고 $u_1,\ldots,u_n$과 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 다음 조건들이 서로 동치임을 증명하라.
@@ -1044,11 +1105,13 @@ $T\in\mathcal{L}(\mathbb{R}^3)$를
 $$
 T(x,y,z)=(-y,x,4z)
 $$
+
 로 정의하자. 이는 $xy$-평면에서 반시계 방향 $90^\circ$ 회전하고 $z$축 방향으로 $4$배 늘리는 사상이다. 역사상은
 
 $$
 T^{-1}(x,y,z)=\left(y,-x,\frac14 z\right)
 $$
+
 이다.
 
 **3.63 가역성 $\Longleftrightarrow$ 단사성과 전사성**
@@ -1091,6 +1154,7 @@ $q\in\mathcal{P}(\mathbb{R})$라 하자. 어떤 $m\ge0$에 대해 $q\in\mathcal{
 $$
 Tp=((x^2+5x+7)p)''
 $$
+
 로 정의한다. $0$이 아닌 $p$에 대해 $(x^2+5x+7)p$의 차수는 $p$의 차수보다 $2$ 크고, 두 번 미분하면 다시 $p$의 차수가 된다. 따라서 $T$는 $\mathcal{P}_m(\mathbb{R})$에서 자기 자신으로 가는 선형사상이다. $Tp=0$이면 $(x^2+5x+7)p$의 두 번째 미분이 $0$이므로 $(x^2+5x+7)p$는 일차 이하의 다항식이어야 한다. 이는 $p=0$일 때만 가능하다. 따라서 $T$는 단사이고, 3.65에 의해 전사이다. 그러므로 원하는 $p$가 존재한다.
 
 **3.68 같은 차원 공간에서 $ST=I \Longleftrightarrow TS=I$**
@@ -1123,6 +1187,7 @@ $\mathbb{F}$ 위의 두 유한차원 벡터공간은 차원이 같을 필요충�
 $$
 T(c_1v_1+\cdots+c_nv_n)=c_1w_1+\cdots+c_nw_n
 $$
+
 로 정의하면 $T$는 단사이고 전사인 선형사상이다. 따라서 동형사상이다.
 
 모든 유한차원 벡터공간 $V$는 $\mathbb{F}^{\dim V}$와 동형이다. 그러나 실제 연구에서는 영공간, 치역, 다항식공간 등 자연스럽게 생기는 벡터공간을 그대로 다루는 것이 더 명료한 경우가 많다.
@@ -1134,6 +1199,7 @@ $v_1,\ldots,v_n$이 $V$의 기저이고 $w_1,\ldots,w_m$이 $W$의 기저라 하
 $$
 T\mapsto\mathcal{M}(T)
 $$
+
 는 $\mathcal{L}(V,W)$에서 $\mathbb{F}^{m,n}$으로 가는 동형사상이다.
 
 증명. 3.35와 3.38에 의해 이 사상은 선형이다. $\mathcal{M}(T)=0$이면 모든 기저벡터 $v_k$에 대해 $Tv_k=0$이므로 $T=0$이고, 따라서 단사이다. 임의의 행렬 $A\in\mathbb{F}^{m,n}$에 대해 선형사상 보조정리를 사용하면
@@ -1141,6 +1207,7 @@ $$
 $$
 Tv_k=\sum_{j=1}^m A_{j,k}w_j
 $$
+
 가 되도록 하는 $T$가 존재한다. 이때 $\mathcal{M}(T)=A$이므로 전사이다.
 
 **3.72 선형사상공간의 차원**
@@ -1160,11 +1227,13 @@ $v\in V$이고 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. $v$를
 $$
 v=b_1v_1+\cdots+b_nv_n
 $$
+
 으로 쓸 때, 이 기저에 대한 $v$의 행렬은
 
 $$
 \mathcal{M}(v)= \begin{pmatrix} b_1\\ \vdots\\ b_n \end{pmatrix}
 $$
+
 이다.
 
 **3.74 예**
@@ -1174,11 +1243,13 @@ $$
 $$
 \begin{pmatrix} 2\\ -7\\ 0\\ 5\\ 1 \end{pmatrix}
 $$
+
 이다. 또한 $x=(x_1,\ldots,x_n)\in\mathbb{F}^n$의 표준기저에 대한 행렬은
 
 $$
 \mathcal{M}(x)= \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix}
 $$
+
 이다.
 
 **3.75 $\mathcal{M}(T)_{\cdot,k}=\mathcal{M}(Tv_k)$**
@@ -1220,6 +1291,7 @@ $$
 $$
 \mathcal{M}(T,(v_1,\ldots,v_n)) = \mathcal{M}(T,(v_1,\ldots,v_n),(v_1,\ldots,v_n))
 $$
+
 처럼 쓴다.
 
 **3.79 정의: 항등행렬 $I$**
@@ -1243,6 +1315,7 @@ $$
 $$
 AB=BA=I
 $$
+
 이면 $A$를 가역이라고 한다. 이때 $B$를 $A$의 역행렬이라고 하며 $A^{-1}$로 쓴다. 가역행렬을 nonsingular, 가역이 아닌 행렬을 singular라고도 한다.
 
 가역행렬에 대해
@@ -1250,11 +1323,13 @@ $$
 $$
 (A^{-1})^{-1}=A
 $$
+
 이고, 같은 크기의 가역행렬 $A,C$에 대해
 
 $$
 (AC)^{-1}=C^{-1}A^{-1}
 $$
+
 이다.
 
 **3.81 선형사상 곱의 행렬**
@@ -1274,11 +1349,13 @@ $u_1,\ldots,u_n$과 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 그러면
 $$
 \mathcal{M}(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n))
 $$
+
 과
 
 $$
 \mathcal{M}(I,(v_1,\ldots,v_n),(u_1,\ldots,u_n))
 $$
+
 은 서로의 역행렬이다.
 
 **3.83 예**
@@ -1295,6 +1372,7 @@ $$
 $$
 \begin{pmatrix} \frac32 & -\frac52\\ -1 & 2 \end{pmatrix}
 $$
+
 이므로
 
 $$
@@ -1316,6 +1394,7 @@ $$
 $$
 C=\mathcal{M}(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n))
 $$
+
 라 하면
 
 $$
@@ -1329,6 +1408,7 @@ $v_1,\ldots,v_n$이 $V$의 기저이고 $T\in\mathcal{L}(V)$가 가역이면
 $$
 \mathcal{M}(T^{-1})=(\mathcal{M}(T))^{-1}
 $$
+
 이다. 두 행렬은 모두 같은 기저 $v_1,\ldots,v_n$에 대해 계산한다.
 
 ### 연습문제 3D
@@ -1358,6 +1438,7 @@ $$
    $$
    \dim\text{null}S=\dim\text{null}T
    $$
+
    임을 증명하라.
 
 9. $V$가 유한차원이고 $T:V\to W$가 $W$ 위로의 전사 선형사상이라고 하자. $T|_U$가 $U$에서 $W$로의 동형사상이 되도록 하는 $V$의 부분공간 $U$가 존재함을 증명하라.
@@ -1367,6 +1448,7 @@ $$
     $$
     \mathcal{E}=\{T\in\mathcal{L}(V,W):U\subseteq\text{null}T\}
     $$
+
     라고 둔다.
 
     (a) $\mathcal{E}$가 $\mathcal{L}(V,W)$의 부분공간임을 보여라.
@@ -1396,6 +1478,7 @@ $$
     $$
     \mathcal{A}(T)=ST
     $$
+
     로 정의한다.
 
     (a) $\dim\text{null}\mathcal{A}=(\dim V)(\dim\text{null}S)$임을 보여라.
@@ -1411,6 +1494,7 @@ $$
     $$
     q(x)=(x^2+x)p''(x)+2xp'(x)+p(3)
     $$
+
     을 만족하는 $p\in\mathcal{P}(\mathbb{R})$가 존재함을 증명하라.
 
 21. $n$이 양의 정수이고 모든 $j,k=1,\ldots,n$에 대해 $A_{j,k}\in\mathbb{F}$라 하자. 다음 두 조건이 동치임을 증명하라.
@@ -1422,6 +1506,7 @@ $$
     \ldots,\quad
     \sum_{k=1}^n A_{n,k}x_k=0
     $$
+
     의 해는 자명한 해 $x_1=\cdots=x_n=0$뿐이다.
 
     (b) 모든 $c_1,\ldots,c_n\in\mathbb{F}$에 대해
@@ -1431,6 +1516,7 @@ $$
     \ldots,\quad
     \sum_{k=1}^n A_{n,k}x_k=c_n
     $$
+
     을 만족하는 해가 존재한다.
 
 22. $T\in\mathcal{L}(V)$이고 $v_1,\ldots,v_n$이 $V$의 기저라고 하자. 다음을 증명하라.
@@ -1447,6 +1533,7 @@ $$
     \mathcal{M}(T,(v_1,\ldots,v_n)) =
     \mathcal{M}(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n))
     $$
+
     임을 증명하라.
 
 24. 같은 크기의 정사각행렬 $A,B$가 $AB=I$를 만족하면 $BA=I$임을 증명하라.
@@ -1462,6 +1549,7 @@ $V_1,\ldots,V_m$이 벡터공간이면 곱공간
 $$
 V_1\times\cdots\times V_m
 $$
+
 은 모든 순서쌍 또는 순서 $m$-튜플 $(v_1,\ldots,v_m)$의 집합이다. 덧셈과 스칼라곱은 성분별로 정의한다.
 
 $$
@@ -1479,6 +1567,7 @@ $\mathcal{P}_5(\mathbb{R})\times\mathbb{R}^3$에서
 $$
 (p,(x_1,x_2,x_3))+(q,(y_1,y_2,y_3)) = (p+q,(x_1+y_1,x_2+y_2,x_3+y_3))
 $$
+
 이고
 
 $$
@@ -1496,6 +1585,7 @@ $\mathbb{R}^2\times\mathbb{R}^3$은 $\mathbb{R}^5$와 같은 집합은 아니지
 $$
 ((x_1,x_2),(y_1,y_2,y_3)) \mapsto (x_1,x_2,y_1,y_2,y_3)
 $$
+
 는 동형사상이다.
 
 **3.91 예: 곱공간의 기저**
@@ -1525,11 +1615,13 @@ $V_1,\ldots,V_m$이 같은 벡터공간의 부분공간이라고 하자. 선형�
 $$
 \Gamma:V_1\times\cdots\times V_m\to V_1+\cdots+V_m
 $$
+
 을
 
 $$
 \Gamma(v_1,\ldots,v_m)=v_1+\cdots+v_m
 $$
+
 로 정의한다. 그러면
 
 $$
@@ -1553,6 +1645,7 @@ $U$가 $V$의 부분공간이고 $v\in V$이면
 $$
 v+U=\{v+u:u\in U\}
 $$
+
 라고 쓴다. 이를 $U$의 평행이동이라고 한다.
 
 **3.96 예**
@@ -1574,6 +1667,7 @@ $U$가 $V$의 부분공간일 때
 $$
 V/U=\{v+U:v\in V\}
 $$
+
 를 $V$의 $U$에 의한 몫공간이라고 한다.
 
 **3.100 예**
@@ -1603,6 +1697,7 @@ $$
 $$
 \lambda(v+U)=(\lambda v)+U
 $$
+
 로 정의한다.
 
 **3.103 몫공간은 벡터공간이다**
@@ -1616,6 +1711,7 @@ $U$가 $V$의 부분공간일 때 몫사상 $\pi:V\to V/U$를
 $$
 \pi(v)=v+U
 $$
+
 로 정의한다. 이 사상은 선형이고 전사이다.
 
 **3.105 몫공간의 차원**
@@ -1635,11 +1731,13 @@ $T\in\mathcal{L}(V,W)$라 하자. $\text{null}T$에 의한 몫공간에서 $W$�
 $$
 \widetilde{T}:V/\text{null}T\to W
 $$
+
 를
 
 $$
 \widetilde{T}(v+\text{null}T)=Tv
 $$
+
 로 정의한다.
 
 **3.107 $\widetilde{T}$의 영공간과 치역**
@@ -1663,6 +1761,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
    $$
    \text{graph}T=\{(v,Tv)\in V\times W:v\in V\}
    $$
+
    로 정의한다. $T$가 선형사상일 필요충분조건은 $\text{graph}T$가 $V\times W$의 부분공간인 것임을 증명하라.
 
 2. $V_1,\ldots,V_m$이 벡터공간이고 $V_1\times\cdots\times V_m$이 유한차원이라고 하자. 각 $k=1,\ldots,m$에 대해 $V_k$가 유한차원임을 증명하라.
@@ -1672,6 +1771,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
    $$
    \mathcal{L}(V_1,W)\times\cdots\times\mathcal{L}(V_m,W)
    $$
+
    가 동형인 벡터공간임을 증명하라.
 
 4. $W_1,\ldots,W_m$이 벡터공간이라고 하자. $\mathcal{L}(V,W_1\times\cdots\times W_m)$와
@@ -1679,6 +1779,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
    $$
    \mathcal{L}(V,W_1)\times\cdots\times\mathcal{L}(V,W_m)
    $$
+
    가 동형인 벡터공간임을 증명하라.
 
 5. 양의 정수 $m$에 대해
@@ -1686,6 +1787,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
    $$
    V^m=\underbrace{V\times\cdots\times V}_{m\text{번}}
    $$
+
    라고 정의한다. $V^m$과 $\mathcal{L}(\mathbb{F}^m,V)$가 동형임을 증명하라.
 
 6. $v,x\in V$이고 $U,W$가 $V$의 부분공간이며 $v+U=x+W$라고 하자. $U=W$임을 증명하라.
@@ -1695,6 +1797,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
    $$
    A=\{(x,y,z)\in\mathbb{R}^3:2x+3y+5z=c\}
    $$
+
    가 되는 것임을 증명하라.
 
 8. (a) $T\in\mathcal{L}(V,W)$이고 $c\in W$라 하자. $\{x\in V:Tx=c\}$는 공집합이거나 $\text{null}T$의 평행이동임을 증명하라.
@@ -1706,6 +1809,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
    $$
    \lambda v+(1-\lambda)w\in A
    $$
+
    가 성립하는 것임을 증명하라.
 
 10. $A_1=v+U_1$, $A_2=w+U_2$라고 하자. 여기서 $v,w\in V$이고 $U_1,U_2$는 $V$의 부분공간이다. $A_1\cap A_2$는 공집합이거나 $V$의 어떤 부분공간의 평행이동임을 증명하라.
@@ -1721,6 +1825,7 @@ $T\in\mathcal{L}(V,W)$이고 $\pi$가 $V$에서 $V/\text{null}T$로 가는 몫�
     $$
     A=\{\lambda_1v_1+\cdots+\lambda_mv_m:\lambda_1,\ldots,\lambda_m\in\mathbb{F},\ \lambda_1+\cdots+\lambda_m=1\}
     $$
+
     라고 둔다.
 
     (a) $A$가 $V$의 어떤 부분공간의 평행이동임을 증명하라.
@@ -1768,6 +1873,7 @@ $V$ 위의 **선형함수**는 $V$에서 $\mathbb{F}$로 가는 선형사상이�
   $$
   \varphi(x,y,z)=4x-5y+2z
   $$
+
   로 정의하면 $\varphi$는 $\mathbb{R}^3$ 위의 선형함수이다.
 
 - $(c_1,\ldots,c_n)\in\mathbb{F}^n$를 고정하고
@@ -1775,6 +1881,7 @@ $V$ 위의 **선형함수**는 $V$에서 $\mathbb{F}$로 가는 선형사상이�
   $$
   \varphi(x_1,\ldots,x_n)=c_1x_1+\cdots+c_nx_n
   $$
+
   로 정의하면 $\varphi:\mathbb{F}^n\to\mathbb{F}$는 선형함수이다.
 
 - $\varphi:\mathcal{P}(\mathbb{R})\to\mathbb{R}$를
@@ -1782,6 +1889,7 @@ $V$ 위의 **선형함수**는 $V$에서 $\mathbb{F}$로 가는 선형사상이�
   $$
   \varphi(p)=3p''(5)+7p(4)
   $$
+
   로 정의하면 선형함수이다.
 
 - $\varphi:\mathcal{P}(\mathbb{R})\to\mathbb{R}$를
@@ -1789,6 +1897,7 @@ $V$ 위의 **선형함수**는 $V$에서 $\mathbb{F}$로 가는 선형사상이�
   $$
   \varphi(p)=\int_0^1 p
   $$
+
   로 정의하면 선형함수이다.
 
 **3.110 정의: 쌍대공간 $V'$**
@@ -1860,6 +1969,7 @@ $V$가 유한차원이라고 하자. $V$의 한 기저의 쌍대기저는 $V'$�
 $$
 a_1\varphi_1+\cdots+a_n\varphi_n=0
 $$
+
 이면 양변을 $v_k$에 적용하여 $a_k=0$을 얻는다. 따라서 쌍대기저는 선형독립이다. 길이가 $\dim V'=\dim V=n$이므로 $V'$의 기저이다.
 
 **3.118 정의: 쌍대사상 $T'$**
@@ -1869,6 +1979,7 @@ $T\in\mathcal{L}(V,W)$라 하자. $T$의 **쌍대사상**은 $T'\in\mathcal{L}(W
 $$
 T'(\varphi)=\varphi\circ T
 $$
+
 로 정의된다.
 
 $T'$는 $W'$에서 $V'$로 간다는 점에 주의하라. 방향이 $T$와 반대로 바뀐다.
@@ -1920,6 +2031,7 @@ $$
 =T'(S'(\varphi))
 =(T'S')(\varphi)
 $$
+
 이므로 성립한다. 합성 순서가 뒤집힌다는 점이 중요하다.
 
 일부 책은 쌍대공간과 쌍대사상에 $V^*$와 $T^*$를 쓰지만, 여기서는 이후 내적공간에서 도입할 수반(adjoint)을 위해 $T^*$ 표기를 남겨 둔다.
@@ -1933,6 +2045,7 @@ $U\subseteq V$에 대해 $U$의 **소멸자**는
 $$
 U^0=\{\varphi\in V':\text{모든 }u\in U\text{에 대해 }\varphi(u)=0\}
 $$
+
 로 정의된다.
 
 **3.122 예**
@@ -1946,6 +2059,7 @@ $e_1,\ldots,e_5$를 $\mathbb{R}^5$의 표준기저라 하고, $\varphi_1,\ldots,
 $$
 U=\text{span}(e_1,e_2) = \{(x_1,x_2,0,0,0)\in\mathbb{R}^5:x_1,x_2\in\mathbb{R}\}
 $$
+
 이면
 
 $$
@@ -1957,6 +2071,7 @@ $$
 $$
 \varphi=c_1\varphi_1+\cdots+c_5\varphi_5
 $$
+
 라 쓰면 $\varphi(e_1)=0$, $\varphi(e_2)=0$이므로 $c_1=c_2=0$이다.
 
 **3.124 소멸자는 부분공간이다**
@@ -1968,6 +2083,7 @@ $U\subseteq V$이면 $U^0$는 $V'$의 부분공간이다.
 $$
 (\varphi+\psi)(u)=\varphi(u)+\psi(u)=0
 $$
+
 이고, 스칼라배에 대해서도 같은 방식으로 닫혀 있다.
 
 **3.125 소멸자의 차원**
@@ -2069,6 +2185,7 @@ $$
 $$
 \varphi(v)=(T'\psi)(v)=(\psi\circ T)(v)=\psi(0)=0
 $$
+
 이므로 $\text{range}T'\subseteq(\text{null}T)^0$이다. 두 공간의 차원은
 
 $$
@@ -2077,6 +2194,7 @@ $$
 =\dim V-\dim\text{null}T
 =\dim(\text{null}T)^0
 $$
+
 으로 같으므로 등호가 성립한다.
 
 **3.131 $T$가 단사 $\Longleftrightarrow$ $T'$가 전사**
@@ -2152,6 +2270,7 @@ $$
    $$
    Tv=\varphi_1(v)w_1+\cdots+\varphi_m(v)w_m
    $$
+
    가 되는 유일한 수 $\varphi_1(v),\ldots,\varphi_m(v)$가 존재하여 함수 $\varphi_1,\ldots,\varphi_m:V\to\mathbb{F}$를 정의한다. 각 $\varphi_j$가 $V$ 위의 선형함수임을 보여라.
 
 6. $\varphi,\beta\in V'$라 하자. $\text{null}\varphi\subseteq\text{null}\beta$일 필요충분조건은 $\beta=c\varphi$가 되도록 하는 $c\in\mathbb{F}$가 존재하는 것임을 증명하라.
@@ -2165,6 +2284,7 @@ $$
    \qquad
    \Lambda(a_1,\ldots,a_n)=a_1v_1+\cdots+a_nv_n
    $$
+
    로 정의한다. $\Gamma$와 $\Lambda$가 서로의 역임을 설명하라.
 
 9. $m$이 양의 정수라고 하자. $\mathcal{P}_m(\mathbb{R})$의 기저 $1,x,\ldots,x^m$의 쌍대기저가 $\varphi_0,\varphi_1,\ldots,\varphi_m$이며
@@ -2172,6 +2292,7 @@ $$
    $$
    \varphi_k(p)=\frac{p^{(k)}(0)}{k!}
    $$
+
    임을 보여라. 여기서 $p^{(k)}$는 $p$의 $k$번째 도함수이고, $0$번째 도함수는 $p$ 자신으로 이해한다.
 
 10. $m$이 양의 정수라고 하자.
@@ -2185,6 +2306,7 @@ $$
     $$
     \psi=\psi(v_1)\varphi_1+\cdots+\psi(v_n)\varphi_n
     $$
+
     임을 증명하라.
 
 12. $S,T\in\mathcal{L}(V,W)$라 하자.
@@ -2200,6 +2322,7 @@ $$
     $$
     T(x,y,z)=(4x+5y+6z,\;7x+8y+9z)
     $$
+
     로 정의한다. $\varphi_1,\varphi_2$를 $\mathbb{R}^2$의 표준기저의 쌍대기저, $\psi_1,\psi_2,\psi_3$를 $\mathbb{R}^3$의 표준기저의 쌍대기저라고 하자.
 
     (a) 선형함수 $T'(\varphi_1)$와 $T'(\varphi_2)$를 설명하라.
@@ -2211,6 +2334,7 @@ $$
     $$
     (Tp)(x)=x^2p(x)+p''(x)
     $$
+
     로 정의한다.
 
     (a) $\varphi\in\mathcal{P}(\mathbb{R})'$가 $\varphi(p)=p'(4)$로 정의되었다고 하자. $\mathcal{P}(\mathbb{R})$ 위의 선형함수 $T'(\varphi)$를 설명하라.
@@ -2264,6 +2388,7 @@ $$
     $$
     \Gamma(\varphi)=(\varphi(v_1),\ldots,\varphi(v_m))
     $$
+
     로 정의한다.
 
     (a) $v_1,\ldots,v_m$이 $V$를 생성할 필요충분조건은 $\Gamma$가 단사인 것임을 증명하라.
@@ -2275,6 +2400,7 @@ $$
     $$
     \Gamma(v)=(\varphi_1(v),\ldots,\varphi_m(v))
     $$
+
     로 정의한다.
 
     (a) $\varphi_1,\ldots,\varphi_m$이 $V'$를 생성할 필요충분조건은 $\Gamma$가 단사인 것임을 증명하라.
@@ -2320,6 +2446,7 @@ $$
     $$
     (\Lambda v)(\varphi)=\varphi(v)
     $$
+
     로 정의한다.
 
     (a) $\Lambda$가 $V$에서 $V''$로 가는 선형사상임을 보여라.

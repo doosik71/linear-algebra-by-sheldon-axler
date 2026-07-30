@@ -881,12 +881,14 @@ $$
   \left(\frac{1}{\sqrt 3},\frac{1}{\sqrt 3},\frac{1}{\sqrt 3}\right),
   \left(-\frac{1}{\sqrt 2},\frac{1}{\sqrt 2},0\right)
   $$
+
   는 정규직교 리스트이다.
 - 앞의 리스트에
 
   $$
   \left(\frac{1}{\sqrt 6},\frac{1}{\sqrt 6},-\frac{2}{\sqrt 6}\right)
   $$
+
   를 덧붙이면 $\mathbb{F}^3$의 정규직교 리스트가 된다.
 - 양의 정수 $n$에 대해
 
@@ -895,22 +897,26 @@ $$
   \frac{\cos x}{\sqrt\pi},\ldots,\frac{\cos nx}{\sqrt\pi},
   \frac{\sin x}{\sqrt\pi},\ldots,\frac{\sin nx}{\sqrt\pi}
   $$
+
   는 내적
 
   $$
   \langle f,g\rangle=\int_{-\pi}^{\pi} f(x)g(x)\,dx
   $$
+
   이 주어진 $C[-\pi,\pi]$의 정규직교 리스트이다. 삼각함수로 이루어진 이런 리스트는 조수나 진동처럼 주기적인 현상을 분석하는 데 핵심적인 역할을 한다.
 - $\mathcal{P}_2(\mathbb{R})$에 내적
 
   $$
   \langle p,q\rangle=\int_{-1}^{1}p(x)q(x)\,dx
   $$
+
   가 주어져 있다고 하자. 표준기저 $1,x,x^2$은 정규직교 리스트가 아니다. 각 벡터를 그 노름으로 나누면
 
   $$
   \frac{1}{\sqrt 2},\sqrt{\frac32}x,\sqrt{\frac52}x^2
   $$
+
   를 얻는다. 이 리스트의 각 벡터는 노름 $1$이고, 두 번째 벡터는 첫 번째와 세 번째 벡터에 직교한다. 그러나 첫 번째 벡터와 세 번째 벡터는 직교하지 않으므로 이 리스트는 정규직교 리스트가 아니다.
 
 **6.24 정규직교 리스트의 선형결합의 노름**
@@ -937,11 +943,13 @@ $e_1,\ldots,e_m$이 정규직교 리스트이고
 $$
 a_1e_1+\cdots+a_me_m=0
 $$
+
 이라고 하자. 6.24에 의해
 
 $$
 |a_1|^2+\cdots+|a_m|^2=0
 $$
+
 이므로 $a_1=\cdots=a_m=0$이다. 따라서 $e_1,\ldots,e_m$은 일차독립이다.
 
 **6.26 베셀 부등식**
@@ -961,6 +969,7 @@ u=\langle v,e_1\rangle e_1+\cdots+\langle v,e_m\rangle e_m,
 \qquad
 w=v-u.
 $$
+
 각 $k=1,\ldots,m$에 대해 $\langle w,e_k\rangle=0$이므로 $w$는 $u$에 직교한다. 따라서 피타고라스 정리와 6.24에 의해
 
 $$
@@ -1057,16 +1066,19 @@ f_k
 -\cdots-
 \frac{\langle v_k,f_{k-1}\rangle}{\|f_{k-1}\|^2}f_{k-1}
 $$
+
 로 정의하자. 그리고 각 $k=1,\ldots,m$에 대해
 
 $$
 e_k=\frac{f_k}{\|f_k\|}
 $$
+
 라고 하자. 그러면 $e_1,\ldots,e_m$은 $V$의 정규직교 리스트이고, 각 $k=1,\ldots,m$에 대해
 
 $$
 \text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
 $$
+
 가 성립한다.
 
 **증명**
@@ -1078,6 +1090,7 @@ $$
 =\text{span}(e_1,\ldots,e_{k-1})
 \tag{6.33}
 $$
+
 라고 가정하면 $f_k\ne 0$이다. 실제로 $f_k=0$이면 $v_k\in\text{span}(v_1,\ldots,v_{k-1})$가 되어 $v_1,\ldots,v_m$의 일차독립성에 모순이다. 따라서 $e_k=f_k/\|f_k\|$가 잘 정의되고 노름은 $1$이다.
 
 또한 $f_k$가 앞의 $f_j$들에 직교하므로 $e_k$도 앞의 $e_j$들에 직교한다. 마지막으로 $e_k$는 $f_k$의 스칼라배이고, $f_k$의 정의를 정리하면 $v_k$가 $\text{span}(f_1,\ldots,f_k)$에 속하므로
@@ -1086,6 +1099,7 @@ $$
 \text{span}(v_1,\ldots,v_k)=\text{span}(f_1,\ldots,f_k)
 =\text{span}(e_1,\ldots,e_k)
 $$
+
 이다.
 
 **6.34 예: $\mathcal{P}_2(\mathbb{R})$에서 그램-슈미트 절차**
@@ -1095,6 +1109,7 @@ $\mathcal{P}_2(\mathbb{R})$에 내적
 $$
 \langle p,q\rangle=\int_{-1}^{1}p(x)q(x)\,dx
 $$
+
 가 주어져 있다고 하자. 표준기저 $v_1=1$, $v_2=x$, $v_3=x^2$에 그램-슈미트 절차를 적용하면
 
 $$
@@ -1108,6 +1123,7 @@ $$
 $$
 f_3=x^2-\frac13,\qquad \|f_3\|^2=\frac{8}{45}
 $$
+
 을 얻는다. 따라서
 
 $$
@@ -1115,6 +1131,7 @@ $$
 \sqrt{\frac32}x,\quad
 \sqrt{\frac{45}{8}}\left(x^2-\frac13\right)
 $$
+
 는 $\mathcal{P}_2(\mathbb{R})$의 정규직교기저이다.
 
 **6.35 정규직교기저의 존재**
@@ -1144,6 +1161,7 @@ $T$가 어떤 기저 $v_1,\ldots,v_n$에 대해 상삼각 행렬을 가진다고
 $$
 \text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
 $$
+
 를 만족한다. 상삼각 행렬 조건은 바로 이 부분공간들이 모두 $T$에 대해 불변이라는 뜻이므로, $T$는 $e_1,\ldots,e_n$에 대해서도 상삼각 행렬을 가진다. 이제 5.44를 적용하면 원하는 동치가 따른다.
 
 **6.38 슈어 정리**
@@ -1173,12 +1191,14 @@ $\varphi:\mathbb{F}^3\to\mathbb{F}$를
 $$
 \varphi(z_1,z_2,z_3)=2z_1-5z_2+z_3
 $$
+
 로 정의하면 $\varphi$는 $\mathbb{F}^3$ 위의 선형함수이다. 표준 내적을 사용하면
 
 $$
 \varphi(z_1,z_2,z_3)
 =\langle (z_1,z_2,z_3),(2,-5,1)\rangle
 $$
+
 이다.
 
 **6.41 예: 다항식공간 위의 선형함수**
@@ -1188,6 +1208,7 @@ $\varphi:\mathcal{P}_5(\mathbb{R})\to\mathbb{R}$를
 $$
 \varphi(p)=\int_{-1}^{1}p(t)\cos(\pi t)\,dt
 $$
+
 로 정의하면 $\varphi$는 $\mathcal{P}_5(\mathbb{R})$ 위의 선형함수이다.
 
 6.41의 예에서 $\mathcal{P}_5(\mathbb{R})$에 내적
@@ -1195,11 +1216,13 @@ $$
 $$
 \langle p,q\rangle=\int_{-1}^{1}p(t)q(t)\,dt
 $$
+
 를 주면, 어떤 다항식 $q\in\mathcal{P}_5(\mathbb{R})$가 존재하여 모든 $p\in\mathcal{P}_5(\mathbb{R})$에 대해
 
 $$
 \varphi(p)=\langle p,q\rangle
 $$
+
 가 성립한다. 다음 정리는 유한차원 내적공간에서 모든 선형함수가 이런 방식으로 표현된다는 것을 말한다.
 
 **6.42 리스 표현정리**
@@ -1209,6 +1232,7 @@ $V$가 유한차원 내적공간이고 $\varphi$가 $V$ 위의 선형함수라�
 $$
 \varphi(u)=\langle u,v\rangle
 $$
+
 가 되게 하는 유일한 $v\in V$가 존재한다.
 
 **증명**
@@ -1232,6 +1256,7 @@ $$
 v=\overline{\varphi(e_1)}e_1+\cdots+\overline{\varphi(e_n)}e_n
 \tag{6.43}
 $$
+
 로 두면 모든 $u\in V$에 대해 $\varphi(u)=\langle u,v\rangle$이다.
 
 유일성을 보이자. 모든 $u\in V$에 대해 $\langle u,v\rangle=\langle u,w\rangle$라고 하면, 특히 $u=v-w$를 대입하여
@@ -1239,6 +1264,7 @@ $$
 $$
 \|v-w\|^2=0
 $$
+
 을 얻는다. 따라서 $v=w$이다.
 
 **6.44 예: 리스 표현정리로 다항식 찾기**
@@ -1248,6 +1274,7 @@ $\mathcal{P}_2(\mathbb{R})$에 내적
 $$
 \langle p,q\rangle=\int_{-1}^{1}p(t)q(t)\,dt
 $$
+
 가 주어져 있다고 하자. 모든 $p\in\mathcal{P}_2(\mathbb{R})$에 대해
 
 $$
@@ -1255,6 +1282,7 @@ $$
 =\int_{-1}^{1}p(t)q(t)\,dt
 \tag{6.45}
 $$
+
 가 성립하게 하는 $q\in\mathcal{P}_2(\mathbb{R})$를 구하자.
 
 $\varphi(p)=\int_{-1}^{1}p(t)\cos(\pi t)\,dt$라고 두면 $\varphi$는 $\mathcal{P}_2(\mathbb{R})$ 위의 선형함수이다. 6.34의 정규직교기저를 6.43에 대입하면
@@ -1276,6 +1304,7 @@ $$
 $$
 q(x)=\frac{15}{2\pi^2}(1-3x^2)
 $$
+
 이다. 이것이 6.45를 만족하는 유일한 다항식이다.
 
 같은 방식으로 $\mathcal{P}_5(\mathbb{R})$에서는 다음 다항식이 모든 $p\in\mathcal{P}_5(\mathbb{R})$에 대해 대응되는 표현을 준다.
@@ -1294,6 +1323,7 @@ $$
 $$
 \|a_1e_1+\cdots+a_me_m\|^2=|a_1|^2+\cdots+|a_m|^2
 $$
+
    라고 하자. $e_1,\ldots,e_m$이 정규직교 리스트임을 증명하여라.
 
 2. $\mathbb{R}^2$의 모든 정규직교기저를 구하여라.
@@ -1307,6 +1337,7 @@ $$
    \frac{\cos x}{\sqrt\pi},\ldots,\frac{\cos nx}{\sqrt\pi},
    \frac{\sin x}{\sqrt\pi},\ldots,\frac{\sin nx}{\sqrt\pi}
    $$
+
    가 내적 $\langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\,dx$가 주어진 $C[-\pi,\pi]$의 정규직교 리스트임을 증명하여라.
 
    힌트: 다음 항등식을 사용하여라.
@@ -1328,11 +1359,13 @@ $$
    $$
    a_k=\frac{1}{\sqrt\pi}\int_{-\pi}^{\pi}f(x)\cos(kx)\,dx
    $$
+
    라고 하고, 양의 정수 $k$에 대해
 
    $$
    b_k=\frac{1}{\sqrt\pi}\int_{-\pi}^{\pi}f(x)\sin(kx)\,dx
    $$
+
    라고 하자. 다음 부등식을 증명하여라.
 
    $$
@@ -1346,6 +1379,7 @@ $$
    $$
    \|e_k-v_k\|<\frac{1}{\sqrt n}
    $$
+
    를 만족한다고 하자. $v_1,\ldots,v_n$이 $V$의 기저임을 증명하여라. 부등식의 $<$를 $\le$로 바꾸면 결론이 거짓이 될 수 있음을 보이는 예도 제시하여라.
 
 7. $T\in\mathcal{L}(\mathbb{R}^3)$가 기저
@@ -1353,6 +1387,7 @@ $$
    $$
    (1,0,0),\quad (1,1,1),\quad (1,1,2)
    $$
+
    에 대해 상삼각 행렬을 가진다고 하자. $T$가 상삼각 행렬을 가지는 $\mathbb{R}^3$의 정규직교기저를 구하여라.
 
 8. $\mathcal{P}_2(\mathbb{R})$에 내적
@@ -1360,6 +1395,7 @@ $$
    $$
    \langle p,q\rangle=\int_{0}^{1}p(x)q(x)\,dx
    $$
+
    가 주어져 있다고 하자. 기저 $1,x,x^2$에 그램-슈미트 절차를 적용하여 $\mathcal{P}_2(\mathbb{R})$의 정규직교기저를 구하여라. 또한 $Tp=p'$로 정의되는 미분 연산자 $T$의 이 정규직교기저에 대한 행렬을 구하여라.
 
 9. $e_1,\ldots,e_m$이 $v_1,\ldots,v_m$에 그램-슈미트 절차를 적용하여 얻은 리스트라고 하자. 각 $k=1,\ldots,m$에 대해 $\langle v_k,e_k\rangle>0$임을 증명하여라.
@@ -1369,6 +1405,7 @@ $$
     $$
     \text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
     $$
+
     를 만족하고 $\langle v_k,e_k\rangle>0$인 정규직교 리스트라면, $e_1,\ldots,e_m$은 $v_1,\ldots,v_m$에 그램-슈미트 절차를 적용하여 얻은 리스트임을 증명하여라.
 
 11. 모든 $p\in\mathcal{P}_2(\mathbb{R})$에 대해
@@ -1376,6 +1413,7 @@ $$
     $$
     p\left(\frac12\right)=\int_{0}^{1}p(x)q(x)\,dx
     $$
+
     가 성립하게 하는 $q\in\mathcal{P}_2(\mathbb{R})$를 구하여라.
 
 12. 모든 $p\in\mathcal{P}_2(\mathbb{R})$에 대해
@@ -1383,6 +1421,7 @@ $$
     $$
     \int_{0}^{1}p(x)\cos(\pi x)\,dx=\int_{0}^{1}p(x)q(x)\,dx
     $$
+
     가 성립하게 하는 $q\in\mathcal{P}_2(\mathbb{R})$를 구하여라.
 
 13. $v_1,\ldots,v_m$이 $V$의 리스트라고 하자. 그램-슈미트 절차를 형식적으로 적용할 때 어떤 $f_k$가 $0$이 되는 것은 $v_1,\ldots,v_m$이 일차종속인 것과 동치임을 증명하여라.
@@ -1392,6 +1431,7 @@ $$
     $$
     \text{span}(v_1,\ldots,v_k)=\text{span}(e_1,\ldots,e_k)
     $$
+
     가 성립함을 증명하여라.
 
 15. $\langle\cdot,\cdot\rangle_1$과 $\langle\cdot,\cdot\rangle_2$가 $V$ 위의 두 내적이고, 모든 $u,v\in V$에 대해
@@ -1399,16 +1439,19 @@ $$
     $$
     \langle u,v\rangle_1=0
     $$
+
     인 것과
 
     $$
     \langle u,v\rangle_2=0
     $$
+
     인 것이 동치라고 하자. 어떤 양의 수 $c$가 존재하여 모든 $u,v\in V$에 대해
 
     $$
     \langle u,v\rangle_1=c\langle u,v\rangle_2
     $$
+
     가 성립함을 증명하여라.
 
 16. $V$가 유한차원이고 $\langle\cdot,\cdot\rangle_1$, $\langle\cdot,\cdot\rangle_2$가 $V$ 위의 두 내적이라고 하자. 이 두 내적에서 오는 노름을 각각 $\|\cdot\|_1$, $\|\cdot\|_2$라고 할 때, 어떤 양의 수 $c$가 존재하여 모든 $v\in V$에 대해
@@ -1416,6 +1459,7 @@ $$
     $$
     \|v\|_1\le c\|v\|_2
     $$
+
     가 성립함을 증명하여라.
 
 17. $\mathbb{F}=\mathbb{C}$이고 $V$가 유한차원이며 $T\in\mathcal{L}(V)$라고 하자. $T$의 유일한 고윳값이 $1$이고 모든 $v\in V$에 대해 $\|Tv\|\le\|v\|$이면 $T=I$임을 증명하여라.
@@ -1439,6 +1483,7 @@ $$
     $$
     \|T^m v\|\le\varepsilon\|v\|
     $$
+
     가 성립함을 증명하여라.
 
 22. $V=C[-1,1]$에 내적
@@ -1446,11 +1491,13 @@ $$
     $$
     \langle f,g\rangle=\int_{-1}^{1}f(x)g(x)\,dx
     $$
+
     가 주어져 있다고 하자. $\varphi\in V'$를 $\varphi(f)=f(0)$으로 정의하자. 모든 $f\in V$에 대해
 
     $$
     \varphi(f)=\langle f,g\rangle
     $$
+
     가 성립하게 하는 $g\in V$가 존재하지 않음을 증명하여라. 이것은 유한차원이라는 가정 없이 리스 표현정리가 성립하지 않을 수 있음을 보여 준다.
 
 23. $V$가 유한차원 내적공간이라고 하자. $d:V\times V\to[0,\infty)$를
@@ -1458,6 +1505,7 @@ $$
     $$
     d(u,v)=\|u-v\|
     $$
+
     로 정의한다.
 
     (a) $d$가 $V$ 위의 거리임을 증명하여라.
@@ -1485,12 +1533,14 @@ $$
   $$
   U^\perp=\{(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\}.
   $$
+
   따라서 $U^\perp$는 원점을 지나는 평면이다.
 - $U=\{(x,y,z)\in\mathbb{R}^3:2x+3y+5z=0\}$이면
 
   $$
   U^\perp=\{(2t,3t,5t):t\in\mathbb{R}\}.
   $$
+
   따라서 원점을 지나는 평면의 직교여공간은 그 평면에 수직인 직선이다.
 - 일반적으로 $\mathbb{R}^3$에서 원점을 지나는 평면의 직교여공간은 그 평면에 수직인 원점을 지나는 직선이고, 원점을 지나는 직선의 직교여공간은 그 직선에 수직인 원점을 지나는 평면이다.
 - $V=\mathbb{F}^5$이고
@@ -1498,11 +1548,13 @@ $$
   $$
   U=\{(a,b,0,0,0):a,b\in\mathbb{F}\}
   $$
+
   이면
 
   $$
   U^\perp=\{(0,0,x,y,z):x,y,z\in\mathbb{F}\}.
   $$
+
 - $e_1,\ldots,e_m,f_1,\ldots,f_n$이 $V$의 정규직교기저이면
 
   $$
@@ -1547,6 +1599,7 @@ v=
 \underbrace{\left(v-\langle v,e_1\rangle e_1-\cdots-\langle v,e_m\rangle e_m\right)}_{w}
 \tag{6.50}
 $$
+
 라고 쓸 수 있다. 여기서 $u\in U$이고, 각 $k$에 대해 $\langle w,e_k\rangle=0$이므로 $w\in U^\perp$이다. 따라서 $V=U+U^\perp$이다. 또한 6.48(d)에 의해 $U\cap U^\perp=\{0\}$이므로 합은 직합이다.
 
 **6.51 직교여공간의 차원**
@@ -1577,6 +1630,7 @@ $$
 U\subset (U^\perp)^\perp.
 \tag{6.53}
 $$
+
 이제 6.51을 두 번 적용하면
 
 $$
@@ -1585,6 +1639,7 @@ $$
 =\dim V-(\dim V-\dim U)
 =\dim U
 $$
+
 이다. 6.53의 포함관계와 두 공간의 차원이 같다는 사실에서 결론이 따른다.
 
 **6.54 직교여공간이 $\{0\}$인 경우**
@@ -1594,6 +1649,7 @@ $U$가 유한차원 내적공간 $V$의 부분공간이면
 $$
 U^\perp=\{0\}
 $$
+
 인 것과 $U=V$인 것은 동치이다.
 
 **증명**
@@ -1607,6 +1663,7 @@ $U$가 $V$의 유한차원 부분공간이라고 하자. 6.49에 의해 각 $v\i
 $$
 v=u+w,\qquad u\in U,\quad w\in U^\perp
 $$
+
 로 쓸 수 있다. $P_Uv=u$로 정의되는 사상 $P_U:V\to V$를 $U$ 위로의 **직교사영**이라고 한다.
 
 **6.56 예: 일차원 부분공간 위로의 직교사영**
@@ -1652,6 +1709,7 @@ $$
 $$
 \|v\|^2=\|P_Uv\|^2+\|v-P_Uv\|^2\ge \|P_Uv\|^2
 $$
+
 이다.
 
 **6.58 리스 표현정리의 또 다른 증명**
@@ -1661,6 +1719,7 @@ $V$가 유한차원 내적공간이라고 하자. 각 $v\in V$에 대해 $\varph
 $$
 \varphi_v(u)=\langle u,v\rangle
 $$
+
 로 정의한다. 그러면 $v\mapsto\varphi_v$는 $V$에서 $V'$로 가는 일대일 대응이다.
 
 $\mathbb{F}=\mathbb{R}$이면 이 대응은 선형이다. 그러나 $\mathbb{F}=\mathbb{C}$이면 일반적으로 선형이 아니다. 실제로
@@ -1668,6 +1727,7 @@ $\mathbb{F}=\mathbb{R}$이면 이 대응은 선형이다. 그러나 $\mathbb{F}=
 $$
 \varphi_{\lambda v}=\overline{\lambda}\varphi_v
 $$
+
 이기 때문이다.
 
 **증명**
@@ -1680,17 +1740,20 @@ $$
 v=\frac{\overline{\varphi(w)}}{\|w\|^2}w
 \tag{6.59}
 $$
+
 라고 두자. 그러면
 
 $$
 \|v\|=\frac{|\varphi(w)|}{\|w\|}
 \tag{6.60}
 $$
+
 이고 $\varphi(v)=\|v\|^2$이다. 임의의 $u\in V$에 대해
 
 $$
 u-\frac{\varphi(u)}{\varphi(v)}v\in\text{null}\varphi
 $$
+
 이다. 이 벡터는 $v$에 직교하므로
 
 $$
@@ -1734,12 +1797,14 @@ $$
 $$
 \int_{-\pi}^{\pi}|\sin x-u(x)|^2\,dx
 $$
+
 를 최소로 만드는 $u$를 찾고 싶다고 하자. $C[-\pi,\pi]$에 내적
 
 $$
 \langle f,g\rangle=\int_{-\pi}^{\pi}f(x)g(x)\,dx
 \tag{6.64}
 $$
+
 를 주고, $v(x)=\sin x$, $U=\mathcal{P}_5(\mathbb{R})$라고 두면 이 문제는 $\|v-u\|$를 최소화하는 $u\in U$를 찾는 문제이다.
 
 6.61에 의해 답은 $P_Uv$이다. $1,x,x^2,x^3,x^4,x^5$에 그램-슈미트 절차를 적용해 $U$의 정규직교기저를 만든 뒤 6.57(i)를 사용하면 계산 결과
@@ -1757,6 +1822,7 @@ $$
 p(x)=x-\frac{x^3}{3!}+\frac{x^5}{5!}
 \tag{6.66}
 $$
+
 은 $0$ 근처에서는 매우 좋은 근사이지만, $|x|>2$에서는 6.65의 최적 근사보다 훨씬 나빠질 수 있다. 예를 들어 $x=3$에서 테일러 다항식의 오차는 대략 $0.4$인 반면, 6.65의 오차는 대략 $0.001$이다.
 
 ### 유사역
@@ -1775,6 +1841,7 @@ $V$가 유한차원이고 $T\in\mathcal{L}(V,W)$라고 하자. 그러면
 $$
 T|_{(\text{null}T)^\perp}
 $$
+
 는 $(\text{null}T)^\perp$에서 $\text{range}T$로 가는 일대일 대응인 선형사상이다.
 
 **증명**
@@ -1798,6 +1865,7 @@ T^\dagger w
 =\left(T|_{(\text{null}T)^\perp}\right)^{-1}
 P_{\text{range}T}w
 $$
+
 로 정의된다.
 
 즉 $w\in(\text{range}T)^\perp$이면 $T^\dagger w=0$이다. 또한 $w\in\text{range}T$이면 $T^\dagger w$는 $(\text{null}T)^\perp$에 속하고 $T(T^\dagger w)=w$를 만족하는 유일한 벡터이다.
@@ -1829,6 +1897,7 @@ $$
 $$
 TT^\dagger w=P_{\text{range}T}w
 $$
+
 이다.
 
 (c)는 $v\in V$를 $v=u+n$으로 쓰되 $u\in(\text{null}T)^\perp$, $n\in\text{null}T$라고 하자. 그러면 $Tv=Tu$이고, 정의상 $T^\dagger(Tu)=u$이다. 따라서 $T^\dagger Tv=u=P_{(\text{null}T)^\perp}v$이다.
@@ -1874,11 +1943,13 @@ $T\in\mathcal{L}(\mathbb{F}^4,\mathbb{F}^3)$를
 $$
 T(a,b,c,d)=(a+b+c,2c+d,0)
 $$
+
 으로 정의하자. 그러면
 
 $$
 \text{range}T=\{(x,y,0):x,y\in\mathbb{F}\}
 $$
+
 이고, 따라서
 
 $$
@@ -1897,6 +1968,7 @@ $$
 $$
 (-1,1,0,0),\quad (-1,0,1,-2)
 $$
+
 이다. 따라서 $T^\dagger(x,y,z)$는
 
 $$
@@ -1904,6 +1976,7 @@ T^\dagger(x,y,z)
 =\left(T|_{(\text{null}T)^\perp}\right)^{-1}(x,y,0)
 \tag{6.72}
 $$
+
 이다.
 
 이를 구하려면 다음 연립방정식을 풀면 된다.
@@ -1925,6 +1998,7 @@ b=\frac{5x-2y}{11},\quad
 c=\frac{x+4y}{11},\quad
 d=\frac{-2x+3y}{11}
 $$
+
 이다. 따라서
 
 $$
@@ -1950,6 +2024,7 @@ $$
    $$
    U=\text{span}((1,2,3,-4),(-5,4,3,2))
    $$
+
    라고 하자. $U$의 정규직교기저와 $U^\perp$의 정규직교기저를 각각 구하여라.
 
 4. $e_1,\ldots,e_n$이 $V$의 벡터들로 이루어진 리스트이고 각 $e_k$의 노름이 $1$이라고 하자. 모든 $v\in V$에 대해
@@ -1957,6 +2032,7 @@ $$
    $$
    \|v\|^2=|\langle v,e_1\rangle|^2+\cdots+|\langle v,e_n\rangle|^2
    $$
+
    가 성립하면 $e_1,\ldots,e_n$이 $V$의 정규직교기저임을 증명하여라.
 
 5. $V$가 유한차원이고 $U$가 $V$의 부분공간이라고 하자. 다음을 증명하여라.
@@ -1985,11 +2061,13 @@ $$
    $$
    \varphi(u)=\langle u,v\rangle
    $$
+
    로 정의한다. 리스 표현정리를 $U$에 적용하면 모든 $u\in U$에 대해
 
    $$
    \varphi(u)=\langle u,w\rangle
    $$
+
    를 만족하는 $w\in U$가 존재한다. 이때 $w=P_Uv$임을 증명하여라.
 
 9. $V$가 유한차원이고 $P\in\mathcal{L}(V)$가 $P^2=P$를 만족한다고 하자. 또한 $\text{null}P$의 모든 벡터가 $\text{range}P$의 모든 벡터에 직교한다고 하자. 그러면 어떤 $V$의 부분공간 $U$가 존재하여 $P=P_U$임을 증명하여라.
@@ -2001,6 +2079,7 @@ $$
     $$
     P_UTP_U=TP_U
     $$
+
     인 것은 동치임을 증명하여라.
 
 12. $V$가 유한차원이고 $T\in\mathcal{L}(V)$, $U$가 $V$의 부분공간이라고 하자. $U$와 $U^\perp$가 모두 $T$에 대해 불변인 것과
@@ -2008,6 +2087,7 @@ $$
     $$
     P_UT=TP_U
     $$
+
     인 것은 동치임을 증명하여라.
 
 13. $\mathbb{F}=\mathbb{R}$이고 $V$가 유한차원이라고 하자. 각 $v\in V$에 대해 $\varphi_v\in V'$를 $\varphi_v(u)=\langle u,v\rangle$로 정의한다.
@@ -2025,11 +2105,13 @@ $$
     $$
     U=\text{span}((1,1,0,0),(1,1,1,2))
     $$
+
     라고 하자. $u\in U$ 중에서
 
     $$
     \|u-(1,2,3,4)\|
     $$
+
     를 최소로 만드는 $u$를 구하여라.
 
 16. $C[-1,1]$에 내적
@@ -2037,11 +2119,13 @@ $$
     $$
     \langle f,g\rangle=\int_{-1}^{1}f(x)g(x)\,dx
     $$
+
     가 주어져 있고
 
     $$
     U=\{f\in C[-1,1]:f(0)=0\}
     $$
+
     라고 하자.
 
     (a) $U^\perp=\{0\}$임을 증명하여라.
@@ -2059,6 +2143,7 @@ $$
     $$
     \int_{-\pi}^{\pi}|\sin x-p(x)|^2\,dx
     $$
+
     를 최소로 만드는 $p$를 정확한 식으로 구하여라.
 
 19. $V$가 유한차원이고 $P$가 $V$의 어떤 부분공간 위로의 직교사영이라고 하자. $P^\dagger=P$임을 증명하여라.
@@ -2080,6 +2165,7 @@ $$
     $$
     T(a,b,c)=(a+b+c,2b+3c)
     $$
+
     로 정의되어 있다고 하자.
 
     (a) $T^\dagger(x,y)$의 공식을 구하여라.
