@@ -497,7 +497,7 @@ $$
 증명. 우리는
 
 $$
-\begin{aligned}
+\begin{align*}
 \Vert u+v\Vert^2
 &=\langle u+v,u+v\rangle \cr
 &=\langle u,u\rangle+\langle v,v\rangle+\langle u,v\rangle+\langle v,u\rangle \cr
@@ -506,7 +506,7 @@ $$
 &\le \Vert u\Vert^2+\Vert v\Vert^2+2|\langle u,v\rangle| \tag{6.18}\cr
 &\le \Vert u\Vert^2+\Vert v\Vert^2+2\Vert u\Vert\thinspace\Vert v\Vert \tag{6.19}\cr
 &=(\Vert u\Vert+\Vert v\Vert)^2.
-\end{aligned}
+\end{align*}
 $$
 
 여기서 (6.19)는 코시-슈바르츠 부등식(6.14)에서 따라온다. 위 부등식 양변의 제곱근을 취하면 원하는 부등식을 얻는다.

@@ -2388,10 +2388,10 @@ $$
 \widehat{\Gamma}(v\otimes w)=\Gamma(v,w)
 $$
 
-(b) 반대로 $T:V\otimes W\to U$가 선형사상이라고 하자. 그러면 다음을 모든 $(v,w)\in V\times W$에 대해 만족하는 유일한 쌍선형 사상 $T^\\#:V\times W\to U$가 존재한다.
+(b) 반대로 $T:V\otimes W\to U$가 선형사상이라고 하자. 그러면 다음을 모든 $(v,w)\in V\times W$에 대해 만족하는 유일한 쌍선형 사상 $T^\#:V\times W\to U$가 존재한다.
 
 $$
-T^\\#(v,w)=T(v\otimes w)
+T^\#(v,w)=T(v\otimes w)
 $$
 
 **증명**
@@ -2425,13 +2425,13 @@ $$
 
 9.74(b)에 의해 이런 선형사상 $\widehat{\Gamma}$는 유일하다. 따라서 (a)가 증명된다.
 
-(b)를 증명하기 위해 $T^\\#:V\times W\to U$를
+(b)를 증명하기 위해 $T^\#:V\times W\to U$를
 
 $$
-T^\\#(v,w)=T(v\otimes w)
+T^\#(v,w)=T(v\otimes w)
 $$
 
-로 정의한다. 텐서곱의 쌍선형성과 $T$의 선형성에 의해 $T^\\#$는 쌍선형이다. 조건을 만족하는 $T^\\#$의 유일성은 명백하다.
+로 정의한다. 텐서곱의 쌍선형성과 $T$의 선형성에 의해 $T^\#$는 쌍선형이다. 조건을 만족하는 $T^\#$의 유일성은 명백하다.
 
 9.79(a)를 증명할 때 단순히 모든 $v,w$에 대해 $\widehat{\Gamma}(v\otimes w)=\Gamma(v,w)$로 정의하고 이를 $V\otimes W$ 전체로 선형 확장할 수는 없다. $V\otimes W$의 원소가 $v\otimes w$ 꼴 원소들의 유한합으로 표현되는 방식은 유일하지 않기 때문이다. 위 증명은 기저를 사용하여 이 문제를 피한다. 그러나 모든 $v,w$에 대해 $\widehat{\Gamma}(v\otimes w)=\Gamma(v,w)$가 성립하므로, 최종적으로 얻은 $\widehat{\Gamma}$는 선택한 기저에 의존하지 않는다.
 
@@ -2646,13 +2646,13 @@ $$
 (b) 반대로 $T:V_1\otimes\cdots\otimes V_m\to U$가 선형사상이라고 하자. 그러면 모든 $(v_1,\ldots,v_m)\in V_1\times\cdots\times V_m$에 대해
 
 $$
-T^\\#(v_1,\ldots,v_m)=T(v_1\otimes\cdots\otimes v_m)
+T^\#(v_1,\ldots,v_m)=T(v_1\otimes\cdots\otimes v_m)
 $$
 
 를 만족하는 유일한 $m$-선형 사상
 
 $$
-T^\\#:V_1\times\cdots\times V_m\to U
+T^\#:V_1\times\cdots\times V_m\to U
 $$
 
 가 존재한다.
